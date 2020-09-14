@@ -63,6 +63,46 @@ $Html = NEW MyProjectName();
 echo $Html->H2('Test H2');
 </pre>
 
+<h5>Usage: Static | More Samples with Parameters</h5>
+<pre>
+// Html Custom attributes:
+ function my_htmattr() {
+    return $sets = [
+      $attr_name = ['1','2'],
+      $attr_val  = ['_niel_','_fernandez_'];  
+    ];
+ }
+ 
+echo  html::H1("Heading Title_FUNC_ASSOC",  my_htmattr() ,'MyID','MyClass','MyLabel','FUNC_ASSOC'); 
+      html::H1("Heading Title_FUNC_ASSOC",  my_htmattr() ,'MyID','MyClass','MyLabel','METHOD_ASSOC'); 
+      // NULL use outside of function 
+      html::H1("Sample_echo ",    my_htmattr(),'MyID','MyClass','MyLabel', NULL); 
+
+echo  html::H1(html::STRING("Heading Title_FUNC_ASSOC", 'FUNC_ASSOC'), my_htmattr(),'MyID','MyClass','','FUNC_ASSOC');
+      html::H1("Heading Title_FUNC_ASSOC ", my_htmattr(),'MyID','MyClass','','FUNC_ASSOC'); 
+
+      // NULL use outside of function 
+      html::H1("Sample_echo ", my_htmattr(),'MyID','MyClass','', NULL); 
+
+echo  html::H1("Heading Title_FUNC_ASSOC ", my_htmattr(),'MyID','MyCLass','','FUNC_ASSOC'); 
+      html::H1("Heading Title_FUNC_ASSOC ", my_htmattr(),'MyID','MyCLass','','FUNC_ASSOC'); 
+
+      // NULL use outside of function 
+      html::H1("Heading Title_FUNC_ASSOC ", my_htmattr(),'MyID','MyCLass','', NULL);  
+
+echo  html::H1("Sample_return ", my_htmattr(),'','','','FUNC_ASSOC'); 
+      html::H1("Sample_return ", my_htmattr(),'','','','FUNC_ASSOC'); 
+
+      // NULL use outside of function 
+      html::H1("Sample_echo ", my_htmattr(),'','','', NULL); 
+
+echo  html::H1("", NULL,'','','','FUNC_ASSOC'); 
+      html::H1("", NULL,'','','','FUNC_ASSOC'); 
+
+      // NULL use outside of function 
+      html::H1("", NULL,'','','', NULL); 
+</pre>
+
 <h5>On Page | Static Methods</h5>
 
 |Opt./ASSOCIATED | HTML/Descript. | ASSOCIATED | Inline noneClosing/ASSOCIATED |  None ASSOCIATED |
