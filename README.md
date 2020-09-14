@@ -18,22 +18,22 @@ To optimized a codes is a hassle and heavy load burden in programming, PHPHtml-O
 
 <h5>On Page | Static Methods</h5>
 
-| non/ASSOCIATED | HTML/Descript. | ASSOCIATED |
+| non/ASSOCIATED | HTML/Descript. | ASSOCIATED | | Inline - nonClosing/ASSOCIATED |
 |:---            |:---            |:---            |
-| `Html::BREAK()`  | Break          | `Html::ELEMENT('H1')`    |
-| `Html::LINE()`   | Line           | `Html::ELEMENT('H2')`    |
-| `Html::STRING()` | wout/Element   | `Html::ELEMENT('H3')`    |
-| `Html::H1()`     | Heading 1      | `Html::ELEMENT('H4')`    |
-| `Html::H2()`     | Heading 2      | `Html::ELEMENT('H5')`    |
-| `Html::H3()`     | Heading 3      | `Html::ELEMENT('H6')`    |
-| `Html::H4()`     | Heading 4      | `Html::ELEMENT('H1')`    |
-| `Html::H5()`     | Heading 5      | `Html::ELEMENT('BUTTON')` |
-| `Html::H6()`     | Heading 6      | `Html::ELEMENT('A')`     |
-| `Html::DIV()`    | Element        | `Html::ELEMENT('IFRAME')`|
-| `Html::P()`      | Paragraph      | `Html::ELEMENT('MAIN')`    |
-| `Html::BUTTON()` | Element        | `Html::ELEMENT('NAV')`    | 
-| `Html::A()`      | Link Element   | `Html::ELEMENT('SELECT')`    | 
-| `Html::IFRAME()` | Element        | `Html::ELEMENT('FORM')` | 
+| `Html::BREAK()`  | Break          | `Html::ELEMENT('H1')`    |`Html::_ELEMENT('my_input','INPUT')`|
+| `Html::LINE()`   | Line           | `Html::ELEMENT('H2')`    |`Html::_ELEMENT('my_track','track')`|
+| `Html::STRING()` | wout/Element   | `Html::ELEMENT('H3')`    |`Html::_ELEMENT('my_circle','circle')`|
+| `Html::H1()`     | Heading 1      | `Html::ELEMENT('H4')`    |`Html::_ELEMENT('my_param','param')`|
+| `Html::H2()`     | Heading 2      | `Html::ELEMENT('H5')`    |`Html::_ELEMENT('my_meta','meta')`|
+| `Html::H3()`     | Heading 3      | `Html::ELEMENT('H6')`    |`Html::_ELEMENT('my_link','link')`|
+| `Html::H4()`     | Heading 4      | `Html::ELEMENT('H1')`    |`Html::_ELEMENT('my_img','img')`|
+| `Html::H5()`     | Heading 5      | `Html::ELEMENT('BUTTON')` | `Html::_ELEMENT('my_embed','embed')`|
+| `Html::H6()`     | Heading 6      | `Html::ELEMENT('A')`     | `Html::_ELEMENT('my_option','option')`|
+| `Html::DIV()`    | Element        | `Html::ELEMENT('IFRAME')`| `Html::_ELEMENT('my_col','col')`|
+| `Html::P()`      | Paragraph      | `Html::ELEMENT('MAIN')`    | `Html::_ELEMENT('my_base','base')`|
+| `Html::BUTTON()` | Element        | `Html::ELEMENT('NAV')`    | `Html::_ELEMENT('my_aside','aside')`|
+| `Html::A()`      | Link Element   | `Html::ELEMENT('SELECT')`    | `Html::_ELEMENT('my_area','area')`|
+| `Html::IFRAME()` | Element        | `Html::ELEMENT('FORM')` |  `Html::_ELEMENT('my_DOCTYPE','DOCTYPE')`|
 | `Html::IFRAME()` | Element        | `Html::ELEMENT('PICTURE')`    | 
 | `Html::MAIN()`   | Element        | `Html::ELEMENT('SECTION')`    | 
 | `Html::NAV()`    | Element        | `Html::ELEMENT('TEXTAREA')`    | 
