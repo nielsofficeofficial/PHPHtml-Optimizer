@@ -10,19 +10,16 @@ To optimized a codes is a hassle and heavy load burden in programming, PHPHtml-O
 <?php 
 
 $html   = ""; 
-$html  .= "<ul id=\"My_id_ParentTags\" class=\"MyClass\">";
+$html  .= "<ul id=\\"My_id_ParentTags\\" class=\\"MyClass\\">";
     
     $datas = [];
     for ($i = 1; $i <= 10; $i++) 
     { 
-     
-     $datas[] = "<li class=\"col-sm-3\" id=\"MyList\">Count Number. " $i . "</li>";   
-
+     $datas[] = "<li class=\"col-sm-3\" id=\"MyList\">Count Number. " $i . "</li>";  
     }
-  
     return implode('', $datas); 
-    
 $html  .= "</ul>";
+
 // Loop and excuted
 print $html;
 ?>
@@ -34,21 +31,16 @@ print $html;
 
  function my_data() {     
   $datas = [];
-  
     for ($i = 1; $i <= 10; $i++) 
     {
        $datas[] = html::ELEMENT('LI',$i,NULL,'myID',MyCLass,NULL); 
     }
-  
      return implode('', $datas);  
   }
-  
   // ASSOCIATED WITH FUNCTION | METHOD | CLASS it is seta s return (need echo or print)  
   echo Html::ELEMENT('UL',my_data(),NULL,'MyID','MyCLass'); 
- 
 ?>
 </pre>
-
 
 <h5>Understanding Class Method Parameters</h5>
 
