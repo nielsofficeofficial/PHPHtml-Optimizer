@@ -5,6 +5,50 @@
 When the browser sense that there will no HTML printed the interpreter will execute your codes once at the same time not section by section at that point your data will be rendered accurately.<br />
 To optimized a codes is a hassle and heavy load burden in programming, PHPHtml-Optimizer will do that for you while you develop your Internet application, with this library will push you driving your codes learning OOP concept to make more effective your codes into your application neat and clean not just clean but beautiful maintenable codes, you can use this library and feel FREE if are comportable.    
 </p>
+<h4>Sample Code | PHP with HTML Default (Wrapping Html)/Procedural</h4>
+<pre>
+<?php 
+
+$html   = ""; 
+$html  .= "<ul id=\"My_id_ParentTags\" class=\"MyClass\">";
+    
+    $datas = [];
+    for ($i = 1; $i <= 10; $i++) 
+    { 
+     
+     $datas[] = "<li class=\"col-sm-3\" id=\"MyList\">Count Number. " $i . "</li>";   
+
+    }
+  
+    return implode('', $datas); 
+    
+$html  .= "</ul>";
+// Loop and excuted
+print $html;
+?>
+</pre>
+
+<h4>Sample Code | PHPHtml-Optimizer /Procedural</h4>
+<pre>
+<?php 
+
+ function my_data() {     
+  $datas = [];
+  
+    for ($i = 1; $i <= 10; $i++) 
+    {
+       $datas[] = html::ELEMENT('LI',$i,NULL,'myID',MyCLass,NULL); 
+    }
+  
+     return implode('', $datas);  
+  }
+  
+  // ASSOCIATED WITH FUNCTION | METHOD | CLASS it is seta s return (need echo or print)  
+  echo Html::ELEMENT('UL',my_data(),NULL,'MyID','MyCLass'); 
+ 
+?>
+</pre>
+
 
 <h5>Understanding Class Method Parameters</h5>
 
