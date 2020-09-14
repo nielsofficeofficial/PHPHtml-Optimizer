@@ -23,17 +23,17 @@ To optimized a codes is a hassle and heavy load burden in programming, PHPHtml-O
 |     :---:      |     :---:      |     :---:      |
 | Html::BREAK()  | git status     | git status    |
 | Html::LINE()   | git diff       | git diff      |
-| Html::STRING() |
-| Html::STRING() |
-| Html::H1()     |
-| Html::H3()     |
-| Html::H4()     |
-| Html::H5()     |
-| Html::H6()     |
-| Html::DIV()    |
-| Html::P()      |
-| Html::P()      |
-| Html::BUTTON() |
+| Html::STRING() | git status     | git status    |
+| Html::STRING() | git status     | git status    |
+| Html::H1()     | git status     | git status    |
+| Html::H3()     | git status     | git status    |
+| Html::H4()     | git status     | git status    |
+| Html::H5()     | git status     | git status    |
+| Html::H6()     | git status     | git status    |
+| Html::DIV()    | git status     | git status    |
+| Html::P()      | git status     | git status    |
+| Html::P()      | git status     | git status    |
+| Html::BUTTON() |git status     | git status    | 
 
 
 
