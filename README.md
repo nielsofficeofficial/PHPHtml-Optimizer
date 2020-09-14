@@ -12,12 +12,10 @@ CLASS_ASSOC  - Is a Paramenter that will use and position to the very end of fun
 FUNC_ASSOC   - Is a Paramenter that will use and position to the very end of function or methods to work for your functions.  
 </pre>
 
-<h5>Methods</h5>
+<h5>On Page | Static Methods</h5>
 <pre>
-<?php 
-
-  noHTML dynamic static structure 
-  non/WITH CLASS|METHOD|FUNCTION ASSOCIATED  
+ noHTML dynamic static structure 
+ non/WITH CLASS|METHOD|FUNCTION ASSOCIATED  
  
  html::BREAK(); 
  html::LINE();   
@@ -113,8 +111,8 @@ FUNC_ASSOC   - Is a Paramenter that will use and position to the very end of fun
  html::BODY();
  html::noHTML();
  
-  noHTML dynamic structure 
-  w/ CLASS|METHOD|FUNCTION ASSOCIATED
+ noHTML dynamic structure 
+ w/ CLASS|METHOD|FUNCTION ASSOCIATED
  
  html::ELEMENT('H1');
  html::ELEMENT('H2');
@@ -205,8 +203,8 @@ FUNC_ASSOC   - Is a Paramenter that will use and position to the very end of fun
  html::ELEMENT('HTML');
  html::ELEMENT('BLOCKQUOTE');
  
-  noHTML dynamic static structure 
-  non/WITH CLASS|METHOD|FUNCTION ASSOCIATED noHTML Form no close tag
+ noHTML dynamic static structure 
+ non/WITH CLASS|METHOD|FUNCTION ASSOCIATED noHTML Form no close tag
   
  html::_ELEMENT('my_input','INPUT');
  html::_ELEMENT('my_track','track');
@@ -223,8 +221,8 @@ FUNC_ASSOC   - Is a Paramenter that will use and position to the very end of fun
  html::_ELEMENT('my_area','area');
  html::_ELEMENT('my_DOCTYPE','DOCTYPE');
    
-  noHTML static structure non CLASS|METHOD|FUNCTION ASSOCIATED
-  noHTML static structure w/ closing tag
+ noHTML static structure non CLASS|METHOD|FUNCTION ASSOCIATED
+ noHTML static structure w/ closing tag
  
  html::openH1();
  html::closeH1();
@@ -406,5 +404,4 @@ FUNC_ASSOC   - Is a Paramenter that will use and position to the very end of fun
  html::closeBODY();
  html::opennoHTML();
  html::closenoHTML();
- 
 </pre>
