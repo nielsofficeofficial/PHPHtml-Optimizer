@@ -18,7 +18,7 @@ To optimized a codes is a hassle and heavy load burden in programming, PHPHtml-O
 
 <h5>On Page | Static Methods</h5>
 
-|Opt./ASSOCIATED | HTML/Descript. | ASSOCIATED | Inline noneClosing/ASSOCIATED |  none/ASSOCIATED |
+|Opt./ASSOCIATED | HTML/Descript. | ASSOCIATED | Inline noneClosing/ASSOCIATED |  None ASSOCIATED |
 |:---            |:---            |:---            |:---            |:---            |
 | `Html::BREAK()`  | Break          | `Html::ELEMENT('H1')`    |`Html::_ELEMENT('my_input','INPUT')`|`Html::openH1()`/`Html::closeH1()`|
 | `Html::LINE()`   | Line           | `Html::ELEMENT('H2')`    |`Html::_ELEMENT('my_track','track')`|`Html::openH2()`/`Html::closeH2()`|
@@ -32,84 +32,84 @@ To optimized a codes is a hassle and heavy load burden in programming, PHPHtml-O
 | `Html::DIV()`    | Element        | `Html::ELEMENT('IFRAME')`| `Html::_ELEMENT('my_col','col')`| `Html::openA()`/`Html::closeA()`|
 | `Html::P()`      | Paragraph      | `Html::ELEMENT('MAIN')`    | `Html::_ELEMENT('my_base','base')`| `Html::openIFRAME()`/`Html::closeIFRAME()`|
 | `Html::BUTTON()` | Element        | `Html::ELEMENT('NAV')`    | `Html::_ELEMENT('my_aside','aside')`|`Html::openMAIN()`/`Html::closeMAIN()`|
-| `Html::A()`      | Link Element   | `Html::ELEMENT('SELECT')`    | `Html::_ELEMENT('my_area','area')`|
-| `Html::IFRAME()` | Element        | `Html::ELEMENT('FORM')` |  `Html::_ELEMENT('my_DOCTYPE','DOCTYPE')`|
-| `Html::IFRAME()` | Element        | `Html::ELEMENT('PICTURE')`    | 
-| `Html::MAIN()`   | Element        | `Html::ELEMENT('SECTION')`    | 
-| `Html::NAV()`    | Element        | `Html::ELEMENT('TEXTAREA')`    | 
-| `Html::SELECT()` | Element        | `Html::ELEMENT('AUDIO')`    | 
-| `Html::FORM()`   | Element        | `Html::ELEMENT('VIDEO')`    | 
-| `Html::PICTURE()`| Element        | `Html::ELEMENT('ADDRESS')`    | 
-| `Html::SECTION()`| Element        | `Html::ELEMENT('COLGROUP')`    | 
-| `Html::TEXTAREA()`| Element        | `Html::ELEMENT('BDI')`    | 
-| `Html::AUDIO()`| Element        | `Html::ELEMENT('BDO')`    | 
-| `Html::VIDEO()`| Element        | `Html::ELEMENT('CAPTION')` | 
-| `Html::ADDRESS()`| Element        | `Html::ELEMENT('LABEL')`    | 
-| `Html::COLGROUP()`| Element        | `Html::ELEMENT('DATALIST')`    | 
-| `Html::BDI()`| Element        | `Html::ELEMENT('DETAILS')`    | 
-| `Html::BDO()`| Element        | `Html::ELEMENT('SUMMARY')` | 
-| `Html::BLOCKQUOTE()`| Element        | `Html::ELEMENT('DIALOG')` | 
-| `Html::CAPTION()`| Element        | `Html::ELEMENT('OPTION')` | 
-| `Html::LABEL()`| Element        | `Html::ELEMENT('FIGURE')` | 
-| `Html::DATALIST()`| Element        | `Html::ELEMENT('FIGCAPTION')` |
-| `Html::DETAILS()`| Element        | `Html::ELEMENT('METER')` |
-| `Html::SUMMARY()`| Element        | `Html::ELEMENT('OBJECT')`    |
-| `Html::DIALOG()`| Element        | `Html::ELEMENT('OPTGROUP')`    |
-| `Html::OPTION()`| Element        | `Html::ELEMENT('OUTPUT')`    |
-| `Html::FIGURE()`| Element        | `Html::ELEMENT('PROGRESS')`    |
-| `Html::FIGCAPTION()`| Element        | `Html::ELEMENT('SVG')`    |
-| `Html::METER()`| Element        | `Html::ELEMENT('TEMPLATE')` |
-| `Html::OBJECT()`| Element        | `Html::ELEMENT('TIME')` |
-| `Html::OPTGROUP()`| Element        | `Html::ELEMENT('VAR')` |
-| `Html::OUTPUT()`| Element        | `Html::ELEMENT('UL')` |
-| `Html::PROGRESS()`| Element        | `Html::ELEMENT('OL')` |
-| `Html::SVG()`| Element        | `Html::ELEMENT('LI')` |
-| `Html::TEMPLATE()`| Element        | `Html::ELEMENT('TABLE')` |
-| `Html::TIME()`| Element        | `Html::ELEMENT('TR')`    |
-| `Html::VAR()`| Element        | `Html::ELEMENT('TD')`    |
-| `Html::UL()`| Element        | `Html::ELEMENT('TH')`|
-| `Html::OL()`| Element        | `Html::ELEMENT('LEGEND')`    |
-| `Html::LI()`| Element        | `Html::ELEMENT('FIELDSET')`    |
-| `Html::TABLE()`| Element        | `Html::ELEMENT('TBODY')`    |
-| `Html::TR()`| Element        | `Html::ELEMENT('TFOOT')` |
-| `Html::TD()`| Element        | `Html::ELEMENT('THEAD')` |
-| `Html::TH()`| Element        | `Html::ELEMENT('SPAN')` |
-| `Html::LEGEND()`| Element        | `Html::ELEMENT('EM')` |
-| `Html::FIELDSET()`| Element        | `Html::ELEMENT('B')` |
-| `Html::TBODY()`| Element        | `Html::ELEMENT('I')` |
-| `Html::TFOOT()`| Element        | `Html::ELEMENT('SMALL')` |
-| `Html::THEAD()`| Element        | `Html::ELEMENT('MARQUEE')`    |
-| `Html::SPAN()`| Element        | `Html::ELEMENT('CENTER')` |
-| `Html::EM()`| Element        | `Html::ELEMENT('CODE')` |
-| `Html::B()`| Element        | `Html::ELEMENT('ABBR')` |
-| `Html::I()`| Element        | `Html::ELEMENT('MAP')` |
-| `Html::SMALL()`| Element        | `Html::ELEMENT('CANVAS')` |
-| `Html::MARQUEE()`| Element        | `Html::ELEMENT('CITE')` |
-| `Html::CENTER()`| Element        | `Html::ELEMENT('DATA')` |
-| `Html::CODE()`| Element        | `Html::ELEMENT('DL')` |
-| `Html::ABBR()`| Element        | `Html::ELEMENT('DT')` |
-| `Html::MAP()`| Element        | `Html::ELEMENT('DD')` |
-| `Html::CANVAS()`| Element        | `Html::ELEMENT('INS')`    |
-| `Html::CITE()`| Element        | `Html::ELEMENT('DEL')` |
-| `Html::DATA()`| Element        | `Html::ELEMENT('KBD')` |
-| `Html::DL()`| Element        | `Html::ELEMENT('MARK')` |
-| `Html::DT()`| Element        | `Html::ELEMENT('PRE')` |
-| `Html::DD()`| Element        | `Html::ELEMENT('RT')`    |
-| `Html::DFN()`| Element        | `Html::ELEMENT('RP')` |
-| `Html::INS()`| Element        | `Html::ELEMENT('S')` |
-| `Html::DEL()`| Element        | `Html::ELEMENT('SAMP')` |
-| `Html::KBD()`| Element        | `Html::ELEMENT('STRONG')` |
-| `Html::MARK()`| Element        | `Html::ELEMENT('SUB')`    |
-| `Html::PRE()`| Element        | `Html::ELEMENT('SUP')` |
-| `Html::RT()`| Element        | `Html::ELEMENT('WBR')`    |
-| `Html::RP()`| Element        | `Html::ELEMENT('Q')` |
-| `Html::S()`| Element        | `Html::ELEMENT('HEAD')` |
-| `Html::SAMP()`| Element        | `Html::ELEMENT('TITLE')`    |
-| `Html::STRONG()`| Element        | `Html::ELEMENT('BODY')` |
-| `Html::SUB()`| Element        | `Html::ELEMENT('HTML')`    |
-| `Html::SUP()`| Element        | `Html::ELEMENT('BLOCKQUOTE')`    |
-| `Html::WBR()`| Element        |     |
-| `Html::Q()`| Element        |  |
+| `Html::A()`      | Link Element   | `Html::ELEMENT('SELECT')`    | `Html::_ELEMENT('my_area','area')`| `Html::openNAV()`/`Html::closeNAV()`|
+| `Html::IFRAME()` | Element        | `Html::ELEMENT('FORM')` |  `Html::_ELEMENT('my_DOCTYPE','DOCTYPE')`| `Html::openSELECT()`/`Html::closeSELECT()`|
+| `Html::IFRAME()` | Element        | `Html::ELEMENT('PICTURE')`    |   | `Html::openFORM()`/`Html::closeFORM()`|
+| `Html::MAIN()`   | Element        | `Html::ELEMENT('SECTION')`    |   | `Html::openPICTURE()`/`Html::closePICTURE()`|
+| `Html::NAV()`    | Element        | `Html::ELEMENT('TEXTAREA')`    |  | `Html::openSECTION()`/`Html::closeSECTION()`|
+| `Html::SELECT()` | Element        | `Html::ELEMENT('AUDIO')`    |   | `Html::openTEXTAREA()`/`Html::closeTEXTAREA()`|
+| `Html::FORM()`   | Element        | `Html::ELEMENT('VIDEO')`    |   | `Html::openAUDIO()`/`Html::closeAUDIO()`|
+| `Html::PICTURE()`| Element        | `Html::ELEMENT('ADDRESS')`    |  | `Html::openVIDEO()`/`Html::closeVIDEO()`|
+| `Html::SECTION()`| Element        | `Html::ELEMENT('COLGROUP')`    |  | `Html::openADDRESS()`/`Html::closeADDRESS()`|
+| `Html::TEXTAREA()`| Element        | `Html::ELEMENT('BDI')`    | | `Html::openCOLGROUP()`/`Html::closeCOLGROUP()`|
+| `Html::AUDIO()`| Element        | `Html::ELEMENT('BDO')`    |  | `Html::openBDI()`/`Html::closeBDI()`|
+| `Html::VIDEO()`| Element        | `Html::ELEMENT('CAPTION')` |  | `Html::openBDO()`/`Html::closeBDO()`|
+| `Html::ADDRESS()`| Element        | `Html::ELEMENT('LABEL')`    |  | `Html::openBLOCKQUOTE()`/`Html::closeBLOCKQUOTE()`|
+| `Html::COLGROUP()`| Element        | `Html::ELEMENT('DATALIST')`    |  | `Html::openCAPTION()`/`Html::closeCAPTION()`|
+| `Html::BDI()`| Element        | `Html::ELEMENT('DETAILS')`    |  | `Html::openLABEL()`/`Html::closeLABEL()`|
+| `Html::BDO()`| Element        | `Html::ELEMENT('SUMMARY')` |   | `Html::openDATALIST()`/`Html::closeDATALIST()`|
+| `Html::BLOCKQUOTE()`| Element        | `Html::ELEMENT('DIALOG')` |  | `Html::openDETAILS()`/`Html::closeDETAILS()`|
+| `Html::CAPTION()`| Element        | `Html::ELEMENT('OPTION')` |   | `Html::openSUMMARY()`/`Html::closeSUMMARY()`|
+| `Html::LABEL()`| Element        | `Html::ELEMENT('FIGURE')` |   | `Html::openDIALOG()`/`Html::closeDIALOG()`|
+| `Html::DATALIST()`| Element        | `Html::ELEMENT('FIGCAPTION')` |  | `Html::openOPTION()`/`Html::closeOPTION()`|
+| `Html::DETAILS()`| Element        | `Html::ELEMENT('METER')` | | `Html::openFIGURE()`/`Html::closeFIGURE()`|
+| `Html::SUMMARY()`| Element        | `Html::ELEMENT('OBJECT')`    |  | `Html::openFIGCAPTION()`/`Html::closeFIGCAPTION()`|
+| `Html::DIALOG()`| Element        | `Html::ELEMENT('OPTGROUP')`    | | `Html::openMETER()`/`Html::closeMETER()`|
+| `Html::OPTION()`| Element        | `Html::ELEMENT('OUTPUT')`    |  | `Html::openOBJECT()`/`Html::closeOBJECT()`|
+| `Html::FIGURE()`| Element        | `Html::ELEMENT('PROGRESS')`    | | `Html::openOPTGROUP()`/`Html::closeOPTGROUP()`|
+| `Html::FIGCAPTION()`| Element        | `Html::ELEMENT('SVG')`    | | `Html::openOUTPUT()`/`Html::closeOUTPUT()`|
+| `Html::METER()`| Element        | `Html::ELEMENT('TEMPLATE')` | | `Html::openPROGRESS()`/`Html::closePROGRESS()`|
+| `Html::OBJECT()`| Element        | `Html::ELEMENT('TIME')` |  | `Html::openSVG()`/`Html::closeSVG()`|
+| `Html::OPTGROUP()`| Element        | `Html::ELEMENT('VAR')` |  | `Html::openTEMPLATE()`/`Html::closeTEMPLATE()`|
+| `Html::OUTPUT()`| Element        | `Html::ELEMENT('UL')` |  | `Html::openTIME()`/`Html::closeTIME()`|
+| `Html::PROGRESS()`| Element        | `Html::ELEMENT('OL')` |  | `Html::openVAR()`/`Html::closeVAR()`|
+| `Html::SVG()`| Element        | `Html::ELEMENT('LI')` |   | `Html::openUL()`/`Html::closeUL()`|
+| `Html::TEMPLATE()`| Element        | `Html::ELEMENT('TABLE')` | | `Html::openOL()`/`Html::closeOL()`|
+| `Html::TIME()`| Element        | `Html::ELEMENT('TR')`    | | `Html::openLI()`/`Html::closeLI()`|
+| `Html::VAR()`| Element        | `Html::ELEMENT('TD')`    |  | `Html::openTABLE()`/`Html::closeTABLE()`|
+| `Html::UL()`| Element        | `Html::ELEMENT('TH')`|  | `Html::openTR()`/`Html::closeTR()`|
+| `Html::OL()`| Element        | `Html::ELEMENT('LEGEND')`    |  | `Html::openTD()`/`Html::closeTD()`|
+| `Html::LI()`| Element        | `Html::ELEMENT('FIELDSET')`    |  | `Html::openTH()`/`Html::closeTH()`|
+| `Html::TABLE()`| Element        | `Html::ELEMENT('TBODY')`    |  | `Html::openLEGEND()`/`Html::closeLEGEND()`|
+| `Html::TR()`| Element        | `Html::ELEMENT('TFOOT')` |   | `Html::openFIELDSET()`/`Html::closeFIELDSET()`|
+| `Html::TD()`| Element        | `Html::ELEMENT('THEAD')` |  | `Html::openTBODY()`/`Html::closeTBODY()`|
+| `Html::TH()`| Element        | `Html::ELEMENT('SPAN')` |  | `Html::openTFOOT()`/`Html::closeTFOOT()`|
+| `Html::LEGEND()`| Element        | `Html::ELEMENT('EM')` |  | `Html::openTHEAD()`/`Html::closeTHEAD()`|
+| `Html::FIELDSET()`| Element        | `Html::ELEMENT('B')` |  | `Html::openSPAN()`/`Html::closeSPAN()`|  
+| `Html::TBODY()`| Element        | `Html::ELEMENT('I')` |    | `Html::openEM()`/`Html::closeEM()`|
+| `Html::TFOOT()`| Element        | `Html::ELEMENT('SMALL')` |  | `Html::openB()`/`Html::closeB()`|
+| `Html::THEAD()`| Element        | `Html::ELEMENT('MARQUEE')`    | | `Html::openI()`/`Html::closeI()`|
+| `Html::SPAN()`| Element        | `Html::ELEMENT('CENTER')` |  | `Html::openSMALL()`/`Html::closeSMALL()`|
+| `Html::EM()`| Element        | `Html::ELEMENT('CODE')` |   | `Html::openSTRIKE()`/`Html::closeSTRIKE()`|
+| `Html::B()`| Element        | `Html::ELEMENT('ABBR')` |  | `Html::openMARQUEE()`/`Html::closeMARQUEE()`|
+| `Html::I()`| Element        | `Html::ELEMENT('MAP')` |   | `Html::openCENTER()`/`Html::closeCENTER()`|
+| `Html::SMALL()`| Element        | `Html::ELEMENT('CANVAS')` |  | `Html::openABBR()`/`Html::closeABBR()`|
+| `Html::MARQUEE()`| Element        | `Html::ELEMENT('CITE')` |  | `Html::openMAP()`/`Html::closeMAP()`|
+| `Html::CENTER()`| Element        | `Html::ELEMENT('DATA')` |  | `Html::openCANVAS()`/`Html::closeCANVAS()`|
+| `Html::CODE()`| Element        | `Html::ELEMENT('DL')` |    | `Html::openCITE()`/`Html::closeCITE()`|
+| `Html::ABBR()`| Element        | `Html::ELEMENT('DT')` |  | |`Html::openDATA()`/`Html::closeDATA()`|
+| `Html::MAP()`| Element        | `Html::ELEMENT('DD')` |   | |`Html::openDL()`/`Html::closeDL()`|
+| `Html::CANVAS()`| Element        | `Html::ELEMENT('INS')` | |`Html::openDT()`/`Html::closeDT()`|
+| `Html::CITE()`| Element        | `Html::ELEMENT('DEL')` |  |`Html::openDD()`/`Html::closeDD()`|
+| `Html::DATA()`| Element        | `Html::ELEMENT('KBD')` |  |`Html::openDFN()`/`Html::closeDFN()`|
+| `Html::DL()`| Element        | `Html::ELEMENT('MARK')` |  |`Html::openINS()`/`Html::closeINS()`|
+| `Html::DT()`| Element        | `Html::ELEMENT('PRE')` |   |`Html::openDEL()`/`Html::closeDEL()`|
+| `Html::DD()`| Element        | `Html::ELEMENT('RT')`    |  |`Html::openKBD()`/`Html::closeKBD()`|
+| `Html::DFN()`| Element        | `Html::ELEMENT('RP')` |   |`Html::openMARK()`/`Html::closeMARK()`|
+| `Html::INS()`| Element        | `Html::ELEMENT('S')` |   |`Html::openPRE()`/`Html::closePRE()`|
+| `Html::DEL()`| Element        | `Html::ELEMENT('SAMP')` |  |`Html::openRT()`/`Html::closeRT()`|
+| `Html::KBD()`| Element        | `Html::ELEMENT('STRONG')` |  |`Html::openRP()`/`Html::closeRP()`|
+| `Html::MARK()`| Element        | `Html::ELEMENT('SUB')`    |   |`Html::openS()`/`Html::closeS()`|
+| `Html::PRE()`| Element        | `Html::ELEMENT('SUP')` |   |`Html::openSAMP()`/`Html::closeSAMP()`|
+| `Html::RT()`| Element        | `Html::ELEMENT('WBR')`    |  |`Html::openSTRONG()`/`Html::closeSTRONG()`|
+| `Html::RP()`| Element        | `Html::ELEMENT('Q')` |   |`Html::openSUB()`/`Html::closeSUB()`|
+| `Html::S()`| Element        | `Html::ELEMENT('HEAD')` |  |`Html::openSUP()`/`Html::closeSUP()`|
+| `Html::SAMP()`| Element        | `Html::ELEMENT('TITLE')`  |  |`Html::openWBR()`/`Html::closeWBR()`|
+| `Html::STRONG()`| Element        | `Html::ELEMENT('BODY')` |  |`Html::openQ()`/`Html::closeQ()`|
+| `Html::SUB()`| Element        | `Html::ELEMENT('HTML')`    |  |`Html::openHEAD()`/`Html::closeHEAD()`|
+| `Html::SUP()`| Element        | `Html::ELEMENT('BLOCKQUOTE')`    |  |`Html::openTITLE()`/`Html::closeTITLE()`|
+| `Html::WBR()`| Element        |       |  |`Html::openBODY()`/`Html::closeBODY()`|
+| `Html::Q()`| Element          |       |  |`Html::opennoHTML()`/`Html::closenoHTML()`|
 | `Html::HEAD()`| Element        |  |
 | `Html::TITLE()`| Element        |  |
 | `Html::BODY()`| Element        |  |
