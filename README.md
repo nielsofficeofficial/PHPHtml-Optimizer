@@ -20,6 +20,19 @@ $Html = new  \PHPHtml\CodeOptimizer\Html();
 $this->$Html->H2('Test H2');
 
 </pre>
+<h4>Folder Structure:</h4>
+<pre>
+|- root folder
+  |- library
+    |- PHPHtml-Optimizer
+       |- onClass
+       |- onPage
+       |- PHPHtml-optimizer.php
+       |- prop.php
+  |- assets
+  |- includes
+  |- etc..
+  </pre>
 
 <h4>Sample Code | PHP with HTML Default (Wrapping Html)/Procedural</h4>
 <pre>
