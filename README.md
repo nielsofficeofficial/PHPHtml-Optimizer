@@ -20,9 +20,7 @@ To optimized a codes is a hassle and heavy load burden in programming, PHPHtml-O
 $Html = new  \PHPHtml\CodeOptimizer\Html();  
 ...
 echo $Html->H2('Test H2');
- 
 # OR
- 
 USE  \PHPHtml\CodeOptimizer\Html AS MyProjectName; 
 ...
 $Html = NEW MyProjectName();
