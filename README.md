@@ -16,7 +16,6 @@ To optimized a codes is a hassle and heavy load burden in programming, PHPHtml-O
 
 <h5>Usage: withinClass | Instantiate Class Methods</h5>
 <pre>
-
 $Html = new  \PHPHtml\CodeOptimizer\Html();  
 ...
 echo $Html->H2('Test H2');
@@ -26,7 +25,6 @@ USE  \PHPHtml\CodeOptimizer\Html AS MyProjectName;
 $Html = NEW MyProjectName();
 ...
 echo $Html->H2('Test H2');
-  
 </pre>
 
 <h5>On Page | Static Methods</h5>
