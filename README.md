@@ -14,7 +14,22 @@ To optimized a codes is a hassle and heavy load burden in programming, PHPHtml-O
 | `CLASS_ASSOC`  | Is a Paramenter that will use and position to the very end of function or methods none/Associated |
 | `FUNC_ASSOC`   | Is a Paramenter that will use and position to the very end of function or methods none/Associated |
 
+<h5>Usage: withinClass | Instantiate Class Methods</h5>
+<pre>
 
+$Html = new  \PHPHtml\CodeOptimizer\Html();  
+...
+echo $Html->H2('Test H2');
+ 
+# OR
+ 
+USE  \PHPHtml\CodeOptimizer\Html AS MyProjectName; 
+...
+$Html = NEW MyProjectName();
+...
+echo $Html->H2('Test H2');
+  
+</pre>
 
 <h5>On Page | Static Methods</h5>
 
