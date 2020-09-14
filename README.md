@@ -18,102 +18,102 @@ To optimized a codes is a hassle and heavy load burden in programming, PHPHtml-O
 
 <h5>On Page | Static Methods</h5>
 
-| non/ASSOCIATED | HTML/Descript. | Right-aligned |
-|:---            |:---            |     :---:     |
-| `Html::BREAK()`  | Break          | git status    |
-| `Html::LINE()`   | Line           | git diff      |
-| `Html::STRING()` | wout/Element   | git status    |
-| `Html::H1()`     | Heading 1      | git status    |
-| `Html::H2()`     | Heading 2      | git status    |
-| `Html::H3()`     | Heading 3      | git status    |
-| `Html::H4()`     | Heading 4      | git status    |
-| `Html::H5()`     | Heading 5      | git status    |
-| `Html::H6()`     | Heading 6      | git status    |
-| `Html::DIV()`    | Element        | git status    |
-| `Html::P()`      | Paragraph      | git status    |
-| `Html::BUTTON()` | Element        | git status    | 
-| `Html::A()`      | Link Element   | git status    | 
-| `Html::IFRAME()` | Element        | git status    | 
-| `Html::IFRAME()` | Element        | git status    | 
-| `Html::MAIN()`   | Element        | git status    | 
-| `Html::NAV()`    | Element        | git status    | 
-| `Html::SELECT()` | Element        | git status    | 
-| `Html::FORM()`   | Element        | git status    | 
-| `Html::PICTURE()`| Element        | git status    | 
-| `Html::SECTION()`| Element        | git status    | 
-| `Html::TEXTAREA()`| Element        | git status    | 
-| `Html::AUDIO()`| Element        | git status    | 
-| `Html::VIDEO()`| Element        | git status    | 
-| `Html::ADDRESS()`| Element        | git status    | 
-| `Html::COLGROUP()`| Element        | git status    | 
-| `Html::BDI()`| Element        | git status    | 
-| `Html::BDO()`| Element        | git status    | 
-| `Html::BLOCKQUOTE()`| Element        | git status    | 
-| `Html::CAPTION()`| Element        | git status    | 
-| `Html::LABEL()`| Element        | git status    | 
-| `Html::DATALIST()`| Element        | git status    |
-| `Html::DETAILS()`| Element        | git status    |
-| `Html::SUMMARY()`| Element        | git status    |
-| `Html::DIALOG()`| Element        | git status    |
-| `Html::OPTION()`| Element        | git status    |
-| `Html::FIGURE()`| Element        | git status    |
-| `Html::FIGCAPTION()`| Element        | git status    |
-| `Html::METER()`| Element        | git status    |
-| `Html::OBJECT()`| Element        | git status    |
-| `Html::OPTGROUP()`| Element        | git status    |
-| `Html::OUTPUT()`| Element        | git status    |
-| `Html::PROGRESS()`| Element        | git status    |
-| `Html::SVG()`| Element        | git status    |
-| `Html::TEMPLATE()`| Element        | git status    |
-| `Html::TIME()`| Element        | git status    |
-| `Html::VAR()`| Element        | git status    |
-| `Html::UL()`| Element        | git status    |
-| `Html::OL()`| Element        | git status    |
-| `Html::LI()`| Element        | git status    |
-| `Html::TABLE()`| Element        | git status    |
-| `Html::TR()`| Element        | git status    |
-| `Html::TD()`| Element        | git status    |
-| `Html::TH()`| Element        | git status    |
-| `Html::LEGEND()`| Element        | git status    |
-| `Html::FIELDSET()`| Element        | git status    |
-| `Html::TBODY()`| Element        | git status    |
-| `Html::TFOOT()`| Element        | git status    |
-| `Html::THEAD()`| Element        | git status    |
-| `Html::SPAN()`| Element        | git status    |
-| `Html::EM()`| Element        | git status    |
-| `Html::B()`| Element        | git status    |
-| `Html::I()`| Element        | git status    |
-| `Html::SMALL()`| Element        | git status    |
-| `Html::MARQUEE()`| Element        | git status    |
-| `Html::CENTER()`| Element        | git status    |
-| `Html::CODE()`| Element        | git status    |
-| `Html::ABBR()`| Element        | git status    |
-| `Html::MAP()`| Element        | git status    |
-| `Html::CANVAS()`| Element        | git status    |
-| `Html::CITE()`| Element        | git status    |
-| `Html::DATA()`| Element        | git status    |
-| `Html::DL()`| Element        | git status    |
-| `Html::DT()`| Element        | git status    |
-| `Html::DD()`| Element        | git status    |
-| `Html::DFN()`| Element        | git status    |
-| `Html::INS()`| Element        | git status    |
-| `Html::DEL()`| Element        | git status    |
-| `Html::KBD()`| Element        | git status    |
-| `Html::MARK()`| Element        | git status    |
-| `Html::PRE()`| Element        | git status    |
-| `Html::RT()`| Element        | git status    |
-| `Html::RP()`| Element        | git status    |
-| `Html::S()`| Element        | git status    |
-| `Html::SAMP()`| Element        | git status    |
-| `Html::STRONG()`| Element        | git status    |
-| `Html::SUB()`| Element        | git status    |
-| `Html::SUP()`| Element        | git status    |
-| `Html::WBR()`| Element        | git status    |
-| `Html::Q()`| Element        | git status    |
-| `Html::HEAD()`| Element        | git status    |
-| `Html::TITLE()`| Element        | git status    |
-| `Html::BODY()`| Element        | git status    |
-| `Html::noHTML()`| Element        | git status    |
+| non/ASSOCIATED | HTML/Descript. | ASSOCIATED |
+|:---            |:---            |:---            |
+| `Html::BREAK()`  | Break          | Html::ELEMENT('H1')    |
+| `Html::LINE()`   | Line           | Html::ELEMENT('H2')    |
+| `Html::STRING()` | wout/Element   | Html::ELEMENT('H3')    |
+| `Html::H1()`     | Heading 1      | Html::ELEMENT('H4')    |
+| `Html::H2()`     | Heading 2      | Html::ELEMENT('H5')    |
+| `Html::H3()`     | Heading 3      | Html::ELEMENT('H6')    |
+| `Html::H4()`     | Heading 4      | Html::ELEMENT('H1')    |
+| `Html::H5()`     | Heading 5      | Html::ELEMENT('BUTTON')|
+| `Html::H6()`     | Heading 6      | Html::ELEMENT('A')     |
+| `Html::DIV()`    | Element        | Html::ELEMENT('IFRAME')|
+| `Html::P()`      | Paragraph      | Html::ELEMENT('MAIN')    |
+| `Html::BUTTON()` | Element        | Html::ELEMENT('NAV')    | 
+| `Html::A()`      | Link Element   | Html::ELEMENT('SELECT')    | 
+| `Html::IFRAME()` | Element        | Html::ELEMENT('FORM') | 
+| `Html::IFRAME()` | Element        | Html::ELEMENT('PICTURE')    | 
+| `Html::MAIN()`   | Element        | Html::ELEMENT('SECTION')    | 
+| `Html::NAV()`    | Element        | Html::ELEMENT('TEXTAREA')    | 
+| `Html::SELECT()` | Element        | Html::ELEMENT('AUDIO')    | 
+| `Html::FORM()`   | Element        | Html::ELEMENT('VIDEO')    | 
+| `Html::PICTURE()`| Element        | Html::ELEMENT('ADDRESS')    | 
+| `Html::SECTION()`| Element        | Html::ELEMENT('COLGROUP')    | 
+| `Html::TEXTAREA()`| Element        | Html::ELEMENT('BDI')    | 
+| `Html::AUDIO()`| Element        | Html::ELEMENT('BDO')    | 
+| `Html::VIDEO()`| Element        | Html::ELEMENT('CAPTION') | 
+| `Html::ADDRESS()`| Element        | Html::ELEMENT('LABEL')    | 
+| `Html::COLGROUP()`| Element        | Html::ELEMENT('DATALIST')    | 
+| `Html::BDI()`| Element        | Html::ELEMENT('DETAILS')    | 
+| `Html::BDO()`| Element        | Html::ELEMENT('SUMMARY') | 
+| `Html::BLOCKQUOTE()`| Element        | Html::ELEMENT('DIALOG') | 
+| `Html::CAPTION()`| Element        | Html::ELEMENT('OPTION') | 
+| `Html::LABEL()`| Element        | Html::ELEMENT('FIGURE') | 
+| `Html::DATALIST()`| Element        | Html::ELEMENT('FIGCAPTION') |
+| `Html::DETAILS()`| Element        | Html::ELEMENT('METER') |
+| `Html::SUMMARY()`| Element        | Html::ELEMENT('OBJECT')    |
+| `Html::DIALOG()`| Element        | Html::ELEMENT('OPTGROUP')    |
+| `Html::OPTION()`| Element        | Html::ELEMENT('OUTPUT')    |
+| `Html::FIGURE()`| Element        | Html::ELEMENT('PROGRESS')    |
+| `Html::FIGCAPTION()`| Element        | Html::ELEMENT('SVG')    |
+| `Html::METER()`| Element        | Html::ELEMENT('TEMPLATE') |
+| `Html::OBJECT()`| Element        | Html::ELEMENT('TIME') |
+| `Html::OPTGROUP()`| Element        | Html::ELEMENT('VAR') |
+| `Html::OUTPUT()`| Element        | Html::ELEMENT('UL') |
+| `Html::PROGRESS()`| Element        | Html::ELEMENT('OL') |
+| `Html::SVG()`| Element        | Html::ELEMENT('LI') |
+| `Html::TEMPLATE()`| Element        |Html::ELEMENT('TABLE') |
+| `Html::TIME()`| Element        | Html::ELEMENT('TR')    |
+| `Html::VAR()`| Element        | Html::ELEMENT('TD')    |
+| `Html::UL()`| Element        | Html::ELEMENT('TH')|
+| `Html::OL()`| Element        | Html::ELEMENT('LEGEND')    |
+| `Html::LI()`| Element        | Html::ELEMENT('FIELDSET')    |
+| `Html::TABLE()`| Element        | Html::ELEMENT('TBODY')    |
+| `Html::TR()`| Element        | Html::ELEMENT('TFOOT') |
+| `Html::TD()`| Element        | Html::ELEMENT('THEAD') |
+| `Html::TH()`| Element        | Html::ELEMENT('SPAN') |
+| `Html::LEGEND()`| Element        | Html::ELEMENT('EM') |
+| `Html::FIELDSET()`| Element        | Html::ELEMENT('B') |
+| `Html::TBODY()`| Element        | Html::ELEMENT('I') |
+| `Html::TFOOT()`| Element        | Html::ELEMENT('SMALL') |
+| `Html::THEAD()`| Element        | Html::ELEMENT('MARQUEE')    |
+| `Html::SPAN()`| Element        | Html::ELEMENT('CENTER') |
+| `Html::EM()`| Element        | Html::ELEMENT('CODE') |
+| `Html::B()`| Element        | Html::ELEMENT('ABBR') |
+| `Html::I()`| Element        | Html::ELEMENT('MAP') |
+| `Html::SMALL()`| Element        | Html::ELEMENT('CANVAS') |
+| `Html::MARQUEE()`| Element        | Html::ELEMENT('CITE') |
+| `Html::CENTER()`| Element        | Html::ELEMENT('DATA')|
+| `Html::CODE()`| Element        | Html::ELEMENT('DL') |
+| `Html::ABBR()`| Element        | Html::ELEMENT('DT') |
+| `Html::MAP()`| Element        | Html::ELEMENT('DD') |
+| `Html::CANVAS()`| Element        | Html::ELEMENT('INS')    |
+| `Html::CITE()`| Element        | Html::ELEMENT('DEL') |
+| `Html::DATA()`| Element        | Html::ELEMENT('KBD') |
+| `Html::DL()`| Element        | Html::ELEMENT('MARK') |
+| `Html::DT()`| Element        | Html::ELEMENT('PRE') |
+| `Html::DD()`| Element        | Html::ELEMENT('RT')    |
+| `Html::DFN()`| Element        | Html::ELEMENT('RP') |
+| `Html::INS()`| Element        | Html::ELEMENT('S') |
+| `Html::DEL()`| Element        | Html::ELEMENT('SAMP') |
+| `Html::KBD()`| Element        | Html::ELEMENT('STRONG') |
+| `Html::MARK()`| Element        | Html::ELEMENT('SUB')    |
+| `Html::PRE()`| Element        | Html::ELEMENT('SUP') |
+| `Html::RT()`| Element        | Html::ELEMENT('WBR')    |
+| `Html::RP()`| Element        | Html::ELEMENT('Q') |
+| `Html::S()`| Element        | Html::ELEMENT('HEAD') |
+| `Html::SAMP()`| Element        | Html::ELEMENT('TITLE')    |
+| `Html::STRONG()`| Element        | Html::ELEMENT('BODY') |
+| `Html::SUB()`| Element        | Html::ELEMENT('HTML')    |
+| `Html::SUP()`| Element        | Html::ELEMENT('BLOCKQUOTE')    |
+| `Html::WBR()`| Element        |     |
+| `Html::Q()`| Element        |  |
+| `Html::HEAD()`| Element        |  |
+| `Html::TITLE()`| Element        |  |
+| `Html::BODY()`| Element        |  |
+| `Html::noHTML()`| Element        |     |
 
 
 
