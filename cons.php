@@ -92,8 +92,6 @@
    |
    |
    */ 
-  define('__GET_VALIDATE_FILE_CLASS_EXIST__', '/onClass/Html.php');
-
   define('__GET_VALIDATE_FILE_PAGE_EXIST__', '/onPage/Html.php');  
   
   /*
