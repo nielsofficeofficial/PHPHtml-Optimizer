@@ -21,17 +21,17 @@ To optimized a codes is a hassle and heavy load burden in programming, PHPHtml-O
 |Opt./ASSOCIATED | HTML/Descript. | ASSOCIATED | Inline noneClosing/ASSOCIATED |  none/ASSOCIATED |
 |:---            |:---            |:---            |:---            |:---            |
 | `Html::BREAK()`  | Break          | `Html::ELEMENT('H1')`    |`Html::_ELEMENT('my_input','INPUT')`|`Html::openH1()`/`Html::closeH1()`|
-| `Html::LINE()`   | Line           | `Html::ELEMENT('H2')`    |`Html::_ELEMENT('my_track','track')`|
-| `Html::STRING()` | wout/Element   | `Html::ELEMENT('H3')`    |`Html::_ELEMENT('my_circle','circle')`|
-| `Html::H1()`     | Heading 1      | `Html::ELEMENT('H4')`    |`Html::_ELEMENT('my_param','param')`|
-| `Html::H2()`     | Heading 2      | `Html::ELEMENT('H5')`    |`Html::_ELEMENT('my_meta','meta')`|
-| `Html::H3()`     | Heading 3      | `Html::ELEMENT('H6')`    |`Html::_ELEMENT('my_link','link')`|
-| `Html::H4()`     | Heading 4      | `Html::ELEMENT('H1')`    |`Html::_ELEMENT('my_img','img')`|
-| `Html::H5()`     | Heading 5      | `Html::ELEMENT('BUTTON')` | `Html::_ELEMENT('my_embed','embed')`|
-| `Html::H6()`     | Heading 6      | `Html::ELEMENT('A')`     | `Html::_ELEMENT('my_option','option')`|
-| `Html::DIV()`    | Element        | `Html::ELEMENT('IFRAME')`| `Html::_ELEMENT('my_col','col')`|
-| `Html::P()`      | Paragraph      | `Html::ELEMENT('MAIN')`    | `Html::_ELEMENT('my_base','base')`|
-| `Html::BUTTON()` | Element        | `Html::ELEMENT('NAV')`    | `Html::_ELEMENT('my_aside','aside')`|
+| `Html::LINE()`   | Line           | `Html::ELEMENT('H2')`    |`Html::_ELEMENT('my_track','track')`|`Html::openH2()`/`Html::closeH2()`|
+| `Html::STRING()` | wout/Element   | `Html::ELEMENT('H3')`    |`Html::_ELEMENT('my_circle','circle')`|`Html::openH3()`/`Html::closeH3()`|
+| `Html::H1()`     | Heading 1      | `Html::ELEMENT('H4')`    |`Html::_ELEMENT('my_param','param')`|`Html::openH4()`/`Html::closeH4()`|
+| `Html::H2()`     | Heading 2      | `Html::ELEMENT('H5')`    |`Html::_ELEMENT('my_meta','meta')`|`Html::openH5()`/`Html::closeH5()`|
+| `Html::H3()`     | Heading 3      | `Html::ELEMENT('H6')`    |`Html::_ELEMENT('my_link','link')`|`Html::openH6()`/`Html::closeH6()`|
+| `Html::H4()`     | Heading 4      | `Html::ELEMENT('H1')`    |`Html::_ELEMENT('my_img','img')`|`Html::openDIV()`/`Html::closeDIV()`|
+| `Html::H5()`     | Heading 5      | `Html::ELEMENT('BUTTON')` | `Html::_ELEMENT('my_embed','embed')`|`Html::openP()`/`Html::closeP()`|
+| `Html::H6()`     | Heading 6      | `Html::ELEMENT('A')`     | `Html::_ELEMENT('my_option','option')`|`Html::openBUTTON()`/`Html::closeBUTTON()`|
+| `Html::DIV()`    | Element        | `Html::ELEMENT('IFRAME')`| `Html::_ELEMENT('my_col','col')`| `Html::openA()`/`Html::closeA()`|
+| `Html::P()`      | Paragraph      | `Html::ELEMENT('MAIN')`    | `Html::_ELEMENT('my_base','base')`| `Html::openIFRAME()`/`Html::closeIFRAME()`|
+| `Html::BUTTON()` | Element        | `Html::ELEMENT('NAV')`    | `Html::_ELEMENT('my_aside','aside')`|`Html::openMAIN()`/`Html::closeMAIN()`|
 | `Html::A()`      | Link Element   | `Html::ELEMENT('SELECT')`    | `Html::_ELEMENT('my_area','area')`|
 | `Html::IFRAME()` | Element        | `Html::ELEMENT('FORM')` |  `Html::_ELEMENT('my_DOCTYPE','DOCTYPE')`|
 | `Html::IFRAME()` | Element        | `Html::ELEMENT('PICTURE')`    | 
