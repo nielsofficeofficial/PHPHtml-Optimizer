@@ -20,18 +20,18 @@ To optimized a codes is a hassle and heavy load burden in programming, PHPHtml-O
 
 | non/ASSOCIATED | HTML/Descript. | Right-aligned |
 |:---            |:---            |     :---:     |
-| Html::BREAK()  | Break          | git status    |
-| Html::LINE()   | Line           | git diff      |
-| Html::STRING() | w/Elements     | git status    |
-| Html::H1()     | Heading 1      | git status    |
-| Html::H2()     | Heading 2      | git status    |
-| Html::H3()     | Heading 3      | git status    |
-| Html::H4()     | Heading 4      | git status    |
-| Html::H5()     | Heading 5      | git status    |
-| Html::H6()     | Heading 6      | git status    |
-| Html::DIV()    | Element        | git status    |
-| Html::P()      | Paragraph      | git status    |
-| Html::BUTTON() | Element        | git status    | 
+| `Html::BREAK()`  | Break          | git status    |
+| `Html::LINE()`   | Line           | git diff      |
+| `Html::STRING()` | wout/Element   | git status    |
+| `Html::H1()`     | Heading 1      | git status    |
+| `Html::H2()`     | Heading 2      | git status    |
+| `Html::H3()`     | Heading 3      | git status    |
+| `Html::H4()`     | Heading 4      | git status    |
+| `Html::H5()`     | Heading 5      | git status    |
+| `Html::H6()`     | Heading 6      | git status    |
+| `Html::DIV()`    | Element        | git status    |
+| `Html::P()`      | Paragraph      | git status    |
+| `Html::BUTTON()` | Element        | git status    | 
 
 
 
