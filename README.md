@@ -10,9 +10,10 @@ To optimized a codes is a hassle and heavy load burden in programming, PHPHtml-O
 
 | PARAMETER'S | Description |
 | --- | --- |
-| `METHOD_ASSOC` | Is a Paramenter that will use and position to the very end of function or methods |
-| `CLASS_ASSOC`  |  |
-| `FUNC_ASSOC`   |  |
+| `METHOD_ASSOC`
+`CLASS_ASSOC`
+`FUNC_ASSOC`| Is a Paramenter that will use and position to the very end of function or methods |
+
 
 
 
