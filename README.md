@@ -87,9 +87,9 @@ To optimized a codes is a hassle and heavy load burden in programming, PHPHtml-O
 | `Html::MARQUEE()`| Element        | `Html::ELEMENT('CITE')` |  | `Html::openMAP()`/`Html::closeMAP()`|
 | `Html::CENTER()`| Element        | `Html::ELEMENT('DATA')` |  | `Html::openCANVAS()`/`Html::closeCANVAS()`|
 | `Html::CODE()`| Element        | `Html::ELEMENT('DL')` |    | `Html::openCITE()`/`Html::closeCITE()`|
-| `Html::ABBR()`| Element        | `Html::ELEMENT('DT')` |  | |`Html::openDATA()`/`Html::closeDATA()`|
-| `Html::MAP()`| Element        | `Html::ELEMENT('DD')` |   | |`Html::openDL()`/`Html::closeDL()`|
-| `Html::CANVAS()`| Element        | `Html::ELEMENT('INS')` | |`Html::openDT()`/`Html::closeDT()`|
+| `Html::ABBR()`| Element        | `Html::ELEMENT('DT')` |   |`Html::openDATA()`/`Html::closeDATA()`|
+| `Html::MAP()`| Element        | `Html::ELEMENT('DD')` |   |`Html::openDL()`/`Html::closeDL()`|
+| `Html::CANVAS()`| Element        | `Html::ELEMENT('INS')`  |`Html::openDT()`/`Html::closeDT()`|
 | `Html::CITE()`| Element        | `Html::ELEMENT('DEL')` |  |`Html::openDD()`/`Html::closeDD()`|
 | `Html::DATA()`| Element        | `Html::ELEMENT('KBD')` |  |`Html::openDFN()`/`Html::closeDFN()`|
 | `Html::DL()`| Element        | `Html::ELEMENT('MARK')` |  |`Html::openINS()`/`Html::closeINS()`|
