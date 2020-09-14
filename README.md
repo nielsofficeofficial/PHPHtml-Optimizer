@@ -16,5 +16,24 @@ To optimized a codes is a hassle and heavy load burden in programming, PHPHtml-O
 
 
 
-
 <h5>On Page | Static Methods</h5>
+
+| noHTML dynamic static structure 
+  non/WITH CLASS|METHOD|FUNCTION ASSOCIATED  | Center-aligned | Right-aligned |
+|     :---:      |     :---:      |     :---:      |
+| Html::BREAK()  | git status     | git status    |
+| Html::LINE()   | git diff       | git diff      |
+| Html::STRING() |
+| Html::STRING() |
+| Html::H1()     |
+| Html::H3()     |
+| Html::H4()     |
+| Html::H5()     |
+| Html::H6()     |
+| Html::DIV()    |
+| Html::P()      |
+| Html::P()      |
+| Html::BUTTON() |
+
+
+
