@@ -18,21 +18,20 @@ To optimized a codes is a hassle and heavy load burden in programming, PHPHtml-O
 
 <h5>On Page | Static Methods</h5>
 
-| non/ASSOCIATED | Center-aligned | Right-aligned |
-|:---            |     :---:      |     :---:      |
-| Html::BREAK()  | git status     | git status    |
-| Html::LINE()   | git diff       | git diff      |
-| Html::STRING() | git status     | git status    |
-| Html::STRING() | git status     | git status    |
-| Html::H1()     | git status     | git status    |
-| Html::H3()     | git status     | git status    |
-| Html::H4()     | git status     | git status    |
-| Html::H5()     | git status     | git status    |
-| Html::H6()     | git status     | git status    |
-| Html::DIV()    | git status     | git status    |
-| Html::P()      | git status     | git status    |
-| Html::P()      | git status     | git status    |
-| Html::BUTTON() |git status     | git status    | 
+| non/ASSOCIATED | HTML/Descript. | Right-aligned |
+|:---            |:---            |     :---:     |
+| Html::BREAK()  | Break          | git status    |
+| Html::LINE()   | Line           | git diff      |
+| Html::STRING() | w/Elements     | git status    |
+| Html::H1()     | Heading 1      | git status    |
+| Html::H2()     | Heading 2      | git status    |
+| Html::H3()     | Heading 3      | git status    |
+| Html::H4()     | Heading 4      | git status    |
+| Html::H5()     | Heading 5      | git status    |
+| Html::H6()     | Heading 6      | git status    |
+| Html::DIV()    | Element        | git status    |
+| Html::P()      | Paragraph      | git status    |
+| Html::BUTTON() | Element        | git status    | 
 
 
 
