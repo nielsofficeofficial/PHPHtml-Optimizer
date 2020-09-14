@@ -20,7 +20,7 @@ if ( $GetOptimized_ = file_exists(dirname(__FILE__) . '/onPage/Html.php' ) &&
       |
       |
       */ 
-      require_once 'cons.php';
+      require_once 'prop.php';
 
     }  else  {
 
@@ -38,7 +38,7 @@ if ( $GetOptimized_ = file_exists(dirname(__FILE__) . '/onPage/Html.php' ) &&
              |
              |
              */ 
-            require_once 'cons.php';             
+            require_once 'prop.php';             
     		Html::_PERFORM(FILE_HANDLER_MSG);
     	}
     	
