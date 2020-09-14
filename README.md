@@ -5,4 +5,9 @@ When the browser sense that there will no HTML printed the interpreter will exec
 To optimized a codes is a hassle and heavy load burden in programming, PHPHtml-Optimizer will do that for you while you develop your Internet application, with this library will push you driving your codes learning OOP concept to make more effective your codes into your application neat and clean not just clean but beautiful maintenable codes, you can use this library and feel FREE if are comportable.    
 </p>
 
+<h5>
+METHOD_ASSOC - Is a Paramenter that will use and position to the very end of function or methods to work for your Methods. <br />
+CLASS_ASSOC  - Is a Paramenter that will use and position to the very end of function or methods to work for your Class. <br />  
+FUNC_ASSOC   - Is a Paramenter that will use and position to the very end of function or methods to work for your functions.  
+</h5>
 
