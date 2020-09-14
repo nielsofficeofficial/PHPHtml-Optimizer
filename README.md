@@ -18,7 +18,7 @@ To optimized a codes is a hassle and heavy load burden in programming, PHPHtml-O
 
 <h5>On Page | Static Methods</h5>
 
-| non Optional/ASSOCIATED | HTML/Descript. | ASSOCIATED | Inline nonClosing/ASSOCIATED |
+| non Opt./ASSOCIATED | HTML/Descript. | ASSOCIATED | Inline nonClosing/ASSOCIATED |
 |:---            |:---            |:---            |:---            |
 | `Html::BREAK()`  | Break          | `Html::ELEMENT('H1')`    |`Html::_ELEMENT('my_input','INPUT')`|
 | `Html::LINE()`   | Line           | `Html::ELEMENT('H2')`    |`Html::_ELEMENT('my_track','track')`|
