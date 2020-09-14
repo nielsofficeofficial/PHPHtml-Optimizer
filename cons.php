@@ -61,7 +61,10 @@
    |
    |
    */ 
-  define('__DIRECTORY_OPTIMIZER__','/on-page/');
+  define('__DIRECTORY_OPTIMIZER_PAGE__','/onPage/');
+
+  define('__DIRECTORY_OPTIMIZER_CLASS__','/onClass/');
+
 
   /*
    |
@@ -83,6 +86,22 @@
    |
    |
    |
+   | get validate file exist
+   |
+   |
+   |
+   |
+   */ 
+  define('__GET_VALIDATE_FILE_CLASS_EXIST__', '/onClass/Html.php');
+
+  define('__GET_VALIDATE_FILE_PAGE_EXIST__', '/onPage/Html.php');  
+  
+  /*
+   |
+   |
+   |
+   |
+   |
    | get root file
    |
    |
@@ -90,7 +109,75 @@
    |
    */ 
   define('__GET_FROM_DIR_ROOT__', __DIR__ );
+  
+ 
 
 
-// Get Msg
+ 
+ /**
+ *
+ * @var $path_defined
+ * @package cpx_
+ * @since  06.08.2020 
+ *
+ **/
+function loader_framwork() {
+
+/*
+|
+|
+|
+|
+|  
+| get Project PrefixName
+|
+|
+|
+|
+*/     
+/**
+*@since 06.082020
+**/
+ $project_Name   = 'PHPHtml';
+
+/*
+|
+|
+|
+|
+|  
+| get Project Class PrefixName
+|
+|
+|
+|
+*/     
+/**
+*@since 06.082020
+**/     
+ $project_Folder = 'CodeOptimizer';
+
+/*
+|
+|
+|
+|
+|  
+| get commit ferform name
+|
+|
+|
+|
+*/  
+ return $framework_prefix 
+
+/**
+ *@since 06.082020
+ **/ 
+ 
+ = "{$project_Name}\\{$project_Folder}\\";
+  
+} 
+
+// Get Error Msg
 const FILE_HANDLER_MSG = 'Directory or files is not exist';

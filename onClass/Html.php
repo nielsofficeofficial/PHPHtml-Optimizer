@@ -1,5 +1,7 @@
 <?php 
 
+  namespace PHPHtml\CodeOptimizer;
+
 /**
  * @copyright (c) 2020-2021 PHPHtml-Optimizer v1.0 Cooked by nielsoffice
  *
