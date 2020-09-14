@@ -216,8 +216,9 @@ html::H1("Sample_echo ", my_htmattr(),'MyID','MyClass','', NULL);
 
 
 
-
-
+<br />
+This Library is secure and fully free ready to use, If you see vulnerability you can email me: @ nieldigitalsolution@gmail.com
+Thanks and good luck! 
 
 
 
