@@ -10,17 +10,17 @@ To optimized a codes is a hassle and heavy load burden in programming, PHPHtml-O
 
 | PARAMETER'S    | Description |
 | ---            | ---         |
-| `METHOD_ASSOC` | Is a Paramenter that will use and position to the very end of function or methods |
-| `CLASS_ASSOC`  | Is a Paramenter that will use and position to the very end of function or methods |
-| `FUNC_ASSOC`   | Is a Paramenter that will use and position to the very end of function or methods |
+| `METHOD_ASSOC` | Is a Paramenter that will use and position to the very end of function or methods none/Associated |
+| `CLASS_ASSOC`  | Is a Paramenter that will use and position to the very end of function or methods none/Associated |
+| `FUNC_ASSOC`   | Is a Paramenter that will use and position to the very end of function or methods none/Associated |
 
 
 
 <h5>On Page | Static Methods</h5>
 
-|Opt./ASSOCIATED | HTML/Descript. | ASSOCIATED | Inline noneClosing/ASSOCIATED |
-|:---            |:---            |:---            |:---            |
-| `Html::BREAK()`  | Break          | `Html::ELEMENT('H1')`    |`Html::_ELEMENT('my_input','INPUT')`|
+|Opt./ASSOCIATED | HTML/Descript. | ASSOCIATED | Inline noneClosing/ASSOCIATED |  none/ASSOCIATED |
+|:---            |:---            |:---            |:---            |:---            |
+| `Html::BREAK()`  | Break          | `Html::ELEMENT('H1')`    |`Html::_ELEMENT('my_input','INPUT')`|`Html::openH1()`/`Html::closeH1()`|
 | `Html::LINE()`   | Line           | `Html::ELEMENT('H2')`    |`Html::_ELEMENT('my_track','track')`|
 | `Html::STRING()` | wout/Element   | `Html::ELEMENT('H3')`    |`Html::_ELEMENT('my_circle','circle')`|
 | `Html::H1()`     | Heading 1      | `Html::ELEMENT('H4')`    |`Html::_ELEMENT('my_param','param')`|
