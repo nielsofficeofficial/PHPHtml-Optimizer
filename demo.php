@@ -34,7 +34,8 @@ require_once 'PHPHtml-Optimizer.php';
  # Usage within The CLass
   
 
-  $userObj = new  \PHPHtml\CodeOptimizer\Html();  
+  $userObj = new  \PHPHtml\CodeOptimizer\Html();  // or  USE  \PHPHtml\CodeOptimizer\Html AS MyProjectName; $Project = NEW MyProjectName();
+
   echo $userObj ->H2('Test H2');
 
 #############################################################################################################

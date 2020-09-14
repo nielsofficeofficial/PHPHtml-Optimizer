@@ -102,6 +102,34 @@
    |
    |
    |
+   | get Project suffix
+   |
+   |
+   |
+   |
+   */ 
+  define('__GET_LOADER_PROJECT_SUFFIX__', 'PHPHtml' );
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get class suffix
+   |
+   |
+   |
+   |
+   */ 
+  define('__GET_LOADER_CLASS_SUFFIX__', 'CodeOptimizer');
+
+   /*
+   |
+   |
+   |
+   |
+   |
    | get root file
    |
    |
@@ -110,9 +138,6 @@
    */ 
   define('__GET_FROM_DIR_ROOT__', __DIR__ );
   
- 
-
-
  
  /**
  *
@@ -138,7 +163,7 @@ function loader_framwork() {
 /**
 *@since 06.082020
 **/
- $project_Name   = 'PHPHtml';
+ $project_Name   = __GET_LOADER_PROJECT_SUFFIX__;
 
 /*
 |
@@ -155,7 +180,7 @@ function loader_framwork() {
 /**
 *@since 06.082020
 **/     
- $project_Folder = 'CodeOptimizer';
+ $project_Folder = __GET_LOADER_CLASS_SUFFIX__;
 
 /*
 |
