@@ -12,9 +12,6 @@
             "homepage": "https://www.facebook.com/pg/nielsofficeofficial",
             "role": "Freelancer - Web Designer/PHPDeveloper"
         }
-    ],
-    "require": {
-        "php": ">=7.0"
-    }
+    ]
     
 }
