@@ -47,6 +47,7 @@ $html  .= "<ul id=\\"My_id_ParentTags\\" class=\\"MyClass\\">";
      $datas[] = "<li class=\"col-sm-3\" id=\"MyList\">Count Number. " $i . "</li>";  
     }
     return implode('', $datas); 
+    
 $html  .= "</ul>";
 
 // Loop and excuted
