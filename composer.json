@@ -1,7 +1,7 @@
 {
     "name": "phphtml-optimizer/phphtml-optimizer",
     "type": "library",
-    "description": "Make your codes beautiful and maintainable",
+    "description": "Make your codes beautiful and maintainable.",
     "keywords": ["phphtml","phphtml-optimizer"],
     "homepage": "https://github.com/nielsofficeofficial/PHPHtml-Optimizer",
     "license": "MIT",
