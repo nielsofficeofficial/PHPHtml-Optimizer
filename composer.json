@@ -1,10 +1,10 @@
 {
     "name": "phphtml-optimizer/phphtml-optimizer",
     "type": "library",
-    "description": "Make your codes beautiful and maintainable for PHP 7.0++",
+    "description": "Make your codes beautiful and maintainable",
     "keywords": ["phphtml","phphtml-optimizer"],
     "homepage": "https://github.com/nielsofficeofficial/PHPHtml-Optimizer",
-    "license": "GPL",
+    "license": "MIT",
     "authors": [
         {
             "name": "nielsoffice",
