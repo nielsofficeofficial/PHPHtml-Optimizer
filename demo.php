@@ -8,7 +8,7 @@ require_once 'PHPHtml-Optimizer.php';
   
     for ($i = 1; $i <= 10; $i++) 
     {
-       $datas[] = html::ELEMENT('LI',$i,NULL,'myID_echo_li',NULL,NULL); 
+       $datas[] = html::ELEMENT('LI',$i,NULL,'myID',NULL,NULL); 
     }
   
     return implode('', $datas);  
@@ -26,17 +26,13 @@ require_once 'PHPHtml-Optimizer.php';
   }
 
   // ASSOCIATED WITH FUNCTION | METHOD | CLASS it is seta s return (need echo or print)  
-  // 1  return within the function instead echo
-  echo "A ". Html::ELEMENT('UL',my_data(),my_htmattr(),'with_myID_echo_h1','with_my_class_echo','with_label'); 
+  echo "A ". Html::ELEMENT('UL',my_data(),my_htmattr(),'MyID','MyClass','MyLabel'); 
   
 #############################################################################################################
  
  # Usage within The CLass
-  
-
-  $userObj = new  \PHPHtml\CodeOptimizer\Html();  // or  USE  \PHPHtml\CodeOptimizer\Html AS MyProjectName; $Project = NEW MyProjectName();
-
-  echo $userObj->H2('Test H2');
+  $Html = new  \PHPHtml\CodeOptimizer\Html();  // or  USE  \PHPHtml\CodeOptimizer\Html AS MyProjectName; $Project = NEW MyProjectName();
+  echo $Html->H2('Test H2');
 
 #############################################################################################################
 
