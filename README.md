@@ -24,7 +24,7 @@ $this->$Html->H2('Test H2');
 <pre>
 // Run CLI check your directory
 ~ c:/path/www/project/ 
-
+<br />
 // Then run the codes
 composer require phphtml-optimizer/phphtml-optimizer 
 </pre>
