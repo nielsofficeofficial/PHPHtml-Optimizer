@@ -4,6 +4,7 @@
     "description": "Make your codes beautiful and maintainable for PHP 7.0++",
     "keywords": ["phphtml","phphtml-optimizer"],
     "homepage": "https://github.com/nielsofficeofficial/PHPHtml-Optimizer",
+    "license": "GPL",
     "authors": [
         {
             "name": "nielsoffice",
