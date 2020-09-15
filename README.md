@@ -5,7 +5,7 @@
 When the browser sense that there will no HTML printed the interpreter will execute your codes once at the same time, not section by section at that point your data will be rendered accurately.<br /><br />
 To optimize code is a hassle and heavy load burden in programming, PHPHtml-Optimizer will do that for you while you develop your Internet application, with this library will push you driving your codes learning the OOP concept to make more effective your codes into your application neat and clean not just clean but beautiful maintainable codes, you can use this library and feel FREE if you are comfortable.    
 </p>
-<h4>Installing PHPHtml-Optimizer</h4>
+<h4>Installing PHPHtml-Optimizer | Direct Download</h4>
 <pre>
 // Require file in header file or in every page where you will use. 
 // This is for Static method settup which most use on pages
@@ -20,6 +20,15 @@ $Html = new  \PHPHtml\CodeOptimizer\Html();
 $this->$Html->H2('Test H2');
 
 </pre>
+<h4>Installing PHPHtml-Optimizer | w/Composer</h4>
+<pre>
+// Run CLI check your directory
+c:/path/www/project/
+
+// Then run the codes
+composer require phphtml-optimizer/phphtml-optimizer
+</pre>
+
 <h4>Folder Structure:</h4>
 <pre>
 |- root folder
