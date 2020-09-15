@@ -21,13 +21,14 @@ $this->$Html->H2('Test H2');
 
 </pre>
 <h4>Installing PHPHtml-Optimizer | w/Composer</h4>
-`
+<pre>
 // Run CLI check your directory
 ~ c:/path/www/project/ 
 
 // Then run the codes
 composer require phphtml-optimizer/phphtml-optimizer 
-`
+</pre>
+
 <h4>Folder Structure:</h4>
 <pre>
 |- root folder
