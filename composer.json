@@ -1,5 +1,5 @@
 {
-    "name": "PHPHtmlOptimizer/PHPHtmlOptimizer",
+    "name": "phphtmloptimizer/phphtmloptimizer",
     "type": "library",
     "description": "Logging for PHP 7.0++",
     "keywords": ["log","logging"],
