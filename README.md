@@ -25,8 +25,9 @@ $this->$Html->H2('Test H2');
 |- root folder
   |- library
     |- PHPHtml-Optimizer
-       |- onClass
-       |- onPage
+       |- core 
+          |- onClass
+          |- onPage
        |- PHPHtml-optimizer.php
        |- prop.php
   |- assets
