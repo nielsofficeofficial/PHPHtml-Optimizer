@@ -1,13 +1,12 @@
 {
     "name": "phphtml-optimizer/phphtml-optimizer",
     "type": "library",
-    "description": "Logging for PHP 7.0++",
+    "description": "Make your codes beautiful and maintainable for PHP 7.0++",
     "keywords": ["phphtml","phphtml-optimizer"],
     "homepage": "https://github.com/nielsofficeofficial/PHPHtml-Optimizer",
-    "license": " GPL-3.0 License",
     "authors": [
         {
-            "name": "nielsofficeofficial",
+            "name": "nielsoffice",
             "email": "nieldigitalsolution@gmail.com",
             "homepage": "https://www.facebook.com/pg/nielsofficeofficial",
             "role": "Freelancer - Web Designer/PHPDeveloper"
