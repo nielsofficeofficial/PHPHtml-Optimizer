@@ -75,9 +75,9 @@ print $html;
 
 | PARAMETER'S    | Description |
 | ---            | ---         |
-| `METHOD_ASSOC` | Is a Paramenter that will use and position to the very end of function or methods none/Associated |
-| `CLASS_ASSOC`  | Is a Paramenter that will use and position to the very end of function or methods none/Associated |
-| `FUNC_ASSOC`   | Is a Paramenter that will use and position to the very end of function or methods none/Associated |
+| `METHOD_ASSOC` | Is a Paramenter that will use and position to the very end of function or methods to make as associated |
+| `CLASS_ASSOC`  | Is a Paramenter that will use and position to the very end of function or methods to make as associated |
+| `FUNC_ASSOC`   | Is a Paramenter that will use and position to the very end of function or methods to make as associated |
 
 <h5>Usage: withinClass | Instantiate Class Methods</h5>
 <pre>
