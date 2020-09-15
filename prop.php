@@ -61,10 +61,9 @@
    |
    |
    */ 
-  define('__DIRECTORY_OPTIMIZER_PAGE__','/onPage/');
+  define('__DIRECTORY_OPTIMIZER_PAGE__','/core/onPage/');
 
-  define('__DIRECTORY_OPTIMIZER_CLASS__','/onClass/');
-
+  define('__DIRECTORY_OPTIMIZER_CLASS__','/core/onClass/');
 
   /*
    |
@@ -92,7 +91,7 @@
    |
    |
    */ 
-  define('__GET_VALIDATE_FILE_PAGE_EXIST__', '/onPage/Html.php');  
+  define('__GET_VALIDATE_FILE_PAGE_EXIST__', '/core/onPage/Html.php');  
   
   /*
    |

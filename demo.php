@@ -27,7 +27,7 @@ require_once 'PHPHtml-Optimizer.php';
 
   // ASSOCIATED WITH FUNCTION | METHOD | CLASS it is seta s return (need echo or print)  
   // 1  return within the function instead echo
-  echo "A ".html::ELEMENT('UL',my_data(),my_htmattr(),'with_myID_echo_h1','with_my_class_echo','with_label'); 
+  echo "A ". Html::ELEMENT('UL',my_data(),my_htmattr(),'with_myID_echo_h1','with_my_class_echo','with_label'); 
   
 #############################################################################################################
  
@@ -36,6 +36,7 @@ require_once 'PHPHtml-Optimizer.php';
 
   $userObj = new  \PHPHtml\CodeOptimizer\Html();  // or  USE  \PHPHtml\CodeOptimizer\Html AS MyProjectName; $Project = NEW MyProjectName();
 
-  echo $userObj ->H2('Test H2');
+  echo $userObj->H2('Test H2');
 
 #############################################################################################################
+

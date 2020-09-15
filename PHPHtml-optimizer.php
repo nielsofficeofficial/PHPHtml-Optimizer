@@ -6,8 +6,8 @@
  * require associated string within Class/Methods/Function
  *
 **/
-if ( $GetOptimized_ = file_exists(dirname(__FILE__) . '/onPage/Html.php' ) &&
-     $GetOptimized_ = file_exists(dirname(__FILE__) . '/onClass/Html.php') ) {
+if ( $GetOptimized_ = file_exists(dirname(__FILE__) . '/core/onPage/Html.php' ) &&
+     $GetOptimized_ = file_exists(dirname(__FILE__) . '/core/onClass/Html.php') ) {
      /*
       |
       |
@@ -39,7 +39,7 @@ if ( $GetOptimized_ = file_exists(dirname(__FILE__) . '/onPage/Html.php' ) &&
              |
              */ 
             require_once 'prop.php';             
-    		Html::_PERFORM(FILE_HANDLER_MSG);
+    		    Html::_PERFORM(FILE_HANDLER_MSG);
     	}
     	
     }
