@@ -49,7 +49,6 @@ $html  .= "<ul id=\\"My_id_ParentTags\\" class=\\"MyClass\\">";
     return implode('', $datas); 
     
 $html  .= "</ul>";
-
 // Loop and excuted
 print $html;
 ?>
