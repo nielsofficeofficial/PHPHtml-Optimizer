@@ -38,17 +38,17 @@ $this->$Html->H2('Test H2');
 <pre>
 <?php 
 
-$html   = ""; 
+$html   = " "; 
 $html  .= "<ul id=\\"My_id_ParentTags\\" class=\\"MyClass\\">";
     
     $datas = [];
     for ($i = 1; $i <= 10; $i++) 
     { 
-     $datas[] = "<li class=\"col-sm-3\" id=\"MyList\">Count Number. " $i . "</li>";  
+     $datas[] = "<li class=\"col-sm-3\" id=\"MyList\">Count Number. "". $i . ""</li>";  
     }
     return implode('', $datas); 
     
-$html  .= "</ul>";
+$html  .= "< / ul >";
 // Loop and excuted
 print $html;
 ?>
