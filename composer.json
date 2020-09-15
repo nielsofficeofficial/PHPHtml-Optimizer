@@ -2,7 +2,7 @@
     "name": "phphtml-optimizer/phphtml-optimizer",
     "type": "library",
     "description": "Logging for PHP 7.0++",
-    "keywords": ["log","logging"],
+    "keywords": ["phphtml","phphtml-optimizer"],
     "homepage": "https://github.com/nielsofficeofficial/PHPHtml-Optimizer",
     "license": " GPL-3.0 License",
     "authors": [
@@ -10,15 +10,11 @@
             "name": "nielsofficeofficial",
             "email": "nieldigitalsolution@gmail.com",
             "homepage": "https://www.facebook.com/pg/nielsofficeofficial",
-            "role": "Developer"
+            "role": "Freelancer - Web Designer/PHPDeveloper"
         }
     ],
     "require": {
         "php": ">=7.0"
-    },
-    "autoload": {
-        "psr-0": {
-            "PHPHtmlOptimizer": "core"
-        }
     }
+    
 }
