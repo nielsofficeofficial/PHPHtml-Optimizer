@@ -117,7 +117,7 @@ html::H1("Sample_echo ", my_htmattr(),'MyID','MyClass','', NULL);
 
 <h5>On Page | Static Methods</h5>
 
-|Opt./ASSOCIATED | HTML/Descript. | ASSOCIATED     | Inline noneClosing/ASSOCIATED |  None ASSOCIATED |
+|Opt./ASSOCIATED | HTML/Descript. | ASSOCIATED     | Inline noneClosing/ASSOCIATED |  None ASSOCIATED _H1(begin)/xH1(end) |
 |:---            |:---            |:---            |:---                           |:---              |
 | `Html::BREAK()`  | Break          | `Html::ELEMENT('H1')`    |`Html::_ELEMENT('my_input','INPUT')`|`Html::_H1()`/`Html::xH1()`|
 | `Html::LINE()`   | Line           | `Html::ELEMENT('H2')`    |`Html::_ELEMENT('my_track','track')`|`Html::_H2()`/`Html::xH2()`|
