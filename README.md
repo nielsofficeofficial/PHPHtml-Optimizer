@@ -21,7 +21,7 @@ Html::H1('Hello World!');
 <br />
 // Run command
 ~ composer require phphtml-optimizer/phphtml-optimizer
-
+<br />
 require_once 'library/PHPHtml-Optimizer.php';
 
 // do HTML 
