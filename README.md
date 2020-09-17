@@ -13,7 +13,7 @@ require_once 'PHPHtml-Optimizer.php';
 
 // do HTML 
 Html::H1('Hello World!');
-
+</pre>
 <h4>Installing PHPHtml-Optimizer w/Composer</h4>
 <pre>
 // Run Command line directory with your project folder
