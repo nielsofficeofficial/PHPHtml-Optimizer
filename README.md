@@ -31,7 +31,7 @@ Html::H1('Hello World!');
 // Within the Class
 $Html = new  \PHPHtml\CodeOptimizer\Html();  
 ...
-$this->$Html->H2('Test H2');
+$this->$Html->H2('Hello World!');
 
 </pre>
 <h4>Folder Structure:</h4>
