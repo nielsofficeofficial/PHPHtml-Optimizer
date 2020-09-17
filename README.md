@@ -116,14 +116,14 @@ echo $Html->H2('Test H2');
     ];
  }
  
-Print html::H1("Heading Title_FUNC_ASSOC",  my_htmattr() ,'MyID','MyClass','MyLabel','FUNC_ASSOC');
-      html::H1("Heading Title_FUNC_ASSOC",  my_htmattr() ,'MyID','MyClass','MyLabel','METHOD_ASSOC'); 
+Print html::H1("Heading Title_FUNC_ASSOC",  my_htmattr() ,'MyID','MyClass','MyLabel',FUNC_ASSOC);
+      html::H1("Heading Title_FUNC_ASSOC",  my_htmattr() ,'MyID','MyClass','MyLabel',METHOD_ASSOC); 
     
 // NULL use outside of function 
 html::H1("Sample_echo ",    my_htmattr(),'MyID','MyClass','MyLabel', NULL); 
 
-Print html::H1(html::STRING("Heading Title_FUNC_ASSOC", 'FUNC_ASSOC'), my_htmattr(),'MyID','MyClass','','FUNC_ASSOC');
-      html::H1("Heading Title_FUNC_ASSOC ", my_htmattr(),'MyID','MyClass','','FUNC_ASSOC'); 
+Print html::H1(html::STRING("Heading Title_FUNC_ASSOC", FUNC_ASSOC), my_htmattr(),'MyID','MyClass','',FUNC_ASSOC);
+      html::H1("Heading Title_FUNC_ASSOC ", my_htmattr(),'MyID','MyClass','',FUNC_ASSOC); 
 
 // NULL use outside of function 
 html::H1("Sample_echo ", my_htmattr(),'MyID','MyClass','', NULL); 
