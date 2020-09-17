@@ -9,8 +9,8 @@ To optimize code is a hassle and heavy load burden in programming, PHPHtml-Optim
 <pre>
 // Require file in header file or in every page where you will use. 
 // This is for Static method settup which most use on pages
-require_once 'PHPHtml-Optimizer.php';
-
+require_once 'library/PHPHtml-Optimizer.php';
+<br />
 // do HTML 
 Html::H1('Hello World!');
 </pre>
