@@ -1,4 +1,4 @@
-# PHPHtml-Optimizer v1.1 Cooked by nielsoffice 
+<img src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t1.0-9/119389723_1181335685573316_2339548645504738190_n.jpg?_nc_cat=103&_nc_sid=730e14&_nc_eui2=AeFjNkrFhVNjcxR9W-QtwMKG_uGjgyCAqLH-4aODIICosd7orVRodvpIVMgnCL6x0pJ5epFA3U6mpHBm2VkJl7vc&_nc_ohc=VqXGzZi2mvkAX8_tiLn&_nc_ht=scontent.fmnl3-1.fna&oh=0e70840c2f5ec7a5d20b5b94739a5b8a&oe=5F8768AA">
 <h6>Support PHP v7.0++ higher | not work for v.7 less</h6>
 <h6>PHPHtml-Optimizer is a PHP FREE library that will help PHP/Developer/Programmer beautiful and optimize codes. </h6>
 <p>It is simplified the code from HTML removing spending time to add backticks, double quote and saving time to convert or wrap HTML into PHP through appended variables although appending in the variable will be still possible using for some reason within your codes, PHPHtml-Optimizer is easier to optimize your codes lessen big page-load to your application/program.<br />
@@ -10,6 +10,19 @@ To optimize code is a hassle and heavy load burden in programming, PHPHtml-Optim
 // Require file in header file or in every page where you will use. 
 // This is for Static method settup which most use on pages
 require_once 'PHPHtml-Optimizer.php';
+
+// do HTML 
+Html::H1('Hello World!');
+
+<h4>Installing PHPHtml-Optimizer w/Composer</h4>
+<pre>
+// Run Command line directory with your project folder
+~ C:/path/www/project/
+<br />
+// Run command
+~ composer require phphtml-optimizer/phphtml-optimizer
+
+require_once 'library/PHPHtml-Optimizer.php';
 
 // do HTML 
 Html::H1('Hello World!');
@@ -62,7 +75,7 @@ print $html;
   $datas = [];
     for ($i = 1; $i <= 10; $i++) 
     {
-       $datas[] = html::ELEMENT('LI',$i,NULL,'myID',MyCLass,NULL); 
+       $datas[] = html::ELEMENT('LI',$i,NULL,'myID','MyCLass',NULL); 
     }
      return implode('', $datas);  
   }
