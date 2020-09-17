@@ -24,7 +24,7 @@
  *            - Docx/Reference
  *            
  * @author    nielfernandez <nieldigitalsolution@gmail.com>
- * @license   http://opensource.org/licenses/gpl-3.0.html GNU Public License
+ * @license   http://_source.org/licenses/gpl-3.0.html GNU Public License
  * @link      https://github.com/nielsofficeofficial/PHPHtml-Optimizer
  * @link      https://github.com/nielsofficeofficial/PHPHtml-Optimizer/blob/master/README.md
  * @link      https://www.facebook.com/nielsofficeofficial
@@ -220,7 +220,7 @@
  * @method $noHtml->ELEMENT('BLOCKQUOTE');
  *
  * noHTML dynamic  structure 
- * non/WITH CLASS|METHOD|FUNCTION ASSOCIATED noHTML Form no close tag
+ * non/WITH CLASS|METHOD|FUNCTION ASSOCIATED noHTML Form no x tag
  * 
  * @method $noHtml->_ELEMENT('my_input','INPUT');
  * @method $noHtml->_ELEMENT('my_track','track');
@@ -240,186 +240,186 @@
  * noHTML  structure non CLASS|METHOD|FUNCTION ASSOCIATED
  * noHTML  structure w/ closing tag
  *
- * @method $noHtml->openH1();
- * @method $noHtml->closeH1();
- * @method $noHtml->openH2();
- * @method $noHtml->closeH2();
- * @method $noHtml->openH3();
- * @method $noHtml->closeH3();
- * @method $noHtml->openH4();
- * @method $noHtml->closeH4();
- * @method $noHtml->openH5();
- * @method $noHtml->closeH5();
- * @method $noHtml->openH6();
- * @method $noHtml->closeH6();
- * @method $noHtml->openDIV();
- * @method $noHtml->closeDIV();
- * @method $noHtml->openP();
- * @method $noHtml->closeP();
- * @method $noHtml->openBUTTON();
- * @method $noHtml->closeBUTTON();
- * @method $noHtml->openA();
- * @method $noHtml->closeA();
- * @method $noHtml->openIFRAME();
- * @method $noHtml->closeIFRAME();
- * @method $noHtml->openMAIN();
- * @method $noHtml->closeMAIN();
- * @method $noHtml->openNAV();
- * @method $noHtml->closeNAV();
- * @method $noHtml->openSELECT();
- * @method $noHtml->closeSELECT();
- * @method $noHtml->openFORM();
- * @method $noHtml->closeFORM();
- * @method $noHtml->openPICTURE();
- * @method $noHtml->closePICTURE();
- * @method $noHtml->openSECTION();
- * @method $noHtml->closeSECTION();
- * @method $noHtml->openTEXTAREA();
- * @method $noHtml->closeTEXTAREA();
- * @method $noHtml->openAUDIO();
- * @method $noHtml->closeAUDIO();
- * @method $noHtml->openVIDEO();
- * @method $noHtml->closeVIDEO();
- * @method $noHtml->openADDRESS();
- * @method $noHtml->closeADDRESS();
- * @method $noHtml->openCOLGROUP();
- * @method $noHtml->closeCOLGROUP();
- * @method $noHtml->openBDI();
- * @method $noHtml->closeBDI();
- * @method $noHtml->openBDO();
- * @method $noHtml->closeBDO();
- * @method $noHtml->openBLOCKQUOTE();
- * @method $noHtml->closeBLOCKQUOTE();
- * @method $noHtml->openCAPTION();
- * @method $noHtml->closeCAPTION();
- * @method $noHtml->openLABEL();
- * @method $noHtml->closeLABEL();
- * @method $noHtml->openDATALIST();
- * @method $noHtml->closeDATALIST();
- * @method $noHtml->openDETAILS();
- * @method $noHtml->closeDETAILS();
- * @method $noHtml->openSUMMARY();
- * @method $noHtml->closeSUMMARY();
- * @method $noHtml->openDIALOG();
- * @method $noHtml->closeDIALOG();
- * @method $noHtml->openOPTION();
- * @method $noHtml->closeOPTION();
- * @method $noHtml->openFIGURE();
- * @method $noHtml->closeFIGURE();
- * @method $noHtml->openFIGCAPTION();
- * @method $noHtml->closeFIGCAPTION();
- * @method $noHtml->openMETER();
- * @method $noHtml->closeMETER();
- * @method $noHtml->openOBJECT();
- * @method $noHtml->closeOBJECT();
- * @method $noHtml->openOPTGROUP();
- * @method $noHtml->closeOPTGROUP();
- * @method $noHtml->openOUTPUT();
- * @method $noHtml->closeOUTPUT();
- * @method $noHtml->openPROGRESS();
- * @method $noHtml->closePROGRESS();
- * @method $noHtml->openSVG();
- * @method $noHtml->closeSVG();
- * @method $noHtml->openTEMPLATE();
- * @method $noHtml->closeTEMPLATE();
- * @method $noHtml->openTIME();
- * @method $noHtml->closeTIME();
- * @method $noHtml->openVAR();
- * @method $noHtml->closeVAR();
- * @method $noHtml->openUL();
- * @method $noHtml->closeUL();
- * @method $noHtml->openOL();
- * @method $noHtml->closeOL();
- * @method $noHtml->openLI();
- * @method $noHtml->closeLI();
- * @method $noHtml->openTABLE();
- * @method $noHtml->closeTABLE();
- * @method $noHtml->openTR();
- * @method $noHtml->closeTR();
- * @method $noHtml->openTD();
- * @method $noHtml->closeTD();
- * @method $noHtml->openTH();
- * @method $noHtml->closeTH();
- * @method $noHtml->openLEGEND();
- * @method $noHtml->closeLEGEND();
- * @method $noHtml->openFIELDSET();
- * @method $noHtml->closeFIELDSET();
- * @method $noHtml->openTBODY();
- * @method $noHtml->closeTBODY();
- * @method $noHtml->openTFOOT();
- * @method $noHtml->closeTFOOT();
- * @method $noHtml->openTHEAD();
- * @method $noHtml->closeTHEAD();
- * @method $noHtml->openSPAN();
- * @method $noHtml->closeSPAN();
- * @method $noHtml->openEM();
- * @method $noHtml->closeEM();
- * @method $noHtml->openB();
- * @method $noHtml->closeB();
- * @method $noHtml->openI();
- * @method $noHtml->closeI();
- * @method $noHtml->openSMALL();
- * @method $noHtml->closeSMALL();
- * @method $noHtml->openSTRIKE();
- * @method $noHtml->closeSTRIKE();
- * @method $noHtml->openMARQUEE();
- * @method $noHtml->closeMARQUEE();
- * @method $noHtml->openCENTER();
- * @method $noHtml->closeCENTER();
- * @method $noHtml->openABBR();
- * @method $noHtml->closeABBR();
- * @method $noHtml->openMAP();
- * @method $noHtml->closeMAP();
- * @method $noHtml->openCANVAS();
- * @method $noHtml->closeCANVAS();
- * @method $noHtml->openCITE();
- * @method $noHtml->closeCITE();
- * @method $noHtml->openDATA();
- * @method $noHtml->closeDATA();
- * @method $noHtml->openDL();
- * @method $noHtml->closeDL();
- * @method $noHtml->openDT();
- * @method $noHtml->closeDT();
- * @method $noHtml->openDD();
- * @method $noHtml->closeDD();
- * @method $noHtml->openDFN();
- * @method $noHtml->closeDFN();
- * @method $noHtml->openINS();
- * @method $noHtml->closeINS();
- * @method $noHtml->openDEL();
- * @method $noHtml->closeDEL();
- * @method $noHtml->openKBD();
- * @method $noHtml->closeKBD();
- * @method $noHtml->openMARK();
- * @method $noHtml->closeMARK();
- * @method $noHtml->openPRE();
- * @method $noHtml->closePRE();
- * @method $noHtml->openRT();
- * @method $noHtml->closeRT();
- * @method $noHtml->openRP();
- * @method $noHtml->closeRP();
- * @method $noHtml->openS();
- * @method $noHtml->closeS();
- * @method $noHtml->openSAMP();
- * @method $noHtml->closeSAMP();
- * @method $noHtml->openSTRONG();
- * @method $noHtml->closeSTRONG();
- * @method $noHtml->openSUB();
- * @method $noHtml->closeSUB();
- * @method $noHtml->openSUP();
- * @method $noHtml->closeSUP();
- * @method $noHtml->openWBR();
- * @method $noHtml->closeWBR();
- * @method $noHtml->openQ();
- * @method $noHtml->closeQ();
- * @method $noHtml->openHEAD();
- * @method $noHtml->closeHEAD();
- * @method $noHtml->openTITLE();
- * @method $noHtml->closeTITLE();
- * @method $noHtml->openBODY();
- * @method $noHtml->closeBODY();
- * @method $noHtml->opennoHTML();
- * @method $noHtml->closenoHTML();
+ * @method $noHtml->_H1();
+ * @method $noHtml->xH1();
+ * @method $noHtml->_H2();
+ * @method $noHtml->xH2();
+ * @method $noHtml->_H3();
+ * @method $noHtml->xH3();
+ * @method $noHtml->_H4();
+ * @method $noHtml->xH4();
+ * @method $noHtml->_H5();
+ * @method $noHtml->xH5();
+ * @method $noHtml->_H6();
+ * @method $noHtml->xH6();
+ * @method $noHtml->_DIV();
+ * @method $noHtml->xDIV();
+ * @method $noHtml->_P();
+ * @method $noHtml->xP();
+ * @method $noHtml->_BUTTON();
+ * @method $noHtml->xBUTTON();
+ * @method $noHtml->_A();
+ * @method $noHtml->xA();
+ * @method $noHtml->_IFRAME();
+ * @method $noHtml->xIFRAME();
+ * @method $noHtml->_MAIN();
+ * @method $noHtml->xMAIN();
+ * @method $noHtml->_NAV();
+ * @method $noHtml->xNAV();
+ * @method $noHtml->_SELECT();
+ * @method $noHtml->xSELECT();
+ * @method $noHtml->_FORM();
+ * @method $noHtml->xFORM();
+ * @method $noHtml->_PICTURE();
+ * @method $noHtml->xPICTURE();
+ * @method $noHtml->_SECTION();
+ * @method $noHtml->xSECTION();
+ * @method $noHtml->_TEXTAREA();
+ * @method $noHtml->xTEXTAREA();
+ * @method $noHtml->_AUDIO();
+ * @method $noHtml->xAUDIO();
+ * @method $noHtml->_VIDEO();
+ * @method $noHtml->xVIDEO();
+ * @method $noHtml->_ADDRESS();
+ * @method $noHtml->xADDRESS();
+ * @method $noHtml->_COLGROUP();
+ * @method $noHtml->xCOLGROUP();
+ * @method $noHtml->_BDI();
+ * @method $noHtml->xBDI();
+ * @method $noHtml->_BDO();
+ * @method $noHtml->xBDO();
+ * @method $noHtml->_BLOCKQUOTE();
+ * @method $noHtml->xBLOCKQUOTE();
+ * @method $noHtml->_CAPTION();
+ * @method $noHtml->xCAPTION();
+ * @method $noHtml->_LABEL();
+ * @method $noHtml->xLABEL();
+ * @method $noHtml->_DATALIST();
+ * @method $noHtml->xDATALIST();
+ * @method $noHtml->_DETAILS();
+ * @method $noHtml->xDETAILS();
+ * @method $noHtml->_SUMMARY();
+ * @method $noHtml->xSUMMARY();
+ * @method $noHtml->_DIALOG();
+ * @method $noHtml->xDIALOG();
+ * @method $noHtml->_OPTION();
+ * @method $noHtml->xOPTION();
+ * @method $noHtml->_FIGURE();
+ * @method $noHtml->xFIGURE();
+ * @method $noHtml->_FIGCAPTION();
+ * @method $noHtml->xFIGCAPTION();
+ * @method $noHtml->_METER();
+ * @method $noHtml->xMETER();
+ * @method $noHtml->_OBJECT();
+ * @method $noHtml->xOBJECT();
+ * @method $noHtml->_OPTGROUP();
+ * @method $noHtml->xOPTGROUP();
+ * @method $noHtml->_OUTPUT();
+ * @method $noHtml->xOUTPUT();
+ * @method $noHtml->_PROGRESS();
+ * @method $noHtml->xPROGRESS();
+ * @method $noHtml->_SVG();
+ * @method $noHtml->xSVG();
+ * @method $noHtml->_TEMPLATE();
+ * @method $noHtml->xTEMPLATE();
+ * @method $noHtml->_TIME();
+ * @method $noHtml->xTIME();
+ * @method $noHtml->_VAR();
+ * @method $noHtml->xVAR();
+ * @method $noHtml->_UL();
+ * @method $noHtml->xUL();
+ * @method $noHtml->_OL();
+ * @method $noHtml->xOL();
+ * @method $noHtml->_LI();
+ * @method $noHtml->xLI();
+ * @method $noHtml->_TABLE();
+ * @method $noHtml->xTABLE();
+ * @method $noHtml->_TR();
+ * @method $noHtml->xTR();
+ * @method $noHtml->_TD();
+ * @method $noHtml->xTD();
+ * @method $noHtml->_TH();
+ * @method $noHtml->xTH();
+ * @method $noHtml->_LEGEND();
+ * @method $noHtml->xLEGEND();
+ * @method $noHtml->_FIELDSET();
+ * @method $noHtml->xFIELDSET();
+ * @method $noHtml->_TBODY();
+ * @method $noHtml->xTBODY();
+ * @method $noHtml->_TFOOT();
+ * @method $noHtml->xTFOOT();
+ * @method $noHtml->_THEAD();
+ * @method $noHtml->xTHEAD();
+ * @method $noHtml->_SPAN();
+ * @method $noHtml->xSPAN();
+ * @method $noHtml->_EM();
+ * @method $noHtml->xEM();
+ * @method $noHtml->_B();
+ * @method $noHtml->xB();
+ * @method $noHtml->_I();
+ * @method $noHtml->xI();
+ * @method $noHtml->_SMALL();
+ * @method $noHtml->xSMALL();
+ * @method $noHtml->_STRIKE();
+ * @method $noHtml->xSTRIKE();
+ * @method $noHtml->_MARQUEE();
+ * @method $noHtml->xMARQUEE();
+ * @method $noHtml->_CENTER();
+ * @method $noHtml->xCENTER();
+ * @method $noHtml->_ABBR();
+ * @method $noHtml->xABBR();
+ * @method $noHtml->_MAP();
+ * @method $noHtml->xMAP();
+ * @method $noHtml->_CANVAS();
+ * @method $noHtml->xCANVAS();
+ * @method $noHtml->_CITE();
+ * @method $noHtml->xCITE();
+ * @method $noHtml->_DATA();
+ * @method $noHtml->xDATA();
+ * @method $noHtml->_DL();
+ * @method $noHtml->xDL();
+ * @method $noHtml->_DT();
+ * @method $noHtml->xDT();
+ * @method $noHtml->_DD();
+ * @method $noHtml->xDD();
+ * @method $noHtml->_DFN();
+ * @method $noHtml->xDFN();
+ * @method $noHtml->_INS();
+ * @method $noHtml->xINS();
+ * @method $noHtml->_DEL();
+ * @method $noHtml->xDEL();
+ * @method $noHtml->_KBD();
+ * @method $noHtml->xKBD();
+ * @method $noHtml->_MARK();
+ * @method $noHtml->xMARK();
+ * @method $noHtml->_PRE();
+ * @method $noHtml->xPRE();
+ * @method $noHtml->_RT();
+ * @method $noHtml->xRT();
+ * @method $noHtml->_RP();
+ * @method $noHtml->xRP();
+ * @method $noHtml->_S();
+ * @method $noHtml->xS();
+ * @method $noHtml->_SAMP();
+ * @method $noHtml->xSAMP();
+ * @method $noHtml->_STRONG();
+ * @method $noHtml->xSTRONG();
+ * @method $noHtml->_SUB();
+ * @method $noHtml->xSUB();
+ * @method $noHtml->_SUP();
+ * @method $noHtml->xSUP();
+ * @method $noHtml->_WBR();
+ * @method $noHtml->xWBR();
+ * @method $noHtml->_Q();
+ * @method $noHtml->xQ();
+ * @method $noHtml->_HEAD();
+ * @method $noHtml->xHEAD();
+ * @method $noHtml->_TITLE();
+ * @method $noHtml->xTITLE();
+ * @method $noHtml->_BODY();
+ * @method $noHtml->xBODY();
+ * @method $noHtml->_noHTML();
+ * @method $noHtml->xnoHTML();
  *
  */
 
@@ -580,21 +580,21 @@ class Html {
 
 /**
   * @var 
-  * @property @INLINE_VARIABLE  (NO CLOSE HTML TAG)
+  * @property @INLINE_VARIABLE  (NO x HTML TAG)
   * defined arrays of data html 
   **/
  protected $htm_L  = ['source','track','circle','param','input','meta','link','img','embed','option','col','base','aside','area','DOCTYPE html'];
 
 /**
   * @var 
-  * @property @STRUCTURE_VARIABLE  (NO CLOSE HTML TAG)
+  * @property @STRUCTURE_VARIABLE  (NO x HTML TAG)
   * defined arrays of data html 
   S**/
  protected $htm_st = ['head','title','body','html'];
 
 /**
   * @var 
-  * @property @BREAKS_VARIABLE  (NO CLOSE HTML TAG)
+  * @property @BREAKS_VARIABLE  (NO x HTML TAG)
   * defined arrays of data html 
   **/
  protected $hBreak = ["\n","br","hr"];
@@ -649,8 +649,8 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * @static Method Defined single call through param html element no closing tag  
   * Neat and clean noHTML
   * $elem  = 'HTML ELEMENT' ex. p, ul, li etc..
-  * $label = 'MAGIC' output: <p> | open any tag elements html
-  * $label = 'MAGIC_END' output: </p> | close any tag elements html
+  * $label = 'MAGIC' output: <p> | _ any tag elements html
+  * $label = 'MAGIC_END' output: </p> | x any tag elements html
   *
   **/
  public function __magicELEMENT($elem, $label=null, $js=[], $id=null, $class=null) {
@@ -770,1014 +770,1014 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
 /**
   *
   * @method public function noHTML
-  * @ Method Defined H1 OPEN AND CLOSE TAG noHTML  
-  * RETURN HEADING OPEN noHTML TAG
+  * @ Method Defined H1 _ AND x TAG noHTML  
+  * RETURN HEADING _ noHTML TAG
   *
   **/
-  public function openH1($js=[], $id=null, $class=null) { echo $this->get_openHTML('PRIMARY', 0, $js, $id, $class); }
+  public function _H1($js=[], $id=null, $class=null) { echo $this->get__HTML('PRIMARY', 0, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_HEADING_TAG 
-  public function closeH1($label = NULL) { echo $this->get_closeHTML('PRIMARY', 0, $label); }
+  public function xH1($label = NULL) { echo $this->get_xHTML('PRIMARY', 0, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined H2 OPEN AND CLOSE TAG noHTML  
-  * RETURN HEADING OPEN noHTML TAG
+  * @ Method Defined H2 _ AND x TAG noHTML  
+  * RETURN HEADING _ noHTML TAG
   *
   **/
-  public function openH2($js=[], $id=null, $class=null) { echo $this->get_openHTML('PRIMARY', 1, $js, $id, $class); }
+  public function _H2($js=[], $id=null, $class=null) { echo $this->get__HTML('PRIMARY', 1, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_HEADING_TAG 
-  public function closeH2($label = NULL) { echo $this->get_closeHTML('PRIMARY', 1, $label); }
+  public function xH2($label = NULL) { echo $this->get_xHTML('PRIMARY', 1, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined H3 OPEN AND CLOSE TAG noHTML  
-  * RETURN HEADING OPEN noHTML TAG
+  * @ Method Defined H3 _ AND x TAG noHTML  
+  * RETURN HEADING _ noHTML TAG
   *
   **/
-  public function openH3($js=[], $id=null, $class=null) { echo $this->get_openHTML('PRIMARY', 2, $js, $id, $class); }
+  public function _H3($js=[], $id=null, $class=null) { echo $this->get__HTML('PRIMARY', 2, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_HEADING_TAG 
-  public function closeH3($label = NULL) { echo $this->get_closeHTML('PRIMARY', 2, $label);  }
+  public function xH3($label = NULL) { echo $this->get_xHTML('PRIMARY', 2, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined H4 OPEN AND CLOSE TAG noHTML  
-  * RETURN HEADING OPEN noHTML TAG
+  * @ Method Defined H4 _ AND x TAG noHTML  
+  * RETURN HEADING _ noHTML TAG
   *
   **/
-  public function openH4($js=[], $id=null, $class=null) { echo $this->get_openHTML('PRIMARY', 3, $js, $id, $class);  }
+  public function _H4($js=[], $id=null, $class=null) { echo $this->get__HTML('PRIMARY', 3, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_HEADING_TAG 
-  public function closeH4($label = NULL) { echo $this->get_closeHTML('PRIMARY', 3, $label); }
+  public function xH4($label = NULL) { echo $this->get_xHTML('PRIMARY', 3, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined H5 OPEN AND CLOSE TAG noHTML  
-  * RETURN HEADING OPEN noHTML TAG
+  * @ Method Defined H5 _ AND x TAG noHTML  
+  * RETURN HEADING _ noHTML TAG
   *
   **/
-  public function openH5($js=[], $id=null, $class=null) { echo $this->get_openHTML('PRIMARY', 4, $js, $id, $class);  }
+  public function _H5($js=[], $id=null, $class=null) { echo $this->get__HTML('PRIMARY', 4, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_HEADING_TAG 
-  public function closeH5($label = NULL) { echo $this->get_closeHTML('PRIMARY', 4, $label); }
+  public function xH5($label = NULL) { echo $this->get_xHTML('PRIMARY', 4, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined H6 OPEN AND CLOSE TAG noHTML  
-  * RETURN HEADING OPEN noHTML TAG
+  * @ Method Defined H6 _ AND x TAG noHTML  
+  * RETURN HEADING _ noHTML TAG
   *
   **/
-  public function openH6($js=[], $id=null, $class=null) { echo $this->get_openHTML('PRIMARY', 5, $js, $id, $class); }
+  public function _H6($js=[], $id=null, $class=null) { echo $this->get__HTML('PRIMARY', 5, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_HEADING_TAG 
-  public function closeH6($label = NULL) {  echo $this->get_closeHTML('PRIMARY', 5, $label); }
+  public function xH6($label = NULL) {  echo $this->get_xHTML('PRIMARY', 5, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined DIV OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE DIV OPEN noHTML TAG
+  * @ Method Defined DIV _ AND x TAG noHTML  
+  * RETURN NODE DIV _ noHTML TAG
   *
   **/
-  public function openDIV($js=[], $id=null, $class=null) { echo $this->get_openHTML('PRIMARY', 6, $js, $id, $class); }
+  public function _DIV($js=[], $id=null, $class=null) { echo $this->get__HTML('PRIMARY', 6, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeDIV($label = NULL) { echo $this->get_closeHTML('PRIMARY', 6, $label); }
+  public function xDIV($label = NULL) { echo $this->get_xHTML('PRIMARY', 6, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined PARA OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE PARAGRAPH OPEN noHTML TAG
+  * @ Method Defined PARA _ AND x TAG noHTML  
+  * RETURN NODE PARAGRAPH _ noHTML TAG
   *
   **/
-  public function openP($js=[], $id=null, $class=null) { echo $this->get_openHTML('PRIMARY', 7, $js, $id, $class);  }
+  public function _P($js=[], $id=null, $class=null) { echo $this->get__HTML('PRIMARY', 7, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeP($label = NULL) { echo $this->get_closeHTML('PRIMARY', 7, $label); }
+  public function xP($label = NULL) { echo $this->get_xHTML('PRIMARY', 7, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined BUTTON OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE BUTTON OPEN noHTML TAG
+  * @ Method Defined BUTTON _ AND x TAG noHTML  
+  * RETURN NODE BUTTON _ noHTML TAG
   *
   **/
-  public function openBUTTON($js=[], $id=null, $class=null) { echo $this->get_openHTML('PRIMARY', 8, $js, $id, $class);  }
+  public function _BUTTON($js=[], $id=null, $class=null) { echo $this->get__HTML('PRIMARY', 8, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeBUTTON($label = NULL) { echo $this->get_closeHTML('PRIMARY', 8, $label); }
+  public function xBUTTON($label = NULL) { echo $this->get_xHTML('PRIMARY', 8, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined A HYPERLINK OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE HYPERLINK OPEN noHTML TAG
+  * @ Method Defined A HYPERLINK _ AND x TAG noHTML  
+  * RETURN NODE HYPERLINK _ noHTML TAG
   *
   **/
-  public function openA($js=[], $id=null, $class=null) { echo $this->get_openHTML('PRIMARY', 9, $js, $id, $class); }
+  public function _A($js=[], $id=null, $class=null) { echo $this->get__HTML('PRIMARY', 9, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeA($label = NULL) { echo $this->get_closeHTML('PRIMARY', 9, $label); }
+  public function xA($label = NULL) { echo $this->get_xHTML('PRIMARY', 9, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined IFRAME OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE IFRAME OPEN noHTML TAG
+  * @ Method Defined IFRAME _ AND x TAG noHTML  
+  * RETURN NODE IFRAME _ noHTML TAG
   *
   **/
-  public function openIFRAME($js=[], $id=null, $class=null) { echo $this->get_openHTML('PRIMARY', 10, $js, $id, $class);  }
+  public function _IFRAME($js=[], $id=null, $class=null) { echo $this->get__HTML('PRIMARY', 10, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeIFRAME($label = NULL) { echo $this->get_closeHTML('PRIMARY', 10, $label); }
+  public function xIFRAME($label = NULL) { echo $this->get_xHTML('PRIMARY', 10, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined MAIN OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE MAIN OPEN noHTML TAG
+  * @ Method Defined MAIN _ AND x TAG noHTML  
+  * RETURN NODE MAIN _ noHTML TAG
   *
   **/
-  public function openMAIN($js=[], $id=null, $class=null) { echo $this->get_openHTML('PRIMARY', 11, $js, $id, $class);  }
+  public function _MAIN($js=[], $id=null, $class=null) { echo $this->get__HTML('PRIMARY', 11, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeMAIN($label = NULL) { echo $this->get_closeHTML('PRIMARY', 11, $label); }
+  public function xMAIN($label = NULL) { echo $this->get_xHTML('PRIMARY', 11, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined NAV OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE NAV OPEN noHTML TAG
+  * @ Method Defined NAV _ AND x TAG noHTML  
+  * RETURN NODE NAV _ noHTML TAG
   *
   **/
-  public function openNAV($js=[], $id=null, $class=null) { echo $this->get_openHTML('PRIMARY', 12, $js, $id, $class);  }
+  public function _NAV($js=[], $id=null, $class=null) { echo $this->get__HTML('PRIMARY', 12, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeNAV($label = NULL) { echo $this->get_closeHTML('PRIMARY', 12, $label); }
+  public function xNAV($label = NULL) { echo $this->get_xHTML('PRIMARY', 12, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined SELECT OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE SELECT OPEN noHTML TAG
+  * @ Method Defined SELECT _ AND x TAG noHTML  
+  * RETURN NODE SELECT _ noHTML TAG
   *
   **/
-  public function openSELECT($js=[], $id=null, $class=null) { echo $this->get_openHTML('PRIMARY', 13, $js, $id, $class);   }
+  public function _SELECT($js=[], $id=null, $class=null) { echo $this->get__HTML('PRIMARY', 13, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeSELECT($label = NULL) { echo $this->get_closeHTML('PRIMARY', 13, $label); }
+  public function xSELECT($label = NULL) { echo $this->get_xHTML('PRIMARY', 13, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined FORM OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE FORM OPEN noHTML TAG
+  * @ Method Defined FORM _ AND x TAG noHTML  
+  * RETURN NODE FORM _ noHTML TAG
   *
   **/
-  public function openFORM($js=[], $id=null, $class=null) { echo $this->get_openHTML('PRIMARY', 14, $js, $id, $class);  }
+  public function _FORM($js=[], $id=null, $class=null) { echo $this->get__HTML('PRIMARY', 14, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeFORM($label = NULL) { echo $this->get_closeHTML('PRIMARY', 14, $label); }
+  public function xFORM($label = NULL) { echo $this->get_xHTML('PRIMARY', 14, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined PICTURE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE PICTURE OPEN noHTML TAG
+  * @ Method Defined PICTURE _ AND x TAG noHTML  
+  * RETURN NODE PICTURE _ noHTML TAG
   *
   **/
-  public function openPICTURE($js=[], $id=null, $class=null) { echo $this->get_openHTML('PRIMARY', 15, $js, $id, $class);  }
+  public function _PICTURE($js=[], $id=null, $class=null) { echo $this->get__HTML('PRIMARY', 15, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closePICTURE($label = NULL) { echo $this->get_closeHTML('PRIMARY', 15, $label); }
+  public function xPICTURE($label = NULL) { echo $this->get_xHTML('PRIMARY', 15, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined SECTION OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE SECTION OPEN noHTML TAG
+  * @ Method Defined SECTION _ AND x TAG noHTML  
+  * RETURN NODE SECTION _ noHTML TAG
   *
   **/
-  public function openSECTION($js=[], $id=null, $class=null) { echo $this->get_openHTML('PRIMARY', 16, $js, $id, $class);   }
+  public function _SECTION($js=[], $id=null, $class=null) { echo $this->get__HTML('PRIMARY', 16, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeSECTION($label = NULL) { echo $this->get_closeHTML('PRIMARY', 16, $label); }
+  public function xSECTION($label = NULL) { echo $this->get_xHTML('PRIMARY', 16, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined TEXTAREA OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE TEXTAREA OPEN noHTML TAG
+  * @ Method Defined TEXTAREA _ AND x TAG noHTML  
+  * RETURN NODE TEXTAREA _ noHTML TAG
   *
   **/
-  public function openTEXTAREA($js=[], $id=null, $class=null) { echo $this->get_openHTML('PRIMARY', 17, $js, $id, $class);  }
+  public function _TEXTAREA($js=[], $id=null, $class=null) { echo $this->get__HTML('PRIMARY', 17, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeTEXTAREA($label = NULL) { echo $this->get_closeHTML('PRIMARY', 17, $label); }
+  public function xTEXTAREA($label = NULL) { echo $this->get_xHTML('PRIMARY', 17, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined AUDIO OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE AUDIO OPEN noHTML TAG
+  * @ Method Defined AUDIO _ AND x TAG noHTML  
+  * RETURN NODE AUDIO _ noHTML TAG
   *
   **/
-  public function openAUDIO($js=[], $id=null, $class=null) { echo $this->get_openHTML('SECONDARY', 0, $js, $id, $class);  }
+  public function _AUDIO($js=[], $id=null, $class=null) { echo $this->get__HTML('SECONDARY', 0, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeAUDIO($label = NULL) { echo $this->get_closeHTML('SECONDARY', 0, $label); }
+  public function xAUDIO($label = NULL) { echo $this->get_xHTML('SECONDARY', 0, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined VIDEO OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE VIDEO OPEN noHTML TAG
+  * @ Method Defined VIDEO _ AND x TAG noHTML  
+  * RETURN NODE VIDEO _ noHTML TAG
   *
   **/
-  public function openVIDEO($js=[], $id=null, $class=null) { echo $this->get_openHTML('SECONDARY', 1, $js, $id, $class); }
+  public function _VIDEO($js=[], $id=null, $class=null) { echo $this->get__HTML('SECONDARY', 1, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeVIDEO($label = NULL) { echo $this->get_closeHTML('SECONDARY', 1, $label); }
+  public function xVIDEO($label = NULL) { echo $this->get_xHTML('SECONDARY', 1, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined ADDRESS OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE ADDRESS OPEN noHTML TAG
+  * @ Method Defined ADDRESS _ AND x TAG noHTML  
+  * RETURN NODE ADDRESS _ noHTML TAG
   *
   **/
-  public function openADDRESS($js=[], $id=null, $class=null) { echo $this->get_openHTML('SECONDARY', 2, $js, $id, $class); }
+  public function _ADDRESS($js=[], $id=null, $class=null) { echo $this->get__HTML('SECONDARY', 2, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeADDRESS($label = NULL) { echo $this->get_closeHTML('SECONDARY', 2, $label); }
+  public function xADDRESS($label = NULL) { echo $this->get_xHTML('SECONDARY', 2, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined COLGROUP OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE COLGROUP OPEN noHTML TAG
+  * @ Method Defined COLGROUP _ AND x TAG noHTML  
+  * RETURN NODE COLGROUP _ noHTML TAG
   *
   **/
-  public function openCOLGROUP($js=[], $id=null, $class=null) { echo $this->get_openHTML('SECONDARY', 3, $js, $id, $class);  }
+  public function _COLGROUP($js=[], $id=null, $class=null) { echo $this->get__HTML('SECONDARY', 3, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeCOLGROUP($label = NULL) { echo $this->get_closeHTML('SECONDARY', 3, $label); }
+  public function xCOLGROUP($label = NULL) { echo $this->get_xHTML('SECONDARY', 3, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined BDI OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE BDI OPEN noHTML TAG
+  * @ Method Defined BDI _ AND x TAG noHTML  
+  * RETURN NODE BDI _ noHTML TAG
   *
   **/
-  public function openBDI($js=[], $id=null, $class=null) { echo $this->get_openHTML('SECONDARY', 4, $js, $id, $class); }
+  public function _BDI($js=[], $id=null, $class=null) { echo $this->get__HTML('SECONDARY', 4, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeBDI($label = NULL) { echo $this->get_closeHTML('SECONDARY', 4, $label); }
+  public function xBDI($label = NULL) { echo $this->get_xHTML('SECONDARY', 4, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined BDO OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE BDO OPEN noHTML TAG
+  * @ Method Defined BDO _ AND x TAG noHTML  
+  * RETURN NODE BDO _ noHTML TAG
   *
   **/
-  public function openBDO($js=[], $id=null, $class=null) { echo $this->get_openHTML('SECONDARY', 5, $js, $id, $class);   }
+  public function _BDO($js=[], $id=null, $class=null) { echo $this->get__HTML('SECONDARY', 5, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeBDO($label = NULL) { echo $this->get_closeHTML('SECONDARY', 5, $label); }
+  public function xBDO($label = NULL) { echo $this->get_xHTML('SECONDARY', 5, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined BLOCKQUOTE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE BLOCKQUOTE OPEN noHTML TAG
+  * @ Method Defined BLOCKQUOTE _ AND x TAG noHTML  
+  * RETURN NODE BLOCKQUOTE _ noHTML TAG
   *
   **/
-  public function openBLOCKQUOTE($js=[], $id=null, $class=null) { echo $this->get_openHTML('SECONDARY', 6, $js, $id, $class);  }
+  public function _BLOCKQUOTE($js=[], $id=null, $class=null) { echo $this->get__HTML('SECONDARY', 6, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeBLOCKQUOTE($label = NULL) { echo $this->get_closeHTML('SECONDARY', 6, $label); }
+  public function xBLOCKQUOTE($label = NULL) { echo $this->get_xHTML('SECONDARY', 6, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined CAPTION OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE CAPTION OPEN noHTML TAG
+  * @ Method Defined CAPTION _ AND x TAG noHTML  
+  * RETURN NODE CAPTION _ noHTML TAG
   *
   **/
-  public function openCAPTION($js=[], $id=null, $class=null) { echo $this->get_openHTML('SECONDARY', 7, $js, $id, $class);  }
+  public function _CAPTION($js=[], $id=null, $class=null) { echo $this->get__HTML('SECONDARY', 7, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeCAPTION($label = NULL) { echo $this->get_closeHTML('SECONDARY', 7, $label); }
+  public function xCAPTION($label = NULL) { echo $this->get_xHTML('SECONDARY', 7, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined LABEL OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE LABEL OPEN noHTML TAG
+  * @ Method Defined LABEL _ AND x TAG noHTML  
+  * RETURN NODE LABEL _ noHTML TAG
   *
   **/
-  public function openLABEL($js=[], $id=null, $class=null) { echo $this->get_openHTML('SECONDARY', 8, $js, $id, $class);  }
+  public function _LABEL($js=[], $id=null, $class=null) { echo $this->get__HTML('SECONDARY', 8, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeLABEL($label = NULL) { echo $this->get_closeHTML('SECONDARY', 8, $label); }
+  public function xLABEL($label = NULL) { echo $this->get_xHTML('SECONDARY', 8, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined DATALIST OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE DATALIST OPEN noHTML TAG
+  * @ Method Defined DATALIST _ AND x TAG noHTML  
+  * RETURN NODE DATALIST _ noHTML TAG
   *
   **/
-  public function openDATALIST($js=[], $id=null, $class=null) { echo $this->get_openHTML('SECONDARY', 9, $js, $id, $class);  }
+  public function _DATALIST($js=[], $id=null, $class=null) { echo $this->get__HTML('SECONDARY', 9, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeDATALIST($label = NULL) { echo $this->get_closeHTML('SECONDARY', 9, $label); }
+  public function xDATALIST($label = NULL) { echo $this->get_xHTML('SECONDARY', 9, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined DETAILS OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE DETAILS OPEN noHTML TAG
+  * @ Method Defined DETAILS _ AND x TAG noHTML  
+  * RETURN NODE DETAILS _ noHTML TAG
   *
   **/
-  public function openDETAILS($js=[], $id=null, $class=null) { echo $this->get_openHTML('SECONDARY', 10, $js, $id, $class); }
+  public function _DETAILS($js=[], $id=null, $class=null) { echo $this->get__HTML('SECONDARY', 10, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeDETAILS($label = NULL) { echo $this->get_closeHTML('SECONDARY', 10, $label); }
+  public function xDETAILS($label = NULL) { echo $this->get_xHTML('SECONDARY', 10, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined SUMMARY OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE SUMMARY OPEN noHTML TAG
+  * @ Method Defined SUMMARY _ AND x TAG noHTML  
+  * RETURN NODE SUMMARY _ noHTML TAG
   *
   **/
-  public function openSUMMARY($js=[], $id=null, $class=null) { echo $this->get_openHTML('SECONDARY', 11, $js, $id, $class);  }
+  public function _SUMMARY($js=[], $id=null, $class=null) { echo $this->get__HTML('SECONDARY', 11, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeSUMMARY($label = NULL) { echo $this->get_closeHTML('SECONDARY', 11, $label); }
+  public function xSUMMARY($label = NULL) { echo $this->get_xHTML('SECONDARY', 11, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined DIALOG OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE DIALOG OPEN noHTML TAG
+  * @ Method Defined DIALOG _ AND x TAG noHTML  
+  * RETURN NODE DIALOG _ noHTML TAG
   *
   **/
-  public function openDIALOG($js=[], $id=null, $class=null) { echo $this->get_openHTML('SECONDARY', 12, $js, $id, $class);  }
+  public function _DIALOG($js=[], $id=null, $class=null) { echo $this->get__HTML('SECONDARY', 12, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeDIALOG($label = NULL) { echo $this->get_closeHTML('SECONDARY', 12, $label); }
+  public function xDIALOG($label = NULL) { echo $this->get_xHTML('SECONDARY', 12, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined OPTION OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE OPTION OPEN noHTML TAG
+  * @ Method Defined OPTION _ AND x TAG noHTML  
+  * RETURN NODE OPTION _ noHTML TAG
   *
   **/
-  public function openOPTION($js=[], $id=null, $class=null) { echo $this->get_openHTML('SECONDARY', 12, $js, $id, $class);  }
+  public function _OPTION($js=[], $id=null, $class=null) { echo $this->get__HTML('SECONDARY', 12, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function closeOPTION($label = NULL) { echo $this->get_closeHTML('SECONDARY', 12, $label); }
+  public function xOPTION($label = NULL) { echo $this->get_xHTML('SECONDARY', 12, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined FIGURE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE FIGURE OPEN noHTML TAG
+  * @ Method Defined FIGURE _ AND x TAG noHTML  
+  * RETURN NODE FIGURE _ noHTML TAG
   *
   **/
-  public function openFIGURE($js=[], $id=null, $class=null) { echo $this->get_openHTML('SUPPORT', 0, $js, $id, $class);  }
+  public function _FIGURE($js=[], $id=null, $class=null) { echo $this->get__HTML('SUPPORT', 0, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeFIGURE($label = NULL) { echo $this->get_closeHTML('SUPPORT', 0, $label); }
+  public function xFIGURE($label = NULL) { echo $this->get_xHTML('SUPPORT', 0, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined FIGCAPTION OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE FIGCAPTION OPEN noHTML TAG
+  * @ Method Defined FIGCAPTION _ AND x TAG noHTML  
+  * RETURN NODE FIGCAPTION _ noHTML TAG
   *
   **/
-  public function openFIGCAPTION($js=[], $id=null, $class=null) { echo $this->get_openHTML('SUPPORT', 1, $js, $id, $class);   }
+  public function _FIGCAPTION($js=[], $id=null, $class=null) { echo $this->get__HTML('SUPPORT', 1, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeFIGCAPTION($label = NULL) { echo $this->get_closeHTML('SUPPORT', 1, $label); }
+  public function xFIGCAPTION($label = NULL) { echo $this->get_xHTML('SUPPORT', 1, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined METER OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE METER OPEN noHTML TAG
+  * @ Method Defined METER _ AND x TAG noHTML  
+  * RETURN NODE METER _ noHTML TAG
   *
   **/
-  public function openMETER($js=[], $id=null, $class=null) { echo $this->get_openHTML('SUPPORT', 2, $js, $id, $class);   }
+  public function _METER($js=[], $id=null, $class=null) { echo $this->get__HTML('SUPPORT', 2, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeMETER($label = NULL) { echo $this->get_closeHTML('SUPPORT', 2, $label); }
+  public function xMETER($label = NULL) { echo $this->get_xHTML('SUPPORT', 2, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined OBJECT OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE OBJECT OPEN noHTML TAG
+  * @ Method Defined OBJECT _ AND x TAG noHTML  
+  * RETURN NODE OBJECT _ noHTML TAG
   *
   **/
-  public function openOBJECT($js=[], $id=null, $class=null) { echo $this->get_openHTML('SUPPORT', 3, $js, $id, $class);   }
+  public function _OBJECT($js=[], $id=null, $class=null) { echo $this->get__HTML('SUPPORT', 3, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeOBJECT($label = NULL) { echo $this->get_closeHTML('SUPPORT', 3, $label); }
+  public function xOBJECT($label = NULL) { echo $this->get_xHTML('SUPPORT', 3, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined OPTGROUP OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE OPTGROUP OPEN noHTML TAG
+  * @ Method Defined OPTGROUP _ AND x TAG noHTML  
+  * RETURN NODE OPTGROUP _ noHTML TAG
   *
   **/
-  public function openOPTGROUP($js=[], $id=null, $class=null) { echo $this->get_openHTML('SUPPORT', 4, $js, $id, $class);  }
+  public function _OPTGROUP($js=[], $id=null, $class=null) { echo $this->get__HTML('SUPPORT', 4, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeOPTGROUP($label = NULL) { echo $this->get_closeHTML('SUPPORT', 4, $label); }
+  public function xOPTGROUP($label = NULL) { echo $this->get_xHTML('SUPPORT', 4, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined OUTPUT OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE OUTPUT OPEN noHTML TAG
+  * @ Method Defined OUTPUT _ AND x TAG noHTML  
+  * RETURN NODE OUTPUT _ noHTML TAG
   *
   **/
-  public function openOUTPUT($js=[], $id=null, $class=null) { echo $this->get_openHTML('SUPPORT', 5, $js, $id, $class);   }
+  public function _OUTPUT($js=[], $id=null, $class=null) { echo $this->get__HTML('SUPPORT', 5, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeOUTPUT($label = NULL) { echo $this->get_closeHTML('SUPPORT', 5, $label); }
+  public function xOUTPUT($label = NULL) { echo $this->get_xHTML('SUPPORT', 5, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined PROGRESS OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE PROGRESS OPEN noHTML TAG
+  * @ Method Defined PROGRESS _ AND x TAG noHTML  
+  * RETURN NODE PROGRESS _ noHTML TAG
   *
   **/
-  public function openPROGRESS($js=[], $id=null, $class=null) { echo $this->get_openHTML('SUPPORT', 6, $js, $id, $class);  }
+  public function _PROGRESS($js=[], $id=null, $class=null) { echo $this->get__HTML('SUPPORT', 6, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG
-  public function closePROGRESS($label = NULL) { echo $this->get_closeHTML('SUPPORT', 6, $label); }
+  public function xPROGRESS($label = NULL) { echo $this->get_xHTML('SUPPORT', 6, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined SVG OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE SVG OPEN noHTML TAG
+  * @ Method Defined SVG _ AND x TAG noHTML  
+  * RETURN NODE SVG _ noHTML TAG
   *
   **/
-  public function openSVG($js=[], $id=null, $class=null) { echo $this->get_openHTML('SUPPORT', 7, $js, $id, $class);   }
+  public function _SVG($js=[], $id=null, $class=null) { echo $this->get__HTML('SUPPORT', 7, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeSVG($label = NULL) { echo $this->get_closeHTML('SUPPORT', 7, $label); }
+  public function xSVG($label = NULL) { echo $this->get_xHTML('SUPPORT', 7, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined TEMPLATE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE TEMPLATE OPEN noHTML TAG
+  * @ Method Defined TEMPLATE _ AND x TAG noHTML  
+  * RETURN NODE TEMPLATE _ noHTML TAG
   *
   **/
-  public function openTEMPLATE($js=[], $id=null, $class=null) { echo $this->get_openHTML('SUPPORT', 8, $js, $id, $class); }
+  public function _TEMPLATE($js=[], $id=null, $class=null) { echo $this->get__HTML('SUPPORT', 8, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeTEMPLATE($label = NULL) { echo $this->get_closeHTML('SUPPORT', 8, $label); }
+  public function xTEMPLATE($label = NULL) { echo $this->get_xHTML('SUPPORT', 8, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined TIME OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE TIME OPEN noHTML TAG
+  * @ Method Defined TIME _ AND x TAG noHTML  
+  * RETURN NODE TIME _ noHTML TAG
   *
   **/
-  public function openTIME($js=[], $id=null, $class=null) { echo $this->get_openHTML('SUPPORT', 9, $js, $id, $class);   }
+  public function _TIME($js=[], $id=null, $class=null) { echo $this->get__HTML('SUPPORT', 9, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeTIME($label = NULL) { echo $this->get_closeHTML('SUPPORT', 9, $label); }
+  public function xTIME($label = NULL) { echo $this->get_xHTML('SUPPORT', 9, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined VAR OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE VAR OPEN noHTML TAG
+  * @ Method Defined VAR _ AND x TAG noHTML  
+  * RETURN NODE VAR _ noHTML TAG
   *
   **/
-  public function openVAR($js=[], $id=null, $class=null) { echo $this->get_openHTML('SUPPORT', 10, $js, $id, $class);   }
+  public function _VAR($js=[], $id=null, $class=null) { echo $this->get__HTML('SUPPORT', 10, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeVAR($label = NULL) { echo $this->get_closeHTML('SUPPORT', 10, $label); }
+  public function xVAR($label = NULL) { echo $this->get_xHTML('SUPPORT', 10, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined UL OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE UL OPEN noHTML TAG
+  * @ Method Defined UL _ AND x TAG noHTML  
+  * RETURN NODE UL _ noHTML TAG
   *
   **/
-  public function openUL($js=[], $id=null, $class=null) { echo $this->get_openHTML('LIST', 0, $js, $id, $class);  }
+  public function _UL($js=[], $id=null, $class=null) { echo $this->get__HTML('LIST', 0, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeUL($label = NULL) { echo $this->get_closeHTML('LIST', 0, $label); }
+  public function xUL($label = NULL) { echo $this->get_xHTML('LIST', 0, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined OL OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE OL OPEN noHTML TAG
+  * @ Method Defined OL _ AND x TAG noHTML  
+  * RETURN NODE OL _ noHTML TAG
   *
   **/
-  public function openOL($js=[], $id=null, $class=null) { echo $this->get_openHTML('LIST', 1, $js, $id, $class);   }
+  public function _OL($js=[], $id=null, $class=null) { echo $this->get__HTML('LIST', 1, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeOL($label = NULL) { echo $this->get_closeHTML('LIST', 1, $label); }
+  public function xOL($label = NULL) { echo $this->get_xHTML('LIST', 1, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined LI OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE LI OPEN noHTML TAG
+  * @ Method Defined LI _ AND x TAG noHTML  
+  * RETURN NODE LI _ noHTML TAG
   *
   **/
-  public function openLI($js=[], $id=null, $class=null) { echo $this->get_openHTML('LIST', 2, $js, $id, $class);    }
+  public function _LI($js=[], $id=null, $class=null) { echo $this->get__HTML('LIST', 2, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeLI($label = NULL) { echo $this->get_closeHTML('LIST', 2, $label); }
+  public function xLI($label = NULL) { echo $this->get_xHTML('LIST', 2, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined TABLE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE TABLE OPEN noHTML TAG
+  * @ Method Defined TABLE _ AND x TAG noHTML  
+  * RETURN NODE TABLE _ noHTML TAG
   *
   **/
-  public function openTABLE($js=[], $id=null, $class=null) { echo $this->get_openHTML('LIST', 3, $js, $id, $class);    }
+  public function _TABLE($js=[], $id=null, $class=null) { echo $this->get__HTML('LIST', 3, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeTABLE($label = NULL) { echo $this->get_closeHTML('LIST', 3, $label); }
+  public function xTABLE($label = NULL) { echo $this->get_xHTML('LIST', 3, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined TR OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE TR OPEN noHTML TAG
+  * @ Method Defined TR _ AND x TAG noHTML  
+  * RETURN NODE TR _ noHTML TAG
   *
   **/
-  public function openTR($js=[], $id=null, $class=null) { echo $this->get_openHTML('LIST', 4, $js, $id, $class);   }
+  public function _TR($js=[], $id=null, $class=null) { echo $this->get__HTML('LIST', 4, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeTR($label = NULL) { echo $this->get_closeHTML('LIST', 4, $label); }
+  public function xTR($label = NULL) { echo $this->get_xHTML('LIST', 4, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined TD OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE TD OPEN noHTML TAG
+  * @ Method Defined TD _ AND x TAG noHTML  
+  * RETURN NODE TD _ noHTML TAG
   *
   **/
-  public function openTD($js=[], $id=null, $class=null) { echo $this->get_openHTML('LIST', 5, $js, $id, $class);   }
+  public function _TD($js=[], $id=null, $class=null) { echo $this->get__HTML('LIST', 5, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeTD($label = NULL) { echo $this->get_closeHTML('LIST', 5, $label); }
+  public function xTD($label = NULL) { echo $this->get_xHTML('LIST', 5, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined TH OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE TH OPEN noHTML TAG
+  * @ Method Defined TH _ AND x TAG noHTML  
+  * RETURN NODE TH _ noHTML TAG
   *
   **/
-  public function openTH($js=[], $id=null, $class=null) { echo $this->get_openHTML('LIST', 6, $js, $id, $class);   }
+  public function _TH($js=[], $id=null, $class=null) { echo $this->get__HTML('LIST', 6, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeTH($label = NULL) { echo $this->get_closeHTML('LIST', 6, $label);  }
+  public function xTH($label = NULL) { echo $this->get_xHTML('LIST', 6, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined LEGEND OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE LEGEND OPEN noHTML TAG
+  * @ Method Defined LEGEND _ AND x TAG noHTML  
+  * RETURN NODE LEGEND _ noHTML TAG
   *
   **/
-  public function openLEGEND($js=[], $id=null, $class=null) { echo $this->get_openHTML('LIST', 7, $js, $id, $class);   }
+  public function _LEGEND($js=[], $id=null, $class=null) { echo $this->get__HTML('LIST', 7, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeLEGEND($label = NULL) { echo $this->get_closeHTML('LIST', 7, $label); }
+  public function xLEGEND($label = NULL) { echo $this->get_xHTML('LIST', 7, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined FIELDSET OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE FIELDSET OPEN noHTML TAG
+  * @ Method Defined FIELDSET _ AND x TAG noHTML  
+  * RETURN NODE FIELDSET _ noHTML TAG
   *
   **/
-  public function openFIELDSET($js=[], $id=null, $class=null) { echo $this->get_openHTML('LIST', 8, $js, $id, $class);   }
+  public function _FIELDSET($js=[], $id=null, $class=null) { echo $this->get__HTML('LIST', 8, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeFIELDSET($label = NULL) { echo $this->get_closeHTML('LIST', 8, $label); }
+  public function xFIELDSET($label = NULL) { echo $this->get_xHTML('LIST', 8, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined TBODY OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE TBODY OPEN noHTML TAG
+  * @ Method Defined TBODY _ AND x TAG noHTML  
+  * RETURN NODE TBODY _ noHTML TAG
   *
   **/
-  public function openTBODY($js=[], $id=null, $class=null) { echo $this->get_openHTML('LIST', 9, $js, $id, $class);    }
+  public function _TBODY($js=[], $id=null, $class=null) { echo $this->get__HTML('LIST', 9, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeTBODY($label = NULL) { echo $this->get_closeHTML('LIST', 9, $label); }
+  public function xTBODY($label = NULL) { echo $this->get_xHTML('LIST', 9, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined TFOOT OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE TFOOT OPEN noHTML TAG
+  * @ Method Defined TFOOT _ AND x TAG noHTML  
+  * RETURN NODE TFOOT _ noHTML TAG
   *
   **/
-  public function openTFOOT($js=[], $id=null, $class=null) { echo $this->get_openHTML('LIST', 10, $js, $id, $class);    }
+  public function _TFOOT($js=[], $id=null, $class=null) { echo $this->get__HTML('LIST', 10, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeTFOOT($label = NULL) { echo $this->get_closeHTML('LIST', 10, $label);  }
+  public function xTFOOT($label = NULL) { echo $this->get_xHTML('LIST', 10, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined THEAD OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE THEAD OPEN noHTML TAG
+  * @ Method Defined THEAD _ AND x TAG noHTML  
+  * RETURN NODE THEAD _ noHTML TAG
   *
   **/
-  public function openTHEAD($js=[], $id=null, $class=null) { echo $this->get_openHTML('LIST', 11, $js, $id, $class);   }
+  public function _THEAD($js=[], $id=null, $class=null) { echo $this->get__HTML('LIST', 11, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeTHEAD($label = NULL) { echo $this->get_closeHTML('LIST', 11, $label);  }
+  public function xTHEAD($label = NULL) { echo $this->get_xHTML('LIST', 11, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined SPAN OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE SPAN OPEN noHTML TAG
+  * @ Method Defined SPAN _ AND x TAG noHTML  
+  * RETURN NODE SPAN _ noHTML TAG
   *
   **/
-  public function openSPAN($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMAT', 0, $js, $id, $class);    }
+  public function _SPAN($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMAT', 0, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeSPAN($label = NULL) { echo $this->get_closeHTML('FORMAT', 0, $label); }
+  public function xSPAN($label = NULL) { echo $this->get_xHTML('FORMAT', 0, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined EM OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE EM OPEN noHTML TAG
+  * @ Method Defined EM _ AND x TAG noHTML  
+  * RETURN NODE EM _ noHTML TAG
   *
   **/
-  public function openEM($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMAT', 1, $js, $id, $class);    }
+  public function _EM($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMAT', 1, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeEM($label = NULL) { echo $this->get_closeHTML('FORMAT', 1, $label); }
+  public function xEM($label = NULL) { echo $this->get_xHTML('FORMAT', 1, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined B OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE B OPEN noHTML TAG
+  * @ Method Defined B _ AND x TAG noHTML  
+  * RETURN NODE B _ noHTML TAG
   *
   **/
-  public function openB($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMAT', 2, $js, $id, $class);   }
+  public function _B($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMAT', 2, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeB($label = NULL) { echo $this->get_closeHTML('FORMAT', 2, $label); }
+  public function xB($label = NULL) { echo $this->get_xHTML('FORMAT', 2, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined I OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE I OPEN noHTML TAG
+  * @ Method Defined I _ AND x TAG noHTML  
+  * RETURN NODE I _ noHTML TAG
   *
   **/
-  public function openI($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMAT', 3, $js, $id, $class);   }
+  public function _I($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMAT', 3, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeI($label = NULL) { echo $this->get_closeHTML('FORMAT', 3, $label);  }
+  public function xI($label = NULL) { echo $this->get_xHTML('FORMAT', 3, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined SMALL OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE SMALL OPEN noHTML TAG
+  * @ Method Defined SMALL _ AND x TAG noHTML  
+  * RETURN NODE SMALL _ noHTML TAG
   *
   **/
-  public function openSMALL($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMAT', 4, $js, $id, $class);   }
+  public function _SMALL($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMAT', 4, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeSMALL($label = NULL) { echo $this->get_closeHTML('FORMAT', 4, $label); }
+  public function xSMALL($label = NULL) { echo $this->get_xHTML('FORMAT', 4, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined STRIKE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE STRIKE OPEN noHTML TAG
+  * @ Method Defined STRIKE _ AND x TAG noHTML  
+  * RETURN NODE STRIKE _ noHTML TAG
   *
   **/
-  public function openSTRIKE($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMAT', 5, $js, $id, $class);   }
+  public function _STRIKE($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMAT', 5, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeSTRIKE($label = NULL) { echo $this->get_closeHTML('FORMAT', 5, $label);  }
+  public function xSTRIKE($label = NULL) { echo $this->get_xHTML('FORMAT', 5, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined MARQUEE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE MARQUEE OPEN noHTML TAG
+  * @ Method Defined MARQUEE _ AND x TAG noHTML  
+  * RETURN NODE MARQUEE _ noHTML TAG
   *
   **/
-  public function openMARQUEE($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMAT', 6, $js, $id, $class);    }
+  public function _MARQUEE($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMAT', 6, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeMARQUEE($label = NULL) { echo $this->get_closeHTML('FORMAT', 6, $label); }
+  public function xMARQUEE($label = NULL) { echo $this->get_xHTML('FORMAT', 6, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined CENTER OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE CENTER OPEN noHTML TAG
+  * @ Method Defined CENTER _ AND x TAG noHTML  
+  * RETURN NODE CENTER _ noHTML TAG
   *
   **/
-  public function openCENTER($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMAT', 7, $js, $id, $class);   }
+  public function _CENTER($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMAT', 7, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeCENTER($label = NULL) { echo $this->get_closeHTML('FORMAT', 7, $label);  }
+  public function xCENTER($label = NULL) { echo $this->get_xHTML('FORMAT', 7, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined CODE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE CODE OPEN noHTML TAG
+  * @ Method Defined CODE _ AND x TAG noHTML  
+  * RETURN NODE CODE _ noHTML TAG
   *
   **/
-  public function openCODE($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMAT', 8, $js, $id, $class);   }
+  public function _CODE($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMAT', 8, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeCODE($label = NULL) { echo $this->get_closeHTML('FORMAT', 8, $label);  }
+  public function xCODE($label = NULL) { echo $this->get_xHTML('FORMAT', 8, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined ABBR OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE ABBR OPEN noHTML TAG
+  * @ Method Defined ABBR _ AND x TAG noHTML  
+  * RETURN NODE ABBR _ noHTML TAG
   *
   **/
-  public function openABBR($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMAT', 9, $js, $id, $class);   }
+  public function _ABBR($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMAT', 9, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeABBR($label = NULL) { echo $this->get_closeHTML('FORMAT', 9, $label); }
+  public function xABBR($label = NULL) { echo $this->get_xHTML('FORMAT', 9, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined MAP OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE MAP OPEN noHTML TAG
+  * @ Method Defined MAP _ AND x TAG noHTML  
+  * RETURN NODE MAP _ noHTML TAG
   *
   **/
-  public function openMAP($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMAT', 10, $js, $id, $class);   }
+  public function _MAP($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMAT', 10, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeMAP($label = NULL) { echo $this->get_closeHTML('FORMAT', 10, $label); }
+  public function xMAP($label = NULL) { echo $this->get_xHTML('FORMAT', 10, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined CANVAS OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE CANVAS OPEN noHTML TAG
+  * @ Method Defined CANVAS _ AND x TAG noHTML  
+  * RETURN NODE CANVAS _ noHTML TAG
   *
   **/
-  public function openCANVAS($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMAT', 11, $js, $id, $class);    }
+  public function _CANVAS($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMAT', 11, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeCANVAS($label = NULL) { echo $this->get_closeHTML('FORMAT', 11, $label); }
+  public function xCANVAS($label = NULL) { echo $this->get_xHTML('FORMAT', 11, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined CITE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE CITE OPEN noHTML TAG
+  * @ Method Defined CITE _ AND x TAG noHTML  
+  * RETURN NODE CITE _ noHTML TAG
   *
   **/
-  public function openCITE($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMAT', 12, $js, $id, $class);   }
+  public function _CITE($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMAT', 12, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeCITE($label = NULL) { echo $this->get_closeHTML('FORMAT', 12, $label); }
+  public function xCITE($label = NULL) { echo $this->get_xHTML('FORMAT', 12, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined DATA OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE DATA OPEN noHTML TAG
+  * @ Method Defined DATA _ AND x TAG noHTML  
+  * RETURN NODE DATA _ noHTML TAG
   *
   **/
-  public function openDATA($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMAT', 13, $js, $id, $class);  }
+  public function _DATA($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMAT', 13, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeDATA($label = NULL) { echo $this->get_closeHTML('FORMAT', 13, $label); }
+  public function xDATA($label = NULL) { echo $this->get_xHTML('FORMAT', 13, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined DL OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE DL OPEN noHTML TAG
+  * @ Method Defined DL _ AND x TAG noHTML  
+  * RETURN NODE DL _ noHTML TAG
   *
   **/
-  public function openDL($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMAT', 14, $js, $id, $class);   }
+  public function _DL($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMAT', 14, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeDL($label = NULL) { echo $this->get_closeHTML('FORMAT', 14, $label); }
+  public function xDL($label = NULL) { echo $this->get_xHTML('FORMAT', 14, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined DT OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE DT OPEN noHTML TAG
+  * @ Method Defined DT _ AND x TAG noHTML  
+  * RETURN NODE DT _ noHTML TAG
   *
   **/
-  public function openDT($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMAT', 15, $js, $id, $class);   }
+  public function _DT($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMAT', 15, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeDT($label = NULL) { echo $this->get_closeHTML('FORMAT', 15, $label); }
+  public function xDT($label = NULL) { echo $this->get_xHTML('FORMAT', 15, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined DD OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE DD OPEN noHTML TAG
+  * @ Method Defined DD _ AND x TAG noHTML  
+  * RETURN NODE DD _ noHTML TAG
   *
   **/
-  public function openDD($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMAT', 16, $js, $id, $class);    }
+  public function _DD($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMAT', 16, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeDD($label = NULL) { echo $this->get_closeHTML('FORMAT', 16, $label); }
+  public function xDD($label = NULL) { echo $this->get_xHTML('FORMAT', 16, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined DFN OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE DFN OPEN noHTML TAG
+  * @ Method Defined DFN _ AND x TAG noHTML  
+  * RETURN NODE DFN _ noHTML TAG
   *
   **/
-  public function openDFN($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMAT', 17, $js, $id, $class);   }
+  public function _DFN($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMAT', 17, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeDFN($label = NULL) { echo $this->get_closeHTML('FORMAT', 17, $label); }
+  public function xDFN($label = NULL) { echo $this->get_xHTML('FORMAT', 17, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined INS OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE INS OPEN noHTML TAG
+  * @ Method Defined INS _ AND x TAG noHTML  
+  * RETURN NODE INS _ noHTML TAG
   *
   **/
-  public function openINS($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMAT', 18, $js, $id, $class);    }
+  public function _INS($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMAT', 18, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeINS($label = NULL) { echo $this->get_closeHTML('FORMAT', 18, $label); }
+  public function xINS($label = NULL) { echo $this->get_xHTML('FORMAT', 18, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined DEL OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE DEL OPEN noHTML TAG
+  * @ Method Defined DEL _ AND x TAG noHTML  
+  * RETURN NODE DEL _ noHTML TAG
   *
   **/
-  public function openDEL($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMATC', 0, $js, $id, $class);    }
+  public function _DEL($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMATC', 0, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeDEL($label = NULL) { echo $this->get_closeHTML('FORMATC', 0, $label);  }
+  public function xDEL($label = NULL) { echo $this->get_xHTML('FORMATC', 0, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined KBD OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE KBD OPEN noHTML TAG
+  * @ Method Defined KBD _ AND x TAG noHTML  
+  * RETURN NODE KBD _ noHTML TAG
   *
   **/
-  public function openKBD($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMATC', 1, $js, $id, $class);  }
+  public function _KBD($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMATC', 1, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeKBD($label = NULL) { echo $this->get_closeHTML('FORMATC', 1, $label);  }
+  public function xKBD($label = NULL) { echo $this->get_xHTML('FORMATC', 1, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined MARK OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE MARK OPEN noHTML TAG
+  * @ Method Defined MARK _ AND x TAG noHTML  
+  * RETURN NODE MARK _ noHTML TAG
   *
   **/
-  public function openMARK($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMATC', 2, $js, $id, $class);   }
+  public function _MARK($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMATC', 2, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeMARK($label = NULL) { echo $this->get_closeHTML('FORMATC', 2, $label);  }
+  public function xMARK($label = NULL) { echo $this->get_xHTML('FORMATC', 2, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined PRE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE PRE OPEN noHTML TAG
+  * @ Method Defined PRE _ AND x TAG noHTML  
+  * RETURN NODE PRE _ noHTML TAG
   *
   **/
-  public function openPRE($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMATC', 3, $js, $id, $class);    }
+  public function _PRE($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMATC', 3, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  public function closePRE($label = NULL) { echo $this->get_closeHTML('FORMATC', 3, $label);  }
+  public function xPRE($label = NULL) { echo $this->get_xHTML('FORMATC', 3, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined RT OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE RT OPEN noHTML TAG
+  * @ Method Defined RT _ AND x TAG noHTML  
+  * RETURN NODE RT _ noHTML TAG
   *
   **/
-  public function openRT($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMATC', 4, $js, $id, $class);   }
+  public function _RT($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMATC', 4, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeRT($label = NULL) { echo $this->get_closeHTML('FORMATC', 4, $label); }
+  public function xRT($label = NULL) { echo $this->get_xHTML('FORMATC', 4, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined RP OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE RP OPEN noHTML TAG
+  * @ Method Defined RP _ AND x TAG noHTML  
+  * RETURN NODE RP _ noHTML TAG
   *
   **/
-  public function openRP($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMATC', 5, $js, $id, $class);   }
+  public function _RP($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMATC', 5, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeRP($label = NULL) { echo $this->get_closeHTML('FORMATC', 5, $label);  }
+  public function xRP($label = NULL) { echo $this->get_xHTML('FORMATC', 5, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined RUBY OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE RUBY OPEN noHTML TAG
+  * @ Method Defined RUBY _ AND x TAG noHTML  
+  * RETURN NODE RUBY _ noHTML TAG
   *
   **/
-  public function openRUBY($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMATC', 6, $js, $id, $class);    }
+  public function _RUBY($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMATC', 6, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeRUBY($label = NULL) { echo $this->get_closeHTML('FORMATC', 6, $label);  }
+  public function xRUBY($label = NULL) { echo $this->get_xHTML('FORMATC', 6, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined S OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE S OPEN noHTML TAG
+  * @ Method Defined S _ AND x TAG noHTML  
+  * RETURN NODE S _ noHTML TAG
   *
   **/
-  public function openS($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMATC', 7, $js, $id, $class);   }
+  public function _S($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMATC', 7, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeS($label = NULL) { echo $this->get_closeHTML('FORMATC', 7, $label); }
+  public function xS($label = NULL) { echo $this->get_xHTML('FORMATC', 7, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined SAMP OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE SAMP OPEN noHTML TAG
+  * @ Method Defined SAMP _ AND x TAG noHTML  
+  * RETURN NODE SAMP _ noHTML TAG
   *
   **/
-  public function openSAMP($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMATC', 8, $js, $id, $class);   }
+  public function _SAMP($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMATC', 8, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeSAMP($label = NULL) { echo $this->get_closeHTML('FORMATC', 8, $label);  }
+  public function xSAMP($label = NULL) { echo $this->get_xHTML('FORMATC', 8, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined STRONG OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE STRONG OPEN noHTML TAG
+  * @ Method Defined STRONG _ AND x TAG noHTML  
+  * RETURN NODE STRONG _ noHTML TAG
   *
   **/
-  public function openSTRONG($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMATC', 9, $js, $id, $class);    }
+  public function _STRONG($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMATC', 9, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeSTRONG($label = NULL) { echo $this->get_closeHTML('FORMATC', 9, $label);  }
+  public function xSTRONG($label = NULL) { echo $this->get_xHTML('FORMATC', 9, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined SUB OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE SUB OPEN noHTML TAG
+  * @ Method Defined SUB _ AND x TAG noHTML  
+  * RETURN NODE SUB _ noHTML TAG
   *
   **/
-  public function openSUB($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMATC', 10, $js, $id, $class);    }
+  public function _SUB($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMATC', 10, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeSUB($label = NULL) { echo $this->get_closeHTML('FORMATC', 10, $label);  }
+  public function xSUB($label = NULL) { echo $this->get_xHTML('FORMATC', 10, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined SUP OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE SUP OPEN noHTML TAG
+  * @ Method Defined SUP _ AND x TAG noHTML  
+  * RETURN NODE SUP _ noHTML TAG
   *
   **/
-  public function openSUP($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMATC', 11, $js, $id, $class);    }
+  public function _SUP($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMATC', 11, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeSUP($label = NULL) { echo $this->get_closeHTML('FORMATC', 11, $label);  }
+  public function xSUP($label = NULL) { echo $this->get_xHTML('FORMATC', 11, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined WBR OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE WBR OPEN noHTML TAG
+  * @ Method Defined WBR _ AND x TAG noHTML  
+  * RETURN NODE WBR _ noHTML TAG
   *
   **/
-  public function openWBR($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMATC', 12, $js, $id, $class);   }
+  public function _WBR($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMATC', 12, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeWBR($label = NULL) { echo $this->get_closeHTML('FORMATC', 12, $label);  }
+  public function xWBR($label = NULL) { echo $this->get_xHTML('FORMATC', 12, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined Q OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE Q OPEN noHTML TAG
+  * @ Method Defined Q _ AND x TAG noHTML  
+  * RETURN NODE Q _ noHTML TAG
   *
   **/
-  public function openQ($js=[], $id=null, $class=null) { echo $this->get_openHTML('FORMATC', 13, $js, $id, $class);     }
+  public function _Q($js=[], $id=null, $class=null) { echo $this->get__HTML('FORMATC', 13, $js, $id, $class);     }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeQ($label = NULL) { echo $this->get_closeHTML('FORMATC', 13, $label);  }
+  public function xQ($label = NULL) { echo $this->get_xHTML('FORMATC', 13, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined HEAD OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE HEAD OPEN noHTML TAG
+  * @ Method Defined HEAD _ AND x TAG noHTML  
+  * RETURN NODE HEAD _ noHTML TAG
   *
   **/
-  public function openHEAD($js=[], $id=null, $class=null) { echo $this->get_openHTML('STRUCTURE', 0, $js, $id, $class);    }
+  public function _HEAD($js=[], $id=null, $class=null) { echo $this->get__HTML('STRUCTURE', 0, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeHEAD($label = NULL) { echo $this->get_closeHTML('STRUCTURE', 0, $label); }
+  public function xHEAD($label = NULL) { echo $this->get_xHTML('STRUCTURE', 0, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined TITLE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE TITLE OPEN noHTML TAG
+  * @ Method Defined TITLE _ AND x TAG noHTML  
+  * RETURN NODE TITLE _ noHTML TAG
   *
   **/
-  public function openTITLE($js=[], $id=null, $class=null) { echo $this->get_openHTML('STRUCTURE', 1, $js, $id, $class);    }
+  public function _TITLE($js=[], $id=null, $class=null) { echo $this->get__HTML('STRUCTURE', 1, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeTITLE($label = NULL) { echo $this->get_closeHTML('STRUCTURE', 1, $label);  }
+  public function xTITLE($label = NULL) { echo $this->get_xHTML('STRUCTURE', 1, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined BODY OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE BODY OPEN noHTML TAG
+  * @ Method Defined BODY _ AND x TAG noHTML  
+  * RETURN NODE BODY _ noHTML TAG
   *
   **/
-  public function openBODY($js=[], $id=null, $class=null) { echo $this->get_openHTML('STRUCTURE', 2, $js, $id, $class);     }
+  public function _BODY($js=[], $id=null, $class=null) { echo $this->get__HTML('STRUCTURE', 2, $js, $id, $class);     }
 // CLOSING_METHOD_noHTML_TAG
-  public function closeBODY($label = NULL) { echo $this->get_closeHTML('STRUCTURE', 2, $label); }
+  public function xBODY($label = NULL) { echo $this->get_xHTML('STRUCTURE', 2, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @ Method Defined HTML OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * @ Method Defined HTML _ AND x TAG noHTML  
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function opennoHTML($js=[], $id=null, $class=null) { echo $this->get_openHTML('STRUCTURE', 3, $js, $id, $class);   }
+  public function _noHTML($js=[], $id=null, $class=null) { echo $this->get__HTML('STRUCTURE', 3, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  public function closenoHTML($label = NULL) { echo $this->get_closeHTML('STRUCTURE', 3, $label); }
+  public function xnoHTML($label = NULL) { echo $this->get_xHTML('STRUCTURE', 3, $label); }
 
 /**
  *
@@ -1828,7 +1828,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML H1 TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function H1($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1841,7 +1841,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML H2 TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function H2($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1854,7 +1854,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML H3 TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function H3($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1867,7 +1867,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML H4 TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function H4($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1880,7 +1880,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML H5 TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function H5($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1893,7 +1893,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML H6 TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function H6($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1906,7 +1906,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML DIV TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function DIV($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1919,7 +1919,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML P TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function P($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1932,7 +1932,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML BUTTON TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function BUTTON($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1945,7 +1945,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML A TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function A($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1958,7 +1958,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML IFRAME TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function IFRAME($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1971,7 +1971,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML MAIN TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function MAIN($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1983,7 +1983,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML NAV TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function NAV($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1995,7 +1995,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML SELECT TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function SELECT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2007,7 +2007,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML FORM TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function FORM($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2019,7 +2019,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML PICTURE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function PICTURE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2031,7 +2031,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML SECTION TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function SECTION($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2043,7 +2043,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML TEXTAREA TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function TEXTAREA($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2055,7 +2055,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML AUDIO TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function AUDIO($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2067,7 +2067,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML VIDEO TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function VIDEO($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2079,7 +2079,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML ADDRESS TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function ADDRESS($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2091,7 +2091,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML COLGROUP TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function COLGROUP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2103,7 +2103,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML BDI TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function BDI($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2115,7 +2115,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML BDO TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function BDO($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2127,7 +2127,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML BLOCKQUOTE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function BLOCKQUOTE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2139,7 +2139,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML CAPTION TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function CAPTION($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2151,7 +2151,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML LABEL TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function LABEL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2163,7 +2163,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML DATALIST TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function DATALIST($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2175,7 +2175,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML DETAILS TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function DETAILS($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2187,7 +2187,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML SUMMARY TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function SUMMARY($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2199,7 +2199,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML DIALOG TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function DIALOG($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2211,7 +2211,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML OPTION TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function OPTION($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2223,7 +2223,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML FIGURE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function FIGURE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2235,7 +2235,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML FIGCAPTION TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function FIGCAPTION($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2247,7 +2247,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML METER TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function METER($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2259,7 +2259,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML OBJECT TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function OBJECT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2271,7 +2271,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML OPTGROUP TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function OPTGROUP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2283,7 +2283,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML OUTPUT TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function OUTPUT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2295,7 +2295,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML PROGRESS TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function PROGRESS($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2307,7 +2307,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML SVG TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function SVG($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2319,7 +2319,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML TEMPLATE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function TEMPLATE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2331,7 +2331,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML TIME TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function TIME($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2343,7 +2343,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML VAR TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function VAR($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2355,7 +2355,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML UL TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function UL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2367,7 +2367,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML OL TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function OL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2379,7 +2379,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML LI TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function LI($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2391,7 +2391,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML TABLE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function TABLE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2403,7 +2403,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML TR TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function TR($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2415,7 +2415,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML TD TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function TD($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2427,7 +2427,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML TH TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function TH($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2439,7 +2439,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML LEGEND TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function LEGEND($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2451,7 +2451,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML FIELDSET TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function FIELDSET($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2463,7 +2463,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML TBODY TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function TBODY($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2475,7 +2475,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML TFOOT TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function TFOOT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2487,7 +2487,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML THEAD TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function THEAD($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2499,7 +2499,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML SPAN TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function SPAN($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2511,7 +2511,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML EM TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function EM($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2523,7 +2523,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML B TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function B($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2535,7 +2535,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML I TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function I($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2547,7 +2547,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML SMALL TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function SMALL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2559,7 +2559,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML STRIKE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function STRIKE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2571,7 +2571,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML MARQUEE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function MARQUEE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2583,7 +2583,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML CENTER TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function CENTER($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2595,7 +2595,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML CODE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function CODE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2607,7 +2607,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML ABBR TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function ABBR($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2619,7 +2619,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML DETAILS TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function MAP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2631,7 +2631,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML CANVAS TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function CANVAS($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2643,7 +2643,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML CITE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function CITE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2655,7 +2655,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML DATA TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function DATA($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2667,7 +2667,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML DL TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function DL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2679,7 +2679,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML DT TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function DT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2691,7 +2691,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML DD TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function DD($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2703,7 +2703,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML DFN TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function DFN($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2715,7 +2715,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML INS TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function INS($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2727,7 +2727,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML DEL TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function DEL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2739,7 +2739,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML KBD TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function KBD($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2751,7 +2751,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML MARK TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function MARK($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2763,7 +2763,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML PRE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function PRE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2775,7 +2775,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML RT TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function RT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2787,7 +2787,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML RP TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function RP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2799,7 +2799,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML RUBY TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function RUBY($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2811,7 +2811,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML S TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function S($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2823,7 +2823,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML SAMP TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function SAMP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2835,7 +2835,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML STRONG TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function STRONG($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2847,7 +2847,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML SUB TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function SUB($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2859,7 +2859,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML SUP TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function SUP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2871,7 +2871,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML WBR TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function WBR($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2883,7 +2883,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML Q TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function Q($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2895,7 +2895,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML HEAD TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function HEAD($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2907,7 +2907,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML TITLE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function TITLE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2919,7 +2919,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML BODY TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function BODY($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2931,32 +2931,32 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method public function noHTML
   * @ Method Defined HTML noHTML TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   public function noHTML($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
  return $this->_istrue_assoc_ELEMENTINLINE('STRUCTURE', 3, $_doCONTENT, $js, $id, $class, $label, $assoc);
 
-} // END OF LINE HTML NO CLOSE REQUIRED
+} // END OF LINE HTML NO x REQUIRED
 
 /**
   *
   * @method private function noHTML
   * @ @private Method Defined  return_inline_element
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   * 
   **/
  private function return_inline_element($elem_val, $elem_key, $js, $id, $class, $assoc) {
 
-   return $this->get_inline_openHTML($elem_val, $elem_key, $js, $id, $class, $assoc);    
+   return $this->get_inline__HTML($elem_val, $elem_key, $js, $id, $class, $assoc);    
 }
 
 /**
   *
   * @method private function noHTML
   * @ @private  Method Defined  if TRUE ELEMENT TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
  private function _istrue_assoc_ELEMENTINLINE($elem_val, $elem_key, $_doCONTENT, $js, $id, $class, $label, $assoc) {
@@ -2994,34 +2994,34 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method private function noHTML
   * @ @private  Method Defined  if TRUE ELEMENT TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
  private function return_elementINLINE($elem_val, $elem_key, $_doCONTENT, $js, $id, $class, $label) {
    
     # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
-    # RETURN_GET_OPEN_HTML_METHOD_INCLUDED_ 
+    # RETURN_GET___HTML_METHOD_INCLUDED_ 
   /**
     *
     * @var | Defined var $elem_val, $elem_key, $js, $id, $class  
-    * @method function get_openHTML
+    * @method function get__HTML
     *
     **/ 
-   echo $return_elementINLINE  = $this->get_openHTML($elem_val, $elem_key, $js, $id, $class);  
+   echo $return_elementINLINE  = $this->get__HTML($elem_val, $elem_key, $js, $id, $class);  
    
    # WHEN_THE_LOOP_IS_TRUE_THEN
    # DO_CONTENT
    echo $return_elementINLINE  = $_doCONTENT; 
    
      # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
-     # RETURN_GET_OPEN_HTML_METHOD_INCLUDED_ 
+     # RETURN_GET___HTML_METHOD_INCLUDED_ 
    /**
      *
      * @var | Defined var $elem_val, $elem_key, $label  
-     * @method function get_closeHTML()
+     * @method function get_xHTML()
      *
      **/ 
-   echo $return_elementINLINE  = $this->get_closeHTML($elem_val, $elem_key, $label); 
+   echo $return_elementINLINE  = $this->get_xHTML($elem_val, $elem_key, $label); 
 
 }
 
@@ -3029,7 +3029,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method private function noHTML
   * @ @private  Method Defined  if newELEMENT TRUE ELEMENT TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
  private function _elemenHTMLINLINE($elem_val, $elem_key, $_doCONTENT, $js, $id, $class, $label) {
@@ -3037,39 +3037,39 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
      if ( $label == TRUE && $label === 'MAGIC') {
      
      # IF_INLINE_ELEMENT_IS_EQUAL_NEW_ELEMENT_AND_TRUE_THE_RETURN_ECHO_STATIC_noHTML
-     # RETURN_GET_OPEN_HTML_METHOD_INCLUDED_ 
+     # RETURN_GET___HTML_METHOD_INCLUDED_ 
    /**
      *
      * @var | Defined var $elem_val, $elem_key, $js, $id, $class
-     * @method function new_get_openHTML();
+     * @method function new_get__HTML();
      *
      **/ 
      
-     return $return_elementINLINE = $this->new_get_openHTML($elem_val, $elem_key, $js, $id, $class);  
+     return $return_elementINLINE = $this->new_get__HTML($elem_val, $elem_key, $js, $id, $class);  
 
    } elseif ($label == TRUE && $label === 'MAGIC_END') {
      
       # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
-      # RETURN_GET_OPEN_HTML_METHOD_INCLUDED_ 
+      # RETURN_GET___HTML_METHOD_INCLUDED_ 
     /**
       *
       * @var | Defined var $elem_val, $elem_key, $label  
-      * @method function new_get_openHTML();
+      * @method function new_get__HTML();
       * 
       **/    
-     return $return_elementINLINE  = $this->new_get_closeHTML($elem_val, $elem_key, $label); 
+     return $return_elementINLINE  = $this->new_get_xHTML($elem_val, $elem_key, $label); 
 
    } else {
 
      # IF_INLINE_ELEMENT_IS_EQUAL_NEW_ELEMENT_AND_TRUE_THE_RETURN_ECHO_STATIC_noHTML
-     # RETURN_GET_OPEN_HTML_METHOD_INCLUDED_ 
+     # RETURN_GET___HTML_METHOD_INCLUDED_ 
    /**
      *
      * @var | Defined var $elem_val, $elem_key, $js, $id, $class
-     * @method function new_get_openHTML();
+     * @method function new_get__HTML();
      *
      **/ 
-    $return_elementINLINE   = $this->new_get_openHTML($elem_val, $elem_key, $js, $id, $class);  
+    $return_elementINLINE   = $this->new_get__HTML($elem_val, $elem_key, $js, $id, $class);  
   
   
 
@@ -3078,14 +3078,14 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
      $return_elementINLINE  .= $_doCONTENT; 
    
      # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
-     # RETURN_GET_OPEN_HTML_METHOD_INCLUDED_ 
+     # RETURN_GET___HTML_METHOD_INCLUDED_ 
    /**
      *
      * @var | Defined var $elem_val, $elem_key, $label  
-     * @method function new_get_openHTML();
+     * @method function new_get__HTML();
      * 
      **/    
-    $return_elementINLINE  .= $this->new_get_closeHTML($elem_val, $elem_key, $label); 
+    $return_elementINLINE  .= $this->new_get_xHTML($elem_val, $elem_key, $label); 
   
     # get_ELEMENT_RETURN!
     return $return_elementINLINE;
@@ -3097,11 +3097,11 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
 /**
   *
   * @method private function noHTML
-  * @ @private Method Defined if get_inline_openHTML assoc TRUE  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * @ @private Method Defined if get_inline__HTML assoc TRUE  
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
- private function get_inline_openHTML($elem_val, $elem_key, $js, $id, $class, $assoc) {
+ private function get_inline__HTML($elem_val, $elem_key, $js, $id, $class, $assoc) {
   
   # ÌF_ASSOC_IS_SET_AS_NULL_THEN_RETURN_DATA_SET_ECHO
   # CHECK_IF_ASSOC_IS_FALSE_NULL_DEFAULT
@@ -3117,8 +3117,8 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
        * @var $js, $id, $class, NULL
        *
        **/
-     echo $get_inline_openHTML  = $this->_setELEMENT($elem_val, $elem_key);
-     echo $get_inline_openHTML  = $this->_setinLINEHTMLattr($js, $id, $class, NULL);   
+     echo $get_inline__HTML  = $this->_setELEMENT($elem_val, $elem_key);
+     echo $get_inline__HTML  = $this->_setinLINEHTMLattr($js, $id, $class, NULL);   
   
   }
   # CHECK_ASSOC_IF_IT_IS_TRUE_THEN
@@ -3133,10 +3133,10 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
        * @method function _setinLINEHTMLattr
        *
        **/ 
-     $get_inline_openHTML   = $this->_setELEMENT($elem_val, $elem_key);
-     $get_inline_openHTML  .= $this->_setinLINEHTMLattr($js, $id, $class, $assoc); 
+     $get_inline__HTML   = $this->_setELEMENT($elem_val, $elem_key);
+     $get_inline__HTML  .= $this->_setinLINEHTMLattr($js, $id, $class, $assoc); 
 
-     return $get_inline_openHTML;    
+     return $get_inline__HTML;    
   }
     
 }
@@ -3144,14 +3144,14 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
 /**
   *
   * @method private function noHTML
-  * @ @private Method Defined get_openHTML   
-  * RETURN NODE HTML OPEN noHTML TAG
+  * @ @private Method Defined get__HTML   
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
- protected function get_openHTML($elem_val, $elem_key, $js, $id, $class) {
+ protected function get__HTML($elem_val, $elem_key, $js, $id, $class) {
        
-      # RETURN_GET_OPENHTML_CONTAINS_OFSET_ELEMENTS_SET_HTML_ATTR
-      # SET_OPEN_HTML_AS_PRINT_STATIC_HTML
+      # RETURN_GET__HTML_CONTAINS_OFSET_ELEMENTS_SET_HTML_ATTR
+      # SET___HTML_AS_PRINT_STATIC_HTML
     /**
       *
       * SET_FUNCTION-CONCAT_THEN_RETURN
@@ -3159,22 +3159,22 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
       * @method function _setHTMLattr()
       *
       **/     
-    echo $get_openHTML  = $this->_setELEMENT($elem_val, $elem_key);
-    echo $get_openHTML  = $this->_setHTMLattr($js, $id, $class);   
+    echo $get__HTML  = $this->_setELEMENT($elem_val, $elem_key);
+    echo $get__HTML  = $this->_setHTMLattr($js, $id, $class);   
 
 }
 
 /**
   *
   * @method private function noHTML
-  * @ @private Method Defined new_get_openHTML   
-  * RETURN NODE HTML OPEN noHTML TAG
+  * @ @private Method Defined new_get__HTML   
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
- protected function new_get_openHTML($elem_val, $elem_key, $js, $id, $class) {
+ protected function new_get__HTML($elem_val, $elem_key, $js, $id, $class) {
   
-      # RETURN_GET_OPENHTML_CONTAINS_OFSET_ELEMENTS_SET_HTML_ATTR
-      # SET_OPEN_HTML_AS_RETURN_DYNAMIC_ASSOC_HTML
+      # RETURN_GET__HTML_CONTAINS_OFSET_ELEMENTS_SET_HTML_ATTR
+      # SET___HTML_AS_RETURN_DYNAMIC_ASSOC_HTML
     /**
       *
       * SET_FUNCTION-CONCAT_THEN_RETURN
@@ -3182,33 +3182,33 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
       * @method function new_setHTMLattr()
       *
       **/      
-   $get_openHTML   = $this->_setELEMENT($elem_val, $elem_key);
-   $get_openHTML  .= $this->new_setHTMLattr($js, $id, $class);   
+   $get__HTML   = $this->_setELEMENT($elem_val, $elem_key);
+   $get__HTML  .= $this->new_setHTMLattr($js, $id, $class);   
    
-   return $get_openHTML;
+   return $get__HTML;
 
 }
 
 /**
   *
   * @method private function noHTML
-  * @ @private Method Defined get_closeHTML   
-  * RETURN NODE HTML OPEN noHTML TAG
+  * @ @private Method Defined get_xHTML   
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
- protected function get_closeHTML($elem_val, $elem_key, $label) {
+ protected function get_xHTML($elem_val, $elem_key, $label) {
    
    # SET_VALUE_IS_TRUE_ELEMENT
    # ASIGNED-TO_SET_VAR_ELEMENT 
    $set             = $this->_isTRUELEM($elem_val); 
    
    # DEFINE_ELEMENTS_AND_EMTHODS
-   # ASSIGNED_GET_OPEN_TAG_SET_GETENDS_RETURN-SET_ARRAY_KEY
-   # EGT_CLOSE_HTML_ASSIGNED_BREAK_TAG
-   $defined_htm     = $this->_getOPENTAG().$this->_getENDS()
+   # ASSIGNED_GET___TAG_SET_GETENDS_RETURN-SET_ARRAY_KEY
+   # EGT_x_HTML_ASSIGNED_BREAK_TAG
+   $defined_htm     = $this->_get_TAG().$this->_getENDS()
                     
                        .$set[$elem_key]
-                       .$this->_getCLOSETAG()
+                       .$this->_getxTAG()
                        .$this->_getBREAK();
    
    # CHECK_IF_LABEL_IS_TRUE_AFTER_NODE
@@ -3234,19 +3234,19 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
 /**
   *
   * @method private function noHTML
-  * @ @private Method Defined new_get_closeHTML   
-  * RETURN NODE HTML OPEN noHTML TAG
+  * @ @private Method Defined new_get_xHTML   
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
- protected function new_get_closeHTML($elem_val, $elem_key, $label) {
+ protected function new_get_xHTML($elem_val, $elem_key, $label) {
 
    $set               = $this->_isTRUELEM($elem_val); 
    
    # SAMETHING_SET_AS_RETURN
-   $defined_htm       = $this->_getOPENTAG().$this->_getENDS()
+   $defined_htm       = $this->_get_TAG().$this->_getENDS()
 
                        .$set[$elem_key]
-                       .$this->_getCLOSETAG()
+                       .$this->_getxTAG()
                        .$this->_getBREAK();
 
    # CHECK_IF_LABEL_IS_TRUE_AFTER_NODE
@@ -3268,7 +3268,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method private function noHTML
   * @ @private Method Defined  _setHTMLattr   
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
  protected function _setHTMLattr($js = [], $id=NULL, $class=NULL) {
@@ -3279,18 +3279,18 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
       *
       * SET_FUNCTION-CONCAT_THEN_RETURN
       * @method function _isJStrue()
-      * @method function _getCLOSETAG()
+      * @method function _getxTAG()
       *
       **/     
     echo $_setHTMLattr  = $this->_isJStrue($js, $id, $class);
-    echo $_setHTMLattr = $this->_getCLOSETAG().$this->_getBREAK();   
+    echo $_setHTMLattr = $this->_getxTAG().$this->_getBREAK();   
 }
 
 /**
   *
   * @method private function noHTML
   * @ @private Method Defined  _setHTMLattr   
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
  protected function new_setHTMLattr($js = [], $id=NULL, $class=NULL) {
@@ -3301,11 +3301,11 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
       *
       * SET_FUNCTION-CONCAT_THEN_RETURN
       * @method function new_isJStrue()
-      * @method function _getCLOSETAG()
+      * @method function _getxTAG()
       *
       **/ 
     $_setHTMLattr  = $this->new_isJStrue($js, $id, $class);
-    $_setHTMLattr .= $this->_getCLOSETAG().$this->_getBREAK();
+    $_setHTMLattr .= $this->_getxTAG().$this->_getBREAK();
 
     return $_setHTMLattr;
 }
@@ -3314,7 +3314,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method private function noHTML
   * @ @private Method Defined  _setinLINEHTMLattr  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
  protected function _setinLINEHTMLattr($js = [], $id=NULL, $class=NULL, $assoc=NULL) {
@@ -3333,13 +3333,13 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
       *
       **/     
     echo $_setinLINEHTMLattr = $this->_isJStrue($js, $id, $class);
-    echo $_setinLINEHTMLattr = $this->_set_tagSPACER().$this->_setENDS().$this->_getCLOSETAG().$this->_getBREAK();  
+    echo $_setinLINEHTMLattr = $this->_set_tagSPACER().$this->_setENDS().$this->_getxTAG().$this->_getBREAK();  
 
   } /**
       *
       * SET_FUNCTION-CONCAT_THEN_RETURN
       * @method function isJStrue_assoc()
-      * @method function _set_tagSPACER_setENDS_getCLOSETAG_getBREAK
+      * @method function _set_tagSPACER_setENDS_getxTAG_getBREAK
       *
       **/     
     elseif ($assoc === FUNC_ASSOC || $assoc === CLASS_ASSOC || $assoc === METHOD_ASSOC) {
@@ -3347,7 +3347,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
       # ELSE_CHECK_IF_THE_ASSOC_IS_TRUE_OR_FUNC_ASSOC_OR_CLASS_ASSOC_METHOD_ASSOC
       # SET_AS_DYNAMIC_ASSOCIATED_WITH_METHOD_CLASS_FUNC_ASSOC      
       $_setinLINEHTMLattr  = $this->isJStrue_assoc($js, $id, $class, $assoc);
-      $_setinLINEHTMLattr .= $this->_set_tagSPACER().$this->_setENDS().$this->_getCLOSETAG().$this->_getBREAK();  
+      $_setinLINEHTMLattr .= $this->_set_tagSPACER().$this->_setENDS().$this->_getxTAG().$this->_getBREAK();  
 
       return $_setinLINEHTMLattr;    
   }
@@ -3358,7 +3358,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method private function noHTML
   * @ @private Method Defined  isJStrue_assoc  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
  private function isJStrue_assoc($js, $id, $class, $assoc) {
@@ -3396,7 +3396,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method private function noHTML
   * @ @private Method Defined  _isJStrue  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
  private function _isJStrue($js, $id, $class) {
@@ -3447,7 +3447,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method private function noHTML
   * @ @private Method Defined  _isJStrue  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
  private function new_isJStrue($js, $id, $class) {
@@ -3503,7 +3503,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method private function noHTML
   * @ @private Method Defined  _setELEMENT  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
  protected function _setELEMENT($_variable, $set_tag) {
@@ -3513,11 +3513,11 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
     *
     * SET_FUNCTION-CONCAT_THEN_RETURN
     * @method function _isTRUELEM
-    * @method function _getOPENTAG
+    * @method function _get_TAG
     *
     **/     
    $set =  $this->_isTRUELEM($_variable);
-   return  $this->_getOPENTAG().$set[$set_tag];
+   return  $this->_get_TAG().$set[$set_tag];
 
 }
 
@@ -3525,7 +3525,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method private function noHTML
   * @ @private Method Defined  apps_att  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
  protected function apps_att($js = []) {
@@ -3548,7 +3548,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method private function noHTML
   * @ @private Method Defined html_attr  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
  private function html_attr($id=null, $class=null) {
@@ -3601,7 +3601,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method private function noHTML
   * @ @private Method Defined new_html_attr 
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
  private function new_html_attr($id=null, $class=null) {
@@ -3652,7 +3652,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method private function noHTML
   * @ @private Method Defined _isTRUELEM 
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
  protected function _isTRUELEM($elements) {
@@ -3666,7 +3666,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
      *
      * @var elements 
      * @method _isTRUELEM
-     * RETURN NODE HTML OPEN noHTML TAG
+     * RETURN NODE HTML _ noHTML TAG
      *
      **/
     elseif  ($elements == 'SECONDARY') 
@@ -3679,7 +3679,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
      * @var elements 
      * @var $htm_ss 
      * @method _isTRUELEM
-     * RETURN NODE HTML OPEN noHTML TAG
+     * RETURN NODE HTML _ noHTML TAG
      *
      **/
     elseif  ($elements == 'SUPPORT')   
@@ -3692,7 +3692,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
      * @var elements 
      * @var $htm_t
      * @method _isTRUELEM
-     * RETURN NODE HTML OPEN noHTML TAG
+     * RETURN NODE HTML _ noHTML TAG
      *
      **/ 
     elseif  ($elements == 'LIST')      
@@ -3705,7 +3705,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
      * @var elements 
      * @var $htm_f
      * @method _isTRUELEM
-     * RETURN NODE HTML OPEN noHTML TAG
+     * RETURN NODE HTML _ noHTML TAG
      *
      **/
     elseif  ($elements == 'FORMAT')    
@@ -3718,7 +3718,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
      * @var elements
      * @var $htm_fc 
      * @method _isTRUELEM
-     * RETURN NODE HTML OPEN noHTML TAG
+     * RETURN NODE HTML _ noHTML TAG
      *
      **/
      elseif  ($elements == 'FORMATC')   
@@ -3731,7 +3731,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
      * @var elements 
      * @var $htm_L
      * @method _isTRUELEM
-     * RETURN NODE HTML OPEN noHTML TAG
+     * RETURN NODE HTML _ noHTML TAG
      *
      **/
 
@@ -3745,7 +3745,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
      * @var elements
      * @var $htm_st 
      * @method _isTRUELEM
-     * RETURN NODE HTML OPEN noHTML TAG
+     * RETURN NODE HTML _ noHTML TAG
      *
      **/
     elseif  ( $elements == 'STRUCTURE') 
@@ -3758,7 +3758,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method private function noHTML
   * @ @private Method Defined haveClass   
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
  private function haveClass($class) {
@@ -3770,7 +3770,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method private function noHTML
   * @ @private Method Defined haveId   
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
  private function haveId($id) {
@@ -3782,7 +3782,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method private function noHTML
   * @ @private Method Defined have_id_class   
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
  private function have_id_class($id, $class) {
@@ -3799,7 +3799,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method private function noHTML
   * @ @private Method Defined _isTrueBREAK_assoc  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
  private function _isTrueBREAK_assoc($assoc) {
@@ -3809,13 +3809,13 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
      
     # CHECK_IF_aSSOC_IS_NOT_TRUE_OR_IF_IT_IS_FALSE
     # SET_AS_PRINT_STATIC_HTML 
-    echo $this->_getOPENTAG().$this->_doBREAK().$this->_tagSPACER().$this->_getENDS().$this->_getCLOSETAG().$this->_getBREAK(); 
+    echo $this->_get_TAG().$this->_doBREAK().$this->_tagSPACER().$this->_getENDS().$this->_getxTAG().$this->_getBREAK(); 
    } 
 
     # ELSE_IF_THE_ASSOC_PARA_IS_TRUE_THEN_SET_RETURN 
     elseif ($assoc === FUNC_ASSOC || $assoc === CLASS_ASSOC || $assoc === METHOD_ASSOC) {
     # RETURN_METHOD_ASSOC
-    return $this->_getOPENTAG().$this->_doBREAK().$this->_tagSPACER().$this->_getENDS().$this->_getCLOSETAG().$this->_getBREAK();       
+    return $this->_get_TAG().$this->_doBREAK().$this->_tagSPACER().$this->_getENDS().$this->_getxTAG().$this->_getBREAK();       
    }
 }
 
@@ -3823,7 +3823,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   *
   * @method private function noHTML
   * @ @private Method Defined _isTrueLine_assoc  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
  private function _isTrueLine_assoc($assoc) {
@@ -3833,14 +3833,14 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
 
     # CHECK_IF_aSSOC_IS_NOT_TRUE_OR_IF_IT_IS_FALSE
     # SET_AS_PRINT_STATIC_HTML    
-    echo $this->_getOPENTAG().$this->_makeLine().$this->_tagSPACER().$this->_getENDS().$this->_getCLOSETAG().$this->_getBREAK();
+    echo $this->_get_TAG().$this->_makeLine().$this->_tagSPACER().$this->_getENDS().$this->_getxTAG().$this->_getBREAK();
       
    } 
     
     # ELSE_IF_THE_ASSOC_PARA_IS_TRUE_THEN_SET_RETURN 
     elseif ($assoc === FUNC_ASSOC || $assoc === CLASS_ASSOC || $assoc === METHOD_ASSOC) {
     # RETURN_METHOD_ASSOC
-    return $this->_getOPENTAG().$this->_makeLine().$this->_tagSPACER().$this->_getENDS().$this->_getCLOSETAG().$this->_getBREAK();      
+    return $this->_get_TAG().$this->_makeLine().$this->_tagSPACER().$this->_getENDS().$this->_getxTAG().$this->_getBREAK();      
    
    }
 }
@@ -3997,10 +3997,10 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
 /**
   *
   * @method private function noHTML
-  * @ @private Method Defined HTML FOUNDATION _getCLOSETAG 
+  * @ @private Method Defined HTML FOUNDATION _getxTAG 
   *
   **/
- private function _getCLOSETAG()   { 
+ private function _getxTAG()   { 
 
    /**
      *
@@ -4021,10 +4021,10 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
 /**
   *
   * @method private function noHTML
-  * @ @private Method Defined HTML FOUNDATION _getOPENTAG 
+  * @ @private Method Defined HTML FOUNDATION _get_TAG 
   *
   **/
- private function _getOPENTAG()    { 
+ private function _get_TAG()    { 
 
    /**
      *
@@ -4206,7 +4206,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
      * @var private property $sHTML
      *
      **/
-     return $this->comBEGIN = $this->_getOPENTAG().$this->_tagSYMBOL()."--";
+     return $this->comBEGIN = $this->_get_TAG().$this->_tagSYMBOL()."--";
 }
 
 /**

@@ -22,14 +22,14 @@
  *            - Docx/Reference
  *            
  * @author    nielfernandez <nieldigitalsolution@gmail.com>
- * @license   http://opensource.org/licenses/gpl-3.0.html GNU Public License
+ * @license   http://_source.org/licenses/gpl-3.0.html GNU Public License
  * @link      https://github.com/nielsofficeofficial/PHPHtml-Optimizer
  * @link      https://github.com/nielsofficeofficial/PHPHtml-Optimizer/blob/master/README.md
  * @link      https://www.facebook.com/nielsofficeofficial
  * @version   v1.0
  *
  *
- * noHTML dynamic static structure 
+ * noHTML dynamic static structure _
  * non/WITH CLASS|METHOD|FUNCTION ASSOCIATED  
  *
  * @method html::BREAK(); 
@@ -219,7 +219,7 @@
  * @method html::ELEMENT('BLOCKQUOTE');
  *
  * noHTML dynamic static structure 
- * non/WITH CLASS|METHOD|FUNCTION ASSOCIATED noHTML Form no close tag
+ * non/WITH CLASS|METHOD|FUNCTION ASSOCIATED noHTML Form no x tag
  * 
  * @method html::_ELEMENT('my_input','INPUT');
  * @method html::_ELEMENT('my_track','track');
@@ -239,186 +239,186 @@
  * noHTML static structure non CLASS|METHOD|FUNCTION ASSOCIATED
  * noHTML static structure w/ closing tag
  *
- * @method html::openH1();
- * @method html::closeH1();
- * @method html::openH2();
- * @method html::closeH2();
- * @method html::openH3();
- * @method html::closeH3();
- * @method html::openH4();
- * @method html::closeH4();
- * @method html::openH5();
- * @method html::closeH5();
- * @method html::openH6();
- * @method html::closeH6();
- * @method html::openDIV();
- * @method html::closeDIV();
- * @method html::openP();
- * @method html::closeP();
- * @method html::openBUTTON();
- * @method html::closeBUTTON();
- * @method html::openA();
- * @method html::closeA();
- * @method html::openIFRAME();
- * @method html::closeIFRAME();
- * @method html::openMAIN();
- * @method html::closeMAIN();
- * @method html::openNAV();
- * @method html::closeNAV();
- * @method html::openSELECT();
- * @method html::closeSELECT();
- * @method html::openFORM();
- * @method html::closeFORM();
- * @method html::openPICTURE();
- * @method html::closePICTURE();
- * @method html::openSECTION();
- * @method html::closeSECTION();
- * @method html::openTEXTAREA();
- * @method html::closeTEXTAREA();
- * @method html::openAUDIO();
- * @method html::closeAUDIO();
- * @method html::openVIDEO();
- * @method html::closeVIDEO();
- * @method html::openADDRESS();
- * @method html::closeADDRESS();
- * @method html::openCOLGROUP();
- * @method html::closeCOLGROUP();
- * @method html::openBDI();
- * @method html::closeBDI();
- * @method html::openBDO();
- * @method html::closeBDO();
- * @method html::openBLOCKQUOTE();
- * @method html::closeBLOCKQUOTE();
- * @method html::openCAPTION();
- * @method html::closeCAPTION();
- * @method html::openLABEL();
- * @method html::closeLABEL();
- * @method html::openDATALIST();
- * @method html::closeDATALIST();
- * @method html::openDETAILS();
- * @method html::closeDETAILS();
- * @method html::openSUMMARY();
- * @method html::closeSUMMARY();
- * @method html::openDIALOG();
- * @method html::closeDIALOG();
- * @method html::openOPTION();
- * @method html::closeOPTION();
- * @method html::openFIGURE();
- * @method html::closeFIGURE();
- * @method html::openFIGCAPTION();
- * @method html::closeFIGCAPTION();
- * @method html::openMETER();
- * @method html::closeMETER();
- * @method html::openOBJECT();
- * @method html::closeOBJECT();
- * @method html::openOPTGROUP();
- * @method html::closeOPTGROUP();
- * @method html::openOUTPUT();
- * @method html::closeOUTPUT();
- * @method html::openPROGRESS();
- * @method html::closePROGRESS();
- * @method html::openSVG();
- * @method html::closeSVG();
- * @method html::openTEMPLATE();
- * @method html::closeTEMPLATE();
- * @method html::openTIME();
- * @method html::closeTIME();
- * @method html::openVAR();
- * @method html::closeVAR();
- * @method html::openUL();
- * @method html::closeUL();
- * @method html::openOL();
- * @method html::closeOL();
- * @method html::openLI();
- * @method html::closeLI();
- * @method html::openTABLE();
- * @method html::closeTABLE();
- * @method html::openTR();
- * @method html::closeTR();
- * @method html::openTD();
- * @method html::closeTD();
- * @method html::openTH();
- * @method html::closeTH();
- * @method html::openLEGEND();
- * @method html::closeLEGEND();
- * @method html::openFIELDSET();
- * @method html::closeFIELDSET();
- * @method html::openTBODY();
- * @method html::closeTBODY();
- * @method html::openTFOOT();
- * @method html::closeTFOOT();
- * @method html::openTHEAD();
- * @method html::closeTHEAD();
- * @method html::openSPAN();
- * @method html::closeSPAN();
- * @method html::openEM();
- * @method html::closeEM();
- * @method html::openB();
- * @method html::closeB();
- * @method html::openI();
- * @method html::closeI();
- * @method html::openSMALL();
- * @method html::closeSMALL();
- * @method html::openSTRIKE();
- * @method html::closeSTRIKE();
- * @method html::openMARQUEE();
- * @method html::closeMARQUEE();
- * @method html::openCENTER();
- * @method html::closeCENTER();
- * @method html::openABBR();
- * @method html::closeABBR();
- * @method html::openMAP();
- * @method html::closeMAP();
- * @method html::openCANVAS();
- * @method html::closeCANVAS();
- * @method html::openCITE();
- * @method html::closeCITE();
- * @method html::openDATA();
- * @method html::closeDATA();
- * @method html::openDL();
- * @method html::closeDL();
- * @method html::openDT();
- * @method html::closeDT();
- * @method html::openDD();
- * @method html::closeDD();
- * @method html::openDFN();
- * @method html::closeDFN();
- * @method html::openINS();
- * @method html::closeINS();
- * @method html::openDEL();
- * @method html::closeDEL();
- * @method html::openKBD();
- * @method html::closeKBD();
- * @method html::openMARK();
- * @method html::closeMARK();
- * @method html::openPRE();
- * @method html::closePRE();
- * @method html::openRT();
- * @method html::closeRT();
- * @method html::openRP();
- * @method html::closeRP();
- * @method html::openS();
- * @method html::closeS();
- * @method html::openSAMP();
- * @method html::closeSAMP();
- * @method html::openSTRONG();
- * @method html::closeSTRONG();
- * @method html::openSUB();
- * @method html::closeSUB();
- * @method html::openSUP();
- * @method html::closeSUP();
- * @method html::openWBR();
- * @method html::closeWBR();
- * @method html::openQ();
- * @method html::closeQ();
- * @method html::openHEAD();
- * @method html::closeHEAD();
- * @method html::openTITLE();
- * @method html::closeTITLE();
- * @method html::openBODY();``
- * @method html::closeBODY();
- * @method html::opennoHTML();
- * @method html::closenoHTML();
+ * @method html::_H1();
+ * @method html::xH1();
+ * @method html::_H2();
+ * @method html::xH2();
+ * @method html::_H3();
+ * @method html::xH3();
+ * @method html::_H4();
+ * @method html::xH4();
+ * @method html::_H5();
+ * @method html::xH5();
+ * @method html::_H6();
+ * @method html::xH6();
+ * @method html::_DIV();
+ * @method html::xDIV();
+ * @method html::_P();
+ * @method html::xP();
+ * @method html::_BUTTON();
+ * @method html::xBUTTON();
+ * @method html::_A();
+ * @method html::xA();
+ * @method html::_IFRAME();
+ * @method html::xIFRAME();
+ * @method html::_MAIN();
+ * @method html::xMAIN();
+ * @method html::_NAV();
+ * @method html::xNAV();
+ * @method html::_SELECT();
+ * @method html::xSELECT();
+ * @method html::_FORM();
+ * @method html::xFORM();
+ * @method html::_PICTURE();
+ * @method html::xPICTURE();
+ * @method html::_SECTION();
+ * @method html::xSECTION();
+ * @method html::_TEXTAREA();
+ * @method html::xTEXTAREA();
+ * @method html::_AUDIO();
+ * @method html::xAUDIO();
+ * @method html::_VIDEO();
+ * @method html::xVIDEO();
+ * @method html::_ADDRESS();
+ * @method html::xADDRESS();
+ * @method html::_COLGROUP();
+ * @method html::xCOLGROUP();
+ * @method html::_BDI();
+ * @method html::xBDI();
+ * @method html::_BDO();
+ * @method html::xBDO();
+ * @method html::_BLOCKQUOTE();
+ * @method html::xBLOCKQUOTE();
+ * @method html::_CAPTION();
+ * @method html::xCAPTION();
+ * @method html::_LABEL();
+ * @method html::xLABEL();
+ * @method html::_DATALIST();
+ * @method html::xDATALIST();
+ * @method html::_DETAILS();
+ * @method html::xDETAILS();
+ * @method html::_SUMMARY();
+ * @method html::xSUMMARY();
+ * @method html::_DIALOG();
+ * @method html::xDIALOG();
+ * @method html::_OPTION();
+ * @method html::xOPTION();
+ * @method html::_FIGURE();
+ * @method html::xFIGURE();
+ * @method html::_FIGCAPTION();
+ * @method html::xFIGCAPTION();
+ * @method html::_METER();
+ * @method html::xMETER();
+ * @method html::_OBJECT();
+ * @method html::xOBJECT();
+ * @method html::_OPTGROUP();
+ * @method html::xOPTGROUP();
+ * @method html::_OUTPUT();
+ * @method html::xOUTPUT();
+ * @method html::_PROGRESS();
+ * @method html::xPROGRESS();
+ * @method html::_SVG();
+ * @method html::xSVG();
+ * @method html::_TEMPLATE();
+ * @method html::xTEMPLATE();
+ * @method html::_TIME();
+ * @method html::xTIME();
+ * @method html::_VAR();
+ * @method html::xVAR();
+ * @method html::_UL();
+ * @method html::xUL();
+ * @method html::_OL();
+ * @method html::xOL();
+ * @method html::_LI();
+ * @method html::xLI();
+ * @method html::_TABLE();
+ * @method html::xTABLE();
+ * @method html::_TR();
+ * @method html::xTR();
+ * @method html::_TD();
+ * @method html::xTD();
+ * @method html::_TH();
+ * @method html::xTH();
+ * @method html::_LEGEND();
+ * @method html::xLEGEND();
+ * @method html::_FIELDSET();
+ * @method html::xFIELDSET();
+ * @method html::_TBODY();
+ * @method html::xTBODY();
+ * @method html::_TFOOT();
+ * @method html::xTFOOT();
+ * @method html::_THEAD();
+ * @method html::xTHEAD();
+ * @method html::_SPAN();
+ * @method html::xSPAN();
+ * @method html::_EM();
+ * @method html::xEM();
+ * @method html::_B();
+ * @method html::xB();
+ * @method html::_I();
+ * @method html::xI();
+ * @method html::_SMALL();
+ * @method html::xSMALL();
+ * @method html::_STRIKE();
+ * @method html::xSTRIKE();
+ * @method html::_MARQUEE();
+ * @method html::xMARQUEE();
+ * @method html::_CENTER();
+ * @method html::xCENTER();
+ * @method html::_ABBR();
+ * @method html::xABBR();
+ * @method html::_MAP();
+ * @method html::xMAP();
+ * @method html::_CANVAS();
+ * @method html::xCANVAS();
+ * @method html::_CITE();
+ * @method html::xCITE();
+ * @method html::_DATA();
+ * @method html::xDATA();
+ * @method html::_DL();
+ * @method html::xDL();
+ * @method html::_DT();
+ * @method html::xDT();
+ * @method html::_DD();
+ * @method html::xDD();
+ * @method html::_DFN();
+ * @method html::xDFN();
+ * @method html::_INS();
+ * @method html::xINS();
+ * @method html::_DEL();
+ * @method html::xDEL();
+ * @method html::_KBD();
+ * @method html::xKBD();
+ * @method html::_MARK();
+ * @method html::xMARK();
+ * @method html::_PRE();
+ * @method html::xPRE();
+ * @method html::_RT();
+ * @method html::xRT();
+ * @method html::_RP();
+ * @method html::xRP();
+ * @method html::_S();
+ * @method html::xS();
+ * @method html::_SAMP();
+ * @method html::xSAMP();
+ * @method html::_STRONG();
+ * @method html::xSTRONG();
+ * @method html::_SUB();
+ * @method html::xSUB();
+ * @method html::_SUP();
+ * @method html::xSUP();
+ * @method html::_WBR();
+ * @method html::xWBR();
+ * @method html::_Q();
+ * @method html::xQ();
+ * @method html::_HEAD();
+ * @method html::xHEAD();
+ * @method html::_TITLE();
+ * @method html::xTITLE();
+ * @method html::_BODY();``
+ * @method html::xBODY();
+ * @method html::_noHTML();
+ * @method html::xnoHTML();
  *
  */
 
@@ -578,21 +578,21 @@ static protected $htm_fc = ['del','kbd','mark','pre','rt','rp','ruby','s','samp'
 
 /**
   * @var 
-  * @property @INLINE_VARIABLE  (NO CLOSE HTML TAG)
+  * @property @INLINE_VARIABLE  (NO x HTML TAG)
   * defined arrays of data html 
   **/
 static protected $htm_L  = ['source','track','circle','param','input','meta','link','img','embed','option','col','base','aside','area','DOCTYPE html'];
 
 /**
   * @var 
-  * @property @STRUCTURE_VARIABLE  (NO CLOSE HTML TAG)
+  * @property @STRUCTURE_VARIABLE  (NO x HTML TAG)
   * defined arrays of data html 
   S**/
 static protected $htm_st = ['head','title','body','html'];
 
 /**
   * @var 
-  * @property @BREAKS_VARIABLE  (NO CLOSE HTML TAG)
+  * @property @BREAKS_VARIABLE  (NO x HTML TAG)
   * defined arrays of data html 
   **/
 static protected $hBreak = ["\n","br","hr"];
@@ -658,8 +658,8 @@ static protected $hextend = [];
   * @static Method Defined single call through param html element no closing tag  
   * Neat and clean noHTML
   * $elem  = 'HTML ELEMENT' ex. p, ul, li etc..
-  * $label = 'MAGIC' output: <p> | open any tag elements html
-  * $label = 'MAGIC_END' output: </p> | close any tag elements html
+  * $label = 'MAGIC' output: <p> | _ any tag elements html
+  * $label = 'MAGIC_END' output: </p> | x any tag elements html
   *
   **/
   static public function __magicELEMENT($elem, $label=null, $js=[], $id=null, $class=null) {
@@ -769,1014 +769,1014 @@ static protected $hextend = [];
 /**
   *
   * @method public function noHTML
-  * @static Method Defined H1 OPEN AND CLOSE TAG noHTML  
-  * RETURN HEADING OPEN noHTML TAG
+  * @static Method Defined H1 _ AND x TAG noHTML  
+  * RETURN HEADING _ noHTML TAG
   *
   **/
-  static public function openH1($js=[], $id=null, $class=null) { echo self::get_openHTML('PRIMARY', 0, $js, $id, $class); }
+  static public function _H1($js=[], $id=null, $class=null) { echo self::get__HTML('PRIMARY', 0, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_HEADING_TAG 
-  static public function closeH1($label = NULL) { echo self::get_closeHTML('PRIMARY', 0, $label); }
+  static public function xH1($label = NULL) { echo self::get_xHTML('PRIMARY', 0, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined H2 OPEN AND CLOSE TAG noHTML  
-  * RETURN HEADING OPEN noHTML TAG
+  * @static Method Defined H2 _ AND x TAG noHTML  
+  * RETURN HEADING _ noHTML TAG
   *
   **/
-  static public function openH2($js=[], $id=null, $class=null) { echo self::get_openHTML('PRIMARY', 1, $js, $id, $class); }
+  static public function _H2($js=[], $id=null, $class=null) { echo self::get__HTML('PRIMARY', 1, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_HEADING_TAG 
-  static public function closeH2($label = NULL) { echo self::get_closeHTML('PRIMARY', 1, $label); }
+  static public function xH2($label = NULL) { echo self::get_xHTML('PRIMARY', 1, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined H3 OPEN AND CLOSE TAG noHTML  
-  * RETURN HEADING OPEN noHTML TAG
+  * @static Method Defined H3 _ AND x TAG noHTML  
+  * RETURN HEADING _ noHTML TAG
   *
   **/
-  static public function openH3($js=[], $id=null, $class=null) { echo self::get_openHTML('PRIMARY', 2, $js, $id, $class); }
+  static public function _H3($js=[], $id=null, $class=null) { echo self::get__HTML('PRIMARY', 2, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_HEADING_TAG 
-  static public function closeH3($label = NULL) { echo self::get_closeHTML('PRIMARY', 2, $label);  }
+  static public function xH3($label = NULL) { echo self::get_xHTML('PRIMARY', 2, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined H4 OPEN AND CLOSE TAG noHTML  
-  * RETURN HEADING OPEN noHTML TAG
+  * @static Method Defined H4 _ AND x TAG noHTML  
+  * RETURN HEADING _ noHTML TAG
   *
   **/
-  static public function openH4($js=[], $id=null, $class=null) { echo self::get_openHTML('PRIMARY', 3, $js, $id, $class);  }
+  static public function _H4($js=[], $id=null, $class=null) { echo self::get__HTML('PRIMARY', 3, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_HEADING_TAG 
-  static public function closeH4($label = NULL) { echo self::get_closeHTML('PRIMARY', 3, $label); }
+  static public function xH4($label = NULL) { echo self::get_xHTML('PRIMARY', 3, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined H5 OPEN AND CLOSE TAG noHTML  
-  * RETURN HEADING OPEN noHTML TAG
+  * @static Method Defined H5 _ AND x TAG noHTML  
+  * RETURN HEADING _ noHTML TAG
   *
   **/
-  static public function openH5($js=[], $id=null, $class=null) { echo self::get_openHTML('PRIMARY', 4, $js, $id, $class);  }
+  static public function _H5($js=[], $id=null, $class=null) { echo self::get__HTML('PRIMARY', 4, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_HEADING_TAG 
-  static public function closeH5($label = NULL) { echo self::get_closeHTML('PRIMARY', 4, $label); }
+  static public function xH5($label = NULL) { echo self::get_xHTML('PRIMARY', 4, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined H6 OPEN AND CLOSE TAG noHTML  
-  * RETURN HEADING OPEN noHTML TAG
+  * @static Method Defined H6 _ AND x TAG noHTML  
+  * RETURN HEADING _ noHTML TAG
   *
   **/
-  static public function openH6($js=[], $id=null, $class=null) { echo self::get_openHTML('PRIMARY', 5, $js, $id, $class); }
+  static public function _H6($js=[], $id=null, $class=null) { echo self::get__HTML('PRIMARY', 5, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_HEADING_TAG 
-  static public function closeH6($label = NULL) {  echo self::get_closeHTML('PRIMARY', 5, $label); }
+  static public function xH6($label = NULL) {  echo self::get_xHTML('PRIMARY', 5, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined DIV OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE DIV OPEN noHTML TAG
+  * @static Method Defined DIV _ AND x TAG noHTML  
+  * RETURN NODE DIV _ noHTML TAG
   *
   **/
-  static public function openDIV($js=[], $id=null, $class=null) { echo self::get_openHTML('PRIMARY', 6, $js, $id, $class); }
+  static public function _DIV($js=[], $id=null, $class=null) { echo self::get__HTML('PRIMARY', 6, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeDIV($label = NULL) { echo self::get_closeHTML('PRIMARY', 6, $label); }
+  static public function xDIV($label = NULL) { echo self::get_xHTML('PRIMARY', 6, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined PARA OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE PARAGRAPH OPEN noHTML TAG
+  * @static Method Defined PARA _ AND x TAG noHTML  
+  * RETURN NODE PARAGRAPH _ noHTML TAG
   *
   **/
-  static public function openP($js=[], $id=null, $class=null) { echo self::get_openHTML('PRIMARY', 7, $js, $id, $class);  }
+  static public function _P($js=[], $id=null, $class=null) { echo self::get__HTML('PRIMARY', 7, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeP($label = NULL) { echo self::get_closeHTML('PRIMARY', 7, $label); }
+  static public function xP($label = NULL) { echo self::get_xHTML('PRIMARY', 7, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined BUTTON OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE BUTTON OPEN noHTML TAG
+  * @static Method Defined BUTTON _ AND x TAG noHTML  
+  * RETURN NODE BUTTON _ noHTML TAG
   *
   **/
-  static public function openBUTTON($js=[], $id=null, $class=null) { echo self::get_openHTML('PRIMARY', 8, $js, $id, $class);  }
+  static public function _BUTTON($js=[], $id=null, $class=null) { echo self::get__HTML('PRIMARY', 8, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeBUTTON($label = NULL) { echo self::get_closeHTML('PRIMARY', 8, $label); }
+  static public function xBUTTON($label = NULL) { echo self::get_xHTML('PRIMARY', 8, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined A HYPERLINK OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE HYPERLINK OPEN noHTML TAG
+  * @static Method Defined A HYPERLINK _ AND x TAG noHTML  
+  * RETURN NODE HYPERLINK _ noHTML TAG
   *
   **/
-  static public function openA($js=[], $id=null, $class=null) { echo self::get_openHTML('PRIMARY', 9, $js, $id, $class); }
+  static public function _A($js=[], $id=null, $class=null) { echo self::get__HTML('PRIMARY', 9, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeA($label = NULL) { echo self::get_closeHTML('PRIMARY', 9, $label); }
+  static public function xA($label = NULL) { echo self::get_xHTML('PRIMARY', 9, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined IFRAME OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE IFRAME OPEN noHTML TAG
+  * @static Method Defined IFRAME _ AND x TAG noHTML  
+  * RETURN NODE IFRAME _ noHTML TAG
   *
   **/
-  static public function openIFRAME($js=[], $id=null, $class=null) { echo self::get_openHTML('PRIMARY', 10, $js, $id, $class);  }
+  static public function _IFRAME($js=[], $id=null, $class=null) { echo self::get__HTML('PRIMARY', 10, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeIFRAME($label = NULL) { echo self::get_closeHTML('PRIMARY', 10, $label); }
+  static public function xIFRAME($label = NULL) { echo self::get_xHTML('PRIMARY', 10, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined MAIN OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE MAIN OPEN noHTML TAG
+  * @static Method Defined MAIN _ AND x TAG noHTML  
+  * RETURN NODE MAIN _ noHTML TAG
   *
   **/
-  static public function openMAIN($js=[], $id=null, $class=null) { echo self::get_openHTML('PRIMARY', 11, $js, $id, $class);  }
+  static public function _MAIN($js=[], $id=null, $class=null) { echo self::get__HTML('PRIMARY', 11, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeMAIN($label = NULL) { echo self::get_closeHTML('PRIMARY', 11, $label); }
+  static public function xMAIN($label = NULL) { echo self::get_xHTML('PRIMARY', 11, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined NAV OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE NAV OPEN noHTML TAG
+  * @static Method Defined NAV _ AND x TAG noHTML  
+  * RETURN NODE NAV _ noHTML TAG
   *
   **/
-  static public function openNAV($js=[], $id=null, $class=null) { echo self::get_openHTML('PRIMARY', 12, $js, $id, $class);  }
+  static public function _NAV($js=[], $id=null, $class=null) { echo self::get__HTML('PRIMARY', 12, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeNAV($label = NULL) { echo self::get_closeHTML('PRIMARY', 12, $label); }
+  static public function xNAV($label = NULL) { echo self::get_xHTML('PRIMARY', 12, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined SELECT OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE SELECT OPEN noHTML TAG
+  * @static Method Defined SELECT _ AND x TAG noHTML  
+  * RETURN NODE SELECT _ noHTML TAG
   *
   **/
-  static public function openSELECT($js=[], $id=null, $class=null) { echo self::get_openHTML('PRIMARY', 13, $js, $id, $class);   }
+  static public function _SELECT($js=[], $id=null, $class=null) { echo self::get__HTML('PRIMARY', 13, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeSELECT($label = NULL) { echo self::get_closeHTML('PRIMARY', 13, $label); }
+  static public function xSELECT($label = NULL) { echo self::get_xHTML('PRIMARY', 13, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined FORM OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE FORM OPEN noHTML TAG
+  * @static Method Defined FORM _ AND x TAG noHTML  
+  * RETURN NODE FORM _ noHTML TAG
   *
   **/
-  static public function openFORM($js=[], $id=null, $class=null) { echo self::get_openHTML('PRIMARY', 14, $js, $id, $class);  }
+  static public function _FORM($js=[], $id=null, $class=null) { echo self::get__HTML('PRIMARY', 14, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeFORM($label = NULL) { echo self::get_closeHTML('PRIMARY', 14, $label); }
+  static public function xFORM($label = NULL) { echo self::get_xHTML('PRIMARY', 14, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined PICTURE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE PICTURE OPEN noHTML TAG
+  * @static Method Defined PICTURE _ AND x TAG noHTML  
+  * RETURN NODE PICTURE _ noHTML TAG
   *
   **/
-  static public function openPICTURE($js=[], $id=null, $class=null) { echo self::get_openHTML('PRIMARY', 15, $js, $id, $class);  }
+  static public function _PICTURE($js=[], $id=null, $class=null) { echo self::get__HTML('PRIMARY', 15, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closePICTURE($label = NULL) { echo self::get_closeHTML('PRIMARY', 15, $label); }
+  static public function xPICTURE($label = NULL) { echo self::get_xHTML('PRIMARY', 15, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined SECTION OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE SECTION OPEN noHTML TAG
+  * @static Method Defined SECTION _ AND x TAG noHTML  
+  * RETURN NODE SECTION _ noHTML TAG
   *
   **/
-  static public function openSECTION($js=[], $id=null, $class=null) { echo self::get_openHTML('PRIMARY', 16, $js, $id, $class);   }
+  static public function _SECTION($js=[], $id=null, $class=null) { echo self::get__HTML('PRIMARY', 16, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeSECTION($label = NULL) { echo self::get_closeHTML('PRIMARY', 16, $label); }
+  static public function xSECTION($label = NULL) { echo self::get_xHTML('PRIMARY', 16, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined TEXTAREA OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE TEXTAREA OPEN noHTML TAG
+  * @static Method Defined TEXTAREA _ AND x TAG noHTML  
+  * RETURN NODE TEXTAREA _ noHTML TAG
   *
   **/
-  static public function openTEXTAREA($js=[], $id=null, $class=null) { echo self::get_openHTML('PRIMARY', 17, $js, $id, $class);  }
+  static public function _TEXTAREA($js=[], $id=null, $class=null) { echo self::get__HTML('PRIMARY', 17, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeTEXTAREA($label = NULL) { echo self::get_closeHTML('PRIMARY', 17, $label); }
+  static public function xTEXTAREA($label = NULL) { echo self::get_xHTML('PRIMARY', 17, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined AUDIO OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE AUDIO OPEN noHTML TAG
+  * @static Method Defined AUDIO _ AND x TAG noHTML  
+  * RETURN NODE AUDIO _ noHTML TAG
   *
   **/
-  static public function openAUDIO($js=[], $id=null, $class=null) { echo self::get_openHTML('SECONDARY', 0, $js, $id, $class);  }
+  static public function _AUDIO($js=[], $id=null, $class=null) { echo self::get__HTML('SECONDARY', 0, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeAUDIO($label = NULL) { echo self::get_closeHTML('SECONDARY', 0, $label); }
+  static public function xAUDIO($label = NULL) { echo self::get_xHTML('SECONDARY', 0, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined VIDEO OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE VIDEO OPEN noHTML TAG
+  * @static Method Defined VIDEO _ AND x TAG noHTML  
+  * RETURN NODE VIDEO _ noHTML TAG
   *
   **/
-  static public function openVIDEO($js=[], $id=null, $class=null) { echo self::get_openHTML('SECONDARY', 1, $js, $id, $class); }
+  static public function _VIDEO($js=[], $id=null, $class=null) { echo self::get__HTML('SECONDARY', 1, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeVIDEO($label = NULL) { echo self::get_closeHTML('SECONDARY', 1, $label); }
+  static public function xVIDEO($label = NULL) { echo self::get_xHTML('SECONDARY', 1, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined ADDRESS OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE ADDRESS OPEN noHTML TAG
+  * @static Method Defined ADDRESS _ AND x TAG noHTML  
+  * RETURN NODE ADDRESS _ noHTML TAG
   *
   **/
-  static public function openADDRESS($js=[], $id=null, $class=null) { echo self::get_openHTML('SECONDARY', 2, $js, $id, $class); }
+  static public function _ADDRESS($js=[], $id=null, $class=null) { echo self::get__HTML('SECONDARY', 2, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeADDRESS($label = NULL) { echo self::get_closeHTML('SECONDARY', 2, $label); }
+  static public function xADDRESS($label = NULL) { echo self::get_xHTML('SECONDARY', 2, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined COLGROUP OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE COLGROUP OPEN noHTML TAG
+  * @static Method Defined COLGROUP _ AND x TAG noHTML  
+  * RETURN NODE COLGROUP _ noHTML TAG
   *
   **/
-  static public function openCOLGROUP($js=[], $id=null, $class=null) { echo self::get_openHTML('SECONDARY', 3, $js, $id, $class);  }
+  static public function _COLGROUP($js=[], $id=null, $class=null) { echo self::get__HTML('SECONDARY', 3, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeCOLGROUP($label = NULL) { echo self::get_closeHTML('SECONDARY', 3, $label); }
+  static public function xCOLGROUP($label = NULL) { echo self::get_xHTML('SECONDARY', 3, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined BDI OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE BDI OPEN noHTML TAG
+  * @static Method Defined BDI _ AND x TAG noHTML  
+  * RETURN NODE BDI _ noHTML TAG
   *
   **/
-  static public function openBDI($js=[], $id=null, $class=null) { echo self::get_openHTML('SECONDARY', 4, $js, $id, $class); }
+  static public function _BDI($js=[], $id=null, $class=null) { echo self::get__HTML('SECONDARY', 4, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeBDI($label = NULL) { echo self::get_closeHTML('SECONDARY', 4, $label); }
+  static public function xBDI($label = NULL) { echo self::get_xHTML('SECONDARY', 4, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined BDO OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE BDO OPEN noHTML TAG
+  * @static Method Defined BDO _ AND x TAG noHTML  
+  * RETURN NODE BDO _ noHTML TAG
   *
   **/
-  static public function openBDO($js=[], $id=null, $class=null) { echo self::get_openHTML('SECONDARY', 5, $js, $id, $class);   }
+  static public function _BDO($js=[], $id=null, $class=null) { echo self::get__HTML('SECONDARY', 5, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeBDO($label = NULL) { echo self::get_closeHTML('SECONDARY', 5, $label); }
+  static public function xBDO($label = NULL) { echo self::get_xHTML('SECONDARY', 5, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined BLOCKQUOTE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE BLOCKQUOTE OPEN noHTML TAG
+  * @static Method Defined BLOCKQUOTE _ AND x TAG noHTML  
+  * RETURN NODE BLOCKQUOTE _ noHTML TAG
   *
   **/
-  static public function openBLOCKQUOTE($js=[], $id=null, $class=null) { echo self::get_openHTML('SECONDARY', 6, $js, $id, $class);  }
+  static public function _BLOCKQUOTE($js=[], $id=null, $class=null) { echo self::get__HTML('SECONDARY', 6, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeBLOCKQUOTE($label = NULL) { echo self::get_closeHTML('SECONDARY', 6, $label); }
+  static public function xBLOCKQUOTE($label = NULL) { echo self::get_xHTML('SECONDARY', 6, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined CAPTION OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE CAPTION OPEN noHTML TAG
+  * @static Method Defined CAPTION _ AND x TAG noHTML  
+  * RETURN NODE CAPTION _ noHTML TAG
   *
   **/
-  static public function openCAPTION($js=[], $id=null, $class=null) { echo self::get_openHTML('SECONDARY', 7, $js, $id, $class);  }
+  static public function _CAPTION($js=[], $id=null, $class=null) { echo self::get__HTML('SECONDARY', 7, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeCAPTION($label = NULL) { echo self::get_closeHTML('SECONDARY', 7, $label); }
+  static public function xCAPTION($label = NULL) { echo self::get_xHTML('SECONDARY', 7, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined LABEL OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE LABEL OPEN noHTML TAG
+  * @static Method Defined LABEL _ AND x TAG noHTML  
+  * RETURN NODE LABEL _ noHTML TAG
   *
   **/
-  static public function openLABEL($js=[], $id=null, $class=null) { echo self::get_openHTML('SECONDARY', 8, $js, $id, $class);  }
+  static public function _LABEL($js=[], $id=null, $class=null) { echo self::get__HTML('SECONDARY', 8, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeLABEL($label = NULL) { echo self::get_closeHTML('SECONDARY', 8, $label); }
+  static public function xLABEL($label = NULL) { echo self::get_xHTML('SECONDARY', 8, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined DATALIST OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE DATALIST OPEN noHTML TAG
+  * @static Method Defined DATALIST _ AND x TAG noHTML  
+  * RETURN NODE DATALIST _ noHTML TAG
   *
   **/
-  static public function openDATALIST($js=[], $id=null, $class=null) { echo self::get_openHTML('SECONDARY', 9, $js, $id, $class);  }
+  static public function _DATALIST($js=[], $id=null, $class=null) { echo self::get__HTML('SECONDARY', 9, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeDATALIST($label = NULL) { echo self::get_closeHTML('SECONDARY', 9, $label); }
+  static public function xDATALIST($label = NULL) { echo self::get_xHTML('SECONDARY', 9, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined DETAILS OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE DETAILS OPEN noHTML TAG
+  * @static Method Defined DETAILS _ AND x TAG noHTML  
+  * RETURN NODE DETAILS _ noHTML TAG
   *
   **/
-  static public function openDETAILS($js=[], $id=null, $class=null) { echo self::get_openHTML('SECONDARY', 10, $js, $id, $class); }
+  static public function _DETAILS($js=[], $id=null, $class=null) { echo self::get__HTML('SECONDARY', 10, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeDETAILS($label = NULL) { echo self::get_closeHTML('SECONDARY', 10, $label); }
+  static public function xDETAILS($label = NULL) { echo self::get_xHTML('SECONDARY', 10, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined SUMMARY OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE SUMMARY OPEN noHTML TAG
+  * @static Method Defined SUMMARY _ AND x TAG noHTML  
+  * RETURN NODE SUMMARY _ noHTML TAG
   *
   **/
-  static public function openSUMMARY($js=[], $id=null, $class=null) { echo self::get_openHTML('SECONDARY', 11, $js, $id, $class);  }
+  static public function _SUMMARY($js=[], $id=null, $class=null) { echo self::get__HTML('SECONDARY', 11, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeSUMMARY($label = NULL) { echo self::get_closeHTML('SECONDARY', 11, $label); }
+  static public function xSUMMARY($label = NULL) { echo self::get_xHTML('SECONDARY', 11, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined DIALOG OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE DIALOG OPEN noHTML TAG
+  * @static Method Defined DIALOG _ AND x TAG noHTML  
+  * RETURN NODE DIALOG _ noHTML TAG
   *
   **/
-  static public function openDIALOG($js=[], $id=null, $class=null) { echo self::get_openHTML('SECONDARY', 12, $js, $id, $class);  }
+  static public function _DIALOG($js=[], $id=null, $class=null) { echo self::get__HTML('SECONDARY', 12, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeDIALOG($label = NULL) { echo self::get_closeHTML('SECONDARY', 12, $label); }
+  static public function xDIALOG($label = NULL) { echo self::get_xHTML('SECONDARY', 12, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined OPTION OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE OPTION OPEN noHTML TAG
+  * @static Method Defined OPTION _ AND x TAG noHTML  
+  * RETURN NODE OPTION _ noHTML TAG
   *
   **/
-  static public function openOPTION($js=[], $id=null, $class=null) { echo self::get_openHTML('SECONDARY', 12, $js, $id, $class);  }
+  static public function _OPTION($js=[], $id=null, $class=null) { echo self::get__HTML('SECONDARY', 12, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG 
-  static public function closeOPTION($label = NULL) { echo self::get_closeHTML('SECONDARY', 12, $label); }
+  static public function xOPTION($label = NULL) { echo self::get_xHTML('SECONDARY', 12, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined FIGURE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE FIGURE OPEN noHTML TAG
+  * @static Method Defined FIGURE _ AND x TAG noHTML  
+  * RETURN NODE FIGURE _ noHTML TAG
   *
   **/
-  static public function openFIGURE($js=[], $id=null, $class=null) { echo self::get_openHTML('SUPPORT', 0, $js, $id, $class);  }
+  static public function _FIGURE($js=[], $id=null, $class=null) { echo self::get__HTML('SUPPORT', 0, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeFIGURE($label = NULL) { echo self::get_closeHTML('SUPPORT', 0, $label); }
+  static public function xFIGURE($label = NULL) { echo self::get_xHTML('SUPPORT', 0, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined FIGCAPTION OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE FIGCAPTION OPEN noHTML TAG
+  * @static Method Defined FIGCAPTION _ AND x TAG noHTML  
+  * RETURN NODE FIGCAPTION _ noHTML TAG
   *
   **/
-  static public function openFIGCAPTION($js=[], $id=null, $class=null) { echo self::get_openHTML('SUPPORT', 1, $js, $id, $class);   }
+  static public function _FIGCAPTION($js=[], $id=null, $class=null) { echo self::get__HTML('SUPPORT', 1, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeFIGCAPTION($label = NULL) { echo self::get_closeHTML('SUPPORT', 1, $label); }
+  static public function xFIGCAPTION($label = NULL) { echo self::get_xHTML('SUPPORT', 1, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined METER OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE METER OPEN noHTML TAG
+  * @static Method Defined METER _ AND x TAG noHTML  
+  * RETURN NODE METER _ noHTML TAG
   *
   **/
-  static public function openMETER($js=[], $id=null, $class=null) { echo self::get_openHTML('SUPPORT', 2, $js, $id, $class);   }
+  static public function _METER($js=[], $id=null, $class=null) { echo self::get__HTML('SUPPORT', 2, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeMETER($label = NULL) { echo self::get_closeHTML('SUPPORT', 2, $label); }
+  static public function xMETER($label = NULL) { echo self::get_xHTML('SUPPORT', 2, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined OBJECT OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE OBJECT OPEN noHTML TAG
+  * @static Method Defined OBJECT _ AND x TAG noHTML  
+  * RETURN NODE OBJECT _ noHTML TAG
   *
   **/
-  static public function openOBJECT($js=[], $id=null, $class=null) { echo self::get_openHTML('SUPPORT', 3, $js, $id, $class);   }
+  static public function _OBJECT($js=[], $id=null, $class=null) { echo self::get__HTML('SUPPORT', 3, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeOBJECT($label = NULL) { echo self::get_closeHTML('SUPPORT', 3, $label); }
+  static public function xOBJECT($label = NULL) { echo self::get_xHTML('SUPPORT', 3, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined OPTGROUP OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE OPTGROUP OPEN noHTML TAG
+  * @static Method Defined OPTGROUP _ AND x TAG noHTML  
+  * RETURN NODE OPTGROUP _ noHTML TAG
   *
   **/
-  static public function openOPTGROUP($js=[], $id=null, $class=null) { echo self::get_openHTML('SUPPORT', 4, $js, $id, $class);  }
+  static public function _OPTGROUP($js=[], $id=null, $class=null) { echo self::get__HTML('SUPPORT', 4, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeOPTGROUP($label = NULL) { echo self::get_closeHTML('SUPPORT', 4, $label); }
+  static public function xOPTGROUP($label = NULL) { echo self::get_xHTML('SUPPORT', 4, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined OUTPUT OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE OUTPUT OPEN noHTML TAG
+  * @static Method Defined OUTPUT _ AND x TAG noHTML  
+  * RETURN NODE OUTPUT _ noHTML TAG
   *
   **/
-  static public function openOUTPUT($js=[], $id=null, $class=null) { echo self::get_openHTML('SUPPORT', 5, $js, $id, $class);   }
+  static public function _OUTPUT($js=[], $id=null, $class=null) { echo self::get__HTML('SUPPORT', 5, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeOUTPUT($label = NULL) { echo self::get_closeHTML('SUPPORT', 5, $label); }
+  static public function xOUTPUT($label = NULL) { echo self::get_xHTML('SUPPORT', 5, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined PROGRESS OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE PROGRESS OPEN noHTML TAG
+  * @static Method Defined PROGRESS _ AND x TAG noHTML  
+  * RETURN NODE PROGRESS _ noHTML TAG
   *
   **/
-  static public function openPROGRESS($js=[], $id=null, $class=null) { echo self::get_openHTML('SUPPORT', 6, $js, $id, $class);  }
+  static public function _PROGRESS($js=[], $id=null, $class=null) { echo self::get__HTML('SUPPORT', 6, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closePROGRESS($label = NULL) { echo self::get_closeHTML('SUPPORT', 6, $label); }
+  static public function xPROGRESS($label = NULL) { echo self::get_xHTML('SUPPORT', 6, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined SVG OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE SVG OPEN noHTML TAG
+  * @static Method Defined SVG _ AND x TAG noHTML  
+  * RETURN NODE SVG _ noHTML TAG
   *
   **/
-  static public function openSVG($js=[], $id=null, $class=null) { echo self::get_openHTML('SUPPORT', 7, $js, $id, $class);   }
+  static public function _SVG($js=[], $id=null, $class=null) { echo self::get__HTML('SUPPORT', 7, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeSVG($label = NULL) { echo self::get_closeHTML('SUPPORT', 7, $label); }
+  static public function xSVG($label = NULL) { echo self::get_xHTML('SUPPORT', 7, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined TEMPLATE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE TEMPLATE OPEN noHTML TAG
+  * @static Method Defined TEMPLATE _ AND x TAG noHTML  
+  * RETURN NODE TEMPLATE _ noHTML TAG
   *
   **/
-  static public function openTEMPLATE($js=[], $id=null, $class=null) { echo self::get_openHTML('SUPPORT', 8, $js, $id, $class); }
+  static public function _TEMPLATE($js=[], $id=null, $class=null) { echo self::get__HTML('SUPPORT', 8, $js, $id, $class); }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeTEMPLATE($label = NULL) { echo self::get_closeHTML('SUPPORT', 8, $label); }
+  static public function xTEMPLATE($label = NULL) { echo self::get_xHTML('SUPPORT', 8, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined TIME OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE TIME OPEN noHTML TAG
+  * @static Method Defined TIME _ AND x TAG noHTML  
+  * RETURN NODE TIME _ noHTML TAG
   *
   **/
-  static public function openTIME($js=[], $id=null, $class=null) { echo self::get_openHTML('SUPPORT', 9, $js, $id, $class);   }
+  static public function _TIME($js=[], $id=null, $class=null) { echo self::get__HTML('SUPPORT', 9, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeTIME($label = NULL) { echo self::get_closeHTML('SUPPORT', 9, $label); }
+  static public function xTIME($label = NULL) { echo self::get_xHTML('SUPPORT', 9, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined VAR OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE VAR OPEN noHTML TAG
+  * @static Method Defined VAR _ AND x TAG noHTML  
+  * RETURN NODE VAR _ noHTML TAG
   *
   **/
-  static public function openVAR($js=[], $id=null, $class=null) { echo self::get_openHTML('SUPPORT', 10, $js, $id, $class);   }
+  static public function _VAR($js=[], $id=null, $class=null) { echo self::get__HTML('SUPPORT', 10, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeVAR($label = NULL) { echo self::get_closeHTML('SUPPORT', 10, $label); }
+  static public function xVAR($label = NULL) { echo self::get_xHTML('SUPPORT', 10, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined UL OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE UL OPEN noHTML TAG
+  * @static Method Defined UL _ AND x TAG noHTML  
+  * RETURN NODE UL _ noHTML TAG
   *
   **/
-  static public function openUL($js=[], $id=null, $class=null) { echo self::get_openHTML('LIST', 0, $js, $id, $class);  }
+  static public function _UL($js=[], $id=null, $class=null) { echo self::get__HTML('LIST', 0, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeUL($label = NULL) { echo self::get_closeHTML('LIST', 0, $label); }
+  static public function xUL($label = NULL) { echo self::get_xHTML('LIST', 0, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined OL OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE OL OPEN noHTML TAG
+  * @static Method Defined OL _ AND x TAG noHTML  
+  * RETURN NODE OL _ noHTML TAG
   *
   **/
-  static public function openOL($js=[], $id=null, $class=null) { echo self::get_openHTML('LIST', 1, $js, $id, $class);   }
+  static public function _OL($js=[], $id=null, $class=null) { echo self::get__HTML('LIST', 1, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeOL($label = NULL) { echo self::get_closeHTML('LIST', 1, $label); }
+  static public function xOL($label = NULL) { echo self::get_xHTML('LIST', 1, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined LI OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE LI OPEN noHTML TAG
+  * @static Method Defined LI _ AND x TAG noHTML  
+  * RETURN NODE LI _ noHTML TAG
   *
   **/
-  static public function openLI($js=[], $id=null, $class=null) { echo self::get_openHTML('LIST', 2, $js, $id, $class);    }
+  static public function _LI($js=[], $id=null, $class=null) { echo self::get__HTML('LIST', 2, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeLI($label = NULL) { echo self::get_closeHTML('LIST', 2, $label); }
+  static public function xLI($label = NULL) { echo self::get_xHTML('LIST', 2, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined TABLE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE TABLE OPEN noHTML TAG
+  * @static Method Defined TABLE _ AND x TAG noHTML  
+  * RETURN NODE TABLE _ noHTML TAG
   *
   **/
-  static public function openTABLE($js=[], $id=null, $class=null) { echo self::get_openHTML('LIST', 3, $js, $id, $class);    }
+  static public function _TABLE($js=[], $id=null, $class=null) { echo self::get__HTML('LIST', 3, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeTABLE($label = NULL) { echo self::get_closeHTML('LIST', 3, $label); }
+  static public function xTABLE($label = NULL) { echo self::get_xHTML('LIST', 3, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined TR OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE TR OPEN noHTML TAG
+  * @static Method Defined TR _ AND x TAG noHTML  
+  * RETURN NODE TR _ noHTML TAG
   *
   **/
-  static public function openTR($js=[], $id=null, $class=null) { echo self::get_openHTML('LIST', 4, $js, $id, $class);   }
+  static public function _TR($js=[], $id=null, $class=null) { echo self::get__HTML('LIST', 4, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeTR($label = NULL) { echo self::get_closeHTML('LIST', 4, $label); }
+  static public function xTR($label = NULL) { echo self::get_xHTML('LIST', 4, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined TD OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE TD OPEN noHTML TAG
+  * @static Method Defined TD _ AND x TAG noHTML  
+  * RETURN NODE TD _ noHTML TAG
   *
   **/
-  static public function openTD($js=[], $id=null, $class=null) { echo self::get_openHTML('LIST', 5, $js, $id, $class);   }
+  static public function _TD($js=[], $id=null, $class=null) { echo self::get__HTML('LIST', 5, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeTD($label = NULL) { echo self::get_closeHTML('LIST', 5, $label); }
+  static public function xTD($label = NULL) { echo self::get_xHTML('LIST', 5, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined TH OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE TH OPEN noHTML TAG
+  * @static Method Defined TH _ AND x TAG noHTML  
+  * RETURN NODE TH _ noHTML TAG
   *
   **/
-  static public function openTH($js=[], $id=null, $class=null) { echo self::get_openHTML('LIST', 6, $js, $id, $class);   }
+  static public function _TH($js=[], $id=null, $class=null) { echo self::get__HTML('LIST', 6, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeTH($label = NULL) { echo self::get_closeHTML('LIST', 6, $label);  }
+  static public function xTH($label = NULL) { echo self::get_xHTML('LIST', 6, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined LEGEND OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE LEGEND OPEN noHTML TAG
+  * @static Method Defined LEGEND _ AND x TAG noHTML  
+  * RETURN NODE LEGEND _ noHTML TAG
   *
   **/
-  static public function openLEGEND($js=[], $id=null, $class=null) { echo self::get_openHTML('LIST', 7, $js, $id, $class);   }
+  static public function _LEGEND($js=[], $id=null, $class=null) { echo self::get__HTML('LIST', 7, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeLEGEND($label = NULL) { echo self::get_closeHTML('LIST', 7, $label); }
+  static public function xLEGEND($label = NULL) { echo self::get_xHTML('LIST', 7, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined FIELDSET OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE FIELDSET OPEN noHTML TAG
+  * @static Method Defined FIELDSET _ AND x TAG noHTML  
+  * RETURN NODE FIELDSET _ noHTML TAG
   *
   **/
-  static public function openFIELDSET($js=[], $id=null, $class=null) { echo self::get_openHTML('LIST', 8, $js, $id, $class);   }
+  static public function _FIELDSET($js=[], $id=null, $class=null) { echo self::get__HTML('LIST', 8, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeFIELDSET($label = NULL) { echo self::get_closeHTML('LIST', 8, $label); }
+  static public function xFIELDSET($label = NULL) { echo self::get_xHTML('LIST', 8, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined TBODY OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE TBODY OPEN noHTML TAG
+  * @static Method Defined TBODY _ AND x TAG noHTML  
+  * RETURN NODE TBODY _ noHTML TAG
   *
   **/
-  static public function openTBODY($js=[], $id=null, $class=null) { echo self::get_openHTML('LIST', 9, $js, $id, $class);    }
+  static public function _TBODY($js=[], $id=null, $class=null) { echo self::get__HTML('LIST', 9, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeTBODY($label = NULL) { echo self::get_closeHTML('LIST', 9, $label); }
+  static public function xTBODY($label = NULL) { echo self::get_xHTML('LIST', 9, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined TFOOT OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE TFOOT OPEN noHTML TAG
+  * @static Method Defined TFOOT _ AND x TAG noHTML  
+  * RETURN NODE TFOOT _ noHTML TAG
   *
   **/
-  static public function openTFOOT($js=[], $id=null, $class=null) { echo self::get_openHTML('LIST', 10, $js, $id, $class);    }
+  static public function _TFOOT($js=[], $id=null, $class=null) { echo self::get__HTML('LIST', 10, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeTFOOT($label = NULL) { echo self::get_closeHTML('LIST', 10, $label);  }
+  static public function xTFOOT($label = NULL) { echo self::get_xHTML('LIST', 10, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined THEAD OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE THEAD OPEN noHTML TAG
+  * @static Method Defined THEAD _ AND x TAG noHTML  
+  * RETURN NODE THEAD _ noHTML TAG
   *
   **/
-  static public function openTHEAD($js=[], $id=null, $class=null) { echo self::get_openHTML('LIST', 11, $js, $id, $class);   }
+  static public function _THEAD($js=[], $id=null, $class=null) { echo self::get__HTML('LIST', 11, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeTHEAD($label = NULL) { echo self::get_closeHTML('LIST', 11, $label);  }
+  static public function xTHEAD($label = NULL) { echo self::get_xHTML('LIST', 11, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined SPAN OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE SPAN OPEN noHTML TAG
+  * @static Method Defined SPAN _ AND x TAG noHTML  
+  * RETURN NODE SPAN _ noHTML TAG
   *
   **/
-  static public function openSPAN($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMAT', 0, $js, $id, $class);    }
+  static public function _SPAN($js=[], $id=null, $class=null) { echo self::get__HTML('FORMAT', 0, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeSPAN($label = NULL) { echo self::get_closeHTML('FORMAT', 0, $label); }
+  static public function xSPAN($label = NULL) { echo self::get_xHTML('FORMAT', 0, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined EM OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE EM OPEN noHTML TAG
+  * @static Method Defined EM _ AND x TAG noHTML  
+  * RETURN NODE EM _ noHTML TAG
   *
   **/
-  static public function openEM($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMAT', 1, $js, $id, $class);    }
+  static public function _EM($js=[], $id=null, $class=null) { echo self::get__HTML('FORMAT', 1, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeEM($label = NULL) { echo self::get_closeHTML('FORMAT', 1, $label); }
+  static public function xEM($label = NULL) { echo self::get_xHTML('FORMAT', 1, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined B OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE B OPEN noHTML TAG
+  * @static Method Defined B _ AND x TAG noHTML  
+  * RETURN NODE B _ noHTML TAG
   *
   **/
-  static public function openB($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMAT', 2, $js, $id, $class);   }
+  static public function _B($js=[], $id=null, $class=null) { echo self::get__HTML('FORMAT', 2, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeB($label = NULL) { echo self::get_closeHTML('FORMAT', 2, $label); }
+  static public function xB($label = NULL) { echo self::get_xHTML('FORMAT', 2, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined I OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE I OPEN noHTML TAG
+  * @static Method Defined I _ AND x TAG noHTML  
+  * RETURN NODE I _ noHTML TAG
   *
   **/
-  static public function openI($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMAT', 3, $js, $id, $class);   }
+  static public function _I($js=[], $id=null, $class=null) { echo self::get__HTML('FORMAT', 3, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeI($label = NULL) { echo self::get_closeHTML('FORMAT', 3, $label);  }
+  static public function xI($label = NULL) { echo self::get_xHTML('FORMAT', 3, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined SMALL OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE SMALL OPEN noHTML TAG
+  * @static Method Defined SMALL _ AND x TAG noHTML  
+  * RETURN NODE SMALL _ noHTML TAG
   *
   **/
-  static public function openSMALL($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMAT', 4, $js, $id, $class);   }
+  static public function _SMALL($js=[], $id=null, $class=null) { echo self::get__HTML('FORMAT', 4, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeSMALL($label = NULL) { echo self::get_closeHTML('FORMAT', 4, $label); }
+  static public function xSMALL($label = NULL) { echo self::get_xHTML('FORMAT', 4, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined STRIKE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE STRIKE OPEN noHTML TAG
+  * @static Method Defined STRIKE _ AND x TAG noHTML  
+  * RETURN NODE STRIKE _ noHTML TAG
   *
   **/
-  static public function openSTRIKE($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMAT', 5, $js, $id, $class);   }
+  static public function _STRIKE($js=[], $id=null, $class=null) { echo self::get__HTML('FORMAT', 5, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeSTRIKE($label = NULL) { echo self::get_closeHTML('FORMAT', 5, $label);  }
+  static public function xSTRIKE($label = NULL) { echo self::get_xHTML('FORMAT', 5, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined MARQUEE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE MARQUEE OPEN noHTML TAG
+  * @static Method Defined MARQUEE _ AND x TAG noHTML  
+  * RETURN NODE MARQUEE _ noHTML TAG
   *
   **/
-  static public function openMARQUEE($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMAT', 6, $js, $id, $class);    }
+  static public function _MARQUEE($js=[], $id=null, $class=null) { echo self::get__HTML('FORMAT', 6, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeMARQUEE($label = NULL) { echo self::get_closeHTML('FORMAT', 6, $label); }
+  static public function xMARQUEE($label = NULL) { echo self::get_xHTML('FORMAT', 6, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined CENTER OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE CENTER OPEN noHTML TAG
+  * @static Method Defined CENTER _ AND x TAG noHTML  
+  * RETURN NODE CENTER _ noHTML TAG
   *
   **/
-  static public function openCENTER($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMAT', 7, $js, $id, $class);   }
+  static public function _CENTER($js=[], $id=null, $class=null) { echo self::get__HTML('FORMAT', 7, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeCENTER($label = NULL) { echo self::get_closeHTML('FORMAT', 7, $label);  }
+  static public function xCENTER($label = NULL) { echo self::get_xHTML('FORMAT', 7, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined CODE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE CODE OPEN noHTML TAG
+  * @static Method Defined CODE _ AND x TAG noHTML  
+  * RETURN NODE CODE _ noHTML TAG
   *
   **/
-  static public function openCODE($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMAT', 8, $js, $id, $class);   }
+  static public function _CODE($js=[], $id=null, $class=null) { echo self::get__HTML('FORMAT', 8, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeCODE($label = NULL) { echo self::get_closeHTML('FORMAT', 8, $label);  }
+  static public function xCODE($label = NULL) { echo self::get_xHTML('FORMAT', 8, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined ABBR OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE ABBR OPEN noHTML TAG
+  * @static Method Defined ABBR _ AND x TAG noHTML  
+  * RETURN NODE ABBR _ noHTML TAG
   *
   **/
-  static public function openABBR($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMAT', 9, $js, $id, $class);   }
+  static public function _ABBR($js=[], $id=null, $class=null) { echo self::get__HTML('FORMAT', 9, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeABBR($label = NULL) { echo self::get_closeHTML('FORMAT', 9, $label); }
+  static public function xABBR($label = NULL) { echo self::get_xHTML('FORMAT', 9, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined MAP OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE MAP OPEN noHTML TAG
+  * @static Method Defined MAP _ AND x TAG noHTML  
+  * RETURN NODE MAP _ noHTML TAG
   *
   **/
-  static public function openMAP($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMAT', 10, $js, $id, $class);   }
+  static public function _MAP($js=[], $id=null, $class=null) { echo self::get__HTML('FORMAT', 10, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeMAP($label = NULL) { echo self::get_closeHTML('FORMAT', 10, $label); }
+  static public function xMAP($label = NULL) { echo self::get_xHTML('FORMAT', 10, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined CANVAS OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE CANVAS OPEN noHTML TAG
+  * @static Method Defined CANVAS _ AND x TAG noHTML  
+  * RETURN NODE CANVAS _ noHTML TAG
   *
   **/
-  static public function openCANVAS($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMAT', 11, $js, $id, $class);    }
+  static public function _CANVAS($js=[], $id=null, $class=null) { echo self::get__HTML('FORMAT', 11, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeCANVAS($label = NULL) { echo self::get_closeHTML('FORMAT', 11, $label); }
+  static public function xCANVAS($label = NULL) { echo self::get_xHTML('FORMAT', 11, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined CITE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE CITE OPEN noHTML TAG
+  * @static Method Defined CITE _ AND x TAG noHTML  
+  * RETURN NODE CITE _ noHTML TAG
   *
   **/
-  static public function openCITE($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMAT', 12, $js, $id, $class);   }
+  static public function _CITE($js=[], $id=null, $class=null) { echo self::get__HTML('FORMAT', 12, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeCITE($label = NULL) { echo self::get_closeHTML('FORMAT', 12, $label); }
+  static public function xCITE($label = NULL) { echo self::get_xHTML('FORMAT', 12, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined DATA OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE DATA OPEN noHTML TAG
+  * @static Method Defined DATA _ AND x TAG noHTML  
+  * RETURN NODE DATA _ noHTML TAG
   *
   **/
-  static public function openDATA($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMAT', 13, $js, $id, $class);  }
+  static public function _DATA($js=[], $id=null, $class=null) { echo self::get__HTML('FORMAT', 13, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeDATA($label = NULL) { echo self::get_closeHTML('FORMAT', 13, $label); }
+  static public function xDATA($label = NULL) { echo self::get_xHTML('FORMAT', 13, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined DL OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE DL OPEN noHTML TAG
+  * @static Method Defined DL _ AND x TAG noHTML  
+  * RETURN NODE DL _ noHTML TAG
   *
   **/
-  static public function openDL($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMAT', 14, $js, $id, $class);   }
+  static public function _DL($js=[], $id=null, $class=null) { echo self::get__HTML('FORMAT', 14, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeDL($label = NULL) { echo self::get_closeHTML('FORMAT', 14, $label); }
+  static public function xDL($label = NULL) { echo self::get_xHTML('FORMAT', 14, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined DT OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE DT OPEN noHTML TAG
+  * @static Method Defined DT _ AND x TAG noHTML  
+  * RETURN NODE DT _ noHTML TAG
   *
   **/
-  static public function openDT($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMAT', 15, $js, $id, $class);   }
+  static public function _DT($js=[], $id=null, $class=null) { echo self::get__HTML('FORMAT', 15, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeDT($label = NULL) { echo self::get_closeHTML('FORMAT', 15, $label); }
+  static public function xDT($label = NULL) { echo self::get_xHTML('FORMAT', 15, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined DD OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE DD OPEN noHTML TAG
+  * @static Method Defined DD _ AND x TAG noHTML  
+  * RETURN NODE DD _ noHTML TAG
   *
   **/
-  static public function openDD($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMAT', 16, $js, $id, $class);    }
+  static public function _DD($js=[], $id=null, $class=null) { echo self::get__HTML('FORMAT', 16, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeDD($label = NULL) { echo self::get_closeHTML('FORMAT', 16, $label); }
+  static public function xDD($label = NULL) { echo self::get_xHTML('FORMAT', 16, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined DFN OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE DFN OPEN noHTML TAG
+  * @static Method Defined DFN _ AND x TAG noHTML  
+  * RETURN NODE DFN _ noHTML TAG
   *
   **/
-  static public function openDFN($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMAT', 17, $js, $id, $class);   }
+  static public function _DFN($js=[], $id=null, $class=null) { echo self::get__HTML('FORMAT', 17, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeDFN($label = NULL) { echo self::get_closeHTML('FORMAT', 17, $label); }
+  static public function xDFN($label = NULL) { echo self::get_xHTML('FORMAT', 17, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined INS OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE INS OPEN noHTML TAG
+  * @static Method Defined INS _ AND x TAG noHTML  
+  * RETURN NODE INS _ noHTML TAG
   *
   **/
-  static public function openINS($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMAT', 18, $js, $id, $class);    }
+  static public function _INS($js=[], $id=null, $class=null) { echo self::get__HTML('FORMAT', 18, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeINS($label = NULL) { echo self::get_closeHTML('FORMAT', 18, $label); }
+  static public function xINS($label = NULL) { echo self::get_xHTML('FORMAT', 18, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined DEL OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE DEL OPEN noHTML TAG
+  * @static Method Defined DEL _ AND x TAG noHTML  
+  * RETURN NODE DEL _ noHTML TAG
   *
   **/
-  static public function openDEL($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMATC', 0, $js, $id, $class);    }
+  static public function _DEL($js=[], $id=null, $class=null) { echo self::get__HTML('FORMATC', 0, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeDEL($label = NULL) { echo self::get_closeHTML('FORMATC', 0, $label);  }
+  static public function xDEL($label = NULL) { echo self::get_xHTML('FORMATC', 0, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined KBD OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE KBD OPEN noHTML TAG
+  * @static Method Defined KBD _ AND x TAG noHTML  
+  * RETURN NODE KBD _ noHTML TAG
   *
   **/
-  static public function openKBD($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMATC', 1, $js, $id, $class);  }
+  static public function _KBD($js=[], $id=null, $class=null) { echo self::get__HTML('FORMATC', 1, $js, $id, $class);  }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeKBD($label = NULL) { echo self::get_closeHTML('FORMATC', 1, $label);  }
+  static public function xKBD($label = NULL) { echo self::get_xHTML('FORMATC', 1, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined MARK OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE MARK OPEN noHTML TAG
+  * @static Method Defined MARK _ AND x TAG noHTML  
+  * RETURN NODE MARK _ noHTML TAG
   *
   **/
-  static public function openMARK($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMATC', 2, $js, $id, $class);   }
+  static public function _MARK($js=[], $id=null, $class=null) { echo self::get__HTML('FORMATC', 2, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeMARK($label = NULL) { echo self::get_closeHTML('FORMATC', 2, $label);  }
+  static public function xMARK($label = NULL) { echo self::get_xHTML('FORMATC', 2, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined PRE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE PRE OPEN noHTML TAG
+  * @static Method Defined PRE _ AND x TAG noHTML  
+  * RETURN NODE PRE _ noHTML TAG
   *
   **/
-  static public function openPRE($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMATC', 3, $js, $id, $class);    }
+  static public function _PRE($js=[], $id=null, $class=null) { echo self::get__HTML('FORMATC', 3, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closePRE($label = NULL) { echo self::get_closeHTML('FORMATC', 3, $label);  }
+  static public function xPRE($label = NULL) { echo self::get_xHTML('FORMATC', 3, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined RT OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE RT OPEN noHTML TAG
+  * @static Method Defined RT _ AND x TAG noHTML  
+  * RETURN NODE RT _ noHTML TAG
   *
   **/
-  static public function openRT($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMATC', 4, $js, $id, $class);   }
+  static public function _RT($js=[], $id=null, $class=null) { echo self::get__HTML('FORMATC', 4, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeRT($label = NULL) { echo self::get_closeHTML('FORMATC', 4, $label); }
+  static public function xRT($label = NULL) { echo self::get_xHTML('FORMATC', 4, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined RP OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE RP OPEN noHTML TAG
+  * @static Method Defined RP _ AND x TAG noHTML  
+  * RETURN NODE RP _ noHTML TAG
   *
   **/
-  static public function openRP($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMATC', 5, $js, $id, $class);   }
+  static public function _RP($js=[], $id=null, $class=null) { echo self::get__HTML('FORMATC', 5, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeRP($label = NULL) { echo self::get_closeHTML('FORMATC', 5, $label);  }
+  static public function xRP($label = NULL) { echo self::get_xHTML('FORMATC', 5, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined RUBY OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE RUBY OPEN noHTML TAG
+  * @static Method Defined RUBY _ AND x TAG noHTML  
+  * RETURN NODE RUBY _ noHTML TAG
   *
   **/
-  static public function openRUBY($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMATC', 6, $js, $id, $class);    }
+  static public function _RUBY($js=[], $id=null, $class=null) { echo self::get__HTML('FORMATC', 6, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeRUBY($label = NULL) { echo self::get_closeHTML('FORMATC', 6, $label);  }
+  static public function xRUBY($label = NULL) { echo self::get_xHTML('FORMATC', 6, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined S OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE S OPEN noHTML TAG
+  * @static Method Defined S _ AND x TAG noHTML  
+  * RETURN NODE S _ noHTML TAG
   *
   **/
-  static public function openS($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMATC', 7, $js, $id, $class);   }
+  static public function _S($js=[], $id=null, $class=null) { echo self::get__HTML('FORMATC', 7, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeS($label = NULL) { echo self::get_closeHTML('FORMATC', 7, $label); }
+  static public function xS($label = NULL) { echo self::get_xHTML('FORMATC', 7, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined SAMP OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE SAMP OPEN noHTML TAG
+  * @static Method Defined SAMP _ AND x TAG noHTML  
+  * RETURN NODE SAMP _ noHTML TAG
   *
   **/
-  static public function openSAMP($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMATC', 8, $js, $id, $class);   }
+  static public function _SAMP($js=[], $id=null, $class=null) { echo self::get__HTML('FORMATC', 8, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeSAMP($label = NULL) { echo self::get_closeHTML('FORMATC', 8, $label);  }
+  static public function xSAMP($label = NULL) { echo self::get_xHTML('FORMATC', 8, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined STRONG OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE STRONG OPEN noHTML TAG
+  * @static Method Defined STRONG _ AND x TAG noHTML  
+  * RETURN NODE STRONG _ noHTML TAG
   *
   **/
-  static public function openSTRONG($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMATC', 9, $js, $id, $class);    }
+  static public function _STRONG($js=[], $id=null, $class=null) { echo self::get__HTML('FORMATC', 9, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeSTRONG($label = NULL) { echo self::get_closeHTML('FORMATC', 9, $label);  }
+  static public function xSTRONG($label = NULL) { echo self::get_xHTML('FORMATC', 9, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined SUB OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE SUB OPEN noHTML TAG
+  * @static Method Defined SUB _ AND x TAG noHTML  
+  * RETURN NODE SUB _ noHTML TAG
   *
   **/
-  static public function openSUB($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMATC', 10, $js, $id, $class);    }
+  static public function _SUB($js=[], $id=null, $class=null) { echo self::get__HTML('FORMATC', 10, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeSUB($label = NULL) { echo self::get_closeHTML('FORMATC', 10, $label);  }
+  static public function xSUB($label = NULL) { echo self::get_xHTML('FORMATC', 10, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined SUP OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE SUP OPEN noHTML TAG
+  * @static Method Defined SUP _ AND x TAG noHTML  
+  * RETURN NODE SUP _ noHTML TAG
   *
   **/
-  static public function openSUP($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMATC', 11, $js, $id, $class);    }
+  static public function _SUP($js=[], $id=null, $class=null) { echo self::get__HTML('FORMATC', 11, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeSUP($label = NULL) { echo self::get_closeHTML('FORMATC', 11, $label);  }
+  static public function xSUP($label = NULL) { echo self::get_xHTML('FORMATC', 11, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined WBR OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE WBR OPEN noHTML TAG
+  * @static Method Defined WBR _ AND x TAG noHTML  
+  * RETURN NODE WBR _ noHTML TAG
   *
   **/
-  static public function openWBR($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMATC', 12, $js, $id, $class);   }
+  static public function _WBR($js=[], $id=null, $class=null) { echo self::get__HTML('FORMATC', 12, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeWBR($label = NULL) { echo self::get_closeHTML('FORMATC', 12, $label);  }
+  static public function xWBR($label = NULL) { echo self::get_xHTML('FORMATC', 12, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined Q OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE Q OPEN noHTML TAG
+  * @static Method Defined Q _ AND x TAG noHTML  
+  * RETURN NODE Q _ noHTML TAG
   *
   **/
-  static public function openQ($js=[], $id=null, $class=null) { echo self::get_openHTML('FORMATC', 13, $js, $id, $class);     }
+  static public function _Q($js=[], $id=null, $class=null) { echo self::get__HTML('FORMATC', 13, $js, $id, $class);     }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeQ($label = NULL) { echo self::get_closeHTML('FORMATC', 13, $label);  }
+  static public function xQ($label = NULL) { echo self::get_xHTML('FORMATC', 13, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined HEAD OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE HEAD OPEN noHTML TAG
+  * @static Method Defined HEAD _ AND x TAG noHTML  
+  * RETURN NODE HEAD _ noHTML TAG
   *
   **/
-  static public function openHEAD($js=[], $id=null, $class=null) { echo self::get_openHTML('STRUCTURE', 0, $js, $id, $class);    }
+  static public function _HEAD($js=[], $id=null, $class=null) { echo self::get__HTML('STRUCTURE', 0, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeHEAD($label = NULL) { echo self::get_closeHTML('STRUCTURE', 0, $label); }
+  static public function xHEAD($label = NULL) { echo self::get_xHTML('STRUCTURE', 0, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined TITLE OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE TITLE OPEN noHTML TAG
+  * @static Method Defined TITLE _ AND x TAG noHTML  
+  * RETURN NODE TITLE _ noHTML TAG
   *
   **/
-  static public function openTITLE($js=[], $id=null, $class=null) { echo self::get_openHTML('STRUCTURE', 1, $js, $id, $class);    }
+  static public function _TITLE($js=[], $id=null, $class=null) { echo self::get__HTML('STRUCTURE', 1, $js, $id, $class);    }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeTITLE($label = NULL) { echo self::get_closeHTML('STRUCTURE', 1, $label);  }
+  static public function xTITLE($label = NULL) { echo self::get_xHTML('STRUCTURE', 1, $label);  }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined BODY OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE BODY OPEN noHTML TAG
+  * @static Method Defined BODY _ AND x TAG noHTML  
+  * RETURN NODE BODY _ noHTML TAG
   *
   **/
-  static public function openBODY($js=[], $id=null, $class=null) { echo self::get_openHTML('STRUCTURE', 2, $js, $id, $class);     }
+  static public function _BODY($js=[], $id=null, $class=null) { echo self::get__HTML('STRUCTURE', 2, $js, $id, $class);     }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closeBODY($label = NULL) { echo self::get_closeHTML('STRUCTURE', 2, $label); }
+  static public function xBODY($label = NULL) { echo self::get_xHTML('STRUCTURE', 2, $label); }
 
 /**
   *
   * @method public function noHTML
-  * @static Method Defined HTML OPEN AND CLOSE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * @static Method Defined HTML _ AND x TAG noHTML  
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function opennoHTML($js=[], $id=null, $class=null) { echo self::get_openHTML('STRUCTURE', 3, $js, $id, $class);   }
+  static public function _noHTML($js=[], $id=null, $class=null) { echo self::get__HTML('STRUCTURE', 3, $js, $id, $class);   }
 // CLOSING_METHOD_noHTML_TAG
-  static public function closenoHTML($label = NULL) { echo self::get_closeHTML('STRUCTURE', 3, $label); }
+  static public function xnoHTML($label = NULL) { echo self::get_xHTML('STRUCTURE', 3, $label); }
 
 /**
  *
@@ -1827,7 +1827,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML H1 TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function H1($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1840,7 +1840,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML H2 TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function H2($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1853,7 +1853,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML H3 TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function H3($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1866,7 +1866,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML H4 TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function H4($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1879,7 +1879,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML H5 TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function H5($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1892,7 +1892,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML H6 TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function H6($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1905,7 +1905,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML DIV TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function DIV($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1918,7 +1918,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML P TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function P($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1931,7 +1931,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML BUTTON TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function BUTTON($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1944,7 +1944,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML A TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function A($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1957,7 +1957,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML IFRAME TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function IFRAME($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1970,7 +1970,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML MAIN TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function MAIN($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1982,7 +1982,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML NAV TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function NAV($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -1994,7 +1994,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML SELECT TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function SELECT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2006,7 +2006,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML FORM TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function FORM($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2018,7 +2018,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML PICTURE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function PICTURE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2030,7 +2030,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML SECTION TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function SECTION($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2042,7 +2042,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML TEXTAREA TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function TEXTAREA($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2054,7 +2054,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML AUDIO TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function AUDIO($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2066,7 +2066,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML VIDEO TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function VIDEO($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2078,7 +2078,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML ADDRESS TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function ADDRESS($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2090,7 +2090,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML COLGROUP TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function COLGROUP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2102,7 +2102,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML BDI TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function BDI($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2114,7 +2114,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML BDO TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function BDO($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2126,7 +2126,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML BLOCKQUOTE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function BLOCKQUOTE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2138,7 +2138,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML CAPTION TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function CAPTION($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2150,7 +2150,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML LABEL TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function LABEL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2162,7 +2162,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML DATALIST TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function DATALIST($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2174,7 +2174,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML DETAILS TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function DETAILS($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2186,7 +2186,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML SUMMARY TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function SUMMARY($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2198,7 +2198,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML DIALOG TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function DIALOG($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2210,7 +2210,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML OPTION TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function OPTION($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2222,7 +2222,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML FIGURE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function FIGURE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2234,7 +2234,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML FIGCAPTION TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function FIGCAPTION($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2246,7 +2246,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML METER TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function METER($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2258,7 +2258,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML OBJECT TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function OBJECT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2270,7 +2270,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML OPTGROUP TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function OPTGROUP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2282,7 +2282,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML OUTPUT TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function OUTPUT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2294,7 +2294,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML PROGRESS TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function PROGRESS($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2306,7 +2306,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML SVG TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function SVG($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2318,7 +2318,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML TEMPLATE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function TEMPLATE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2330,7 +2330,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML TIME TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function TIME($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2342,7 +2342,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML VAR TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function VAR($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2354,7 +2354,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML UL TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function UL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2366,7 +2366,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML OL TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function OL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2378,7 +2378,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML LI TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function LI($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2390,7 +2390,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML TABLE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function TABLE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2402,7 +2402,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML TR TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function TR($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2414,7 +2414,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML TD TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function TD($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2426,7 +2426,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML TH TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function TH($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2438,7 +2438,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML LEGEND TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function LEGEND($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2450,7 +2450,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML FIELDSET TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function FIELDSET($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2462,7 +2462,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML TBODY TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function TBODY($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2474,7 +2474,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML TFOOT TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function TFOOT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2486,7 +2486,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML THEAD TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function THEAD($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2498,7 +2498,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML SPAN TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function SPAN($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2510,7 +2510,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML EM TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function EM($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2522,7 +2522,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML B TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function B($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2534,7 +2534,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML I TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function I($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2546,7 +2546,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML SMALL TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function SMALL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2558,7 +2558,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML STRIKE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function STRIKE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2570,7 +2570,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML MARQUEE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function MARQUEE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2582,7 +2582,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML CENTER TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function CENTER($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2594,7 +2594,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML CODE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function CODE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2606,7 +2606,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML ABBR TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function ABBR($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2618,7 +2618,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML DETAILS TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function MAP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2630,7 +2630,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML CANVAS TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function CANVAS($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2642,7 +2642,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML CITE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function CITE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2654,7 +2654,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML DATA TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function DATA($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2666,7 +2666,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML DL TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function DL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2678,7 +2678,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML DT TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function DT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2690,7 +2690,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML DD TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function DD($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2702,7 +2702,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML DFN TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function DFN($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2714,7 +2714,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML INS TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function INS($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2726,7 +2726,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML DEL TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function DEL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2738,7 +2738,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML KBD TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function KBD($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2750,7 +2750,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML MARK TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function MARK($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2762,7 +2762,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML PRE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function PRE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2774,7 +2774,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML RT TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function RT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2786,7 +2786,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML RP TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function RP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2798,7 +2798,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML RUBY TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function RUBY($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2810,7 +2810,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML S TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function S($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2822,7 +2822,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML SAMP TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function SAMP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2834,7 +2834,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML STRONG TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function STRONG($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2846,7 +2846,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML SUB TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function SUB($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2858,7 +2858,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML SUP TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function SUP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2870,7 +2870,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML WBR TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function WBR($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2882,7 +2882,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML Q TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function Q($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2894,7 +2894,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML HEAD TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function HEAD($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2906,7 +2906,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML TITLE TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function TITLE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2918,7 +2918,7 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML BODY TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function BODY($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
@@ -2930,32 +2930,32 @@ static protected $hextend = [];
   *
   * @method public function noHTML
   * @static Method Defined HTML noHTML TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
   static public function noHTML($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
  return self::_istrue_assoc_ELEMENTINLINE('STRUCTURE', 3, $_doCONTENT, $js, $id, $class, $label, $assoc);
 
-} // END OF LINE HTML NO CLOSE REQUIRED
+} // END OF LINE HTML NO x REQUIRED
 
 /**
   *
   * @method private function noHTML
   * @static @private Method Defined  return_inline_element
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   * 
   **/
 static private function return_inline_element($elem_val, $elem_key, $js, $id, $class, $assoc) {
 
-   return self::get_inline_openHTML($elem_val, $elem_key, $js, $id, $class, $assoc);    
+   return self::get_inline__HTML($elem_val, $elem_key, $js, $id, $class, $assoc);    
 }
 
 /**
   *
   * @method private function noHTML
   * @static @private  Method Defined  if TRUE ELEMENT TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
 static private function _istrue_assoc_ELEMENTINLINE($elem_val, $elem_key, $_doCONTENT, $js, $id, $class, $label, $assoc) {
@@ -2993,34 +2993,34 @@ static private function _istrue_assoc_ELEMENTINLINE($elem_val, $elem_key, $_doCO
   *
   * @method private function noHTML
   * @static @private  Method Defined  if TRUE ELEMENT TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
 static private function return_elementINLINE($elem_val, $elem_key, $_doCONTENT, $js, $id, $class, $label) {
    
     # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
-    # RETURN_GET_OPEN_HTML_METHOD_INCLUDED_ 
+    # RETURN_GET___HTML_METHOD_INCLUDED_ 
   /**
     *
     * @var | Defined var $elem_val, $elem_key, $js, $id, $class  
-    * @method function get_openHTML
+    * @method function get__HTML
     *
     **/ 
-   echo $return_elementINLINE  = self::get_openHTML($elem_val, $elem_key, $js, $id, $class);  
+   echo $return_elementINLINE  = self::get__HTML($elem_val, $elem_key, $js, $id, $class);  
    
    # WHEN_THE_LOOP_IS_TRUE_THEN
    # DO_CONTENT
    echo $return_elementINLINE  = $_doCONTENT; 
    
      # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
-     # RETURN_GET_OPEN_HTML_METHOD_INCLUDED_ 
+     # RETURN_GET___HTML_METHOD_INCLUDED_ 
    /**
      *
      * @var | Defined var $elem_val, $elem_key, $label  
-     * @method function get_closeHTML()
+     * @method function get_xHTML()
      *
      **/ 
-   echo $return_elementINLINE  = self::get_closeHTML($elem_val, $elem_key, $label); 
+   echo $return_elementINLINE  = self::get_xHTML($elem_val, $elem_key, $label); 
 
 }
 
@@ -3028,7 +3028,7 @@ static private function return_elementINLINE($elem_val, $elem_key, $_doCONTENT, 
   *
   * @method private function noHTML
   * @static @private  Method Defined  if newELEMENT TRUE ELEMENT TAG noHTML  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
 static private function _elemenHTMLINLINE($elem_val, $elem_key, $_doCONTENT, $js, $id, $class, $label) {
@@ -3036,39 +3036,39 @@ static private function _elemenHTMLINLINE($elem_val, $elem_key, $_doCONTENT, $js
   if ( $label == TRUE && $label === 'MAGIC') {
      
      # IF_INLINE_ELEMENT_IS_EQUAL_NEW_ELEMENT_AND_TRUE_THE_RETURN_ECHO_STATIC_noHTML
-     # RETURN_GET_OPEN_HTML_METHOD_INCLUDED_ 
+     # RETURN_GET___HTML_METHOD_INCLUDED_ 
    /**
      *
      * @var | Defined var $elem_val, $elem_key, $js, $id, $class
-     * @method function new_get_openHTML();
+     * @method function new_get__HTML();
      *
      **/ 
      
-     return $return_elementINLINE = self::new_get_openHTML($elem_val, $elem_key, $js, $id, $class);  
+     return $return_elementINLINE = self::new_get__HTML($elem_val, $elem_key, $js, $id, $class);  
 
    } elseif ($label == TRUE && $label === 'MAGIC_END') {
      
       # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
-      # RETURN_GET_OPEN_HTML_METHOD_INCLUDED_ 
+      # RETURN_GET___HTML_METHOD_INCLUDED_ 
     /**
       *
       * @var | Defined var $elem_val, $elem_key, $label  
-      * @method function new_get_openHTML();
+      * @method function new_get__HTML();
       * 
       **/    
-     return $return_elementINLINE  = self::new_get_closeHTML($elem_val, $elem_key, $label); 
+     return $return_elementINLINE  = self::new_get_xHTML($elem_val, $elem_key, $label); 
 
    } else {
 
      # IF_INLINE_ELEMENT_IS_EQUAL_NEW_ELEMENT_AND_TRUE_THE_RETURN_ECHO_STATIC_noHTML
-     # RETURN_GET_OPEN_HTML_METHOD_INCLUDED_ 
+     # RETURN_GET___HTML_METHOD_INCLUDED_ 
    /**
      *
      * @var | Defined var $elem_val, $elem_key, $js, $id, $class
-     * @method function new_get_openHTML();
+     * @method function new_get__HTML();
      *
      **/ 
-    $return_elementINLINE   = self::new_get_openHTML($elem_val, $elem_key, $js, $id, $class);  
+    $return_elementINLINE   = self::new_get__HTML($elem_val, $elem_key, $js, $id, $class);  
   
   
 
@@ -3077,14 +3077,14 @@ static private function _elemenHTMLINLINE($elem_val, $elem_key, $_doCONTENT, $js
      $return_elementINLINE  .= $_doCONTENT; 
    
      # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
-     # RETURN_GET_OPEN_HTML_METHOD_INCLUDED_ 
+     # RETURN_GET___HTML_METHOD_INCLUDED_ 
    /**
      *
      * @var | Defined var $elem_val, $elem_key, $label  
-     * @method function new_get_openHTML();
+     * @method function new_get__HTML();
      * 
      **/    
-    $return_elementINLINE  .= self::new_get_closeHTML($elem_val, $elem_key, $label); 
+    $return_elementINLINE  .= self::new_get_xHTML($elem_val, $elem_key, $label); 
   
     # get_ELEMENT_RETURN!
     return $return_elementINLINE;
@@ -3096,11 +3096,11 @@ static private function _elemenHTMLINLINE($elem_val, $elem_key, $_doCONTENT, $js
 /**
   *
   * @method private function noHTML
-  * @static @private Method Defined if get_inline_openHTML assoc TRUE  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * @static @private Method Defined if get_inline__HTML assoc TRUE  
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static private function get_inline_openHTML($elem_val, $elem_key, $js, $id, $class, $assoc) {
+static private function get_inline__HTML($elem_val, $elem_key, $js, $id, $class, $assoc) {
   
   # ÌF_ASSOC_IS_SET_AS_NULL_THEN_RETURN_DATA_SET_ECHO
   # CHECK_IF_ASSOC_IS_FALSE_NULL_DEFAULT
@@ -3116,8 +3116,8 @@ static private function get_inline_openHTML($elem_val, $elem_key, $js, $id, $cla
        * @var $js, $id, $class, NULL
        *
        **/
-     echo $get_inline_openHTML  = self::_setELEMENT($elem_val, $elem_key);
-     echo $get_inline_openHTML  = self::_setinLINEHTMLattr($js, $id, $class, NULL);   
+     echo $get_inline__HTML  = self::_setELEMENT($elem_val, $elem_key);
+     echo $get_inline__HTML  = self::_setinLINEHTMLattr($js, $id, $class, NULL);   
   
   }
   # CHECK_ASSOC_IF_IT_IS_TRUE_THEN
@@ -3132,10 +3132,10 @@ static private function get_inline_openHTML($elem_val, $elem_key, $js, $id, $cla
        * @method function _setinLINEHTMLattr
        *
        **/ 
-     $get_inline_openHTML   = self::_setELEMENT($elem_val, $elem_key);
-     $get_inline_openHTML  .= self::_setinLINEHTMLattr($js, $id, $class, $assoc); 
+     $get_inline__HTML   = self::_setELEMENT($elem_val, $elem_key);
+     $get_inline__HTML  .= self::_setinLINEHTMLattr($js, $id, $class, $assoc); 
 
-     return $get_inline_openHTML;    
+     return $get_inline__HTML;    
   }
     
 }
@@ -3143,14 +3143,14 @@ static private function get_inline_openHTML($elem_val, $elem_key, $js, $id, $cla
 /**
   *
   * @method private function noHTML
-  * @static @private Method Defined get_openHTML   
-  * RETURN NODE HTML OPEN noHTML TAG
+  * @static @private Method Defined get__HTML   
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static protected function get_openHTML($elem_val, $elem_key, $js, $id, $class) {
+static protected function get__HTML($elem_val, $elem_key, $js, $id, $class) {
        
-      # RETURN_GET_OPENHTML_CONTAINS_OFSET_ELEMENTS_SET_HTML_ATTR
-      # SET_OPEN_HTML_AS_PRINT_STATIC_HTML
+      # RETURN_GET__HTML_CONTAINS_OFSET_ELEMENTS_SET_HTML_ATTR
+      # SET___HTML_AS_PRINT_STATIC_HTML
     /**
       *
       * SET_FUNCTION-CONCAT_THEN_RETURN
@@ -3158,22 +3158,22 @@ static protected function get_openHTML($elem_val, $elem_key, $js, $id, $class) {
       * @method function _setHTMLattr()
       *
       **/     
-    echo $get_openHTML  = self::_setELEMENT($elem_val, $elem_key);
-    echo $get_openHTML  = self::_setHTMLattr($js, $id, $class);   
+    echo $get__HTML  = self::_setELEMENT($elem_val, $elem_key);
+    echo $get__HTML  = self::_setHTMLattr($js, $id, $class);   
 
 }
 
 /**
   *
   * @method private function noHTML
-  * @static @private Method Defined new_get_openHTML   
-  * RETURN NODE HTML OPEN noHTML TAG
+  * @static @private Method Defined new_get__HTML   
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static protected function new_get_openHTML($elem_val, $elem_key, $js, $id, $class) {
+static protected function new_get__HTML($elem_val, $elem_key, $js, $id, $class) {
   
-      # RETURN_GET_OPENHTML_CONTAINS_OFSET_ELEMENTS_SET_HTML_ATTR
-      # SET_OPEN_HTML_AS_RETURN_DYNAMIC_ASSOC_HTML
+      # RETURN_GET__HTML_CONTAINS_OFSET_ELEMENTS_SET_HTML_ATTR
+      # SET___HTML_AS_RETURN_DYNAMIC_ASSOC_HTML
     /**
       *
       * SET_FUNCTION-CONCAT_THEN_RETURN
@@ -3181,33 +3181,33 @@ static protected function new_get_openHTML($elem_val, $elem_key, $js, $id, $clas
       * @method function new_setHTMLattr()
       *
       **/      
-   $get_openHTML   = self::_setELEMENT($elem_val, $elem_key);
-   $get_openHTML  .= self::new_setHTMLattr($js, $id, $class);   
+   $get__HTML   = self::_setELEMENT($elem_val, $elem_key);
+   $get__HTML  .= self::new_setHTMLattr($js, $id, $class);   
    
-   return $get_openHTML;
+   return $get__HTML;
 
 }
 
 /**
   *
   * @method private function noHTML
-  * @static @private Method Defined get_closeHTML   
-  * RETURN NODE HTML OPEN noHTML TAG
+  * @static @private Method Defined get_xHTML   
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static protected function get_closeHTML($elem_val, $elem_key, $label) {
+static protected function get_xHTML($elem_val, $elem_key, $label) {
    
    # SET_VALUE_IS_TRUE_ELEMENT
    # ASIGNED-TO_SET_VAR_ELEMENT 
    $set             = self::_isTRUELEM($elem_val); 
    
    # DEFINE_ELEMENTS_AND_EMTHODS
-   # ASSIGNED_GET_OPEN_TAG_SET_GETENDS_RETURN-SET_ARRAY_KEY
-   # EGT_CLOSE_HTML_ASSIGNED_BREAK_TAG
-   $defined_htm     = self::_getOPENTAG().self::_getENDS()
+   # ASSIGNED_GET___TAG_SET_GETENDS_RETURN-SET_ARRAY_KEY
+   # EGT_x_HTML_ASSIGNED_BREAK_TAG
+   $defined_htm     = self::_get_TAG().self::_getENDS()
                     
                        .$set[$elem_key]
-                       .self::_getCLOSETAG()
+                       .self::_getxTAG()
                        .self::_getBREAK();
    
    # CHECK_IF_LABEL_IS_TRUE_AFTER_NODE
@@ -3233,21 +3233,21 @@ static protected function get_closeHTML($elem_val, $elem_key, $label) {
 /**
   *
   * @method private function noHTML
-  * @static @private Method Defined new_get_closeHTML   
-  * RETURN NODE HTML OPEN noHTML TAG
+  * @static @private Method Defined new_get_xHTML   
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static protected function new_get_closeHTML($elem_val, $elem_key, $label) {
+static protected function new_get_xHTML($elem_val, $elem_key, $label) {
    
    $defined_htm       = "";
 
    $set               = self::_isTRUELEM($elem_val); 
    
    # SAMETHING_SET_AS_RETURN
-   $defined_htm       = self::_getOPENTAG().self::_getENDS()
+   $defined_htm       = self::_get_TAG().self::_getENDS()
 
                        .$set[$elem_key]
-                       .self::_getCLOSETAG()
+                       .self::_getxTAG()
                        .self::_getBREAK();
 
    # CHECK_IF_LABEL_IS_TRUE_AFTER_NODE
@@ -3269,7 +3269,7 @@ static protected function new_get_closeHTML($elem_val, $elem_key, $label) {
   *
   * @method private function noHTML
   * @static @private Method Defined  _setHTMLattr   
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
 static protected function _setHTMLattr($js = [], $id=NULL, $class=NULL) {
@@ -3280,18 +3280,18 @@ static protected function _setHTMLattr($js = [], $id=NULL, $class=NULL) {
       *
       * SET_FUNCTION-CONCAT_THEN_RETURN
       * @method function _isJStrue()
-      * @method function _getCLOSETAG()
+      * @method function _getxTAG()
       *
       **/     
     echo $_setHTMLattr  = self::_isJStrue($js, $id, $class);
-    echo $_setHTMLattr = self::_getCLOSETAG().self::_getBREAK();   
+    echo $_setHTMLattr = self::_getxTAG().self::_getBREAK();   
 }
 
 /**
   *
   * @method private function noHTML
   * @static @private Method Defined  _setHTMLattr   
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
 static protected function new_setHTMLattr($js = [], $id=NULL, $class=NULL) {
@@ -3302,11 +3302,11 @@ static protected function new_setHTMLattr($js = [], $id=NULL, $class=NULL) {
       *
       * SET_FUNCTION-CONCAT_THEN_RETURN
       * @method function new_isJStrue()
-      * @method function _getCLOSETAG()
+      * @method function _getxTAG()
       *
       **/ 
     $_setHTMLattr  = self::new_isJStrue($js, $id, $class);
-    $_setHTMLattr .= self::_getCLOSETAG().self::_getBREAK();
+    $_setHTMLattr .= self::_getxTAG().self::_getBREAK();
 
     return $_setHTMLattr;
 }
@@ -3315,7 +3315,7 @@ static protected function new_setHTMLattr($js = [], $id=NULL, $class=NULL) {
   *
   * @method private function noHTML
   * @static @private Method Defined  _setinLINEHTMLattr  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
 static protected function _setinLINEHTMLattr($js = [], $id=NULL, $class=NULL, $assoc=NULL) {
@@ -3334,13 +3334,13 @@ static protected function _setinLINEHTMLattr($js = [], $id=NULL, $class=NULL, $a
       *
       **/     
     echo $_setinLINEHTMLattr = self::_isJStrue($js, $id, $class);
-    echo $_setinLINEHTMLattr = self::_set_tagSPACER().self::_setENDS().self::_getCLOSETAG().self::_getBREAK();  
+    echo $_setinLINEHTMLattr = self::_set_tagSPACER().self::_setENDS().self::_getxTAG().self::_getBREAK();  
 
   } /**
       *
       * SET_FUNCTION-CONCAT_THEN_RETURN
       * @method function isJStrue_assoc()
-      * @method function _set_tagSPACER_setENDS_getCLOSETAG_getBREAK
+      * @method function _set_tagSPACER_setENDS_getxTAG_getBREAK
       *
       **/     
     elseif ($assoc === FUNC_ASSOC || $assoc === CLASS_ASSOC || $assoc === METHOD_ASSOC) {
@@ -3348,7 +3348,7 @@ static protected function _setinLINEHTMLattr($js = [], $id=NULL, $class=NULL, $a
       # ELSE_CHECK_IF_THE_ASSOC_IS_TRUE_OR_FUNC_ASSOC_OR_CLASS_ASSOC_METHOD_ASSOC
       # SET_AS_DYNAMIC_ASSOCIATED_WITH_METHOD_CLASS_FUNC_ASSOC      
       $_setinLINEHTMLattr  = self::isJStrue_assoc($js, $id, $class, $assoc);
-      $_setinLINEHTMLattr .= self::_set_tagSPACER().self::_setENDS().self::_getCLOSETAG().self::_getBREAK();  
+      $_setinLINEHTMLattr .= self::_set_tagSPACER().self::_setENDS().self::_getxTAG().self::_getBREAK();  
 
       return $_setinLINEHTMLattr;    
   }
@@ -3359,7 +3359,7 @@ static protected function _setinLINEHTMLattr($js = [], $id=NULL, $class=NULL, $a
   *
   * @method private function noHTML
   * @static @private Method Defined  isJStrue_assoc  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
 static private function isJStrue_assoc($js, $id, $class, $assoc) {
@@ -3397,7 +3397,7 @@ static private function isJStrue_assoc($js, $id, $class, $assoc) {
   *
   * @method private function noHTML
   * @static @private Method Defined  _isJStrue  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
 static private function _isJStrue($js, $id, $class) {
@@ -3448,7 +3448,7 @@ static private function _isJStrue($js, $id, $class) {
   *
   * @method private function noHTML
   * @static @private Method Defined  _isJStrue  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
 static private function new_isJStrue($js, $id, $class) {
@@ -3503,7 +3503,7 @@ static private function new_isJStrue($js, $id, $class) {
   *
   * @method private function noHTML
   * @static @private Method Defined  _setELEMENT  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
 static protected function _setELEMENT($_variable, $set_tag) {
@@ -3513,11 +3513,11 @@ static protected function _setELEMENT($_variable, $set_tag) {
     *
     * SET_FUNCTION-CONCAT_THEN_RETURN
     * @method function _isTRUELEM
-    * @method function _getOPENTAG
+    * @method function _get_TAG
     *
     **/     
    $set =  self::_isTRUELEM($_variable);
-   return  self::_getOPENTAG().$set[$set_tag];
+   return  self::_get_TAG().$set[$set_tag];
 
 }
 
@@ -3525,7 +3525,7 @@ static protected function _setELEMENT($_variable, $set_tag) {
   *
   * @method private function noHTML
   * @static @private Method Defined  apps_att  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
 static protected function apps_att($js = []) {
@@ -3548,7 +3548,7 @@ static protected function apps_att($js = []) {
   *
   * @method private function noHTML
   * @static @private Method Defined html_attr  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
 static private function html_attr($id=null, $class=null) {
@@ -3601,7 +3601,7 @@ static private function html_attr($id=null, $class=null) {
   *
   * @method private function noHTML
   * @static @private Method Defined new_html_attr 
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
 static private function new_html_attr($id=null, $class=null) {
@@ -3652,7 +3652,7 @@ static private function new_html_attr($id=null, $class=null) {
   *
   * @method private function noHTML
   * @static @private Method Defined _isTRUELEM 
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
 static protected function _isTRUELEM($elements) {
@@ -3666,7 +3666,7 @@ static protected function _isTRUELEM($elements) {
      *
      * @var elements 
      * @method _isTRUELEM
-     * RETURN NODE HTML OPEN noHTML TAG
+     * RETURN NODE HTML _ noHTML TAG
      *
      **/
     elseif  ($elements == 'SECONDARY') 
@@ -3679,7 +3679,7 @@ static protected function _isTRUELEM($elements) {
      * @var elements 
      * @var $htm_ss 
      * @method _isTRUELEM
-     * RETURN NODE HTML OPEN noHTML TAG
+     * RETURN NODE HTML _ noHTML TAG
      *
      **/
     elseif  ($elements == 'SUPPORT')   
@@ -3692,7 +3692,7 @@ static protected function _isTRUELEM($elements) {
      * @var elements 
      * @var $htm_t
      * @method _isTRUELEM
-     * RETURN NODE HTML OPEN noHTML TAG
+     * RETURN NODE HTML _ noHTML TAG
      *
      **/ 
     elseif  ($elements == 'LIST')      
@@ -3705,7 +3705,7 @@ static protected function _isTRUELEM($elements) {
      * @var elements 
      * @var $htm_f
      * @method _isTRUELEM
-     * RETURN NODE HTML OPEN noHTML TAG
+     * RETURN NODE HTML _ noHTML TAG
      *
      **/
     elseif  ($elements == 'FORMAT')    
@@ -3718,7 +3718,7 @@ static protected function _isTRUELEM($elements) {
      * @var elements
      * @var $htm_fc 
      * @method _isTRUELEM
-     * RETURN NODE HTML OPEN noHTML TAG
+     * RETURN NODE HTML _ noHTML TAG
      *
      **/
      elseif  ($elements == 'FORMATC')   
@@ -3731,7 +3731,7 @@ static protected function _isTRUELEM($elements) {
      * @var elements 
      * @var $htm_L
      * @method _isTRUELEM
-     * RETURN NODE HTML OPEN noHTML TAG
+     * RETURN NODE HTML _ noHTML TAG
      *
      **/
 
@@ -3745,7 +3745,7 @@ static protected function _isTRUELEM($elements) {
      * @var elements
      * @var $htm_st 
      * @method _isTRUELEM
-     * RETURN NODE HTML OPEN noHTML TAG
+     * RETURN NODE HTML _ noHTML TAG
      *
      **/
     elseif  ( $elements == 'STRUCTURE') 
@@ -3758,7 +3758,7 @@ static protected function _isTRUELEM($elements) {
   *
   * @method private function noHTML
   * @static @private Method Defined haveClass   
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
 static private function haveClass($class) {
@@ -3770,7 +3770,7 @@ static private function haveClass($class) {
   *
   * @method private function noHTML
   * @static @private Method Defined haveId   
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
 static private function haveId($id) {
@@ -3782,7 +3782,7 @@ static private function haveId($id) {
   *
   * @method private function noHTML
   * @static @private Method Defined have_id_class   
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
 static private function have_id_class($id, $class) {
@@ -3799,7 +3799,7 @@ static private function have_id_class($id, $class) {
   *
   * @method private function noHTML
   * @static @private Method Defined _isTrueBREAK_assoc  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
 static private function _isTrueBREAK_assoc($assoc) {
@@ -3809,13 +3809,13 @@ static private function _isTrueBREAK_assoc($assoc) {
      
     # CHECK_IF_aSSOC_IS_NOT_TRUE_OR_IF_IT_IS_FALSE
     # SET_AS_PRINT_STATIC_HTML 
-    echo self::_getOPENTAG().self::_doBREAK().self::_tagSPACER().self::_getENDS().self::_getCLOSETAG().self::_getBREAK(); 
+    echo self::_get_TAG().self::_doBREAK().self::_tagSPACER().self::_getENDS().self::_getxTAG().self::_getBREAK(); 
    } 
 
     # ELSE_IF_THE_ASSOC_PARA_IS_TRUE_THEN_SET_RETURN 
     elseif ($assoc === FUNC_ASSOC || $assoc === CLASS_ASSOC || $assoc === METHOD_ASSOC) {
     # RETURN_METHOD_ASSOC
-    return self::_getOPENTAG().self::_doBREAK().self::_tagSPACER().self::_getENDS().self::_getCLOSETAG().self::_getBREAK();       
+    return self::_get_TAG().self::_doBREAK().self::_tagSPACER().self::_getENDS().self::_getxTAG().self::_getBREAK();       
    }
 }
 
@@ -3823,7 +3823,7 @@ static private function _isTrueBREAK_assoc($assoc) {
   *
   * @method private function noHTML
   * @static @private Method Defined _isTrueLine_assoc  
-  * RETURN NODE HTML OPEN noHTML TAG
+  * RETURN NODE HTML _ noHTML TAG
   *
   **/
 static private function _isTrueLine_assoc($assoc) {
@@ -3833,14 +3833,14 @@ static private function _isTrueLine_assoc($assoc) {
 
     # CHECK_IF_aSSOC_IS_NOT_TRUE_OR_IF_IT_IS_FALSE
     # SET_AS_PRINT_STATIC_HTML    
-    echo self::_getOPENTAG().self::_makeLine().self::_tagSPACER().self::_getENDS().self::_getCLOSETAG().self::_getBREAK();
+    echo self::_get_TAG().self::_makeLine().self::_tagSPACER().self::_getENDS().self::_getxTAG().self::_getBREAK();
       
    } 
     
     # ELSE_IF_THE_ASSOC_PARA_IS_TRUE_THEN_SET_RETURN 
     elseif ($assoc === FUNC_ASSOC || $assoc === CLASS_ASSOC || $assoc === METHOD_ASSOC) {
     # RETURN_METHOD_ASSOC
-    return self::_getOPENTAG().self::_makeLine().self::_tagSPACER().self::_getENDS().self::_getCLOSETAG().self::_getBREAK();      
+    return self::_get_TAG().self::_makeLine().self::_tagSPACER().self::_getENDS().self::_getxTAG().self::_getBREAK();      
    
    }
 }
@@ -4017,10 +4017,10 @@ static private function _setDQ()         {
 /**
   *
   * @method private function noHTML
-  * @static @private Method Defined HTML FOUNDATION _getCLOSETAG 
+  * @static @private Method Defined HTML FOUNDATION _getxTAG 
   *
   **/
-static protected function _getCLOSETAG()   { 
+static protected function _getxTAG()   { 
 
    /**
      *
@@ -4041,10 +4041,10 @@ static private function _setENDGATE()    {
 /**
   *
   * @method private function noHTML
-  * @static @private Method Defined HTML FOUNDATION _getOPENTAG 
+  * @static @private Method Defined HTML FOUNDATION _get_TAG 
   *
   **/
-static protected function _getOPENTAG()    { 
+static protected function _get_TAG()    { 
 
    /**
      *
@@ -4226,7 +4226,7 @@ static private function _setCOMBEGIN() {
      * @var private property $sHTML
      *
      **/
-     return self::$comBEGIN = self::_getOPENTAG().self::_tagSYMBOL()."--";
+     return self::$comBEGIN = self::_get_TAG().self::_tagSYMBOL()."--";
 }
 
 /**
