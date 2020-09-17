@@ -22,6 +22,7 @@ Html::H1('Hello World!');
 // Run command
 ~ composer require phphtml-optimizer/phphtml-optimizer
 <br />
+// This is for Static method settup which most use on pages
 require_once 'library/PHPHtml-Optimizer.php';
 
 // do HTML 
