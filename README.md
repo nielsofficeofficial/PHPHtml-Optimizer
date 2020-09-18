@@ -138,15 +138,18 @@ Print html::H1(html::STRING("Heading Title_FUNC_ASSOC", FUNC_ASSOC), my_htmattr(
 // NULL use outside of function 
 html::H1("Sample_echo ", my_htmattr(),'MyID','MyClass','', NULL); 
 </pre>
-
 <h5>Static ELEMENTS and parameters </h5>
 <pre>
-Html::H1($content=null, $attr=[], $id=null, $class=null, $label=null, $assoc=null)
-<br />
+// Associated or simply means return function
 Html::ELEMENT($element=null, $content=null, $attr=[], $id=null, $class=null, $label=null)
 <br />
+// Associated or simply means return function
 Html::_ELEMENT($label=null, $elem=null, $attr=[], $id=null, $class=null, $assoc=null)
 <br />
+// Optional Associated or simply print or return if set as associated function
+Html::H1($content=null, $attr=[], $id=null, $class=null, $label=null, $assoc=null)
+<br />
+// None or never be Associated or simply print function
 Html::_H1($attr=[], $id=null, $class=null)<br />
 ... content goes here ...<br />
 Html::xH1($label=null)
