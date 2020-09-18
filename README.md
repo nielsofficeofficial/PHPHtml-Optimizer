@@ -129,6 +129,19 @@ Print html::H1(html::STRING("Heading Title_FUNC_ASSOC", FUNC_ASSOC), my_htmattr(
 html::H1("Sample_echo ", my_htmattr(),'MyID','MyClass','', NULL); 
 </pre>
 
+<h5>Static ELEMENTS and parameters </h5>
+<pre>
+Html::H1($content=null, $attr=[], $id=null, $class=null, $label=null, $assoc=null)
+<br />
+Html::ELEMENT($element=null, $content=null, $attr=[], $id=null, $class=null, $label=null)
+<br />
+Html::_ELEMENT($label=null, $elem=null, $attr=[], $id=null, $class=null, $assoc=null)
+<br />
+Html::_H1($attr=[], $id=null, $class=null)<br />
+... content goes here ...
+Html::xH1($label=null)
+</pre>
+
 <h5>On Page | Static Methods</h5>
 
 |Opt./ASSOCIATED | HTML/Descript. | ASSOCIATED     | Inline noneClosing/ASSOCIATED |  None ASSOCIATED _H1(begin)/xH1(end) |
