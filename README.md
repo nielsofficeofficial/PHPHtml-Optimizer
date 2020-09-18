@@ -143,8 +143,8 @@ html::H1("Sample_echo ", my_htmattr(),'MyID','MyClass','', NULL);
 // Associated or simply means return function
 Html::ELEMENT($element=null, $content=null, $attr=[], $id=null, $class=null, $label=null)
 <br />
-// Associated or simply means return function
-Html::_ELEMENT($label=null, $elem=null, $attr=[], $id=null, $class=null, $assoc=null)
+// Optional Associated or simply print or return if set as associated function
+Html::_ELEMENT($label=null, $elem=null, $attr=[], $id=null, $class=null, $label=null, $assoc=null)
 <br />
 // Optional Associated or simply print or return if set as associated function
 Html::H1($content=null, $attr=[], $id=null, $class=null, $label=null, $assoc=null)
