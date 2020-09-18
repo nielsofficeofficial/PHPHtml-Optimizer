@@ -93,13 +93,15 @@ print $html;
 | `CLASS_ASSOC`  | Is a Paramenter that will use and position to the very end of function or methods none/Associated |
 | `FUNC_ASSOC`   | Is a Paramenter that will use and position to the very end of function or methods none/Associated |
 
-| Magic Method Alpha    | Description |
+<h5>Append Method </h5>
+
+| Appened Methos    | Description |
 | ---            | ---         |
-| `__magicELSE` | This Append Method is alpha version not stable and not recommend to use / alternative ternary |
-| `__magicIF`  | This Append Method is alpha version not stable and not recommend to use / alternative ternary |
+| `__magicELSE`  | This Append Method is alpha version not stable and not recommend to use / alternative ternary |
+| `__magicIF`    | This Append Method is alpha version not stable and not recommend to use / alternative ternary |
 | `__magicELEMENT`   | This Append Method is alpha version not stable and not recommend to use / it will remove soon |
-| `_MERGE`   | This Append Method is alpha version not stable and not recommend to use / it will remove soon |
-| `_PERFORM`   | This Append Method is alpha version not stable and not recommend to use / alternative echo/print |
+| `_MERGE`       | This Append Method is alpha version not stable and not recommend to use / it will remove soon |
+| `_PERFORM`     | This Append Method is alpha version not stable and not recommend to use / alternative echo/print |
 
 <h5>Usage: withinClass | Instantiate Class Methods</h5>
 <pre>
