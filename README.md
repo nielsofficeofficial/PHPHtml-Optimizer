@@ -138,7 +138,7 @@ Html::ELEMENT($element=null, $content=null, $attr=[], $id=null, $class=null, $la
 Html::_ELEMENT($label=null, $elem=null, $attr=[], $id=null, $class=null, $assoc=null)
 <br />
 Html::_H1($attr=[], $id=null, $class=null)<br />
-... content goes here ...
+... content goes here ...<br />
 Html::xH1($label=null)
 </pre>
 
