@@ -93,9 +93,9 @@ print $html;
 | `CLASS_ASSOC`  | Is a Paramenter that will use and position to the very end of function or methods none/Associated |
 | `FUNC_ASSOC`   | Is a Paramenter that will use and position to the very end of function or methods none/Associated |
 
-<h5>Append Method </h5>
+<h5>Append Method Alpha version </h5>
 
-| Appened Methos    | Description |
+| Other Method     | Description |
 | ---            | ---         |
 | `__magicELSE`  | This Append Method is alpha version not stable and not recommend to use / alternative ternary |
 | `__magicIF`    | This Append Method is alpha version not stable and not recommend to use / alternative ternary |
