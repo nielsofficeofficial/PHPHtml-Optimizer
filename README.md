@@ -144,7 +144,7 @@ html::H1("Sample_echo ", my_htmattr(),'MyID','MyClass','', NULL);
 Html::ELEMENT($element=null, $content=null, $attr=[], $id=null, $class=null, $label=null)
 <br />
 // Optional Associated or simply print or return if set as associated function
-Html::_ELEMENT($label=null, $elem=null, $attr=[], $id=null, $class=null, $label=null, $assoc=null)
+Html::_ELEMENT($label=null, $elem=null, $attr=[], $id=null, $class=null, $assoc=null)
 <br />
 // Optional Associated or simply print or return if set as associated function
 Html::H1($content=null, $attr=[], $id=null, $class=null, $label=null, $assoc=null)
