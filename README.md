@@ -107,13 +107,13 @@ print $html;
 <pre>
 $Html = new  \PHPHtml\CodeOptimizer\Html();  
 ...
-echo $Html->H2('Test H2');
+echo $Html->H2('Hello World!');
 # OR
 USE  \PHPHtml\CodeOptimizer\Html AS MyProjectName; 
 ...
 $Html = NEW MyProjectName();
 ...
-echo $Html->H2('Test H2');
+echo $Html->H2(Hello World');
 </pre>
 
 <h5>Usage: Static | More Samples with Parameters</h5>
