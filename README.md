@@ -263,7 +263,7 @@ Html::xH1($label=null)
 <br />
 <img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t1.0-9/119715665_1186082691765282_2093887907714346762_n.jpg?_nc_cat=105&_nc_sid=730e14&_nc_eui2=AeH72dqqY9T8i68c464gOPHOSxYWFwR0Nd1LFhYXBHQ13XDbhayV89QnK05ZPhGmD8-PwpZTdWfJBhkvNqsUR1Ts&_nc_ohc=KA6nhf8YuSkAX9tSNsY&_nc_oc=AQm-jmRqatQPGwHBTt_L9xcU5plIAqlVwdSwWzNRCLOGbOviYenh9hW549kswYSr5uw&_nc_ht=scontent.fmnl3-2.fna&oh=9de92625da228cf3cd22309be0c63328&oe=5F8D58EF">
 <h6>PHPHtml-Optimizer Merge Version</h6>
-<p>PHPHtml-Merge version is more shorter and simplier than PHPHTML-Optimizer in terms of functionality Both Optimizer is absolutely the same, The difference is the way you call the function and the way you use it.</p>
+<p>PHPHtml-Merge version is more shorthand and simplier than PHPHTML-Optimizer in terms of functionality Both Optimizer is absolutely the same, The difference is the way you call the function and the way you use it.</p>
 
 <h5>Static ELEMENTS and parameters </h5>
 <pre>
