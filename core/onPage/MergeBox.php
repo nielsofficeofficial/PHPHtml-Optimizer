@@ -57,7 +57,7 @@ function _H1($attr=null, $id=null, $class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_H1($attr=null, $id, $class);	
+  return $Html->_H1($attr, $id, $class);	
 
 }
 /**
@@ -98,7 +98,7 @@ function _H2($attr=null, $id=null, $class=null) {
    *
    **/   
  $Html = NEW MergeBox(); 
- return $Html->_H2($attr=null, $id, $class);	
+ return $Html->_H2($attr, $id, $class);	
 
 }
 
@@ -140,7 +140,7 @@ function _H3($attr=null, $id=null, $class=null) {
    *
    **/   
  $Html = NEW MergeBox(); 
- return $Html->_H3($attr=null, $id, $class);	
+ return $Html->_H3($attr, $id, $class);	
 
 }
 
@@ -182,7 +182,7 @@ function _H4($attr=null, $id=null, $class=null) {
    *
    **/ 
  $Html = NEW MergeBox(); 
- return $Html->_H4($attr=null, $id, $class);	
+ return $Html->_H4($attr, $id, $class);	
 
 }
 
@@ -224,7 +224,7 @@ function _H5($attr=null, $id=null, $class=null) {
    *
    **/
  $Html = NEW MergeBox(); 
- return $Html->_H5($attr=null, $id, $class);	
+ return $Html->_H5($attr, $id, $class);	
 
 }
 
@@ -266,7 +266,7 @@ function _H6($attr=null, $id=null, $class=null) {
    *
    **/  	
  $Html = NEW MergeBox(); 
- return $Html->_H6($attr=null, $id, $class);	
+ return $Html->_H6($attr, $id, $class);	
 
 }
 
@@ -308,7 +308,7 @@ function _DIV($attr=null, $id=null, $class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_DIV($attr=null, $id, $class);	
+  return $Html->_DIV($attr, $id, $class);	
 
 }
 
@@ -350,7 +350,7 @@ function _P($attr=null, $id=null, $class=null) {
    *
    **/   
   $Html = NEW MergeBox(); 
-  return $Html->_P($attr=null, $id, $class);	
+  return $Html->_P($attr, $id, $class);	
 
 }
 
@@ -392,7 +392,7 @@ function _BUTTON($attr=null, $id=null, $class=null) {
    *
    **/   	
   $Html = NEW MergeBox(); 
-  return $Html->_BUTTON($attr=null, $id, $class);	
+  return $Html->_BUTTON($attr, $id, $class);	
 
 }
 
@@ -434,7 +434,7 @@ function _A($attr=null, $id=null, $class=null) {
    *
    **/   
   $Html = NEW MergeBox(); 
-  return $Html->_A($attr=null, $id, $class);	
+  return $Html->_A($attr, $id, $class);	
 
 }
 
@@ -476,7 +476,7 @@ function _IFRAME($attr=null, $id=null, $class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_IFRAME($attr=null, $id, $class);	
+  return $Html->_IFRAME($attr, $id, $class);	
 
 }
 
@@ -518,7 +518,7 @@ function _MAIN($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_MAIN($attr=null, $id, $class);	
+  return $Html->_MAIN($attr, $id, $class);	
 
 }
 
@@ -560,7 +560,7 @@ function _NAV($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_NAV($attr=null, $id, $class);	
+  return $Html->_NAV($attr, $id, $class);	
 
 }
 
@@ -602,7 +602,7 @@ function _SELECT($attr=null, $id=null, $class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_SELECT($attr=null, $id, $class);	
+  return $Html->_SELECT($attr, $id, $class);	
 
 }
 
@@ -644,7 +644,7 @@ function _FORM($attr=null, $id=null, $class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_FORM($attr=null, $id, $class);	
+  return $Html->_FORM($attr, $id, $class);	
 
 }
 
@@ -686,7 +686,7 @@ function _PICTURE($attr=null, $id=null, $class=null) {
    *
    **/ 
   $Html = NEW MergeBox(); 
-  return $Html->_PICTURE($attr=null, $id, $class);	
+  return $Html->_PICTURE($attr, $id, $class);	
 
 }
 
@@ -728,7 +728,7 @@ function _SECTION($attr=null, $id=null, $class=null) {
    *
    **/   
   $Html = NEW MergeBox(); 
-  return $Html->_SECTION($attr=null, $id, $class);	
+  return $Html->_SECTION($attr, $id, $class);	
 
 }
 
@@ -770,7 +770,7 @@ function _TEXTAREA($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_TEXTAREA($attr=null, $id, $class);	
+  return $Html->_TEXTAREA($attr, $id, $class);	
 
 }
 
@@ -812,7 +812,7 @@ function _AUDIO($attr=null, $id=null, $class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_AUDIO($attr=null, $id, $class);	
+  return $Html->_AUDIO($attr, $id, $class);	
 
 }
 
@@ -854,7 +854,7 @@ function _VIDEO($attr=null, $id=null, $class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_VIDEO($attr=null, $id, $class);	
+  return $Html->_VIDEO($attr, $id, $class);	
 
 }
 
@@ -896,7 +896,7 @@ function _ADDRESS($attr=null, $id=null, $class=null) {
    *
    **/ 
   $Html = NEW MergeBox(); 
-  return $Html->_ADDRESS($attr=null, $id, $class);	
+  return $Html->_ADDRESS($attr, $id, $class);	
 
 }
 
@@ -938,7 +938,7 @@ function _COLGROUP($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_COLGROUP($attr=null, $id, $class);	
+  return $Html->_COLGROUP($attr, $id, $class);	
 
 }
 
@@ -980,7 +980,7 @@ function _BDI($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_BDI($attr=null, $id, $class);	
+  return $Html->_BDI($attr, $id, $class);	
 
 }
 
@@ -1022,7 +1022,7 @@ function _BDO($attr=null, $id=null, $class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_BDO($attr=null, $id, $class);	
+  return $Html->_BDO($attr, $id, $class);	
 
 }
 
@@ -1064,7 +1064,7 @@ function _BLOCKQUOTE($attr=null, $id=null, $class=null) {
    *
    **/ 	
  $Html = NEW MergeBox(); 
- return $Html->_BLOCKQUOTE($attr=null, $id, $class);	
+ return $Html->_BLOCKQUOTE($attr, $id, $class);	
 
 }
 
@@ -1106,7 +1106,7 @@ function _CAPTION($attr=null, $id=null, $class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_CAPTION($attr=null, $id, $class);	
+  return $Html->_CAPTION($attr, $id, $class);	
 
 }
 
@@ -1148,7 +1148,7 @@ function _LABEL($attr=null, $id=null, $class=null) {
    *
    **/ 
   $Html = NEW MergeBox(); 
-  return $Html->_LABEL($attr=null, $id, $class);	
+  return $Html->_LABEL($attr, $id, $class);	
 
 }
 
@@ -1188,7 +1188,7 @@ function _DATALIST($attr=null, $id=null, $class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_DATALIST($attr=null, $id, $class);	
+  return $Html->_DATALIST($attr, $id, $class);	
 
 }
 
@@ -1230,7 +1230,7 @@ function _DETAILS($attr=null, $id=null, $class=null) {
    *
    **/ 	
  $Html = NEW MergeBox(); 
- return $Html->_DETAILS($attr=null, $id, $class);	
+ return $Html->_DETAILS($attr, $id, $class);	
 
 }
 
@@ -1272,7 +1272,7 @@ function _SUMMARY($attr=null, $id=null, $class=null) {
    *
    **/   	
   $Html = NEW MergeBox(); 
-  return $Html->_SUMMARY($attr=null, $id, $class);	
+  return $Html->_SUMMARY($attr, $id, $class);	
 
 }
 
@@ -1314,7 +1314,7 @@ function _DIALOG($attr=null, $id=null, $class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_DIALOG($attr=null, $id, $class);	
+  return $Html->_DIALOG($attr, $id, $class);	
 
 }
 
@@ -1356,7 +1356,7 @@ function _OPTION($attr=null, $id=null, $class=null) {
    *
    **/   	
   $Html = NEW MergeBox(); 
-  return $Html->_OPTION($attr=null, $id, $class);	
+  return $Html->_OPTION($attr, $id, $class);	
 
 }
 
@@ -1398,7 +1398,7 @@ function _FIGURE($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_FIGURE($attr=null, $id, $class);	
+  return $Html->_FIGURE($attr, $id, $class);	
 
 }
 
@@ -1440,7 +1440,7 @@ function _FIGCAPTION($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_FIGCAPTION($attr=null, $id, $class);	
+  return $Html->_FIGCAPTION($attr, $id, $class);	
 
 }
 
@@ -1482,7 +1482,7 @@ function _METER($attr=null, $id=null, $class=null) {
    *
    **/   
   $Html = NEW MergeBox(); 
-  return $Html->_METER($attr=null, $id, $class);	
+  return $Html->_METER($attr, $id, $class);	
 
 }
 
@@ -1525,7 +1525,7 @@ function _OBJECT($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_OBJECT($attr=null, $id, $class);	
+  return $Html->_OBJECT($attr, $id, $class);	
 
 }
 
@@ -1567,7 +1567,7 @@ function _OPTGROUP($attr=null, $id=null, $class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_OPTGROUP($attr=null, $id, $class);	
+  return $Html->_OPTGROUP($attr, $id, $class);	
 
 }
 
@@ -1609,7 +1609,7 @@ function _OUTPUT($attr=null, $id=null, $class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_OUTPUT($attr=null, $id, $class);	
+  return $Html->_OUTPUT($attr, $id, $class);	
 
 }
 
@@ -1651,7 +1651,7 @@ function _PROGRESS($attr=null, $id=null, $class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_PROGRESS($attr=null, $id, $class);	
+  return $Html->_PROGRESS($attr, $id, $class);	
 
 }
 
@@ -1693,7 +1693,7 @@ function _SVG($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_SVG($attr=null, $id, $class);	
+  return $Html->_SVG($attr, $id, $class);	
 
 }
 
@@ -1735,7 +1735,7 @@ function _TEMPLATE($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_TEMPLATE($attr=null, $id, $class);	
+  return $Html->_TEMPLATE($attr, $id, $class);	
 
 }
 
@@ -1777,7 +1777,7 @@ function _UL($attr=null, $id=null, $class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_UL($attr=null, $id, $class);	
+  return $Html->_UL($attr, $id, $class);	
 
 }
 
@@ -1817,7 +1817,7 @@ function _OL($attr=null, $id=null, $class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_OL($attr=null, $id, $class);	
+  return $Html->_OL($attr, $id, $class);	
 
 }
 
@@ -1859,7 +1859,7 @@ function _LI($attr=null, $id=null, $class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_LI($attr=null, $id, $class);	
+  return $Html->_LI($attr, $id, $class);	
 
 }
 
@@ -1901,7 +1901,7 @@ function _TABLE($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_TABLE($attr=null, $id, $class);	
+  return $Html->_TABLE($attr, $id, $class);	
 
 }
 
@@ -1943,7 +1943,7 @@ function _TR($attr=null, $id=null, $class=null) {
    *
    **/ 	
  $Html = NEW MergeBox(); 
- return $Html->_TR($attr=null, $id, $class);	
+ return $Html->_TR($attr, $id, $class);	
 
 }
 
@@ -1985,7 +1985,7 @@ function _TD($attr=null, $id=null, $class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_TD($attr=null, $id, $class);	
+  return $Html->_TD($attr, $id, $class);	
 
 }
 
@@ -2027,7 +2027,7 @@ function _TH($attr=null, $id=null, $class=null) {
    *
    **/  
   $Html = NEW MergeBox(); 
-  return $Html->_TH($attr=null, $id, $class);	
+  return $Html->_TH($attr, $id, $class);	
 
 }
 
@@ -2069,7 +2069,7 @@ function _LEGEND($attr=null, $id=null, $class=null) {
    *
    **/   	
   $Html = NEW MergeBox(); 
-  return $Html->_LEGEND($attr=null, $id, $class);	
+  return $Html->_LEGEND($attr, $id, $class);	
 
 }
 
@@ -2111,7 +2111,7 @@ function _FIELDSET($attr=null, $id=null, $class=null) {
    *
    **/   	
   $Html = NEW MergeBox(); 
-  return $Html->_FIELDSET($attr=null, $id, $class);	
+  return $Html->_FIELDSET($attr, $id, $class);	
 
 }
 
@@ -2153,7 +2153,7 @@ function _TBODY($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_TBODY($attr=null, $id, $class);	
+  return $Html->_TBODY($attr, $id, $class);	
 
 }
 
@@ -2195,7 +2195,7 @@ function _TFOOT($attr=null, $id=null, $class=null) {
    *
    **/  
   $Html = NEW MergeBox(); 
-  return $Html->_TFOOT($attr=null, $id, $class);	
+  return $Html->_TFOOT($attr, $id, $class);	
 
 }
 
@@ -2237,7 +2237,7 @@ function _THEAD($attr=null, $id=null, $class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_THEAD($attr=null, $id, $class);	
+  return $Html->_THEAD($attr, $id, $class);	
 
 }
 
@@ -2279,7 +2279,7 @@ function _SPAN($attr=null, $id=null, $class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_SPAN($attr=null, $id, $class);	
+  return $Html->_SPAN($attr, $id, $class);	
 
 }
 
@@ -2321,7 +2321,7 @@ function _EM($attr=null, $id=null, $class=null) {
    *
    **/  
   $Html = NEW MergeBox(); 
-  return $Html->_EM($attr=null, $id, $class);	
+  return $Html->_EM($attr, $id, $class);	
 
 }
 
@@ -2363,7 +2363,7 @@ function _B($attr=null, $id=null, $class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_B($attr=null, $id, $class);	
+  return $Html->_B($attr, $id, $class);	
 
 }
 
@@ -2405,7 +2405,7 @@ function _I($attr=null, $id=null, $class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_I($attr=null, $id, $class);	
+  return $Html->_I($attr, $id, $class);	
 
 }
 
@@ -2447,7 +2447,7 @@ function _SMALL($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_SMALL($attr=null, $id, $class);	
+  return $Html->_SMALL($attr, $id, $class);	
 
 }
 
@@ -2489,7 +2489,7 @@ function _STRIKE($attr=null, $id=null, $class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_STRIKE($attr=null, $id, $class);	
+  return $Html->_STRIKE($attr, $id, $class);	
 
 }
 
@@ -2531,7 +2531,7 @@ function _MARQUEE($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_MARQUEE($attr=null, $id, $class);	
+  return $Html->_MARQUEE($attr, $id, $class);	
 
 }
 
@@ -2573,7 +2573,7 @@ function _CENTER($attr=null, $id=null, $class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_CENTER($attr=null, $id, $class);	
+  return $Html->_CENTER($attr, $id, $class);	
 
 }
 
@@ -2615,7 +2615,7 @@ function _ABBR($attr=null, $id=null, $class=null) {
    *
    **/  	
  $Html = NEW MergeBox(); 
- return $Html->_ABBR($attr=null, $id, $class);	
+ return $Html->_ABBR($attr, $id, $class);	
 
 }
 
@@ -2657,7 +2657,7 @@ function _MAP($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_MAP($attr=null, $id, $class);	
+  return $Html->_MAP($attr, $id, $class);	
 
 }
 
@@ -2699,7 +2699,7 @@ function _CANVAS($attr=null, $id=null, $class=null) {
    *
    **/   	
   $Html = NEW MergeBox(); 
-  return $Html->_CANVAS($attr=null, $id, $class);	
+  return $Html->_CANVAS($attr, $id, $class);	
 
 }
 
@@ -2741,7 +2741,7 @@ function _CITE($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_CITE($attr=null, $id, $class);	
+  return $Html->_CITE($attr, $id, $class);	
 
 }
 
@@ -2783,7 +2783,7 @@ function _DATA($attr=null, $id=null, $class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_DATA($attr=null, $id, $class);	
+  return $Html->_DATA($attr, $id, $class);	
 
 }
 
@@ -2825,7 +2825,7 @@ function _DL($attr=null, $id=null, $class=null) {
    *
    **/   
   $Html = NEW MergeBox(); 
-  return $Html->_DL($attr=null, $id, $class);	
+  return $Html->_DL($attr, $id, $class);	
 
 }
 
@@ -2867,7 +2867,7 @@ function _DT($attr=null, $id=null, $class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_DT($attr=null, $id, $class);	
+  return $Html->_DT($attr, $id, $class);	
 
 }
 
@@ -2909,7 +2909,7 @@ function _DD($attr=null, $id=null, $class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_DD($attr=null, $id, $class);	
+  return $Html->_DD($attr, $id, $class);	
 
 }
 
@@ -2951,7 +2951,7 @@ function _DFN($attr=null, $id=null, $class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_DFN($attr=null, $id, $class);	
+  return $Html->_DFN($attr, $id, $class);	
 
 }
 
@@ -2993,7 +2993,7 @@ function _INS($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_INS($attr=null, $id, $class);	
+  return $Html->_INS($attr, $id, $class);	
 
 }
 
@@ -3035,7 +3035,7 @@ function _DEL($attr=null, $id=null, $class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_DEL($attr=null, $id, $class);	
+  return $Html->_DEL($attr, $id, $class);	
 
 }
 
@@ -3077,7 +3077,7 @@ function _KBD($attr=null, $id=null, $class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_KBD($attr=null, $id, $class);	
+  return $Html->_KBD($attr, $id, $class);	
 
 }
 
@@ -3119,7 +3119,7 @@ function _MARK($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_MARK($attr=null, $id, $class);	
+  return $Html->_MARK($attr, $id, $class);	
 
 }
 
@@ -3160,7 +3160,7 @@ function _PRE($attr=null, $id=null, $class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_PRE($attr=null, $id, $class);	
+  return $Html->_PRE($attr, $id, $class);	
 
 }
 
@@ -3202,7 +3202,7 @@ function _RT($attr=null, $id=null, $class=null) {
    *
    **/ 
   $Html = NEW MergeBox(); 
-  return $Html->_RT($attr=null, $id, $class);	
+  return $Html->_RT($attr, $id, $class);	
 
 }
 
@@ -3244,7 +3244,7 @@ function _RP($attr=null, $id=null, $class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_RP($attr=null, $id, $class);	
+  return $Html->_RP($attr, $id, $class);	
 
 }
 
@@ -3286,7 +3286,7 @@ function _S($attr=null, $id=null, $class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_S($attr=null, $id, $class);	
+  return $Html->_S($attr, $id, $class);	
 
 }
 
@@ -3328,7 +3328,7 @@ function _SAMP($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_SAMP($attr=null, $id, $class);	
+  return $Html->_SAMP($attr, $id, $class);	
 
 }
 
@@ -3370,7 +3370,7 @@ function _STRONG($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_STRONG($attr=null, $id, $class);	
+  return $Html->_STRONG($attr, $id, $class);	
 
 }
 
@@ -3412,7 +3412,7 @@ function _SUB($attr=null, $id=null, $class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_SUB($attr=null, $id, $class);	
+  return $Html->_SUB($attr, $id, $class);	
 
 }
 
@@ -3452,7 +3452,7 @@ function _SUP($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_SUP($attr=null, $id, $class);	
+  return $Html->_SUP($attr, $id, $class);	
 
 }
 
@@ -3494,7 +3494,7 @@ function _WBR($attr=null, $id=null, $class=null) {
    *
    **/   
   $Html = NEW MergeBox(); 
-  return $Html->_WBR($attr=null, $id, $class);	
+  return $Html->_WBR($attr, $id, $class);	
 
 }
 
@@ -3536,7 +3536,7 @@ function _Q($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_Q($attr=null, $id, $class);	
+  return $Html->_Q($attr, $id, $class);	
 }
 
 /**
@@ -3577,7 +3577,7 @@ function _HEAD($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_HEAD($attr=null, $id, $class);	
+  return $Html->_HEAD($attr, $id, $class);	
 
 }
 
@@ -3619,7 +3619,7 @@ function _TITLE($attr=null, $id=null, $class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_TITLE($attr=null, $id, $class);	
+  return $Html->_TITLE($attr, $id, $class);	
 
 }
 
@@ -3661,7 +3661,7 @@ function _BODY($attr=null, $id=null, $class=null) {
    *
    **/ 	
  $Html = NEW MergeBox(); 
- return $Html->_BODY($attr=null, $id, $class);	
+ return $Html->_BODY($attr, $id, $class);	
 
 }
 
@@ -3703,7 +3703,7 @@ function _HTML($attr=null, $id=null, $class=null) {
    *
    **/  	
  $Html = NEW MergeBox(); 
- return $Html->_HTML($attr=null, $id, $class);	
+ return $Html->_HTML($attr, $id, $class);	
 
 }
 
