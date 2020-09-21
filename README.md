@@ -265,6 +265,28 @@ Html::xH1($label=null)
 <h6>PHPHtml-Optimizer Merge Version</h6>
 <p>PHPHtml-Merge version is more shorter and simplier than PHPHTML-Optimizer in terms of functionality Both Optimizer is absolutely the same, The difference is the way you call the function and the way you use it.</p>
 
+<h5>Static ELEMENTS and parameters </h5>
+<pre>
+// Merge version Associated or simply means return function
+_xHTML($elem=null, $value=null, $js=[], $id=null, $class=null, $label=null);
+<br />
+// Merge version Optional Associated or simply print or return if set as associated function
+__HTML($label=null, $elem=null, $js=[], $id=null, $class=null, $assoc=null);
+<br />
+// Merge version Optional Associated or simply print or return if set as associated function
+H1( $value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null );  
+<br />
+// None or never be Associated or simply print function
+_H1($js=[], $id=null, $class=null) <br />
+... content goes here ...<br />
+xH1($label = NULL)
+<br />
+Merge version Associated or simply return function
+_MERGE($elem=null, $js=[], $id=null, $class=null);<br />
+... content goes here ...<br />
+xMERGE($elem=null);
+</pre>
+
 <h5>Functions List</h5>
 
 |Opt./ASSOCIATED | HTML/Descript. | ASSOCIATED     | Inline noneClosing/ASSOCIATED |  None ASSOCIATED _H1(begin)/xH1(end) | ASSOCIATED/Merge Version _(begin)/x(End) |
