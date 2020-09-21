@@ -41,7 +41,7 @@ $Html = NEW MergeElements();
   * NONE CLOSING TAG INLINE HTML
   *
   **/
-function __HTML($label="INLINE", $elem=null, $js=[], $id=null, $class=null, $assoc=null)  {
+function __HTML($label="INLINE", $elem=null, $attr=null, $id=null, $class=null, $assoc=null)  {
 
   /**
    *
@@ -51,13 +51,13 @@ function __HTML($label="INLINE", $elem=null, $js=[], $id=null, $class=null, $ass
    *
    * @package : Merge OPTIONAL ASSOCIATED ELEMENTS 
    * @package : Static Procedural
-   * @method  : Html::_ELEMENT($label, $elem, $js=[], $id, $class, $assoc);
+   * @method  : Html::_ELEMENT($label, $elem, $attr=null, $id, $class, $assoc);
    *
    *
    *
    **/ 
   $Html = NEW MergeElements();
-  return $Html->_ELEMENT($label, $elem, $js=[], $id, $class, $assoc);
+  return $Html->_ELEMENT($label, $elem, $attr=null, $id, $class, $assoc);
 
 }
 
@@ -69,7 +69,7 @@ function __HTML($label="INLINE", $elem=null, $js=[], $id=null, $class=null, $ass
   * WITH CLOSING TAG INLINE HTML
   *
   **/
-function _xHTML($elem=null, $value=null, $js=[], $id=null, $class=null, $label=null)  {
+function _xHTML($elem=null, $value=null, $attr=null, $id=null, $class=null, $label=null)  {
 
   /**
    *
@@ -79,13 +79,13 @@ function _xHTML($elem=null, $value=null, $js=[], $id=null, $class=null, $label=n
    *
    * @package : Merge ASSOCIATED ELEMENTS 
    * @package : Static Procedural
-   * @method  : Html::ELEMENT($elem, $value, $js=[], $id, $class, $label)
+   * @method  : Html::ELEMENT($elem, $value, $attr=null, $id, $class, $label)
    *
    *
    *
    **/ 
   $Html = NEW MergeElements();
-  return $Html->ELEMENT($elem, $value, $js=[], $id, $class, $label); 
+  return $Html->ELEMENT($elem, $value, $attr=null, $id, $class, $label); 
 
 }
 
@@ -97,7 +97,7 @@ function _xHTML($elem=null, $value=null, $js=[], $id=null, $class=null, $label=n
   * BEGIN TAG HTML
   *
   **/
-function _MERGE($elem=null, $js=[], $id=null, $class=null) {
+function _MERGE($elem=null, $attr=null, $id=null, $class=null) {
 
   /**
    *
@@ -107,13 +107,13 @@ function _MERGE($elem=null, $js=[], $id=null, $class=null) {
    *
    * @package : Merge ASSOCIATED ELEMENTS 
    * @package : Static Procedural
-   * @method  : Html::__magicMERGE($elem, 'MERGE', $js=[], $id, $class);
+   * @method  : Html::__magicMERGE($elem, 'MERGE', $attr=null, $id, $class);
    *
    *
    *
    **/ 
   $Html = NEW MergeElements();
-  return $Html->__magicMERGE($elem, 'MERGE', $js=[], $id, $class);
+  return $Html->__magicMERGE($elem, 'MERGE', $attr=null, $id, $class);
 
 }
 
