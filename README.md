@@ -281,7 +281,7 @@ _H1($attr=null, $id=null, $class=null) <br />
 ... content goes here ...<br />
 xH1($label = NULL)
 <br />
-Merge version Associated or simply return function
+//Merge version Associated or simply return function
 _MERGE($elem=null,  $attr=null, $id=null, $class=null);<br />
 ... content goes here ...<br />
 xMERGE($elem=null);
