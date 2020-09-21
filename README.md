@@ -102,6 +102,9 @@ print $html;
 | `__magicELEMENT`   | This Append Method is alpha version not stable and not recommend to use / it will remove soon |
 | `_MERGE`       | This Append Method is alpha version not stable and not recommend to use / it will remove soon |
 | `_PERFORM`     | This Append Method is alpha version not stable and not recommend to use / alternative echo/print |
+| `Html::BREAK()` | Html Break tag |
+| `Html::LINE()` | HTML Horizontal tag |
+| `Html::STRING()` | print without Element |
 
 <h5>Usage: withinClass | Instantiate Class Methods</h5>
 <pre>
@@ -156,14 +159,11 @@ Html::xH1($label=null)
 </pre>
 
 <h5>On Page | Static Methods</h5>
-`Html::BREAK()`
-`Html::LINE()`
-`Html::STRING()`
 |Opt./ASSOCIATED | HTML/Descript. | ASSOCIATED     | Inline noneClosing/ASSOCIATED |  None ASSOCIATED _H1(begin)/xH1(end) |
 |:---              |:---              |:---            |:---                           |:---              |
-| `--`             | --             | `Html::ELEMENT('H1')`    |`Html::_ELEMENT('my_input','INPUT')`|`Html::_H1()`/`Html::xH1()`|
-| `--`             | --             | `Html::ELEMENT('H2')`    |`Html::_ELEMENT('my_track','track')`|`Html::_H2()`/`Html::xH2()`|
-| `--`             | --             | `Html::ELEMENT('H3')`    |`Html::_ELEMENT('my_circle','circle')`|`Html::_H3()`/`Html::xH3()`|
+| `--`             | `--`             | `Html::ELEMENT('H1')`    |`Html::_ELEMENT('my_input','INPUT')`|`Html::_H1()`/`Html::xH1()`|
+| `--`             | `--`             | `Html::ELEMENT('H2')`    |`Html::_ELEMENT('my_track','track')`|`Html::_H2()`/`Html::xH2()`|
+| `--`             | `--`             | `Html::ELEMENT('H3')`    |`Html::_ELEMENT('my_circle','circle')`|`Html::_H3()`/`Html::xH3()`|
 | `Html::H1()`     | Heading 1      | `Html::ELEMENT('H4')`    |`Html::_ELEMENT('my_param','param')`|`Html::_H4()`/`Html::xH4()`|
 | `Html::H2()`     | Heading 2      | `Html::ELEMENT('H5')`    |`Html::_ELEMENT('my_meta','meta')`|`Html::_H5()`/`Html::xH5()`|
 | `Html::H3()`     | Heading 3      | `Html::ELEMENT('H6')`    |`Html::_ELEMENT('my_link','link')`|`Html::_H6()`/`Html::xH6()`|
