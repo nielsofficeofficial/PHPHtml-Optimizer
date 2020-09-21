@@ -57,7 +57,7 @@ function H1( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc
    *
    **/ 
 	$Html = NEW Merge(); 
-  return $Html->H1($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->H1($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -85,7 +85,7 @@ function H2( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc
    *
    **/ 
    $Html = NEW Merge(); 
-   return $Html->H2($value, $attr=null, $id, $class, $label, $assoc); 
+   return $Html->H2($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -113,7 +113,7 @@ function H3( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc
    *
    **/ 
    $Html = NEW Merge(); 
-   return $Html->H3($value, $attr=null, $id, $class, $label, $assoc); 
+   return $Html->H3($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -141,7 +141,7 @@ function H4( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc
    *
    **/ 
    $Html = NEW Merge(); 
-   return $Html->H4($value, $attr=null, $id, $class, $label, $assoc); 
+   return $Html->H4($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -169,7 +169,7 @@ function H5( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc
    *
    **/
    $Html = NEW Merge(); 
-   return $Html->H5($value, $attr=null, $id, $class, $label, $assoc); 
+   return $Html->H5($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -197,7 +197,7 @@ function H6( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc
    *
    **/
    $Html = NEW Merge(); 
-   return $Html->H6($value, $attr=null, $id, $class, $label, $assoc); 
+   return $Html->H6($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -225,7 +225,7 @@ function DIV( $value=null, $attr=null, $id=null, $class=null, $label=null, $asso
    *
    **/
    $Html = NEW Merge(); 
-   return $Html->DIV($value, $attr=null, $id, $class, $label, $assoc); 
+   return $Html->DIV($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -253,7 +253,7 @@ function P( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc=
    *
    **/
    $Html = NEW Merge(); 
-   return $Html->P($value, $attr=null, $id, $class, $label, $assoc); 
+   return $Html->P($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -281,7 +281,7 @@ function BUTTON( $value=null, $attr=null, $id=null, $class=null, $label=null, $a
    *
    **/
    $Html = NEW Merge(); 
-   return $Html->BUTTON($value, $attr=null, $id, $class, $label, $assoc); 
+   return $Html->BUTTON($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -309,7 +309,7 @@ function A( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc=
    *
    **/
    $Html = NEW Merge(); 
-   return $Html->A($value, $attr=null, $id, $class, $label, $assoc); 
+   return $Html->A($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -337,7 +337,7 @@ function IFRAME( $value=null, $attr=null, $id=null, $class=null, $label=null, $a
    *
    **/
    $Html = NEW Merge(); 
-   return $Html->IFRAME($value, $attr=null, $id, $class, $label, $assoc); 
+   return $Html->IFRAME($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -365,7 +365,7 @@ function MAIN( $value=null, $attr=null, $id=null, $class=null, $label=null, $ass
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->MAIN($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->MAIN($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -393,7 +393,7 @@ function NAV( $value=null, $attr=null, $id=null, $class=null, $label=null, $asso
    *
    **/
    $Html = NEW Merge(); 
-   return $Html->NAV($value, $attr=null, $id, $class, $label, $assoc); 
+   return $Html->NAV($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -421,7 +421,7 @@ function SELECT( $value=null, $attr=null, $id=null, $class=null, $label=null, $a
    *
    **/
    $Html = NEW Merge(); 
-   return $Html->SELECT($value, $attr=null, $id, $class, $label, $assoc); 
+   return $Html->SELECT($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -449,7 +449,7 @@ function FORM( $value=null, $attr=null, $id=null, $class=null, $label=null, $ass
    *
    **/
    $Html = NEW Merge(); 
-   return $Html->FORM($value, $attr=null, $id, $class, $label, $assoc); 
+   return $Html->FORM($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -477,7 +477,7 @@ function PICTURE( $value=null, $attr=null, $id=null, $class=null, $label=null, $
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->PICTURE($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->PICTURE($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -505,7 +505,7 @@ function SECTION( $value=null, $attr=null, $id=null, $class=null, $label=null, $
    *
    **/
    $Html = NEW Merge(); 
-   return $Html->SECTION($value, $attr=null, $id, $class, $label, $assoc); 
+   return $Html->SECTION($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -533,7 +533,7 @@ function TEXTAREA( $value=null, $attr=null, $id=null, $class=null, $label=null, 
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->TEXTAREA($value, $attr=null, $id, $class, $label, $assoc);
+  return $Html->TEXTAREA($value, $attr, $id, $class, $label, $assoc);
 
 }
 
@@ -561,7 +561,7 @@ function AUDIO( $value=null, $attr=null, $id=null, $class=null, $label=null, $as
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->AUDIO($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->AUDIO($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -589,7 +589,7 @@ function VIDEO( $value=null, $attr=null, $id=null, $class=null, $label=null, $as
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->VIDEO($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->VIDEO($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -617,7 +617,7 @@ function ADDRESS( $value=null, $attr=null, $id=null, $class=null, $label=null, $
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->ADDRESS($value, $attr=null, $id, $class, $label, $assoc);
+  return $Html->ADDRESS($value, $attr, $id, $class, $label, $assoc);
 
 }
 
@@ -645,7 +645,7 @@ function COLGROUP( $value=null, $attr=null, $id=null, $class=null, $label=null, 
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->COLGROUP($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->COLGROUP($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -673,7 +673,7 @@ function BDI( $value=null, $attr=null, $id=null, $class=null, $label=null, $asso
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->BDI($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->BDI($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -701,7 +701,7 @@ function BDO( $value=null, $attr=null, $id=null, $class=null, $label=null, $asso
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->BDO($value, $attr=null, $id, $class, $label, $assoc);
+  return $Html->BDO($value, $attr, $id, $class, $label, $assoc);
 
 }
 
@@ -729,7 +729,7 @@ function BLOCKQUOTE( $value=null, $attr=null, $id=null, $class=null, $label=null
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->BLOCKQUOTE($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->BLOCKQUOTE($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -757,7 +757,7 @@ function CAPTION( $value=null, $attr=null, $id=null, $class=null, $label=null, $
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->CAPTION($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->CAPTION($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -785,7 +785,7 @@ function LABEL( $value=null, $attr=null, $id=null, $class=null, $label=null, $as
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->LABEL($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->LABEL($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -813,7 +813,7 @@ function DATALIST( $value=null, $attr=null, $id=null, $class=null, $label=null, 
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->DATALIST($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->DATALIST($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -841,7 +841,7 @@ function DETAILS( $value=null, $attr=null, $id=null, $class=null, $label=null, $
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->DETAILS($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->DETAILS($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -869,7 +869,7 @@ function SUMMARY( $value=null, $attr=null, $id=null, $class=null, $label=null, $
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->SUMMARY($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->SUMMARY($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -897,7 +897,7 @@ function DIALOG( $value=null, $attr=null, $id=null, $class=null, $label=null, $a
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->DIALOG($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->DIALOG($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -925,7 +925,7 @@ function OPTION( $value=null, $attr=null, $id=null, $class=null, $label=null, $a
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->OPTION($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->OPTION($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -953,7 +953,7 @@ function FIGURE( $value=null, $attr=null, $id=null, $class=null, $label=null, $a
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->FIGURE($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->FIGURE($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -981,7 +981,7 @@ function FIGCAPTION( $value=null, $attr=null, $id=null, $class=null, $label=null
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->FIGCAPTION($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->FIGCAPTION($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1009,7 +1009,7 @@ function METER( $value=null, $attr=null, $id=null, $class=null, $label=null, $as
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->METER($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->METER($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1037,7 +1037,7 @@ function OBJECT( $value=null, $attr=null, $id=null, $class=null, $label=null, $a
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->OBJECT($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->OBJECT($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1064,7 +1064,7 @@ function OPTGROUP( $value=null, $attr=null, $id=null, $class=null, $label=null, 
    *
    *
    **/
-  $Html = NEW Merge(); return $Html->OPTGROUP($value, $attr=null, $id, $class, $label, $assoc); 
+  $Html = NEW Merge(); return $Html->OPTGROUP($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1092,7 +1092,7 @@ function OUTPUT( $value=null, $attr=null, $id=null, $class=null, $label=null, $a
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->OUTPUT($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->OUTPUT($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1120,7 +1120,7 @@ function PROGRESS( $value=null, $attr=null, $id=null, $class=null, $label=null, 
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->PROGRESS($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->PROGRESS($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1148,7 +1148,7 @@ function SVG( $value=null, $attr=null, $id=null, $class=null, $label=null, $asso
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->SVG($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->SVG($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1176,7 +1176,7 @@ function TEMPLATE( $value=null, $attr=null, $id=null, $class=null, $label=null, 
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->TEMPLATE($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->TEMPLATE($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1204,7 +1204,7 @@ function UL( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->UL($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->UL($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1232,7 +1232,7 @@ function OL( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->OL($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->OL($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1260,7 +1260,7 @@ function LI( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->LI($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->LI($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1288,7 +1288,7 @@ function TABLE( $value=null, $attr=null, $id=null, $class=null, $label=null, $as
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->TABLE($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->TABLE($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1316,7 +1316,7 @@ function TR( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->TR($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->TR($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1344,7 +1344,7 @@ function TD( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->TD($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->TD($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1372,7 +1372,7 @@ function TH( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->TH($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->TH($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1400,7 +1400,7 @@ function LEGEND( $value=null, $attr=null, $id=null, $class=null, $label=null, $a
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->LEGEND($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->LEGEND($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1428,7 +1428,7 @@ function FIELDSET( $value=null, $attr=null, $id=null, $class=null, $label=null, 
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->FIELDSET($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->FIELDSET($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1456,7 +1456,7 @@ function TBODY( $value=null, $attr=null, $id=null, $class=null, $label=null, $as
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->TBODY($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->TBODY($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1484,7 +1484,7 @@ function TFOOTER( $value=null, $attr=null, $id=null, $class=null, $label=null, $
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->TFOOTER($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->TFOOTER($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1512,7 +1512,7 @@ function THEAD( $value=null, $attr=null, $id=null, $class=null, $label=null, $as
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->THEAD($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->THEAD($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1540,7 +1540,7 @@ function SPAN( $value=null, $attr=null, $id=null, $class=null, $label=null, $ass
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->SPAN($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->SPAN($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1568,7 +1568,7 @@ function EM( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->EM($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->EM($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1596,7 +1596,7 @@ function B( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc=
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->B($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->B($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1624,7 +1624,7 @@ function I( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc=
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->I($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->I($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1652,7 +1652,7 @@ function SMALL( $value=null, $attr=null, $id=null, $class=null, $label=null, $as
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->SMALL($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->SMALL($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1680,7 +1680,7 @@ function MARQUEE( $value=null, $attr=null, $id=null, $class=null, $label=null, $
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->MARQUEE($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->MARQUEE($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1708,7 +1708,7 @@ function CENTER( $value=null, $attr=null, $id=null, $class=null, $label=null, $a
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->CENTER($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->CENTER($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1736,7 +1736,7 @@ function CODE( $value=null, $attr=null, $id=null, $class=null, $label=null, $ass
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->CODE($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->CODE($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1764,7 +1764,7 @@ function ABBR( $value=null, $attr=null, $id=null, $class=null, $label=null, $ass
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->ABBR($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->ABBR($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1792,7 +1792,7 @@ function MAP( $value=null, $attr=null, $id=null, $class=null, $label=null, $asso
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->MAP($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->MAP($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1820,7 +1820,7 @@ function CANVAS( $value=null, $attr=null, $id=null, $class=null, $label=null, $a
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->CANVAS($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->CANVAS($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1848,7 +1848,7 @@ function SITE( $value=null, $attr=null, $id=null, $class=null, $label=null, $ass
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->SITE($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->SITE($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1876,7 +1876,7 @@ function DATA( $value=null, $attr=null, $id=null, $class=null, $label=null, $ass
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->DATA($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->DATA($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1904,7 +1904,7 @@ function DL( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->DL($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->DL($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1931,7 +1931,7 @@ function DT( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc
    *
    *
    **/
-  $Html = NEW Merge(); return $Html->DT($value, $attr=null, $id, $class, $label, $assoc); 
+  $Html = NEW Merge(); return $Html->DT($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1959,7 +1959,7 @@ function DD( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->DD($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->DD($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -1987,7 +1987,7 @@ function DFN( $value=null, $attr=null, $id=null, $class=null, $label=null, $asso
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->DFN($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->DFN($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -2015,7 +2015,7 @@ function INS( $value=null, $attr=null, $id=null, $class=null, $label=null, $asso
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->INS($value, $attr=null, $id, $class, $label, $assoc);
+  return $Html->INS($value, $attr, $id, $class, $label, $assoc);
 
 }
 
@@ -2043,7 +2043,7 @@ function DEL( $value=null, $attr=null, $id=null, $class=null, $label=null, $asso
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->DEL($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->DEL($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -2071,7 +2071,7 @@ function KBD( $value=null, $attr=null, $id=null, $class=null, $label=null, $asso
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->KBD($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->KBD($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -2099,7 +2099,7 @@ function MARK( $value=null, $attr=null, $id=null, $class=null, $label=null, $ass
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->MARK($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->MARK($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -2127,7 +2127,7 @@ function PRE( $value=null, $attr=null, $id=null, $class=null, $label=null, $asso
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->PRE($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->PRE($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -2155,7 +2155,7 @@ function RT( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->RT($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->RT($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -2183,7 +2183,7 @@ function S( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc=
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->S($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->S($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -2211,7 +2211,7 @@ function SAMP( $value=null, $attr=null, $id=null, $class=null, $label=null, $ass
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->SAMP($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->SAMP($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -2239,7 +2239,7 @@ function STRONG( $value=null, $attr=null, $id=null, $class=null, $label=null, $a
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->STRONG($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->STRONG($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -2267,7 +2267,7 @@ function SUB( $value=null, $attr=null, $id=null, $class=null, $label=null, $asso
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->SUB($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->SUB($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -2295,7 +2295,7 @@ function SUP( $value=null, $attr=null, $id=null, $class=null, $label=null, $asso
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->SUP($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->SUP($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -2323,7 +2323,7 @@ function WBR( $value=null, $attr=null, $id=null, $class=null, $label=null, $asso
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->WBR($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->WBR($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -2351,7 +2351,7 @@ function Q( $value=null, $attr=null, $id=null, $class=null, $label=null, $assoc=
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->Q($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->Q($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -2379,7 +2379,7 @@ function HEAD( $value=null, $attr=null, $id=null, $class=null, $label=null, $ass
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->HEAD($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->HEAD($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -2407,7 +2407,7 @@ function TITLE( $value=null, $attr=null, $id=null, $class=null, $label=null, $as
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->TITLE($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->TITLE($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -2435,7 +2435,7 @@ function BODY( $value=null, $attr=null, $id=null, $class=null, $label=null, $ass
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->BODY($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->BODY($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
@@ -2463,7 +2463,7 @@ function HTML( $value=null, $attr=null, $id=null, $class=null, $label=null, $ass
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->HTML($value, $attr=null, $id, $class, $label, $assoc); 
+  return $Html->HTML($value, $attr, $id, $class, $label, $assoc); 
 
 }
 
