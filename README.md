@@ -102,6 +102,10 @@ print $html;
 | `__magicELEMENT`   | This Append Method is alpha version not stable and not recommend to use / it will remove soon |
 | `_MERGE`       | This Append Method is alpha version not stable and not recommend to use / it will remove soon |
 | `_PERFORM`     | This Append Method is alpha version not stable and not recommend to use / alternative echo/print |
+| `Html::BREAK()`   | Break tag |
+| `Html::INLINE()`| Horizontal tag |
+| `Html::STRING()` | print without/anyElements or tag |
+
 
 <h5>Usage: withinClass | Instantiate Class Methods</h5>
 <pre>
