@@ -157,13 +157,15 @@ Html::_H1($attr=[], $id=null, $class=null)<br />
 ... content goes here ...<br />
 Html::xH1($label=null)
 </pre>
-
+|  | Html |
+|  | HTML |
+|  | print |
 <h5>On Page | Static Methods</h5>
 |Opt./ASSOCIATED | HTML/Descript. | ASSOCIATED     | Inline noneClosing/ASSOCIATED |  None ASSOCIATED _H1(begin)/xH1(end) |
-|:---              |:---              |:---            |:---                           |:---              |
-| `-None-`             | None             | `Html::ELEMENT('H1')`    |`Html::_ELEMENT('my_input','INPUT')`|`Html::_H1()`/`Html::xH1()`|
-| `-None-`             | None             | `Html::ELEMENT('H2')`    |`Html::_ELEMENT('my_track','track')`|`Html::_H2()`/`Html::xH2()`|
-| `-None-`             | None             | `Html::ELEMENT('H3')`    |`Html::_ELEMENT('my_circle','circle')`|`Html::_H3()`/`Html::xH3()`|
+|:---              |:---              |:---            |:---                           |:---                         |
+| `Html::BREAK()` |  Break tag       | `Html::ELEMENT('H1')`    |`Html::_ELEMENT('my_input','INPUT')`|`Html::_H1()`/`Html::xH1()`|
+| `Html::LINE()`  | Horizontal tag   | `Html::ELEMENT('H2')`    |`Html::_ELEMENT('my_track','track')`|`Html::_H2()`/`Html::xH2()`|
+| `Html::STRING()` | without/Element | `Html::ELEMENT('H3')`    |`Html::_ELEMENT('my_circle','circle')`|`Html::_H3()`/`Html::xH3()`|
 | `Html::H1()`     | Heading 1      | `Html::ELEMENT('H4')`    |`Html::_ELEMENT('my_param','param')`|`Html::_H4()`/`Html::xH4()`|
 | `Html::H2()`     | Heading 2      | `Html::ELEMENT('H5')`    |`Html::_ELEMENT('my_meta','meta')`|`Html::_H5()`/`Html::xH5()`|
 | `Html::H3()`     | Heading 3      | `Html::ELEMENT('H6')`    |`Html::_ELEMENT('my_link','link')`|`Html::_H6()`/`Html::xH6()`|
