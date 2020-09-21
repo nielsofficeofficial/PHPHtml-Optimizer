@@ -2581,230 +2581,1144 @@ function _CENTER($js=[], $id=null, $class=null) {
   *
   * @since 20.19.2020
   * @category PHPHtml-Merge
-  * @ Method Defined HTML H3 CLOSE TAG noHTML  
-  * Inline Heading tag H3
+  * @ Method Defined HTML CENTER CLOSE TAG noHTML  
+  * Inline Heading tag CENTER
   *
   **/
 function xCENTER($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xCENTER($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML ABBR OPEN TAG noHTML  
+  * Inline Heading tag ABBR
+  *
+  **/
 function _ABBR($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_ABBR($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag ABBR
+   * @package : Static Procedural
+   * @method  : Html::_ABBR($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/  	
+ $Html = NEW Merge(); 
+ return $Html->_ABBR($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML ABBR CLOSE TAG noHTML  
+  * Inline Heading tag ABBR
+  *
+  **/
 function xABBR($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xABBR($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML MAP OPEN TAG noHTML  
+  * Inline Heading tag MAP
+  *
+  **/
 function _MAP($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_MAP($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag MAP
+   * @package : Static Procedural
+   * @method  : Html::_MAP($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/ 	
+  $Html = NEW Merge(); 
+  return $Html->_MAP($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML MAP CLOSE TAG noHTML  
+  * Inline Heading tag MAP
+  *
+  **/
 function xMAP($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xMAP($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML CANVAS OPEN TAG noHTML  
+  * Inline Heading tag CANVAS
+  *
+  **/
 function _CANVAS($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_CANVAS($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag CANVAS
+   * @package : Static Procedural
+   * @method  : Html::_CANVAS($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/   	
+  $Html = NEW Merge(); 
+  return $Html->_CANVAS($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML CANVAS CLOSE TAG noHTML  
+  * Inline Heading tag CANVAS
+  *
+  **/
 function xCANVAS($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xCANVAS($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML CITE OPEN TAG noHTML  
+  * Inline Heading tag CITE
+  *
+  **/
 function _CITE($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_CITE($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag CITE
+   * @package : Static Procedural
+   * @method  : Html::_CITE($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/ 	
+  $Html = NEW Merge(); 
+  return $Html->_CITE($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML CITE CLOSE TAG noHTML  
+  * Inline Heading tag CITE
+  *
+  **/
 function xCITE($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xCITE($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML DATA OPEN TAG noHTML  
+  * Inline Heading tag DATA
+  *
+  **/
 function _DATA($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_DATA($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag DATA
+   * @package : Static Procedural
+   * @method  : Html::_DATA($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/  	
+  $Html = NEW Merge(); 
+  return $Html->_DATA($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML DATA CLOSE TAG noHTML  
+  * Inline Heading tag DATA
+  *
+  **/
 function xDATA($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xDATA($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML DL OPEN TAG noHTML  
+  * Inline Heading tag DL
+  *
+  **/
 function _DL($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_DL($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag DL
+   * @package : Static Procedural
+   * @method  : Html::_DL($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/   
+  $Html = NEW Merge(); 
+  return $Html->_DL($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML DL CLOSE TAG noHTML  
+  * Inline Heading tag DL
+  *
+  **/
 function xDL($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xDL($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML DT OPEN TAG noHTML  
+  * Inline Heading tag DT
+  *
+  **/
 function _DT($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_DT($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag DT
+   * @package : Static Procedural
+   * @method  : Html::_DT($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/  	
+  $Html = NEW Merge(); 
+  return $Html->_DT($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML DT CLOSE TAG noHTML  
+  * Inline Heading tag DT
+  *
+  **/
 function xDT($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xDT($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML DD OPEN TAG noHTML  
+  * Inline Heading tag DD
+  *
+  **/
 function _DD($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_DD($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag DD
+   * @package : Static Procedural
+   * @method  : Html::_DD($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/	
+  $Html = NEW Merge(); 
+  return $Html->_DD($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML DD CLOSE TAG noHTML  
+  * Inline Heading tag DD
+  *
+  **/
 function xDD($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xDD($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML DFN OPEN TAG noHTML  
+  * Inline Heading tag DFN
+  *
+  **/
 function _DFN($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_DFN($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag DFN
+   * @package : Static Procedural
+   * @method  : Html::_DFN($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/  	
+  $Html = NEW Merge(); 
+  return $Html->_DFN($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML DFN CLOSE TAG noHTML  
+  * Inline Heading tag DFN
+  *
+  **/
 function xDFN($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xDFN($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML INS OPEN TAG noHTML  
+  * Inline Heading tag INS
+  *
+  **/
 function _INS($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_INS($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag INS
+   * @package : Static Procedural
+   * @method  : Html::_INS($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/ 	
+  $Html = NEW Merge(); 
+  return $Html->_INS($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML INS CLOSE TAG noHTML  
+  * Inline Heading tag INS
+  *
+  **/
 function xINS($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xINS($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML DEL OPEN TAG noHTML  
+  * Inline Heading tag DEL
+  *
+  **/
 function _DEL($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_DEL($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag DEL
+   * @package : Static Procedural
+   * @method  : Html::_DEL($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/	
+  $Html = NEW Merge(); 
+  return $Html->_DEL($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML DEL CLOSE TAG noHTML  
+  * Inline Heading tag DEL
+  *
+  **/
 function xDEL($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xDEL($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML KBD OPEN TAG noHTML  
+  * Inline Heading tag KBD
+  *
+  **/
 function _KBD($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_KBD($js=[], $id, $class);	
+
+ /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag KBD
+   * @package : Static Procedural
+   * @method  : Html::_KBD($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/  	
+  $Html = NEW Merge(); 
+  return $Html->_KBD($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML KBD CLOSE TAG noHTML  
+  * Inline Heading tag KBD
+  *
+  **/
 function xKBD($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xKBD($label);	
+
 }
 
-
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML MARK OPEN TAG noHTML  
+  * Inline Heading tag MARK
+  *
+  **/
 function _MARK($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_MARK($js=[], $id, $class);	
+
+ /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag MARK
+   * @package : Static Procedural
+   * @method  : Html::_MARK($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/ 	
+  $Html = NEW Merge(); 
+  return $Html->_MARK($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML MARK CLOSE TAG noHTML  
+  * Inline Heading tag MARK
+  *
+  **/
 function xMARK($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xMARK($label);	
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML PRE OPEN TAG noHTML  
+  * Inline Heading tag PRE
+  *
+  **/
 function _PRE($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_PRE($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag PRE
+   * @package : Static Procedural
+   * @method  : Html::_PRE($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/  	
+  $Html = NEW Merge(); 
+  return $Html->_PRE($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML PRE CLOSE TAG noHTML  
+  * Inline Heading tag PRE
+  *
+  **/
 function xPRE($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xPRE($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML RT OPEN TAG noHTML  
+  * Inline Heading tag RT
+  *
+  **/
 function _RT($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_RT($js=[], $id, $class);	
+
+ /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag RT
+   * @package : Static Procedural
+   * @method  : Html::_RT($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/ 
+  $Html = NEW Merge(); 
+  return $Html->_RT($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML RT CLOSE TAG noHTML  
+  * Inline Heading tag RT
+  *
+  **/
 function xRT($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xRT($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML RP OPEN TAG noHTML  
+  * Inline Heading tag RP
+  *
+  **/
 function _RP($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_RP($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag RP
+   * @package : Static Procedural
+   * @method  : Html::_RP($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/	
+  $Html = NEW Merge(); 
+  return $Html->_RP($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML RP CLOSE TAG noHTML  
+  * Inline Heading tag RP
+  *
+  **/
 function xRP($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xRP($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML S OPEN TAG noHTML  
+  * Inline Heading tag S
+  *
+  **/
 function _S($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_S($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag S
+   * @package : Static Procedural
+   * @method  : Html::_S($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/	
+  $Html = NEW Merge(); 
+  return $Html->_S($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML S CLOSE TAG noHTML  
+  * Inline Heading tag S
+  *
+  **/
 function xS($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xS($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML SAMP OPEN TAG noHTML  
+  * Inline Heading tag SAMP
+  *
+  **/
 function _SAMP($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_SAMP($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag SAMP
+   * @package : Static Procedural
+   * @method  : Html::_SAMP($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/ 	
+  $Html = NEW Merge(); 
+  return $Html->_SAMP($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML SAMP CLOSE TAG noHTML  
+  * Inline Heading tag SAMP
+  *
+  **/
 function xSAMP($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xSAMP($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML STRONG OPEN TAG noHTML  
+  * Inline Heading tag STRONG
+  *
+  **/
 function _STRONG($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_STRONG($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag STRONG
+   * @package : Static Procedural
+   * @method  : Html::_STRONG($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/ 	
+  $Html = NEW Merge(); 
+  return $Html->_STRONG($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML STRONG CLOSE TAG noHTML  
+  * Inline Heading tag STRONG
+  *
+  **/
 function xSTRONG($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xSTRONG($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML SUB OPEN TAG noHTML  
+  * Inline Heading tag SUB
+  *
+  **/
 function _SUB($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_SUB($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag SUB
+   * @package : Static Procedural
+   * @method  : Html::_SUB($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/  	
+  $Html = NEW Merge(); 
+  return $Html->_SUB($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML SUB CLOSE TAG noHTML  
+  * Inline Heading tag SUB
+  *
+  **/
 function xSUB($label = NULL) {
   $Html = NEW Merge(); return $Html->xSUB($label);	
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML SUP OPEN TAG noHTML  
+  * Inline Heading tag SUP
+  *
+  **/
 function _SUP($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_SUP($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag SUP
+   * @package : Static Procedural
+   * @method  : Html::_SUP($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/ 	
+  $Html = NEW Merge(); 
+  return $Html->_SUP($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML SUP CLOSE TAG noHTML  
+  * Inline Heading tag SUP
+  *
+  **/
 function xSUP($label = NULL) {
+  
   $Html = NEW Merge(); return $Html->xSUP($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML WBR OPEN TAG noHTML  
+  * Inline Heading tag WBR
+  *
+  **/
 function _WBR($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_WBR($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag WBR
+   * @package : Static Procedural
+   * @method  : Html::_WBR($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/   
+  $Html = NEW Merge(); 
+  return $Html->_WBR($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML WBR CLOSE TAG noHTML  
+  * Inline Heading tag WBR
+  *
+  **/
 function xWBR($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xWBR($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML Q OPEN TAG noHTML  
+  * Inline Heading tag Q
+  *
+  **/
 function _Q($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_Q($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag Q
+   * @package : Static Procedural
+   * @method  : Html::_Q($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/ 	
+  $Html = NEW Merge(); 
+  return $Html->_Q($js=[], $id, $class);	
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML Q CLOSE TAG noHTML  
+  * Inline Heading tag Q
+  *
+  **/
 function xQ($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xQ($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML HEAD OPEN TAG noHTML  
+  * Inline Heading tag HEAD
+  *
+  **/
 function _HEAD($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_HEAD($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag HEAD
+   * @package : Static Procedural
+   * @method  : Html::_HEAD($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/ 	
+  $Html = NEW Merge(); 
+  return $Html->_HEAD($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML HEAD CLOSE TAG noHTML  
+  * Inline Heading tag HEAD
+  *
+  **/
 function xHEAD($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xHEAD($label);	
+
 }
 
-
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML TITLE OPEN TAG noHTML  
+  * Inline Heading tag TITLE
+  *
+  **/
 function _TITLE($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_TITLE($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag TITLE
+   * @package : Static Procedural
+   * @method  : Html::_TITLE($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/ 	
+  $Html = NEW Merge(); 
+  return $Html->_TITLE($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML TITLE CLOSE TAG noHTML  
+  * Inline Heading tag TITLE
+  *
+  **/
 function xTITLE($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xTITLE($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML BODY OPEN TAG noHTML  
+  * Inline Heading tag BODY
+  *
+  **/
 function _BODY($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_BODY($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag BODY
+   * @package : Static Procedural
+   * @method  : Html::_BODY($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/ 	
+ $Html = NEW Merge(); 
+ return $Html->_BODY($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML BODY CLOSE TAG noHTML  
+  * Inline Heading tag BODY
+  *
+  **/
 function xBODY($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xBODY($label);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML HTML OPEN TAG noHTML  
+  * Inline Heading tag HTML
+  *
+  **/
 function _HTML($js=[], $id=null, $class=null) {
- $Html = NEW Merge(); return $Html->_HTML($js=[], $id, $class);	
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag HTML
+   * @package : Static Procedural
+   * @method  : Html::_HTML($value, $js=[], $id, $class, $label, $assoc);
+   *
+   *
+   *
+   **/  	
+ $Html = NEW Merge(); 
+ return $Html->_HTML($js=[], $id, $class);	
+
 }
 
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML HTML CLOSE TAG noHTML  
+  * Inline Heading tag HTML
+  *
+  **/
 function xHTML($label = NULL) {
+
   $Html = NEW Merge(); return $Html->xHTML($label);	
+
 }
 
 
