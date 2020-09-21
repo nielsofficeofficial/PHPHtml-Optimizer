@@ -123,16 +123,13 @@ echo $Html->H2(Hello World');
 <h5>Usage: Static | More Samples with Parameters</h5>
 <pre>
 // Html Custom attributes:
-
  function my_htmattr() {
     return $sets = [
       $attr_name = ['1','2'],
       $attr_val  = ['_niel_','_fernandez_'];  
     ];
  }
-
-</pre>
-<pre>
+ 
 Print html::H1("Heading Title_FUNC_ASSOC",  my_htmattr() ,'MyID','MyClass','MyLabel',FUNC_ASSOC);
       html::H1("Heading Title_FUNC_ASSOC",  my_htmattr() ,'MyID','MyClass','MyLabel',METHOD_ASSOC); 
     
