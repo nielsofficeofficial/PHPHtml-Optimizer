@@ -263,41 +263,37 @@ Html::xH1($label=null)
 <br />
 <img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t1.0-9/119715665_1186082691765282_2093887907714346762_n.jpg?_nc_cat=105&_nc_sid=730e14&_nc_eui2=AeH72dqqY9T8i68c464gOPHOSxYWFwR0Nd1LFhYXBHQ13XDbhayV89QnK05ZPhGmD8-PwpZTdWfJBhkvNqsUR1Ts&_nc_ohc=KA6nhf8YuSkAX9tSNsY&_nc_oc=AQm-jmRqatQPGwHBTt_L9xcU5plIAqlVwdSwWzNRCLOGbOviYenh9hW549kswYSr5uw&_nc_ht=scontent.fmnl3-2.fna&oh=9de92625da228cf3cd22309be0c63328&oe=5F8D58EF">
 <h6>PHPHtml-Optimizer Merge Version</h6>
-<<<<<<< HEAD
-=======
 <p>PHPHtml-Merge version is more shorthand and simplier than PHPHTML-Optimizer in terms of functionality Both Optimizer is absolutely the same, The difference is the way you call the function and the way you use it.</p>
 
 <h5>Static ELEMENTS and parameters </h5>
 <pre>
 // Merge version Associated or simply means return function
-_xHTML($elem=null, $value=null, $js=[], $id=null, $class=null, $label=null);
+_xHTML($elem=null, $value=null, $attr=null, $id=null, $class=null, $label=null);
 <br />
 // Merge version Optional Associated or simply print or return if set as associated function
-__HTML($label=null, $elem=null, $js=[], $id=null, $class=null, $assoc=null);
+__HTML($label=null, $elem=null,  $attr=null, $id=null, $class=null, $assoc=null);
 <br />
 // Merge version Optional Associated or simply print or return if set as associated function
-H1( $value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null );  
+H1( $value=null,  $attr=null, $id=null, $class=null, $label=null, $assoc=null );  
 <br />
 // None or never be Associated or simply print function
-_H1($js=[], $id=null, $class=null) <br />
+_H1($attr=null, $id=null, $class=null) <br />
 ... content goes here ...<br />
 xH1($label = NULL)
 <br />
 Merge version Associated or simply return function
-_MERGE($elem=null, $js=[], $id=null, $class=null);<br />
+_MERGE($elem=null,  $attr=null, $id=null, $class=null);<br />
 ... content goes here ...<br />
 xMERGE($elem=null);
 </pre>
 
 <h5>Functions List</h5>
 
-|Opt./ASSOCIATED | HTML/Descript. | ASSOCIATED     | Opt.ASSOCIATED/Inline noneClosing tag |  None ASSOCIATED _H1(begin)/xH1(end) | ASSOCIATED/Merge Version _(begin)/x(End) |
+|Opt./ASSOCIATED | HTML/Descript. | ASSOCIATED | Opt.ASSOCIATED/Inline noneClosing tag |  None ASSOCIATED _H1(begin)/xH1(end) | ASSOCIATED/Merge Version _(begin)/x(End) |
 |:---            |:---            |:---            |:---                           |:---                                  |:--- |
 | `H1()`         | Heading 1      | `_xHTML('H1')` |`__HTML('my_input','INPUT')`   |`_H1()`/`xH1()`                       |`_MERGE('H1')`/`xMERGE('H1')` |
 | `H2()`         | Heading 2      | `_xHTML('H2')` |`__HTML('my_track','track')`   |`_H2()`/`xH2()`                       |`_MERGE('H2')`/`xMERGE('H2')` |
 
-
->>>>>>> 9b90b7ac6c5e6ecd595b5c6833d0b0d017297cd4
 
 <br />
 This Library is 100% secured and fully free ready to use, If you see vulnerability you can email me: @ nieldigitalsolution@gmail.com
