@@ -57,7 +57,7 @@ function H1( $value=null, $js=[], $id=null, $class=null, $label=null, $assoc=nul
    *
    **/ 
 	$Html = NEW Merge(); 
-    return $Html->H1($value, $js=[], $id, $class, $label, $assoc); 
+  return $Html->H1($value, $js=[], $id, $class, $label, $assoc); 
 
 }
 

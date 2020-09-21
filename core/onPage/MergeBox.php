@@ -30,8 +30,8 @@
  *
  */
 
-USE  \PHPHtml\CodeOptimizer\Html AS Merge; 
-$Html = NEW Merge();
+USE  \PHPHtml\CodeOptimizer\Html AS MergeBox; 
+$Html = NEW MergeBox();
 
 /**
   *
@@ -56,7 +56,7 @@ function _H1($js=[], $id=null, $class=null) {
    *
    *
    **/  	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_H1($js=[], $id, $class);	
 
 }
@@ -70,7 +70,7 @@ function _H1($js=[], $id=null, $class=null) {
   **/
 function xH1($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xH1($label);	
+  $Html = NEW MergeBox(); return $Html->xH1($label);	
 
 }
 
@@ -97,7 +97,7 @@ function _H2($js=[], $id=null, $class=null) {
    *
    *
    **/   
- $Html = NEW Merge(); 
+ $Html = NEW MergeBox(); 
  return $Html->_H2($js=[], $id, $class);	
 
 }
@@ -112,7 +112,7 @@ function _H2($js=[], $id=null, $class=null) {
   **/
 function xH2($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xH2($label);	
+  $Html = NEW MergeBox(); return $Html->xH2($label);	
 
 }
 
@@ -139,7 +139,7 @@ function _H3($js=[], $id=null, $class=null) {
    *
    *
    **/   
- $Html = NEW Merge(); 
+ $Html = NEW MergeBox(); 
  return $Html->_H3($js=[], $id, $class);	
 
 }
@@ -154,7 +154,7 @@ function _H3($js=[], $id=null, $class=null) {
   **/
 function xH3($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xH3($label);	
+  $Html = NEW MergeBox(); return $Html->xH3($label);	
 
 }
 
@@ -181,7 +181,7 @@ function _H4($js=[], $id=null, $class=null) {
    *
    *
    **/ 
- $Html = NEW Merge(); 
+ $Html = NEW MergeBox(); 
  return $Html->_H4($js=[], $id, $class);	
 
 }
@@ -196,7 +196,7 @@ function _H4($js=[], $id=null, $class=null) {
   **/
 function xH4($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xH4($label);	
+  $Html = NEW MergeBox(); return $Html->xH4($label);	
 
 }
 
@@ -223,7 +223,7 @@ function _H5($js=[], $id=null, $class=null) {
    *
    *
    **/
- $Html = NEW Merge(); 
+ $Html = NEW MergeBox(); 
  return $Html->_H5($js=[], $id, $class);	
 
 }
@@ -238,7 +238,7 @@ function _H5($js=[], $id=null, $class=null) {
   **/
 function xH5($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xH5($label);	
+  $Html = NEW MergeBox(); return $Html->xH5($label);	
 
 }
 
@@ -265,7 +265,7 @@ function _H6($js=[], $id=null, $class=null) {
    *
    *
    **/  	
- $Html = NEW Merge(); 
+ $Html = NEW MergeBox(); 
  return $Html->_H6($js=[], $id, $class);	
 
 }
@@ -280,7 +280,7 @@ function _H6($js=[], $id=null, $class=null) {
   **/
 function xH6($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xH6($label);	
+  $Html = NEW MergeBox(); return $Html->xH6($label);	
 
 }
 
@@ -307,7 +307,7 @@ function _DIV($js=[], $id=null, $class=null) {
    *
    *
    **/  	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_DIV($js=[], $id, $class);	
 
 }
@@ -322,7 +322,7 @@ function _DIV($js=[], $id=null, $class=null) {
   **/
 function xDIV($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xDIV($label);	
+  $Html = NEW MergeBox(); return $Html->xDIV($label);	
 
 }
 
@@ -349,7 +349,7 @@ function _P($js=[], $id=null, $class=null) {
    *
    *
    **/   
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_P($js=[], $id, $class);	
 
 }
@@ -364,7 +364,7 @@ function _P($js=[], $id=null, $class=null) {
   **/
 function xP($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xP($label);	
+  $Html = NEW MergeBox(); return $Html->xP($label);	
 
 }
 
@@ -391,7 +391,7 @@ function _BUTTON($js=[], $id=null, $class=null) {
    *
    *
    **/   	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_BUTTON($js=[], $id, $class);	
 
 }
@@ -406,7 +406,7 @@ function _BUTTON($js=[], $id=null, $class=null) {
   **/
 function xBUTTON($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xBUTTON($label);	
+  $Html = NEW MergeBox(); return $Html->xBUTTON($label);	
 
 }
 
@@ -433,7 +433,7 @@ function _A($js=[], $id=null, $class=null) {
    *
    *
    **/   
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_A($js=[], $id, $class);	
 
 }
@@ -448,7 +448,7 @@ function _A($js=[], $id=null, $class=null) {
   **/
 function xA($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xA($label);	
+  $Html = NEW MergeBox(); return $Html->xA($label);	
 
 }
 
@@ -475,7 +475,7 @@ function _IFRAME($js=[], $id=null, $class=null) {
    *
    *
    **/	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_IFRAME($js=[], $id, $class);	
 
 }
@@ -490,7 +490,7 @@ function _IFRAME($js=[], $id=null, $class=null) {
   **/
 function xIFRAME($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xIFRAME($label);	
+  $Html = NEW MergeBox(); return $Html->xIFRAME($label);	
 
 }
 
@@ -517,7 +517,7 @@ function _MAIN($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_MAIN($js=[], $id, $class);	
 
 }
@@ -532,7 +532,7 @@ function _MAIN($js=[], $id=null, $class=null) {
   **/
 function xMAIN($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xMAIN($label);	
+  $Html = NEW MergeBox(); return $Html->xMAIN($label);	
 
 }
 
@@ -559,7 +559,7 @@ function _NAV($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_NAV($js=[], $id, $class);	
 
 }
@@ -574,7 +574,7 @@ function _NAV($js=[], $id=null, $class=null) {
   **/
 function xNAV($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xNAV($label);	
+  $Html = NEW MergeBox(); return $Html->xNAV($label);	
 
 }
 
@@ -601,7 +601,7 @@ function _SELECT($js=[], $id=null, $class=null) {
    *
    *
    **/	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_SELECT($js=[], $id, $class);	
 
 }
@@ -616,7 +616,7 @@ function _SELECT($js=[], $id=null, $class=null) {
   **/
 function xSELECT($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xSELECT($label);	
+  $Html = NEW MergeBox(); return $Html->xSELECT($label);	
 
 }
 
@@ -643,7 +643,7 @@ function _FORM($js=[], $id=null, $class=null) {
    *
    *
    **/  	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_FORM($js=[], $id, $class);	
 
 }
@@ -658,7 +658,7 @@ function _FORM($js=[], $id=null, $class=null) {
   **/
 function xFORM($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xFORM($label);	
+  $Html = NEW MergeBox(); return $Html->xFORM($label);	
 
 }
 
@@ -685,7 +685,7 @@ function _PICTURE($js=[], $id=null, $class=null) {
    *
    *
    **/ 
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_PICTURE($js=[], $id, $class);	
 
 }
@@ -700,7 +700,7 @@ function _PICTURE($js=[], $id=null, $class=null) {
   **/
 function xPICTURE($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xPICTURE($label);	
+  $Html = NEW MergeBox(); return $Html->xPICTURE($label);	
 
 }
 
@@ -727,7 +727,7 @@ function _SECTION($js=[], $id=null, $class=null) {
    *
    *
    **/   
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_SECTION($js=[], $id, $class);	
 
 }
@@ -742,7 +742,7 @@ function _SECTION($js=[], $id=null, $class=null) {
   **/
 function xSECTION($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xSECTION($label);	
+  $Html = NEW MergeBox(); return $Html->xSECTION($label);	
 
 }
 
@@ -769,7 +769,7 @@ function _TEXTAREA($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_TEXTAREA($js=[], $id, $class);	
 
 }
@@ -784,7 +784,7 @@ function _TEXTAREA($js=[], $id=null, $class=null) {
   **/
 function xTEXTAREA($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xTEXTAREA($label);	
+  $Html = NEW MergeBox(); return $Html->xTEXTAREA($label);	
 
 }
 
@@ -811,7 +811,7 @@ function _AUDIO($js=[], $id=null, $class=null) {
    *
    *
    **/	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_AUDIO($js=[], $id, $class);	
 
 }
@@ -826,7 +826,7 @@ function _AUDIO($js=[], $id=null, $class=null) {
   **/
 function xAUDIO($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xAUDIO($label);	
+  $Html = NEW MergeBox(); return $Html->xAUDIO($label);	
 
 }
 
@@ -853,7 +853,7 @@ function _VIDEO($js=[], $id=null, $class=null) {
    *
    *
    **/  	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_VIDEO($js=[], $id, $class);	
 
 }
@@ -868,7 +868,7 @@ function _VIDEO($js=[], $id=null, $class=null) {
   **/
 function xVIDEO($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xVIDEO($label);	
+  $Html = NEW MergeBox(); return $Html->xVIDEO($label);	
 
 }
 
@@ -895,7 +895,7 @@ function _ADDRESS($js=[], $id=null, $class=null) {
    *
    *
    **/ 
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_ADDRESS($js=[], $id, $class);	
 
 }
@@ -910,7 +910,7 @@ function _ADDRESS($js=[], $id=null, $class=null) {
   **/
 function xADDRESS($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xADDRESS($label);	
+  $Html = NEW MergeBox(); return $Html->xADDRESS($label);	
 
 }
 
@@ -937,7 +937,7 @@ function _COLGROUP($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_COLGROUP($js=[], $id, $class);	
 
 }
@@ -952,7 +952,7 @@ function _COLGROUP($js=[], $id=null, $class=null) {
   **/
 function xCOLGROUP($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xCOLGROUP($label);	
+  $Html = NEW MergeBox(); return $Html->xCOLGROUP($label);	
 
 }
 
@@ -979,7 +979,7 @@ function _BDI($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_BDI($js=[], $id, $class);	
 
 }
@@ -994,7 +994,7 @@ function _BDI($js=[], $id=null, $class=null) {
   **/
 function xBDI($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xBDI($label);	
+  $Html = NEW MergeBox(); return $Html->xBDI($label);	
 
 }
 
@@ -1021,7 +1021,7 @@ function _BDO($js=[], $id=null, $class=null) {
    *
    *
    **/	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_BDO($js=[], $id, $class);	
 
 }
@@ -1036,7 +1036,7 @@ function _BDO($js=[], $id=null, $class=null) {
   **/
 function xBDO($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xBDO($label);	
+  $Html = NEW MergeBox(); return $Html->xBDO($label);	
 
 }
 
@@ -1063,7 +1063,7 @@ function _BLOCKQUOTE($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
- $Html = NEW Merge(); 
+ $Html = NEW MergeBox(); 
  return $Html->_BLOCKQUOTE($js=[], $id, $class);	
 
 }
@@ -1078,7 +1078,7 @@ function _BLOCKQUOTE($js=[], $id=null, $class=null) {
   **/
 function xBLOCKQUOTE($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xBLOCKQUOTE($label);	
+  $Html = NEW MergeBox(); return $Html->xBLOCKQUOTE($label);	
 
 }
 
@@ -1105,7 +1105,7 @@ function _CAPTION($js=[], $id=null, $class=null) {
    *
    *
    **/  	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_CAPTION($js=[], $id, $class);	
 
 }
@@ -1120,7 +1120,7 @@ function _CAPTION($js=[], $id=null, $class=null) {
   **/
 function xCAPTION($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xCAPTION($label);	
+  $Html = NEW MergeBox(); return $Html->xCAPTION($label);	
 
 }
 
@@ -1147,7 +1147,7 @@ function _LABEL($js=[], $id=null, $class=null) {
    *
    *
    **/ 
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_LABEL($js=[], $id, $class);	
 
 }
@@ -1161,7 +1161,7 @@ function _LABEL($js=[], $id=null, $class=null) {
   *
   **/
 function xLABEL($label = NULL) {
-  $Html = NEW Merge(); return $Html->xLABEL($label);	
+  $Html = NEW MergeBox(); return $Html->xLABEL($label);	
 }
 
 /**
@@ -1187,7 +1187,7 @@ function _DATALIST($js=[], $id=null, $class=null) {
    *
    *
    **/  	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_DATALIST($js=[], $id, $class);	
 
 }
@@ -1202,7 +1202,7 @@ function _DATALIST($js=[], $id=null, $class=null) {
   **/
 function xDATALIST($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xDATALIST($label);	
+  $Html = NEW MergeBox(); return $Html->xDATALIST($label);	
 
 }
 
@@ -1229,7 +1229,7 @@ function _DETAILS($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
- $Html = NEW Merge(); 
+ $Html = NEW MergeBox(); 
  return $Html->_DETAILS($js=[], $id, $class);	
 
 }
@@ -1244,7 +1244,7 @@ function _DETAILS($js=[], $id=null, $class=null) {
   **/
 function xDETAILS($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xDETAILS($label);	
+  $Html = NEW MergeBox(); return $Html->xDETAILS($label);	
 
 }
 
@@ -1271,7 +1271,7 @@ function _SUMMARY($js=[], $id=null, $class=null) {
    *
    *
    **/   	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_SUMMARY($js=[], $id, $class);	
 
 }
@@ -1286,7 +1286,7 @@ function _SUMMARY($js=[], $id=null, $class=null) {
   **/
 function xSUMMARY($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xSUMMARY($label);	
+  $Html = NEW MergeBox(); return $Html->xSUMMARY($label);	
 
 }
 
@@ -1313,7 +1313,7 @@ function _DIALOG($js=[], $id=null, $class=null) {
    *
    *
    **/  	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_DIALOG($js=[], $id, $class);	
 
 }
@@ -1328,7 +1328,7 @@ function _DIALOG($js=[], $id=null, $class=null) {
   **/
 function xDIALOG($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xDIALOG($label);	
+  $Html = NEW MergeBox(); return $Html->xDIALOG($label);	
 
 }
 
@@ -1355,7 +1355,7 @@ function _OPTION($js=[], $id=null, $class=null) {
    *
    *
    **/   	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_OPTION($js=[], $id, $class);	
 
 }
@@ -1370,7 +1370,7 @@ function _OPTION($js=[], $id=null, $class=null) {
   **/
 function xOPTION($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xOPTION($label);	
+  $Html = NEW MergeBox(); return $Html->xOPTION($label);	
 
 }
 
@@ -1397,7 +1397,7 @@ function _FIGURE($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_FIGURE($js=[], $id, $class);	
 
 }
@@ -1412,7 +1412,7 @@ function _FIGURE($js=[], $id=null, $class=null) {
   **/
 function xFIGURE($label = NULL) {
   
-  $Html = NEW Merge(); return $Html->xFIGURE($label);	
+  $Html = NEW MergeBox(); return $Html->xFIGURE($label);	
 
 }
 
@@ -1439,7 +1439,7 @@ function _FIGCAPTION($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_FIGCAPTION($js=[], $id, $class);	
 
 }
@@ -1454,7 +1454,7 @@ function _FIGCAPTION($js=[], $id=null, $class=null) {
   **/
 function xFIGCAPTION($label = NULL) {
   
-  $Html = NEW Merge(); return $Html->xFIGCAPTION($label);	
+  $Html = NEW MergeBox(); return $Html->xFIGCAPTION($label);	
 
 }
 
@@ -1481,7 +1481,7 @@ function _METER($js=[], $id=null, $class=null) {
    *
    *
    **/   
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_METER($js=[], $id, $class);	
 
 }
@@ -1496,7 +1496,7 @@ function _METER($js=[], $id=null, $class=null) {
   **/
 function xMETER($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xMETER($label);	
+  $Html = NEW MergeBox(); return $Html->xMETER($label);	
 
 }
 
@@ -1524,7 +1524,7 @@ function _OBJECT($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_OBJECT($js=[], $id, $class);	
 
 }
@@ -1539,7 +1539,7 @@ function _OBJECT($js=[], $id=null, $class=null) {
   **/
 function xOBJECT($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xOBJECT($label);	
+  $Html = NEW MergeBox(); return $Html->xOBJECT($label);	
 
 }
 
@@ -1566,7 +1566,7 @@ function _OPTGROUP($js=[], $id=null, $class=null) {
    *
    *
    **/  	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_OPTGROUP($js=[], $id, $class);	
 
 }
@@ -1581,7 +1581,7 @@ function _OPTGROUP($js=[], $id=null, $class=null) {
   **/
 function xOPTGROUP($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xOPTGROUP($label);	
+  $Html = NEW MergeBox(); return $Html->xOPTGROUP($label);	
 
 }
 
@@ -1608,7 +1608,7 @@ function _OUTPUT($js=[], $id=null, $class=null) {
    *
    *
    **/  	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_OUTPUT($js=[], $id, $class);	
 
 }
@@ -1623,7 +1623,7 @@ function _OUTPUT($js=[], $id=null, $class=null) {
   **/
 function xOUTPUT($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xOUTPUT($label);	
+  $Html = NEW MergeBox(); return $Html->xOUTPUT($label);	
 
 }
 
@@ -1650,7 +1650,7 @@ function _PROGRESS($js=[], $id=null, $class=null) {
    *
    *
    **/  	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_PROGRESS($js=[], $id, $class);	
 
 }
@@ -1665,7 +1665,7 @@ function _PROGRESS($js=[], $id=null, $class=null) {
   **/
 function xPROGRESS($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xPROGRESS($label);	
+  $Html = NEW MergeBox(); return $Html->xPROGRESS($label);	
 
 }
 
@@ -1692,7 +1692,7 @@ function _SVG($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_SVG($js=[], $id, $class);	
 
 }
@@ -1707,7 +1707,7 @@ function _SVG($js=[], $id=null, $class=null) {
   **/
 function xSVG($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xSVG($label);	
+  $Html = NEW MergeBox(); return $Html->xSVG($label);	
 
 }
 
@@ -1734,7 +1734,7 @@ function _TEMPLATE($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_TEMPLATE($js=[], $id, $class);	
 
 }
@@ -1749,7 +1749,7 @@ function _TEMPLATE($js=[], $id=null, $class=null) {
   **/
 function xTEMPLATE($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xTEMPLATE($label);	
+  $Html = NEW MergeBox(); return $Html->xTEMPLATE($label);	
 
 }
 
@@ -1776,7 +1776,7 @@ function _UL($js=[], $id=null, $class=null) {
    *
    *
    **/  	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_UL($js=[], $id, $class);	
 
 }
@@ -1790,7 +1790,7 @@ function _UL($js=[], $id=null, $class=null) {
   *
   **/
 function xUL($label = NULL) {
-  $Html = NEW Merge(); return $Html->xUL($label);	
+  $Html = NEW MergeBox(); return $Html->xUL($label);	
 }
 
 /**
@@ -1816,7 +1816,7 @@ function _OL($js=[], $id=null, $class=null) {
    *
    *
    **/	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_OL($js=[], $id, $class);	
 
 }
@@ -1831,7 +1831,7 @@ function _OL($js=[], $id=null, $class=null) {
   **/
 function xOL($label = NULL) {
   
-  $Html = NEW Merge(); return $Html->xOL($label);	
+  $Html = NEW MergeBox(); return $Html->xOL($label);	
 
 }
 
@@ -1858,7 +1858,7 @@ function _LI($js=[], $id=null, $class=null) {
    *
    *
    **/  	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_LI($js=[], $id, $class);	
 
 }
@@ -1873,7 +1873,7 @@ function _LI($js=[], $id=null, $class=null) {
   **/
 function xLI($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xLI($label);	
+  $Html = NEW MergeBox(); return $Html->xLI($label);	
 
 }
 
@@ -1900,7 +1900,7 @@ function _TABLE($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_TABLE($js=[], $id, $class);	
 
 }
@@ -1915,7 +1915,7 @@ function _TABLE($js=[], $id=null, $class=null) {
   **/
 function xTABLE($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xTABLE($label);	
+  $Html = NEW MergeBox(); return $Html->xTABLE($label);	
 
 }
 
@@ -1942,7 +1942,7 @@ function _TR($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
- $Html = NEW Merge(); 
+ $Html = NEW MergeBox(); 
  return $Html->_TR($js=[], $id, $class);	
 
 }
@@ -1957,7 +1957,7 @@ function _TR($js=[], $id=null, $class=null) {
   **/
 function xTR($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xTR($label);	
+  $Html = NEW MergeBox(); return $Html->xTR($label);	
 
 }
 
@@ -1984,7 +1984,7 @@ function _TD($js=[], $id=null, $class=null) {
    *
    *
    **/  	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_TD($js=[], $id, $class);	
 
 }
@@ -1999,7 +1999,7 @@ function _TD($js=[], $id=null, $class=null) {
   **/
 function xTD($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xTD($label);	
+  $Html = NEW MergeBox(); return $Html->xTD($label);	
 
 }
 
@@ -2026,7 +2026,7 @@ function _TH($js=[], $id=null, $class=null) {
    *
    *
    **/  
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_TH($js=[], $id, $class);	
 
 }
@@ -2041,7 +2041,7 @@ function _TH($js=[], $id=null, $class=null) {
   **/
 function xTH($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xTH($label);	
+  $Html = NEW MergeBox(); return $Html->xTH($label);	
 
 }
 
@@ -2068,7 +2068,7 @@ function _LEGEND($js=[], $id=null, $class=null) {
    *
    *
    **/   	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_LEGEND($js=[], $id, $class);	
 
 }
@@ -2083,7 +2083,7 @@ function _LEGEND($js=[], $id=null, $class=null) {
   **/
 function xLEGEND($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xLEGEND($label);	
+  $Html = NEW MergeBox(); return $Html->xLEGEND($label);	
 
 }
 
@@ -2110,7 +2110,7 @@ function _FIELDSET($js=[], $id=null, $class=null) {
    *
    *
    **/   	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_FIELDSET($js=[], $id, $class);	
 
 }
@@ -2125,7 +2125,7 @@ function _FIELDSET($js=[], $id=null, $class=null) {
   **/
 function xFIELDSET($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xFIELDSET($label);	
+  $Html = NEW MergeBox(); return $Html->xFIELDSET($label);	
 
 }
 
@@ -2152,7 +2152,7 @@ function _TBODY($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_TBODY($js=[], $id, $class);	
 
 }
@@ -2167,7 +2167,7 @@ function _TBODY($js=[], $id=null, $class=null) {
   **/
 function xTBODY($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xTBODY($label);	
+  $Html = NEW MergeBox(); return $Html->xTBODY($label);	
 
 }
 
@@ -2194,7 +2194,7 @@ function _TFOOT($js=[], $id=null, $class=null) {
    *
    *
    **/  
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_TFOOT($js=[], $id, $class);	
 
 }
@@ -2209,7 +2209,7 @@ function _TFOOT($js=[], $id=null, $class=null) {
   **/
 function xTFOOT($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xTFOOT($label);	
+  $Html = NEW MergeBox(); return $Html->xTFOOT($label);	
 
 }
 
@@ -2236,7 +2236,7 @@ function _THEAD($js=[], $id=null, $class=null) {
    *
    *
    **/  	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_THEAD($js=[], $id, $class);	
 
 }
@@ -2251,7 +2251,7 @@ function _THEAD($js=[], $id=null, $class=null) {
   **/
 function xTHEAD($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xTHEAD($label);	
+  $Html = NEW MergeBox(); return $Html->xTHEAD($label);	
 
 }
 
@@ -2278,7 +2278,7 @@ function _SPAN($js=[], $id=null, $class=null) {
    *
    *
    **/	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_SPAN($js=[], $id, $class);	
 
 }
@@ -2293,7 +2293,7 @@ function _SPAN($js=[], $id=null, $class=null) {
   **/
 function xSPAN($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xSPAN($label);	
+  $Html = NEW MergeBox(); return $Html->xSPAN($label);	
 
 }
 
@@ -2320,7 +2320,7 @@ function _EM($js=[], $id=null, $class=null) {
    *
    *
    **/  
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_EM($js=[], $id, $class);	
 
 }
@@ -2335,7 +2335,7 @@ function _EM($js=[], $id=null, $class=null) {
   **/
 function xEM($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xEM($label);	
+  $Html = NEW MergeBox(); return $Html->xEM($label);	
 
 }
 
@@ -2362,7 +2362,7 @@ function _B($js=[], $id=null, $class=null) {
    *
    *
    **/	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_B($js=[], $id, $class);	
 
 }
@@ -2377,7 +2377,7 @@ function _B($js=[], $id=null, $class=null) {
   **/
 function xB($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xB($label);	
+  $Html = NEW MergeBox(); return $Html->xB($label);	
 
 }
 
@@ -2404,7 +2404,7 @@ function _I($js=[], $id=null, $class=null) {
    *
    *
    **/	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_I($js=[], $id, $class);	
 
 }
@@ -2419,7 +2419,7 @@ function _I($js=[], $id=null, $class=null) {
   **/
 function xI($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xI($label);	
+  $Html = NEW MergeBox(); return $Html->xI($label);	
 
 }
 
@@ -2446,7 +2446,7 @@ function _SMALL($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_SMALL($js=[], $id, $class);	
 
 }
@@ -2461,7 +2461,7 @@ function _SMALL($js=[], $id=null, $class=null) {
   **/
 function xSMALL($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xSMALL($label);	
+  $Html = NEW MergeBox(); return $Html->xSMALL($label);	
 
 }
 
@@ -2488,7 +2488,7 @@ function _STRIKE($js=[], $id=null, $class=null) {
    *
    *
    **/	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_STRIKE($js=[], $id, $class);	
 
 }
@@ -2503,7 +2503,7 @@ function _STRIKE($js=[], $id=null, $class=null) {
   **/
 function xSTRIKE($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xSTRIKE($label);	
+  $Html = NEW MergeBox(); return $Html->xSTRIKE($label);	
 
 }
 
@@ -2530,7 +2530,7 @@ function _MARQUEE($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_MARQUEE($js=[], $id, $class);	
 
 }
@@ -2545,7 +2545,7 @@ function _MARQUEE($js=[], $id=null, $class=null) {
   **/
 function xMARQUEE($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xMARQUEE($label);	
+  $Html = NEW MergeBox(); return $Html->xMARQUEE($label);	
 
 }
 
@@ -2572,7 +2572,7 @@ function _CENTER($js=[], $id=null, $class=null) {
    *
    *
    **/	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_CENTER($js=[], $id, $class);	
 
 }
@@ -2587,7 +2587,7 @@ function _CENTER($js=[], $id=null, $class=null) {
   **/
 function xCENTER($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xCENTER($label);	
+  $Html = NEW MergeBox(); return $Html->xCENTER($label);	
 
 }
 
@@ -2614,7 +2614,7 @@ function _ABBR($js=[], $id=null, $class=null) {
    *
    *
    **/  	
- $Html = NEW Merge(); 
+ $Html = NEW MergeBox(); 
  return $Html->_ABBR($js=[], $id, $class);	
 
 }
@@ -2629,7 +2629,7 @@ function _ABBR($js=[], $id=null, $class=null) {
   **/
 function xABBR($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xABBR($label);	
+  $Html = NEW MergeBox(); return $Html->xABBR($label);	
 
 }
 
@@ -2656,7 +2656,7 @@ function _MAP($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_MAP($js=[], $id, $class);	
 
 }
@@ -2671,7 +2671,7 @@ function _MAP($js=[], $id=null, $class=null) {
   **/
 function xMAP($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xMAP($label);	
+  $Html = NEW MergeBox(); return $Html->xMAP($label);	
 
 }
 
@@ -2698,7 +2698,7 @@ function _CANVAS($js=[], $id=null, $class=null) {
    *
    *
    **/   	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_CANVAS($js=[], $id, $class);	
 
 }
@@ -2713,7 +2713,7 @@ function _CANVAS($js=[], $id=null, $class=null) {
   **/
 function xCANVAS($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xCANVAS($label);	
+  $Html = NEW MergeBox(); return $Html->xCANVAS($label);	
 
 }
 
@@ -2740,7 +2740,7 @@ function _CITE($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_CITE($js=[], $id, $class);	
 
 }
@@ -2755,7 +2755,7 @@ function _CITE($js=[], $id=null, $class=null) {
   **/
 function xCITE($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xCITE($label);	
+  $Html = NEW MergeBox(); return $Html->xCITE($label);	
 
 }
 
@@ -2782,7 +2782,7 @@ function _DATA($js=[], $id=null, $class=null) {
    *
    *
    **/  	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_DATA($js=[], $id, $class);	
 
 }
@@ -2797,7 +2797,7 @@ function _DATA($js=[], $id=null, $class=null) {
   **/
 function xDATA($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xDATA($label);	
+  $Html = NEW MergeBox(); return $Html->xDATA($label);	
 
 }
 
@@ -2824,7 +2824,7 @@ function _DL($js=[], $id=null, $class=null) {
    *
    *
    **/   
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_DL($js=[], $id, $class);	
 
 }
@@ -2839,7 +2839,7 @@ function _DL($js=[], $id=null, $class=null) {
   **/
 function xDL($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xDL($label);	
+  $Html = NEW MergeBox(); return $Html->xDL($label);	
 
 }
 
@@ -2866,7 +2866,7 @@ function _DT($js=[], $id=null, $class=null) {
    *
    *
    **/  	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_DT($js=[], $id, $class);	
 
 }
@@ -2881,7 +2881,7 @@ function _DT($js=[], $id=null, $class=null) {
   **/
 function xDT($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xDT($label);	
+  $Html = NEW MergeBox(); return $Html->xDT($label);	
 
 }
 
@@ -2908,7 +2908,7 @@ function _DD($js=[], $id=null, $class=null) {
    *
    *
    **/	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_DD($js=[], $id, $class);	
 
 }
@@ -2923,7 +2923,7 @@ function _DD($js=[], $id=null, $class=null) {
   **/
 function xDD($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xDD($label);	
+  $Html = NEW MergeBox(); return $Html->xDD($label);	
 
 }
 
@@ -2950,7 +2950,7 @@ function _DFN($js=[], $id=null, $class=null) {
    *
    *
    **/  	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_DFN($js=[], $id, $class);	
 
 }
@@ -2965,7 +2965,7 @@ function _DFN($js=[], $id=null, $class=null) {
   **/
 function xDFN($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xDFN($label);	
+  $Html = NEW MergeBox(); return $Html->xDFN($label);	
 
 }
 
@@ -2992,7 +2992,7 @@ function _INS($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_INS($js=[], $id, $class);	
 
 }
@@ -3007,7 +3007,7 @@ function _INS($js=[], $id=null, $class=null) {
   **/
 function xINS($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xINS($label);	
+  $Html = NEW MergeBox(); return $Html->xINS($label);	
 
 }
 
@@ -3034,7 +3034,7 @@ function _DEL($js=[], $id=null, $class=null) {
    *
    *
    **/	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_DEL($js=[], $id, $class);	
 
 }
@@ -3049,7 +3049,7 @@ function _DEL($js=[], $id=null, $class=null) {
   **/
 function xDEL($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xDEL($label);	
+  $Html = NEW MergeBox(); return $Html->xDEL($label);	
 
 }
 
@@ -3076,7 +3076,7 @@ function _KBD($js=[], $id=null, $class=null) {
    *
    *
    **/  	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_KBD($js=[], $id, $class);	
 
 }
@@ -3091,7 +3091,7 @@ function _KBD($js=[], $id=null, $class=null) {
   **/
 function xKBD($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xKBD($label);	
+  $Html = NEW MergeBox(); return $Html->xKBD($label);	
 
 }
 
@@ -3118,7 +3118,7 @@ function _MARK($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_MARK($js=[], $id, $class);	
 
 }
@@ -3133,7 +3133,7 @@ function _MARK($js=[], $id=null, $class=null) {
   **/
 function xMARK($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xMARK($label);	
+  $Html = NEW MergeBox(); return $Html->xMARK($label);	
 }
 
 /**
@@ -3159,7 +3159,7 @@ function _PRE($js=[], $id=null, $class=null) {
    *
    *
    **/  	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_PRE($js=[], $id, $class);	
 
 }
@@ -3174,7 +3174,7 @@ function _PRE($js=[], $id=null, $class=null) {
   **/
 function xPRE($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xPRE($label);	
+  $Html = NEW MergeBox(); return $Html->xPRE($label);	
 
 }
 
@@ -3201,7 +3201,7 @@ function _RT($js=[], $id=null, $class=null) {
    *
    *
    **/ 
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_RT($js=[], $id, $class);	
 
 }
@@ -3216,7 +3216,7 @@ function _RT($js=[], $id=null, $class=null) {
   **/
 function xRT($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xRT($label);	
+  $Html = NEW MergeBox(); return $Html->xRT($label);	
 
 }
 
@@ -3243,7 +3243,7 @@ function _RP($js=[], $id=null, $class=null) {
    *
    *
    **/	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_RP($js=[], $id, $class);	
 
 }
@@ -3258,7 +3258,7 @@ function _RP($js=[], $id=null, $class=null) {
   **/
 function xRP($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xRP($label);	
+  $Html = NEW MergeBox(); return $Html->xRP($label);	
 
 }
 
@@ -3285,7 +3285,7 @@ function _S($js=[], $id=null, $class=null) {
    *
    *
    **/	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_S($js=[], $id, $class);	
 
 }
@@ -3300,7 +3300,7 @@ function _S($js=[], $id=null, $class=null) {
   **/
 function xS($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xS($label);	
+  $Html = NEW MergeBox(); return $Html->xS($label);	
 
 }
 
@@ -3327,7 +3327,7 @@ function _SAMP($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_SAMP($js=[], $id, $class);	
 
 }
@@ -3342,7 +3342,7 @@ function _SAMP($js=[], $id=null, $class=null) {
   **/
 function xSAMP($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xSAMP($label);	
+  $Html = NEW MergeBox(); return $Html->xSAMP($label);	
 
 }
 
@@ -3369,7 +3369,7 @@ function _STRONG($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_STRONG($js=[], $id, $class);	
 
 }
@@ -3384,7 +3384,7 @@ function _STRONG($js=[], $id=null, $class=null) {
   **/
 function xSTRONG($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xSTRONG($label);	
+  $Html = NEW MergeBox(); return $Html->xSTRONG($label);	
 
 }
 
@@ -3411,7 +3411,7 @@ function _SUB($js=[], $id=null, $class=null) {
    *
    *
    **/  	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_SUB($js=[], $id, $class);	
 
 }
@@ -3425,7 +3425,7 @@ function _SUB($js=[], $id=null, $class=null) {
   *
   **/
 function xSUB($label = NULL) {
-  $Html = NEW Merge(); return $Html->xSUB($label);	
+  $Html = NEW MergeBox(); return $Html->xSUB($label);	
 }
 
 /**
@@ -3451,7 +3451,7 @@ function _SUP($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_SUP($js=[], $id, $class);	
 
 }
@@ -3466,7 +3466,7 @@ function _SUP($js=[], $id=null, $class=null) {
   **/
 function xSUP($label = NULL) {
   
-  $Html = NEW Merge(); return $Html->xSUP($label);	
+  $Html = NEW MergeBox(); return $Html->xSUP($label);	
 
 }
 
@@ -3493,7 +3493,7 @@ function _WBR($js=[], $id=null, $class=null) {
    *
    *
    **/   
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_WBR($js=[], $id, $class);	
 
 }
@@ -3508,7 +3508,7 @@ function _WBR($js=[], $id=null, $class=null) {
   **/
 function xWBR($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xWBR($label);	
+  $Html = NEW MergeBox(); return $Html->xWBR($label);	
 
 }
 
@@ -3535,7 +3535,7 @@ function _Q($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_Q($js=[], $id, $class);	
 }
 
@@ -3549,7 +3549,7 @@ function _Q($js=[], $id=null, $class=null) {
   **/
 function xQ($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xQ($label);	
+  $Html = NEW MergeBox(); return $Html->xQ($label);	
 
 }
 
@@ -3576,7 +3576,7 @@ function _HEAD($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_HEAD($js=[], $id, $class);	
 
 }
@@ -3591,7 +3591,7 @@ function _HEAD($js=[], $id=null, $class=null) {
   **/
 function xHEAD($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xHEAD($label);	
+  $Html = NEW MergeBox(); return $Html->xHEAD($label);	
 
 }
 
@@ -3618,7 +3618,7 @@ function _TITLE($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
-  $Html = NEW Merge(); 
+  $Html = NEW MergeBox(); 
   return $Html->_TITLE($js=[], $id, $class);	
 
 }
@@ -3633,7 +3633,7 @@ function _TITLE($js=[], $id=null, $class=null) {
   **/
 function xTITLE($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xTITLE($label);	
+  $Html = NEW MergeBox(); return $Html->xTITLE($label);	
 
 }
 
@@ -3660,7 +3660,7 @@ function _BODY($js=[], $id=null, $class=null) {
    *
    *
    **/ 	
- $Html = NEW Merge(); 
+ $Html = NEW MergeBox(); 
  return $Html->_BODY($js=[], $id, $class);	
 
 }
@@ -3675,7 +3675,7 @@ function _BODY($js=[], $id=null, $class=null) {
   **/
 function xBODY($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xBODY($label);	
+  $Html = NEW MergeBox(); return $Html->xBODY($label);	
 
 }
 
@@ -3702,7 +3702,7 @@ function _HTML($js=[], $id=null, $class=null) {
    *
    *
    **/  	
- $Html = NEW Merge(); 
+ $Html = NEW MergeBox(); 
  return $Html->_HTML($js=[], $id, $class);	
 
 }
@@ -3717,7 +3717,7 @@ function _HTML($js=[], $id=null, $class=null) {
   **/
 function xHTML($label = NULL) {
 
-  $Html = NEW Merge(); return $Html->xHTML($label);	
+  $Html = NEW MergeBox(); return $Html->xHTML($label);	
 
 }
 
