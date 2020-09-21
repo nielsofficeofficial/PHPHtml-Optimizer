@@ -3,9 +3,9 @@
   namespace PHPHtml\CodeOptimizer;
 
 /**
- * @copyright (c) 2020-2021 PHPHtml-Optimizer v1.1 Cooked by nielsoffice
+ * @copyright (c) 2020-2021 PHPHtml-Optimizer v1.0 Cooked by nielsoffice
  *
- * PHPHtml-Optimizer v1.1 free software: you can redistribute it and/or modify
+ * PHPHtml-Optimizer v1.0 free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
@@ -28,7 +28,7 @@
  * @link      https://github.com/nielsofficeofficial/PHPHtml-Optimizer
  * @link      https://github.com/nielsofficeofficial/PHPHtml-Optimizer/blob/master/README.md
  * @link      https://www.facebook.com/nielsofficeofficial
- * @version   v1.1
+ * @version   v1.0
  *
  * noHTML dynamic  structure 
  * non/WITH CLASS|METHOD|FUNCTION ASSOCIATED  
@@ -649,11 +649,11 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * @static Method Defined single call through param html element no closing tag  
   * Neat and clean noHTML
   * $elem  = 'HTML ELEMENT' ex. p, ul, li etc..
-  * $label = 'MAGIC' output: <p> | _ any tag elements html
-  * $label = 'MAGIC_END' output: </p> | x any tag elements html
+  * $label = 'MERGE' output: <p> | _ any tag elements html
+  * $label = 'MERGE_END' output: </p> | x any tag elements html
   *
   **/
- public function __magicELEMENT($elem, $label=null, $js=[], $id=null, $class=null) {
+ public function __magicMERGE($elem, $label=null, $js=[], $id=null, $class=null) {
  
  return $this->_setReturnELEMENT($this->_setELEMENTS($elem), $_doCONTENT=null, $js, $id, $class, $label); 
 
@@ -3034,7 +3034,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   **/
  private function _elemenHTMLINLINE($elem_val, $elem_key, $_doCONTENT, $js, $id, $class, $label) {
    
-     if ( $label == TRUE && $label === 'MAGIC') {
+     if ( $label == TRUE && $label === 'MERGE') {
      
      # IF_INLINE_ELEMENT_IS_EQUAL_NEW_ELEMENT_AND_TRUE_THE_RETURN_ECHO_STATIC_noHTML
      # RETURN_GET___HTML_METHOD_INCLUDED_ 
@@ -3047,7 +3047,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
      
      return $return_elementINLINE = $this->new_get__HTML($elem_val, $elem_key, $js, $id, $class);  
 
-   } elseif ($label == TRUE && $label === 'MAGIC_END') {
+   } elseif ($label == TRUE && $label === 'MERGE_END') {
      
       # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
       # RETURN_GET___HTML_METHOD_INCLUDED_ 

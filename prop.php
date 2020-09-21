@@ -93,6 +93,18 @@
    */ 
   define('__DIRECTORY_OPTIMIZER_PAGE__','/core/onPage/');
 
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get directory
+   |
+   |
+   |
+   |
+   */ 
   define('__DIRECTORY_OPTIMIZER_CLASS__','/core/onClass/');
 
   /*
@@ -122,6 +134,20 @@
    |
    */ 
   define('__GET_VALIDATE_FILE_PAGE_EXIST__', '/core/onPage/Html.php');  
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get merge
+   |
+   |
+   |
+   |
+   */
+  define('__GET_MERGE_FILES__', '/core/onPage/prop.php');    
   
   /*
    |

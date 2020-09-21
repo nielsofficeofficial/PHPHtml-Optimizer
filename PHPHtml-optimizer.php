@@ -72,23 +72,6 @@ if ( $GetOptimized_ = file_exists(dirname(__FILE__) . '/core/onPage/Html.php' ) 
     	}
     	
     }
-
-   # Since the file is true ? .. 
-  /*
-   |
-   |
-   |
-   |
-   |
-   | get and required_optimizers static on page
-   |
-   |
-   |
-   |
-   */ 
-
-   require_once __GET_FROM_DIR_ROOT__ . __DIRECTORY_OPTIMIZER_PAGE__ . __HTMLOPTIMIZER__ ; 
-
       
    /**
     *
@@ -228,3 +211,20 @@ if ( $GetOptimized_ = file_exists(dirname(__FILE__) . '/core/onPage/Html.php' ) 
 
   }); 
 
+
+   # Since the file is true ? .. 
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get and required_optimizers static on page
+   |
+   |
+   |
+   |
+   */ 
+
+   require_once __GET_FROM_DIR_ROOT__ . __DIRECTORY_OPTIMIZER_PAGE__ . __HTMLOPTIMIZER__ ; 
+   require_once __GET_FROM_DIR_ROOT__ . __GET_MERGE_FILES__;

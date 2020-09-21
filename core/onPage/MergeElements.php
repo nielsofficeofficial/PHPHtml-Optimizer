@@ -41,7 +41,7 @@ $Html = NEW MergeElements();
   * NONE CLOSING TAG INLINE HTML
   *
   **/
-function _HTML($label="INLINE", $elem=null, $js=[], $id=null, $class=null, $assoc=null)  {
+function __HTML($label="INLINE", $elem=null, $js=[], $id=null, $class=null, $assoc=null)  {
 
   /**
    *
@@ -66,10 +66,10 @@ function _HTML($label="INLINE", $elem=null, $js=[], $id=null, $class=null, $asso
   * @since 20.19.2020
   * @category PHPHtml-Merge
   * @ Method Defined ASSOCIATED ELEMENTS  
-  * CLOSING TAG INLINE HTML
+  * WITH CLOSING TAG INLINE HTML
   *
   **/
-function HTML($elem=null, $value=null, $js=[], $id=null, $class=null, $label=null)  {
+function _xHTML($elem=null, $value=null, $js=[], $id=null, $class=null, $label=null)  {
 
   /**
    *
