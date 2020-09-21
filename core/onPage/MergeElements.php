@@ -57,7 +57,7 @@ function __HTML($label="INLINE", $elem=null, $attr=null, $id=null, $class=null, 
    *
    **/ 
   $Html = NEW MergeElements();
-  return $Html->_ELEMENT($label, $elem, $attr=null, $id, $class, $assoc);
+  return $Html->_ELEMENT($label, $elem, $attr, $id, $class, $assoc);
 
 }
 
@@ -85,7 +85,7 @@ function _xHTML($elem=null, $value=null, $attr=null, $id=null, $class=null, $lab
    *
    **/ 
   $Html = NEW MergeElements();
-  return $Html->ELEMENT($elem, $value, $attr=null, $id, $class, $label); 
+  return $Html->ELEMENT($elem, $value, $attr, $id, $class, $label); 
 
 }
 
@@ -113,7 +113,7 @@ function _MERGE($elem=null, $attr=null, $id=null, $class=null) {
    *
    **/ 
   $Html = NEW MergeElements();
-  return $Html->__magicMERGE($elem, 'MERGE', $attr=null, $id, $class);
+  return $Html->__magicMERGE($elem, 'MERGE', $attr, $id, $class);
 
 }
 
