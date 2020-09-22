@@ -146,13 +146,13 @@ html::H1("Hello World",my_htmattr(),'MyID','MyClass','', NULL);
 <h5>Static ELEMENTS and parameters </h5>
 <pre>
 // Associated or simply means return function
-Html::ELEMENT($element=null, $content=null, $attr=null, $id=null, $class=null, $label=null)
+Html::ELEMENT($element=null, $value=null, $attr=null, $id=null, $class=null, $label=null)
 <br />
 // Optional Associated or simply print or return if set as associated function
 Html::_ELEMENT($label=null, $elem=null, $attr=null, $id=null, $class=null, $assoc=null)
 <br />
 // Optional Associated or simply print or return if set as associated function
-Html::H1($content=null, $attr=null, $id=null, $class=null, $label=null, $assoc=null)
+Html::H1($value=null, $attr=null, $id=null, $class=null, $label=null, $assoc=null)
 <br />
 // None or never be Associated or simply print function
 Html::_H1($attr=null, $id=null, $class=null)<br />
