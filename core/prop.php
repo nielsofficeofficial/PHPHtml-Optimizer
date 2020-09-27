@@ -33,14 +33,7 @@
 // Get Error Msg
 const FILE_HANDLER_MSG = 'Directory or files is not exist';
 
-// File handler
-function GetLoadOptimizer_App($file) {
-   
-   return __DIR__ . '/' . $file . __EXTENSION__;
-
-}
-
- /**
+/**
  *
  * @var $path_defined
  * @package cpx_
