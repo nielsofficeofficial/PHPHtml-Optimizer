@@ -30,7 +30,6 @@
  *
  */
 
-
 // Get Error Msg
 const FILE_HANDLER_MSG = 'Directory or files is not exist';
 
