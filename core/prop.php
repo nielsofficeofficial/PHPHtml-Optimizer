@@ -31,10 +31,6 @@
  */
 
 
-// On page
-
-//$GetFile = file_exists(dirname(__FILE__) . '/../prop.php') ? require_once __DIR__ . '/../prop.php' :  print ('Optimizer either Merge Files is not existing!');
-
 // Get Error Msg
 const FILE_HANDLER_MSG = 'Directory or files is not exist';
 
