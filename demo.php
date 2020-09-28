@@ -1,6 +1,6 @@
 <?php 
 
-require_once 'PHPHtml-Optimizer.php';
+require_once __DIR__ . '/PHPHtml-Optimizer.php';
 
  function my_data() {
       
@@ -31,8 +31,14 @@ require_once 'PHPHtml-Optimizer.php';
 #############################################################################################################
  
  # Usage within The CLass
-  $Html = new  \PHPHtml\CodeOptimizer\Html();  // or  USE  \PHPHtml\CodeOptimizer\Html AS MyProjectName; $Project = NEW MyProjectName();
-  echo $Html->H2('Test H2');
+  $Html = new  \PHPHtml\CodeOptimizer\Html();  
+
+  // or  USE  \PHPHtml\CodeOptimizer\Html AS MyProjectName; 
+  // $Project = NEW MyProjectName();
+  
+  echo $Html->H2('Hello World!');
 
 #############################################################################################################
 
+
+ H1('Hello World Merge!');

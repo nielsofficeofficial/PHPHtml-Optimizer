@@ -1,9 +1,9 @@
 <?php 
 
 /**
- * @copyright (c) 2020-2021 PHPHtml-Merge v1.0 Cooked by nielsoffice
+ * @copyright (c) 2020-2021 PHPHtml-Merge v1.2 Cooked by nielsoffice
  *
- * PHPHtml-Merge v1.0 free software: you can redistribute it and/or modify
+ * PHPHtml-Merge v1.2 free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
@@ -26,7 +26,7 @@
  * @link      https://github.com/nielsofficeofficial/PHPHtml-Optimizer
  * @link      https://github.com/nielsofficeofficial/PHPHtml-Optimizer/blob/master/README.md
  * @link      https://www.facebook.com/nielsofficeofficial
- * @version   v1.0
+ * @version   v1.2
  *
  */
 
@@ -147,7 +147,7 @@
    |
    |
    */
-  define('__GET_MERGE_FILES__', '/core/onPage/prop.php');    
+  define('__GET_MERGE_FILES__', '/core/OnPage/prop.php');    
   
   /*
    |
@@ -191,71 +191,22 @@
    */ 
   define('__GET_FROM_DIR_ROOT__', __DIR__ );
   
+  define('__EXTENSION__', '.php');
+
+  define('__GET_STATIC_CLASS_HTML__','/core/onPage/Html.php');
+
+  define('__GET_INSTANTIATE_CLASS_HTML__','/core/onClass/Html.php');  
  
- /**
- *
- * @var $path_defined
- * @package cpx_
- * @since  06.08.2020 
- *
- **/
-function loader_framwork() {
-
-/*
-|
-|
-|
-|
-|  
-| get Project PrefixName
-|
-|
-|
-|
-*/     
-/**
-*@since 06.082020
-**/
- $project_Name   = __GET_LOADER_PROJECT_SUFFIX__;
-
-/*
-|
-|
-|
-|
-|  
-| get Project Class PrefixName
-|
-|
-|
-|
-*/     
-/**
-*@since 06.082020
-**/     
- $project_Folder = __GET_LOADER_CLASS_SUFFIX__;
-
-/*
-|
-|
-|
-|
-|  
-| get commit ferform name
-|
-|
-|
-|
-*/  
- return $framework_prefix 
-
-/**
- *@since 06.082020
- **/ 
+  define('__CHECK_MAIN_MERGE_ON_PAGE__','/../onPage/Html.php');
  
- = "{$project_Name}\\{$project_Folder}\\";
-  
-} 
+  define('__CHECK_MAIN_MERGE_ON_CLASS__','/../onClass/Html.php'); 
 
-// Get Error Msg
-const FILE_HANDLER_MSG = 'Directory or files is not exist';
+  define('__GET_LOAD_MERGE__','/Merge.php' );
+ 
+  define('__GET_LOAD_MERGEBOX__','/MergeBox.php' );
+ 
+  define('__GET_LOAD_MERGEELEMENT__','/MergeElements.php' );
+
+  define('__GET_PROPERTY_ITSELF__','/../../prop.php' );
+
+

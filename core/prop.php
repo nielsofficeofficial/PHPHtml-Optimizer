@@ -1,4 +1,4 @@
- <?php 
+<?php 
 
 /**
  * @copyright (c) 2020-2021 PHPHtml-Merge v1.2 Cooked by nielsoffice
@@ -30,47 +30,83 @@
  *
  */
 
-require_once __DIR__ . '/../../prop.php';
 
-if ( $GetOptimized_ = file_exists(dirname(__FILE__) . __CHECK_MAIN_MERGE_ON_PAGE__ ) &&
-     $GetOptimized_ = file_exists(dirname(__FILE__) . __CHECK_MAIN_MERGE_ON_CLASS__ ) ) {
-     /*
-      |
-      |
-      |
-      |
-      |
-      | Return Merge files
-      |
-      |
-      |
-      |
-      */ 
-      require_once __DIR__ . __GET_LOAD_MERGE__;
-      require_once __DIR__ . __GET_LOAD_MERGEBOX__;
-      require_once __DIR__ . __GET_LOAD_MERGEELEMENT__;          
+// On page
 
-  }  elseif ( (require_once __DIR__ . __GET_PROPERTY_ITSELF__ ) && class_exists('Html')) {
-            /*
-             |
-             |
-             |
-             |
-             |
-             | Perform Error handler 
-             |
-             |
-             |
-             |
-             */ 
-           require_once __DIR__ . __GET_PROPERTY_ITSELF__;            
-           Html::_PERFORM(FILE_HANDLER_MSG);
+//$GetFile = file_exists(dirname(__FILE__) . '/../prop.php') ? require_once __DIR__ . '/../prop.php' :  print ('Optimizer either Merge Files is not existing!');
 
-      } else {
+// Get Error Msg
+const FILE_HANDLER_MSG = 'Directory or files is not exist';
 
-        return false;
-      
-      }
-      
+// File handler
+function GetLoadOptimizer_App($file) {
+   
+   return __DIR__ . '/' . $file . __EXTENSION__;
+
+}
+
+ /**
+ *
+ * @var $path_defined
+ * @package cpx_
+ * @since  06.08.2020 
+ *
+ **/
+function loader_framwork() {
+
+/*
+|
+|
+|
+|
+|  
+| get Project PrefixName
+|
+|
+|
+|
+*/     
+/**
+*@since 06.082020
+**/
+ $project_Name   = __GET_LOADER_PROJECT_SUFFIX__;
+
+/*
+|
+|
+|
+|
+|  
+| get Project Class PrefixName
+|
+|
+|
+|
+*/     
+/**
+*@since 06.082020
+**/     
+ $project_Folder = __GET_LOADER_CLASS_SUFFIX__;
+
+/*
+|
+|
+|
+|
+|  
+| get commit ferform name
+|
+|
+|
+|
+*/  
+ return $framework_prefix 
+
+/**
+ *@since 06.082020
+ **/ 
+ 
+ = "{$project_Name}\\{$project_Folder}\\";
   
+} 
 
