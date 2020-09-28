@@ -191,22 +191,130 @@
    */ 
   define('__GET_FROM_DIR_ROOT__', __DIR__ );
   
+   /*
+   |
+   |
+   |
+   |
+   |
+   | design extension
+   |
+   |
+   |
+   |
+   */ 
   define('__EXTENSION__', '.php');
 
+   /*
+   |
+   |
+   |
+   |
+   |
+   | get root file static HTML
+   |
+   |
+   |
+   |
+   */ 
   define('__GET_STATIC_CLASS_HTML__','/core/onPage/Html.php');
 
+   /*
+   |
+   |
+   |
+   |
+   |
+   | get root file instantiate Html
+   |
+   |
+   |
+   |
+   */ 
   define('__GET_INSTANTIATE_CLASS_HTML__','/core/onClass/Html.php');  
  
+   /*
+   |
+   |
+   |
+   |
+   |
+   | get root file CHECK_MAIN_MERGE_ON_PAGE
+   |
+   |
+   |
+   |
+   */ 
   define('__CHECK_MAIN_MERGE_ON_PAGE__','/../onPage/Html.php');
  
+   /*
+   |
+   |
+   |
+   |
+   |
+   | get root file CHECK_MAIN_MERGE_ON_CLASS
+   |
+   |
+   |
+   |
+   */
   define('__CHECK_MAIN_MERGE_ON_CLASS__','/../onClass/Html.php'); 
 
+   /*
+   |
+   |
+   |
+   |
+   |
+   | get root file GET_LOAD_MERGE
+   |
+   |
+   |
+   |
+   */
   define('__GET_LOAD_MERGE__','/Merge.php' );
  
+   /*
+   |
+   |
+   |
+   |
+   |
+   | get root file GET_LOAD_MERGEBOX
+   |
+   |
+   |
+   |
+   */
   define('__GET_LOAD_MERGEBOX__','/MergeBox.php' );
  
+   /*
+   |
+   |
+   |
+   |
+   |
+   | get root file GET_LOAD_MERGEELEMENT
+   |
+   |
+   |
+   |
+   */
   define('__GET_LOAD_MERGEELEMENT__','/MergeElements.php' );
 
+   /*
+   |
+   |
+   |
+   |
+   |
+   | get root file GET_PROPERTY_ITSELF
+   |
+   |
+   |
+   |
+   */
   define('__GET_PROPERTY_ITSELF__','/../../prop.php' );
 
 
