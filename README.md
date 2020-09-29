@@ -294,6 +294,7 @@ xMERGE($elem=null);
 |:---            |:---            |:---            |:---                           |:---                                  |:--- |
 | `H1()`         | Heading 1      | `_xHTML('H1')` |`__HTML('my_input','INPUT')`   |`_H1()`/`xH1()`                       |`_MERGE('H1')`/`xMERGE('H1')` |
 | `H2()`         | Heading 2      | `_xHTML('H2')` |`__HTML('my_track','track')`   |`_H2()`/`xH2()`                       |`_MERGE('H2')`/`xMERGE('H2')` |
+| ...            | ...            | ...            |...                            |...                                   | loading...                   |
 
 
 <br />
