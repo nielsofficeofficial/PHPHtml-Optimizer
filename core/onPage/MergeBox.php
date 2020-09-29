@@ -31,7 +31,6 @@
  */
 
 USE  \PHPHtml\CodeOptimizer\Html AS MergeBox; 
-$Html = NEW MergeBox();
 
 /**
   *
