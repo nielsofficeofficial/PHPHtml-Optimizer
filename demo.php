@@ -36,7 +36,7 @@ require_once __DIR__ . '/PHPHtml-Optimizer.php';
   // or  USE  \PHPHtml\CodeOptimizer\Html AS MyProjectName; 
   // $Project = NEW MyProjectName();
   
-  echo $Html->H2('Hello World!');
+  $Html->H2('Hello World!');
 
 #############################################################################################################
 

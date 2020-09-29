@@ -175,7 +175,7 @@ if ( $GetOptimized_ = file_exists(dirname(__FILE__) . __GET_STATIC_CLASS_HTML__)
         *@since 09.142020
         **/
     
-        $getClass_ = $root_file . str_replace('\\', '/', $InterconnectedClass_) . '.php';
+        $getClass_ = $root_file . str_replace('\\', '/', $InterconnectedClass_) . __EXTENSION__;
     
         /*
         |
