@@ -118,6 +118,15 @@ USE  \PHPHtml\CodeOptimizer\Html AS MyProjectName;
 $Html = NEW MyProjectName();
 ...
 echo $Html->H2(Hello World');
+# OR Extend Class 
+Class ProgramName extend MyProjectName {
+  
+  public function __construct() {
+   
+   Html::H1('Hello World'); 
+
+  }
+}
 </pre>
 
 <h5>Usage: Static | More Samples with Parameters</h5>
