@@ -123,9 +123,9 @@ Class ProgramName extend MyProjectName {
   
   public function __construct() {
    
-   Html::H1('Hello World'); 
+   parent::H1('Hello World'); 
 
-  }
+   }
 }
 </pre>
 
