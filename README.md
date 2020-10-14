@@ -174,7 +174,7 @@ Class ProgramName extend MyProjectName {
  function my_htmattr() {
     return $sets = [
       $attr_name = ['1','2'],
-      $attr_val  = ['_niel_','_fernandez_'];  
+      $attr_val  = ['_niel_','_fernandez_']  
     ];
  }
  
