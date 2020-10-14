@@ -129,9 +129,9 @@ H1(Html::__magicELSE( FALSE ,'Yes','PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC));
 
 | PARAMETER'S    | Description |
 | ---            | ---         |
-| `METHOD_ASSOC` | Is a Paramenter that will use and position to the very end of function or methods none/Associated |
-| `CLASS_ASSOC`  | Is a Paramenter that will use and position to the very end of function or methods none/Associated |
-| `FUNC_ASSOC`   | Is a Paramenter that will use and position to the very end of function or methods none/Associated |
+| `METHOD_ASSOC` | Is a Paramenter that will use and position to the very end of function or methods Optional Associated |
+| `CLASS_ASSOC`  | Is a Paramenter that will use and position to the very end of function or methods Optional Associated |
+| `FUNC_ASSOC`   | Is a Paramenter that will use and position to the very end of function or methods Optional Associated |
 
 <h5>Append Method Alpha version </h5>
 
