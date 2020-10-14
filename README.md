@@ -137,7 +137,7 @@ H1(Html::__magicELSE( FALSE ,'Yes','PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC));
 
 | Other Method     | Description |
 | ---            | ---         |
-| `__magicELSE`  | This Append Method is alpha version not stable and not recommend to use ``` - (*Not support GLOBAL VARIABLE ! ) ```/ alternative ternary |
+| `__magicELSE`  | This Append Method is alpha version not stable and not recommend to use ``` - ![#f03c15] (*Not support GLOBAL VARIABLE ! ) `#f03c15` ```/ alternative ternary |
 | `__magicIF`    | This Append Method is alpha version not stable and not recommend to use (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
 | `_MERGE`       | This Append Method is alpha version not stable and not recommend to use / it will remove soon |
 | `_PERFORM`     | This Append Method is alpha version not stable and not recommend to use / alternative echo/print |
