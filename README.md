@@ -92,7 +92,7 @@ print $html;
 // Default HTML Procedural:
 if (TRUE) {
 
-  print "< h1 >Default HTML Procedural: YES </ h1> ";
+  print "< h1 >Default HTML Procedural: YES < / h1> ";
 
 } 
 
@@ -109,11 +109,11 @@ H1(Html::__magicIF( TRUE ,'PHPHtml-Optimizer/Merge: Yes', FUNC_ASSOC));
 // Default HTML Procedural:
 if (TRUE) {
 
-  print "< h1 > Default HTML Procedural:  YES </ h1>";
+  print "< h1 > Default HTML Procedural:  YES < / h1>";
 
 } else {
    
-  print "< h1 >Default HTML Procedural: NO </ h1>";
+  print "< h1 >Default HTML Procedural: NO < / h1>";
 
 }
 
