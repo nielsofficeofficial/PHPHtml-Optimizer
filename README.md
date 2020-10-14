@@ -139,7 +139,6 @@ H1(Html::__magicELSE( FALSE ,'Yes','PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC));
 | ---            | ---         |
 | `__magicELSE`  | This Append Method is alpha version not stable and not recommend to use / alternative ternary |
 | `__magicIF`    | This Append Method is alpha version not stable and not recommend to use / alternative ternary |
-| `__magicELEMENT`   | This Append Method is alpha version not stable and not recommend to use / it will remove soon |
 | `_MERGE`       | This Append Method is alpha version not stable and not recommend to use / it will remove soon |
 | `_PERFORM`     | This Append Method is alpha version not stable and not recommend to use / alternative echo/print |
 | `Html::BREAK()`   | Break tag |
