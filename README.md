@@ -68,7 +68,7 @@ print $html;
 ?>
 </pre>
 
-<h4>Sample Code | PHPHtml-Optimizer /Procedural</h4>
+<h4>Sample Code | PHPHtml-Optimizer/Procedural</h4>
 <pre>
 <?php 
 
@@ -85,33 +85,37 @@ print $html;
 ?>
 </pre>
 
+<h4>Sample Code | PHP with HTML Default (IF Statement)/Procedural</h4>
 <pre>
 // Default HTML Procedural:
 if (TRUE) {
 
-  print "< h1 >Default HTML Procedural: YES </ h1 > ";
+  print "< h1 >Default HTML Procedural: YES <\/ h1 > ";
 
 } 
 </pre>
 
+<h4>Sample Code | PHPHtml-Optimizer/Procedural</h4>
 <pre>
 // PHPHtml-Optimizer/Merge:
 H1(Html::__magicIF( TRUE ,'PHPHtml-Optimizer/Merge: Yes', FUNC_ASSOC));
 </pre>
 
+<h4>Sample Code | PHP with HTML Default (IF ELSE Statement)/Procedural</h4>
 <pre>
 // Default HTML Procedural:
 if (TRUE) {
 
-  print "< h1 >Default HTML Procedural:  YES </ h1 >";
+  print "< h1 >Default HTML Procedural:  YES <\/ h1 >";
 
 } else {
    
-   print "< h1 >Default HTML Procedural: NO </ h1 >";
+   print "< h1 >Default HTML Procedural: NO <\/ h1 >";
 
 }
 </pre>
 
+<h4>Sample Code | PHPHtml-Optimizer/Procedural</h4>
 <pre>
 // PHPHtml-Optimizer/Merge:
 H1(Html::__magicELSE( FALSE ,'Yes','PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC));
