@@ -141,9 +141,9 @@ H1(Html::__magicELSE( FALSE ,'Yes','PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC));
 | `__magicIF`    | This Append Method is alpha version not stable and not recommend to use (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
 | `_MERGE`       | This Append Method is alpha version not stable and not recommend to use / it will remove soon |
 | `_PERFORM`     | This Append Method is alpha version not stable and not recommend to use / alternative echo/print |
-| `Html::BREAK()`   | Break tag |
-| `Html::INLINE()`| Horizontal tag |
-| `Html::STRING()` | print without/anyElements or tag |
+| `Html::BREAK()`   | Break tag ( *Not support custom html attr ! ) Optional Associated |
+| `Html::INLINE()`| Horizontal tag ( *Not support custom html attr ! ) Optional Associated |
+| `Html::STRING()` | print without/anyElements or tag ( *Not support custom html attr ! ) Optional Associated |
 
 
 <h5>Usage: withinClass | Instantiate Class Methods</h5>
