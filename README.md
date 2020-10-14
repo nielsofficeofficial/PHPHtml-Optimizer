@@ -85,6 +85,39 @@ print $html;
 ?>
 </pre>
 
+<pre>
+// Default HTML Procedural:
+if (TRUE) {
+
+  echo "<h1>Default HTML Procedural: YES </h1>";
+
+} 
+</pre>
+
+<pre>
+// PHPHtml-Optimizer/Merge:
+H1(Html::__magicIF( TRUE ,'PHPHtml-Optimizer/Merge: Yes', FUNC_ASSOC));
+</pre>
+
+<pre>
+// Default HTML Procedural:
+if (TRUE) {
+
+  echo "<h1>Default HTML Procedural:  YES </h1>";
+
+} else {
+   
+   echo "<h1>Default HTML Procedural: NO </h1>";
+
+}
+</pre>
+
+<pre>
+// PHPHtml-Optimizer/Merge:
+H1(Html::__magicELSE( FALSE ,'Yes','PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC));
+</pre>
+
+
 <h5>Understanding Class Method Parameters</h5>
 
 | PARAMETER'S    | Description |
