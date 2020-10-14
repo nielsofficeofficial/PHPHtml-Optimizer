@@ -694,7 +694,7 @@ static protected $hextend = [];
   **/
   static public function __magicIF($condition=null, $if_result=null, $assoc=null) { 
 
-  return self::return_method_concat_else( $condition,$if_result,$assoc); 
+  return self::return_method_concat_else( $condition,$if_result,null,$assoc); 
 
 }
 

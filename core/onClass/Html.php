@@ -685,7 +685,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   **/
   public function __magicIF($condition=null, $if_result=null, $assoc=null) { 
 
-  return $this->return_method_concat_else( $condition,$if_result,$assoc); 
+  return $this->return_method_concat_else( $condition,$if_result,null,$assoc); 
 
 }
 
