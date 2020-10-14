@@ -107,7 +107,7 @@ H1(Html::__magicIF( TRUE ,'PHPHtml-Optimizer/Merge: Yes', FUNC_ASSOC));
 <pre>
 
 // Default HTML Procedural:
-if (TRUE) {
+if (FLASE) {
 
   print "< h1 > Default HTML Procedural:  YES < / h1>";
 
