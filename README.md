@@ -221,7 +221,7 @@ USE \PHPHtml\CodeOptimizer\onPage\Html;
 
 // Static Alias
 USE \PHPHtml\CodeOptimizer\onPage\Html AS MyHTML;
-Html::h1('Static');
+MyHTML::h1('Static');
 
 // Instantiate Default
 $html = NEW \PHPHtml\CodeOptimizer\onClass\Html();
