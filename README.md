@@ -141,7 +141,7 @@ H1(Html::__magicELSE( FALSE ,'Yes','PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC));
 
 }
 
-Html::_ELEMENT('Profile','link',getMe('src','/../profile', __getPHP__));
+Html::_ELEMENT('css','link',getMe('src','/../profile', __getCSS__));
 
 </pre>
 
