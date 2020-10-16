@@ -4107,6 +4107,7 @@ static protected function Validate_extension_assets_files($argu = null) {
 
    } else {     
      
+     self::HTML_PERFORM('Argument Must be exact look like: __SetEXTENSION__');     
      exit();
 
    } 
