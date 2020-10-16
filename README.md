@@ -26,7 +26,7 @@ Html::H1('Hello World!');
 require_once __DIR__ . '/library/PHPHtml-Optimizer/PHPHtml-Optimizer.php';
 
 // do HTML 
-Html::H1('Hello World!');
+Html::H1('Hello World!'); 
 
 // Within the Class
 $Html = new  \PHPHtml\CodeOptimizer\OnClass\Html();  
