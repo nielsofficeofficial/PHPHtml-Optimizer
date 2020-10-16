@@ -197,14 +197,14 @@ $Html = new  \PHPHtml\CodeOptimizer\OnClass\Html();
 ...
 echo $Html->H2('Hello World!');
 
-# OR
+#OR
 USE  \PHPHtml\CodeOptimizer\OnClass\Html AS MyProjectName; 
 ...
 $Html = NEW MyProjectName();
 ...
 echo $Html->H2(Hello World');
 
-# OR Extend Class 
+#OR Extend Class 
 Class ProgramName extend MyProjectName {
   
   public function __construct() {
@@ -214,7 +214,7 @@ Class ProgramName extend MyProjectName {
    }
 }
 
-# OR 
+#OR 
 
 // Static Default
 USE \PHPHtml\CodeOptimizer\onPage\Html;
