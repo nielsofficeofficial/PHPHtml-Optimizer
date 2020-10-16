@@ -183,6 +183,8 @@ __HTML('Avatar','img',getMeIMG('src','/../'.$name.''));
 | ---            | ---         |
 | `__magicELSE`  | This Append Method is alpha version not stable and not recommend to use (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
 | `__magicIF`    | This Append Method is alpha version not stable and not recommend to use (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
+| `SetExtension`       | $extension = Html::SetExtension($argu) - use this to assign extension or format to the file such .php/.html/.css etc.. |
+| `SetImageExtension`  | $extension = Html::SetImageExtension($argu) - use this to assign extension or format to the file such .jpg/.png/.gif etc.. |
 | `_MERGE`       | This Append Method is alpha version not stable and not recommend to use / it will remove soon |
 | `_PERFORM`     | This Append Method is alpha version not stable and not recommend to use / alternative echo/print |
 | `Html::BREAK()`   | Break tag ( *Not support custom html attr ! ) Optional Associated |
