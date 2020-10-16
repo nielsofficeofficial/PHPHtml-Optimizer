@@ -1,11 +1,11 @@
 <?php 
 
-  namespace PHPHtml\CodeOptimizer;
+  namespace PHPHtml\CodeOptimizer\onClass;
 
 /**
- * @copyright (c) 2020-2021 PHPHtml-Optimizer v1.2 Cooked by nielsoffice
+ * @copyright (c) 2020-2021 PHPHtml-Optimizer v1.3 Cooked by nielsoffice
  *
- * PHPHtml-Optimizer v1.2 free software: you can redistribute it and/or modify
+ * PHPHtml-Optimizer v1.3 free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
@@ -28,7 +28,7 @@
  * @link      https://github.com/nielsofficeofficial/PHPHtml-Optimizer
  * @link      https://github.com/nielsofficeofficial/PHPHtml-Optimizer/blob/master/README.md
  * @link      https://www.facebook.com/nielsofficeofficial
- * @version   v1.2
+ * @version   v1.3
  *
  * noHTML dynamic  structure 
  * non/WITH CLASS|METHOD|FUNCTION ASSOCIATED  
@@ -525,7 +525,159 @@ class Html {
   * defined Assigned associsated dstring within the function/Class/Method
   * minify optimized html attribute 
   **/
- CONST METHOD_ASSOC     = 'METHOD_ASSOC';
+ CONST METHOD_ASSOC      = 'METHOD_ASSOC';
+
+/**
+  * @var @property @static CONST | __SetPHP__  
+  * @since 16.10.2020
+  * defined Assigned Asset Extenstion File as .PHP
+  **/
+ CONST __SetPHP__       = '__SetPHP__';
+ 
+/**
+  * @var @property @static CONST | __SetHTML__ 
+  * @since 16.10.2020
+  * defined Assigned Asset Extenstion File as .HTML
+  **/ 
+ CONST __SetHTML__      = '__SetHTML__';
+
+/**
+  * @var @property @static CONST | __SetCSS__  
+  * @since 16.10.2020
+  * defined Assigned Asset Extenstion File as .CSS
+  **/ 
+ CONST __SetCSS__       = '__SetCSS__'; 
+
+/**
+  * @var @property @static CONST | __SetJS__  
+  * @since 16.10.2020
+  * defined Assigned Asset Extenstion File as .JS
+  **/ 
+ CONST __SetJS__        = '__SetJS__'; 
+
+/**
+  * @var @property @static CONST | __SetJPG__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .JPG
+  **/ 
+ CONST __SetJPG__       = '__SetJPG__';
+
+/**
+  * @var @property @static CONST | __SetJPEG__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .JPEG
+  **/ 
+ CONST __SetJPEG__      = '__SetJPEG__';   
+
+/**
+  * @var @property @static CONST | __SetPNG__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .JPEG
+  **/  
+ CONST __SetPNG__       = '__SetPNG_';
+
+/**
+  * @var @property @static CONST | __SetGIF__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .GIF
+  **/  
+ CONST __SetGIF__       = '__SetGIF__'; 
+
+/**
+  * @var @property @static CONST | __SetBMP__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .BMP
+  **/  
+ CONST __SetBMP__       = '__SetBMP__';
+
+/**
+  * @var @property @static CONST | __SetTEX__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .TEX
+  **/  
+ CONST __SetTEX__       = '__SetTEX__';
+
+/**
+  * @var @property @static CONST | __SetXLS__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .XLS
+  **/  
+ CONST __SetXLS__       = '__SetXLS__'; 
+
+/**
+  * @var @property @static CONST | __SetXLSX__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .XLSX_
+  **/ 
+ CONST __SetXLSX__      = '__SetXLSX__';  
+
+/**
+  * @var @property @static CONST | __SetDOC__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .DOC
+  **/ 
+ CONST __SetDOC__       = '__SetDOC__';
+
+/**
+  * @var @property @static CONST | __SetDOCX__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .DOCX
+  **/ 
+ CONST __SetDOCX__      = '__SetDOCX__';    
+
+/**
+  * @var @property @static CONST | __SetPPT__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .PPT
+  **/ 
+ CONST __SetPPT__       = '__SetPPT__';
+
+/**
+  * @var @property @static CONST | __SetPPTX__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .PPTX
+  **/ 
+ CONST __SetPPTX__      = '__SetPPTX__';
+
+/**
+  * @var @property @static CONST | __SetODT__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .ODT
+  **/ 
+ CONST __SetODT__       = '__SetODT__'; 
+
+/**
+  * @var @property @static CONST | __SetTXT__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as ._TXT
+  **/ 
+ CONST __SetTXT__       = '__SetTXT__';  
+
+/**
+  * @var @property @static CONST | __SetRTF__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as ._RTF
+  **/ 
+ CONST __SetRTF__       = '__SetRTF__'; 
+
+/**
+  * @var @property Array of data 
+  * defined CONST ARRAY EXNTION FILES
+  *
+  * @var @__getAssEXTENSION__ 
+  *
+  **/
+ CONST __getAssEXTENSION__     = ['php','html','css','js']; 
+
+/**
+  * @var @property Array of data 
+  * defined CONST ARRAY EXNTION IMAGES
+  *
+  * @var @__getAssImgEXTENSION__ 
+  *
+  **/
+ CONST __getAssImgEXTENSION__  = ['jpg','jpeg','png','gif','bmp','tex','xls','xlsx','doc','docx','ppt','pptx','odt','txt','rtf']; 
+
 
 /**
   * @var @property Array of data 
@@ -661,6 +813,41 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
 
 /**
   *
+  * @method public Method Set File Image Extension within custom att HTML 
+  * Defined File Image Extension | __getAssImgEXTENSION__
+  * $extension = Html::SetImageExtension($argu); 
+  * Build Beautiful and Maintainable
+  *
+  **/  
+  public function SetImageExtension($argu = null) { return self::Validate_extension_file_Img($argu); } 
+
+/**
+  *
+  * @method public Method Set File Asstes Extension within custom att HTML 
+  * Defined File Image Extension | __getAssEXTENSION__
+  * $extension = Html::SetExtension($argu); 
+  
+    function getMeIMG($src,$path, $argu=null) 
+    {
+
+       $extension = Html::SetImageExtension($argu);
+        
+       return $sets = [
+         
+           $attr_name = [$src],
+           $attr_val  = [$path.$extension]
+        
+        ];
+
+    }
+
+  * Build Beautiful and Maintainable
+  *
+  **/  
+  public function SetExtension($argu = null) { return self::Validate_extension_assets_files($argu); }
+
+/**
+  *
   * @method public function __magicELEMENT noHTML
   * @static Method Defined single call through param html element no closing tag  
   * Neat and clean noHTML
@@ -685,7 +872,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   **/
   public function __magicIF($condition=null, $if_result=null, $assoc=null) { 
 
-  return $this->return_method_concat_else( $condition,$if_result,null,$assoc); 
+  return $this->return_method_concat_else( $condition,$if_result,$assoc); 
 
 }
 
@@ -3895,6 +4082,120 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
 
 /**
   *
+  * @method protected function Validate_extension_assets_files
+  * @static @protected Method Defined Asstes Extension such as .js .css .html .php by default
+  *
+  **/
+static protected function Validate_extension_assets_files($argu = null) {
+   
+
+  if ($argu == __getPHP__ || $argu == NULL||  $argu == '' ) {
+      
+    $extension     = '.'.self::__getAssEXTENSION__[0];
+     
+   } elseif ($argu == __getHTML__ ) {
+     
+     $extension    = '.'.self::__getAssEXTENSION__[1];
+
+   } elseif ($argu == __getCSS__ ) {
+
+     $extension    = '.'.self::__getAssEXTENSION__[2];
+     
+   } elseif ($argu == __getJS__ ) {
+     
+     $extension    =  '.'.self::__getAssEXTENSION__[3];
+
+   } else {     
+     
+     exit();
+
+   } 
+
+   return $extension;
+
+}
+
+/**
+  *
+  * @method protected function Validate_extension_file_Img
+  * @static @protected Method Defined IMAGE FILE EXTENSION
+  *
+  **/
+static protected function Validate_extension_file_Img($argu = null) {
+
+  if ($argu === __SetJPG__ || $argu === NULL||  $argu == '' ) {
+      
+    $extension     = '.'.self::__getAssImgEXTENSION__[0];
+     
+   } elseif ($argu === __SetJPEG__ ) {
+     
+     $extension    = '.'.self::__getAssImgEXTENSION__[1];
+
+   } elseif ($argu === __SetPNG__ ) {
+
+     $extension    = '.'.self::__getAssImgEXTENSION__[2];
+     
+   } elseif ($argu === __SetGIF__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[3];
+
+   } elseif ($argu === __SetBMP__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[4];
+
+   } elseif ($argu === __SetTEX__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[5];
+
+   } elseif ($argu === __SetXLS__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[6];
+
+   } elseif ($argu === __SetXLSX__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[7];
+
+   } elseif ($argu === __SetDOC__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[8];
+
+   } elseif ($argu === __SetDOCX__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[9];
+
+   } elseif ($argu === __SetPPT__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[10];
+
+   } elseif ($argu === __SetPPTX__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[11];
+
+   } elseif ($argu === __SetODT__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[12];
+
+   } elseif ($argu === __SetTXT__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[13];
+
+   } elseif ($argu === __SetRTF__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[14];
+
+   } else {
+      
+     self::HTML_PERFORM('Argument Must be exact look like: __SetEXTENSION__');
+     exit();
+
+   }
+
+   return $extension;
+
+}  
+
+/**
+  *
   * @method private function noHTML
   * @ @private Method Defined HTML FOUNDATION _getBREAK
   *
@@ -4252,7 +4553,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       # CHECK_IF_P_PARA_PARANGRAPH_IS_TRUE_THEN_RETURN_ELEMENTS_ARRAY
       # IF_IT_IS_TRUE_THE_EXECUTE_ELEMENT_ACCORDING_TO_PARAM_SET
  
-   if ($elem === 'p' || $elem === 'P' || $elem === 'parangrap' || $elem === 'PARANGRAP' || $elem === 'para' || $elem === 'PARA' ) {
+   if ( $elem === 'p' || $elem === 'P' || $elem === 'parangrap' || $elem === 'PARANGRAP' || $elem === 'para' || $elem === 'PARA' ) {
        
      /**
        *
@@ -4265,7 +4566,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
        return $elem = 'p';
     
-    } elseif ($elem === 'div' || $elem === 'DIV') {
+    } elseif ( $elem === 'div' || $elem === 'DIV') {
 
      /**
        *
@@ -4278,7 +4579,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'div'; 
     
-    } elseif ($elem === 'h1'  || $elem === 'H1') {
+    } elseif ( $elem === 'h1'  || $elem === 'H1') {
 
      /**
        *
@@ -4291,7 +4592,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'h1';    
     
-    } elseif ($elem === 'h2'  || $elem === 'H2' ) {
+    } elseif ( $elem === 'h2'  || $elem === 'H2' ) {
 
      /**
        *
@@ -4304,7 +4605,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'h2';  
     
-    } elseif ($elem === 'h3'  || $elem === 'H3' ) {
+    } elseif ( $elem === 'h3'  || $elem === 'H3' ) {
 
      /**
        *
@@ -4317,7 +4618,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'h3';
     
-    } elseif ($elem === 'h4'  || $elem === 'H4' ) {
+    } elseif ( $elem === 'h4'  || $elem === 'H4' ) {
     
      /**
        *
@@ -4330,7 +4631,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'h4';
     
-    } elseif ($elem === 'h5'  || $elem === 'H5' ) {
+    } elseif ( $elem === 'h5'  || $elem === 'H5' ) {
 
      /**
        *
@@ -4343,7 +4644,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'h5';
     
-    } elseif ($elem === 'h6'  || $elem === 'H6' ) {
+    } elseif ( $elem === 'h6'  || $elem === 'H6' ) {
 
      /**
        *
@@ -4356,7 +4657,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'h6';
     
-    } elseif ($elem === 'button' || $elem === 'BUTTON' ) {
+    } elseif ( $elem === 'button' || $elem === 'BUTTON' ) {
 
      /**
        *
@@ -4369,7 +4670,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'button';
     
-    } elseif ($elem === 'a' || $elem === 'A' || $elem == 'LINK' || $elem === 'hyperlink' || $elem === 'HYPERLINK') {
+    } elseif ( $elem === 'a' || $elem === 'A' || $elem == 'LINK' || $elem === 'hyperlink' || $elem === 'HYPERLINK') {
 
      /**
        *
@@ -4382,7 +4683,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'a';
     
-    } elseif ($elem === 'iframe' || $elem === 'IFRAME' ) {
+    } elseif ( $elem === 'iframe' || $elem === 'IFRAME' ) {
 
      /**
        *
@@ -4395,7 +4696,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'iframe';
     
-    } elseif ($elem === 'main'   || $elem === 'MAIN' ) {
+    } elseif ( $elem === 'main'   || $elem === 'MAIN' ) {
 
      /**
        *
@@ -4408,7 +4709,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'main';
     
-    } elseif ($elem === 'nav'    || $elem === 'NAV' || $elem === 'NAVIGATION' ) {
+    } elseif ( $elem === 'nav'    || $elem === 'NAV' || $elem === 'NAVIGATION' ) {
 
      /**
        *
@@ -4421,7 +4722,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'nav';
     
-    } elseif ($elem === 'select' || $elem === 'SELECT' ) {
+    } elseif ( $elem === 'select' || $elem === 'SELECT' ) {
 
      /**
        *
@@ -4434,7 +4735,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'select';
     
-    } elseif ($elem === 'form'   || $elem === 'FORM' ) {
+    } elseif ( $elem === 'form'   || $elem === 'FORM' ) {
 
      /**
        *
@@ -4447,7 +4748,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'form';
     
-    } elseif ($elem === 'picture'  || $elem === 'PICTURE' ) {
+    } elseif ( $elem === 'picture'  || $elem === 'PICTURE' ) {
 
      /**
        *
@@ -4460,7 +4761,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'picture';
     
-    } elseif ($elem === 'section'  || $elem === 'SECTION' ) {
+    } elseif ( $elem === 'section'  || $elem === 'SECTION' ) {
 
      /**
        *
@@ -4473,7 +4774,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'section';
     
-    } elseif ($elem === 'textarea' || $elem === 'TEXTAREA' ) {
+    } elseif ( $elem === 'textarea' || $elem === 'TEXTAREA' ) {
 
      /**
        *
@@ -4486,7 +4787,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'textarea';
     
-    } elseif ($elem === 'audio'    || $elem === 'AUDIO' ) {
+    } elseif ( $elem === 'audio'    || $elem === 'AUDIO' ) {
 
      /**
        *
@@ -4499,7 +4800,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'audio';
     
-    } elseif ($elem === 'video' || $elem === 'VIDEO' ) {
+    } elseif ( $elem === 'video' || $elem === 'VIDEO' ) {
 
      /**
        *
@@ -4512,7 +4813,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'video';
     
-    } elseif ($elem === 'address'  || $elem === 'ADDRESS' ) {
+    } elseif ( $elem === 'address'  || $elem === 'ADDRESS' ) {
 
      /**
        *
@@ -4525,7 +4826,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'address';
     
-    } elseif ($elem === 'colgroup' || $elem === 'COLGROUP' ) {
+    } elseif ( $elem === 'colgroup' || $elem === 'COLGROUP' ) {
 
      /**
        *
@@ -4538,7 +4839,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'colgroup';
     
-    } elseif ($elem === 'bdi'      || $elem === 'BDI' ) {
+    } elseif ( $elem === 'bdi'      || $elem === 'BDI' ) {
 
      /**
        *
@@ -4551,7 +4852,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'bdi';
     
-    } elseif ($elem === 'bdo'        || $elem === 'BDO' ) {
+    } elseif ( $elem === 'bdo'        || $elem === 'BDO' ) {
 
      /**
        *
@@ -4564,7 +4865,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'bdo';
     
-    } elseif ($elem === 'blockquote' || $elem === 'BLOCKQUOTE' ) {
+    } elseif ( $elem === 'blockquote' || $elem === 'BLOCKQUOTE' ) {
 
      /**
        *
@@ -4577,7 +4878,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'blockquote';
     
-    } elseif ($elem === 'caption'    || $elem === 'CAPTION' ) {
+    } elseif ( $elem === 'caption'    || $elem === 'CAPTION' ) {
 
      /**
        *
@@ -4590,7 +4891,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'caption';
     
-    } elseif ($elem === 'label'      || $elem === 'LABEL' ) {
+    } elseif ( $elem === 'label'      || $elem === 'LABEL' ) {
 
      /**
        *
@@ -4603,7 +4904,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'label';
     
-    } elseif ($elem === 'datalist'   || $elem === 'DATALIST' ) {
+    } elseif ( $elem === 'datalist'   || $elem === 'DATALIST' ) {
 
      /**
        *
@@ -4616,7 +4917,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'datalist';
     
-    } elseif ($elem === 'details'    || $elem === 'DETAILS' ) {
+    } elseif ( $elem === 'details'    || $elem === 'DETAILS' ) {
 
      /**
        *
@@ -4629,7 +4930,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'details';
     
-    } elseif ($elem === 'summary'    || $elem === 'SUMMARY' ) {
+    } elseif ( $elem === 'summary'    || $elem === 'SUMMARY' ) {
 
      /**
        *
@@ -4642,7 +4943,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'summary';
     
-    } elseif ($elem === 'dialog'     || $elem === 'DIALOG' ) {
+    } elseif ( $elem === 'dialog'     || $elem === 'DIALOG' ) {
 
      /**
        *
@@ -4655,7 +4956,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'dialog';
     
-    } elseif ($elem === 'option'     || $elem === 'OPTION' ) {
+    } elseif ( $elem === 'option'     || $elem === 'OPTION' ) {
 
      /**
        *
@@ -4668,7 +4969,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'option';
     
-    } elseif ($elem === 'figure'     || $elem === 'FIGURE' ) {
+    } elseif ( $elem === 'figure'     || $elem === 'FIGURE' ) {
 
      /**
        *
@@ -4681,7 +4982,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'figure';
     
-    } elseif ($elem === 'figcaption' || $elem === 'FIGCAPTION' ) {
+    } elseif ( $elem === 'figcaption' || $elem === 'FIGCAPTION' ) {
 
      /**
        *
@@ -4694,7 +4995,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'figcaption';
     
-    } elseif ($elem === 'meter'      || $elem === 'METER' ) {
+    } elseif ( $elem === 'meter'      || $elem === 'METER' ) {
 
      /**
        *
@@ -4707,7 +5008,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'meter';
     
-    } elseif ($elem === 'object'     || $elem === 'OBJECT' ) {
+    } elseif ( $elem === 'object'     || $elem === 'OBJECT' ) {
 
      /**
        *
@@ -4720,7 +5021,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'object';
     
-    } elseif ($elem === 'optgroup'   || $elem === 'OPTGROUP' ) {
+    } elseif ( $elem === 'optgroup'   || $elem === 'OPTGROUP' ) {
 
      /**
        *
@@ -4733,7 +5034,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'optgroup';
     
-    } elseif ($elem === 'output'     || $elem === 'OUTPUT' ) {
+    } elseif ( $elem === 'output'     || $elem === 'OUTPUT' ) {
 
      /**
        *
@@ -4746,7 +5047,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'output';
     
-    } elseif ($elem === 'progress'   || $elem === 'PROGRESS' ) {
+    } elseif ( $elem === 'progress'   || $elem === 'PROGRESS' ) {
 
      /**
        *
@@ -4759,7 +5060,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'progress';
     
-    } elseif ($elem === 'svg'        || $elem === 'SVG' ) {
+    } elseif ( $elem === 'svg'        || $elem === 'SVG' ) {
 
      /**
        *
@@ -4772,7 +5073,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'svg';
     
-    } elseif ($elem === 'template'   || $elem === 'TEMPLATE' ) {
+    } elseif ( $elem === 'template'   || $elem === 'TEMPLATE' ) {
 
      /**
        *
@@ -4785,7 +5086,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'template';
     
-    } elseif ($elem === 'time'       || $elem === 'TIME' ) {
+    } elseif ( $elem === 'time'       || $elem === 'TIME' ) {
 
      /**
        *
@@ -4798,7 +5099,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'time';
     
-    } elseif ($elem === 'var'        || $elem === 'VAR' ) {
+    } elseif ( $elem === 'var'        || $elem === 'VAR' ) {
 
      /**
        *
@@ -4811,7 +5112,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'var';
     
-    } elseif ($elem === 'ul'         || $elem === 'UL' ) {
+    } elseif ( $elem === 'ul'         || $elem === 'UL' ) {
 
      /**
        *
@@ -4824,7 +5125,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'ul';  
     
-    } elseif ($elem === 'ol'         || $elem === 'OL' ) {
+    } elseif ( $elem === 'ol'         || $elem === 'OL' ) {
 
      /**
        *
@@ -4837,7 +5138,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'ol';
     
-    } elseif ($elem === 'li'         || $elem === 'LI' ) {
+    } elseif ( $elem === 'li'         || $elem === 'LI' ) {
 
      /**
        *
@@ -4850,7 +5151,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'li';
     
-    } elseif ($elem === 'table'      || $elem === 'TABLE' ) {
+    } elseif ( $elem === 'table'      || $elem === 'TABLE' ) {
 
      /**
        *
@@ -4863,7 +5164,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'table';
     
-    } elseif ($elem === 'tr'         || $elem === 'TR' ) {
+    } elseif ( $elem === 'tr'         || $elem === 'TR' ) {
 
      /**
        *
@@ -4876,7 +5177,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'tr';
     
-    } elseif ($elem === 'td'         || $elem === 'TD' ) {
+    } elseif ( $elem === 'td'         || $elem === 'TD' ) {
 
      /**
        *
@@ -4889,7 +5190,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'td';
     
-    } elseif ($elem === 'th'         || $elem === 'TH' ) {
+    } elseif ( $elem === 'th'         || $elem === 'TH' ) {
 
      /**
        *
@@ -4902,7 +5203,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'th';
     
-    } elseif ($elem === 'legend'     || $elem === 'LEGEND' ) {
+    } elseif ( $elem === 'legend'     || $elem === 'LEGEND' ) {
 
      /**
        *
@@ -4915,7 +5216,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'legend';
     
-    } elseif ($elem === 'fieldset'   || $elem === 'FIELDSET' ) {
+    } elseif ( $elem === 'fieldset'   || $elem === 'FIELDSET' ) {
 
      /**
        *
@@ -4928,7 +5229,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'fieldset';
     
-    } elseif ($elem === 'tbody'      || $elem === 'TBODY' ) {
+    } elseif ( $elem === 'tbody'      || $elem === 'TBODY' ) {
 
      /**
        *
@@ -4941,7 +5242,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'tbody';
     
-    } elseif ($elem === 'tfoot'      || $elem === 'TFOOT' ) {
+    } elseif ( $elem === 'tfoot'      || $elem === 'TFOOT' ) {
 
      /**
        *
@@ -4954,7 +5255,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'tfoot';
     
-    } elseif ($elem === 'thead'      || $elem === 'THEAD' ) {
+    } elseif ( $elem === 'thead'      || $elem === 'THEAD' ) {
 
      /**
        *
@@ -4967,7 +5268,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'thead';
     
-    } elseif ($elem === 'span'       || $elem === 'SPAN' ) {
+    } elseif ( $elem === 'span'       || $elem === 'SPAN' ) {
 
      /**
        *
@@ -4980,7 +5281,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'span';
     
-    } elseif ($elem === 'em'       || $elem === 'EM' ) {
+    } elseif ( $elem === 'em'       || $elem === 'EM' ) {
 
      /**
        *
@@ -4993,7 +5294,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'em';
     
-    } elseif ($elem === 'b'        || $elem === 'B' || $elem === 'BOLD' ) {
+    } elseif ( $elem === 'b'        || $elem === 'B' || $elem === 'BOLD' ) {
 
      /**
        *
@@ -5006,7 +5307,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'b';
     
-    } elseif ($elem === 'i'        || $elem === 'I' || $elem === 'ITALIC' ) {
+    } elseif ( $elem === 'i'        || $elem === 'I' || $elem === 'ITALIC' ) {
 
      /**
        *
@@ -5019,7 +5320,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'i';
     
-    } elseif ($elem === 'small'      || $elem === 'SMALL' ) {
+    } elseif ( $elem === 'small'      || $elem === 'SMALL' ) {
 
      /**
        *
@@ -5032,7 +5333,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'small';
     
-    } elseif ($elem === 'strike'     || $elem === 'STRIKE' ) {
+    } elseif ( $elem === 'strike'     || $elem === 'STRIKE' ) {
 
      /**
        *
@@ -5045,7 +5346,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'strike';
     
-    } elseif ($elem === 'marquee'   || $elem === 'MARQUEE' ) {
+    } elseif ( $elem === 'marquee'   || $elem === 'MARQUEE' ) {
 
      /**
        *
@@ -5058,7 +5359,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'marquee';
     
-    } elseif ($elem === 'center'    || $elem === 'CENTER' ) {
+    } elseif ( $elem === 'center'    || $elem === 'CENTER' ) {
 
      /**
        *
@@ -5071,7 +5372,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'center';
     
-    } elseif ($elem === 'code'      || $elem === 'CODE' ) {
+    } elseif ( $elem === 'code'      || $elem === 'CODE' ) {
 
      /**
        *
@@ -5084,7 +5385,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'code';
     
-    } elseif ($elem === 'abbr'      || $elem === 'ABBR' ) {
+    } elseif ( $elem === 'abbr'      || $elem === 'ABBR' ) {
 
      /**
        *
@@ -5097,7 +5398,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'abbr';
     
-    } elseif ($elem === 'map'       || $elem === 'MAP' ) {
+    } elseif ( $elem === 'map'       || $elem === 'MAP' ) {
 
      /**
        *
@@ -5110,7 +5411,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'map';
     
-    } elseif ($elem === 'canvas'    || $elem === 'CANVAS' ) {
+    } elseif ( $elem === 'canvas'    || $elem === 'CANVAS' ) {
 
      /**
        *
@@ -5123,7 +5424,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'canvas';
     
-    } elseif ($elem === 'cite'      || $elem === 'CITE' ) {
+    } elseif ( $elem === 'cite'      || $elem === 'CITE' ) {
 
      /**
        *
@@ -5136,7 +5437,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'cite';
     
-    } elseif ($elem === 'data'      || $elem === 'DATA' ) {
+    } elseif ( $elem === 'data'      || $elem === 'DATA' ) {
 
      /**
        *
@@ -5149,7 +5450,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'data';
     
-    } elseif ($elem === 'dl'        || $elem === 'DL' ) {
+    } elseif ( $elem === 'dl'        || $elem === 'DL' ) {
 
      /**
        *
@@ -5162,7 +5463,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'dl';
     
-    } elseif ($elem === 'dt'        || $elem === 'DT' ) {
+    } elseif ( $elem === 'dt'        || $elem === 'DT' ) {
 
      /**
        *
@@ -5175,7 +5476,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'dt';
     
-    } elseif ($elem === 'dd'        || $elem === 'DD' ) {
+    } elseif ( $elem === 'dd'        || $elem === 'DD' ) {
 
      /**
        *
@@ -5188,7 +5489,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'dd';
     
-    } elseif ($elem === 'dfn'       || $elem === 'DFN' ) {
+    } elseif ( $elem === 'dfn'       || $elem === 'DFN' ) {
 
      /**
        *
@@ -5201,7 +5502,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'dfn';
     
-    } elseif ($elem === 'ins'       || $elem === 'INS' ) {
+    } elseif ( $elem === 'ins'       || $elem === 'INS' ) {
 
      /**
        *
@@ -5214,7 +5515,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'ins';
     
-    } elseif ($elem === 'del'       || $elem === 'DEL' ) {
+    } elseif ( $elem === 'del'       || $elem === 'DEL' ) {
 
      /**
        *
@@ -5227,7 +5528,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'del';
     
-    } elseif ($elem === 'kbd'       || $elem === 'KBD' ) {
+    } elseif ( $elem === 'kbd'       || $elem === 'KBD' ) {
 
      /**
        *
@@ -5240,7 +5541,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'kbd';
     
-    } elseif ($elem === 'mark'      || $elem === 'MARK' ) {
+    } elseif ( $elem === 'mark'      || $elem === 'MARK' ) {
 
      /**
        *
@@ -5253,7 +5554,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'mark';
     
-    } elseif ($elem === 'pre'       || $elem === 'PRE' ) {
+    } elseif ( $elem === 'pre'       || $elem === 'PRE' ) {
 
      /**
        *
@@ -5266,7 +5567,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'pre';
     
-    } elseif ($elem === 'rt'        || $elem === 'RT' ) {
+    } elseif ( $elem === 'rt'        || $elem === 'RT' ) {
 
      /**
        *
@@ -5279,7 +5580,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'rt';
     
-    } elseif ($elem === 'rp'        || $elem === 'RP' ) {
+    } elseif ( $elem === 'rp'        || $elem === 'RP' ) {
 
      /**
        *
@@ -5292,7 +5593,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'rp';
     
-    } elseif ($elem === 'ruby'      || $elem === 'RUBY' ) {
+    } elseif ( $elem === 'ruby'      || $elem === 'RUBY' ) {
 
      /**
        *
@@ -5305,7 +5606,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'ruby';
     
-    } elseif ($elem === 's'         || $elem === 'S' ) {
+    } elseif ( $elem === 's'         || $elem === 'S' ) {
 
      /**
        *
@@ -5318,7 +5619,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 's';
     
-    } elseif ($elem === 'samp'      || $elem === 'SAMP' ) {
+    } elseif ( $elem === 'samp'      || $elem === 'SAMP' ) {
 
      /**
        *
@@ -5331,7 +5632,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'samp';
     
-    } elseif ($elem === 'strong'    || $elem === 'STRONG' ) {
+    } elseif ( $elem === 'strong'    || $elem === 'STRONG' ) {
 
      /**
        *
@@ -5344,7 +5645,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'strong';
     
-    } elseif ($elem === 'sub'       || $elem === 'SUB' ) {
+    } elseif ( $elem === 'sub'       || $elem === 'SUB' ) {
 
      /**
        *
@@ -5357,7 +5658,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/
       return $elem = 'sub';
     
-    } elseif ($elem === 'sup'       || $elem === 'SUP' ) {
+    } elseif ( $elem === 'sup'       || $elem === 'SUP' ) {
 
      /**
        *
@@ -5370,7 +5671,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'sup';
     
-    } elseif ($elem === 'wbr'       || $elem === 'WBR' ) {
+    } elseif ( $elem === 'wbr'       || $elem === 'WBR' ) {
 
      /**
        *
@@ -5383,7 +5684,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'wbr';
     
-    } elseif ($elem === 'q'         || $elem === 'Q' ) {
+    } elseif ( $elem === 'q'         || $elem === 'Q' ) {
 
      /**
        *
@@ -5396,7 +5697,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'q';
     
-    } elseif ($elem === 'head'      || $elem === 'HEAD' ) {
+    } elseif ( $elem === 'head'      || $elem === 'HEAD' ) {
 
      /**
        *
@@ -5409,7 +5710,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'head';
     
-    } elseif ($elem === 'title'  || $elem === 'TITLE' ) {
+    } elseif ( $elem === 'title'  || $elem === 'TITLE' ) {
 
      /**
        *
@@ -5422,7 +5723,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'title';
     
-    } elseif ($elem === 'body'  || $elem === 'BODY' ) {
+    } elseif ( $elem === 'body'  || $elem === 'BODY' ) {
 
      /**
        *
@@ -5435,7 +5736,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/    
       return $elem = 'body';
     
-    } elseif ($elem === 'html'  || $elem === 'HTML' ) {
+    } elseif ( $elem === 'html'  || $elem === 'HTML' ) {
 
      /**
        *
@@ -5454,7 +5755,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
  protected function _setINLINELEMENTS($elem) {
     // VALIDATE HTML ELEMENTS THE RETURN BASE ON ELEMENT HTML !
 
-   if ($elem === 'source'        || $elem === 'SOURCE' )  { 
+   if ( $elem === 'source'        || $elem === 'SOURCE' )  { 
 
      /**
        *
@@ -5467,7 +5768,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/         
       return $elem = 'source';  } 
      
-      elseif ($elem === 'track'  || $elem === 'TRACK')    { 
+      elseif ( $elem === 'track'  || $elem === 'TRACK')    { 
 
      /**
        *
@@ -5480,7 +5781,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/      
       return $elem = 'track';   } 
      
-      elseif ($elem === 'circle' || $elem === 'CIRCLE')   { 
+      elseif ( $elem === 'circle' || $elem === 'CIRCLE')   { 
 
      /**
        *
@@ -5493,7 +5794,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/     
       return $elem = 'circle';  } 
 
-      elseif ($elem === 'param' || $elem === 'PARAM')    { 
+      elseif ( $elem === 'param' || $elem === 'PARAM')    { 
 
      /**
        *
@@ -5506,7 +5807,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/       
       return $elem = 'param';   } 
       
-      elseif ($elem === 'input' || $elem === 'INPUT')    { 
+      elseif ( $elem === 'input' || $elem === 'INPUT')    { 
 
      /**
        *
@@ -5519,7 +5820,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/      
       return $elem = 'input';   } 
       
-      elseif ($elem === 'meta'   || $elem === 'META')     { 
+      elseif ( $elem === 'meta'   || $elem === 'META')     { 
 
      /**
        *
@@ -5532,7 +5833,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/       
       return $elem = 'meta';    } 
       
-      elseif ($elem === 'link'   || $elem === 'LINK')     { 
+      elseif ( $elem === 'link'   || $elem === 'LINK')     { 
 
      /**
        *
@@ -5545,7 +5846,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/      
       return $elem = 'link';    } 
       
-      elseif ($elem === 'img'    || $elem === 'IMG')      { 
+      elseif ( $elem === 'img'    || $elem === 'IMG')      { 
 
      /**
        *
@@ -5558,7 +5859,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/           
       return $elem = 'img';     } 
       
-      elseif ($elem === 'embed'  || $elem === 'EMBED')    { 
+      elseif ( $elem === 'embed'  || $elem === 'EMBED')    { 
 
      /**
        *
@@ -5571,7 +5872,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/               
       return $elem = 'embed';   } 
       
-      elseif ($elem === 'option' || $elem === 'OPTION')   { 
+      elseif ( $elem === 'option' || $elem === 'OPTION')   { 
 
      /**
        *
@@ -5584,7 +5885,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/      
       return $elem = 'option';  } 
       
-      elseif ($elem === 'col'    || $elem === 'COL')      { 
+      elseif ( $elem === 'col'    || $elem === 'COL')      { 
 
      /**
        *
@@ -5597,7 +5898,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/      
       return $elem = 'col';     } 
       
-      elseif ($elem === 'base'   || $elem === 'BASE')     { 
+      elseif ( $elem === 'base'   || $elem === 'BASE')     { 
 
      /**
        *
@@ -5610,7 +5911,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/  
       return $elem = 'base';    } 
       
-      elseif ($elem === 'aside'  || $elem === 'ASIDE')    { 
+      elseif ( $elem === 'aside'  || $elem === 'ASIDE')    { 
 
      /**
        *
@@ -5623,7 +5924,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/      
       return $elem = 'aside';   }
       
-      elseif ($elem === 'area'   || $elem === 'AREA')     { 
+      elseif ( $elem === 'area'   || $elem === 'AREA')     { 
 
      /**
        *
@@ -5636,7 +5937,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
       **/      
       return $elem = 'area';    }
       
-      elseif ($elem === 'doctype'   || $elem === 'DOCTYPE' ) {
+      elseif ( $elem === 'doctype'   || $elem === 'DOCTYPE' ) {
 
      /**
        *

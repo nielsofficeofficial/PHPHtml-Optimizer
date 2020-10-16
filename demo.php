@@ -19,7 +19,7 @@ require_once __DIR__ . '/PHPHtml-Optimizer.php';
     return $sets = [
       
       $attr_name = ['1','2'],
-      $attr_val  = ['_niel_','_fernandez_'],
+      $attr_val  = ['_niel_','_fernandez_']
      
     ];
   

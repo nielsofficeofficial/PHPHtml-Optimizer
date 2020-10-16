@@ -1,9 +1,11 @@
 <?php 
 
+ namespace PHPHtml\CodeOptimizer\onPage;
+
 /**
- * @copyright (c) 2020-2021 PHPHtml-Optimizer v1.1 Cooked by nielsoffice
+ * @copyright (c) 2020-2021 PHPHtml-Optimizer v1.3 Cooked by nielsoffice
  *
- * PHPHtml-Optimizer v1.1 free software: you can redistribute it and/or modify
+ * PHPHtml-Optimizer v1.3 free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
@@ -26,7 +28,7 @@
  * @link      https://github.com/nielsofficeofficial/PHPHtml-Optimizer
  * @link      https://github.com/nielsofficeofficial/PHPHtml-Optimizer/blob/master/README.md
  * @link      https://www.facebook.com/nielsofficeofficial
- * @version   v1.1
+ * @version   v1.3
  *
  *
  * noHTML dynamic static structure _
@@ -513,18 +515,169 @@ static private $str;
  CONST FUNC_ASSOC       = 'FUNC_ASSOC';
 
 /**
-  * @var @property CONST | CLASS_ASSOC  
+  * @var @property @static CONST | CLASS_ASSOC  
   * defined Assigned associsated dstring within the function/Class/Method
   * minify optimized html attribute 
   **/
  CONST CLASS_ASSOC      = 'CLASS_ASSOC';
  
 /**
-  * @var @property CONST | METHOD_ASSOC  
+  * @var @property @static CONST | METHOD_ASSOC  
   * defined Assigned associsated dstring within the function/Class/Method
   * minify optimized html attribute 
   **/
  CONST METHOD_ASSOC     = 'METHOD_ASSOC';
+
+/**
+  * @var @property @static CONST | __SetPHP__  
+  * @since 16.10.2020
+  * defined Assigned Asset Extenstion File as .PHP
+  **/
+ CONST __SetPHP__       = '__SetPHP__';
+ 
+/**
+  * @var @property @static CONST | __SetHTML__  
+  * @since 16.10.2020
+  * defined Assigned Asset Extenstion File as .HTML
+  **/ 
+ CONST __SetHTML__      = '__SetHTML__';
+
+/**
+  * @var @property @static CONST | __SetCSS__  
+  * @since 16.10.2020
+  * defined Assigned Asset Extenstion File as .CSS
+  **/ 
+ CONST __SetCSS__       = '__SetCSS__'; 
+
+/**
+  * @var @property @static CONST | __SetJS__  
+  * @since 16.10.2020
+  * defined Assigned Asset Extenstion File as .JS
+  **/ 
+ CONST __SetJS__        = '__SetJS__'; 
+
+/**
+  * @var @property @static CONST | __SetJPG__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .JPG
+  **/ 
+ CONST __SetJPG__       = '__SetJPG__';
+
+/**
+  * @var @property @static CONST | __SetJPEG__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .JPEG
+  **/ 
+ CONST __SetJPEG__      = '__SetJPEG__';   
+
+/**
+  * @var @property @static CONST | __SetPNG__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .JPEG
+  **/  
+ CONST __SetPNG__       = '__SetPNG_';
+
+/**
+  * @var @property @static CONST | __SetGIF__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .GIF
+  **/  
+ CONST __SetGIF__       = '__SetGIF__'; 
+
+/**
+  * @var @property @static CONST | __SetBMP__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .BMP
+  **/  
+ CONST __SetBMP__       = '__SetBMP__';
+
+/**
+  * @var @property @static CONST | __SetTEX__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .TEX
+  **/  
+ CONST __SetTEX__       = '__SetTEX__';
+
+/**
+  * @var @property @static CONST | __SetXLS__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .XLS
+  **/  
+ CONST __SetXLS__       = '__SetXLS__'; 
+
+/**
+  * @var @property @static CONST | __SetXLSX__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .XLSX_
+  **/ 
+ CONST __SetXLSX__      = '__SetXLSX__';  
+
+/**
+  * @var @property @static CONST | __SetDOC__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .DOC
+  **/ 
+ CONST __SetDOC__       = '__SetDOC__';
+
+/**
+  * @var @property @static CONST | __SetDOCX__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .DOCX
+  **/ 
+ CONST __SetDOCX__      = '__SetDOCX__';    
+
+/**
+  * @var @property @static CONST | __SetPPT__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .PPT
+  **/ 
+ CONST __SetPPT__       = '__SetPPT__';
+
+/**
+  * @var @property @static CONST | __SetPPTX__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .PPTX
+  **/ 
+ CONST __SetPPTX__      = '__SetPPTX__';
+
+/**
+  * @var @property @static CONST | __SetODT__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as .ODT
+  **/ 
+ CONST __SetODT__       = '__SetODT__'; 
+
+/**
+  * @var @property @static CONST | __SetTXT__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as ._TXT
+  **/ 
+ CONST __SetTXT__       = '__SetTXT__';  
+
+/**
+  * @var @property @static CONST | __SetRTF__  
+  * @since 16.10.2020
+  * defined Assigned Image Extenstion as ._RTF
+  **/ 
+ CONST __SetRTF__       = '__SetRTF__'; 
+
+/**
+  * @var @property Array of data 
+  * defined CONST ARRAY EXNTION FILES
+  *
+  * @var @__getAssEXTENSION__ 
+  *
+  **/
+ CONST __getAssEXTENSION__     = ['php','html','css','js']; 
+
+/**
+  * @var @property Array of data 
+  * defined CONST ARRAY EXNTION IMAGES
+  *
+  * @var @__getAssImgEXTENSION__ 
+  *
+  **/
+ CONST __getAssImgEXTENSION__  = ['jpg','jpeg','png','gif','bmp','tex','xls','xlsx','doc','docx','ppt','pptx','odt','txt','rtf']; 
 
 /**
   * @var @property Array of data 
@@ -651,6 +804,41 @@ static protected $hextend = [];
   **/
    static public function _MERGE($func_assoc) { return self::_isTrue_SET_merge($func_assoc); }
 
+/**
+  *
+  * @method public Method Set File Image Extension within custom att HTML 
+  * Defined File Image Extension | __getAssImgEXTENSION__
+  * $extension = Html::SetImageExtension($argu); 
+  * Build Beautiful and Maintainable
+  *
+  **/  
+   static public function SetImageExtension($argu = null) { return self::Validate_extension_file_Img($argu); } 
+
+/**
+  *
+  * @method public Method Set File Asstes Extension within custom att HTML 
+  * Defined File Image Extension | __getAssEXTENSION__
+  * $extension = Html::SetExtension($argu); 
+  
+    function getMeIMG($src,$path, $argu=null) 
+    {
+
+       $extension = Html::SetImageExtension($argu);
+        
+       return $sets = [
+         
+           $attr_name = [$src],
+           $attr_val  = [$path.$extension]
+        
+        ];
+
+    }
+
+  * Build Beautiful and Maintainable
+  *
+  **/  
+   static public function SetExtension($argu = null) { return self::Validate_extension_assets_files($argu); }
+
 
 /**
   *
@@ -694,7 +882,7 @@ static protected $hextend = [];
   **/
   static public function __magicIF($condition=null, $if_result=null, $assoc=null) { 
 
-  return self::return_method_concat_else( $condition,$if_result,null,$assoc); 
+  return self::return_method_concat_else($condition,$if_result,NULL,$assoc); 
 
 }
 
@@ -3913,6 +4101,7 @@ static private function return_method_concat_if($con,$res1,$as) {
   }
 
 } 
+
 /**
   *
   * @method private function noHTML
@@ -4265,6 +4454,120 @@ static private function _isTrue_SET_merge($merge=null) {
     #_GET_RESUKT_SET_AS_RETURN_TO_MERGE
     return $merge; 
  }
+
+/**
+  *
+  * @method protected function Validate_extension_assets_files
+  * @static @protected Method Defined Asstes Extension such as .js .css .html .php by default
+  *
+  **/
+static protected function Validate_extension_assets_files($argu = null) {
+   
+
+  if ($argu == __getPHP__ || $argu == NULL||  $argu == '' ) {
+      
+    $extension     = '.'.self::__getAssEXTENSION__[0];
+     
+   } elseif ($argu == __getHTML__ ) {
+     
+     $extension    = '.'.self::__getAssEXTENSION__[1];
+
+   } elseif ($argu == __getCSS__ ) {
+
+     $extension    = '.'.self::__getAssEXTENSION__[2];
+     
+   } elseif ($argu == __getJS__ ) {
+     
+     $extension    =  '.'.self::__getAssEXTENSION__[3];
+
+   } else {     
+     
+     exit();
+
+   } 
+
+   return $extension;
+
+}
+
+/**
+  *
+  * @method protected function Validate_extension_file_Img
+  * @static @protected Method Defined IMAGE FILE EXTENSION
+  *
+  **/
+static protected function Validate_extension_file_Img($argu = null) {
+
+  if ($argu === __SetJPG__ || $argu === NULL||  $argu == '' ) {
+      
+    $extension     = '.'.self::__getAssImgEXTENSION__[0];
+     
+   } elseif ($argu === __SetJPEG__ ) {
+     
+     $extension    = '.'.self::__getAssImgEXTENSION__[1];
+
+   } elseif ($argu === __SetPNG__ ) {
+
+     $extension    = '.'.self::__getAssImgEXTENSION__[2];
+     
+   } elseif ($argu === __SetGIF__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[3];
+
+   } elseif ($argu === __SetBMP__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[4];
+
+   } elseif ($argu === __SetTEX__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[5];
+
+   } elseif ($argu === __SetXLS__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[6];
+
+   } elseif ($argu === __SetXLSX__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[7];
+
+   } elseif ($argu === __SetDOC__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[8];
+
+   } elseif ($argu === __SetDOCX__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[9];
+
+   } elseif ($argu === __SetPPT__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[10];
+
+   } elseif ($argu === __SetPPTX__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[11];
+
+   } elseif ($argu === __SetODT__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[12];
+
+   } elseif ($argu === __SetTXT__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[13];
+
+   } elseif ($argu === __SetRTF__ ) {
+     
+     $extension    =  '.'.self::__getAssImgEXTENSION__[14];
+
+   } else {
+      
+     self::HTML_PERFORM('Argument Must be exact look like: __SetEXTENSION__');
+     exit();
+
+   }
+
+   return $extension;
+
+}  
 
 /**
   *

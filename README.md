@@ -29,7 +29,7 @@ require_once __DIR__ . '/library/PHPHtml-Optimizer/PHPHtml-Optimizer.php';
 Html::H1('Hello World!');
 
 // Within the Class
-$Html = new  \PHPHtml\CodeOptimizer\Html();  
+$Html = new  \PHPHtml\CodeOptimizer\OnClass\Html();  
 ...
 $this->$Html->H2('Hello World!');
 
@@ -123,7 +123,51 @@ H1(Html::__magicELSE( FALSE ,'Yes','PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC));
 
 </pre>
 
+<pre>
+// Sample Code | PHPHtml-Optimizer/Merge Using File Extension
+// PHPHtml-Optimizer/Merge:
+// SetExtension($argu);  
+  function getMe($src,$path,$argu) {
 
+
+      $extension = Html::SetExtension($argu);
+        
+       return $sets = [
+         
+           $attr_name = [$src],
+           $attr_val  = [$path.$extension]
+        
+        ];
+
+}
+
+Html::_ELEMENT('Profile','link',getMe('src','/../profile', __getPHP__));
+
+</pre>
+
+<pre>
+
+// Sample Code | PHPHtml-Optimizer/Merge Using Image Extension
+// PHPHtml-Optimizer/Merge:
+// SetImageExtension()
+function getMeIMG($src,$path, $argu=null) {
+
+      $extension = Html::SetImageExtension($argu);
+        
+       return $sets = [
+         
+           $attr_name = [$src],
+           $attr_val  = [$path.$extension]
+        
+        ];
+
+}
+
+$name = 'fileName';
+
+__HTML('Avatar','img',getMeIMG('src','/../'.$name.''));
+
+</pre>
 
 <h5>Understanding Class Method Parameters</h5>
 
@@ -148,15 +192,18 @@ H1(Html::__magicELSE( FALSE ,'Yes','PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC));
 
 <h5>Usage: withinClass | Instantiate Class Methods</h5>
 <pre>
-$Html = new  \PHPHtml\CodeOptimizer\Html();  
+
+$Html = new  \PHPHtml\CodeOptimizer\OnClass\Html();  
 ...
 echo $Html->H2('Hello World!');
+
 # OR
-USE  \PHPHtml\CodeOptimizer\Html AS MyProjectName; 
+USE  \PHPHtml\CodeOptimizer\OnClass\Html AS MyProjectName; 
 ...
 $Html = NEW MyProjectName();
 ...
 echo $Html->H2(Hello World');
+
 # OR Extend Class 
 Class ProgramName extend MyProjectName {
   
@@ -166,6 +213,25 @@ Class ProgramName extend MyProjectName {
 
    }
 }
+
+# OR 
+
+// Static Default
+USE \PHPHtml\CodeOptimizer\onPage\Html;
+
+// Static Alias
+USE \PHPHtml\CodeOptimizer\onPage\Html AS MyHTML;
+Html::h1('Static');
+
+// Instantiate Default
+$html = NEW \PHPHtml\CodeOptimizer\onClass\Html();
+
+// Instantiate Alias
+USE \PHPHtml\CodeOptimizer\onClass\Html AS MyElement;
+
+$html = NEW MyElement();
+$html->h1('OnCLass');
+
 </pre>
 
 <h5>Usage: Static | More Samples with Parameters</h5>
@@ -192,6 +258,7 @@ html::H1("Hello World",my_htmattr(),'MyID','MyClass','', NULL);
 </pre>
 
 <h5>Static ELEMENTS and parameters </h5>
+
 <pre>
 // Associated or simply means return function
 Html::ELEMENT($element=null, $value=null, $attr=null, $id=null, $class=null, $label=null)
@@ -206,9 +273,12 @@ Html::H1($value=null, $attr=null, $id=null, $class=null, $label=null, $assoc=nul
 Html::_H1($attr=null, $id=null, $class=null)<br />
 ... content goes here ...<br />
 Html::xH1($label=null)
+
 </pre>
 
-<h5>On Page | Static Methods</h5>
+<h1></h1>
+<h5 id="element">On Page | Static Methods</h5>
+
 
 |Opt./ASSOCIATED | HTML/Descript. | ASSOCIATED     | Opt.ASSOCIATED/Inline noneClosing tag |  None ASSOCIATED _H1(begin)/xH1(end) |
 |:---            |:---            |:---            |:---                           |:---              |
@@ -342,7 +412,7 @@ xMERGE($elem=null);
 |:---            |:---            |:---            |:---                           |:---                                  |:--- |
 | `H1()`         | Heading 1      | `_xHTML('H1')` |`__HTML('my_input','INPUT')`   |`_H1()`/`xH1()`                       |`_MERGE('H1')`/`xMERGE('H1')` |
 | `H2()`         | Heading 2      | `_xHTML('H2')` |`__HTML('my_track','track')`   |`_H2()`/`xH2()`                       |`_MERGE('H2')`/`xMERGE('H2')` |
-| ...            | ...            | ...            |...                            |...                                   | loading...                   |
+| ...            | ...            | ...            |...                            |...                                   | <a href="#element">loading...</a>                   |
 
 
 <br />

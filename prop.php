@@ -1,9 +1,9 @@
 <?php 
 
 /**
- * @copyright (c) 2020-2021 PHPHtml-Merge v1.2 Cooked by nielsoffice
+ * @copyright (c) 2020-2021 PHPHtml-Merge v1.3 Cooked by nielsoffice
  *
- * PHPHtml-Merge v1.2 free software: you can redistribute it and/or modify
+ * PHPHtml-Merge v1.3 free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
@@ -26,7 +26,7 @@
  * @link      https://github.com/nielsofficeofficial/PHPHtml-Optimizer
  * @link      https://github.com/nielsofficeofficial/PHPHtml-Optimizer/blob/master/README.md
  * @link      https://www.facebook.com/nielsofficeofficial
- * @version   v1.2
+ * @version   v1.3
  *
  */
 
@@ -85,6 +85,272 @@
    |
    |
    |
+   | get function assined EXTENSION .PHP
+   |
+   |
+   |
+   |
+   */ 
+  define('__getPHP__','__getPHP__');
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get function assined EXTENSION .HTML
+   |
+   |
+   |
+   |
+   */    
+  define('__getHTML__','__getHTML__');
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get function assined EXTENSION .CSS
+   |
+   |
+   |
+   |
+   */   
+  define('__getCSS__','__getCSS__'); 
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get function assined EXTENSION .JS
+   |
+   |
+   |
+   |
+   */   
+  define('__getJS__','__getJS__'); 
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get function assined EXTENSION IMG .JPG
+   |
+   |
+   |
+   |
+   */  
+  define('__SetJPG__','__SetJPG__');
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get function assined EXTENSION IMG .JPEG
+   |
+   |
+   |
+   |
+   */  
+  define('__SetJPEG__','__SetJPEG__');   
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get function assined EXTENSION IMG .PNG
+   |
+   |
+   |
+   |
+   */    
+  define('__SetPNG__','__SetPNG_');
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get function assined EXTENSION IMG .GIF
+   |
+   |
+   |
+   |
+   */ 
+  define('__SetGIF__','__SetGIF__'); 
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get function assined EXTENSION IMG .BMP
+   |
+   |
+   |
+   |
+   */
+  define('__SetBMP__','__SetBMP__');
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get function assined EXTENSION IMG .TEX
+   |
+   |
+   |
+   |
+   */  
+  define('__SetTEX__','__SetTEX__');
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get function assined EXTENSION IMG .LXS
+   |
+   |
+   |
+   |
+   */  
+  define('__SetXLS__','__SetXLS__'); 
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get function assined EXTENSION IMG .LXSX
+   |
+   |
+   |
+   |
+   */   
+  define('__SetXLSX__','__SetXLSX__');  
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get function assined EXTENSION IMG .DOC
+   |
+   |
+   |
+   |
+   */ 
+  define('__SetDOC__','__SetDOC__');
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get function assined EXTENSION IMG .DOCX
+   |
+   |
+   |
+   |
+   */ 
+  define('__SetDOCX__','__SetDOCX__');    
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get function assined EXTENSION IMG .PPT
+   |
+   |
+   |
+   |
+   */   
+  define('__SetPPT__','__SetPPT__');
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get function assined EXTENSION IMG .PPTX
+   |
+   |
+   |
+   |
+   */   
+  define('__SetPPTX__','__SetPPTX__');
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get function assined EXTENSION IMG .ODT
+   |
+   |
+   |
+   |
+   */   
+  define('__SetODT__','__SetODT__'); 
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get function assined EXTENSION IMG .TXT
+   |
+   |
+   |
+   |
+   */   
+  define('__SetTXT__','__SetTXT__');  
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get function assined EXTENSION IMG .RTF
+   |
+   |
+   |
+   |
+   */   
+  define('__SetRTF__','__SetRTF__'); 
+
+  /*
+   |
+   |
+   |
+   |
+   |
    | get directory
    |
    |
@@ -105,7 +371,7 @@
    |
    |
    */ 
-  define('__DIRECTORY_OPTIMIZER_CLASS__','/core/onClass/');
+  define('__DIRECTORY_OPTIMIZER_CLASS__','/core/');
 
   /*
    |
@@ -316,5 +582,3 @@
    |
    */
   define('__GET_PROPERTY_ITSELF__','/../../prop.php' );
-
-

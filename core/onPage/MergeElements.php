@@ -1,9 +1,9 @@
 <?php 
 
 /**
- * @copyright (c) 2020-2021 PHPHtml-Merge v1.2 Cooked by nielsoffice
+ * @copyright (c) 2020-2021 PHPHtml-Merge v1.3 Cooked by nielsoffice
  *
- * PHPHtml-Merge v1.2 free software: you can redistribute it and/or modify
+ * PHPHtml-Merge v1.3 free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
@@ -26,11 +26,11 @@
  * @link      https://github.com/nielsofficeofficial/PHPHtml-Optimizer
  * @link      https://github.com/nielsofficeofficial/PHPHtml-Optimizer/blob/master/README.md
  * @link      https://www.facebook.com/nielsofficeofficial
- * @version   v1.2
+ * @version   v1.3
  *
  */
 
-USE  \PHPHtml\CodeOptimizer\Html AS MergeElements; 
+USE  \PHPHtml\CodeOptimizer\onClass\Html AS MergeElements; 
 
 /**
   *
