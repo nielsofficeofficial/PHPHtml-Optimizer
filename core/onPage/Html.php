@@ -668,16 +668,10 @@ static private $str;
   * @var @__getAssEXTENSION__ 
   *
   **/
- CONST __getAssEXTENSION__     = ['php','html','css','js']; 
-
-/**
-  * @var @property Array of data 
-  * defined CONST ARRAY EXNTION IMAGES
-  *
-  * @var @__getAssImgEXTENSION__ 
-  *
-  **/
- CONST __getAssImgEXTENSION__  = ['jpg','jpeg','png','gif','bmp','tex','xls','xlsx','doc','docx','ppt','pptx','odt','txt','rtf']; 
+ CONST __FILEEXTENSION__  = [ __PHP__  => 'php',  __HTML__ => 'html', __CSS__  => 'css',  __JS__   =>'js',   __JPG__ => 'jpg', 
+                              __JPEG__ => 'jpeg', __PNG__  => 'png',  __GIF__  => 'gif',  __BMP__  =>'bmp',  __TEX__ => 'tex',
+                              __XLS__  => 'xls',  __XLSX__ => 'xlsx', __DOCX__ => 'doc',  __DOCX__ =>'docx', __PPT__ => 'ppt',
+                              __PPTX__ => 'pptx', __ODT__  => 'odt',  __TXT__  => 'txt',  __RTF__  =>'rtf']; 
 
 /**
   * @var @property Array of data 
@@ -4445,99 +4439,54 @@ static private function _isTrue_SET_merge($merge=null) {
     return $merge; 
  }
 
+// Attrbute for redirect github submit issue 
+static private function IssueSubmitAttr() {
+
+    return $sets = [
+         
+      $attr_name = ['href'],
+      $attr_val  = ['https://github.com/nielsofficeofficial/PHPHtml-Optimizer/issues']
+        
+   ];
+}
+
 /**
   *
   * @method protected function Validate_extension_file_Img
   * @static @protected Method Defined IMAGE FILE EXTENSION
   *
   **/
-static protected function Validate_extension_assets_files($argu) {
+static protected function Validate_extension_assets_files($Extension__) {
+  
+  $currentSet_Ext     = self::__FILEEXTENSION__;
+  $InsertDotOperation = '.';
 
-  if ($argu === __JPG__ || $argu === NULL||  $argu == '' ) {
+  if ($getArray = array_key_exists($Extension__, $currentSet_Ext))  
+  {
+   
+      foreach ($currentSet_Ext as $SetExtensionKey__ => $SetExtensionValue__) 
+      {
+        
+        if ( $SetExtensionKey__ === $Extension__ ) 
+        {
+          
+         $merge = $InsertDotOperation.$SetExtensionValue__;
+
+         return $merge;
+         break;
+
+        } 
       
-    $extension     = '.'.self::__getAssImgEXTENSION__[0];
-     
-   } elseif ($argu === __JPEG__ ) {
-     
-     $extension    = '.'.self::__getAssImgEXTENSION__[1];
+      }
+  
+  } else {
 
-   } elseif ($argu === __PNG__ ) {
-
-     $extension    = '.'.self::__getAssImgEXTENSION__[2];
-     
-   } elseif ($argu === __GIF__ ) {
-     
-     $extension    =  '.'.self::__getAssImgEXTENSION__[3];
-
-   } elseif ($argu === __BMP__ ) {
-     
-     $extension    =  '.'.self::__getAssImgEXTENSION__[4];
-
-   } elseif ($argu === __TEX__ ) {
-     
-     $extension    =  '.'.self::__getAssImgEXTENSION__[5];
-
-   } elseif ($argu === __XLS__ ) {
-     
-     $extension    =  '.'.self::__getAssImgEXTENSION__[6];
-
-   } elseif ($argu === __XLSX__ ) {
-     
-     $extension    =  '.'.self::__getAssImgEXTENSION__[7];
-
-   } elseif ($argu === __DOC__ ) {
-     
-     $extension    =  '.'.self::__getAssImgEXTENSION__[8];
-
-   } elseif ($argu === __DOCX__ ) {
-     
-     $extension    =  '.'.self::__getAssImgEXTENSION__[9];
-
-   } elseif ($argu === __PPT__ ) {
-     
-     $extension    =  '.'.self::__getAssImgEXTENSION__[10];
-
-   } elseif ($argu === __PPTX__ ) {
-     
-     $extension    =  '.'.self::__getAssImgEXTENSION__[11];
-
-   } elseif ($argu === __ODT__ ) {
-     
-     $extension    =  '.'.self::__getAssImgEXTENSION__[12];
-
-   } elseif ($argu === __TXT__ ) {
-     
-     $extension    =  '.'.self::__getAssImgEXTENSION__[13];
-
-   } elseif ($argu === __RTF__ ) {
-     
-     $extension    =  '.'.self::__getAssImgEXTENSION__[14];
-
-   } elseif ($argu == __PHP__ || $argu == NULL||  $argu == '' ) {
-      
-     $extension     = '.'.self::__getAssEXTENSION__[0];
-     
-   } elseif ($argu == __HTML__ ) {
-     
-     $extension    = '.'.self::__getAssEXTENSION__[1];
-
-   } elseif ($argu == __CSS__ ) {
-
-     $extension    = '.'.self::__getAssEXTENSION__[2];
-     
-   } elseif ($argu == __JS__ ) {
-     
-     $extension    =  '.'.self::__getAssEXTENSION__[3];
-
-   } else {
-      
-     self::HTML_PERFORM('Argument Must be exact look like: __SetEXTENSION__');
-     exit();
-
-   }
-
-   return $extension;
-
+      self::_PERFORM('Extention is not yet registered or undefine!').self::BREAK();
+      self::_PERFORM('For Professional support visit github submit issue: '.self::ELEMENT('a','Submit Github Support',self::IssueSubmitAttr()));      
+      exit();
+    
+  }
+  
 }  
 
 /**
