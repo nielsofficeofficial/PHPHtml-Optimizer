@@ -178,9 +178,9 @@ __HTML('Avatar','img',getMeIMG('src','/../'.$name.'', __PNG__ ));
 | `CLASS_ASSOC`  | Is a Paramenter that will use and position to the very end of function or methods Optional Associated |
 | `FUNC_ASSOC`   | Is a Paramenter that will use and position to the very end of function or methods Optional Associated |
 
-| Defined Methods    | Description |
+| Extra Methods    | Description |
 | ---            | ---         |
-| `SetFileExtension`       | $extension = Html::SetExtension($argu) - use this to assign extension or format to the file such / __PHP__,  __HTML__, __CSS__,  __JS__,   __JPG__, __JPEG__, __PNG__,  __GIF__,  __BMP__,  __TEX__, __XLS__,  __XLSX__, __DOCX__, __DOCX__, __PPT__, __PPTX__, __ODT__,  __TXT__,  __RTF_ |
+| `SetFileExtension`       | $extension = Html::SetExtension($argu) - use this to assign extension or format to the file such / `__PHP__`,  `__HTML__`, `__CSS__`,  `__JS__`,   `__JPG__`, `__JPEG__`, `__PNG__`,  `__GIF__`,  `__BMP__`, `__TEX__`, `__XLS__`,  `__XLSX__`, `__DOCX__`, `__DOCX__`, `__PPT__`, `__PPTX__`, `__ODT__`,  `__TXT__`,  `__RTF__` |
 
 <h5>Append Method Alpha version </h5>
 
