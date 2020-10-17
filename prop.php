@@ -91,7 +91,7 @@
    |
    |
    */ 
-  define('__getPHP__','__getPHP__');
+  define('__PHP__','__PHP__');
 
   /*
    |
@@ -105,7 +105,7 @@
    |
    |
    */    
-  define('__getHTML__','__getHTML__');
+  define('__HTML__','__HTML__');
 
   /*
    |
@@ -119,7 +119,7 @@
    |
    |
    */   
-  define('__getCSS__','__getCSS__'); 
+  define('__CSS__','__CSS__'); 
 
   /*
    |
@@ -133,7 +133,7 @@
    |
    |
    */   
-  define('__getJS__','__getJS__'); 
+  define('__JS__','__JS__'); 
 
   /*
    |
@@ -147,7 +147,7 @@
    |
    |
    */  
-  define('__SetJPG__','__SetJPG__');
+  define('__JPG__','__JPG__');
 
   /*
    |
@@ -161,7 +161,7 @@
    |
    |
    */  
-  define('__SetJPEG__','__SetJPEG__');   
+  define('__JPEG__','__JPEG__');   
 
   /*
    |
@@ -175,7 +175,7 @@
    |
    |
    */    
-  define('__SetPNG__','__SetPNG_');
+  define('__PNG__','__PNG__');
 
   /*
    |
@@ -189,7 +189,7 @@
    |
    |
    */ 
-  define('__SetGIF__','__SetGIF__'); 
+  define('__GIF__','__GIF__'); 
 
   /*
    |
@@ -203,7 +203,7 @@
    |
    |
    */
-  define('__SetBMP__','__SetBMP__');
+  define('__BMP__','__BMP__');
 
   /*
    |
@@ -217,7 +217,7 @@
    |
    |
    */  
-  define('__SetTEX__','__SetTEX__');
+  define('__TEX__','__TEX__');
 
   /*
    |
@@ -231,7 +231,7 @@
    |
    |
    */  
-  define('__SetXLS__','__SetXLS__'); 
+  define('__XLS__','__XLS__'); 
 
   /*
    |
@@ -245,7 +245,7 @@
    |
    |
    */   
-  define('__SetXLSX__','__SetXLSX__');  
+  define('__XLSX__','__XLSX__');  
 
   /*
    |
@@ -259,7 +259,7 @@
    |
    |
    */ 
-  define('__SetDOC__','__SetDOC__');
+  define('__DOC__','__DOC__');
 
   /*
    |
@@ -273,7 +273,7 @@
    |
    |
    */ 
-  define('__SetDOCX__','__SetDOCX__');    
+  define('__DOCX__','__DOCX__');    
 
   /*
    |
@@ -287,7 +287,7 @@
    |
    |
    */   
-  define('__SetPPT__','__SetPPT__');
+  define('__PPT__','__PPT__');
 
   /*
    |
@@ -301,7 +301,7 @@
    |
    |
    */   
-  define('__SetPPTX__','__SetPPTX__');
+  define('__PPTX__','__PPTX__');
 
   /*
    |
@@ -315,7 +315,7 @@
    |
    |
    */   
-  define('__SetODT__','__SetODT__'); 
+  define('__ODT__','__ODT__'); 
 
   /*
    |
@@ -329,7 +329,7 @@
    |
    |
    */   
-  define('__SetTXT__','__SetTXT__');  
+  define('__TXT__','__TXT__');  
 
   /*
    |
@@ -343,7 +343,7 @@
    |
    |
    */   
-  define('__SetRTF__','__SetRTF__'); 
+  define('__RTF__','__RTF__'); 
 
   /*
    |

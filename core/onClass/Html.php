@@ -532,133 +532,133 @@ class Html {
   * @since 16.10.2020
   * defined Assigned Asset Extenstion File as .PHP
   **/
- CONST __SetPHP__       = '__SetPHP__';
+ CONST __PHP__       = '__PHP__';
  
 /**
-  * @var @property @static CONST | __SetHTML__ 
+  * @var @property @static CONST | __SetHTML__  
   * @since 16.10.2020
   * defined Assigned Asset Extenstion File as .HTML
   **/ 
- CONST __SetHTML__      = '__SetHTML__';
+ CONST __HTML__      = '__HTML__';
 
 /**
   * @var @property @static CONST | __SetCSS__  
   * @since 16.10.2020
   * defined Assigned Asset Extenstion File as .CSS
   **/ 
- CONST __SetCSS__       = '__SetCSS__'; 
+ CONST __CSS__       = '__CSS__'; 
 
 /**
   * @var @property @static CONST | __SetJS__  
   * @since 16.10.2020
   * defined Assigned Asset Extenstion File as .JS
   **/ 
- CONST __SetJS__        = '__SetJS__'; 
+ CONST __JS__        = '__JS__'; 
 
 /**
   * @var @property @static CONST | __SetJPG__  
   * @since 16.10.2020
   * defined Assigned Image Extenstion as .JPG
   **/ 
- CONST __SetJPG__       = '__SetJPG__';
+ CONST __JPG__       = '__JPG__';
 
 /**
   * @var @property @static CONST | __SetJPEG__  
   * @since 16.10.2020
   * defined Assigned Image Extenstion as .JPEG
   **/ 
- CONST __SetJPEG__      = '__SetJPEG__';   
+ CONST __JPEG__      = '__JPEG__';   
 
 /**
   * @var @property @static CONST | __SetPNG__  
   * @since 16.10.2020
   * defined Assigned Image Extenstion as .JPEG
   **/  
- CONST __SetPNG__       = '__SetPNG_';
+ CONST __PNG__       = '__PNG_';
 
 /**
   * @var @property @static CONST | __SetGIF__  
   * @since 16.10.2020
   * defined Assigned Image Extenstion as .GIF
   **/  
- CONST __SetGIF__       = '__SetGIF__'; 
+ CONST __GIF__       = '__GIF__'; 
 
 /**
   * @var @property @static CONST | __SetBMP__  
   * @since 16.10.2020
   * defined Assigned Image Extenstion as .BMP
   **/  
- CONST __SetBMP__       = '__SetBMP__';
+ CONST __BMP__       = '__BMP__';
 
 /**
   * @var @property @static CONST | __SetTEX__  
   * @since 16.10.2020
   * defined Assigned Image Extenstion as .TEX
   **/  
- CONST __SetTEX__       = '__SetTEX__';
+ CONST __TEX__       = '__TEX__';
 
 /**
   * @var @property @static CONST | __SetXLS__  
   * @since 16.10.2020
   * defined Assigned Image Extenstion as .XLS
   **/  
- CONST __SetXLS__       = '__SetXLS__'; 
+ CONST __XLS__       = '__XLS__'; 
 
 /**
   * @var @property @static CONST | __SetXLSX__  
   * @since 16.10.2020
   * defined Assigned Image Extenstion as .XLSX_
   **/ 
- CONST __SetXLSX__      = '__SetXLSX__';  
+ CONST __XLSX__      = '__XLSX__';  
 
 /**
   * @var @property @static CONST | __SetDOC__  
   * @since 16.10.2020
   * defined Assigned Image Extenstion as .DOC
   **/ 
- CONST __SetDOC__       = '__SetDOC__';
+ CONST __DOC__       = '__DOC__';
 
 /**
   * @var @property @static CONST | __SetDOCX__  
   * @since 16.10.2020
   * defined Assigned Image Extenstion as .DOCX
   **/ 
- CONST __SetDOCX__      = '__SetDOCX__';    
+ CONST __DOCX__      = '__DOCX__';    
 
 /**
   * @var @property @static CONST | __SetPPT__  
   * @since 16.10.2020
   * defined Assigned Image Extenstion as .PPT
   **/ 
- CONST __SetPPT__       = '__SetPPT__';
+ CONST __PPT__       = '__PPT__';
 
 /**
   * @var @property @static CONST | __SetPPTX__  
   * @since 16.10.2020
   * defined Assigned Image Extenstion as .PPTX
   **/ 
- CONST __SetPPTX__      = '__SetPPTX__';
+ CONST __PPTX__      = '__PPTX__';
 
 /**
   * @var @property @static CONST | __SetODT__  
   * @since 16.10.2020
   * defined Assigned Image Extenstion as .ODT
   **/ 
- CONST __SetODT__       = '__SetODT__'; 
+ CONST __ODT__       = '__ODT__'; 
 
 /**
   * @var @property @static CONST | __SetTXT__  
   * @since 16.10.2020
   * defined Assigned Image Extenstion as ._TXT
   **/ 
- CONST __SetTXT__       = '__SetTXT__';  
+ CONST __TXT__       = '__TXT__';  
 
 /**
   * @var @property @static CONST | __SetRTF__  
   * @since 16.10.2020
   * defined Assigned Image Extenstion as ._RTF
   **/ 
- CONST __SetRTF__       = '__SetRTF__'; 
+ CONST __RTF__       = '__RTF__'; 
 
 /**
   * @var @property Array of data 
@@ -813,16 +813,6 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
 
 /**
   *
-  * @method public Method Set File Image Extension within custom att HTML 
-  * Defined File Image Extension | __getAssImgEXTENSION__
-  * $extension = Html::SetImageExtension($argu); 
-  * Build Beautiful and Maintainable
-  *
-  **/  
-  public function SetImageExtension($argu = null) { return self::Validate_extension_file_Img($argu); } 
-
-/**
-  *
   * @method public Method Set File Asstes Extension within custom att HTML 
   * Defined File Image Extension | __getAssEXTENSION__
   * $extension = Html::SetExtension($argu); 
@@ -844,7 +834,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * Build Beautiful and Maintainable
   *
   **/  
-  public function SetExtension($argu = null) { return self::Validate_extension_assets_files($argu); }
+   static public function SetFileExtension($argu = null) { return self::Validate_extension_assets_files($argu); }
 
 /**
   *
@@ -4082,107 +4072,87 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
 
 /**
   *
-  * @method protected function Validate_extension_assets_files
-  * @static @protected Method Defined Asstes Extension such as .js .css .html .php by default
-  *
-  **/
-static protected function Validate_extension_assets_files($argu = null) {
-   
-
-  if ($argu == __getPHP__ || $argu == NULL||  $argu == '' ) {
-      
-    $extension     = '.'.self::__getAssEXTENSION__[0];
-     
-   } elseif ($argu == __getHTML__ ) {
-     
-     $extension    = '.'.self::__getAssEXTENSION__[1];
-
-   } elseif ($argu == __getCSS__ ) {
-
-     $extension    = '.'.self::__getAssEXTENSION__[2];
-     
-   } elseif ($argu == __getJS__ ) {
-     
-     $extension    =  '.'.self::__getAssEXTENSION__[3];
-
-   } else {     
-     
-     self::HTML_PERFORM('Argument Must be exact look like: __SetEXTENSION__');     
-     exit();
-
-   } 
-
-   return $extension;
-
-}
-
-/**
-  *
   * @method protected function Validate_extension_file_Img
   * @static @protected Method Defined IMAGE FILE EXTENSION
   *
   **/
-static protected function Validate_extension_file_Img($argu = null) {
+static protected function Validate_extension_assets_files($argu) {
 
-  if ($argu === __SetJPG__ || $argu === NULL||  $argu == '' ) {
+  if ($argu === __JPG__ || $argu === NULL||  $argu == '' ) {
       
     $extension     = '.'.self::__getAssImgEXTENSION__[0];
      
-   } elseif ($argu === __SetJPEG__ ) {
+   } elseif ($argu === __JPEG__ ) {
      
      $extension    = '.'.self::__getAssImgEXTENSION__[1];
 
-   } elseif ($argu === __SetPNG__ ) {
+   } elseif ($argu === __PNG__ ) {
 
      $extension    = '.'.self::__getAssImgEXTENSION__[2];
      
-   } elseif ($argu === __SetGIF__ ) {
+   } elseif ($argu === __GIF__ ) {
      
      $extension    =  '.'.self::__getAssImgEXTENSION__[3];
 
-   } elseif ($argu === __SetBMP__ ) {
+   } elseif ($argu === __BMP__ ) {
      
      $extension    =  '.'.self::__getAssImgEXTENSION__[4];
 
-   } elseif ($argu === __SetTEX__ ) {
+   } elseif ($argu === __TEX__ ) {
      
      $extension    =  '.'.self::__getAssImgEXTENSION__[5];
 
-   } elseif ($argu === __SetXLS__ ) {
+   } elseif ($argu === __XLS__ ) {
      
      $extension    =  '.'.self::__getAssImgEXTENSION__[6];
 
-   } elseif ($argu === __SetXLSX__ ) {
+   } elseif ($argu === __XLSX__ ) {
      
      $extension    =  '.'.self::__getAssImgEXTENSION__[7];
 
-   } elseif ($argu === __SetDOC__ ) {
+   } elseif ($argu === __DOC__ ) {
      
      $extension    =  '.'.self::__getAssImgEXTENSION__[8];
 
-   } elseif ($argu === __SetDOCX__ ) {
+   } elseif ($argu === __DOCX__ ) {
      
      $extension    =  '.'.self::__getAssImgEXTENSION__[9];
 
-   } elseif ($argu === __SetPPT__ ) {
+   } elseif ($argu === __PPT__ ) {
      
      $extension    =  '.'.self::__getAssImgEXTENSION__[10];
 
-   } elseif ($argu === __SetPPTX__ ) {
+   } elseif ($argu === __PPTX__ ) {
      
      $extension    =  '.'.self::__getAssImgEXTENSION__[11];
 
-   } elseif ($argu === __SetODT__ ) {
+   } elseif ($argu === __ODT__ ) {
      
      $extension    =  '.'.self::__getAssImgEXTENSION__[12];
 
-   } elseif ($argu === __SetTXT__ ) {
+   } elseif ($argu === __TXT__ ) {
      
      $extension    =  '.'.self::__getAssImgEXTENSION__[13];
 
-   } elseif ($argu === __SetRTF__ ) {
+   } elseif ($argu === __RTF__ ) {
      
      $extension    =  '.'.self::__getAssImgEXTENSION__[14];
+
+   } elseif ($argu == __PHP__ || $argu == NULL||  $argu == '' ) {
+      
+     $extension     = '.'.self::__getAssEXTENSION__[0];
+     
+   } elseif ($argu == __HTML__ ) {
+     
+     $extension    = '.'.self::__getAssEXTENSION__[1];
+
+   } elseif ($argu == __CSS__ ) {
+
+     $extension    = '.'.self::__getAssEXTENSION__[2];
+     
+   } elseif ($argu == __JS__ ) {
+     
+     $extension    =  '.'.self::__getAssEXTENSION__[3];
 
    } else {
       

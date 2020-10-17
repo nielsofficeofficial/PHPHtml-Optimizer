@@ -127,21 +127,21 @@ H1(Html::__magicELSE( FALSE ,'Yes','PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC));
 // Sample Code | PHPHtml-Optimizer/Merge Using File Extension
 // PHPHtml-Optimizer/Merge:
 // SetExtension($argu);  
-  function getMe($src,$path,$argu) {
 
+function getMe($src,$path,$argu) {
 
-      $extension = Html::SetExtension($argu);
+   $merge = $path.$extension = Html::SetFileExtension($argu);
+       
+    return $sets = [
         
-       return $sets = [
-         
-           $attr_name = [$src],
-           $attr_val  = [$path.$extension]
-        
-        ];
+      $attr_name = [$src],
+      $attr_val  = [$merge]
+       
+    ];
 
 }
 
-Html::_ELEMENT('css','link',getMe('src','/../profile', __getCSS__));
+Html::_ELEMENT('Profile','link',getMe('src','/../profile', __PHP__));
 
 </pre>
 
@@ -150,14 +150,15 @@ Html::_ELEMENT('css','link',getMe('src','/../profile', __getCSS__));
 // Sample Code | PHPHtml-Optimizer/Merge Using Image Extension
 // PHPHtml-Optimizer/Merge:
 // SetImageExtension()
+
 function getMeIMG($src,$path, $argu=null) {
 
-      $extension = Html::SetImageExtension($argu);
+      $merge = $path.$extension = Html::SetFileExtension($argu);
         
        return $sets = [
          
            $attr_name = [$src],
-           $attr_val  = [$path.$extension]
+           $attr_val  = [$merge]
         
         ];
 
@@ -165,7 +166,7 @@ function getMeIMG($src,$path, $argu=null) {
 
 $name = 'fileName';
 
-__HTML('Avatar','img',getMeIMG('src','/../'.$name.''));
+__HTML('Avatar','img',getMeIMG('src','/../'.$name.'', __PNG__ ));
 
 </pre>
 
@@ -183,8 +184,7 @@ __HTML('Avatar','img',getMeIMG('src','/../'.$name.''));
 | ---            | ---         |
 | `__magicELSE`  | This Append Method is alpha version not stable and not recommend to use (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
 | `__magicIF`    | This Append Method is alpha version not stable and not recommend to use (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
-| `SetExtension`       | $extension = Html::SetExtension($argu) - use this to assign extension or format to the file such .php/.html/.css etc.. |
-| `SetImageExtension`  | $extension = Html::SetImageExtension($argu) - use this to assign extension or format to the file such .jpg/.png/.gif etc.. |
+| `SetFileExtension`       | $extension = Html::SetExtension($argu) - use this to assign extension or format to the file such .php/.html/.css etc.. |
 | `_MERGE`       | This Append Method is alpha version not stable and not recommend to use / it will remove soon |
 | `_PERFORM`     | This Append Method is alpha version not stable and not recommend to use / alternative echo/print |
 | `Html::BREAK()`   | Break tag ( *Not support custom html attr ! ) Optional Associated |
