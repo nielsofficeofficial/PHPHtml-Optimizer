@@ -181,16 +181,15 @@ __HTML('Avatar','img',getMeIMG('src','/../'.$name.'', __PNG__ ));
 | Extra Methods    |  Description  |
 | ---            | ---         |
 | `SetFileExtension()`       | __Usage:__ $extension = Html::SetExtension(PARAM) - use this to assign extension or format to the file such as.. <br /> __Parameters:__ `__PHP__`,  `__HTML__`, `__CSS__`,  `__JS__`,   `__JPG__`, `__JPEG__`, `__PNG__`,  `__GIF__`,  `__BMP__`, `__TEX__`, `__XLS__`,  `__XLSX__`, `__DOCX__`, `__DOCX__`, `__PPT__`, `__PPTX__`, `__ODT__`,  `__TXT__`,  `__RTF__` |
+| `_MERGE()`       | __Usage:__ Html::-MERGE(Html::Function1().Html::Function2()); - use this to print two methods or function one at the time ex. heading and content <br /> __Parameter:__ AnyFunction(); |
+| `__magicELSE`  | __Usage:__ H1(Html::__magicELSE( FALSE ,'Yes','PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC)) - use to append within methods <br /> (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
+| `__magicIF`    | __Usage:__ H1(Html::__magicIF( TRUE ,'PHPHtml-Optimizer/Merge: Yes', FUNC_ASSOC)); - With multiple condition <br /> (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
 
 <h5>Append Method Alpha version </h5>
 
 | Other Method     | Description |
 | ---            | ---         |
-| `__magicELSE`  | This Append Method is alpha version not stable and not recommend to use (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
-| `__magicIF`    | This Append Method is alpha version not stable and not recommend to use (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
-| `SetFileExtension`       | $extension = Html::SetExtension($argu) - use this to assign extension or format to the file such .php/.html/.css etc.. |
-| `_MERGE`       | This Append Method is alpha version not stable and not recommend to use / it will remove soon |
-| `_PERFORM`     | This Append Method is alpha version not stable and not recommend to use / alternative echo/print |
+ `_PERFORM`     | This Append Method is alpha version not stable and not recommend to use / alternative echo/print |
 | `Html::BREAK()`   | Break tag ( *Not support custom html attr ! ) Optional Associated |
 | `Html::INLINE()`| Horizontal tag ( *Not support custom html attr ! ) Optional Associated |
 | `Html::STRING()` | print without/anyElements or tag ( *Not support custom html attr ! ) Optional Associated |
