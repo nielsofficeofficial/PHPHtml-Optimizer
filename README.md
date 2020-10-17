@@ -180,7 +180,7 @@ __HTML('Avatar','img',getMeIMG('src','/../'.$name.'', __PNG__ ));
 
 | Extra Methods    |  Description  |
 | ---            | ---         |
-| `SetFileExtension($PARAM)`       | __Usage:__ $extension = Html::SetExtension($argu) - use this to assign extension or format to the file such / <br /> __PARAMETERS:__ `__PHP__`,  `__HTML__`, `__CSS__`,  `__JS__`,   `__JPG__`, `__JPEG__`, `__PNG__`,  `__GIF__`,  `__BMP__`, `__TEX__`, `__XLS__`,  `__XLSX__`, `__DOCX__`, `__DOCX__`, `__PPT__`, `__PPTX__`, `__ODT__`,  `__TXT__`,  `__RTF__` |
+| `SetFileExtension()`       | __Usage:__ $extension = Html::SetExtension($argu) - use this to assign extension or format to the file such / <br /> __Parameters:__ `__PHP__`,  `__HTML__`, `__CSS__`,  `__JS__`,   `__JPG__`, `__JPEG__`, `__PNG__`,  `__GIF__`,  `__BMP__`, `__TEX__`, `__XLS__`,  `__XLSX__`, `__DOCX__`, `__DOCX__`, `__PPT__`, `__PPTX__`, `__ODT__`,  `__TXT__`,  `__RTF__` |
 
 <h5>Append Method Alpha version </h5>
 
