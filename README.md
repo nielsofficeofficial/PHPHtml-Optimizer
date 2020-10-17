@@ -418,6 +418,8 @@ xMERGE($elem=null);
 
 
 <br />
+*NOTE ! For Updates use new version for new project to avoid conflict.
+
 This Library is 100% secured and fully free ready to use, If you see vulnerability you can email me: @ nieldigitalsolution@gmail.com
 Thanks and good luck! 
 
