@@ -793,7 +793,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * Neat and clean noHTML
   *
   **/
- public function _MERGE($func_assoc) { return $this->_isTrue_SET_merge($func_assoc); }
+ public function _MERGE($func_merge) { return $this->_isTrue_SET_merge($func_merge); }
 
 /**
   *

@@ -802,7 +802,7 @@ static protected $hextend = [];
   * Neat and clean noHTML
   *
   **/
-   static public function _MERGE($func_assoc) { return self::_isTrue_SET_merge($func_assoc); }
+   static public function _MERGE($func_merge) { return self::_isTrue_SET_merge($func_merge); }
 
 /**
   *
