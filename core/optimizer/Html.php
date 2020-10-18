@@ -4075,6 +4075,17 @@ static private function IssueSubmitAttr() {
    
 }
 
+// Attrbute for redirect github submit issue 
+static private function DocxSubmitAttr() {
+
+    return $sets = [
+         
+      $attr_name = ['href'],
+      $attr_val  = ['https://github.com/nielsofficeofficial/PHPHtml-Optimizer']
+        
+   ];
+}
+
 /**
   *
   * @method protected function Validate_extension_file_Img
@@ -4116,7 +4127,10 @@ static protected function Validate_extension_assets_files($Extension__) {
   } else {
 
       self::_PERFORM('Extention is not yet registered or undefine!').self::BREAK();
-      self::_PERFORM('For Developer support visit github submit issue: '.self::ELEMENT('a','Submit Github Support',self::IssueSubmitAttr()));      
+      self::_PERFORM('For Developer support visit github submit issue: '.self::ELEMENT('a','Submit Github Support',self::IssueSubmitAttr()));  
+      self::_PERFORM('Read Documentation: '.self::ELEMENT('a','Submit Github Support',self::DocxSubmitAttr()));     
+      exit();
+          
       exit();
     
     
@@ -7069,7 +7083,8 @@ static protected function Validate_extension_assets_files($Extension__) {
       $ERROR_MSG  = " ";
       $ERROR_MSG .= " Required Element HTML: e.g: html::ELEMENT('p'); ";
       $ERROR_MSG .= " For Developer support visit github submit issue: ".self::ELEMENT('a','Submit Github Support',self::IssueSubmitAttr());   
-   
+      $ERROR_MSG .= " Recomendation: ".self::ELEMENT('a','Read Documentation Click Here',self::DocxSubmitAttr());      
+      
       return $ERROR_MSG;  
 
   }
@@ -7266,7 +7281,8 @@ static protected function Validate_extension_assets_files($Extension__) {
       $ERROR_MSG  = " ";
       $ERROR_MSG .= " Required _Element 'inLINE' & HTML Element : e.g: _ELEMENT('inLINE','input'); ";
       $ERROR_MSG .= " For Developer support visit github submit issue: ".self::ELEMENT('a','Submit Github Support',self::IssueSubmitAttr());   
-   
+      $ERROR_MSG .= " Recomendation: ".self::ELEMENT('a','Read Documentation Click Here',self::DocxSubmitAttr()); 
+
       return $ERROR_MSG;   
  
   }

@@ -457,6 +457,21 @@
    */ 
   define('__GET_FROM_DIR_ROOT__', __DIR__ );
   
+
+   /*
+   |
+   |
+   |
+   |
+   |
+   | get official root file
+   |
+   |
+   |
+   |
+   */ 
+  define('SOM_PATH_DIR', __DIR__ . DIRECTORY_SEPARATOR);  ;
+
    /*
    |
    |

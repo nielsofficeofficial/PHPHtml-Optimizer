@@ -4450,6 +4450,17 @@ static private function IssueSubmitAttr() {
    ];
 }
 
+// Attrbute for redirect github submit issue 
+static private function DocxSubmitAttr() {
+
+    return $sets = [
+         
+      $attr_name = ['href'],
+      $attr_val  = ['https://github.com/nielsofficeofficial/PHPHtml-Optimizer']
+        
+   ];
+}
+
 /**
   *
   * @method protected function Validate_extension_file_Img
@@ -4491,9 +4502,9 @@ static protected function Validate_extension_assets_files($Extension__) {
   } else {
 
       self::_PERFORM('Extention is not yet registered or undefine!').self::BREAK();
-      self::_PERFORM('For Developer support visit github submit issue: '.self::ELEMENT('a','Submit Github Support',self::IssueSubmitAttr()));      
+      self::_PERFORM('For Developer support visit github submit issue: '.self::ELEMENT('a','Submit Github Support',self::IssueSubmitAttr())); 
+      self::_PERFORM('Recomendation: '.self::ELEMENT('a','Read Documentation Click Here',self::DocxSubmitAttr()));     
       exit();
-    
     
   }
   
@@ -7102,7 +7113,9 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
       # RETURN_DEFUALT_IF_EXCECUTED_BUT_NOT_SET
       $ERROR_MSG  = " ";
       $ERROR_MSG .= " Required Element HTML: e.g: html::ELEMENT('p'); ";
-      $ERROR_MSG .= " For Developer support visit github submit issue: ".self::ELEMENT('a','Submit Github Support',self::IssueSubmitAttr());   
+      $ERROR_MSG .= " For Developer support visit github submit issue: ".self::ELEMENT('a','Submit Github Support',self::IssueSubmitAttr()); 
+      $ERROR_MSG .= " Recomendation: ".self::ELEMENT('a','Read Documentation Click Here',self::DocxSubmitAttr()); 
+       
    
       return $ERROR_MSG;  
 
@@ -7300,7 +7313,8 @@ static protected function _setReturnINLINELEMENT($elem, $js, $id, $class,$assoc)
       $ERROR_MSG  = " ";
       $ERROR_MSG .= " Required _Element 'inLINE' & HTML Element : e.g: _ELEMENT('inLINE','input'); ";
       $ERROR_MSG .= " For Developer support visit github submit issue: ".self::ELEMENT('a','Submit Github Support',self::IssueSubmitAttr());   
-   
+      $ERROR_MSG .= " Recomendation: ".self::ELEMENT('a','Read Documentation Click Here',self::DocxSubmitAttr());   
+     
       return $ERROR_MSG;   
 
   }
