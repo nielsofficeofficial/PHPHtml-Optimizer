@@ -440,7 +440,9 @@ Github : To allow me to upload my PHPHtml-Optimizer PHP Library to repository<br
 php.net: To oppurtunity Develop web application using corePHP - PHPFrameworks integrated w/PHPHtml-Optimizer<br />
 w3school: HTML Elements reference</h5>
 
-__For Suggestion and Donation/Sponsorship You can send via My GCash : +639650332900__ 
+__For Suggestion and Donation/Sponsorship You can send via My GCash : +639650332900__
+__Paypal Account: syncdevprojects@gmail.com__
+
 
 Thanks and good luck! 
 
