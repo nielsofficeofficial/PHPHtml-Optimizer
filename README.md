@@ -435,7 +435,6 @@ This Library is 100% secured and fully free ready to use, If you see vulnerabili
 
 <h2>Thanks To:</h2>
 <h5>
-Divine God : For Knowledge Wisdom and Understanding<br />
 Github : To allow me to upload my PHPHtml-Optimizer PHP Library to repository<br /> 
 php.net : To oppurtunity Develop web application using corePHP - PHPFrameworks<br />
 w3school : HTML Elements reference</h5>
