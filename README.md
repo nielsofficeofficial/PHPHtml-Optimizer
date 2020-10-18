@@ -3,7 +3,7 @@
 <h6>PHPHtml-Optimizer is a PHP FREE library that will help PHP/Developer/Programmer beautiful and optimize codes. </h6>
 <p>It is simplified the code from HTML removing backticks, double quotes and saving time to convert or wrap HTML into PHP through appended variables although appending in the variable will be still possible using for some reason within your codes, PHPHtml-Optimizer is easier to optimize your codes lessen big page-load to your application/program.<br />
 When the browser detect that there will no HTML printed the interpreter will execute your codes once at the same time, not section by section at that point your data will be rendered accurately.<br /><br />
-To refractor/optimize code is a hassle and heavy load burden in programming, Allow PHPHtml-Optimizer will do that for you while you develop your Internet application, with this library will push you driving your codes learning the OOP concept to make more effective your codes into your application neat and clean not just clean but beautiful maintainable codes, you can use this library and feel FREE if you are comfortable.    
+To refractor/optimize code is a hassle and heavy load burden in programming, Allow PHPHtml-Optimizer will do that for you while you develop your Internet application, with this library will push you driving your codes learning the OOP concept to make more effective your codes into your application neat and clean not just clean but beautiful maintainable codes, you can use this library and feel FREE if are comfortable.    
 </p>
 <h4>Installing PHPHtml-Optimizer</h4>
 <pre>
@@ -194,6 +194,13 @@ __HTML('Avatar','img',getMeIMG('src','/../'.$name.'', __PNG__ ));
 | `CLASS_ASSOC`  | Is a Paramenter that will use and position to the very end of function or methods Optional Associated |
 | `FUNC_ASSOC`   | Is a Paramenter that will use and position to the very end of function or methods Optional Associated |
 
+| Extra Methods    |  Description  |
+| ---            | ---         |
+| `SetFileExtension()`       | __Usage:__ $extension = Html::SetExtension(PARAM) - use this to assign extension or format to the file such as.. <br /> __Parameters:__ `__PHP__`,  `__HTML__`, `__CSS__`,  `__JS__`,   `__JPG__`, `__JPEG__`, `__PNG__`,  `__GIF__`,  `__BMP__`, `__TEX__`, `__XLS__`,  `__XLSX__`, `__DOCX__`, `__DOCX__`, `__PPT__`, `__PPTX__`, `__ODT__`,  `__TXT__`,  `__RTF__` |
+| `_MERGE()`       | __Usage:__ Html::_MERGE(Html::Function1().Html::Function2()); - use this to print two methods or function one at the time ex. heading and content <br /> __Parameter:__ AnyFunction(); |
+| `__magicELSE()`  | __Usage:__ H1(Html::__magicELSE( FALSE ,'Yes','PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC)) - use to append within methods <br /> (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
+| `__magicIF()`    | __Usage:__ H1(Html::__magicIF( TRUE ,'PHPHtml-Optimizer/Merge: Yes', FUNC_ASSOC)); - With multiple condition <br /> (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
+
 <h5>Append Method Alpha version </h5>
 
 | Other Method     | Description |
@@ -383,12 +390,7 @@ Html::xH1($label=null)
 | `Html::BODY()`| Element        |      |  |
 | `Html::noHTML()`| Element      |      |  |
 
-| Extra Methods    |  Description  |
-| ---            | ---         |
-| `SetFileExtension()`       | __Usage:__ $extension = Html::SetExtension(PARAM) - use this to assign extension or format to the file such as.. <br /> __Parameters:__ `__PHP__`,  `__HTML__`, `__CSS__`,  `__JS__`,   `__JPG__`, `__JPEG__`, `__PNG__`,  `__GIF__`,  `__BMP__`, `__TEX__`, `__XLS__`,  `__XLSX__`, `__DOCX__`, `__DOCX__`, `__PPT__`, `__PPTX__`, `__ODT__`,  `__TXT__`,  `__RTF__` |
-| `_MERGE()`       | __Usage:__ Html::_MERGE(Html::Function1().Html::Function2()); - use this to print two methods or function one at the time ex. heading and content <br /> __Parameter:__ AnyFunction(); |
-| `__magicELSE()`  | __Usage:__ H1(Html::__magicELSE( FALSE ,'Yes','PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC)) - use to append within methods <br /> (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
-| `__magicIF()`    | __Usage:__ H1(Html::__magicIF( TRUE ,'PHPHtml-Optimizer/Merge: Yes', FUNC_ASSOC)); - With multiple condition <br /> (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
+
 
 <br />
 <img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t1.0-9/119715665_1186082691765282_2093887907714346762_n.jpg?_nc_cat=105&_nc_sid=730e14&_nc_eui2=AeH72dqqY9T8i68c464gOPHOSxYWFwR0Nd1LFhYXBHQ13XDbhayV89QnK05ZPhGmD8-PwpZTdWfJBhkvNqsUR1Ts&_nc_ohc=KA6nhf8YuSkAX9tSNsY&_nc_oc=AQm-jmRqatQPGwHBTt_L9xcU5plIAqlVwdSwWzNRCLOGbOviYenh9hW549kswYSr5uw&_nc_ht=scontent.fmnl3-2.fna&oh=9de92625da228cf3cd22309be0c63328&oe=5F8D58EF">
@@ -425,6 +427,7 @@ xMERGE($elem=null);
 | `H2()`         | Heading 2      | `_xHTML('H2')` |`__HTML('my_track','track')`   |`_H2()`/`xH2()`                       |`_MERGE('H2')`/`xMERGE('H2')` |
 | ...            | ...            | ...            |...                            |...                                   | <a href="#element">loading...</a>                   |
 
+
 <br />
 *NOTE ! For Updates use new version for new project to avoid conflict.
 
@@ -432,11 +435,12 @@ This Library is 100% secured and fully free ready to use, If you see vulnerabili
 
 <h2>Thanks To:</h2>
 <h5>
+Divine God : For Knowledge Wisdom and Understanding<br />
 Github : To allow me to upload my PHPHtml-Optimizer PHP Library to repository<br /> 
 php.net : To oppurtunity Develop web application using corePHP - PHPFrameworks<br />
 w3school : HTML Elements reference</h5>
 
-__For Suggestion and Support, Donation/Sponsorship You can send via My GCash : +639650332900__ <br />
+__For Suggestion and Donation/Sponsorship You can send via My GCash : +639650332900__ <br />
 __Also You can send via My Paypal account: syncdevprojects@gmail.com__
 
 

@@ -30,7 +30,7 @@
  *
  */
 
-include_once __DIR__ . '/../../prop.php';
+require_once __DIR__ . '/../../prop.php';
 
 if ( $GetOptimized_ = file_exists(dirname(__FILE__) . __CHECK_MAIN_MERGE_ON_PAGE__ ) &&
      $GetOptimized_ = file_exists(dirname(__FILE__) . __CHECK_MAIN_MERGE_ON_CLASS__ ) ) {
