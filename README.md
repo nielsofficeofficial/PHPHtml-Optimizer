@@ -10,7 +10,7 @@ To refractor/optimize code is a hassle and heavy load burden in programming, All
 
 // Require file in header file or in every page where you will use. 
 // This is for Static method settup which most use on pages
-require_once (__DIR__ . '/library/PHPHtml-Optimizer/PHPHtml-Optimizer.php');
+require_once (\_\_DIR\_\_ . '/library/PHPHtml-Optimizer/PHPHtml-Optimizer.php');
 
 
 // Static Default
@@ -40,7 +40,7 @@ $html->h1('optimizer');
 ~ composer require phphtml-optimizer/phphtml-optimizer
 <br />
 // This is for Static method settup which most use on pages
-require_once (__DIR__ . '/library/PHPHtml-Optimizer/PHPHtml-Optimizer.php');
+require_once ( \_\_DIR\_\_ . '/library/PHPHtml-Optimizer/PHPHtml-Optimizer.php');
 
 ...
 ...
