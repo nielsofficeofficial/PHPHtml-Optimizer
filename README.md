@@ -1,5 +1,4 @@
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/9aa969ea8b1642588110cc72dd308343)](https://www.codacy.com/gh/nielsofficeofficial/PHPHtml-Optimizer/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nielsofficeofficial/PHPHtml-Optimizer&amp;utm_campaign=Badge_Grade)
 
 <img src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t1.0-9/119389723_1181335685573316_2339548645504738190_n.jpg?_nc_cat=103&_nc_sid=730e14&_nc_eui2=AeFjNkrFhVNjcxR9W-QtwMKG_uGjgyCAqLH-4aODIICosd7orVRodvpIVMgnCL6x0pJ5epFA3U6mpHBm2VkJl7vc&_nc_ohc=VqXGzZi2mvkAX8_tiLn&_nc_ht=scontent.fmnl3-1.fna&oh=0e70840c2f5ec7a5d20b5b94739a5b8a&oe=5F8768AA">
 <h6>Support PHP v7.0++ higher | not work for v.7 less</h6>
