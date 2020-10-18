@@ -432,9 +432,15 @@ xMERGE($elem=null);
 *NOTE ! For Updates use new version for new project to avoid conflict.
 
 This Library is 100% secured and fully free ready to use, If you see vulnerability you can email me: @ nieldigitalsolution@gmail.com
+
+<h2>Thanks To:</h2>
+<h5>Github : To allow me to upload my PHPHtml-Optimizer PHP Library to repository </h5>
+<h5>php.net: To Oppurtunity Develop Web Application using corePHP / PHPFrameworks</h5>
+<h5>w3school: HTML Elements reference</h5>
+
+For Suggestion and Donation/Sponsorship You can send via My GCash : +639650332900 
+
 Thanks and good luck! 
-
-
 
 
 
