@@ -437,7 +437,7 @@ Github : To allow me to upload my PHPHtml-Optimizer PHP Library to repository<br
 php.net : To oppurtunity Develop web application using corePHP - PHPFrameworks<br />
 w3school : HTML Elements reference</h5>
 
-__For Suggestion and Donation/Sponsorship You can send via My GCash : +639650332900__ <br />
+__For Suggestion and Support, Donation/Sponsorship You can send via My GCash : +639650332900__ <br />
 __Also You can send via My Paypal account: syncdevprojects@gmail.com__
 
 
