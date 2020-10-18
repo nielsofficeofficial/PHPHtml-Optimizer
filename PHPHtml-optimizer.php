@@ -31,8 +31,8 @@
  */
 
 // Require prop msg and function handler
-require_once __DIR__ . '/core/prop.php';
-require_once __DIR__ . '/prop.php';
+include_once __DIR__ . '/core/prop.php';
+include_once __DIR__ . '/prop.php';
 
 /**
  *
