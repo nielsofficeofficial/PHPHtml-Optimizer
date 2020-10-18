@@ -383,7 +383,12 @@ Html::xH1($label=null)
 | `Html::BODY()`| Element        |      |  |
 | `Html::noHTML()`| Element      |      |  |
 
-
+| Extra Methods    |  Description  |
+| ---            | ---         |
+| `SetFileExtension()`       | __Usage:__ $extension = Html::SetExtension(PARAM) - use this to assign extension or format to the file such as.. <br /> __Parameters:__ `__PHP__`,  `__HTML__`, `__CSS__`,  `__JS__`,   `__JPG__`, `__JPEG__`, `__PNG__`,  `__GIF__`,  `__BMP__`, `__TEX__`, `__XLS__`,  `__XLSX__`, `__DOCX__`, `__DOCX__`, `__PPT__`, `__PPTX__`, `__ODT__`,  `__TXT__`,  `__RTF__` |
+| `_MERGE()`       | __Usage:__ Html::_MERGE(Html::Function1().Html::Function2()); - use this to print two methods or function one at the time ex. heading and content <br /> __Parameter:__ AnyFunction(); |
+| `__magicELSE()`  | __Usage:__ H1(Html::__magicELSE( FALSE ,'Yes','PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC)) - use to append within methods <br /> (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
+| `__magicIF()`    | __Usage:__ H1(Html::__magicIF( TRUE ,'PHPHtml-Optimizer/Merge: Yes', FUNC_ASSOC)); - With multiple condition <br /> (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
 
 <br />
 <img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t1.0-9/119715665_1186082691765282_2093887907714346762_n.jpg?_nc_cat=105&_nc_sid=730e14&_nc_eui2=AeH72dqqY9T8i68c464gOPHOSxYWFwR0Nd1LFhYXBHQ13XDbhayV89QnK05ZPhGmD8-PwpZTdWfJBhkvNqsUR1Ts&_nc_ohc=KA6nhf8YuSkAX9tSNsY&_nc_oc=AQm-jmRqatQPGwHBTt_L9xcU5plIAqlVwdSwWzNRCLOGbOviYenh9hW549kswYSr5uw&_nc_ht=scontent.fmnl3-2.fna&oh=9de92625da228cf3cd22309be0c63328&oe=5F8D58EF">
@@ -419,13 +424,6 @@ xMERGE($elem=null);
 | `H1()`         | Heading 1      | `_xHTML('H1')` |`__HTML('my_input','INPUT')`   |`_H1()`/`xH1()`                       |`_MERGE('H1')`/`xMERGE('H1')` |
 | `H2()`         | Heading 2      | `_xHTML('H2')` |`__HTML('my_track','track')`   |`_H2()`/`xH2()`                       |`_MERGE('H2')`/`xMERGE('H2')` |
 | ...            | ...            | ...            |...                            |...                                   | <a href="#element">loading...</a>                   |
-
-| Extra Methods    |  Description  |
-| ---            | ---         |
-| `SetFileExtension()`       | __Usage:__ $extension = Html::SetExtension(PARAM) - use this to assign extension or format to the file such as.. <br /> __Parameters:__ `__PHP__`,  `__HTML__`, `__CSS__`,  `__JS__`,   `__JPG__`, `__JPEG__`, `__PNG__`,  `__GIF__`,  `__BMP__`, `__TEX__`, `__XLS__`,  `__XLSX__`, `__DOCX__`, `__DOCX__`, `__PPT__`, `__PPTX__`, `__ODT__`,  `__TXT__`,  `__RTF__` |
-| `_MERGE()`       | __Usage:__ Html::_MERGE(Html::Function1().Html::Function2()); - use this to print two methods or function one at the time ex. heading and content <br /> __Parameter:__ AnyFunction(); |
-| `__magicELSE()`  | __Usage:__ H1(Html::__magicELSE( FALSE ,'Yes','PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC)) - use to append within methods <br /> (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
-| `__magicIF()`    | __Usage:__ H1(Html::__magicIF( TRUE ,'PHPHtml-Optimizer/Merge: Yes', FUNC_ASSOC)); - With multiple condition <br /> (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
 
 <br />
 *NOTE ! For Updates use new version for new project to avoid conflict.
