@@ -357,7 +357,7 @@
    |
    |
    */ 
-  define('__DIRECTORY_OPTIMIZER_PAGE__','/core/onPage/');
+  define('__DIRECTORY_OPTIMIZER_PAGE__','/core/merge/');
 
   /*
    |
@@ -399,7 +399,7 @@
    |
    |
    */ 
-  define('__GET_VALIDATE_FILE_PAGE_EXIST__', '/core/onPage/Html.php');  
+  define('__GET_VALIDATE_FILE_PAGE_EXIST__', '/core/merge/Html.php');  
 
   /*
    |
@@ -413,7 +413,7 @@
    |
    |
    */
-  define('__GET_MERGE_FILES__', '/core/OnPage/prop.php');    
+  define('__GET_MERGE_FILES__', '/core/merge/prop.php');    
   
   /*
    |
@@ -483,7 +483,7 @@
    |
    |
    */ 
-  define('__GET_STATIC_CLASS_HTML__','/core/onPage/Html.php');
+  define('__GET_STATIC_CLASS_HTML__','/core/merge/Html.php');
 
    /*
    |
@@ -497,7 +497,7 @@
    |
    |
    */ 
-  define('__GET_INSTANTIATE_CLASS_HTML__','/core/onClass/Html.php');  
+  define('__GET_INSTANTIATE_CLASS_HTML__','/core/optimizer/Html.php');  
  
    /*
    |
@@ -511,7 +511,7 @@
    |
    |
    */ 
-  define('__CHECK_MAIN_MERGE_ON_PAGE__','/../onPage/Html.php');
+  define('__CHECK_MAIN_MERGE_ON_PAGE__','/../merge/Html.php');
  
    /*
    |
@@ -525,7 +525,7 @@
    |
    |
    */
-  define('__CHECK_MAIN_MERGE_ON_CLASS__','/../onClass/Html.php'); 
+  define('__CHECK_MAIN_MERGE_ON_CLASS__','/../optimizer/Html.php'); 
 
    /*
    |

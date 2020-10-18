@@ -2,6 +2,8 @@
 
 require_once __DIR__ . '/PHPHtml-Optimizer.php';
 
+USE \PHPHtml\CodeOptimizer\merge\Html;
+
  function my_data() {
       
   $datas = [];
@@ -31,14 +33,12 @@ require_once __DIR__ . '/PHPHtml-Optimizer.php';
 #############################################################################################################
  
  # Usage within The CLass
-  $Html = new  \PHPHtml\CodeOptimizer\Html();  
 
-  // or  USE  \PHPHtml\CodeOptimizer\Html AS MyProjectName; 
-  // $Project = NEW MyProjectName();
-  
-  $Html->H2('Hello World!');
+$html = NEW \PHPHtml\CodeOptimizer\optimizer\Html();
+
+$html->H2('Hello World!');
 
 #############################################################################################################
 
 
- H1('Hello World Merge!');
+H1('Hello World Merge!');

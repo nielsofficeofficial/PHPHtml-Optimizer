@@ -7,15 +7,32 @@ To refractor/optimize code is a hassle and heavy load burden in programming, All
 </p>
 <h4>Installing PHPHtml-Optimizer</h4>
 <pre>
+
 // Require file in header file or in every page where you will use. 
 // This is for Static method settup which most use on pages
 require_once __DIR__ . '/library/PHPHtml-Optimizer/PHPHtml-Optimizer.php';
-<br />
-// do HTML 
-Html::H1('Hello World!');
+
+
+// Static Default
+USE \PHPHtml\CodeOptimizer\merge\Html;
+
+// Static Alias
+USE \PHPHtml\CodeOptimizer\merge\Html AS MyHTML;
+MyHTML::h1('Static');
+
+// Instantiate Default
+$html = NEW \PHPHtml\CodeOptimizer\optimizer\Html();
+
+// Instantiate Alias
+USE \PHPHtml\CodeOptimizer\optimizer\Html AS MyElement;
+$html = NEW MyElement();
+$html->h1('optimizer');
+
 </pre>
+
 <h4>Installing PHPHtml-Optimizer w/Composer</h4>
 <pre>
+
 // Run Command line directory with your project folder
 ~ C:/path/www/project/Library/
 <br />
@@ -25,28 +42,27 @@ Html::H1('Hello World!');
 // This is for Static method settup which most use on pages
 require_once __DIR__ . '/library/PHPHtml-Optimizer/PHPHtml-Optimizer.php';
 
-// do HTML 
-Html::H1('Hello World!');
-
-// Within the Class
-$Html = new  \PHPHtml\CodeOptimizer\OnClass\Html();  
 ...
-$this->$Html->H2('Hello World!');
+...
 
 </pre>
+
 <h4>Folder Structure:</h4>
+
 <pre>
+
 |- root folder
   |- library
     |- PHPHtml-Optimizer
-       |- onClass
-       |- onPage
+       |- optimizer
+       |- merge
        |- PHPHtml-optimizer.php
        |- prop.php
   |- assets
   |- includes
   |- etc..
-  </pre>
+
+</pre>
 
 <h4>Sample Code | PHP with HTML Default (Wrapping Html)/Procedural</h4>
 <pre>
@@ -181,7 +197,7 @@ __HTML('Avatar','img',getMeIMG('src','/../'.$name.'', __PNG__ ));
 | Extra Methods    |  Description  |
 | ---            | ---         |
 | `SetFileExtension()`       | __Usage:__ $extension = Html::SetExtension(PARAM) - use this to assign extension or format to the file such as.. <br /> __Parameters:__ `__PHP__`,  `__HTML__`, `__CSS__`,  `__JS__`,   `__JPG__`, `__JPEG__`, `__PNG__`,  `__GIF__`,  `__BMP__`, `__TEX__`, `__XLS__`,  `__XLSX__`, `__DOCX__`, `__DOCX__`, `__PPT__`, `__PPTX__`, `__ODT__`,  `__TXT__`,  `__RTF__` |
-| `_MERGE()`       | __Usage:__ Html::-MERGE(Html::Function1().Html::Function2()); - use this to print two methods or function one at the time ex. heading and content <br /> __Parameter:__ AnyFunction(); |
+| `_MERGE()`       | __Usage:__ Html::_MERGE(Html::Function1().Html::Function2()); - use this to print two methods or function one at the time ex. heading and content <br /> __Parameter:__ AnyFunction(); |
 | `__magicELSE`  | __Usage:__ H1(Html::__magicELSE( FALSE ,'Yes','PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC)) - use to append within methods <br /> (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
 | `__magicIF`    | __Usage:__ H1(Html::__magicIF( TRUE ,'PHPHtml-Optimizer/Merge: Yes', FUNC_ASSOC)); - With multiple condition <br /> (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
 
@@ -195,21 +211,22 @@ __HTML('Avatar','img',getMeIMG('src','/../'.$name.'', __PNG__ ));
 | `Html::STRING()` | print without/anyElements or tag ( *Not support custom html attr ! ) Optional Associated |
 
 
-<h5>Usage: withinClass | Instantiate Class Methods</h5>
+<h5>Usage: Extending Static and Instantiate Class Methods</h5>
+
 <pre>
 
-$Html = new  \PHPHtml\CodeOptimizer\OnClass\Html();  
-...
-echo $Html->H2('Hello World!');
+// Static Default
+USE \PHPHtml\CodeOptimizer\merge\Html;
 
-#OR
-USE  \PHPHtml\CodeOptimizer\OnClass\Html AS MyProjectName; 
-...
-$Html = NEW MyProjectName();
-...
-echo $Html->H2(Hello World');
+// Static Alias
+USE \PHPHtml\CodeOptimizer\merge\Html AS MyHTML;
 
-#OR Extend Class 
+// Instantiate Default
+$html = NEW \PHPHtml\CodeOptimizer\optimizer\Html();
+
+// Instantiate Alias
+USE \PHPHtml\CodeOptimizer\optimizer\Html AS MyProjectName;
+
 Class ProgramName extend MyProjectName {
   
   public function __construct() {
@@ -217,36 +234,26 @@ Class ProgramName extend MyProjectName {
    parent::H1('Hello World'); 
 
    }
+
 }
-
-#OR 
-
-// Static Default
-USE \PHPHtml\CodeOptimizer\onPage\Html;
-
-// Static Alias
-USE \PHPHtml\CodeOptimizer\onPage\Html AS MyHTML;
-MyHTML::h1('Static');
-
-// Instantiate Default
-$html = NEW \PHPHtml\CodeOptimizer\onClass\Html();
-
-// Instantiate Alias
-USE \PHPHtml\CodeOptimizer\onClass\Html AS MyElement;
-
-$html = NEW MyElement();
-$html->h1('OnCLass');
 
 </pre>
 
+
 <h5>Usage: Static | More Samples with Parameters</h5>
+
 <pre>
+
 // Html Custom attributes:
- function my_htmattr() {
+function my_htmattr() {
+
     return $sets = [
+
       $attr_name = ['1','2'],
       $attr_val  = ['_niel_','_fernandez_']  
+
     ];
+
  }
  
 Print html::H1("Hello World",my_htmattr() ,'MyID','MyClass','MyLabel',FUNC_ASSOC);
@@ -260,6 +267,7 @@ Print html::H1(html::STRING("Heading Hello World", FUNC_ASSOC), my_htmattr(),'My
 
 // NULL use outside of function 
 html::H1("Hello World",my_htmattr(),'MyID','MyClass','', NULL); 
+
 </pre>
 
 <h5>Static ELEMENTS and parameters </h5>
