@@ -40,7 +40,7 @@ USE  \PHPHtml\CodeOptimizer\optimizer\Html AS MergeBox;
   * Inline Heading tag H1
   *
   **/
-function _H1($attr=null, $id=null, $class=null) {
+function _H1($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -50,13 +50,13 @@ function _H1($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag H1
    * @package : Static Procedural
-   * @method  : Html::_H1($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_H1($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_H1($attr, $id, $class);	
+  return $Html->_H1($attr, $element_id, $element_class);	
 
 }
 /**
@@ -81,7 +81,7 @@ function xH1($label = NULL) {
   * Inline Heading tag H2
   *
   **/
-function _H2($attr=null, $id=null, $class=null) {
+function _H2($attr=null, $element_id=null, $element_class=null) {
  
   /**
    *
@@ -91,13 +91,13 @@ function _H2($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag H2
    * @package : Static Procedural
-   * @method  : Html::_H2($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_H2($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/   
  $Html = NEW MergeBox(); 
- return $Html->_H2($attr, $id, $class);	
+ return $Html->_H2($attr, $element_id, $element_class);	
 
 }
 
@@ -123,7 +123,7 @@ function xH2($label = NULL) {
   * Inline Heading tag H3
   *
   **/
-function _H3($attr=null, $id=null, $class=null) {
+function _H3($attr=null, $element_id=null, $element_class=null) {
   
   /**
    *
@@ -133,13 +133,13 @@ function _H3($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag H3
    * @package : Static Procedural
-   * @method  : Html::_H3($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_H3($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/   
  $Html = NEW MergeBox(); 
- return $Html->_H3($attr, $id, $class);	
+ return $Html->_H3($attr, $element_id, $element_class);	
 
 }
 
@@ -165,7 +165,7 @@ function xH3($label = NULL) {
   * Inline Heading tag H4
   *
   **/
-function _H4($attr=null, $id=null, $class=null) {
+function _H4($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -175,13 +175,13 @@ function _H4($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag H3
    * @package : Static Procedural
-   * @method  : Html::_H3($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_H3($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 
  $Html = NEW MergeBox(); 
- return $Html->_H4($attr, $id, $class);	
+ return $Html->_H4($attr, $element_id, $element_class);	
 
 }
 
@@ -207,7 +207,7 @@ function xH4($label = NULL) {
   * Inline Heading tag H5
   *
   **/
-function _H5($attr=null, $id=null, $class=null) {
+function _H5($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -217,13 +217,13 @@ function _H5($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag H5
    * @package : Static Procedural
-   * @method  : Html::_H5($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_H5($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/
  $Html = NEW MergeBox(); 
- return $Html->_H5($attr, $id, $class);	
+ return $Html->_H5($attr, $element_id, $element_class);	
 
 }
 
@@ -249,7 +249,7 @@ function xH5($label = NULL) {
   * Inline Heading tag H6
   *
   **/
-function _H6($attr=null, $id=null, $class=null) {
+function _H6($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -259,13 +259,13 @@ function _H6($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag H6
    * @package : Static Procedural
-   * @method  : Html::_H($v6alue, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_H($v6alue, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
  $Html = NEW MergeBox(); 
- return $Html->_H6($attr, $id, $class);	
+ return $Html->_H6($attr, $element_id, $element_class);	
 
 }
 
@@ -291,7 +291,7 @@ function xH6($label = NULL) {
   * Inline Heading tag DIV
   *
   **/
-function _DIV($attr=null, $id=null, $class=null) {
+function _DIV($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -301,13 +301,13 @@ function _DIV($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag DIV
    * @package : Static Procedural
-   * @method  : Html::_DIV($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_DIV($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_DIV($attr, $id, $class);	
+  return $Html->_DIV($attr, $element_id, $element_class);	
 
 }
 
@@ -329,53 +329,11 @@ function xDIV($label = NULL) {
   *
   * @since 20.19.2020
   * @category PHPHtml-Merge
-  * @ Method Defined HTML P OPEN TAG noHTML  
-  * Inline Heading tag P
-  *
-  **/
-function _P($attr=null, $id=null, $class=null) {
-
-  /**
-   *
-   *
-   *
-   *
-   *
-   * @package : Merge Heading tag P
-   * @package : Static Procedural
-   * @method  : Html::_P($value, $attr=null, $id, $class, $label, $assoc);
-   *
-   *
-   *
-   **/   
-  $Html = NEW MergeBox(); 
-  return $Html->_P($attr, $id, $class);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
-  * @ Method Defined HTML P CLOSE TAG noHTML  
-  * Inline Heading tag P
-  *
-  **/
-function xP($label = NULL) {
-
-  $Html = NEW MergeBox(); return $Html->xP($label);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
   * @ Method Defined HTML BUTTON OPEN TAG noHTML  
   * Inline Heading tag BUTTON
   *
   **/
-function _BUTTON($attr=null, $id=null, $class=null) {
+function _BUTTON($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -385,13 +343,13 @@ function _BUTTON($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag BUTTON
    * @package : Static Procedural
-   * @method  : Html::_BUTTON($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_BUTTON($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/   	
   $Html = NEW MergeBox(); 
-  return $Html->_BUTTON($attr, $id, $class);	
+  return $Html->_BUTTON($attr, $element_id, $element_class);	
 
 }
 
@@ -413,53 +371,11 @@ function xBUTTON($label = NULL) {
   *
   * @since 20.19.2020
   * @category PHPHtml-Merge
-  * @ Method Defined HTML A OPEN TAG noHTML  
-  * Inline Heading tag A
-  *
-  **/
-function _A($attr=null, $id=null, $class=null) {
-
-  /**
-   *
-   *
-   *
-   *
-   *
-   * @package : Merge Heading tag A
-   * @package : Static Procedural
-   * @method  : Html::_A($value, $attr=null, $id, $class, $label, $assoc);
-   *
-   *
-   *
-   **/   
-  $Html = NEW MergeBox(); 
-  return $Html->_A($attr, $id, $class);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
-  * @ Method Defined HTML A CLOSE TAG noHTML  
-  * Inline Heading tag A
-  *
-  **/
-function xA($label = NULL) {
-
-  $Html = NEW MergeBox(); return $Html->xA($label);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
   * @ Method Defined HTML IFRAME OPEN TAG noHTML  
   * Inline Heading tag IFRAME
   *
   **/
-function _IFRAME($attr=null, $id=null, $class=null) {
+function _IFRAME($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -469,13 +385,13 @@ function _IFRAME($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag IFRAME
    * @package : Static Procedural
-   * @method  : Html::_IFRAME($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_IFRAME($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_IFRAME($attr, $id, $class);	
+  return $Html->_IFRAME($attr, $element_id, $element_class);	
 
 }
 
@@ -501,7 +417,7 @@ function xIFRAME($label = NULL) {
   * Inline Heading tag MAIN
   *
   **/
-function _MAIN($attr=null, $id=null, $class=null) {
+function _MAIN($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -511,13 +427,13 @@ function _MAIN($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag MAIN
    * @package : Static Procedural
-   * @method  : Html::_MAIN($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_MAIN($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_MAIN($attr, $id, $class);	
+  return $Html->_MAIN($attr, $element_id, $element_class);	
 
 }
 
@@ -543,7 +459,7 @@ function xMAIN($label = NULL) {
   * Inline Heading tag NAV
   *
   **/
-function _NAV($attr=null, $id=null, $class=null) {
+function _NAV($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -553,13 +469,13 @@ function _NAV($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag NAV
    * @package : Static Procedural
-   * @method  : Html::_NAV($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_NAV($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_NAV($attr, $id, $class);	
+  return $Html->_NAV($attr, $element_id, $element_class);	
 
 }
 
@@ -585,7 +501,7 @@ function xNAV($label = NULL) {
   * Inline Heading tag SELECT
   *
   **/
-function _SELECT($attr=null, $id=null, $class=null) {
+function _SELECT($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -595,13 +511,13 @@ function _SELECT($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag SELECT
    * @package : Static Procedural
-   * @method  : Html::_SELECT($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_SELECT($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_SELECT($attr, $id, $class);	
+  return $Html->_SELECT($attr, $element_id, $element_class);	
 
 }
 
@@ -627,7 +543,7 @@ function xSELECT($label = NULL) {
   * Inline Heading tag FORM
   *
   **/
-function _FORM($attr=null, $id=null, $class=null) {
+function _FORM($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -637,13 +553,13 @@ function _FORM($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag FORM
    * @package : Static Procedural
-   * @method  : Html::_FORM($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_FORM($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_FORM($attr, $id, $class);	
+  return $Html->_FORM($attr, $element_id, $element_class);	
 
 }
 
@@ -669,7 +585,7 @@ function xFORM($label = NULL) {
   * Inline Heading tag PICTURE
   *
   **/
-function _PICTURE($attr=null, $id=null, $class=null) {
+function _PICTURE($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -679,13 +595,13 @@ function _PICTURE($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag PICTURE
    * @package : Static Procedural
-   * @method  : Html::_PICTURE($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_PICTURE($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 
   $Html = NEW MergeBox(); 
-  return $Html->_PICTURE($attr, $id, $class);	
+  return $Html->_PICTURE($attr, $element_id, $element_class);	
 
 }
 
@@ -711,7 +627,7 @@ function xPICTURE($label = NULL) {
   * Inline Heading tag SECTION
   *
   **/
-function _SECTION($attr=null, $id=null, $class=null) {
+function _SECTION($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -721,13 +637,13 @@ function _SECTION($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag SECTION
    * @package : Static Procedural
-   * @method  : Html::_SECTION($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_SECTION($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/   
   $Html = NEW MergeBox(); 
-  return $Html->_SECTION($attr, $id, $class);	
+  return $Html->_SECTION($attr, $element_id, $element_class);	
 
 }
 
@@ -753,7 +669,7 @@ function xSECTION($label = NULL) {
   * Inline Heading tag TEXTAREA
   *
   **/
-function _TEXTAREA($attr=null, $id=null, $class=null) {
+function _TEXTAREA($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -763,13 +679,13 @@ function _TEXTAREA($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag H3
    * @package : Static Procedural
-   * @method  : Html::_H3($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_H3($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_TEXTAREA($attr, $id, $class);	
+  return $Html->_TEXTAREA($attr, $element_id, $element_class);	
 
 }
 
@@ -795,7 +711,7 @@ function xTEXTAREA($label = NULL) {
   * Inline Heading tag AUDIO
   *
   **/
-function _AUDIO($attr=null, $id=null, $class=null) {
+function _AUDIO($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -805,13 +721,13 @@ function _AUDIO($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag AUDIO
    * @package : Static Procedural
-   * @method  : Html::_AUDIO($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_AUDIO($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_AUDIO($attr, $id, $class);	
+  return $Html->_AUDIO($attr, $element_id, $element_class);	
 
 }
 
@@ -837,7 +753,7 @@ function xAUDIO($label = NULL) {
   * Inline Heading tag VIDEO
   *
   **/
-function _VIDEO($attr=null, $id=null, $class=null) {
+function _VIDEO($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -847,13 +763,13 @@ function _VIDEO($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag VIDEO
    * @package : Static Procedural
-   * @method  : Html::_VIDEO($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_VIDEO($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_VIDEO($attr, $id, $class);	
+  return $Html->_VIDEO($attr, $element_id, $element_class);	
 
 }
 
@@ -879,7 +795,7 @@ function xVIDEO($label = NULL) {
   * Inline Heading tag ADDRESS
   *
   **/
-function _ADDRESS($attr=null, $id=null, $class=null) {
+function _ADDRESS($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -889,13 +805,13 @@ function _ADDRESS($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag ADDRESS
    * @package : Static Procedural
-   * @method  : Html::_ADDRESS($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_ADDRESS($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 
   $Html = NEW MergeBox(); 
-  return $Html->_ADDRESS($attr, $id, $class);	
+  return $Html->_ADDRESS($attr, $element_id, $element_class);	
 
 }
 
@@ -921,7 +837,7 @@ function xADDRESS($label = NULL) {
   * Inline Heading tag COLGROUP
   *
   **/
-function _COLGROUP($attr=null, $id=null, $class=null) {
+function _COLGROUP($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -931,13 +847,13 @@ function _COLGROUP($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag H3
    * @package : Static Procedural
-   * @method  : Html::_H3($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_H3($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_COLGROUP($attr, $id, $class);	
+  return $Html->_COLGROUP($attr, $element_id, $element_class);	
 
 }
 
@@ -963,7 +879,7 @@ function xCOLGROUP($label = NULL) {
   * Inline Heading tag BDI
   *
   **/
-function _BDI($attr=null, $id=null, $class=null) {
+function _BDI($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -973,13 +889,13 @@ function _BDI($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag H3
    * @package : Static Procedural
-   * @method  : Html::_H3($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_H3($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_BDI($attr, $id, $class);	
+  return $Html->_BDI($attr, $element_id, $element_class);	
 
 }
 
@@ -1005,7 +921,7 @@ function xBDI($label = NULL) {
   * Inline Heading tag BDO
   *
   **/
-function _BDO($attr=null, $id=null, $class=null) {
+function _BDO($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1015,13 +931,13 @@ function _BDO($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag H3
    * @package : Static Procedural
-   * @method  : Html::_H3($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_H3($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_BDO($attr, $id, $class);	
+  return $Html->_BDO($attr, $element_id, $element_class);	
 
 }
 
@@ -1047,7 +963,7 @@ function xBDO($label = NULL) {
   * Inline Heading tag BLOCKQUOTE
   *
   **/
-function _BLOCKQUOTE($attr=null, $id=null, $class=null) {
+function _BLOCKQUOTE($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1057,13 +973,13 @@ function _BLOCKQUOTE($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag BLOCKQUOTE
    * @package : Static Procedural
-   * @method  : Html::_BLOCKQUOTE($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_BLOCKQUOTE($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
  $Html = NEW MergeBox(); 
- return $Html->_BLOCKQUOTE($attr, $id, $class);	
+ return $Html->_BLOCKQUOTE($attr, $element_id, $element_class);	
 
 }
 
@@ -1089,7 +1005,7 @@ function xBLOCKQUOTE($label = NULL) {
   * Inline Heading tag CAPTION
   *
   **/
-function _CAPTION($attr=null, $id=null, $class=null) {
+function _CAPTION($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1099,13 +1015,13 @@ function _CAPTION($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag CAPTION
    * @package : Static Procedural
-   * @method  : Html::_CAPTION($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_CAPTION($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_CAPTION($attr, $id, $class);	
+  return $Html->_CAPTION($attr, $element_id, $element_class);	
 
 }
 
@@ -1131,7 +1047,7 @@ function xCAPTION($label = NULL) {
   * Inline Heading tag LABEL
   *
   **/
-function _LABEL($attr=null, $id=null, $class=null) {
+function _LABEL($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1141,13 +1057,13 @@ function _LABEL($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag LABEL
    * @package : Static Procedural
-   * @method  : Html::_LABEL($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_LABEL($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 
   $Html = NEW MergeBox(); 
-  return $Html->_LABEL($attr, $id, $class);	
+  return $Html->_LABEL($attr, $element_id, $element_class);	
 
 }
 
@@ -1171,7 +1087,7 @@ function xLABEL($label = NULL) {
   * Inline Heading tag DATALIST
   *
   **/
-function _DATALIST($attr=null, $id=null, $class=null) {
+function _DATALIST($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1181,13 +1097,13 @@ function _DATALIST($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag DATALIST
    * @package : Static Procedural
-   * @method  : Html::_DATALIST($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_DATALIST($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_DATALIST($attr, $id, $class);	
+  return $Html->_DATALIST($attr, $element_id, $element_class);	
 
 }
 
@@ -1213,7 +1129,7 @@ function xDATALIST($label = NULL) {
   * Inline Heading tag DETAILS
   *
   **/
-function _DETAILS($attr=null, $id=null, $class=null) {
+function _DETAILS($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1223,13 +1139,13 @@ function _DETAILS($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag DETAILS
    * @package : Static Procedural
-   * @method  : Html::_DETAILS($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_DETAILS($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
  $Html = NEW MergeBox(); 
- return $Html->_DETAILS($attr, $id, $class);	
+ return $Html->_DETAILS($attr, $element_id, $element_class);	
 
 }
 
@@ -1255,7 +1171,7 @@ function xDETAILS($label = NULL) {
   * Inline Heading tag SUMMARY
   *
   **/
-function _SUMMARY($attr=null, $id=null, $class=null) {
+function _SUMMARY($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1265,13 +1181,13 @@ function _SUMMARY($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag H3
    * @package : Static Procedural
-   * @method  : Html::_H3($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_H3($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/   	
   $Html = NEW MergeBox(); 
-  return $Html->_SUMMARY($attr, $id, $class);	
+  return $Html->_SUMMARY($attr, $element_id, $element_class);	
 
 }
 
@@ -1297,7 +1213,7 @@ function xSUMMARY($label = NULL) {
   * Inline Heading tag DIALOG
   *
   **/
-function _DIALOG($attr=null, $id=null, $class=null) {
+function _DIALOG($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1307,13 +1223,13 @@ function _DIALOG($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag DIALOG
    * @package : Static Procedural
-   * @method  : Html::_DIALOG($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_DIALOG($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_DIALOG($attr, $id, $class);	
+  return $Html->_DIALOG($attr, $element_id, $element_class);	
 
 }
 
@@ -1339,7 +1255,7 @@ function xDIALOG($label = NULL) {
   * Inline Heading tag OPTION
   *
   **/
-function _OPTION($attr=null, $id=null, $class=null) {
+function _OPTION($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1349,13 +1265,13 @@ function _OPTION($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag OPTION
    * @package : Static Procedural
-   * @method  : Html::_OPTION($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_OPTION($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/   	
   $Html = NEW MergeBox(); 
-  return $Html->_OPTION($attr, $id, $class);	
+  return $Html->_OPTION($attr, $element_id, $element_class);	
 
 }
 
@@ -1381,7 +1297,7 @@ function xOPTION($label = NULL) {
   * Inline Heading tag FIGURE
   *
   **/
-function _FIGURE($attr=null, $id=null, $class=null) {
+function _FIGURE($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1391,13 +1307,13 @@ function _FIGURE($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag FIGURE
    * @package : Static Procedural
-   * @method  : Html::_FIGURE($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_FIGURE($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_FIGURE($attr, $id, $class);	
+  return $Html->_FIGURE($attr, $element_id, $element_class);	
 
 }
 
@@ -1423,7 +1339,7 @@ function xFIGURE($label = NULL) {
   * Inline Heading tag FIGCAPTION
   *
   **/
-function _FIGCAPTION($attr=null, $id=null, $class=null) {
+function _FIGCAPTION($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1433,13 +1349,13 @@ function _FIGCAPTION($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag FIGCAPTION
    * @package : Static Procedural
-   * @method  : Html::_FIGCAPTION($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_FIGCAPTION($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_FIGCAPTION($attr, $id, $class);	
+  return $Html->_FIGCAPTION($attr, $element_id, $element_class);	
 
 }
 
@@ -1465,7 +1381,7 @@ function xFIGCAPTION($label = NULL) {
   * Inline Heading tag METER
   *
   **/
-function _METER($attr=null, $id=null, $class=null) {
+function _METER($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1475,13 +1391,13 @@ function _METER($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag METER
    * @package : Static Procedural
-   * @method  : Html::_METER($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_METER($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/   
   $Html = NEW MergeBox(); 
-  return $Html->_METER($attr, $id, $class);	
+  return $Html->_METER($attr, $element_id, $element_class);	
 
 }
 
@@ -1508,7 +1424,7 @@ function xMETER($label = NULL) {
   * Inline Heading tag OBJECT
   *
   **/
-function _OBJECT($attr=null, $id=null, $class=null) {
+function _OBJECT($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1518,13 +1434,13 @@ function _OBJECT($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag OBJECT
    * @package : Static Procedural
-   * @method  : Html::_OBJECT($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_OBJECT($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_OBJECT($attr, $id, $class);	
+  return $Html->_OBJECT($attr, $element_id, $element_class);	
 
 }
 
@@ -1550,7 +1466,7 @@ function xOBJECT($label = NULL) {
   * Inline Heading tag OPTGROUP
   *
   **/
-function _OPTGROUP($attr=null, $id=null, $class=null) {
+function _OPTGROUP($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1560,13 +1476,13 @@ function _OPTGROUP($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag OPTGROUP
    * @package : Static Procedural
-   * @method  : Html::_OPTGROUP($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_OPTGROUP($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_OPTGROUP($attr, $id, $class);	
+  return $Html->_OPTGROUP($attr, $element_id, $element_class);	
 
 }
 
@@ -1592,7 +1508,7 @@ function xOPTGROUP($label = NULL) {
   * Inline Heading tag OUTPUT
   *
   **/
-function _OUTPUT($attr=null, $id=null, $class=null) {
+function _OUTPUT($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1602,13 +1518,13 @@ function _OUTPUT($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag OUTPUT
    * @package : Static Procedural
-   * @method  : Html::_OUTPUT($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_OUTPUT($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_OUTPUT($attr, $id, $class);	
+  return $Html->_OUTPUT($attr, $element_id, $element_class);	
 
 }
 
@@ -1634,7 +1550,7 @@ function xOUTPUT($label = NULL) {
   * Inline Heading tag PROGRESS
   *
   **/
-function _PROGRESS($attr=null, $id=null, $class=null) {
+function _PROGRESS($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1644,13 +1560,13 @@ function _PROGRESS($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag PROGRESS
    * @package : Static Procedural
-   * @method  : Html::_PROGRESS($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_PROGRESS($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_PROGRESS($attr, $id, $class);	
+  return $Html->_PROGRESS($attr, $element_id, $element_class);	
 
 }
 
@@ -1676,7 +1592,7 @@ function xPROGRESS($label = NULL) {
   * Inline Heading tag SVG
   *
   **/
-function _SVG($attr=null, $id=null, $class=null) {
+function _SVG($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1686,13 +1602,13 @@ function _SVG($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag SVG
    * @package : Static Procedural
-   * @method  : Html::_SVG($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_SVG($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_SVG($attr, $id, $class);	
+  return $Html->_SVG($attr, $element_id, $element_class);	
 
 }
 
@@ -1718,7 +1634,7 @@ function xSVG($label = NULL) {
   * Inline Heading tag TEMPLATE
   *
   **/
-function _TEMPLATE($attr=null, $id=null, $class=null) {
+function _TEMPLATE($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1728,13 +1644,13 @@ function _TEMPLATE($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag TEMPLATE
    * @package : Static Procedural
-   * @method  : Html::_TEMPLATE($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_TEMPLATE($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_TEMPLATE($attr, $id, $class);	
+  return $Html->_TEMPLATE($attr, $element_id, $element_class);	
 
 }
 
@@ -1760,7 +1676,7 @@ function xTEMPLATE($label = NULL) {
   * Inline Heading tag UL
   *
   **/
-function _UL($attr=null, $id=null, $class=null) {
+function _UL($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1770,13 +1686,13 @@ function _UL($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag UL
    * @package : Static Procedural
-   * @method  : Html::_UL($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_UL($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_UL($attr, $id, $class);	
+  return $Html->_UL($attr, $element_id, $element_class);	
 
 }
 
@@ -1800,7 +1716,7 @@ function xUL($label = NULL) {
   * Inline Heading tag OL
   *
   **/
-function _OL($attr=null, $id=null, $class=null) {
+function _OL($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1810,13 +1726,13 @@ function _OL($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag OL
    * @package : Static Procedural
-   * @method  : Html::_OL($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_OL($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_OL($attr, $id, $class);	
+  return $Html->_OL($attr, $element_id, $element_class);	
 
 }
 
@@ -1842,7 +1758,7 @@ function xOL($label = NULL) {
   * Inline Heading tag LI
   *
   **/
-function _LI($attr=null, $id=null, $class=null) {
+function _LI($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1852,13 +1768,13 @@ function _LI($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag LI
    * @package : Static Procedural
-   * @method  : Html::_LI($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_LI($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_LI($attr, $id, $class);	
+  return $Html->_LI($attr, $element_id, $element_class);	
 
 }
 
@@ -1884,7 +1800,7 @@ function xLI($label = NULL) {
   * Inline Heading tag TABLE
   *
   **/
-function _TABLE($attr=null, $id=null, $class=null) {
+function _TABLE($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1894,13 +1810,13 @@ function _TABLE($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag TABLE
    * @package : Static Procedural
-   * @method  : Html::_TABLE($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_TABLE($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_TABLE($attr, $id, $class);	
+  return $Html->_TABLE($attr, $element_id, $element_class);	
 
 }
 
@@ -1926,7 +1842,7 @@ function xTABLE($label = NULL) {
   * Inline Heading tag TR
   *
   **/
-function _TR($attr=null, $id=null, $class=null) {
+function _TR($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -1936,13 +1852,13 @@ function _TR($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag TR
    * @package : Static Procedural
-   * @method  : Html::_TR($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_TR($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
  $Html = NEW MergeBox(); 
- return $Html->_TR($attr, $id, $class);	
+ return $Html->_TR($attr, $element_id, $element_class);	
 
 }
 
@@ -1968,7 +1884,7 @@ function xTR($label = NULL) {
   * Inline Heading tag TD
   *
   **/
-function _TD($attr=null, $id=null, $class=null) {
+function _TD($attr=null, $element_id=null, $element_class=null) {
 
  /**
    *
@@ -1978,13 +1894,13 @@ function _TD($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag TD
    * @package : Static Procedural
-   * @method  : Html::_TD($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_TD($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_TD($attr, $id, $class);	
+  return $Html->_TD($attr, $element_id, $element_class);	
 
 }
 
@@ -2010,7 +1926,7 @@ function xTD($label = NULL) {
   * Inline Heading tag TH
   *
   **/
-function _TH($attr=null, $id=null, $class=null) {
+function _TH($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2020,13 +1936,13 @@ function _TH($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag TH
    * @package : Static Procedural
-   * @method  : Html::_TH($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_TH($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  
   $Html = NEW MergeBox(); 
-  return $Html->_TH($attr, $id, $class);	
+  return $Html->_TH($attr, $element_id, $element_class);	
 
 }
 
@@ -2052,7 +1968,7 @@ function xTH($label = NULL) {
   * Inline Heading tag LEGEND
   *
   **/
-function _LEGEND($attr=null, $id=null, $class=null) {
+function _LEGEND($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2062,13 +1978,13 @@ function _LEGEND($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag LEGEND
    * @package : Static Procedural
-   * @method  : Html::_LEGEND($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_LEGEND($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/   	
   $Html = NEW MergeBox(); 
-  return $Html->_LEGEND($attr, $id, $class);	
+  return $Html->_LEGEND($attr, $element_id, $element_class);	
 
 }
 
@@ -2094,7 +2010,7 @@ function xLEGEND($label = NULL) {
   * Inline Heading tag FIELDSET
   *
   **/
-function _FIELDSET($attr=null, $id=null, $class=null) {
+function _FIELDSET($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2104,13 +2020,13 @@ function _FIELDSET($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag H3
    * @package : Static Procedural
-   * @method  : Html::_H3($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_H3($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/   	
   $Html = NEW MergeBox(); 
-  return $Html->_FIELDSET($attr, $id, $class);	
+  return $Html->_FIELDSET($attr, $element_id, $element_class);	
 
 }
 
@@ -2136,7 +2052,7 @@ function xFIELDSET($label = NULL) {
   * Inline Heading tag TBODY
   *
   **/
-function _TBODY($attr=null, $id=null, $class=null) {
+function _TBODY($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2146,13 +2062,13 @@ function _TBODY($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag TBODY
    * @package : Static Procedural
-   * @method  : Html::_TBODY($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_TBODY($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_TBODY($attr, $id, $class);	
+  return $Html->_TBODY($attr, $element_id, $element_class);	
 
 }
 
@@ -2178,7 +2094,7 @@ function xTBODY($label = NULL) {
   * Inline Heading tag TFOOT
   *
   **/
-function _TFOOT($attr=null, $id=null, $class=null) {
+function _TFOOT($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2188,13 +2104,13 @@ function _TFOOT($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag TFOOT
    * @package : Static Procedural
-   * @method  : Html::_TFOOT($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_TFOOT($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  
   $Html = NEW MergeBox(); 
-  return $Html->_TFOOT($attr, $id, $class);	
+  return $Html->_TFOOT($attr, $element_id, $element_class);	
 
 }
 
@@ -2220,7 +2136,7 @@ function xTFOOT($label = NULL) {
   * Inline Heading tag THEAD
   *
   **/
-function _THEAD($attr=null, $id=null, $class=null) {
+function _THEAD($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2230,13 +2146,13 @@ function _THEAD($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag THEAD
    * @package : Static Procedural
-   * @method  : Html::_THEAD($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_THEAD($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_THEAD($attr, $id, $class);	
+  return $Html->_THEAD($attr, $element_id, $element_class);	
 
 }
 
@@ -2262,7 +2178,7 @@ function xTHEAD($label = NULL) {
   * Inline Heading tag SPAN
   *
   **/
-function _SPAN($attr=null, $id=null, $class=null) {
+function _SPAN($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2272,13 +2188,13 @@ function _SPAN($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag SPAN
    * @package : Static Procedural
-   * @method  : Html::_SPAN($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_SPAN($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_SPAN($attr, $id, $class);	
+  return $Html->_SPAN($attr, $element_id, $element_class);	
 
 }
 
@@ -2304,7 +2220,7 @@ function xSPAN($label = NULL) {
   * Inline Heading tag EM
   *
   **/
-function _EM($attr=null, $id=null, $class=null) {
+function _EM($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2314,13 +2230,13 @@ function _EM($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag EM
    * @package : Static Procedural
-   * @method  : Html::_EM($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_EM($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  
   $Html = NEW MergeBox(); 
-  return $Html->_EM($attr, $id, $class);	
+  return $Html->_EM($attr, $element_id, $element_class);	
 
 }
 
@@ -2342,95 +2258,11 @@ function xEM($label = NULL) {
   *
   * @since 20.19.2020
   * @category PHPHtml-Merge
-  * @ Method Defined HTML B OPEN TAG noHTML  
-  * Inline Heading tag B
-  *
-  **/
-function _B($attr=null, $id=null, $class=null) {
-
-  /**
-   *
-   *
-   *
-   *
-   *
-   * @package : Merge Heading tag B
-   * @package : Static Procedural
-   * @method  : Html::_B($value, $attr=null, $id, $class, $label, $assoc);
-   *
-   *
-   *
-   **/	
-  $Html = NEW MergeBox(); 
-  return $Html->_B($attr, $id, $class);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
-  * @ Method Defined HTML B CLOSE TAG noHTML  
-  * Inline Heading tag B
-  *
-  **/
-function xB($label = NULL) {
-
-  $Html = NEW MergeBox(); return $Html->xB($label);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
-  * @ Method Defined HTML I OPEN TAG noHTML  
-  * Inline Heading tag I
-  *
-  **/
-function _I($attr=null, $id=null, $class=null) {
-
-  /**
-   *
-   *
-   *
-   *
-   *
-   * @package : Merge Heading tag I
-   * @package : Static Procedural
-   * @method  : Html::_I($value, $attr=null, $id, $class, $label, $assoc);
-   *
-   *
-   *
-   **/	
-  $Html = NEW MergeBox(); 
-  return $Html->_I($attr, $id, $class);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
-  * @ Method Defined HTML I CLOSE TAG noHTML  
-  * Inline Heading tag I
-  *
-  **/
-function xI($label = NULL) {
-
-  $Html = NEW MergeBox(); return $Html->xI($label);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
   * @ Method Defined HTML SMALL OPEN TAG noHTML  
   * Inline Heading tag SMALL
   *
   **/
-function _SMALL($attr=null, $id=null, $class=null) {
+function _SMALL($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2440,13 +2272,13 @@ function _SMALL($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag SMALL
    * @package : Static Procedural
-   * @method  : Html::_SMALL($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_SMALL($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_SMALL($attr, $id, $class);	
+  return $Html->_SMALL($attr, $element_id, $element_class);	
 
 }
 
@@ -2472,7 +2304,7 @@ function xSMALL($label = NULL) {
   * Inline Heading tag STRIKE
   *
   **/
-function _STRIKE($attr=null, $id=null, $class=null) {
+function _STRIKE($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2482,13 +2314,13 @@ function _STRIKE($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag STRIKE
    * @package : Static Procedural
-   * @method  : Html::_STRIKE($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_STRIKE($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_STRIKE($attr, $id, $class);	
+  return $Html->_STRIKE($attr, $element_id, $element_class);	
 
 }
 
@@ -2514,7 +2346,7 @@ function xSTRIKE($label = NULL) {
   * Inline Heading tag MARQUEE
   *
   **/
-function _MARQUEE($attr=null, $id=null, $class=null) {
+function _MARQUEE($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2524,13 +2356,13 @@ function _MARQUEE($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag MARQUEE
    * @package : Static Procedural
-   * @method  : Html::_MARQUEE($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_MARQUEE($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_MARQUEE($attr, $id, $class);	
+  return $Html->_MARQUEE($attr, $element_id, $element_class);	
 
 }
 
@@ -2556,7 +2388,7 @@ function xMARQUEE($label = NULL) {
   * Inline Heading tag CENTER
   *
   **/
-function _CENTER($attr=null, $id=null, $class=null) {
+function _CENTER($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2566,13 +2398,13 @@ function _CENTER($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag CENTER
    * @package : Static Procedural
-   * @method  : Html::_CENTER($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_CENTER($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_CENTER($attr, $id, $class);	
+  return $Html->_CENTER($attr, $element_id, $element_class);	
 
 }
 
@@ -2598,7 +2430,7 @@ function xCENTER($label = NULL) {
   * Inline Heading tag ABBR
   *
   **/
-function _ABBR($attr=null, $id=null, $class=null) {
+function _ABBR($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2608,13 +2440,13 @@ function _ABBR($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag ABBR
    * @package : Static Procedural
-   * @method  : Html::_ABBR($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_ABBR($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
  $Html = NEW MergeBox(); 
- return $Html->_ABBR($attr, $id, $class);	
+ return $Html->_ABBR($attr, $element_id, $element_class);	
 
 }
 
@@ -2640,7 +2472,7 @@ function xABBR($label = NULL) {
   * Inline Heading tag MAP
   *
   **/
-function _MAP($attr=null, $id=null, $class=null) {
+function _MAP($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2650,13 +2482,13 @@ function _MAP($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag MAP
    * @package : Static Procedural
-   * @method  : Html::_MAP($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_MAP($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_MAP($attr, $id, $class);	
+  return $Html->_MAP($attr, $element_id, $element_class);	
 
 }
 
@@ -2682,7 +2514,7 @@ function xMAP($label = NULL) {
   * Inline Heading tag CANVAS
   *
   **/
-function _CANVAS($attr=null, $id=null, $class=null) {
+function _CANVAS($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2692,13 +2524,13 @@ function _CANVAS($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag CANVAS
    * @package : Static Procedural
-   * @method  : Html::_CANVAS($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_CANVAS($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/   	
   $Html = NEW MergeBox(); 
-  return $Html->_CANVAS($attr, $id, $class);	
+  return $Html->_CANVAS($attr, $element_id, $element_class);	
 
 }
 
@@ -2724,7 +2556,7 @@ function xCANVAS($label = NULL) {
   * Inline Heading tag CITE
   *
   **/
-function _CITE($attr=null, $id=null, $class=null) {
+function _CITE($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2734,13 +2566,13 @@ function _CITE($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag CITE
    * @package : Static Procedural
-   * @method  : Html::_CITE($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_CITE($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_CITE($attr, $id, $class);	
+  return $Html->_CITE($attr, $element_id, $element_class);	
 
 }
 
@@ -2766,7 +2598,7 @@ function xCITE($label = NULL) {
   * Inline Heading tag DATA
   *
   **/
-function _DATA($attr=null, $id=null, $class=null) {
+function _DATA($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2776,13 +2608,13 @@ function _DATA($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag DATA
    * @package : Static Procedural
-   * @method  : Html::_DATA($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_DATA($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_DATA($attr, $id, $class);	
+  return $Html->_DATA($attr, $element_id, $element_class);	
 
 }
 
@@ -2808,7 +2640,7 @@ function xDATA($label = NULL) {
   * Inline Heading tag DL
   *
   **/
-function _DL($attr=null, $id=null, $class=null) {
+function _DL($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2818,13 +2650,13 @@ function _DL($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag DL
    * @package : Static Procedural
-   * @method  : Html::_DL($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_DL($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/   
   $Html = NEW MergeBox(); 
-  return $Html->_DL($attr, $id, $class);	
+  return $Html->_DL($attr, $element_id, $element_class);	
 
 }
 
@@ -2850,7 +2682,7 @@ function xDL($label = NULL) {
   * Inline Heading tag DT
   *
   **/
-function _DT($attr=null, $id=null, $class=null) {
+function _DT($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2860,13 +2692,13 @@ function _DT($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag DT
    * @package : Static Procedural
-   * @method  : Html::_DT($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_DT($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_DT($attr, $id, $class);	
+  return $Html->_DT($attr, $element_id, $element_class);	
 
 }
 
@@ -2892,7 +2724,7 @@ function xDT($label = NULL) {
   * Inline Heading tag DD
   *
   **/
-function _DD($attr=null, $id=null, $class=null) {
+function _DD($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2902,13 +2734,13 @@ function _DD($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag DD
    * @package : Static Procedural
-   * @method  : Html::_DD($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_DD($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_DD($attr, $id, $class);	
+  return $Html->_DD($attr, $element_id, $element_class);	
 
 }
 
@@ -2934,7 +2766,7 @@ function xDD($label = NULL) {
   * Inline Heading tag DFN
   *
   **/
-function _DFN($attr=null, $id=null, $class=null) {
+function _DFN($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2944,13 +2776,13 @@ function _DFN($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag DFN
    * @package : Static Procedural
-   * @method  : Html::_DFN($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_DFN($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_DFN($attr, $id, $class);	
+  return $Html->_DFN($attr, $element_id, $element_class);	
 
 }
 
@@ -2976,7 +2808,7 @@ function xDFN($label = NULL) {
   * Inline Heading tag INS
   *
   **/
-function _INS($attr=null, $id=null, $class=null) {
+function _INS($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -2986,13 +2818,13 @@ function _INS($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag INS
    * @package : Static Procedural
-   * @method  : Html::_INS($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_INS($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_INS($attr, $id, $class);	
+  return $Html->_INS($attr, $element_id, $element_class);	
 
 }
 
@@ -3018,7 +2850,7 @@ function xINS($label = NULL) {
   * Inline Heading tag DEL
   *
   **/
-function _DEL($attr=null, $id=null, $class=null) {
+function _DEL($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -3028,13 +2860,13 @@ function _DEL($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag DEL
    * @package : Static Procedural
-   * @method  : Html::_DEL($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_DEL($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_DEL($attr, $id, $class);	
+  return $Html->_DEL($attr, $element_id, $element_class);	
 
 }
 
@@ -3060,7 +2892,7 @@ function xDEL($label = NULL) {
   * Inline Heading tag KBD
   *
   **/
-function _KBD($attr=null, $id=null, $class=null) {
+function _KBD($attr=null, $element_id=null, $element_class=null) {
 
  /**
    *
@@ -3070,13 +2902,13 @@ function _KBD($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag KBD
    * @package : Static Procedural
-   * @method  : Html::_KBD($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_KBD($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_KBD($attr, $id, $class);	
+  return $Html->_KBD($attr, $element_id, $element_class);	
 
 }
 
@@ -3102,7 +2934,7 @@ function xKBD($label = NULL) {
   * Inline Heading tag MARK
   *
   **/
-function _MARK($attr=null, $id=null, $class=null) {
+function _MARK($attr=null, $element_id=null, $element_class=null) {
 
  /**
    *
@@ -3112,13 +2944,13 @@ function _MARK($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag MARK
    * @package : Static Procedural
-   * @method  : Html::_MARK($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_MARK($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_MARK($attr, $id, $class);	
+  return $Html->_MARK($attr, $element_id, $element_class);	
 
 }
 
@@ -3143,7 +2975,7 @@ function xMARK($label = NULL) {
   * Inline Heading tag PRE
   *
   **/
-function _PRE($attr=null, $id=null, $class=null) {
+function _PRE($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -3153,13 +2985,13 @@ function _PRE($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag PRE
    * @package : Static Procedural
-   * @method  : Html::_PRE($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_PRE($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_PRE($attr, $id, $class);	
+  return $Html->_PRE($attr, $element_id, $element_class);	
 
 }
 
@@ -3185,7 +3017,7 @@ function xPRE($label = NULL) {
   * Inline Heading tag RT
   *
   **/
-function _RT($attr=null, $id=null, $class=null) {
+function _RT($attr=null, $element_id=null, $element_class=null) {
 
  /**
    *
@@ -3195,13 +3027,13 @@ function _RT($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag RT
    * @package : Static Procedural
-   * @method  : Html::_RT($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_RT($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 
   $Html = NEW MergeBox(); 
-  return $Html->_RT($attr, $id, $class);	
+  return $Html->_RT($attr, $element_id, $element_class);	
 
 }
 
@@ -3227,7 +3059,7 @@ function xRT($label = NULL) {
   * Inline Heading tag RP
   *
   **/
-function _RP($attr=null, $id=null, $class=null) {
+function _RP($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -3237,13 +3069,13 @@ function _RP($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag RP
    * @package : Static Procedural
-   * @method  : Html::_RP($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_RP($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_RP($attr, $id, $class);	
+  return $Html->_RP($attr, $element_id, $element_class);	
 
 }
 
@@ -3265,53 +3097,11 @@ function xRP($label = NULL) {
   *
   * @since 20.19.2020
   * @category PHPHtml-Merge
-  * @ Method Defined HTML S OPEN TAG noHTML  
-  * Inline Heading tag S
-  *
-  **/
-function _S($attr=null, $id=null, $class=null) {
-
-  /**
-   *
-   *
-   *
-   *
-   *
-   * @package : Merge Heading tag S
-   * @package : Static Procedural
-   * @method  : Html::_S($value, $attr=null, $id, $class, $label, $assoc);
-   *
-   *
-   *
-   **/	
-  $Html = NEW MergeBox(); 
-  return $Html->_S($attr, $id, $class);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
-  * @ Method Defined HTML S CLOSE TAG noHTML  
-  * Inline Heading tag S
-  *
-  **/
-function xS($label = NULL) {
-
-  $Html = NEW MergeBox(); return $Html->xS($label);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
   * @ Method Defined HTML SAMP OPEN TAG noHTML  
   * Inline Heading tag SAMP
   *
   **/
-function _SAMP($attr=null, $id=null, $class=null) {
+function _SAMP($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -3321,13 +3111,13 @@ function _SAMP($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag SAMP
    * @package : Static Procedural
-   * @method  : Html::_SAMP($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_SAMP($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_SAMP($attr, $id, $class);	
+  return $Html->_SAMP($attr, $element_id, $element_class);	
 
 }
 
@@ -3353,7 +3143,7 @@ function xSAMP($label = NULL) {
   * Inline Heading tag STRONG
   *
   **/
-function _STRONG($attr=null, $id=null, $class=null) {
+function _STRONG($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -3363,13 +3153,13 @@ function _STRONG($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag STRONG
    * @package : Static Procedural
-   * @method  : Html::_STRONG($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_STRONG($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_STRONG($attr, $id, $class);	
+  return $Html->_STRONG($attr, $element_id, $element_class);	
 
 }
 
@@ -3395,7 +3185,7 @@ function xSTRONG($label = NULL) {
   * Inline Heading tag SUB
   *
   **/
-function _SUB($attr=null, $id=null, $class=null) {
+function _SUB($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -3405,13 +3195,13 @@ function _SUB($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag SUB
    * @package : Static Procedural
-   * @method  : Html::_SUB($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_SUB($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_SUB($attr, $id, $class);	
+  return $Html->_SUB($attr, $element_id, $element_class);	
 
 }
 
@@ -3435,7 +3225,7 @@ function xSUB($label = NULL) {
   * Inline Heading tag SUP
   *
   **/
-function _SUP($attr=null, $id=null, $class=null) {
+function _SUP($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -3445,13 +3235,13 @@ function _SUP($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag SUP
    * @package : Static Procedural
-   * @method  : Html::_SUP($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_SUP($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_SUP($attr, $id, $class);	
+  return $Html->_SUP($attr, $element_id, $element_class);	
 
 }
 
@@ -3477,7 +3267,7 @@ function xSUP($label = NULL) {
   * Inline Heading tag WBR
   *
   **/
-function _WBR($attr=null, $id=null, $class=null) {
+function _WBR($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -3487,13 +3277,13 @@ function _WBR($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag WBR
    * @package : Static Procedural
-   * @method  : Html::_WBR($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_WBR($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/   
   $Html = NEW MergeBox(); 
-  return $Html->_WBR($attr, $id, $class);	
+  return $Html->_WBR($attr, $element_id, $element_class);	
 
 }
 
@@ -3515,52 +3305,11 @@ function xWBR($label = NULL) {
   *
   * @since 20.19.2020
   * @category PHPHtml-Merge
-  * @ Method Defined HTML Q OPEN TAG noHTML  
-  * Inline Heading tag Q
-  *
-  **/
-function _Q($attr=null, $id=null, $class=null) {
-
-  /**
-   *
-   *
-   *
-   *
-   *
-   * @package : Merge Heading tag Q
-   * @package : Static Procedural
-   * @method  : Html::_Q($value, $attr=null, $id, $class, $label, $assoc);
-   *
-   *
-   *
-   **/ 	
-  $Html = NEW MergeBox(); 
-  return $Html->_Q($attr, $id, $class);	
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
-  * @ Method Defined HTML Q CLOSE TAG noHTML  
-  * Inline Heading tag Q
-  *
-  **/
-function xQ($label = NULL) {
-
-  $Html = NEW MergeBox(); return $Html->xQ($label);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
   * @ Method Defined HTML HEAD OPEN TAG noHTML  
   * Inline Heading tag HEAD
   *
   **/
-function _HEAD($attr=null, $id=null, $class=null) {
+function _HEAD($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -3570,13 +3319,13 @@ function _HEAD($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag HEAD
    * @package : Static Procedural
-   * @method  : Html::_HEAD($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_HEAD($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_HEAD($attr, $id, $class);	
+  return $Html->_HEAD($attr, $element_id, $element_class);	
 
 }
 
@@ -3602,7 +3351,7 @@ function xHEAD($label = NULL) {
   * Inline Heading tag TITLE
   *
   **/
-function _TITLE($attr=null, $id=null, $class=null) {
+function _TITLE($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -3612,13 +3361,13 @@ function _TITLE($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag TITLE
    * @package : Static Procedural
-   * @method  : Html::_TITLE($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_TITLE($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_TITLE($attr, $id, $class);	
+  return $Html->_TITLE($attr, $element_id, $element_class);	
 
 }
 
@@ -3644,7 +3393,7 @@ function xTITLE($label = NULL) {
   * Inline Heading tag BODY
   *
   **/
-function _BODY($attr=null, $id=null, $class=null) {
+function _BODY($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -3654,13 +3403,13 @@ function _BODY($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag BODY
    * @package : Static Procedural
-   * @method  : Html::_BODY($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_BODY($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/ 	
  $Html = NEW MergeBox(); 
- return $Html->_BODY($attr, $id, $class);	
+ return $Html->_BODY($attr, $element_id, $element_class);	
 
 }
 
@@ -3686,7 +3435,7 @@ function xBODY($label = NULL) {
   * Inline Heading tag HTML
   *
   **/
-function _HTML($attr=null, $id=null, $class=null) {
+function _HTML($attr=null, $element_id=null, $element_class=null) {
 
   /**
    *
@@ -3696,13 +3445,13 @@ function _HTML($attr=null, $id=null, $class=null) {
    *
    * @package : Merge Heading tag HTML
    * @package : Static Procedural
-   * @method  : Html::_HTML($value, $attr=null, $id, $class, $label, $assoc);
+   * @method  : Html::_HTML($value, $attr=null, $element_id, $element_class, $label, $assoc);
    *
    *
    *
    **/  	
  $Html = NEW MergeBox(); 
- return $Html->_HTML($attr, $id, $class);	
+ return $Html->_HTML($attr, $element_id, $element_class);	
 
 }
 
