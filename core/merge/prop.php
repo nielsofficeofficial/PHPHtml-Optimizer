@@ -32,7 +32,8 @@
 
 require_once __DIR__ . '/../../prop.php';
 
-if ( __CHECK_MAIN_MERGE_ON_PAGE__ &&  __CHECK_MAIN_MERGE_ON_CLASS__ ) {
+if ( $GetOptimized_ = file_exists(dirname(__FILE__) . __CHECK_MAIN_MERGE_ON_PAGE__ ) &&
+     $GetOptimized_ = file_exists(dirname(__FILE__) . __CHECK_MAIN_MERGE_ON_CLASS__ ) ) {
      /*
       |
       |
@@ -45,13 +46,11 @@ if ( __CHECK_MAIN_MERGE_ON_PAGE__ &&  __CHECK_MAIN_MERGE_ON_CLASS__ ) {
       |
       |
       */ 
-       require_once __GET_LOAD_MERGE__;
-      // require __GET_LOAD_MERGEBOX__;
-      // require __GET_LOAD_MERGEELEMENT__;   
+      require_once __DIR__ . __GET_LOAD_MERGE__;
+      require_once __DIR__ . __GET_LOAD_MERGEBOX__;
+      require_once __DIR__ . __GET_LOAD_MERGEELEMENT__;          
 
-             
-
-  }  elseif ( __GET_PROPERTY_ITSELF__ ) {
+  }  elseif ( (require_once __DIR__ . __GET_PROPERTY_ITSELF__ ) && class_exists('Html')) {
             /*
              |
              |
@@ -64,7 +63,7 @@ if ( __CHECK_MAIN_MERGE_ON_PAGE__ &&  __CHECK_MAIN_MERGE_ON_CLASS__ ) {
              |
              |
              */ 
-           require __GET_PROPERTY_ITSELF__;            
+           require_once __DIR__ . __GET_PROPERTY_ITSELF__;            
            Html::_PERFORM(FILE_HANDLER_MSG);
 
       } else {

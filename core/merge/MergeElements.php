@@ -40,7 +40,7 @@ USE  \PHPHtml\CodeOptimizer\optimizer\Html AS MergeElements;
   * NONE CLOSING TAG INLINE HTML
   *
   **/
-function __HTML($label="INLINE", $elem=null, $attr=null, $element_id=null, $element_class=null, $assoc=null)  {
+function __HTML($label="INLINE", $elem=null, $attr=null, $id=null, $class=null, $assoc=null)  {
 
   /**
    *
@@ -50,13 +50,13 @@ function __HTML($label="INLINE", $elem=null, $attr=null, $element_id=null, $elem
    *
    * @package : Merge OPTIONAL ASSOCIATED ELEMENTS 
    * @package : Static Procedural
-   * @method  : Html::_ELEMENT($label, $elem, $attr=null, $element_id, $element_class, $assoc);
+   * @method  : Html::_ELEMENT($label, $elem, $attr=null, $id, $class, $assoc);
    *
    *
    *
    **/ 
   $Html = NEW MergeElements();
-  return $Html->_ELEMENT($label, $elem, $attr, $element_id, $element_class, $assoc);
+  return $Html->_ELEMENT($label, $elem, $attr, $id, $class, $assoc);
 
 }
 
@@ -68,7 +68,7 @@ function __HTML($label="INLINE", $elem=null, $attr=null, $element_id=null, $elem
   * WITH CLOSING TAG INLINE HTML
   *
   **/
-function _xHTML($elem=null, $value=null, $attr=null, $element_id=null, $element_class=null, $label=null)  {
+function _xHTML($elem=null, $value=null, $attr=null, $id=null, $class=null, $label=null)  {
 
   /**
    *
@@ -78,13 +78,13 @@ function _xHTML($elem=null, $value=null, $attr=null, $element_id=null, $element_
    *
    * @package : Merge ASSOCIATED ELEMENTS 
    * @package : Static Procedural
-   * @method  : Html::ELEMENT($elem, $value, $attr=null, $element_id, $element_class, $label)
+   * @method  : Html::ELEMENT($elem, $value, $attr=null, $id, $class, $label)
    *
    *
    *
    **/ 
   $Html = NEW MergeElements();
-  return $Html->ELEMENT($elem, $value, $attr, $element_id, $element_class, $label); 
+  return $Html->ELEMENT($elem, $value, $attr, $id, $class, $label); 
 
 }
 
@@ -96,7 +96,7 @@ function _xHTML($elem=null, $value=null, $attr=null, $element_id=null, $element_
   * BEGIN TAG HTML
   *
   **/
-function _MERGE($elem=null, $attr=null, $element_id=null, $element_class=null) {
+function _MERGE($elem=null, $attr=null, $id=null, $class=null) {
 
   /**
    *
@@ -106,13 +106,13 @@ function _MERGE($elem=null, $attr=null, $element_id=null, $element_class=null) {
    *
    * @package : Merge ASSOCIATED ELEMENTS 
    * @package : Static Procedural
-   * @method  : Html::__magicMERGE($elem, 'MERGE', $attr=null, $element_id, $element_class);
+   * @method  : Html::__magicMERGE($elem, 'MERGE', $attr=null, $id, $class);
    *
    *
    *
    **/ 
   $Html = NEW MergeElements();
-  return $Html->__magicMERGE($elem, 'MERGE', $attr, $element_id, $element_class);
+  return $Html->__magicMERGE($elem, 'MERGE', $attr, $id, $class);
 
 }
 

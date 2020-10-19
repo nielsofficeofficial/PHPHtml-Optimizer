@@ -40,8 +40,8 @@ require_once __DIR__ . '/prop.php';
  * require associated string within Class/Methods/Function
  *
 **/
-if ( __GET_STATIC_CLASS_HTML__  && __GET_INSTANTIATE_CLASS_HTML__ ) {
-
+if ( $GetOptimized_ = file_exists(dirname(__FILE__) . __GET_STATIC_CLASS_HTML__)   &&
+     $GetOptimized_ = file_exists(dirname(__FILE__) . __GET_INSTANTIATE_CLASS_HTML__)) {
      /*
       |
       |
@@ -56,7 +56,7 @@ if ( __GET_STATIC_CLASS_HTML__  && __GET_INSTANTIATE_CLASS_HTML__ ) {
       */ 
      
       # Since the file is true ? .. 
-      require __DIRECTORY_OPTIMIZER_PAGE__ ; 
+      require_once __GET_FROM_DIR_ROOT__ . __DIRECTORY_OPTIMIZER_PAGE__ . __HTMLOPTIMIZER__ ; 
 
       /**
         *
@@ -100,7 +100,7 @@ if ( __GET_STATIC_CLASS_HTML__  && __GET_INSTANTIATE_CLASS_HTML__ ) {
         *@since 09.142020
         **/
     
-        $root_file    = __DIRECTORY_OPTIMIZER_CLASS__;
+        $root_file    = __GET_FROM_DIR_ROOT__ . __DIRECTORY_OPTIMIZER_CLASS__;
     
         /*
         |
@@ -175,7 +175,7 @@ if ( __GET_STATIC_CLASS_HTML__  && __GET_INSTANTIATE_CLASS_HTML__ ) {
         *@since 09.142020
         **/
     
-        $getClass_ = $root_file . str_replace('\\', '/', $InterconnectedClass_) . 'php';
+        $getClass_ = $root_file . str_replace('\\', '/', $InterconnectedClass_) . __EXTENSION__;
     
         /*
         |
@@ -196,13 +196,13 @@ if ( __GET_STATIC_CLASS_HTML__  && __GET_INSTANTIATE_CLASS_HTML__ ) {
     
       }); 
 
-     require __GET_MERGE_FILES__;
+     require_once __DIR__ . __GET_MERGE_FILES__;
 
  
     }  else  {
 
     	 // check if there's something wrong directory then return error msg!
-    	 if ( __GET_VALIDATE_FILE_PAGE_EXIST__) {
+    	 if ( ( file_exists(dirname(__FILE__) .  __GET_VALIDATE_FILE_PAGE_EXIST__ )) && class_exists('Html')) {
             /*
              |
              |
@@ -216,7 +216,6 @@ if ( __GET_STATIC_CLASS_HTML__  && __GET_INSTANTIATE_CLASS_HTML__ ) {
              |
              */ 
     		    Html::_PERFORM(FILE_HANDLER_MSG);
-                echo "Nope";
     	}
     	
     }   
