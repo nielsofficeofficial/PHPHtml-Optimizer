@@ -43,7 +43,7 @@ w3school : HTML Elements reference</h5>
 __For Suggestion and Donation/Sponsorship You can send via My GCash : +639650332900__ <br />
 __Also You can send via My Paypal account: syncdevprojects@gmail.com__
 
-
+ 
 
 Thanks and good luck! 
 
