@@ -357,7 +357,7 @@
    |
    |
    */ 
-  define('__DIRECTORY_OPTIMIZER_PAGE__','/core/merge/');
+  define('__DIRECTORY_OPTIMIZER_PAGE__', SOM_PATH_DIR . 'core/merge/' . __HTMLOPTIMIZER__);
 
   /*
    |
@@ -371,7 +371,7 @@
    |
    |
    */ 
-  define('__DIRECTORY_OPTIMIZER_CLASS__','/core/');
+  define('__DIRECTORY_OPTIMIZER_CLASS__', SOM_PATH_DIR . 'core/');
 
   /*
    |
@@ -399,7 +399,7 @@
    |
    |
    */ 
-  define('__GET_VALIDATE_FILE_PAGE_EXIST__', '/core/merge/Html.php');  
+  define('__GET_VALIDATE_FILE_PAGE_EXIST__', file_exists(dirname(__FILE__) . 'core/merge/Html.php');  
 
   /*
    |
@@ -413,7 +413,7 @@
    |
    |
    */
-  define('__GET_MERGE_FILES__', '/core/merge/prop.php');    
+  define('__GET_MERGE_FILES__', SOM_PATH_DIR . 'core/merge/prop.php');    
   
   /*
    |
@@ -498,7 +498,7 @@
    |
    |
    */ 
-  define('__GET_STATIC_CLASS_HTML__','/core/merge/Html.php');
+  define('__GET_STATIC_CLASS_HTML__', file_exists(dirname(__FILE__) . '/core/merge/Html.php');
 
    /*
    |
@@ -512,7 +512,7 @@
    |
    |
    */ 
-  define('__GET_INSTANTIATE_CLASS_HTML__','/core/optimizer/Html.php');  
+  define('__GET_INSTANTIATE_CLASS_HTML__', file_exists(dirname(__FILE__) . '/core/optimizer/Html.php');  
  
    /*
    |
@@ -526,7 +526,7 @@
    |
    |
    */ 
-  define('__CHECK_MAIN_MERGE_ON_PAGE__','/../merge/Html.php');
+  define('__CHECK_MAIN_MERGE_ON_PAGE__', file_exists(dirname(__FILE__) . '/../merge/Html.php');
  
    /*
    |
@@ -540,7 +540,7 @@
    |
    |
    */
-  define('__CHECK_MAIN_MERGE_ON_CLASS__','/../optimizer/Html.php'); 
+  define('__CHECK_MAIN_MERGE_ON_CLASS__', file_exists(dirname(__FILE__) . '/../optimizer/Html.php'); 
 
    /*
    |
@@ -554,7 +554,7 @@
    |
    |
    */
-  define('__GET_LOAD_MERGE__','/Merge.php' );
+  define('__GET_LOAD_MERGE__', SOM_PATH_DIR . 'Merge.php' );
  
    /*
    |
@@ -568,7 +568,7 @@
    |
    |
    */
-  define('__GET_LOAD_MERGEBOX__','/MergeBox.php' );
+  define('__GET_LOAD_MERGEBOX__', SOM_PATH_DIR . 'MergeBox.php' );
  
    /*
    |
@@ -582,7 +582,7 @@
    |
    |
    */
-  define('__GET_LOAD_MERGEELEMENT__','/MergeElements.php' );
+  define('__GET_LOAD_MERGEELEMENT__', SOM_PATH_DIR . 'MergeElements.php' );
 
    /*
    |
@@ -596,4 +596,4 @@
    |
    |
    */
-  define('__GET_PROPERTY_ITSELF__','/../../prop.php' );
+  define('__GET_PROPERTY_ITSELF__', SOM_PATH_DIR . ' ../../prop.php' );
