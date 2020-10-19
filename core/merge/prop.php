@@ -45,11 +45,13 @@ if ( __CHECK_MAIN_MERGE_ON_PAGE__ &&  __CHECK_MAIN_MERGE_ON_CLASS__ ) {
       |
       |
       */ 
-      require __GET_LOAD_MERGE__;
-      require __GET_LOAD_MERGEBOX__;
-      require __GET_LOAD_MERGEELEMENT__;          
+       require_once __GET_LOAD_MERGE__;
+      // require __GET_LOAD_MERGEBOX__;
+      // require __GET_LOAD_MERGEELEMENT__;   
 
-  }  elseif ( ( __GET_PROPERTY_ITSELF__ ) && class_exists('Html')) {
+             
+
+  }  elseif ( __GET_PROPERTY_ITSELF__ ) {
             /*
              |
              |

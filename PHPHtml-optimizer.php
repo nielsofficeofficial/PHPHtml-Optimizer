@@ -202,7 +202,7 @@ if ( __GET_STATIC_CLASS_HTML__  && __GET_INSTANTIATE_CLASS_HTML__ ) {
     }  else  {
 
     	 // check if there's something wrong directory then return error msg!
-    	 if ( __GET_VALIDATE_FILE_PAGE_EXIST__  && class_exists('Html')) {
+    	 if ( __GET_VALIDATE_FILE_PAGE_EXIST__) {
             /*
              |
              |
@@ -216,6 +216,7 @@ if ( __GET_STATIC_CLASS_HTML__  && __GET_INSTANTIATE_CLASS_HTML__ ) {
              |
              */ 
     		    Html::_PERFORM(FILE_HANDLER_MSG);
+                echo "Nope";
     	}
     	
     }   
