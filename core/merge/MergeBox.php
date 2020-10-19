@@ -2258,48 +2258,6 @@ function xEM($label = NULL) {
   *
   * @since 20.19.2020
   * @category PHPHtml-Merge
-  * @ Method Defined HTML B OPEN TAG noHTML  
-  * Inline Heading tag B
-  *
-  **/
-function _B($attr=null, $element_id=null, $element_class=null) {
-
-  /**
-   *
-   *
-   *
-   *
-   *
-   * @package : Merge Heading tag B
-   * @package : Static Procedural
-   * @method  : Html::_B($value, $attr=null, $element_id, $element_class, $label, $assoc);
-   *
-   *
-   *
-   **/	
-  $Html = NEW MergeBox(); 
-  return $Html->_B($attr, $element_id, $element_class);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
-  * @ Method Defined HTML B CLOSE TAG noHTML  
-  * Inline Heading tag B
-  *
-  **/
-function xB($label = NULL) {
-
-  $Html = NEW MergeBox(); return $Html->xB($label);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
   * @ Method Defined HTML SMALL OPEN TAG noHTML  
   * Inline Heading tag SMALL
   *
