@@ -329,48 +329,6 @@ function xDIV($label = NULL) {
   *
   * @since 20.19.2020
   * @category PHPHtml-Merge
-  * @ Method Defined HTML P OPEN TAG noHTML  
-  * Inline Heading tag P
-  *
-  **/
-function _P($attr=null, $element_id=null, $element_class=null) {
-
-  /**
-   *
-   *
-   *
-   *
-   *
-   * @package : Merge Heading tag P
-   * @package : Static Procedural
-   * @method  : Html::_P($value, $attr=null, $element_id, $element_class, $label, $assoc);
-   *
-   *
-   *
-   **/   
-  $Html = NEW MergeBox(); 
-  return $Html->_P($attr, $element_id, $element_class);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
-  * @ Method Defined HTML P CLOSE TAG noHTML  
-  * Inline Heading tag P
-  *
-  **/
-function xP($label = NULL) {
-
-  $Html = NEW MergeBox(); return $Html->xP($label);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
   * @ Method Defined HTML BUTTON OPEN TAG noHTML  
   * Inline Heading tag BUTTON
   *
@@ -406,48 +364,6 @@ function _BUTTON($attr=null, $element_id=null, $element_class=null) {
 function xBUTTON($label = NULL) {
 
   $Html = NEW MergeBox(); return $Html->xBUTTON($label);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
-  * @ Method Defined HTML A OPEN TAG noHTML  
-  * Inline Heading tag A
-  *
-  **/
-function _A($attr=null, $element_id=null, $element_class=null) {
-
-  /**
-   *
-   *
-   *
-   *
-   *
-   * @package : Merge Heading tag A
-   * @package : Static Procedural
-   * @method  : Html::_A($value, $attr=null, $element_id, $element_class, $label, $assoc);
-   *
-   *
-   *
-   **/   
-  $Html = NEW MergeBox(); 
-  return $Html->_A($attr, $element_id, $element_class);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
-  * @ Method Defined HTML A CLOSE TAG noHTML  
-  * Inline Heading tag A
-  *
-  **/
-function xA($label = NULL) {
-
-  $Html = NEW MergeBox(); return $Html->xA($label);	
 
 }
 
@@ -2384,48 +2300,6 @@ function xB($label = NULL) {
   *
   * @since 20.19.2020
   * @category PHPHtml-Merge
-  * @ Method Defined HTML I OPEN TAG noHTML  
-  * Inline Heading tag I
-  *
-  **/
-function _I($attr=null, $element_id=null, $element_class=null) {
-
-  /**
-   *
-   *
-   *
-   *
-   *
-   * @package : Merge Heading tag I
-   * @package : Static Procedural
-   * @method  : Html::_I($value, $attr=null, $element_id, $element_class, $label, $assoc);
-   *
-   *
-   *
-   **/	
-  $Html = NEW MergeBox(); 
-  return $Html->_I($attr, $element_id, $element_class);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
-  * @ Method Defined HTML I CLOSE TAG noHTML  
-  * Inline Heading tag I
-  *
-  **/
-function xI($label = NULL) {
-
-  $Html = NEW MergeBox(); return $Html->xI($label);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
   * @ Method Defined HTML SMALL OPEN TAG noHTML  
   * Inline Heading tag SMALL
   *
@@ -3265,48 +3139,6 @@ function xRP($label = NULL) {
   *
   * @since 20.19.2020
   * @category PHPHtml-Merge
-  * @ Method Defined HTML S OPEN TAG noHTML  
-  * Inline Heading tag S
-  *
-  **/
-function _S($attr=null, $element_id=null, $element_class=null) {
-
-  /**
-   *
-   *
-   *
-   *
-   *
-   * @package : Merge Heading tag S
-   * @package : Static Procedural
-   * @method  : Html::_S($value, $attr=null, $element_id, $element_class, $label, $assoc);
-   *
-   *
-   *
-   **/	
-  $Html = NEW MergeBox(); 
-  return $Html->_S($attr, $element_id, $element_class);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
-  * @ Method Defined HTML S CLOSE TAG noHTML  
-  * Inline Heading tag S
-  *
-  **/
-function xS($label = NULL) {
-
-  $Html = NEW MergeBox(); return $Html->xS($label);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
   * @ Method Defined HTML SAMP OPEN TAG noHTML  
   * Inline Heading tag SAMP
   *
@@ -3508,47 +3340,6 @@ function _WBR($attr=null, $element_id=null, $element_class=null) {
 function xWBR($label = NULL) {
 
   $Html = NEW MergeBox(); return $Html->xWBR($label);	
-
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
-  * @ Method Defined HTML Q OPEN TAG noHTML  
-  * Inline Heading tag Q
-  *
-  **/
-function _Q($attr=null, $element_id=null, $element_class=null) {
-
-  /**
-   *
-   *
-   *
-   *
-   *
-   * @package : Merge Heading tag Q
-   * @package : Static Procedural
-   * @method  : Html::_Q($value, $attr=null, $element_id, $element_class, $label, $assoc);
-   *
-   *
-   *
-   **/ 	
-  $Html = NEW MergeBox(); 
-  return $Html->_Q($attr, $element_id, $element_class);	
-}
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
-  * @ Method Defined HTML Q CLOSE TAG noHTML  
-  * Inline Heading tag Q
-  *
-  **/
-function xQ($label = NULL) {
-
-  $Html = NEW MergeBox(); return $Html->xQ($label);	
 
 }
 
