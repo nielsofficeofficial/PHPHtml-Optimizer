@@ -2462,7 +2462,7 @@ function _xHTML( $value=null, $attr=null, $element_id=null, $element_class=null,
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->HTML($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return $Html->noHTML($value, $attr, $element_id, $element_class, $label, $assoc); 
 
 }
 

@@ -834,7 +834,7 @@ static protected $hextend = [];
   * Html::_ELEMENT('http-equiv','meta', SetElementHeaderAttributes(['http-equiv','content'],['X-UA-Compatible','IE=edge']));
   *
   **/ 
-  static public function SetElementHeaderAttr($attr_name,$attr_val) { return self::Set_Element_Header_Attr($array_set_1,$array_set_2)}
+  static public function SetElementHeaderAttr($attr_name,$attr_val) { return self::Set_Element_Attr($array_set_1, $array_set_2); }
 
   /**
   *
@@ -847,7 +847,7 @@ static protected $hextend = [];
   * Html::_ELEMENT('http-equiv','meta', SetElementHeaderAttributes(['http-equiv','content'],['X-UA-Compatible','IE=edge']));
   *
   **/ 
-  static public function SetElementAttr($attr_name,$attr_val) { return self::Set_Element_Header_Attr($array_set_1,$array_set_2)}
+  static public function SetElementAttr($attr_name,$attr_val) { return self::Set_Element_Attr($array_set_1,$array_set_2); }
 
 /**
   *
@@ -861,7 +861,7 @@ static protected $hextend = [];
   **/
   static public function __magicELEMENT($elem, $label=null, $js=[], $id=null, $class=null) {
  
- return  self::_setReturnELEMENT(self::_setELEMENTS($elem), $_doCONTENT=null, $js, $id, $class, $label); 
+ return  self::_setReturnELEMENT(self::_setELEMENTS($elem), $value=null, $js, $id, $class, $label); 
 
 } 
 
@@ -957,9 +957,9 @@ static protected $hextend = [];
   * Neat and clean noHTML
   *
   **/
-  static public function ELEMENT($elem, $_doCONTENT=null, $js=[], $id=null, $class=null, $label=null) {
+  static public function ELEMENT($elem, $value=null, $js=[], $id=null, $class=null, $label=null) {
  
- return  self::_setReturnELEMENT(self::_setELEMENTS($elem), $_doCONTENT, $js, $id, $class, $label); 
+ return  self::_setReturnELEMENT(self::_setELEMENTS($elem), $value, $js, $id, $class, $label); 
 
 } 
 
@@ -1979,7 +1979,7 @@ static protected $hextend = [];
  *
  *
  * public function inline noHTML
- * @var @property $_doCONTENT = NULL | create function and return the content my_content();
+ * @var @property $value = NULL | create function and return the content my_content();
  * @var @property $js = [] | Html attribute for Js DOM such as angular and other HTML attributes
  * @var @property $id = NULL | html id in this section must be unique
  * @var @property $class = NULL | html class repared for front end framework such as bootstrap, materialize, foundation
@@ -2027,9 +2027,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function H1($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function H1($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
-  return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 0, $_doCONTENT, $js, $id, $class, $label, $assoc);
+  return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 0, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2040,9 +2040,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function H2($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function H2($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 1, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 1, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2053,9 +2053,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function H3($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function H3($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 2, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 2, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2066,9 +2066,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function H4($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function H4($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 3, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 3, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2079,9 +2079,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function H5($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function H5($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 4, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 4, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2092,9 +2092,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function H6($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function H6($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 5, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 5, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2105,9 +2105,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function DIV($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function DIV($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 6, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 6, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2118,9 +2118,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function P($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function P($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 7, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 7, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2131,9 +2131,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function BUTTON($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function BUTTON($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 8, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 8, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2144,9 +2144,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function A($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function A($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 9, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 9, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2157,9 +2157,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function IFRAME($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function IFRAME($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 10, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 10, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2170,9 +2170,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function MAIN($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function MAIN($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 11, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 11, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2182,9 +2182,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function NAV($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function NAV($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 12, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 12, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2194,9 +2194,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function SELECT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function SELECT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 13, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 13, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2206,9 +2206,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function FORM($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function FORM($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 14, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 14, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2218,9 +2218,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function PICTURE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function PICTURE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 15, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 15, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2230,9 +2230,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function SECTION($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function SECTION($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 16, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 16, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2242,9 +2242,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function TEXTAREA($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function TEXTAREA($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 17, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 17, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2254,9 +2254,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function AUDIO($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function AUDIO($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 0, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 0, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2266,9 +2266,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function VIDEO($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function VIDEO($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 1, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 1, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2278,9 +2278,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function ADDRESS($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function ADDRESS($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 2, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 2, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2290,9 +2290,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function COLGROUP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function COLGROUP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 3, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 3, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2302,9 +2302,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function BDI($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function BDI($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 4, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 4, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2314,9 +2314,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function BDO($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function BDO($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 5, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 5, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2326,9 +2326,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function BLOCKQUOTE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function BLOCKQUOTE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 6, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 6, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2338,9 +2338,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function CAPTION($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function CAPTION($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 7, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 7, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2350,9 +2350,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function LABEL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function LABEL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 8, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 8, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2362,9 +2362,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function DATALIST($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function DATALIST($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 9, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 9, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2374,9 +2374,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function DETAILS($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function DETAILS($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 10, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 10, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2386,9 +2386,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function SUMMARY($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function SUMMARY($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 11, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 11, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2398,9 +2398,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function DIALOG($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function DIALOG($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 12, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 12, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2410,9 +2410,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function OPTION($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function OPTION($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 13, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 13, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2422,9 +2422,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function FIGURE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function FIGURE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 0, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 0, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2434,9 +2434,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function FIGCAPTION($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function FIGCAPTION($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 1, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 1, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2446,9 +2446,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function METER($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function METER($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 2, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 2, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2458,9 +2458,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function OBJECT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function OBJECT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 3, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 3, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2470,9 +2470,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function OPTGROUP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function OPTGROUP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 4, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 4, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2482,9 +2482,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function OUTPUT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function OUTPUT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 5, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 5, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2494,9 +2494,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function PROGRESS($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function PROGRESS($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 6, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 6, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2506,9 +2506,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function SVG($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function SVG($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 7, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 7, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2518,9 +2518,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function TEMPLATE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function TEMPLATE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 8, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 8, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2530,9 +2530,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function TIME($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function TIME($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 9, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 9, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2542,9 +2542,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function VAR($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function VAR($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 10, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 10, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2554,9 +2554,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function UL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function UL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 0, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('LIST', 0, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2566,9 +2566,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function OL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function OL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 1, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('LIST', 1, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2578,9 +2578,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function LI($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function LI($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 2, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('LIST', 2, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2590,9 +2590,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function TABLE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function TABLE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 3, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('LIST', 3, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2602,9 +2602,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function TR($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function TR($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 4, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('LIST', 4, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2614,9 +2614,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function TD($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function TD($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 5, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('LIST', 5, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2626,9 +2626,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function TH($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function TH($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 6, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('LIST', 6, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2638,9 +2638,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function LEGEND($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function LEGEND($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 7, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('LIST', 7, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2650,9 +2650,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function FIELDSET($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function FIELDSET($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 8, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('LIST', 8, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2662,9 +2662,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function TBODY($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function TBODY($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 9, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('LIST', 9, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2674,9 +2674,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function TFOOT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function TFOOT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 10, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('LIST', 10, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2686,9 +2686,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function THEAD($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function THEAD($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 11, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('LIST', 11, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2698,9 +2698,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function SPAN($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function SPAN($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 0, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 0, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2710,9 +2710,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function EM($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function EM($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 1, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 1, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2722,9 +2722,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function B($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function B($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 2, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 2, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2734,9 +2734,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function I($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function I($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 2, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 2, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2746,9 +2746,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function SMALL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function SMALL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 3, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 3, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2758,9 +2758,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function STRIKE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function STRIKE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 4, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 4, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2770,9 +2770,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function MARQUEE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function MARQUEE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 5, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 5, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2782,9 +2782,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function CENTER($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function CENTER($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 6, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 6, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2794,9 +2794,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function CODE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function CODE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 7, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 7, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2806,9 +2806,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function ABBR($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function ABBR($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 8, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 8, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2818,9 +2818,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function MAP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function MAP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 9, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 9, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2830,9 +2830,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function CANVAS($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function CANVAS($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 10, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 10, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2842,9 +2842,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function CITE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function CITE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 11, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 11, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2854,9 +2854,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function DATA($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function DATA($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 12, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 12, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2866,9 +2866,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function DL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function DL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 13, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 13, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2878,9 +2878,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function DT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function DT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 14, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 14, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2890,9 +2890,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function DD($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function DD($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 15, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 15, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2902,9 +2902,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function DFN($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function DFN($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 16, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 16, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2914,9 +2914,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function INS($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function INS($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 17, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 17, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2926,9 +2926,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function DEL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function DEL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 0, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 0, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2938,9 +2938,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function KBD($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function KBD($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 1, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 1, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2950,9 +2950,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function MARK($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function MARK($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 2, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 2, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2962,9 +2962,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function PRE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function PRE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 3, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 3, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2974,9 +2974,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function RT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function RT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 4, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 4, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2986,9 +2986,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function RP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function RP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 5, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 5, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2998,9 +2998,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function RUBY($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function RUBY($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 6, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 6, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3010,9 +3010,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function S($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function S($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 7, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 7, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3022,9 +3022,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function SAMP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function SAMP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 8, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 8, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3034,9 +3034,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function STRONG($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function STRONG($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 9, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 9, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3046,9 +3046,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function SUB($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function SUB($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 10, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 10, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3058,9 +3058,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function SUP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function SUP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 11, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 11, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3070,9 +3070,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function WBR($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function WBR($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 12, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 12, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3082,9 +3082,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function Q($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function Q($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 13, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 13, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3094,9 +3094,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function HEAD($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function HEAD($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('STRUCTURE', 0, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('STRUCTURE', 0, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3106,9 +3106,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function TITLE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function TITLE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('STRUCTURE', 1, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('STRUCTURE', 1, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3118,9 +3118,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function BODY($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function BODY($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('STRUCTURE',2, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('STRUCTURE',2, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3130,9 +3130,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function noHTML($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function noHTML($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return self::_istrue_assoc_ELEMENTINLINE('STRUCTURE', 3, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return self::_istrue_assoc_ELEMENTINLINE('STRUCTURE', 3, $value, $js, $id, $class, $label, $assoc);
 
 } // END OF LINE HTML NO x REQUIRED
 
@@ -3155,7 +3155,7 @@ static private function return_inline_element($elem_val, $elem_key, $js, $id, $c
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static private function _istrue_assoc_ELEMENTINLINE($elem_val, $elem_key, $_doCONTENT, $js, $id, $class, $label, $assoc) {
+static private function _istrue_assoc_ELEMENTINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label, $assoc) {
   
   # INLINE_OR_ANY_LABEL_REQUIRED
   # CHECK_IF_THE_PARAM_REQUIRED_IS_NOT_NULL
@@ -3165,11 +3165,11 @@ static private function _istrue_assoc_ELEMENTINLINE($elem_val, $elem_key, $_doCO
        # RETURN_INLINE_ELEMENT_NO_HTML_CLOSING_TAG 
      /**
        *
-       * @var $elem_val, $elem_key, $_doCONTENT, $js, $id, $class, $label
+       * @var $elem_val, $elem_key, $value, $js, $id, $class, $label
        * @method function return_elementINLINE()
        *
        **/
-      echo self::return_elementINLINE($elem_val, $elem_key, $_doCONTENT, $js, $id, $class, $label);
+      echo self::return_elementINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label);
   } 
 
   # INLINE_OR_ANY_LABEL_REQUIRED 
@@ -3178,11 +3178,11 @@ static private function _istrue_assoc_ELEMENTINLINE($elem_val, $elem_key, $_doCO
        
      /**
        * THEN_IF_IT_IS TRUE_RETURN!
-       * @var  $elem_val, $elem_key, $_doCONTENT, $js, $id, $class, $label
+       * @var  $elem_val, $elem_key, $value, $js, $id, $class, $label
        * @method function _elemenHTMLINLINE()
        *
        **/
-     return self::_elemenHTMLINLINE($elem_val, $elem_key, $_doCONTENT, $js, $id, $class, $label);  
+     return self::_elemenHTMLINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label);  
   }
 } 
 
@@ -3193,7 +3193,7 @@ static private function _istrue_assoc_ELEMENTINLINE($elem_val, $elem_key, $_doCO
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static private function return_elementINLINE($elem_val, $elem_key, $_doCONTENT, $js, $id, $class, $label) {
+static private function return_elementINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label) {
    
     # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
     # RETURN_GET___HTML_METHOD_INCLUDED_ 
@@ -3207,7 +3207,7 @@ static private function return_elementINLINE($elem_val, $elem_key, $_doCONTENT, 
    
    # WHEN_THE_LOOP_IS_TRUE_THEN
    # DO_CONTENT
-   echo $return_elementINLINE  = $_doCONTENT; 
+   echo $return_elementINLINE  = $value; 
    
      # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
      # RETURN_GET___HTML_METHOD_INCLUDED_ 
@@ -3228,7 +3228,7 @@ static private function return_elementINLINE($elem_val, $elem_key, $_doCONTENT, 
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static private function _elemenHTMLINLINE($elem_val, $elem_key, $_doCONTENT, $js, $id, $class, $label) {
+static private function _elemenHTMLINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label) {
    
   if ( $label == TRUE && $label === 'MAGIC') {
      
@@ -3271,7 +3271,7 @@ static private function _elemenHTMLINLINE($elem_val, $elem_key, $_doCONTENT, $js
 
      # WHEN_THE_LOOP_IS_TRUE_THEN
      # DO_CONTENT
-     $return_elementINLINE  .= $_doCONTENT; 
+     $return_elementINLINE  .= $value; 
    
      # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
      # RETURN_GET___HTML_METHOD_INCLUDED_ 
@@ -4541,7 +4541,7 @@ static protected function Validate_extension_assets_files($Extension__) {
   * @ @private Method Defined HTML return element array
   *
   **/
-static private function Set_Element_Header_Attr($attr_name,$attr_val) {
+static private function Set_Element_Attr($attr_name,$attr_val) {
 
     return $Set_Element_Header_Attr = [
 
@@ -5971,7 +5971,7 @@ static protected function _setINLINELEMENTS($elem) {
 } # END OF SET ELEMENTS
 
 
-static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class, $label) {
+static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $label) {
 
   $elem = self::_setELEMENTS($elem); 
   switch ($elem) {
@@ -5987,7 +5987,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/      
-       return self::_elemenHTMLINLINE('STRUCTURE', 0, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('STRUCTURE', 0, $value, $js, $id, $class, $label);
       break;  
     case "title":
     
@@ -6000,7 +6000,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/      
-       return self::_elemenHTMLINLINE('STRUCTURE', 1, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('STRUCTURE', 1, $value, $js, $id, $class, $label);
       break;  
     case "body":
 
@@ -6013,7 +6013,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/    
-       return self::_elemenHTMLINLINE('STRUCTURE', 2, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('STRUCTURE', 2, $value, $js, $id, $class, $label);
       break;  
     case "html":
 
@@ -6026,7 +6026,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/     
-       return self::_elemenHTMLINLINE('STRUCTURE', 3, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('STRUCTURE', 3, $value, $js, $id, $class, $label);
       break;
     case "del":
 
@@ -6039,7 +6039,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/    
-       return self::_elemenHTMLINLINE('FORMATC', 0, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 0, $value, $js, $id, $class, $label);
       break;
     case "kbd":
 
@@ -6052,7 +6052,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/     
-       return self::_elemenHTMLINLINE('FORMATC', 1, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 1, $value, $js, $id, $class, $label);
       break;
     case "mark":
 
@@ -6065,7 +6065,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/     
-       return self::_elemenHTMLINLINE('FORMATC', 2, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 2, $value, $js, $id, $class, $label);
       break;
     case "pre":
 
@@ -6078,7 +6078,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/   
-       return self::_elemenHTMLINLINE('FORMATC', 3, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 3, $value, $js, $id, $class, $label);
       break;
     case "rt":
 
@@ -6091,7 +6091,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/     
-       return self::_elemenHTMLINLINE('FORMATC', 4, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 4, $value, $js, $id, $class, $label);
       break;
     case "rp":
 
@@ -6104,7 +6104,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/  
-       return self::_elemenHTMLINLINE('FORMATC', 5, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 5, $value, $js, $id, $class, $label);
       break;
     case "ruby":
 
@@ -6117,7 +6117,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/  
-       return self::_elemenHTMLINLINE('FORMATC', 6, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 6, $value, $js, $id, $class, $label);
       break;
     case "s":
 
@@ -6130,7 +6130,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/  
-       return self::_elemenHTMLINLINE('FORMATC', 7, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 7, $value, $js, $id, $class, $label);
       break;        
     case "samp":
 
@@ -6143,7 +6143,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/     
-       return self::_elemenHTMLINLINE('FORMATC', 8, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 8, $value, $js, $id, $class, $label);
       break; 
     case "strong":
 
@@ -6156,7 +6156,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('FORMATC', 9, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 9, $value, $js, $id, $class, $label);
       break; 
     case "sub":
 
@@ -6169,7 +6169,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('FORMATC', 10, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 10, $value, $js, $id, $class, $label);
       break;
     case "sup":
 
@@ -6182,7 +6182,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('FORMATC', 11, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 11, $value, $js, $id, $class, $label);
       break;
     case "wbr":
 
@@ -6195,7 +6195,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('FORMATC', 12, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 12, $value, $js, $id, $class, $label);
       break;
     case "q":
 
@@ -6208,7 +6208,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('FORMATC', 13, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 13, $value, $js, $id, $class, $label);
       break;
 
     case "span":
@@ -6222,7 +6222,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('FORMAT', 0, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 0, $value, $js, $id, $class, $label);
       break;
     case "em":
 
@@ -6235,7 +6235,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('FORMAT', 1, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 1, $value, $js, $id, $class, $label);
       break;
     case "b":
 
@@ -6248,7 +6248,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 2, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 2, $value, $js, $id, $class, $label);
       break;
     case "i":
 
@@ -6261,7 +6261,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 3, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 3, $value, $js, $id, $class, $label);
       break;
     case "small":
 
@@ -6274,7 +6274,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 4, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 4, $value, $js, $id, $class, $label);
       break;
     case "strike":
 
@@ -6287,7 +6287,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 5, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 5, $value, $js, $id, $class, $label);
       break;
     case "marquee":
 
@@ -6300,7 +6300,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 6, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 6, $value, $js, $id, $class, $label);
       break;
     case "center":
 
@@ -6313,7 +6313,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 7, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 7, $value, $js, $id, $class, $label);
       break;
     case "code":
 
@@ -6326,7 +6326,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 8, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 8, $value, $js, $id, $class, $label);
       break;
     case "abbr":
 
@@ -6339,7 +6339,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 9, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 9, $value, $js, $id, $class, $label);
       break;
     case "map":
 
@@ -6352,7 +6352,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 10, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 10, $value, $js, $id, $class, $label);
       break;
     case "canvas":
 
@@ -6365,7 +6365,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 11, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 11, $value, $js, $id, $class, $label);
       break;
     case "cite":
 
@@ -6378,7 +6378,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 12, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 12, $value, $js, $id, $class, $label);
       break;
     case "data":
 
@@ -6391,7 +6391,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 13, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 13, $value, $js, $id, $class, $label);
       break;
     case "dl":
 
@@ -6404,7 +6404,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 14, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 14, $value, $js, $id, $class, $label);
       break;
     case "dt":
 
@@ -6417,7 +6417,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 15, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 15, $value, $js, $id, $class, $label);
       break;
     case "dd":
 
@@ -6430,7 +6430,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 16, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 16, $value, $js, $id, $class, $label);
       break;
     case "dfn":
 
@@ -6443,7 +6443,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 17, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 17, $value, $js, $id, $class, $label);
       break;
     case "ins":
 
@@ -6456,7 +6456,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 18, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 18, $value, $js, $id, $class, $label);
       break;
     case "ul":
 
@@ -6469,7 +6469,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 0, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 0, $value, $js, $id, $class, $label);
       break;
     case "ol":
 
@@ -6482,7 +6482,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 1, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 1, $value, $js, $id, $class, $label);
       break;
     case "li":
 
@@ -6495,7 +6495,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 2, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 2, $value, $js, $id, $class, $label);
       break;
     case "table":
 
@@ -6508,7 +6508,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 3, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 3, $value, $js, $id, $class, $label);
       break;
     case "tr":
 
@@ -6521,7 +6521,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 4, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 4, $value, $js, $id, $class, $label);
       break;
     case "td":
 
@@ -6534,7 +6534,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 5, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 5, $value, $js, $id, $class, $label);
       break;
     case "th":
 
@@ -6547,7 +6547,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 6, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 6, $value, $js, $id, $class, $label);
       break;
     case "legend":
 
@@ -6560,7 +6560,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 7, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 7, $value, $js, $id, $class, $label);
       break;
     case "fieldset":
 
@@ -6573,7 +6573,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 8, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 8, $value, $js, $id, $class, $label);
       break;
     case "tbody":
 
@@ -6586,7 +6586,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 9, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 9, $value, $js, $id, $class, $label);
       break;
     case "tfoot":
 
@@ -6599,7 +6599,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 10, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 10, $value, $js, $id, $class, $label);
       break;
     case "thead":
 
@@ -6612,7 +6612,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 11, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 11, $value, $js, $id, $class, $label);
       break;
     case "figure":
 
@@ -6625,7 +6625,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 0, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 0, $value, $js, $id, $class, $label);
       break;
     case "figcaption":
 
@@ -6638,7 +6638,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 1, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 1, $value, $js, $id, $class, $label);
       break;      
     case "meter":
 
@@ -6651,7 +6651,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 2, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 2, $value, $js, $id, $class, $label);
       break;      
     case "object":
 
@@ -6664,7 +6664,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 3, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 3, $value, $js, $id, $class, $label);
       break;     
     case "optgroup":
 
@@ -6677,7 +6677,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 4, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 4, $value, $js, $id, $class, $label);
       break;     
     case "output":
 
@@ -6690,7 +6690,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 5, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 5, $value, $js, $id, $class, $label);
       break;  
     case "progress":
 
@@ -6703,7 +6703,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 6, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 6, $value, $js, $id, $class, $label);
       break;
     case "svg":
 
@@ -6716,7 +6716,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 7, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 7, $value, $js, $id, $class, $label);
       break;
     case "template":
 
@@ -6729,7 +6729,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 8, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 8, $value, $js, $id, $class, $label);
       break;
     case "time":
 
@@ -6742,7 +6742,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 9, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 9, $value, $js, $id, $class, $label);
       break;
     case "var":
 
@@ -6755,7 +6755,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 10, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 10, $value, $js, $id, $class, $label);
       break;
 
     case "audio":
@@ -6769,7 +6769,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 0, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 0, $value, $js, $id, $class, $label);
       break;
     case "video":
 
@@ -6782,7 +6782,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 1, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 1, $value, $js, $id, $class, $label);
       break;
     case "address":
 
@@ -6795,7 +6795,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 2, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 2, $value, $js, $id, $class, $label);
       break;
     case "colgroup":
 
@@ -6808,7 +6808,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 3, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 3, $value, $js, $id, $class, $label);
       break;
     case "bdi":
 
@@ -6821,7 +6821,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 4, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 4, $value, $js, $id, $class, $label);
       break;
     case "bdo":
 
@@ -6834,7 +6834,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 5, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 5, $value, $js, $id, $class, $label);
       break;
     case "blockquote":
 
@@ -6847,7 +6847,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 6, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 6, $value, $js, $id, $class, $label);
       break;
     case "caption":
 
@@ -6860,7 +6860,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 7, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 7, $value, $js, $id, $class, $label);
       break;
     case "label":
 
@@ -6872,7 +6872,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 8, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 8, $value, $js, $id, $class, $label);
       break;
     case "datalist":
 
@@ -6884,7 +6884,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 9, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 9, $value, $js, $id, $class, $label);
       break;
     case "details":
 
@@ -6896,7 +6896,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 10, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 10, $value, $js, $id, $class, $label);
       break;
     case "summary":
 
@@ -6908,7 +6908,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 11, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 11, $value, $js, $id, $class, $label);
       break;
     case "dialog":
 
@@ -6920,7 +6920,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 12, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 12, $value, $js, $id, $class, $label);
       break;
     case "option":
 
@@ -6932,7 +6932,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 13, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 13, $value, $js, $id, $class, $label);
       break;
     case "h1":
 
@@ -6944,7 +6944,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-       return self::_elemenHTMLINLINE('PRIMARY', 0, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('PRIMARY', 0, $value, $js, $id, $class, $label);
       break;
     case "h2":
 
@@ -6956,7 +6956,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-      return self::_elemenHTMLINLINE('PRIMARY', 1, $_doCONTENT, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 1, $value, $js, $id, $class, $label);
       break;
     case "h3":
 
@@ -6968,7 +6968,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-      return self::_elemenHTMLINLINE('PRIMARY', 2, $_doCONTENT, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 2, $value, $js, $id, $class, $label);
       break; 
     case "h4":
 
@@ -6980,7 +6980,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-      return self::_elemenHTMLINLINE('PRIMARY', 3, $_doCONTENT, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 3, $value, $js, $id, $class, $label);
       break;
     case "h5":
 
@@ -6992,7 +6992,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-      return self::_elemenHTMLINLINE('PRIMARY', 4, $_doCONTENT, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 4, $value, $js, $id, $class, $label);
       break;
     case "h6":
 
@@ -7004,7 +7004,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-      return self::_elemenHTMLINLINE('PRIMARY', 5, $_doCONTENT, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 5, $value, $js, $id, $class, $label);
       break;                 
   case "div":
 
@@ -7016,7 +7016,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/
-      return self::_elemenHTMLINLINE('PRIMARY', 6, $_doCONTENT, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 6, $value, $js, $id, $class, $label);
       break;       
     case "p":
 
@@ -7028,7 +7028,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('PRIMARY', 7, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('PRIMARY', 7, $value, $js, $id, $class, $label);
       break;
     case "button":
 
@@ -7040,7 +7040,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('PRIMARY', 8, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('PRIMARY', 8, $value, $js, $id, $class, $label);
       break;
     case "a":
 
@@ -7052,7 +7052,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/ 
-      return self::_elemenHTMLINLINE('PRIMARY', 9, $_doCONTENT, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 9, $value, $js, $id, $class, $label);
       break;
     case "iframe":
 
@@ -7064,7 +7064,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('PRIMARY', 10, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('PRIMARY', 10, $value, $js, $id, $class, $label);
       break;
     case "main":
 
@@ -7076,7 +7076,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/ 
-      return self::_elemenHTMLINLINE('PRIMARY', 11, $_doCONTENT, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 11, $value, $js, $id, $class, $label);
       break;
     case "nav":
 
@@ -7088,7 +7088,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('PRIMARY', 12, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('PRIMARY', 12, $value, $js, $id, $class, $label);
       break;
     case "select":
 
@@ -7100,7 +7100,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/ 
-      return self::_elemenHTMLINLINE('PRIMARY', 13, $_doCONTENT, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 13, $value, $js, $id, $class, $label);
       break;
     case "form":
 
@@ -7112,7 +7112,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('PRIMARY', 14, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('PRIMARY', 14, $value, $js, $id, $class, $label);
       break;
     case "picture":
 
@@ -7124,7 +7124,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/ 
-      return self::_elemenHTMLINLINE('PRIMARY', 15, $_doCONTENT, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 15, $value, $js, $id, $class, $label);
       break;
     case "section":
 
@@ -7136,7 +7136,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('PRIMARY', 16, $_doCONTENT, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('PRIMARY', 16, $value, $js, $id, $class, $label);
       break;
     case "textarea":
 
@@ -7148,7 +7148,7 @@ static protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class
        *
        *
       **/ 
-      return self::_elemenHTMLINLINE('PRIMARY', 17, $_doCONTENT, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 17, $value, $js, $id, $class, $label);
       break;
     default:
 

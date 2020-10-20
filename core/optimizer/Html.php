@@ -800,7 +800,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   **/
  public function __magicMERGE($elem, $label=null, $js=[], $id=null, $class=null) {
  
- return $this->_setReturnELEMENT($this->_setELEMENTS($elem), $_doCONTENT=null, $js, $id, $class, $label); 
+ return $this->_setReturnELEMENT($this->_setELEMENTS($elem), $value=null, $js, $id, $class, $label); 
 
 } 
 
@@ -840,7 +840,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * Html::_ELEMENT('http-equiv','meta', SetElementHeaderAttributes(['http-equiv','content'],['X-UA-Compatible','IE=edge']));
   *
   **/ 
-  public function SetElementHeaderAttr($attr_name,$attr_val) { return self::Set_Element_Header_Attr($array_set_1,$array_set_2)}
+  static public function SetElementHeaderAttr($attr_name,$attr_val) { return self::Set_Element_Attr($array_set_1, $array_set_2); }
 
   /**
   *
@@ -853,7 +853,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * Html::_ELEMENT('http-equiv','meta', SetElementHeaderAttributes(['http-equiv','content'],['X-UA-Compatible','IE=edge']));
   *
   **/ 
-  public function SetElementAttr($attr_name,$attr_val) { return self::Set_Element_Header_Attr($array_set_1,$array_set_2)}
+  static public function SetElementAttr($attr_name,$attr_val) { return self::Set_Element_Attr($array_set_1,$array_set_2); }
 
   /**
   *
@@ -957,9 +957,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * Neat and clean noHTML
   *
   **/
-  public function ELEMENT($elem, $_doCONTENT=null, $js=[], $id=null, $class=null, $label=null) {
+  public function ELEMENT($elem, $value=null, $js=[], $id=null, $class=null, $label=null) {
  
- return  $this->_setReturnELEMENT($this->_setELEMENTS($elem), $_doCONTENT, $js, $id, $class, $label); 
+ return  $this->_setReturnELEMENT($this->_setELEMENTS($elem), $value, $js, $id, $class, $label); 
 
 } 
 
@@ -1979,7 +1979,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
  *
  *
  * public function inline noHTML
- * @var @property $_doCONTENT = NULL | create function and return the content my_content();
+ * @var @property $value = NULL | create function and return the content my_content();
  * @var @property $js = [] | Html attribute for Js DOM such as angular and other HTML attributes
  * @var @property $id = NULL | html id in this section must be unique
  * @var @property $class = NULL | html class repared for front end framework such as bootstrap, materialize, foundation
@@ -2027,9 +2027,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function H1($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function H1($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
-  return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 0, $_doCONTENT, $js, $id, $class, $label, $assoc);
+  return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 0, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2040,9 +2040,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function H2($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function H2($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 1, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 1, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2053,9 +2053,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function H3($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function H3($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 2, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 2, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2066,9 +2066,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function H4($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function H4($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 3, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 3, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2079,9 +2079,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function H5($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function H5($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 4, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 4, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2092,9 +2092,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function H6($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function H6($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 5, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 5, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2105,9 +2105,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function DIV($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function DIV($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 6, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 6, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2118,9 +2118,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function P($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function P($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 7, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 7, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2131,9 +2131,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function BUTTON($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function BUTTON($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 8, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 8, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2144,9 +2144,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function A($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function A($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 9, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 9, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2157,9 +2157,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function IFRAME($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function IFRAME($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 10, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 10, $value, $js, $id, $class, $label, $assoc);
 
 }
 
@@ -2170,9 +2170,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function MAIN($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function MAIN($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 11, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 11, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2182,9 +2182,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function NAV($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function NAV($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 12, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 12, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2194,9 +2194,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function SELECT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function SELECT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 13, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 13, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2206,9 +2206,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function FORM($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function FORM($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 14, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 14, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2218,9 +2218,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function PICTURE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function PICTURE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 15, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 15, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2230,9 +2230,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function SECTION($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function SECTION($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 16, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 16, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2242,9 +2242,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function TEXTAREA($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function TEXTAREA($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 17, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 17, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2254,9 +2254,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function AUDIO($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function AUDIO($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 0, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 0, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2266,9 +2266,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function VIDEO($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function VIDEO($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 1, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 1, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2278,9 +2278,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function ADDRESS($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function ADDRESS($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 2, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 2, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2290,9 +2290,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function COLGROUP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function COLGROUP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 3, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 3, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2302,9 +2302,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function BDI($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function BDI($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 4, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 4, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2314,9 +2314,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function BDO($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function BDO($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 5, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 5, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2326,9 +2326,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function BLOCKQUOTE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function BLOCKQUOTE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 6, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 6, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2338,9 +2338,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function CAPTION($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function CAPTION($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 7, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 7, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2350,9 +2350,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function LABEL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function LABEL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 8, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 8, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2362,9 +2362,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function DATALIST($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function DATALIST($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 9, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 9, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2374,9 +2374,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function DETAILS($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function DETAILS($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 10, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 10, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2386,9 +2386,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function SUMMARY($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function SUMMARY($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 11, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 11, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2398,9 +2398,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function DIALOG($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function DIALOG($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 12, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 12, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2410,9 +2410,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function OPTION($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function OPTION($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 13, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 13, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2422,9 +2422,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function FIGURE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function FIGURE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 0, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 0, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2434,9 +2434,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function FIGCAPTION($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function FIGCAPTION($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 1, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 1, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2446,9 +2446,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function METER($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function METER($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 2, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 2, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2458,9 +2458,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function OBJECT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function OBJECT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 3, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 3, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2470,9 +2470,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function OPTGROUP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function OPTGROUP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 4, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 4, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2482,9 +2482,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function OUTPUT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function OUTPUT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 5, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 5, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2494,9 +2494,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function PROGRESS($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function PROGRESS($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 6, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 6, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2506,9 +2506,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function SVG($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function SVG($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 7, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 7, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2518,9 +2518,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function TEMPLATE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function TEMPLATE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 8, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 8, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2530,9 +2530,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function TIME($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function TIME($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 9, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 9, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2542,9 +2542,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function VAR($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function VAR($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 10, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 10, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2554,9 +2554,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function UL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function UL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 0, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('LIST', 0, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2566,9 +2566,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function OL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function OL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 1, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('LIST', 1, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2578,9 +2578,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function LI($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function LI($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 2, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('LIST', 2, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2590,9 +2590,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function TABLE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function TABLE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 3, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('LIST', 3, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2602,9 +2602,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function TR($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function TR($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 4, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('LIST', 4, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2614,9 +2614,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function TD($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function TD($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 5, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('LIST', 5, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2626,9 +2626,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function TH($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function TH($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 6, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('LIST', 6, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2638,9 +2638,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function LEGEND($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function LEGEND($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 7, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('LIST', 7, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2650,9 +2650,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function FIELDSET($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function FIELDSET($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 8, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('LIST', 8, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2662,9 +2662,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function TBODY($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function TBODY($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 9, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('LIST', 9, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2674,9 +2674,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function TFOOT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function TFOOT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 10, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('LIST', 10, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2686,9 +2686,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function THEAD($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function THEAD($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 11, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('LIST', 11, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2698,9 +2698,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function SPAN($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function SPAN($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 0, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 0, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2710,9 +2710,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function EM($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function EM($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 1, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 1, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2722,9 +2722,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function B($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function B($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 2, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 2, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2734,9 +2734,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function I($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function I($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 2, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 2, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2746,9 +2746,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function SMALL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function SMALL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 3, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 3, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2758,9 +2758,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function STRIKE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function STRIKE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 4, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 4, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2770,9 +2770,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function MARQUEE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function MARQUEE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 5, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 5, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2782,9 +2782,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function CENTER($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function CENTER($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 6, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 6, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2794,9 +2794,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function CODE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function CODE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 7, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 7, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2806,9 +2806,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function ABBR($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function ABBR($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 8, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 8, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2818,9 +2818,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function MAP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function MAP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 9, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 9, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2830,9 +2830,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function CANVAS($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function CANVAS($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 10, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 10, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2842,9 +2842,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function CITE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function CITE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 11, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 11, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2854,9 +2854,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function DATA($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function DATA($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 12, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 12, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2866,9 +2866,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function DL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function DL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 13, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 13, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2878,9 +2878,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function DT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function DT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 14, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 14, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2890,9 +2890,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function DD($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function DD($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 15, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 15, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2902,9 +2902,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function DFN($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function DFN($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 16, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 16, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2914,9 +2914,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function INS($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function INS($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 17, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 17, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2926,9 +2926,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function DEL($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function DEL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 0, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 0, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2938,9 +2938,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function KBD($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function KBD($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 1, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 1, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2950,9 +2950,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function MARK($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function MARK($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 2, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 2, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2962,9 +2962,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function PRE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function PRE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 3, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 3, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2974,9 +2974,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function RT($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function RT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 4, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 4, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2986,9 +2986,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function RP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function RP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 5, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 5, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -2998,9 +2998,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function RUBY($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function RUBY($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 6, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 6, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3010,9 +3010,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function S($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function S($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 7, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 7, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3022,9 +3022,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function SAMP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function SAMP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 8, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 8, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3034,9 +3034,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function STRONG($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function STRONG($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 9, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 9, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3046,9 +3046,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function SUB($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function SUB($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 10, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 10, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3058,9 +3058,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function SUP($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function SUP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 11, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 11, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3070,9 +3070,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function WBR($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function WBR($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 12, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 12, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3082,9 +3082,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function Q($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function Q($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 13, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 13, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3094,9 +3094,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function HEAD($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function HEAD($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('STRUCTURE', 0, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('STRUCTURE', 0, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3106,9 +3106,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function TITLE($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function TITLE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('STRUCTURE', 1, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('STRUCTURE', 1, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3118,9 +3118,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function BODY($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function BODY($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('STRUCTURE',2, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('STRUCTURE',2, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3130,9 +3130,9 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function noHTML($_doCONTENT=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function noHTML($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
- return $this->_istrue_assoc_ELEMENTINLINE('STRUCTURE', 3, $_doCONTENT, $js, $id, $class, $label, $assoc);
+ return $this->_istrue_assoc_ELEMENTINLINE('STRUCTURE', 3, $value, $js, $id, $class, $label, $assoc);
 
 } // END OF LINE HTML NO x REQUIRED
 
@@ -3155,7 +3155,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
- private function _istrue_assoc_ELEMENTINLINE($elem_val, $elem_key, $_doCONTENT, $js, $id, $class, $label, $assoc) {
+ private function _istrue_assoc_ELEMENTINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label, $assoc) {
   
   # INLINE_OR_ANY_LABEL_REQUIRED
   # CHECK_IF_THE_PARAM_REQUIRED_IS_NOT_NULL
@@ -3165,11 +3165,11 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
        # RETURN_INLINE_ELEMENT_NO_HTML_CLOSING_TAG 
      /**
        *
-       * @var $elem_val, $elem_key, $_doCONTENT, $js, $id, $class, $label
+       * @var $elem_val, $elem_key, $value, $js, $id, $class, $label
        * @method function return_elementINLINE()
        *
        **/
-      echo $this->return_elementINLINE($elem_val, $elem_key, $_doCONTENT, $js, $id, $class, $label);
+      echo $this->return_elementINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label);
   } 
 
   # INLINE_OR_ANY_LABEL_REQUIRED 
@@ -3178,11 +3178,11 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
        
      /**
        * THEN_IF_IT_IS TRUE_RETURN!
-       * @var  $elem_val, $elem_key, $_doCONTENT, $js, $id, $class, $label
+       * @var  $elem_val, $elem_key, $value, $js, $id, $class, $label
        * @method function _elemenHTMLINLINE()
        *
        **/
-     return $this->_elemenHTMLINLINE($elem_val, $elem_key, $_doCONTENT, $js, $id, $class, $label);  
+     return $this->_elemenHTMLINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label);  
   }
 } 
 
@@ -3193,7 +3193,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
- private function return_elementINLINE($elem_val, $elem_key, $_doCONTENT, $js, $id, $class, $label) {
+ private function return_elementINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label) {
    
     # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
     # RETURN_GET___HTML_METHOD_INCLUDED_ 
@@ -3207,7 +3207,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
    
    # WHEN_THE_LOOP_IS_TRUE_THEN
    # DO_CONTENT
-   echo $return_elementINLINE  = $_doCONTENT; 
+   echo $return_elementINLINE  = $value; 
    
      # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
      # RETURN_GET___HTML_METHOD_INCLUDED_ 
@@ -3228,7 +3228,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
- private function _elemenHTMLINLINE($elem_val, $elem_key, $_doCONTENT, $js, $id, $class, $label) {
+ private function _elemenHTMLINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label) {
    
      if ( $label == TRUE && $label === 'MERGE') {
      
@@ -3271,7 +3271,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
 
      # WHEN_THE_LOOP_IS_TRUE_THEN
      # DO_CONTENT
-     $return_elementINLINE  .= $_doCONTENT; 
+     $return_elementINLINE  .= $value; 
    
      # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
      # RETURN_GET___HTML_METHOD_INCLUDED_ 
@@ -4164,13 +4164,13 @@ static protected function Validate_extension_assets_files($Extension__) {
   
 } 
   
-/**
+ /**
   *
   * @method private function Set_Element_Header_Attr noHTML
   * @ @private Method Defined HTML return element array
   *
   **/
- private function Set_Element_Header_Attr($attr_name,$attr_val) {
+static private function Set_Element_Attr($attr_name,$attr_val) {
 
     return $Set_Element_Header_Attr = [
 
@@ -5941,7 +5941,7 @@ static protected function Validate_extension_assets_files($Extension__) {
 } # END OF SET ELEMENTS
 
 
- protected function _setReturnELEMENT($elem, $_doCONTENT, $js, $id, $class, $label) {
+ protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $label) {
 
   $elem = $this->_setELEMENTS($elem); 
   switch ($elem) {
@@ -5957,7 +5957,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/      
-       return $this->_elemenHTMLINLINE('STRUCTURE', 0, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('STRUCTURE', 0, $value, $js, $id, $class, $label);
       break;  
     case "title":
     
@@ -5970,7 +5970,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/      
-       return $this->_elemenHTMLINLINE('STRUCTURE', 1, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('STRUCTURE', 1, $value, $js, $id, $class, $label);
       break;  
     case "body":
 
@@ -5983,7 +5983,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/    
-       return $this->_elemenHTMLINLINE('STRUCTURE', 2, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('STRUCTURE', 2, $value, $js, $id, $class, $label);
       break;  
     case "html":
 
@@ -5996,7 +5996,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/     
-       return $this->_elemenHTMLINLINE('STRUCTURE', 3, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('STRUCTURE', 3, $value, $js, $id, $class, $label);
       break;
     case "del":
 
@@ -6009,7 +6009,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/    
-       return $this->_elemenHTMLINLINE('FORMATC', 0, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 0, $value, $js, $id, $class, $label);
       break;
     case "kbd":
 
@@ -6022,7 +6022,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/     
-       return $this->_elemenHTMLINLINE('FORMATC', 1, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 1, $value, $js, $id, $class, $label);
       break;
     case "mark":
 
@@ -6035,7 +6035,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/     
-       return $this->_elemenHTMLINLINE('FORMATC', 2, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 2, $value, $js, $id, $class, $label);
       break;
     case "pre":
 
@@ -6048,7 +6048,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/   
-       return $this->_elemenHTMLINLINE('FORMATC', 3, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 3, $value, $js, $id, $class, $label);
       break;
     case "rt":
 
@@ -6061,7 +6061,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/     
-       return $this->_elemenHTMLINLINE('FORMATC', 4, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 4, $value, $js, $id, $class, $label);
       break;
     case "rp":
 
@@ -6074,7 +6074,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/  
-       return $this->_elemenHTMLINLINE('FORMATC', 5, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 5, $value, $js, $id, $class, $label);
       break;
     case "ruby":
 
@@ -6087,7 +6087,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/  
-       return $this->_elemenHTMLINLINE('FORMATC', 6, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 6, $value, $js, $id, $class, $label);
       break;
     case "s":
 
@@ -6100,7 +6100,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/  
-       return $this->_elemenHTMLINLINE('FORMATC', 7, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 7, $value, $js, $id, $class, $label);
       break;        
     case "samp":
 
@@ -6113,7 +6113,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/     
-       return $this->_elemenHTMLINLINE('FORMATC', 8, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 8, $value, $js, $id, $class, $label);
       break; 
     case "strong":
 
@@ -6126,7 +6126,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('FORMATC', 9, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 9, $value, $js, $id, $class, $label);
       break; 
     case "sub":
 
@@ -6139,7 +6139,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('FORMATC', 10, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 10, $value, $js, $id, $class, $label);
       break;
     case "sup":
 
@@ -6152,7 +6152,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('FORMATC', 11, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 11, $value, $js, $id, $class, $label);
       break;
     case "wbr":
 
@@ -6165,7 +6165,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('FORMATC', 12, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 12, $value, $js, $id, $class, $label);
       break;
     case "q":
 
@@ -6178,7 +6178,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('FORMATC', 13, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 13, $value, $js, $id, $class, $label);
       break;
 
     case "span":
@@ -6192,7 +6192,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('FORMAT', 0, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 0, $value, $js, $id, $class, $label);
       break;
     case "em":
 
@@ -6205,7 +6205,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('FORMAT', 1, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 1, $value, $js, $id, $class, $label);
       break;
     case "b":
 
@@ -6218,7 +6218,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 2, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 2, $value, $js, $id, $class, $label);
       break;
     case "i":
 
@@ -6231,7 +6231,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 3, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 3, $value, $js, $id, $class, $label);
       break;
     case "small":
 
@@ -6244,7 +6244,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 4, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 4, $value, $js, $id, $class, $label);
       break;
     case "strike":
 
@@ -6257,7 +6257,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 5, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 5, $value, $js, $id, $class, $label);
       break;
     case "marquee":
 
@@ -6270,7 +6270,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 6, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 6, $value, $js, $id, $class, $label);
       break;
     case "center":
 
@@ -6283,7 +6283,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 7, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 7, $value, $js, $id, $class, $label);
       break;
     case "code":
 
@@ -6296,7 +6296,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 8, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 8, $value, $js, $id, $class, $label);
       break;
     case "abbr":
 
@@ -6309,7 +6309,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 9, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 9, $value, $js, $id, $class, $label);
       break;
     case "map":
 
@@ -6322,7 +6322,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 10, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 10, $value, $js, $id, $class, $label);
       break;
     case "canvas":
 
@@ -6335,7 +6335,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 11, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 11, $value, $js, $id, $class, $label);
       break;
     case "cite":
 
@@ -6348,7 +6348,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 12, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 12, $value, $js, $id, $class, $label);
       break;
     case "data":
 
@@ -6361,7 +6361,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 13, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 13, $value, $js, $id, $class, $label);
       break;
     case "dl":
 
@@ -6374,7 +6374,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 14, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 14, $value, $js, $id, $class, $label);
       break;
     case "dt":
 
@@ -6387,7 +6387,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 15, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 15, $value, $js, $id, $class, $label);
       break;
     case "dd":
 
@@ -6400,7 +6400,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 16, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 16, $value, $js, $id, $class, $label);
       break;
     case "dfn":
 
@@ -6413,7 +6413,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 17, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 17, $value, $js, $id, $class, $label);
       break;
     case "ins":
 
@@ -6426,7 +6426,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 18, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 18, $value, $js, $id, $class, $label);
       break;
     case "ul":
 
@@ -6439,7 +6439,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 0, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 0, $value, $js, $id, $class, $label);
       break;
     case "ol":
 
@@ -6452,7 +6452,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 1, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 1, $value, $js, $id, $class, $label);
       break;
     case "li":
 
@@ -6465,7 +6465,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 2, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 2, $value, $js, $id, $class, $label);
       break;
     case "table":
 
@@ -6478,7 +6478,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 3, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 3, $value, $js, $id, $class, $label);
       break;
     case "tr":
 
@@ -6491,7 +6491,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 4, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 4, $value, $js, $id, $class, $label);
       break;
     case "td":
 
@@ -6504,7 +6504,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 5, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 5, $value, $js, $id, $class, $label);
       break;
     case "th":
 
@@ -6517,7 +6517,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 6, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 6, $value, $js, $id, $class, $label);
       break;
     case "legend":
 
@@ -6530,7 +6530,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 7, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 7, $value, $js, $id, $class, $label);
       break;
     case "fieldset":
 
@@ -6543,7 +6543,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 8, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 8, $value, $js, $id, $class, $label);
       break;
     case "tbody":
 
@@ -6556,7 +6556,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 9, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 9, $value, $js, $id, $class, $label);
       break;
     case "tfoot":
 
@@ -6569,7 +6569,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 10, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 10, $value, $js, $id, $class, $label);
       break;
     case "thead":
 
@@ -6582,7 +6582,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 11, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 11, $value, $js, $id, $class, $label);
       break;
     case "figure":
 
@@ -6595,7 +6595,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 0, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 0, $value, $js, $id, $class, $label);
       break;
     case "figcaption":
 
@@ -6608,7 +6608,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 1, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 1, $value, $js, $id, $class, $label);
       break;      
     case "meter":
 
@@ -6621,7 +6621,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 2, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 2, $value, $js, $id, $class, $label);
       break;      
     case "object":
 
@@ -6634,7 +6634,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 3, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 3, $value, $js, $id, $class, $label);
       break;     
     case "optgroup":
 
@@ -6647,7 +6647,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 4, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 4, $value, $js, $id, $class, $label);
       break;     
     case "output":
 
@@ -6660,7 +6660,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 5, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 5, $value, $js, $id, $class, $label);
       break;  
     case "progress":
 
@@ -6673,7 +6673,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 6, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 6, $value, $js, $id, $class, $label);
       break;
     case "svg":
 
@@ -6686,7 +6686,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 7, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 7, $value, $js, $id, $class, $label);
       break;
     case "template":
 
@@ -6699,7 +6699,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 8, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 8, $value, $js, $id, $class, $label);
       break;
     case "time":
 
@@ -6712,7 +6712,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 9, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 9, $value, $js, $id, $class, $label);
       break;
     case "var":
 
@@ -6725,7 +6725,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 10, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 10, $value, $js, $id, $class, $label);
       break;
 
     case "audio":
@@ -6739,7 +6739,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 0, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 0, $value, $js, $id, $class, $label);
       break;
     case "video":
 
@@ -6752,7 +6752,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 1, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 1, $value, $js, $id, $class, $label);
       break;
     case "address":
 
@@ -6765,7 +6765,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 2, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 2, $value, $js, $id, $class, $label);
       break;
     case "colgroup":
 
@@ -6778,7 +6778,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 3, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 3, $value, $js, $id, $class, $label);
       break;
     case "bdi":
 
@@ -6791,7 +6791,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 4, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 4, $value, $js, $id, $class, $label);
       break;
     case "bdo":
 
@@ -6804,7 +6804,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 5, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 5, $value, $js, $id, $class, $label);
       break;
     case "blockquote":
 
@@ -6817,7 +6817,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 6, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 6, $value, $js, $id, $class, $label);
       break;
     case "caption":
 
@@ -6830,7 +6830,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 7, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 7, $value, $js, $id, $class, $label);
       break;
     case "label":
 
@@ -6842,7 +6842,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 8, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 8, $value, $js, $id, $class, $label);
       break;
     case "datalist":
 
@@ -6854,7 +6854,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 9, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 9, $value, $js, $id, $class, $label);
       break;
     case "details":
 
@@ -6866,7 +6866,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 10, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 10, $value, $js, $id, $class, $label);
       break;
     case "summary":
 
@@ -6878,7 +6878,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 11, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 11, $value, $js, $id, $class, $label);
       break;
     case "dialog":
 
@@ -6890,7 +6890,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 12, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 12, $value, $js, $id, $class, $label);
       break;
     case "option":
 
@@ -6902,7 +6902,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 13, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 13, $value, $js, $id, $class, $label);
       break;
     case "h1":
 
@@ -6914,7 +6914,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('PRIMARY', 0, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('PRIMARY', 0, $value, $js, $id, $class, $label);
       break;
     case "h2":
 
@@ -6926,7 +6926,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-      return $this->_elemenHTMLINLINE('PRIMARY', 1, $_doCONTENT, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 1, $value, $js, $id, $class, $label);
       break;
     case "h3":
 
@@ -6938,7 +6938,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-      return $this->_elemenHTMLINLINE('PRIMARY', 2, $_doCONTENT, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 2, $value, $js, $id, $class, $label);
       break; 
     case "h4":
 
@@ -6950,7 +6950,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-      return $this->_elemenHTMLINLINE('PRIMARY', 3, $_doCONTENT, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 3, $value, $js, $id, $class, $label);
       break;
     case "h5":
 
@@ -6962,7 +6962,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-      return $this->_elemenHTMLINLINE('PRIMARY', 4, $_doCONTENT, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 4, $value, $js, $id, $class, $label);
       break;
     case "h6":
 
@@ -6974,7 +6974,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-      return $this->_elemenHTMLINLINE('PRIMARY', 5, $_doCONTENT, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 5, $value, $js, $id, $class, $label);
       break;                 
   case "div":
 
@@ -6986,7 +6986,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/
-      return $this->_elemenHTMLINLINE('PRIMARY', 6, $_doCONTENT, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 6, $value, $js, $id, $class, $label);
       break;       
     case "p":
 
@@ -6998,7 +6998,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('PRIMARY', 7, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('PRIMARY', 7, $value, $js, $id, $class, $label);
       break;
     case "button":
 
@@ -7010,7 +7010,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('PRIMARY', 8, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('PRIMARY', 8, $value, $js, $id, $class, $label);
       break;
     case "a":
 
@@ -7022,7 +7022,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/ 
-      return $this->_elemenHTMLINLINE('PRIMARY', 9, $_doCONTENT, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 9, $value, $js, $id, $class, $label);
       break;
     case "iframe":
 
@@ -7034,7 +7034,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('PRIMARY', 10, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('PRIMARY', 10, $value, $js, $id, $class, $label);
       break;
     case "main":
 
@@ -7046,7 +7046,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/ 
-      return $this->_elemenHTMLINLINE('PRIMARY', 11, $_doCONTENT, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 11, $value, $js, $id, $class, $label);
       break;
     case "nav":
 
@@ -7058,7 +7058,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('PRIMARY', 12, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('PRIMARY', 12, $value, $js, $id, $class, $label);
       break;
     case "select":
 
@@ -7070,7 +7070,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/ 
-      return $this->_elemenHTMLINLINE('PRIMARY', 13, $_doCONTENT, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 13, $value, $js, $id, $class, $label);
       break;
     case "form":
 
@@ -7082,7 +7082,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('PRIMARY', 14, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('PRIMARY', 14, $value, $js, $id, $class, $label);
       break;
     case "picture":
 
@@ -7094,7 +7094,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/ 
-      return $this->_elemenHTMLINLINE('PRIMARY', 15, $_doCONTENT, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 15, $value, $js, $id, $class, $label);
       break;
     case "section":
 
@@ -7106,7 +7106,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('PRIMARY', 16, $_doCONTENT, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('PRIMARY', 16, $value, $js, $id, $class, $label);
       break;
     case "textarea":
 
@@ -7118,7 +7118,7 @@ static protected function Validate_extension_assets_files($Extension__) {
        *
        *
       **/ 
-      return $this->_elemenHTMLINLINE('PRIMARY', 17, $_doCONTENT, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 17, $value, $js, $id, $class, $label);
       break;
     default:
       
