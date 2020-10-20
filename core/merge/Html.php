@@ -836,6 +836,19 @@ static protected $hextend = [];
   **/ 
   static public function SetElementHeaderAttr($attr_name,$attr_val) { return self::Set_Element_Header_Attr($array_set_1,$array_set_2)}
 
+  /**
+  *
+  * @method public function SetElementHeaderAttr noHTML
+  * @static Method Defined Element Header MEta attributes HTML  
+  * Neat and clean noHTML
+  * Html::_noHTML(SetElementHeaderAttributes(['lang'],['en']));
+  * Html::_HEAD();
+  * Html::_ELEMENT('GPS-Site','meta', SetElementHeaderAttributes(['charset'],['utf-8']));
+  * Html::_ELEMENT('http-equiv','meta', SetElementHeaderAttributes(['http-equiv','content'],['X-UA-Compatible','IE=edge']));
+  *
+  **/ 
+  static public function SetElementAttr($attr_name,$attr_val) { return self::Set_Element_Header_Attr($array_set_1,$array_set_2)}
+
 /**
   *
   * @method public function __magicELEMENT noHTML
