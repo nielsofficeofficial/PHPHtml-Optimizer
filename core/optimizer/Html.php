@@ -840,7 +840,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * Html::_ELEMENT('http-equiv','meta', SetElementHeaderAttributes(['http-equiv','content'],['X-UA-Compatible','IE=edge']));
   *
   **/ 
-  static public function SetElementHeaderAttr($attr_name,$attr_val) { return self::Set_Element_Attr($array_set_1, $array_set_2); }
+  static public function SetElementHeaderAttr($array_set_1,$array_set_2) { return self::Set_Element_Attr($array_set_1, $array_set_2); }
 
   /**
   *
@@ -853,7 +853,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * Html::_ELEMENT('http-equiv','meta', SetElementHeaderAttributes(['http-equiv','content'],['X-UA-Compatible','IE=edge']));
   *
   **/ 
-  static public function SetElementAttr($attr_name,$attr_val) { return self::Set_Element_Attr($array_set_1,$array_set_2); }
+  static public function SetElementAttr($array_set_1,$array_set_2) { return self::Set_Element_Attr($array_set_1,$array_set_2); }
 
   /**
   *
