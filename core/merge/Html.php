@@ -4535,6 +4535,12 @@ static protected function Validate_extension_assets_files($Extension__) {
   
 }  
 
+ /**
+  *
+  * @method private function Set_Element_Header_Attr noHTML
+  * @ @private Method Defined HTML return element array
+  *
+  **/
 static private function Set_Element_Header_Attr($attr_name,$attr_val) {
 
     return $Set_Element_Header_Attr = [
