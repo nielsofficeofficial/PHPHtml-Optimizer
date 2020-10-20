@@ -4524,7 +4524,7 @@ static protected function Validate_extension_assets_files($Extension__) {
 
 static private function Set_Element_Header_Attr($attr_name,$attr_val) {
 
-    return $sets = [
+    return $Set_Element_Header_Attr = [
 
       $attr_name = $attr_name,
       $attr_val  = $attr_val  
