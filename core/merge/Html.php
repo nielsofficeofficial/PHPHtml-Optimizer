@@ -823,31 +823,18 @@ static protected $hextend = [];
   **/  
    static public function SetFileExtension($argu = null) { return self::Validate_extension_assets_files($argu); }
   
- /**
-  *
-  * @method public function SetElementHeaderAttr noHTML
-  * @static Method Defined Element Header MEta attributes HTML  
-  * Neat and clean noHTML
-  * Html::_noHTML(SetElementHeaderAttributes(['lang'],['en']));
-  * Html::_HEAD();
-  * Html::_ELEMENT('GPS-Site','meta', SetElementHeaderAttributes(['charset'],['utf-8']));
-  * Html::_ELEMENT('http-equiv','meta', SetElementHeaderAttributes(['http-equiv','content'],['X-UA-Compatible','IE=edge']));
-  *
-  **/ 
-  static public function SetElementHeaderAttr($array_set_1,$array_set_2) { return self::Set_Element_Attr($array_set_1, $array_set_2); }
-
   /**
   *
   * @method public function SetElementHeaderAttr noHTML
   * @static Method Defined Element Header MEta attributes HTML  
   * Neat and clean noHTML
-  * Html::_noHTML(SetElementHeaderAttributes(['lang'],['en']));
+  * Html::_noHTML(SetElemAttr(['lang'],['en']));
   * Html::_HEAD();
-  * Html::_ELEMENT('GPS-Site','meta', SetElementHeaderAttributes(['charset'],['utf-8']));
-  * Html::_ELEMENT('http-equiv','meta', SetElementHeaderAttributes(['http-equiv','content'],['X-UA-Compatible','IE=edge']));
+  * Html::_ELEMENT('GPS-Site','meta', SetElemAttr(['charset'],['utf-8']));
+  * Html::_ELEMENT('http-equiv','meta', SetElemAttr(['http-equiv','content'],['X-UA-Compatible','IE=edge']));
   *
   **/ 
-  static public function SetElementAttr($array_set_1,$array_set_2) { return self::Set_Element_Attr($array_set_1,$array_set_2); }
+  static public function SetElemAttr($array_set_1,$array_set_2) { return self::Set_Element_Attr($array_set_1,$array_set_2); }
 
 /**
   *
