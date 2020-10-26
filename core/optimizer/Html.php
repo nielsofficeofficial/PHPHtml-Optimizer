@@ -910,44 +910,10 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * Neat and clean noHTML
   *
   **/
-   public function _ELEMENT($inline="INLINE", $elem, $js=[], $id=null, $class=null, $assoc=null) { 
-   
-  if ($assoc == NULL || $assoc == FALSE || $assoc == 'DEFUALT') {
-
-        # INLINE_OR_ANY_LABEL_REQUIRED
-        # CHECK_IF_THE_PARAM_REQUIRED_IS_NOT_NULL
-        # IF_IT_IS_NULL_RETURN_FLASE  
-        if ( ($inline == FALSE || $inline == NULL) && ($elem == FALSE || $elem == NULL) ) 
-        {
-          # RETURN_REQUIRED_FIELD_PARAM
-          # IF_FALSE_RUN_IF_TRUE    
-          echo "Required _Element 'inLINE' & HTML Element : e.g: _ELEMENT('INLINE','input');";
-        }
-      
-        # RETURN_INLINE_ELEMENT_NO_HTML_CLOSING_TAG 
-        echo $this->_setReturnINLINELEMENT($this->_setINLINELEMENTS($elem),$js, $id, $class, NULL); 
-   } else {
-
-      # CHECK_IF_INLINE_IS_ASSOC_WITH_FUNC_ASSOC_OR_CLASS_ASSOC_OR_METHOD_ASSOC
-      if ($assoc === FUNC_ASSOC || $assoc === CLASS_ASSOC || $assoc === METHOD_ASSOC) 
-      {
-
-          # INLINE_OR_ANY_LABEL_REQUIRED
-          # CHECK_IF_THE_PARAM_REQUIRED_IS_NOT_NULL
-          # IF_IT_IS_NULL_RETURN_FLASE  
-          if ( ($inline == FALSE || $inline == NULL) && ($elem == FALSE || $elem == NULL) ) 
-          {
-            
-          # RETURN_REQUIRED_FIELD_PARAM
-          # IF_FALSE_RUN_IF_TRUE    
-          return "Required _Element 'inLINE' & HTML Element : e.g: _ELEMENT('INLINE','input');";
-          }
-      
-          # RETURN_INLINE_ELEMENT_NO_HTML_CLOSING_TAG 
-          return $this->_setReturnINLINELEMENT($this->_setINLINELEMENTS($elem),$js, $id, $class, $assoc);      
-       }
-
-  }
+   public function _ELEMENT($inline="INLINE", $elem, $js=null, $id=null, $class=null, $assoc=null) { 
+    
+   return $this->HtmlELements_Optimizer($inline, $elem, $js, $id $class, $assoc);
+  
 }
 
 /**
@@ -3790,6 +3756,68 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
    
       return "";
    }
+}
+
+/**
+  *
+  * @method private function HtmlELements_Optimizer noHTML
+  * @ @private Method Defined new_html_attr 
+  * RETURN NODE HTML _ noHTML TAG
+  *
+  **/
+private function HtmlELements_Optimizer($inline, $elem, $js, $id $class, $assoc) {
+
+    if ($assoc == NULL || $assoc == FALSE || $assoc == 'DEFUALT') {
+
+        # INLINE_OR_ANY_LABEL_REQUIRED
+        # CHECK_IF_THE_PARAM_REQUIRED_IS_NOT_NULL
+        # IF_IT_IS_NULL_RETURN_FLASE  
+        if ( ($inline == FALSE || $inline == NULL) && ($elem == FALSE || $elem == NULL) ) 
+        {
+          # RETURN_REQUIRED_FIELD_PARAM
+          # IF_FALSE_RUN_IF_TRUE              
+          $ERROR_MSG  = " ";
+          $ERROR_MSG .= " Required _Element 'inLINE' & HTML Element : e.g: _ELEMENT('INLINE','input');";
+          $ERROR_MSG .= " For Developer support visit github submit issue: ".self::ELEMENT('a','Submit Github Support',self::IssueSubmitAttr());   
+          $ERROR_MSG .= " Recomendation: ".self::ELEMENT('a','Read Documentation Click Here',self::DocxSubmitAttr());      
+      
+          self::_PERFORM($ERROR_MSG);  
+
+        }
+      
+        # RETURN_INLINE_ELEMENT_NO_HTML_CLOSING_TAG 
+        echo $this->_setReturnINLINELEMENT($this->_setINLINELEMENTS($elem),$js, $id, $class, NULL); 
+   } else {
+
+      # CHECK_IF_INLINE_IS_ASSOC_WITH_FUNC_ASSOC_OR_CLASS_ASSOC_OR_METHOD_ASSOC
+      if ($assoc === FUNC_ASSOC || $assoc === CLASS_ASSOC || $assoc === METHOD_ASSOC) 
+      {
+
+          # INLINE_OR_ANY_LABEL_REQUIRED
+          # CHECK_IF_THE_PARAM_REQUIRED_IS_NOT_NULL
+          # IF_IT_IS_NULL_RETURN_FLASE  
+          if ( ($inline == FALSE || $inline == NULL) && ($elem == FALSE || $elem == NULL) ) 
+          {
+            
+          # RETURN_REQUIRED_FIELD_PARAM
+          # IF_FALSE_RUN_IF_TRUE    
+
+          $ERROR_MSG  = " ";
+          $ERROR_MSG .= " Required _Element 'inLINE' & HTML Element : e.g: _ELEMENT('INLINE','input');";
+          $ERROR_MSG .= " For Developer support visit github submit issue: ".self::ELEMENT('a','Submit Github Support',self::IssueSubmitAttr());   
+          $ERROR_MSG .= " Recomendation: ".self::ELEMENT('a','Read Documentation Click Here',self::DocxSubmitAttr());      
+      
+          return ($ERROR_MSG);  
+
+
+          }
+      
+          # RETURN_INLINE_ELEMENT_NO_HTML_CLOSING_TAG 
+          return $this->_setReturnINLINELEMENT($this->_setINLINELEMENTS($elem),$js, $id, $class, $assoc);      
+       }
+
+  }
+
 }
 
 
