@@ -558,7 +558,7 @@
    |
    |
    */
-  define('__GET_LOAD_MERGEBOX__', __DIR__ . DIRECTORY_SEPARATOR . 'merge/MergeBox.php' );
+  define('__GET_LOAD_MERGEBOX__', __DIR__ . DIRECTORY_SEPARATOR . 'core/merge/MergeBox.php' );
  
    /*
    |
@@ -572,7 +572,7 @@
    |
    |
    */
-  define('__GET_LOAD_MERGEELEMENT__', __DIR__ . DIRECTORY_SEPARATOR . 'merge/MergeElements.php' );
+  define('__GET_LOAD_MERGEELEMENT__', __DIR__ . DIRECTORY_SEPARATOR . 'core/merge/MergeElements.php' );
 
    /*
    |

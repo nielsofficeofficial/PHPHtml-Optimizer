@@ -891,7 +891,7 @@ static protected $hextend = [];
   **/
   static public function _ELEMENT($inline="INLINE", $elem, $js=[], $id=null, $class=null, $assoc=null) { 
    
-     return self::HtmlELements_Optimizer($inline, $elem, $js, $id $class, $assoc);
+     return self::HtmlELements_Optimizer($inline, $elem, $js, $id, $class, $assoc);
 }
 
 /**
@@ -3701,7 +3701,7 @@ static protected function apps_att($js = []) {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static private function HtmlELements_Optimizer($inline, $elem, $js, $id $class, $assoc) {
+static private function HtmlELements_Optimizer($inline, $elem, $js, $id, $class, $assoc) {
 
     if ($assoc == NULL || $assoc == FALSE || $assoc == 'DEFUALT') {
 

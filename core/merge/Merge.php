@@ -2437,32 +2437,3 @@ function _xBODY( $value=null, $attr=null, $element_id=null, $element_class=null,
   return $Html->BODY($value, $attr, $element_id, $element_class, $label, $assoc); 
 
 }
-
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPHtml-Merge
-  * @ Method Defined HTML HTML noHTML  
-  * Inline Heading tag HTML
-  *
-  **/
-function _xHTML( $value=null, $attr=null, $element_id=null, $element_class=null, $label=null, $assoc=null ) 
-{ 
-  /**
-   *
-   *
-   *
-   *
-   *
-   * @package : Merge Heading tag HTML
-   * @package : Static Procedural
-   * @method  : Html::HTML($value, $attr=null, $element_id, $element_class, $label, $assoc);
-   *
-   *
-   *
-   **/
-  $Html = NEW Merge(); 
-  return $Html->noHTML($value, $attr, $element_id, $element_class, $label, $assoc); 
-
-}
-

@@ -180,7 +180,7 @@ if ( __GET_STATIC_CLASS_HTML__  && __GET_INSTANTIATE_CLASS_HTML__ ) {
     
       }); 
 
-     require __GET_MERGE_FILES__;
+     require_once __GET_MERGE_FILES__;
 
  
     }  else  {
