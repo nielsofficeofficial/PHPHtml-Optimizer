@@ -899,7 +899,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   **/
    public function _ELEMENT($inline="INLINE", $elem, $js=null, $id=null, $class=null, $assoc=null) { 
     
-   return $this->HtmlELements_Optimizer($inline, $elem, $js, $id $class, $assoc);
+   return $this->HtmlELements_Optimizer($inline, $elem, $js, $id, $class, $assoc);
   
 }
 
@@ -3752,7 +3752,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-private function HtmlELements_Optimizer($inline, $elem, $js, $id $class, $assoc) {
+private function HtmlELements_Optimizer($inline, $elem, $js, $id, $class, $assoc) {
 
     if ($assoc == NULL || $assoc == FALSE || $assoc == 'DEFUALT') {
 
