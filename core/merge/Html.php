@@ -796,7 +796,7 @@ static protected $hextend = [];
   * Neat and clean noHTML
   *
   **/
-   static public function _MERGE($func_merge) { return self::_isTrue_SET_merge($func_merge); }
+   static public function _MERGE($func_merge = null ) { return self::_isTrue_SET_merge($func_merge); }
 
 /**
   *
@@ -4473,7 +4473,7 @@ static private function _isTrue_SET_STRING($str=null, $assoc=null) {
   * @static @private Method Defined HTML FOUNDATION _isTrue_SET_STRING
   *
   **/
-static private function _isTrue_SET_merge($merge=null) {
+static private function _isTrue_SET_merge($merge) {
     
     #_GET_RESUKT_SET_AS_RETURN_TO_MERGE
     return $merge; 

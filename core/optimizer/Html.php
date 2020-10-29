@@ -786,7 +786,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * Neat and clean noHTML
   *
   **/
- public function _MERGE($func_merge) { return $this->_isTrue_SET_merge($func_merge); }
+ public function _MERGE($func_merge = null ) { return $this->_isTrue_SET_merge($func_merge); }
 
 /**
   *
@@ -4098,7 +4098,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
   * @package @private Method Defined HTML FOUNDATION _isTrue_SET_STRING
   *
   **/
- final private function _isTrue_SET_merge($merge=null) {
+ final private function _isTrue_SET_merge($merge) {
     
     #_GET_RESUKT_SET_AS_RETURN_TO_MERGE
     return $merge; 
