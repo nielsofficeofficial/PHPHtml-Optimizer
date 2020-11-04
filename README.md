@@ -32,6 +32,13 @@ $html = NEW \PHPHtml\CodeOptimizer\optimizer\Html();
 USE \PHPHtml\CodeOptimizer\optimizer\Html AS MyElement;
 $html = NEW MyElement();
 
+// Instantiate Default __PHPFileEnhancers__
+$Enhance = NEW \PHPHtml\CodeOptimizer\optimizer\Enhancers();
+
+// Instantiate Alias __PHPFileEnhancers__
+USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS PHPEnhancer;
+$Enhancer = NEW PHPEnhancer();
+
 </pre>
 For more samples and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Docx"> Documentation link here </a><br /> 
 For more PHPFileEnhancer <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Enhancers"> Docx/References link here </a><br />
