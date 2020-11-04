@@ -752,6 +752,24 @@ class Html {
  protected $hextend = [];
 
 /**
+  * @method _construct 
+  * @property @html_extend  load function file
+  * defined arrays of data html 
+  **/
+ public function __construct() {
+  
+/**
+  *
+  * @method public function cpe_ixb6_bring_scope load function
+  * Defined as require files
+  * @since 11.04.2020
+  *
+  **/    
+    $this->cpe_ixb6_bring_scope();
+
+ }
+
+/**
   *
   * @method public function add breaktag html as noHTML
   * Defined as break tag no string quotes 
@@ -827,7 +845,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * Build Beautiful and Maintainable
   *
   **/  
-   static public function SetFileExtension($argu = null) { return self::Validate_extension_assets_files($argu); }
+  public function SetFileExtension($argu = null) { return $this->Validate_extension_assets_files($argu); }
   
   /**
   *
@@ -840,7 +858,7 @@ public function SPACE($assoc=null) { return $this->_tagSPACER(); }
   * Html::_ELEMENT('http-equiv','meta', SetElemAttr(['http-equiv','content'],['X-UA-Compatible','IE=edge']));
   *
   **/ 
-  static public function SetElemAttr($array_set_1,$array_set_2) { return self::Set_Element_Attr($array_set_1,$array_set_2); }
+  public function SetElemAttr($array_set_1,$array_set_2) { return $this->Set_Element_Attr($array_set_1,$array_set_2); }
 
   /**
   *
@@ -3765,10 +3783,10 @@ private function HtmlELements_Optimizer($inline, $elem, $js, $id, $class, $assoc
           # IF_FALSE_RUN_IF_TRUE              
           $ERROR_MSG  = " ";
           $ERROR_MSG .= " Required _Element 'inLINE' & HTML Element : e.g: _ELEMENT('INLINE','input');";
-          $ERROR_MSG .= " For Developer support visit github submit issue: ".self::ELEMENT('a','Submit Github Support',self::IssueSubmitAttr());   
-          $ERROR_MSG .= " Recomendation: ".self::ELEMENT('a','Read Documentation Click Here',self::DocxSubmitAttr());      
+          $ERROR_MSG .= " For Developer support visit github submit issue: ".$this->ELEMENT('a','Submit Github Support',$this->IssueSubmitAttr());   
+          $ERROR_MSG .= " Recomendation: ".$this->ELEMENT('a','Read Documentation Click Here',$this->DocxSubmitAttr());      
       
-          self::_PERFORM($ERROR_MSG);  
+          $this->_PERFORM($ERROR_MSG);  
 
         }
       
@@ -3791,8 +3809,8 @@ private function HtmlELements_Optimizer($inline, $elem, $js, $id, $class, $assoc
 
           $ERROR_MSG  = " ";
           $ERROR_MSG .= " Required _Element 'inLINE' & HTML Element : e.g: _ELEMENT('INLINE','input');";
-          $ERROR_MSG .= " For Developer support visit github submit issue: ".self::ELEMENT('a','Submit Github Support',self::IssueSubmitAttr());   
-          $ERROR_MSG .= " Recomendation: ".self::ELEMENT('a','Read Documentation Click Here',self::DocxSubmitAttr());      
+          $ERROR_MSG .= " For Developer support visit github submit issue: ".$this->ELEMENT('a','Submit Github Support',$this->IssueSubmitAttr());   
+          $ERROR_MSG .= " Recomendation: ".$this->ELEMENT('a','Read Documentation Click Here',$this->DocxSubmitAttr());      
       
           return ($ERROR_MSG);  
 
@@ -4092,6 +4110,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
 
 }
 
+
 /**
   *
   * @method private function noHTML
@@ -4105,7 +4124,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
  } 
 
 // Attrbute for redirect github submit issue 
-static private function IssueSubmitAttr() {
+final private function IssueSubmitAttr() {
 
     return $sets = [
          
@@ -4117,7 +4136,7 @@ static private function IssueSubmitAttr() {
 }
 
 // Attrbute for redirect github submit issue 
-static private function DocxSubmitAttr() {
+final  private function DocxSubmitAttr() {
 
     return $sets = [
          
@@ -4133,7 +4152,7 @@ static private function DocxSubmitAttr() {
   * @static @protected Method Defined IMAGE FILE EXTENSION
   *
   **/
-static protected function Validate_extension_assets_files($Extension__) {
+ protected function Validate_extension_assets_files($Extension__) {
   
   // GET_ALL_AVAILABLE_EXTENSION_FILES 
   $currentSet_Ext     = self::__FILEEXTENSION__;
@@ -4167,14 +4186,11 @@ static protected function Validate_extension_assets_files($Extension__) {
   
   } else {
 
-      self::_PERFORM('Extention is not yet registered or undefine!').self::BREAK();
-      self::_PERFORM('For Developer support visit github submit issue: '.self::ELEMENT('a','Submit Github Support',self::IssueSubmitAttr()));  
-      self::_PERFORM('Read Documentation: '.self::ELEMENT('a','Submit Github Support',self::DocxSubmitAttr()));     
+      $this->_PERFORM('Extention is not yet registered or undefine!').$this->BREAK();
+      $this->_PERFORM('For Developer support visit github submit issue: '.$this->ELEMENT('a','Submit Github Support',$this->IssueSubmitAttr()));  
+      $this->_PERFORM('Read Documentation: '.$this->ELEMENT('a','Submit Github Support',$this->DocxSubmitAttr()));     
       exit();
-          
-      exit();
-    
-    
+
   }
   
 } 
@@ -4185,7 +4201,7 @@ static protected function Validate_extension_assets_files($Extension__) {
   * @ @private Method Defined HTML return element array
   *
   **/
-static private function Set_Element_Attr($attr_name,$attr_val) {
+ private function Set_Element_Attr($attr_name,$attr_val) {
 
     return $Set_Element_Header_Attr = [
 
@@ -4194,8 +4210,48 @@ static private function Set_Element_Attr($attr_name,$attr_val) {
 
     ];
 
-}
+ }
+ 
+ /**
+  *
+  * @method private function ncpe_ixb6_bring_scope
+  * @ @private Method Defined HTML FOUNDATION require all function files from properties folder
+  *
+  **/
+ private function cpe_ixb6_bring_scope() {
+
+  /**
+  * @since Enhancer property 04.11.2020
+  **/ 
+  require_once  __DIR__ . '/prop.php';
+
+  /**
+  * @since function file 04.11.2020
+  **/ 
+  require_once __DIR__ . '/../Enhancer.php';
+
+  /**
+  * @since property file 04.11.2020
+  **/ 
+  require_once __DIR__ . '/../../prop.php';
   
+  /**
+  * @since Merge 04.11.2020
+  **/
+  require_once __GET_LOAD_MERGE__;
+
+  /**
+  * @since Merge_box 04.11.2020
+  **/ 
+  require_once __GET_LOAD_MERGEBOX__;
+
+  /**
+  * @since Merge_elem 04.11.2020
+  **/   
+  require_once __GET_LOAD_MERGEELEMENT__;  
+
+}
+
 /**
   *
   * @method private function noHTML
@@ -7140,8 +7196,8 @@ static private function Set_Element_Attr($attr_name,$attr_val) {
       # RETURN_DEFUALT_IF_EXCECUTED_BUT_NOT_SET
       $ERROR_MSG  = " ";
       $ERROR_MSG .= " Required Element HTML: e.g: html::ELEMENT('p'); ";
-      $ERROR_MSG .= " For Developer support visit github submit issue: ".self::ELEMENT('a','Submit Github Support',self::IssueSubmitAttr());   
-      $ERROR_MSG .= " Recomendation: ".self::ELEMENT('a','Read Documentation Click Here',self::DocxSubmitAttr());      
+      $ERROR_MSG .= " For Developer support visit github submit issue: ".$this->ELEMENT('a','Submit Github Support',$this->IssueSubmitAttr());   
+      $ERROR_MSG .= " Recomendation: ".$this->ELEMENT('a','Read Documentation Click Here',$this->DocxSubmitAttr());      
       
       return $ERROR_MSG;  
 
@@ -7338,8 +7394,8 @@ static private function Set_Element_Attr($attr_name,$attr_val) {
       # RETURN_DEFAULT_INLINE_HTML_ELEMENT
       $ERROR_MSG  = " ";
       $ERROR_MSG .= " Required _Element 'inLINE' & HTML Element : e.g: _ELEMENT('inLINE','input'); ";
-      $ERROR_MSG .= " For Developer support visit github submit issue: ".self::ELEMENT('a','Submit Github Support',self::IssueSubmitAttr());   
-      $ERROR_MSG .= " Recomendation: ".self::ELEMENT('a','Read Documentation Click Here',self::DocxSubmitAttr()); 
+      $ERROR_MSG .= " For Developer support visit github submit issue: ".$this->ELEMENT('a','Submit Github Support',$this->IssueSubmitAttr());   
+      $ERROR_MSG .= " Recomendation: ".$this->ELEMENT('a','Read Documentation Click Here',$this->DocxSubmitAttr()); 
 
       return $ERROR_MSG;   
  
