@@ -38,57 +38,87 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancer AS PHPFileHandler;
  *
  */
 
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPFileEnhancer
-  * @method Defined isbelong()  noHTML  
-  *
-  **/
-function isbelong($page, $path_) {
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Get Root file DIR
+   |
+   |
+   |
+   |
+   */ 
+  define('__ROOTPATH__', __DIR__ . DIRECTORY_SEPARATOR . '../../' ); 
 
-  /**
-   *
-   *
-   *
-   *
-   *
-   * @package : PHPFileEnhancer
-   * @package : Static Procedural
-   * @method  : $FileEnhance->belongs_to('index',  4)
-   *
-   *
-   *
-   **/ 
- $Enhancer = new PHPFileHandler();
- return $Enhancer->belongs_to($page, $path_);
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Get File DIR
+   |
+   |
+   |
+   |
+   */    
+  define('__PATH__', __DIR__ . DIRECTORY_SEPARATOR );
 
-}
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Get Extension
+   |
+   |
+   |
+   |
+   */   
+  define('__PHPFILE__','.php');
 
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Get SELF_REQUEST
+   |
+   |
+   |
+   |
+   */   
+  define('__SELF_REQUEST__',explode('/', $_SERVER['PHP_SELF']));
 
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPFileEnhancer
-  * @method Defined isbelong()  noHTML  
-  *
-  **/
-function mapPath() {
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Set Empty
+   |
+   |
+   |
+   |
+   */ 
+  define('__EMPTY__','');
 
-  /**
-   *
-   *
-   *
-   *
-   *
-   * @package : PHPFileEnhancer
-   * @package : Static Procedural
-   * @method  : MapFolderPath()
-   *
-   *
-   *
-   **/ 
- $Enhancer = new PHPFileHandler();
- return $Enhancer->MapFolderPath();
-
-}
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Return Map Path
+   |
+   |
+   |
+   |
+   */   
+  define('__MAP_FOLDER_PATH__','MapFolderPath');  
+  
