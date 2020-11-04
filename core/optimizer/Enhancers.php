@@ -40,6 +40,13 @@
 
 class Enhancers Extends Optimizer {
  
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 85e1e2ec7551426b0b17d6f2b8b3dbdca36d855c
+>>>>>>> 2760dad15704373ba66d02fa605c97910e516ad6
 // public function bring_to($fileName, $directory, $Extension, $optional ='REQUIRE_OR_INCLUDE') {
  
 
@@ -53,6 +60,29 @@ class Enhancers Extends Optimizer {
 
 
 // }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+
+
+public function bring_to($fileName, $directory, $Extension, $optional ='REQUIRE_OR_INCLUDE') {
+ 
+
+ // Param __ONE__ , __INCLUDE_ONCE__ , __REQUIRE_ONCE__
+ 
+ // File Name
+ 
+ // FIle Directory
+
+ // File Extention   
+
+
+}
+>>>>>>> c614f9c8369512c2ce7f63f43e2c140231059705
+>>>>>>> 85e1e2ec7551426b0b17d6f2b8b3dbdca36d855c
+>>>>>>> 2760dad15704373ba66d02fa605c97910e516ad6
 
 /**
   *
@@ -113,7 +143,15 @@ final private function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
 
  // CHECK_WHICH_PAGE_YOU_ARE_CUURENT_REQUEST
  // THEN_GET_THE_FILE_PAGE
+<<<<<<< HEAD
  $CheckCurrentPage__ = isset(__SELF_REQUEST__) ?  __SELF_REQUEST__ : FALSE ;
+=======
+<<<<<<< HEAD
+ $CheckCurrentPage__ = isset(__SELF_REQUEST__) ?  __SELF_REQUEST__ : FALSE ;
+=======
+ $CheckCurrentPage__ = __SELF_REQUEST__;
+>>>>>>> 85e1e2ec7551426b0b17d6f2b8b3dbdca36d855c
+>>>>>>> 2760dad15704373ba66d02fa605c97910e516ad6
    
    // CHECK_IF_SECOND_PARAM_IS_EQUAL_TO_MapFolderPath_OR___MAP_FOLDER_PATH__THEN_RETURN_FOLDER_MAP
    // ELSE_RETURN_TRUE_AS_BASE_ON_INT_PARAM_ASSIGNED_TO_BE_TRUE
@@ -241,7 +279,15 @@ final private function cpe_xib6_FileHandler_count() {
   **/ 
  $Folder          = 'Main-forder';
  $subFolder       = 'Sub-forder';
+<<<<<<< HEAD
  $PathValue       =  isset( __SELF_REQUEST__ ) ? __SELF_REQUEST__ : FALSE;  
+=======
+<<<<<<< HEAD
+ $PathValue       =  isset( __SELF_REQUEST__ ) ? __SELF_REQUEST__ : FALSE;  
+=======
+ $PathValue       =  __SELF_REQUEST__;  
+>>>>>>> 85e1e2ec7551426b0b17d6f2b8b3dbdca36d855c
+>>>>>>> 2760dad15704373ba66d02fa605c97910e516ad6
   
  // CHECK IF THE FILE IS TRUE 
  if (  $PathValue == TRUE ) {
