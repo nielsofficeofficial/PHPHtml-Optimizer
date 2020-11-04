@@ -17,7 +17,7 @@ To refractor/optimize code is a hassle and heavy load burden in programming, All
 // Run command
 ~ composer require phphtml-optimizer/phphtml-optimizer
 
-// Usage:
+# Usage:
 
 // Static Default
 USE \PHPHtml\CodeOptimizer\merge\Html;
