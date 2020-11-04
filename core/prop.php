@@ -88,13 +88,9 @@ function loader_framwork() {
 |
 |
 */  
- return $framework_prefix 
+$framework_prefix  = "{$project_Name}\\{$project_Folder}\\";
 
-/**
- *@since 06.082020
- **/ 
- 
- = "{$project_Name}\\{$project_Folder}\\";
-  
+return $framework_prefix
+
 } 
 
