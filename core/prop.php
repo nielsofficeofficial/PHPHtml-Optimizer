@@ -90,7 +90,7 @@ function loader_framwork() {
 */  
 $framework_prefix  = "{$project_Name}\\{$project_Folder}\\";
 
-return $framework_prefix
+return $framework_prefix;
 
 } 
 
