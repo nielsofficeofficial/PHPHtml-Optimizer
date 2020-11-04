@@ -40,6 +40,7 @@
 
 class Enhancers Extends Optimizer {
  
+<<<<<<< HEAD
 // public function bring_to($fileName, $directory, $Extension, $optional ='REQUIRE_OR_INCLUDE') {
  
 
@@ -53,6 +54,23 @@ class Enhancers Extends Optimizer {
 
 
 // }
+=======
+
+
+public function bring_to($fileName, $directory, $Extension, $optional ='REQUIRE_OR_INCLUDE') {
+ 
+
+ // Param __ONE__ , __INCLUDE_ONCE__ , __REQUIRE_ONCE__
+ 
+ // File Name
+ 
+ // FIle Directory
+
+ // File Extention   
+
+
+}
+>>>>>>> c614f9c8369512c2ce7f63f43e2c140231059705
 
 /**
   *
