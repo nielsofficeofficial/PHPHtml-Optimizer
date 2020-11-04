@@ -40,6 +40,16 @@
 
 class Enhancers Extends Optimizer {
  
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 85e1e2ec7551426b0b17d6f2b8b3dbdca36d855c
+>>>>>>> 2760dad15704373ba66d02fa605c97910e516ad6
+>>>>>>> 9d7e5d7b9aaf21a47cb476d880b0d89e9c8d1d97
 // public function bring_to($fileName, $directory, $Extension, $optional ='REQUIRE_OR_INCLUDE') {
  
 
@@ -53,6 +63,32 @@ class Enhancers Extends Optimizer {
 
 
 // }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+
+
+public function bring_to($fileName, $directory, $Extension, $optional ='REQUIRE_OR_INCLUDE') {
+ 
+
+ // Param __ONE__ , __INCLUDE_ONCE__ , __REQUIRE_ONCE__
+ 
+ // File Name
+ 
+ // FIle Directory
+
+ // File Extention   
+
+
+}
+>>>>>>> c614f9c8369512c2ce7f63f43e2c140231059705
+>>>>>>> 85e1e2ec7551426b0b17d6f2b8b3dbdca36d855c
+>>>>>>> 2760dad15704373ba66d02fa605c97910e516ad6
+>>>>>>> 9d7e5d7b9aaf21a47cb476d880b0d89e9c8d1d97
 
 /**
   *
@@ -86,7 +122,11 @@ public function MapFolderPath() {
   
  if ( $this->cpe_xib6_FileHandler_count() == TRUE) {
   
+<<<<<<< HEAD
     return $this->cpe_xib6_FileHandler_count(); 
+=======
+    return $CheckMethod = $this->cpe_xib6_FileHandler_count(); 
+>>>>>>> 9d7e5d7b9aaf21a47cb476d880b0d89e9c8d1d97
  
    } else { return false; }
 
@@ -105,6 +145,7 @@ final private function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
  
  // INPUT_CURRENT_PAGE_NAME_VALIDATE
  // CHECL_INPUT_IF_IT_IS_AN_ARRAY | IF_TRUE_THEN_RETURN_AS_ARRAY_IF_FALSE_RETURN_AS_SIGNLE_POST
+<<<<<<< HEAD
  $GetMultiPage__ = is_array($page) ? $IsMultiPage__ = $page :  $IsCurrentPage__  = $page; 
 
  // INPUT_CURRENT_PAGE_NAME_VALIDATE
@@ -118,6 +159,29 @@ final private function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
    // CHECK_IF_SECOND_PARAM_IS_EQUAL_TO_MapFolderPath_OR___MAP_FOLDER_PATH__THEN_RETURN_FOLDER_MAP
    // ELSE_RETURN_TRUE_AS_BASE_ON_INT_PARAM_ASSIGNED_TO_BE_TRUE
    if ($Page_file === 'MapFolderPath' || $Page_file === __MAP_FOLDER_PATH__) {  parent::_PERFORM($this->MapFolderPath());
+=======
+ $GetMultiPage__ = is_array($page) ? $MultiPage = $page :  $IsCurrentPage__  = $page; 
+
+ // INPUT_CURRENT_PAGE_NAME_VALIDATE
+ // CHECL_INPUT_IF_IT_IS_AN_ARRAY | IF_TRUE_THEN_RETURN_AS_ARRAY_IF_FALSE_RETURN_AS_SIGNLE_POST
+ $GetMultiPage_file__ = is_array($Page_file) ? $MultiPage_file__ = $Page_file :  $Page_file__  = $Page_file; 
+
+ // CHECK_WHICH_PAGE_YOU_ARE_CUURENT_REQUEST
+ // THEN_GET_THE_FILE_PAGE
+<<<<<<< HEAD
+ $CheckCurrentPage__ = isset(__SELF_REQUEST__) ?  __SELF_REQUEST__ : FALSE ;
+=======
+<<<<<<< HEAD
+ $CheckCurrentPage__ = isset(__SELF_REQUEST__) ?  __SELF_REQUEST__ : FALSE ;
+=======
+ $CheckCurrentPage__ = __SELF_REQUEST__;
+>>>>>>> 85e1e2ec7551426b0b17d6f2b8b3dbdca36d855c
+>>>>>>> 2760dad15704373ba66d02fa605c97910e516ad6
+   
+   // CHECK_IF_SECOND_PARAM_IS_EQUAL_TO_MapFolderPath_OR___MAP_FOLDER_PATH__THEN_RETURN_FOLDER_MAP
+   // ELSE_RETURN_TRUE_AS_BASE_ON_INT_PARAM_ASSIGNED_TO_BE_TRUE
+   if ($Page_file === 'MapFolderPath' || $Page_file === __MAP_FOLDER_PATH__) {  parent::_PERFORM($this->MapFolderPath()) . exit();
+>>>>>>> 9d7e5d7b9aaf21a47cb476d880b0d89e9c8d1d97
       
        // IF_THE_PAGE_FILE_IS_NULL_OR_EMPTY_THEN_DEFAULT_LEVEL_3
        // IF_IT_IS_TRUE_RETURN_DEFAULT 
@@ -128,7 +192,11 @@ final private function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
     else { 
       
       // CHECK_IF_THE_PATH_IS_IN_ARRAY_THE_IF_TRUE_RETURN_ARRAYS_IF_FALSE_RETURN_SINGLE_PAGE 
+<<<<<<< HEAD
       $TheCurrentPage__ = $this->cpe_xib6_FileHandler_mulipath_array($GetMultiPagesFile__, $CheckCurrentPage__, $Page_file);
+=======
+      $TheCurrentPage__ = $this->cpe_xib6_FileHandler_mulipath_array($GetMultiPage_file__, $CheckCurrentPage__, $Page_file);
+>>>>>>> 9d7e5d7b9aaf21a47cb476d880b0d89e9c8d1d97
 
    }  // END OF / IF STATEMENT
  
@@ -164,7 +232,11 @@ private function cpe_xib6_FileHandler_mulipath_array($MultiPagefile__, $CheckCP_
      {
        
        // CHECK_AND_RETURN_VALUE_FROM_ARRAY_IF_LAST_KEY_IS_EQUAL_TO_VALUE_CURRENTPATH     
+<<<<<<< HEAD
        $CurrentPath__ == array_key_last($CheckCP__) ?  $GetPagePath__[] = $CurrentPath__ : false; 
+=======
+       $VerifiedStates__ = $CurrentPath__ == array_key_last($CheckCP__) ?  $GetPagePath__[] = $CurrentPath__ : false; 
+>>>>>>> 9d7e5d7b9aaf21a47cb476d880b0d89e9c8d1d97
         
      }
      
@@ -216,7 +288,11 @@ private function cpe_xib6_FileHandler_MultiPage_array($GMultiP__, $GTCP__) {
   } else {
 
      // ELSE RETURN TRUE NON ARRAY VALUE
+<<<<<<< HEAD
      return $GTCP__ === $GMultiP__ ? TRUE : FALSE;
+=======
+     return $ReturnTrue = $GTCP__ === $GMultiP__ ? TRUE : FALSE;
+>>>>>>> 9d7e5d7b9aaf21a47cb476d880b0d89e9c8d1d97
   }
 
 } // END OF THE METHOD cpe_xib6_FileHandler_getMultiPage_array
@@ -241,7 +317,19 @@ final private function cpe_xib6_FileHandler_count() {
   **/ 
  $Folder          = 'Main-forder';
  $subFolder       = 'Sub-forder';
+<<<<<<< HEAD
  $PathValue       =  __SELF_REQUEST__;  
+=======
+<<<<<<< HEAD
+ $PathValue       =  isset( __SELF_REQUEST__ ) ? __SELF_REQUEST__ : FALSE;  
+=======
+<<<<<<< HEAD
+ $PathValue       =  isset( __SELF_REQUEST__ ) ? __SELF_REQUEST__ : FALSE;  
+=======
+ $PathValue       =  __SELF_REQUEST__;  
+>>>>>>> 85e1e2ec7551426b0b17d6f2b8b3dbdca36d855c
+>>>>>>> 2760dad15704373ba66d02fa605c97910e516ad6
+>>>>>>> 9d7e5d7b9aaf21a47cb476d880b0d89e9c8d1d97
   
  // CHECK IF THE FILE IS TRUE 
  if (  $PathValue == TRUE ) {

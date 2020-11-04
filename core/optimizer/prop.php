@@ -92,7 +92,19 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancer AS PHPFileHandler;
    |
    |
    */   
+<<<<<<< HEAD
   define('__SELF_REQUEST__',explode('/', $_SERVER['PHP_SELF']));
+=======
+<<<<<<< HEAD
+  define('__SELF_REQUEST__',explode('/', $_SERVER['PHP_SELF']);
+=======
+<<<<<<< HEAD
+  define('__SELF_REQUEST__',explode('/', isset($_SERVER['PHP_SELF']));
+=======
+  define('__SELF_REQUEST__',explode('/', $_SERVER['PHP_SELF']));
+>>>>>>> 85e1e2ec7551426b0b17d6f2b8b3dbdca36d855c
+>>>>>>> 2760dad15704373ba66d02fa605c97910e516ad6
+>>>>>>> 9d7e5d7b9aaf21a47cb476d880b0d89e9c8d1d97
 
   /*
    |
