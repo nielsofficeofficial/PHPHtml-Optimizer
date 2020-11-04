@@ -1,5 +1,7 @@
 <?php 
 
+USE  \PHPHtml\CodeOptimizer\optimizer\Html AS Merge; 
+
 /**
  * @copyright (c) 2020-2021 PHPHtml-Merge v1.3 Cooked by nielsoffice
  *
@@ -29,8 +31,6 @@
  * @version   v1.3
  *
  */
-
-USE  \PHPHtml\CodeOptimizer\optimizer\Html AS Merge; 
 
 /**
   *
