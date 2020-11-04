@@ -34,6 +34,7 @@ $html = NEW MyElement();
 
 </pre>
 For more samples and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Docx"> Documentation link here </a><br /> 
+For more PHPFileEnhancer <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Enhancers"> Docx/References link here </a><br />
 For Developer <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer/issues"> Support link here </a><br /> 
 This Library is 100% secured and fully free ready to use, If you see vulnerability you can email me: @ nieldigitalsolution@gmail.com
 
