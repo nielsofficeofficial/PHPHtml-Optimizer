@@ -120,7 +120,7 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancer AS PHPFileHandler;
    |
    |
    */   
-  define('__MAP_FOLDER_PATH__','MapFolderPath');  
+  define('__GET_KEY_FOLDER_PATH__','GetKeyFolderPath');  
   
   /*
    |
@@ -148,7 +148,7 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancer AS PHPFileHandler;
    |
    |
    */ 
-  define('__MAPPATH__', 'mapPath' ); 
+  define('__KEYPATH__', 'GetKeyPath' ); 
 
   /*
    |

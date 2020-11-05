@@ -35,7 +35,7 @@
  *
  *
  * @method belongs_to(); 
- * @method MapFolderPath();  
+ * @method KeyFolderPath();  
  *
  */
 
@@ -204,7 +204,7 @@ public function SPACE() {
   * RETURN TRUE IF YOU ARE IN CURRENT PAGE BASE ON CONFIG.PHP
   * @since 27.10.2020
   *
-  * belong_to('PageName', __MAP_FOLDER_PATH__ ) ||  belong_to('PageName', 'MapFolderPath' ) // MAPFOLDERPATH
+  * belong_to('PageName', __KEY_FOLDER_PATH__ ) ||  belong_to('PageName', 'keyFolderPath' ) // MAPFOLDERPATH
   * belong_to('PageName', 4 ) // ASSIGN MAP  || IN ARRAY  belong_to(['PageName1','PageName2']', [4,5] ) 
   * belong_to('PageName') //  DEFAULT PAGE 
   *
@@ -226,9 +226,9 @@ public function belongs_to($thisPage = null, $page_array = null) {
   * $Enhancer->MapFolderPath() // MAPFOLDERPATH
   *
   */
-public function MapFolderPath() {
+public function GetKeyFolderPath() {
  
-  return function_exists(__MAPPATH__) ? $this->cpe_xib6_FileHandler_count() : $this->PERFORM($this->Enhacer_ErrorMsg()); 
+  return function_exists(__KEYPATH__) ? $this->cpe_xib6_FileHandler_count() : $this->PERFORM($this->Enhacer_ErrorMsg()); 
 
 }
 
@@ -257,7 +257,7 @@ Protected function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
    
    // CHECK_IF_SECOND_PARAM_IS_EQUAL_TO_MapFolderPath_OR___MAP_FOLDER_PATH__THEN_RETURN_FOLDER_MAP
    // ELSE_RETURN_TRUE_AS_BASE_ON_INT_PARAM_ASSIGNED_TO_BE_TRUE
-   if ($Page_file === 'MapFolderPath' || $Page_file === __MAP_FOLDER_PATH__) {  $this->PERFORM( $this->MapFolderPath() );
+   if ($Page_file === 'GetKeyFolderPath' || $Page_file === __GET_KEY_FOLDER_PATH__) {  $this->PERFORM( $this->GetKeyFolderPath() );
       
        // IF_THE_PAGE_FILE_IS_NULL_OR_EMPTY_THEN_DEFAULT_LEVEL_3
        // IF_IT_IS_TRUE_RETURN_DEFAULT 
@@ -265,7 +265,7 @@ Protected function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
      
     // ELSE_CHECK_IF_NOT_THEN_ASSIGN_
     // THE_RETURN_ASSIGN_FROM_PARAMETER_THEN_REPLACE_DEFAULT
-    }  else { 
+    } else { 
       
       // CHECK_IF_THE_PATH_IS_IN_ARRAY_THE_IF_TRUE_RETURN_ARRAYS_IF_FALSE_RETURN_SINGLE_PAGE 
       // REMOVE_PHP_EXTENSION_VALIDATE_FROM_PAGE_PARAM

@@ -34,7 +34,7 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS PHPFileHandler;
  *
  *
  * @method belongs_to(); 
- * @method MapFolderPath();  
+ * @method KeyFolderPath();  
  *
  */
 
@@ -45,8 +45,8 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS PHPFileHandler;
   * @method Defined isbelong()  noHTML  
   *
   **/
-function isbelong($page=null, $path_num=null) {
-
+function isbelong($page = null , $__GET_KEY_FOLDER_PATH__ = null ) {
+ 
   /**
    *
    *
@@ -61,7 +61,7 @@ function isbelong($page=null, $path_num=null) {
    *
    **/ 
  $Enhancer = new PHPFileHandler();
- return $Enhancer->belongs_to($page, $path_num);
+ return $Enhancer->belongs_to($page, $__GET_KEY_FOLDER_PATH__);
 
 }
 
@@ -72,7 +72,7 @@ function isbelong($page=null, $path_num=null) {
   * @method Defined isbelong()  noHTML  
   *
   **/
-function mapPath() {
+function GetKeyPath() {
 
   /**
    *
@@ -88,7 +88,7 @@ function mapPath() {
    *
    **/ 
  $Enhancer = new PHPFileHandler();
- return $Enhancer->MapFolderPath();
+ return $Enhancer->KeyFolderPath();
 
 }
 

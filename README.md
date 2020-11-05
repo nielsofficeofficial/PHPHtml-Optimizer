@@ -17,7 +17,7 @@ To refractor/optimize code is a hassle and heavy load burden in programming, All
 // Run command
 ~ composer require phphtml-optimizer/phphtml-optimizer
 
-# Usage:
+// Usage:
 
 // Static Default
 USE \PHPHtml\CodeOptimizer\merge\Html;
@@ -30,12 +30,7 @@ $html = NEW \PHPHtml\CodeOptimizer\optimizer\Html();
 
 // Instantiate Alias
 USE \PHPHtml\CodeOptimizer\optimizer\Html AS MyElement;
-
-// Instantiate Default
-$html = NEW \PHPHtml\CodeOptimizer\optimizer\Enhancers();
-
-// Instantiate Alias
-USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS PHPFileEnhancers;
+$html = NEW MyElement();
 
 </pre>
 For more samples and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Docx"> Documentation link here </a><br /> 
