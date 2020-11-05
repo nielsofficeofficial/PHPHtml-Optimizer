@@ -45,7 +45,7 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS PHPFileHandler;
   * @method Defined isbelong()  noHTML  
   *
   **/
-function isbelong($page, $path_num) {
+function isbelong($page=null, $path_num=null) {
 
   /**
    *
@@ -64,7 +64,6 @@ function isbelong($page, $path_num) {
  return $Enhancer->belongs_to($page, $path_num);
 
 }
-
 
 /**
   *
@@ -92,3 +91,134 @@ function mapPath() {
  return $Enhancer->MapFolderPath();
 
 }
+
+/**
+  *
+  * @since 05.11.2020
+  * @category PHPFileEnhancer
+  * @method Defined Break tag Optinal ASSOC  
+  *
+  **/
+function __BR($optional_assoc = null) {
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : PHPFileEnhancer
+   * @package : Static Procedural
+   * @method  : BR()
+   *
+   *
+   *
+   **/ 
+ $Enhancer = new PHPFileHandler();
+ return $Enhancer->BREAK($optional_assoc);
+
+}
+
+/**
+  *
+  * @since 05.11.2020
+  * @category PHPFileEnhancer
+  * @method Defined HR   
+  *
+  **/
+function __HR($optional_assoc = null) {
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : PHPFileEnhancer
+   * @package : Static Procedural
+   * @method  : HR()
+   *
+   *
+   *
+   **/ 
+ $Enhancer = new PHPFileHandler();
+ return $Enhancer->LINE($optional_assoc);
+
+}
+
+/**
+  *
+  * @since 05.11.2020
+  * @category PHPFileEnhancer
+  * @method Defined __space  
+  *
+  **/
+function __space() {
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : PHPFileEnhancer
+   * @package : Static Procedural
+   * @method  : __space()
+   *
+   *
+   *
+   **/ 
+ $Enhancer = new PHPFileHandler();
+ return $Enhancer->SPACE();
+
+}
+
+/**
+  *
+  * @since 05.11.2020
+  * @category PHPFileEnhancer
+  * @method Defined SetFileEx  
+  *
+  **/
+function SetFileExT($argu) {
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : PHPFileEnhancer
+   * @package : Static Procedural
+   * @method  : SetFileEx()
+   *
+   *
+   *
+   **/ 
+ $Enhancer = new PHPFileHandler();
+ return $Enhancer->SetFileExtension($argu);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

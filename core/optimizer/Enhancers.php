@@ -2,6 +2,7 @@
 
  namespace PHPHtml\CodeOptimizer\optimizer;
 
+ USE \PHPHtml\CodeOptimizer\merge\Html;
  USE \PHPHtml\CodeOptimizer\optimizer\Html AS Optimizer;
 
 /**
@@ -40,12 +41,161 @@
 
 class Enhancers Extends Optimizer {
  
+/**
+  *
+  * @method public function add breaktag html as noHTML
+  * Defined as break tag no string quotes 
+  * Neat and clean noHTML
+  *
+  **/
+  public function BREAK($assoc=null) { 
+ 
+   return function_exists(__BR__) ? parent::_isTrueBREAK_assoc($assoc) : FALSE ; 
+}
+
+/**
+  *
+  * @method public function add line html as noHTML
+  * Defined as horizontal line tag no string quotes 
+  * Neat and clean noHTML
+  *
+  **/
+   public function LINE($assoc=null) { 
+
+  return function_exists(__BR__) ? parent::_isTrueLine_assoc($assoc) : FALSE;     
+ 
+ }
+
+/**
+  *
+  * @method public function add add Space between text/String
+  * Defined as horizontal line tag no string quotes 
+  * Neat and clean noHTML
+  *
+  **/
+public function SPACE() { 
+ 
+  return function_exists(__SPACE__) ? parent::_tagSPACER() : FALSE;     
+
+}
+
+/**
+  *
+  * @method public function add line html as noHTML
+  * Defined as print a "String" && execute function with another "" (string) line tag no string quotes
+  * echo x"x"x | html::_exe(function()); 
+  * Neat and clean noHTML
+  *
+  **/
+ public function MERGE($func_merge = null ) { 
+
+  return $this->_isTrue_SET_Merge($func_merge); 
+
+}
+
+ /**
+  *
+  * @method public Method Set File Asstes Extension within custom att HTML 
+  * Defined File Image Extension | __getAssEXTENSION__
+  * $extension = Html::SetExtension($argu); 
+  
+    function getMeIMG($src,$path, $argu=null) 
+    {
+
+       $extension = Html::SetImageExtension($argu);
+        
+       return $sets = [
+         
+           $attr_name = [$src],
+           $attr_val  = [$path.$extension]
+        
+        ];
+
+    }
+
+  * Build Beautiful and Maintainable
+  *
+  **/  
+  public function SetFileExtension($argu = null) {
+
+  return function_exists(__FILEEXTENSION__) ? parent::Validate_extension_assets_files($argu) : FALSE;    
+
+}
+
+ /**
+ *
+ * @method public function SetElementHeaderAttr noHTML
+ * @static Method Defined Element Header MEta attributes HTML  
+ * Neat and clean noHTML
+ * Html::_noHTML(SetElemAttr(['lang'],['en']));
+ * Html::_HEAD();
+ * Html::_ELEMENT('GPS-Site','meta', SetElemAttr(['charset'],['utf-8']));
+ * Html::_ELEMENT('http-equiv','meta', SetElemAttr(['http-equiv','content'],['X-UA-Compatible','IE=edge']));
+ *
+ **/ 
+ public function SetElemAttr($array_set_1 , $array_set_2) { 
+   
+   return parent::set_Element_Attr($array_set_1,$array_set_2); 
+ 
+ }
+
+  /**
+  *
+  * @method public function __magicELEMENT noHTML
+  * @static Method Defined single call through param html element no closing tag  
+  * Neat and clean noHTML
+  * .__magicELSE( $par == TRUE ,'Yes','NO','FUNC_ASSOC'); // within the function
+  * html::_PERFORM(__magicELSE( $par == TRUE ,'Yes','NO','FUNC_ASSOC')); // without the function 
+  *
+  **/
+  public function __magicELSE($condition=null, $if_result=null, $else_result=null, $assoc=null) { 
+
+  return parent::return_method_concat_else( $condition, $if_result, $else_result, $assoc); 
+
+}
 
 
+/**
+  *
+  * @method public function __magicELEMENT noHTML
+  * @static Method Defined single call through param html element no closing tag  
+  * Neat and clean noHTML
+  * .__magicIF( $par == TRUE ,'Yes','FUNC_ASSOC'); // within the function
+  * html::_PERFORM(__magicIF( $par == TRUE ,'Yes','FUNC_ASSOC')); // without the function 
+  *
+  **/
+  public function __magicIF($condition=null, $if_result=null, $assoc=null) { 
+
+  return parent::return_method_concat_else( $condition, $if_result, null, $assoc); 
+
+}
+ 
+/**
+  *
+  * @method public function add line html as noHTML
+  * Defined as print a "String" line tag no string quotes 
+  * Neat and clean noHTML
+  *
+  **/
+   public function PERFORM($str=null, $assoc=null) { 
+
+    return parent::_isTrue_SET_STRING($str, $assoc); 
+
+ }
 
 
+/**
+  *
+  * @method public function add line html as noHTML
+  * Defined as print a "String" line tag no string quotes 
+  * Neat and clean noHTML
+  *
+  **/
+   public function STRING($str=null, $assoc=null) { 
 
+    return parent::_isTrue_SET_STRING($str, $assoc); 
 
+ }
 
 /**
   *
@@ -61,7 +211,7 @@ class Enhancers Extends Optimizer {
   */
 public function belongs_to($thisPage = null, $page_array = null) {
    
-  return function_exists(__ISBELONG__) ? $this->cpe_xib6_FileHandler_belongs_to($thisPage, $page_array) : parent::_PERFORM($this->Enhacer_ErrorMsg());  
+  return function_exists(__ISBELONG__) ? $this->cpe_xib6_FileHandler_belongs_to($thisPage, $page_array) : $this->PERFORM($this->Enhacer_ErrorMsg());  
  
 }
 
@@ -78,7 +228,7 @@ public function belongs_to($thisPage = null, $page_array = null) {
   */
 public function MapFolderPath() {
  
-  return function_exists(__MAPPATH__) ? $this->cpe_xib6_FileHandler_count() : parent::_PERFORM($this->Enhacer_ErrorMsg()); 
+  return function_exists(__MAPPATH__) ? $this->cpe_xib6_FileHandler_count() : $this->PERFORM($this->Enhacer_ErrorMsg()); 
 
 }
 
@@ -107,7 +257,7 @@ Protected function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
    
    // CHECK_IF_SECOND_PARAM_IS_EQUAL_TO_MapFolderPath_OR___MAP_FOLDER_PATH__THEN_RETURN_FOLDER_MAP
    // ELSE_RETURN_TRUE_AS_BASE_ON_INT_PARAM_ASSIGNED_TO_BE_TRUE
-   if ($Page_file === 'MapFolderPath' || $Page_file === __MAP_FOLDER_PATH__) {  parent::_PERFORM($this->MapFolderPath());
+   if ($Page_file === 'MapFolderPath' || $Page_file === __MAP_FOLDER_PATH__) {  $this->PERFORM($this->MapFolderPath() . die() );
       
        // IF_THE_PAGE_FILE_IS_NULL_OR_EMPTY_THEN_DEFAULT_LEVEL_3
        // IF_IT_IS_TRUE_RETURN_DEFAULT 
@@ -115,17 +265,17 @@ Protected function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
      
     // ELSE_CHECK_IF_NOT_THEN_ASSIGN_
     // THE_RETURN_ASSIGN_FROM_PARAMETER_THEN_REPLACE_DEFAULT
-    } else { 
+    }  else { 
       
       // CHECK_IF_THE_PATH_IS_IN_ARRAY_THE_IF_TRUE_RETURN_ARRAYS_IF_FALSE_RETURN_SINGLE_PAGE 
       $TheCurrentPage__ = $this->cpe_xib6_FileHandler_mulipath_array($GetMultiPagesFile__, $CheckCurrentPage__, $Page_file);
 
-   }  // END OF / IF STATEMENT
- 
   // REMOVE_PHP_EXTENSION_VALIDATE_FROM_PAGE_PARAM
   // IF_PARAM_AND_GIVE_IS_EQUAL_TRUE 
   $GetTheCurrentPage__ = str_replace( __PHPFILE__ , __EMPTY__ , $TheCurrentPage__);
   
+  }  // END OF / IF STATEMENT
+
    // CHECK_IF_THE_PAGE_IS_IN_ARRAY_THE_IF_TRUE_RETURN_ARRAYS_IF_FALSE_RETURN_SINGLE_PAGE 
   return $this->cpe_xib6_FileHandler_MultiPage_array($GetMultiPage__, $GetTheCurrentPage__);
   
@@ -269,21 +419,21 @@ final private function cpe_xib6_FileHandler_count() {
      $Merge .= xMERGE('PRE');
      
      // THEN PERFORM MAPPING
-     parent::_PERFORM($Merge);
+     $this->PERFORM($Merge);
 
     }
 
   } 
   
   // RETURN MAP 
-  parent::LINE();
-  parent::_PERFORM('$[PAGE_FILE] = ' . array_key_last($PathValue));
-  parent::LINE();
+  $this->LINE();
+  $this->PERFORM('$[PAGE_FILE] = ' . array_key_last($PathValue));
+  $this->LINE();
   
   } else {
    
    // ELSE RETURN ERROR HANDLER MSG
-   parent::_PERFORM($this->Enhacer_ErrorMsg());
+   $this->PERFORM($this->Enhacer_ErrorMsg());
 
   }
 
@@ -301,7 +451,7 @@ final private function Enhacer_ErrorMsg() {
         
   $ERROR_MSG  = " ";
   $ERROR_MSG .= " Check Method Instantiate <br />";
-  $ERROR_MSG .= " For Developer support visit github submit issue: ".parent::ELEMENT('a','Submit Github Support',parent::IssueSubmitAttr()).parent::BREAK(METHOD_ASSOC);   
+  $ERROR_MSG .= " For Developer support visit github submit issue: ".parent::ELEMENT('a','Submit Github Support', parent::IssueSubmitAttr()).$this->BREAK(METHOD_ASSOC);   
   $ERROR_MSG .= " Recomendation: ".parent::ELEMENT('a','Read Documentation Click Here',parent::DocxEnahncerSubmitAttr());      
 
   return ($ERROR_MSG);  

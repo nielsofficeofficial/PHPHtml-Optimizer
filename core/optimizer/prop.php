@@ -149,3 +149,59 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancer AS PHPFileHandler;
    |
    */ 
   define('__MAPPATH__', 'mapPath' ); 
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Set Function Break Tag
+   |
+   |
+   |
+   |
+   */ 
+  define('__BR__', '__BR' ); 
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Set Function HR Tag
+   |
+   |
+   |
+   |
+   */ 
+  define('__HR__', '__HR' ); 
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Set Function space
+   |
+   |
+   |
+   |
+   */ 
+  define('__SPACE__', '__space' ); 
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Set Function SetFileEx
+   |
+   |
+   |
+   |
+   */ 
+  define('__FILEEXTENSION__', 'SetFileExT' );         

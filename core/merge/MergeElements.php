@@ -1,6 +1,8 @@
 <?php 
 
-USE  \PHPHtml\CodeOptimizer\optimizer\Html AS MergeElements; 
+USE \PHPHtml\CodeOptimizer\merge\Html;
+USE \PHPHtml\CodeOptimizer\optimizer\Html AS MergeElements; 
+USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS PHPFileHandler;
 
 /**
  * @copyright (c) 2020-2021 PHPHtml-Merge v1.3 Cooked by nielsoffice

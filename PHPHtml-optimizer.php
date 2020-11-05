@@ -196,7 +196,7 @@ if ( __GET_STATIC_CLASS_HTML__  && __GET_INSTANTIATE_CLASS_HTML__ ) {
              |
              |
              */ 
-    		    Html::_PERFORM(FILE_HANDLER_MSG);
+    		    Html::PERFORM(FILE_HANDLER_MSG);
     
     	}
     	
