@@ -257,7 +257,7 @@ Protected function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
    
    // CHECK_IF_SECOND_PARAM_IS_EQUAL_TO_MapFolderPath_OR___MAP_FOLDER_PATH__THEN_RETURN_FOLDER_MAP
    // ELSE_RETURN_TRUE_AS_BASE_ON_INT_PARAM_ASSIGNED_TO_BE_TRUE
-   if ($Page_file === 'MapFolderPath' || $Page_file === __MAP_FOLDER_PATH__) {  $this->PERFORM($this->MapFolderPath() . die() );
+   if ($Page_file === 'MapFolderPath' || $Page_file === __MAP_FOLDER_PATH__) {  $this->PERFORM($this->MapFolderPath());  exit();
       
        // IF_THE_PAGE_FILE_IS_NULL_OR_EMPTY_THEN_DEFAULT_LEVEL_3
        // IF_IT_IS_TRUE_RETURN_DEFAULT 
