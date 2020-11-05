@@ -122,3 +122,30 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancer AS PHPFileHandler;
    */   
   define('__MAP_FOLDER_PATH__','MapFolderPath');  
   
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Set Function ISBELONG
+   |
+   |
+   |
+   |
+   */ 
+  define('__ISBELONG__', 'isbelong' ); 
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Set Function MAP PATH
+   |
+   |
+   |
+   |
+   */ 
+  define('__MAPPATH__', 'mapPath' ); 

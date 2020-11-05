@@ -40,19 +40,12 @@
 
 class Enhancers Extends Optimizer {
  
-// public function bring_to($fileName, $directory, $Extension, $optional ='REQUIRE_OR_INCLUDE') {
- 
-
-//  // Param __ONE__ , __INCLUDE_ONCE__ , __REQUIRE_ONCE__
- 
-//  // File Name
- 
-//  // FIle Directory
-
-//  // File Extention   
 
 
-// }
+
+
+
+
 
 /**
   *
@@ -67,8 +60,9 @@ class Enhancers Extends Optimizer {
   *
   */
 public function belongs_to($thisPage = null, $page_array = null) {
-    
-  return $this->cpe_xib6_FileHandler_belongs_to($thisPage, $page_array); 
+   
+  return  $Enhancer = function_exists(__ISBELONG__) ? $this->cpe_xib6_FileHandler_belongs_to($thisPage, $page_array) : parent::_PERFORM($this->Enhacer_ErrorMsg());  
+ 
 }
 
 /**
@@ -83,12 +77,8 @@ public function belongs_to($thisPage = null, $page_array = null) {
   *
   */
 public function MapFolderPath() {
-  
- if ( $this->cpe_xib6_FileHandler_count() == TRUE) {
-  
-    return $this->cpe_xib6_FileHandler_count(); 
  
-   } else { return false; }
+  return  $Enhancer = function_exists(__MAPPATH__) ? $this->cpe_xib6_FileHandler_count() : parent::_PERFORM($this->Enhacer_ErrorMsg()); 
 
 }
 
@@ -101,7 +91,7 @@ public function MapFolderPath() {
   * @since 27.10.2020
   *
   **/
-final private function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
+Protected function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
  
  // INPUT_CURRENT_PAGE_NAME_VALIDATE
  // CHECL_INPUT_IF_IT_IS_AN_ARRAY | IF_TRUE_THEN_RETURN_AS_ARRAY_IF_FALSE_RETURN_AS_SIGNLE_POST
@@ -150,7 +140,7 @@ final private function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
   * @since 03.11.2020
   *
   **/
-private function cpe_xib6_FileHandler_mulipath_array($MultiPagefile__, $CheckCP__, $Pf__) {
+final private function cpe_xib6_FileHandler_mulipath_array($MultiPagefile__, $CheckCP__, $Pf__) {
    
   // ASSIGNED_VARIABLE_ARRAY 
   $GetPagePath__ = [];
@@ -190,7 +180,7 @@ private function cpe_xib6_FileHandler_mulipath_array($MultiPagefile__, $CheckCP_
   * @since 03.11.2020
   *
   **/
-private function cpe_xib6_FileHandler_MultiPage_array($GMultiP__, $GTCP__) {
+final private function cpe_xib6_FileHandler_MultiPage_array($GMultiP__, $GTCP__) {
   
   // ASSIGNED VARIABLE ARRAY CONTAINER EMPTY
   $GetPage__ = [];
@@ -311,8 +301,8 @@ final private function Enhacer_ErrorMsg() {
         
   $ERROR_MSG  = " ";
   $ERROR_MSG .= " Check Method Instantiate <br />";
-  $ERROR_MSG .= " For Developer support visit github submit issue: ".self::ELEMENT('a','Submit Github Support',self::IssueSubmitAttr()).parent::BREAK(METHOD_ASSOC);   
-  $ERROR_MSG .= " Recomendation: ".self::ELEMENT('a','Read Documentation Click Here',self::DocxSubmitAttr());      
+  $ERROR_MSG .= " For Developer support visit github submit issue: ".parent::ELEMENT('a','Submit Github Support',parent::IssueSubmitAttr()).parent::BREAK(METHOD_ASSOC);   
+  $ERROR_MSG .= " Recomendation: ".parent::ELEMENT('a','Read Documentation Click Here',parent::DocxSubmitAttr());      
 
   return ($ERROR_MSG);  
 

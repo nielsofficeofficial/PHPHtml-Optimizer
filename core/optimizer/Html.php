@@ -4124,7 +4124,7 @@ private function return_method_concat_else($con,$res1,$res2,$as) {
  } 
 
 // Attrbute for redirect github submit issue 
-final private function IssueSubmitAttr() {
+protected function IssueSubmitAttr() {
 
     return $sets = [
          
@@ -4136,7 +4136,7 @@ final private function IssueSubmitAttr() {
 }
 
 // Attrbute for redirect github submit issue 
-final  private function DocxSubmitAttr() {
+protected function DocxSubmitAttr() {
 
     return $sets = [
          

@@ -45,7 +45,7 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS PHPFileHandler;
   * @method Defined isbelong()  noHTML  
   *
   **/
-function isbelong($page, $path_) {
+function isbelong($page, $path_num) {
 
   /**
    *
@@ -61,7 +61,7 @@ function isbelong($page, $path_) {
    *
    **/ 
  $Enhancer = new PHPFileHandler();
- return $Enhancer->belongs_to($page, $path_);
+ return $Enhancer->belongs_to($page, $path_num);
 
 }
 
