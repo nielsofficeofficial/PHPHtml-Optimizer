@@ -302,7 +302,7 @@ final private function Enhacer_ErrorMsg() {
   $ERROR_MSG  = " ";
   $ERROR_MSG .= " Check Method Instantiate <br />";
   $ERROR_MSG .= " For Developer support visit github submit issue: ".parent::ELEMENT('a','Submit Github Support',parent::IssueSubmitAttr()).parent::BREAK(METHOD_ASSOC);   
-  $ERROR_MSG .= " Recomendation: ".parent::ELEMENT('a','Read Documentation Click Here',parent::DocxSubmitAttr());      
+  $ERROR_MSG .= " Recomendation: ".parent::ELEMENT('a','Read Documentation Click Here',parent::DocxEnahncerSubmitAttr());      
 
   return ($ERROR_MSG);  
 

@@ -4146,6 +4146,18 @@ protected function DocxSubmitAttr() {
    ];
 }
 
+// Attrbute for redirect github submit issue 
+protected function DocxEnahncerSubmitAttr() {
+
+    return $sets = [
+         
+      $attr_name = ['href'],
+      $attr_val  = ['https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Enhancers']
+        
+   ];
+}
+
+
 /**
   *
   * @method protected function Validate_extension_file_Img
