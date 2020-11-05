@@ -49,6 +49,20 @@
    |
    |
    */ 
+ define('__EnHancer__','/../Enhancer.php');
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | get function associated by FUNCTION ASSOCIATED
+   |
+   |
+   |
+   |
+   */ 
  define('FUNC_ASSOC','FUNC_ASSOC');
  
   /*

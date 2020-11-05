@@ -44,20 +44,6 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancer AS PHPFileHandler;
    |
    |
    |
-   | Get Root file DIR
-   |
-   |
-   |
-   |
-   */ 
-  define('__ROOTPATH__', __DIR__ . DIRECTORY_SEPARATOR . '../../' ); 
-
-  /*
-   |
-   |
-   |
-   |
-   |
    | Get File DIR
    |
    |
@@ -65,6 +51,20 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancer AS PHPFileHandler;
    |
    */    
   define('__PATH__', __DIR__ . DIRECTORY_SEPARATOR );
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Get Root file DIR
+   |
+   |
+   |
+   |
+   */ 
+  define('__ROOTPATH__', __PATH__ . '../../' ); 
 
   /*
    |

@@ -661,6 +661,21 @@ class Html {
  CONST __RTF__       = '__RTF__'; 
 
 /**
+  * @var @property @static CONST | OPTIMIZER PROP  
+  * @since 11.05.2020
+  * defined Assigned Image Extenstion as ._RTF
+  **/ 
+ CONST __OPTI_PROP__ = '/prop.php'; 
+
+
+/**
+  * @var @property @static CONST | PHPHtml-OPTIMIZER PROP  
+  * @since 11.05.2020
+  * defined Assigned Image Extenstion as ._RTF
+  **/ 
+ CONST __PHPHO_PROP__ = '/../../prop.php'; 
+
+/**
   * @var @property Array of data 
   * defined CONST ARRAY EXNTION FILES
   *
@@ -765,7 +780,17 @@ class Html {
   * @since 11.04.2020
   *
   **/    
-    $this->cpe_ixb6_bring_scope();
+  $this->cpe_ixb6_bring_scope();
+
+  /**
+  * @since Enhancer property 04.11.2020
+  **/ 
+  require_once  __DIR__ . self::__OPTI_PROP__;
+
+  /**
+  * @since property file 04.11.2020
+  **/ 
+  require_once __DIR__ . self::__PHPHO_PROP__;   
 
  }
 
@@ -4231,22 +4256,12 @@ protected function DocxEnahncerSubmitAttr() {
   *
   **/
  private function cpe_ixb6_bring_scope() {
-
-  /**
-  * @since Enhancer property 04.11.2020
-  **/ 
-  require_once  __DIR__ . '/prop.php';
-
+ 
   /**
   * @since function file 04.11.2020
   **/ 
-  require_once __DIR__ . '/../Enhancer.php';
+  require_once __DIR__ . __EnHancer__;
 
-  /**
-  * @since property file 04.11.2020
-  **/ 
-  require_once __DIR__ . '/../../prop.php';
-  
   /**
   * @since Merge 04.11.2020
   **/
