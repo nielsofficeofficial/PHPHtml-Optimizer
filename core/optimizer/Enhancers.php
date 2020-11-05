@@ -61,7 +61,7 @@ class Enhancers Extends Optimizer {
   */
 public function belongs_to($thisPage = null, $page_array = null) {
    
-  return  $Enhancer = function_exists(__ISBELONG__) ? $this->cpe_xib6_FileHandler_belongs_to($thisPage, $page_array) : parent::_PERFORM($this->Enhacer_ErrorMsg());  
+  return function_exists(__ISBELONG__) ? $this->cpe_xib6_FileHandler_belongs_to($thisPage, $page_array) : parent::_PERFORM($this->Enhacer_ErrorMsg());  
  
 }
 
@@ -78,7 +78,7 @@ public function belongs_to($thisPage = null, $page_array = null) {
   */
 public function MapFolderPath() {
  
-  return  $Enhancer = function_exists(__MAPPATH__) ? $this->cpe_xib6_FileHandler_count() : parent::_PERFORM($this->Enhacer_ErrorMsg()); 
+  return function_exists(__MAPPATH__) ? $this->cpe_xib6_FileHandler_count() : parent::_PERFORM($this->Enhacer_ErrorMsg()); 
 
 }
 
@@ -111,11 +111,11 @@ Protected function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
       
        // IF_THE_PAGE_FILE_IS_NULL_OR_EMPTY_THEN_DEFAULT_LEVEL_3
        // IF_IT_IS_TRUE_RETURN_DEFAULT 
-     } elseif ( empty($Page_file) || $Page_file == NULL ) {  $TheCurrentPage__  = $CheckCurrentPage__[3]; } 
+     } elseif ( empty($Page_file) || $Page_file == NULL ) {  $TheCurrentPage__  = $CheckCurrentPage__[3];  
      
     // ELSE_CHECK_IF_NOT_THEN_ASSIGN_
     // THE_RETURN_ASSIGN_FROM_PARAMETER_THEN_REPLACE_DEFAULT
-    else { 
+    } else { 
       
       // CHECK_IF_THE_PATH_IS_IN_ARRAY_THE_IF_TRUE_RETURN_ARRAYS_IF_FALSE_RETURN_SINGLE_PAGE 
       $TheCurrentPage__ = $this->cpe_xib6_FileHandler_mulipath_array($GetMultiPagesFile__, $CheckCurrentPage__, $Page_file);
