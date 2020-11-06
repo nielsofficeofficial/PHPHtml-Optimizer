@@ -10,7 +10,7 @@ To refractor/optimize code is a hassle and heavy load burden in programming, All
 </p>
 <h4>Quick Start</h4>
 <pre>
-	// ...
+// ...
 </pre>
 <h4>Installing PHPHtml-Optimizer/Composer</h4>
 <pre>

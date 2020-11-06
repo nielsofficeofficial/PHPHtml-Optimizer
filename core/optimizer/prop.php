@@ -134,7 +134,7 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancer AS PHPFileHandler;
    |
    |
    */ 
-  define('__ISBELONG__', 'isbelong' ); 
+  define('__ISBELONG__', 'isbelongs' ); 
 
   /*
    |

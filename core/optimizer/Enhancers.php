@@ -35,7 +35,7 @@
  *
  *
  * @method belongs_to(); 
- * @method KeyFolderPath();  
+ * @method GetKeyFolderPath();  
  *
  */
 
@@ -62,7 +62,7 @@ class Enhancers Extends Optimizer {
   **/
    public function LINE($assoc=null) { 
 
-  return function_exists(__BR__) ? parent::_isTrueLine_assoc($assoc) : FALSE;     
+  return function_exists(__HR__) ? parent::_isTrueLine_assoc($assoc) : FALSE;     
  
  }
 
@@ -270,96 +270,16 @@ Protected function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
       // CHECK_IF_THE_PATH_IS_IN_ARRAY_THE_IF_TRUE_RETURN_ARRAYS_IF_FALSE_RETURN_SINGLE_PAGE 
       // REMOVE_PHP_EXTENSION_VALIDATE_FROM_PAGE_PARAM
       // IF_PARAM_AND_GIVE_IS_EQUAL_TRUE 
-      $GetData__ = $this->cpe_xib6_FileHandler_MultiPage_array($GetMultiPage__, 
+      $GetData__ = parent::cpe_xib6_FileHandler_MultiPage_array($GetMultiPage__, 
 
         // CHECK_IF_THE_PAGE_IS_IN_ARRAY_THE_IF_TRUE_RETURN_ARRAYS_IF_FALSE_RETURN_SINGLE_PAGE 
-        str_replace( __PHPFILE__ , __EMPTY__ , $this->cpe_xib6_FileHandler_mulipath_array($GetMultiPagesFile__, $CheckCurrentPage__, $Page_file)));
+        str_replace( __PHPFILE__ , __EMPTY__ , parent::cpe_xib6_FileHandler_mulipath_array($GetMultiPagesFile__, $CheckCurrentPage__, $Page_file)));
     
   }  // END OF / IF STATEMENT
   
   return isset($GetData__) ? $GetData__ : FALSE;
 
 } // End of Method 
-
-/**
-  * 
-  * @method protected function PHPFileEnhancer
-  * @static Method Defined cpe_xib6_FileHandler_mulipage_array() 
-  * RETURN FOLDER CONFIG FROM FCONFIG.PHP
-  * 
-  * @since 03.11.2020
-  *
-  **/
-final private function cpe_xib6_FileHandler_mulipath_array($MultiPagefile__, $CheckCP__, $Pf__) {
-   
-  // ASSIGNED_VARIABLE_ARRAY 
-  $GetPagePath__ = [];
-  
-  // CHECK_IF_IT_IS_ARRAY_THEN_ // $MultiPagefile__
-  // CHECK_THE_PATH
-  if (is_array($MultiPagefile__) ) {
-     
-     // LOOP_THE_PATH_ASSIGN_IN_ARRAY_VALUES 
-     foreach ($MultiPagefile__ as $CurrentPath__ )
-     {
-       
-       // CHECK_AND_RETURN_VALUE_FROM_ARRAY_IF_LAST_KEY_IS_EQUAL_TO_VALUE_CURRENTPATH     
-       $CurrentPath__ == array_key_last($CheckCP__) ?  $GetPagePath__[] = $CurrentPath__ : false; 
-        
-     }
-     
-     // ASSIGNED_IN_VAR_THEN_IMPLODE_RETURN_PATH
-     $TheCurrentPage__ =  $CheckCP__[implode('', $GetPagePath__)];        
-     
-     // ELSE PATH_AS_SINGLE_PATH
-     } else { $TheCurrentPage__  = $CheckCP__[$Pf__];
-
-   }
-   
-   // RETURN_ASSGINED _BASE_PATH
-   return $TheCurrentPage__;  
-
-} // cpe_xib6_FileHandler_mulipath_array
-
-/**
-  *
-  * @method protected function PHPFileEnhancer
-  * @static Method Defined cpe_xib6_FileHandler_mulipage_array() 
-  * RETURN FOLDER CONFIG FROM FCONFIG.PHP
-  * 
-  * @since 03.11.2020
-  *
-  **/
-final private function cpe_xib6_FileHandler_MultiPage_array($GMultiP__, $GTCP__) {
-  
-  // ASSIGNED VARIABLE ARRAY CONTAINER EMPTY
-  $GetPage__ = [];
-
-  // CHECK_IF_IT_IS_TRUE // THEN_IF_IT_IS_TRUE_THE_RETURN_TRUE  
-  // return $ReturnTrue = $GetTheCurrentPage__ === $GetMultiPage__ ? TRUE : FALSE;
-  if (is_array($GMultiP__)) 
-  {
-    
-     // LOOP_THE_PATH_ASSIGN_IN_ARRAY_VALUES 
-    foreach ($GMultiP__ as $GetAssigned) {
-     
-     // CHECK_AND_RETURN_VALUE_FROM_ARRAY_IF_EQUAL_TO_VAUE_WHICH_$GetAssigned
-     // STORE IN EMPTY ARRAY VARIABLE  $GetPage__[]
-     // IF_TRUE THE RETURN TRUE ELSE RETURN FALSE      
-     $GetPage__[] = $GTCP__ === $GetAssigned ? TRUE : FALSE;
-
-    }
-    
-    // IMPLODE THEN RETURN VALUE ARRAY
-    return implode('', $GetPage__);
-
-  } else {
-
-     // ELSE RETURN TRUE NON ARRAY VALUE
-     return $GTCP__ === $GMultiP__ ? TRUE : FALSE;
-  }
-
-} // END OF THE METHOD cpe_xib6_FileHandler_getMultiPage_array
 
 /**
   *

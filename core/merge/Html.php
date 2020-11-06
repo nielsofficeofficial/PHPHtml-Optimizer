@@ -2,6 +2,8 @@
 
  namespace PHPHtml\CodeOptimizer\merge;
 
+ USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS PHPFileCare;
+
 /**
  * @copyright (c) 2020-2021 PHPHtml-Optimizer v1.3 Cooked by nielsoffice
  *
