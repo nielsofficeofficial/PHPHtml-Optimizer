@@ -8,6 +8,10 @@
 When the browser detect that there will no HTML printed the interpreter will execute your codes once at the same time, not section by section at that point your data will be rendered accurately.<br /><br />
 To refractor/optimize code is a hassle and heavy load burden in programming, Allow PHPHtml-Optimizer will do that for you while you develop your Internet application, with this library will push you driving your codes learning the OOP concept to make more effective your codes into your application neat and clean not just clean but beautiful maintainable codes, you can use this library and feel FREE if you are comfortable.    
 </p>
+<h4>Quick Start</h4>
+<pre>
+	// ...
+</pre>
 <h4>Installing PHPHtml-Optimizer/Composer</h4>
 <pre>
 
@@ -33,6 +37,7 @@ USE \PHPHtml\CodeOptimizer\optimizer\Html AS MyElement;
 $html = NEW MyElement();
 
 </pre>
+
 For more samples and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Docx"> Documentation link here </a><br /> 
 For Developer <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer/issues"> Support link here </a><br /> 
 This Library is 100% secured and fully free ready to use, If you see vulnerability you can email me: @ nieldigitalsolution@gmail.com
