@@ -261,7 +261,7 @@ Protected function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
       
        // IF_THE_PAGE_FILE_IS_NULL_OR_EMPTY_THEN_DEFAULT_LEVEL_3
        // IF_IT_IS_TRUE_RETURN_DEFAULT 
-     } elseif ( empty($Page_file) || $Page_file == NULL ) {  $TheCurrentPage__  = $CheckCurrentPage__[3];  
+     } elseif ( empty($Page_file) || $Page_file == NULL ) {  $TheCurrentPage__  = $CheckCurrentPage__[1];  
      
     // ELSE_CHECK_IF_NOT_THEN_ASSIGN_
     // THE_RETURN_ASSIGN_FROM_PARAMETER_THEN_REPLACE_DEFAULT
