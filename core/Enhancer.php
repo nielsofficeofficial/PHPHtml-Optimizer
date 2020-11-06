@@ -88,7 +88,7 @@ function GetKeyPath() {
    *
    **/ 
  $Enhancer = new PHPFileHandler();
- return $Enhancer->KeyFolderPath();
+ return $Enhancer->GetKeyFolderPath();
 
 }
 
