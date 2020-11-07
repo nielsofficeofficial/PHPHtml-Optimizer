@@ -232,6 +232,13 @@ public function GetKeyFolderPath() {
 
 }
 
+
+public function ATTR($PARAM__, $QuickStart__) {
+
+  return $this->cpe_FileHander_hdr($PARAM__, $QuickStart__);
+
+}
+
 /**
   *
   * @method protected function PHPFileEnhancer
@@ -261,7 +268,7 @@ Protected function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
       
        // IF_THE_PAGE_FILE_IS_NULL_OR_EMPTY_THEN_DEFAULT_LEVEL_3
        // IF_IT_IS_TRUE_RETURN_DEFAULT 
-     } elseif ( empty($Page_file) || $Page_file == NULL ) {  $TheCurrentPage__  = $CheckCurrentPage__[1];  
+     } elseif ( empty($Page_file) || $Page_file == NULL ) {  $TheCurrentPage__  = $CheckCurrentPage__[3];  
      
     // ELSE_CHECK_IF_NOT_THEN_ASSIGN_
     // THE_RETURN_ASSIGN_FROM_PARAMETER_THEN_REPLACE_DEFAULT
@@ -280,6 +287,176 @@ Protected function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
   return isset($GetData__) ? $GetData__ : FALSE;
 
 } // End of Method 
+
+/**
+  *
+  * @method protected function PHPFileEnhancer
+  * @static Method Defined cpe_FileHander_hdr() 
+  * RETURN FOLDER Check ATTR 
+  * 
+  * @since 27.10.2020
+  *
+  **/
+final private function cpe_FileHander_hdr($PARAM__, $QuickStart__) {
+  
+  # CHECK_IF_THE_QUICKSTART_vAR_IS_IN_ARRAY_AND_IF_IT_IS_TRUE
+  # DO_ARRAY_RETURN_ESLE_SINGLE_VALUE
+  is_array($QuickStart__)  ? $QuickStart__ = $QuickStart__ : $QuickStart_ = $QuickStart__;
+ 
+ # CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER
+ if ($PARAM__ === 'META' || $PARAM__ === __META__ )
+ {  
+   
+   # LOOP THE MULTI DIMENTIONAL ARRAY INTO FOR EACH LOOP  
+   $cpe_FileHander_keys = array_keys($QuickStart__);
+    
+    # BEGIN FROM ZERO THEN RETURN COUNT QUICKSTART ++
+   for($QuickStart_ = 0; $QuickStart_ < count($QuickStart__); $QuickStart_++) 
+   {
+     
+     # BEGIN PERFORM HTML
+     parent::PERFORM(parent::_setGATE().strtolower($PARAM__).__SPACE()); 
+     
+     # LOOP WITHIN MULTI ASSOC ARRAY INTO FORMS OF VALUE INTO HTML
+     foreach( $QuickStart__[$cpe_FileHander_keys[$QuickStart_]] as $ATTR_NAME => $ATTR_VALUE)  { 
+     
+      #RETURN ALL VALUE IF IT IS TRUE
+      parent::PERFORM($ATTR_NAME."=\"".$ATTR_VALUE."\"".__SPACE()); 
+     
+     }  
+    
+    # END PERFORM
+    parent::PERFORM(">\n");
+
+   }
+  
+  # ELSE IF CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER
+ } elseif ( $PARAM__ === 'LINK' || $PARAM__ === __LINK__ ) {
+   
+   # BEGIN FROM ZERO THEN RETURN COUNT QUICKSTART ++
+   $cpe_FileHander_keys = array_keys($QuickStart__);
+   
+   # BEGIN FROM ZERO THEN RETURN COUNT QUICKSTART ++
+   for($QuickStart_ = 0; $QuickStart_ < count($QuickStart__); $QuickStart_++) 
+   {
+     
+     # BEGIN PERFORM HTML
+     parent::PERFORM(parent::_setGATE().strtolower($PARAM__).__SPACE()); 
+
+     # LOOP WITHIN MULTI ASSOC ARRAY INTO FORMS OF VALUE INTO HTML
+     foreach( $QuickStart__[$cpe_FileHander_keys[$QuickStart_]] as $ATTR_NAME => $ATTR_VALUE)  { 
+
+      #RETURN ALL VALUE IF IT IS TRUE
+      parent::PERFORM($ATTR_NAME."=\"".$ATTR_VALUE."\"".__SPACE()); 
+
+    }  
+
+    # END PERFORM
+    parent::PERFORM(">\n");
+
+   }
+
+  # ELSE IF CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER
+  } elseif ( $PARAM__ === 'SCRIPT' || $PARAM__ === __SCRIPT__ ) {
+
+   # BEGIN FROM ZERO THEN RETURN COUNT QUICKSTART ++
+   $cpe_FileHander_keys = array_keys($QuickStart__);
+   
+   # BEGIN FROM ZERO THEN RETURN COUNT QUICKSTART ++   
+   for($QuickStart_ = 0; $QuickStart_ < count($QuickStart__); $QuickStart_++) 
+   {
+
+     # BEGIN PERFORM HTML
+     parent::PERFORM(parent::_setGATE().strtolower($PARAM__).__SPACE()); 
+
+     # LOOP WITHIN MULTI ASSOC ARRAY INTO FORMS OF VALUE INTO HTML
+     foreach( $QuickStart__[$cpe_FileHander_keys[$QuickStart_]] as $ATTR_NAME => $ATTR_VALUE)  {
+
+      #RETURN ALL VALUE IF IT IS TRUE
+      parent::PERFORM($ATTR_NAME."=\"".$ATTR_VALUE."\"".__SPACE()); 
+
+    }  
+
+    # END PERFORM
+    parent::PERFORM(">".parent::_setGATE()."/".strtolower($PARAM__).">\n");
+
+   }
+
+  # ELSE IF CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER
+  }  elseif ( $PARAM__ === 'TITLE' || $PARAM__ === __TITLE__ ) {
+    
+    # IF IT IS TITLE PERFORM TITLE OPTIMIZER
+     parent::PERFORM(parent::TITLE($QuickStart_));
+
+  # ELSE IF CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER
+  }  elseif ( $PARAM__ === 'CUSTOM_END' || $PARAM__ === __CUSTOM_END__ ) {
+   
+   # IF THE PARAMETERS IS CUTOM END THEN CUSTOM HTML WILL RETURN
+   $cpe_FileHander_keys = array_keys($QuickStart__);
+   
+   # BEGIN FROM ZERO THEN RETURN COUNT QUICKSTART ++      
+   for($QuickStart_ = 0; $QuickStart_ < count($QuickStart__); $QuickStart_++) 
+   {
+
+     # BEGIN PERFORM HTML
+     parent::PERFORM(parent::_setGATE().strtolower($cpe_FileHander_keys[$QuickStart_])." "); 
+
+     # LOOP WITHIN MULTI ASSOC ARRAY INTO FORMS OF VALUE INTO HTML
+     foreach( $QuickStart__[$cpe_FileHander_keys[$QuickStart_]] as $ATTR_NAME => $ATTR_VALUE) { 
+
+      #RETURN ALL VALUE IF IT IS TRUE
+      parent::PERFORM($ATTR_NAME."=\"".$ATTR_VALUE."\"".__SPACE()); 
+
+    }  
+
+    # END PERFORM    
+    parent::PERFORM(">\n");
+
+  }
+
+  # ELSE IF CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER
+}  elseif ( $PARAM__ === 'BEGIN_CUSTOM_END' || $PARAM__ === __BEGIN_CUSTOM_END__ ) {
+
+   # IF THE PARAMETERS IS CUTOM END THEN CUSTOM HTML WILL RETURN
+   $cpe_FileHander_keys = array_keys($QuickStart__);
+   
+   # BEGIN FROM ZERO THEN RETURN COUNT QUICKSTART ++    
+   for($QuickStart_ = 0; $QuickStart_ < count($QuickStart__); $QuickStart_++) 
+   {
+
+     # BEGIN PERFORM HTML
+     parent::PERFORM(parent::_setGATE().strtolower($cpe_FileHander_keys[$QuickStart_])." "); 
+
+     # LOOP WITHIN MULTI ASSOC ARRAY INTO FORMS OF VALUE INTO HTML
+     foreach( $QuickStart__[$cpe_FileHander_keys[$QuickStart_]] as $ATTR_NAME => $ATTR_VALUE)  {
+
+      #RETURN ALL VALUE IF IT IS TRUE
+      parent::PERFORM($ATTR_NAME."=\"".$ATTR_VALUE."\"".__SPACE()); 
+
+    }  
+
+
+    # END PERFORM  
+    parent::PERFORM(">".parent::_setGATE()."/".$cpe_FileHander_keys[$QuickStart_].">\n");
+
+   }
+
+} else {
+  
+  # PERFORM ERROR MASSGES
+  $ERROR_MSG  = " ";
+  $ERROR_MSG .= " Check ATTR('VALID_PARAM', [ ] ) only valid parameter can used <br />";
+  $ERROR_MSG .= " For Developer support visit github submit issue: ".parent::ELEMENT('a','Submit Github Support', parent::IssueSubmitAttr()).$this->BREAK(METHOD_ASSOC);   
+  $ERROR_MSG .= " Recomendation: ".parent::ELEMENT('a','Read Documentation Click Here',parent::DocxEnahncerSubmitAttr());      
+  
+   $this->PERFORM($ERROR_MSG);
+
+} // END OF IF META
+ 
+
+
+
+} // END OF METHOD
 
 /**
   *

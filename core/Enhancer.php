@@ -200,6 +200,60 @@ function SetFileExT($argu) {
 
 }
 
+/**
+  *
+  * @since 05.11.2020
+  * @category PHPFileEnhancer
+  * @method Defined SetElemAttr  
+  *
+  **/
+function SetElemAttr($array_set_1, $array_set_2) {
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : PHPFileEnhancer
+   * @package : Static Procedural
+   * @method  : SetElemAttr()
+   *
+   *
+   *
+   **/ 
+ $Enhancer = new PHPFileHandler();
+ return $Enhancer->SetElemAttr($array_set_1 , $array_set_2);
+
+}
+
+/**
+  *
+  * @since 05.11.2020
+  * @category PHPFileEnhancer
+  * @method Defined ATTR  
+  *
+  **/
+function ATTR($PARAM__, $QuickStart__) {
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : PHPFileEnhancer
+   * @package : Static Procedural
+   * @method  : ATTR()
+   *
+   *
+   *
+   **/ 
+ $Enhancer = new PHPFileHandler();
+ return $Enhancer->ATTR($PARAM__, $QuickStart__);
+
+}
+
 
 
 

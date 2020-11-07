@@ -542,6 +542,34 @@ function _xTEXTAREA( $value=null, $attr=null, $element_id=null, $element_class=n
   *
   * @since 20.19.2020
   * @category PHPHtml-Merge
+  * @ Method Defined HTML FOOTER noHTML  
+  * Inline Heading tag TEXTAREA
+  *
+  **/
+function _xFOOTER( $value=null, $attr=null, $element_id=null, $element_class=null, $label=null, $assoc=null ) 
+{ 
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag TEXTAREA
+   * @package : Static Procedural
+   * @method  : Html::TEXTAREA($value, $attr=null, $element_id, $element_class, $label, $assoc);
+   *
+   *
+   *
+   **/
+  $Html = NEW Merge(); 
+  return $Html->FOOTER($value, $attr, $element_id, $element_class, $label, $assoc);
+
+}
+
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
   * @ Method Defined HTML AUDIO noHTML  
   * Inline Heading tag AUDIO
   *

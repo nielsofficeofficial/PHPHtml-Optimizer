@@ -709,6 +709,48 @@ function xTEXTAREA($label = NULL) {
   *
   * @since 20.19.2020
   * @category PHPHtml-Merge
+  * @ Method Defined HTML TEXTAREA OPEN TAG noHTML  
+  * Inline Heading tag TEXTAREA
+  *
+  **/
+function _FOOTER($attr=null, $element_id=null, $element_class=null) {
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag H3
+   * @package : Static Procedural
+   * @method  : Html::_H3($value, $attr=null, $element_id, $element_class, $label, $assoc);
+   *
+   *
+   *
+   **/  
+  $Html = NEW MergeBox(); 
+  return $Html->_FOOTER($attr, $element_id, $element_class);  
+
+}
+
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML TEXTAREA CLOSE TAG noHTML  
+  * Inline Heading tag TEXTAREA
+  *
+  **/
+function xFOOTER($label = NULL) {
+
+  $Html = NEW MergeBox(); return $Html->xFOOTER($label);  
+
+}
+
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
   * @ Method Defined HTML AUDIO OPEN TAG noHTML  
   * Inline Heading tag AUDIO
   *
@@ -3453,7 +3495,7 @@ function _HTML($attr=null, $element_id=null, $element_class=null) {
    *
    **/  	
  $Html = NEW MergeBox(); 
- return $Html->_HTML($attr, $element_id, $element_class);	
+ return $Html->_noHTML($attr, $element_id, $element_class);	
 
 }
 
@@ -3467,7 +3509,7 @@ function _HTML($attr=null, $element_id=null, $element_class=null) {
   **/
 function xHTML($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xHTML($label);	
+  $Html = NEW MergeBox(); return $Html->xnoHTML($label);	
 
 }
 

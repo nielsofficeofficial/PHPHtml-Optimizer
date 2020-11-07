@@ -702,7 +702,7 @@ class Html {
   *
   **/
 
- protected $htm    = ['h1','h2','h3','h4','h5','h6','div','p','button','a','iframe','main','nav','select','form','picture','section','textarea'];
+ protected $htm    = ['h1','h2','h3','h4','h5','h6','div','p','button','a','iframe','main','nav','select','form','picture','section','textarea','footer'];
 /**
   * @var 
   * @property @SECONDARY_VARIABLE 
@@ -1047,6 +1047,18 @@ class Html {
   public function _TEXTAREA($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('PRIMARY', 17, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG 
   public function xTEXTAREA($label = NULL) { self::PERFORM( $this->get_xHTML('PRIMARY', 17, $label) ); }
+
+/**
+  *
+  * @method public function noHTML
+  * @ Method Defined FOOTER _ AND x TAG noHTML  
+  * RETURN NODE FOOTERA _ noHTML TAG
+  *
+  **/
+  public function _FOOTER($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('PRIMARY', 18, $js, $id, $class) );  }
+// CLOSING_METHOD_noHTML_TAG 
+  public function xFOOTER($label = NULL) { self::PERFORM( $this->get_xHTML('PRIMARY', 18, $label) ); }
+
 
 /**
   *
@@ -2132,6 +2144,18 @@ class Html {
   public function TEXTAREA($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
   
  return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 17, $value, $js, $id, $class, $label, $assoc);
+}
+
+/**
+  *
+  * @method public function noHTML
+  * @ Method Defined HTML FOOTER TAG noHTML  
+  * RETURN NODE HTML _ noHTML TAG
+  *
+  **/
+  public function FOOTER($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  
+ return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 18, $value, $js, $id, $class, $label, $assoc);
 }
 
 /**
@@ -3686,7 +3710,7 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-private function HtmlELements_Optimizer($inline, $elem, $js, $id, $class, $assoc) {
+protected function HtmlELements_Optimizer($inline, $elem, $js, $id, $class, $assoc) {
 
     if ($assoc == NULL || $assoc == FALSE || $assoc == 'DEFUALT') {
 
@@ -4248,17 +4272,17 @@ protected function cpe_xib6_FileHandler_MultiPage_array($GMultiP__, $GTCP__) {
 
 /**
   *
-  * @method private function noHTML
-  * @ @private Method Defined HTML FOUNDATION _getBREAK
+  * @method protected function noHTML
+  * @ @protected Method Defined HTML FOUNDATION _getBREAK
   *
   **/
- private function _getBREAK()      { 
+ protected function _getBREAK()      { 
 
-   # SET_RETURN_PRIVATE_PROPERTY_GET_VALUE_ARRAY_ZERO
+   # SET_RETURN_protected_PROPERTY_GET_VALUE_ARRAY_ZERO
    /**
      *
      * @var $hBreak
-     * @var private property array() 
+     * @var protected property array() 
      * @method ""
      *
      **/   
@@ -4266,17 +4290,17 @@ protected function cpe_xib6_FileHandler_MultiPage_array($GMultiP__, $GTCP__) {
 
 /**
   *
-  * @method private function noHTML
-  * @ @private Method Defined HTML FOUNDATION _doBREAK 
+  * @method protected function noHTML
+  * @ @protected Method Defined HTML FOUNDATION _doBREAK 
   *
   **/
- private function _doBREAK()       { 
+ protected function _doBREAK()       { 
 
-   # SET_RETURN_PRIVATE_PROPERTY_GET_VALUE_ARRAY_ONE
+   # SET_RETURN_protected_PROPERTY_GET_VALUE_ARRAY_ONE
    /**
      *
      * @var $hBreak
-     * @var private property array() 
+     * @var protected property array() 
      * @method ""
      *
      **/  
@@ -4284,17 +4308,17 @@ protected function cpe_xib6_FileHandler_MultiPage_array($GMultiP__, $GTCP__) {
 
 /**
   *
-  * @method private function noHTML
-  * @ @private Method Defined HTML FOUNDATION _makeLine 
+  * @method protected function noHTML
+  * @ @protected Method Defined HTML FOUNDATION _makeLine 
   *
   **/
- private function _makeLine()      { 
+ protected function _makeLine()      { 
 
-   # SET_RETURN_PRIVATE_PROPERTY_GET_VALUE_ARRAY_TWO
+   # SET_RETURN_protected_PROPERTY_GET_VALUE_ARRAY_TWO
    /**
      *
      * @var $hBreak
-     * @var private property array() 
+     * @var protected property array() 
      * @method ""
      *
      **/    
@@ -4302,202 +4326,202 @@ protected function cpe_xib6_FileHandler_MultiPage_array($GMultiP__, $GTCP__) {
 
 /**
   *
-  * @method private function noHTML
-  * @ @private Method Defined HTML FOUNDATION _getSQUOTE 
+  * @method protected function noHTML
+  * @ @protected Method Defined HTML FOUNDATION _getSQUOTE 
   *
   **/
- private function _getSQUOTE()     { 
+ protected function _getSQUOTE()     { 
 
    /**
      *
-     * @var private property \
+     * @var protected property \
      * @method _setSQ()
      *
      **/  
     return $this->_setSQ();      }
- private function _setSQ()         { 
+ protected function _setSQ()         { 
    /**
      *
-     * @var private property $sq
+     * @var protected property $sq
      *
      **/  
     return $this->sq = '\'';    }
 
 /**
   *
-  * @method private function noHTML
-  * @ @private Method Defined HTML FOUNDATION _getDQUOTE 
+  * @method protected function noHTML
+  * @ @protected Method Defined HTML FOUNDATION _getDQUOTE 
   *
   **/
- private function _getDQUOTE()     { 
+ protected function _getDQUOTE()     { 
 
    /**
      *
-     * @var private property \ 
+     * @var protected property \ 
      * @method _setDQ()
      *
      **/  
     return $this->_setDQ();      }
- private function _setDQ()         { 
+ protected function _setDQ()         { 
    
    /**
      *
-     * @var private property $dq 
+     * @var protected property $dq 
      *
      **/
     return $this->dq = "\"";    }
 
 /**
   *
-  * @method private function noHTML
-  * @ @private Method Defined HTML FOUNDATION _getxTAG 
+  * @method protected function noHTML
+  * @ @protected Method Defined HTML FOUNDATION _getxTAG 
   *
   **/
- private function _getxTAG()   { 
+ protected function _getxTAG()   { 
 
    /**
      *
-     * @var private property >
+     * @var protected property >
      * @method _setENDGATE()
      *
      **/  
     return $this->_setENDGATE();     }
- private function _setENDGATE()    { 
+ protected function _setENDGATE()    { 
 
    /**
      *
-     * @var private property $lt
+     * @var protected property $lt
      *
      **/  
     return $this->lt = ">";         }
 
 /**
   *
-  * @method private function noHTML
-  * @ @private Method Defined HTML FOUNDATION _get_TAG 
+  * @method protected function noHTML
+  * @ @protected Method Defined HTML FOUNDATION _get_TAG 
   *
   **/
- private function _get_TAG()    { 
+ protected function _get_TAG()    { 
 
    /**
      *
-     * @var private property >
+     * @var protected property >
      * @method _setGATE
      *
      **/
     return $this->_setGATE();        }
- private function _setGATE()       { 
+ protected function _setGATE()       { 
    
    /**
      *
-     * @var private property $gt
+     * @var protected property $gt
      *
      **/
     return $this->gt = "<";         }
 
 /**
   *
-  * @method private function noHTML
-  * @ @private Method Defined HTML FOUNDATION _getES 
+  * @method protected function noHTML
+  * @ @protected Method Defined HTML FOUNDATION _getES 
   *
   **/
- private function _getES()         { 
+ protected function _getES()         { 
 
    /**
      *
-     * @var private property =  
+     * @var protected property =  
      * @method  _setES
      *
      **/  
     return $this->_setES();          }
- private function _setES()         { 
+ protected function _setES()         { 
 
    /**
      *
-     * @var private property $es
+     * @var protected property $es
      *
      **/
     return $this->es = "=";         }
 
 /**
   *
-  * @method private function noHTML
-  * @ @private Method Defined HTML FOUNDATION _getENDS
+  * @method protected function noHTML
+  * @ @protected Method Defined HTML FOUNDATION _getENDS
   *
   **/
- private function _getENDS()       { 
+ protected function _getENDS()       { 
 
    /**
      *
-     * @var private property / 
+     * @var protected property / 
      * @method  _setES
      *
      **/  
     return $this->_setENDS();        }
- private function _setENDS()       { 
+ protected function _setENDS()       { 
 
    /**
      *
-     * @var private property $ends
+     * @var protected property $ends
      *
      **/
     return $this->ends = "/";       }
 
 /**
   *
-  * @method private function noHTML
-  * @ @private Method Defined HTML FOUNDATION _tagSYMBOL
+  * @method protected function noHTML
+  * @ @protected Method Defined HTML FOUNDATION _tagSYMBOL
   *
   **/
- private function _tagSYMBOL()     { 
+ protected function _tagSYMBOL()     { 
 
    /**
      *
-     * @var private property !
+     * @var protected property !
      * @method  _set_exSYMBOL()
      *
      **/
     return $this->_set_exSYMBOL();   }
- private function _set_exSYMBOL()  { 
+ protected function _set_exSYMBOL()  { 
 
    /**
      *
-     * @var private property $exSymbol
+     * @var protected property $exSymbol
      *
      **/  
     return $this->exSymbol = "!";   }
 
 /**
   *
-  * @method private function noHTML
-  * @ @private Method Defined HTML FOUNDATION _getCOMEND
+  * @method protected function noHTML
+  * @ @protected Method Defined HTML FOUNDATION _getCOMEND
   *
   **/
- private function _getCOMEND()     {
+ protected function _getCOMEND()     {
 
    /**
      *
-     * @var private property -->
+     * @var protected property -->
      * @method  _setCOMEND
      *
      **/ 
     return $this->_setCOMEND();      } 
- private function _setCOMEND()     {
+ protected function _setCOMEND()     {
 
    /**
      *
-     * @var private property $comEND
+     * @var protected property $comEND
      *
      **/  
     return $this->comEND = "-->";   }
 
 /**
   *
-  * @method private function noHTML
-  * @ @private Method Defined HTML FOUNDATION _getTRING
+  * @method protected function noHTML
+  * @ @protected Method Defined HTML FOUNDATION _getTRING
   *
   **/
- private function _getTRING($str)  { 
+ protected function _getTRING($str)  { 
 
    /**
      *
@@ -4505,19 +4529,19 @@ protected function cpe_xib6_FileHandler_MultiPage_array($GMultiP__, $GTCP__) {
      *
      **/  
     return $this->_setSTRING($str);  } 
- private function _setSTRING($str) {
+ protected function _setSTRING($str) {
 
    /**
      *
-     * @var private property $str
+     * @var protected property $str
      *
      **/
     return $this->str = $str;   }
 
 /**
   *
-  * @method private function noHTML
-  * @ @private Method Defined HTML FOUNDATION _tagSPACER
+  * @method protected function noHTML
+  * @ @protected Method Defined HTML FOUNDATION _tagSPACER
   *
   **/
  protected function _tagSPACER()     { 
@@ -4528,11 +4552,11 @@ protected function cpe_xib6_FileHandler_MultiPage_array($GMultiP__, $GTCP__) {
      *
      **/    
     return $this->_set_tagSPACER();  }
- private function _set_tagSPACER() {
+ protected function _set_tagSPACER() {
 
    /**
      *
-     * @var private property $sHTML
+     * @var protected property $sHTML
      *
      **/
     return $this->sHTML = " ";
@@ -4540,11 +4564,11 @@ protected function cpe_xib6_FileHandler_MultiPage_array($GMultiP__, $GTCP__) {
 
 /**
   *
-  * @method private function noHTML
-  * @ @private Method Defined HTML FOUNDATION _getCOMBEGIN
+  * @method protected function noHTML
+  * @ @protected Method Defined HTML FOUNDATION _getCOMBEGIN
   *
   **/
- private function _getCOMBEGIN() { 
+ protected function _getCOMBEGIN() { 
 
    /**
      *
@@ -4552,11 +4576,11 @@ protected function cpe_xib6_FileHandler_MultiPage_array($GMultiP__, $GTCP__) {
      *
      **/  
      return $this->_setCOMBEGIN();  }
- private function _setCOMBEGIN() { 
+ protected function _setCOMBEGIN() { 
 
    /**
      *
-     * @var private property $sHTML
+     * @var protected property $sHTML
      *
      **/
      return $this->comBEGIN = $this->_get_TAG().$this->_tagSYMBOL()."--";
@@ -4564,8 +4588,8 @@ protected function cpe_xib6_FileHandler_MultiPage_array($GMultiP__, $GTCP__) {
 
 /**
   *
-  * @method private function noHTML
-  * @ @private Method Defined HTML FOUNDATION _isTrue_SET_STRING
+  * @method protected function noHTML
+  * @protected Method Defined HTML FOUNDATION _isTrue_SET_STRING
   *
   **/
  protected function _isTrue_SET_STRING($str=null, $assoc=null) {
@@ -4838,6 +4862,19 @@ protected function cpe_xib6_FileHandler_MultiPage_array($GMultiP__, $GTCP__) {
        *
       **/
       return $elem = 'textarea';
+    
+    } elseif ( $elem === 'footer' || $elem === 'FOOTER' ) {
+
+     /**
+       *
+       *
+       *
+       * @var SET RETURN ELEMT_AS_TEXTAREA 
+       *
+       *
+       *
+      **/
+      return $elem = 'footer';
     
     } elseif ( $elem === 'audio'    || $elem === 'AUDIO' ) {
 
@@ -7185,6 +7222,20 @@ protected function cpe_xib6_FileHandler_MultiPage_array($GMultiP__, $GTCP__) {
       **/ 
       return $this->_elemenHTMLINLINE('PRIMARY', 17, $value, $js, $id, $class, $label);
       break;
+
+    case "footer":
+
+      /**
+       *
+       *
+       *
+       * @var SET RETURN ELEMT_AS_ARRAY_TEXTAREA_SECONDARY_17
+       *
+       *
+      **/ 
+      return $this->_elemenHTMLINLINE('PRIMARY', 18, $value, $js, $id, $class, $label);
+      break;
+
     default:
       
       # RETURN_DEFUALT_IF_EXCECUTED_BUT_NOT_SET

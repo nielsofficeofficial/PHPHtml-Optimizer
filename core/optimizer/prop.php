@@ -205,3 +205,88 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancer AS PHPFileHandler;
    |
    */ 
   define('__FILEEXTENSION__', 'SetFileExT' );         
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Set PARAM META
+   |
+   |
+   |
+   |
+   */ 
+  define('__META__', 'META' );
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Set PARAM LNIKS
+   |
+   |
+   |
+   |
+   */ 
+  define('__LINK__', 'LINK' );
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Set PARAM SCRIPTS
+   |
+   |
+   |
+   |
+   */ 
+  define('__SCRIPT__', 'SCRIPT' );
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Set PARAM TITLE
+   |
+   |
+   |
+   |
+   */ 
+  define('__TITLE__', 'TITLE' );
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Set PARAM CUSTOM_END
+   |
+   |
+   |
+   |
+   */
+  define('__CUSTOM_END__', 'CUSTOM_END' );
+    
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Set PARAM BEGIN_CUSTOM_END
+   |
+   |
+   |
+   |
+   */
+  define('__BEGIN_CUSTOM_END__', 'BEGIN_CUSTOM_END' );
+    
