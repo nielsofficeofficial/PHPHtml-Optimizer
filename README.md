@@ -61,7 +61,7 @@ ATTR('CUSTOM_END', [
 ATTR('BEGIN_CUSTOM_END', [ 
  "Opt" => [ 'src' => "css/normalize.css" ]
 ]); <br />
- if(isbelongs('index', 1)) { 
+if(isbelongs('index', 1)) { 
 
   <style> 
    /**  Header style goes here.. **/
@@ -71,7 +71,7 @@ ATTR('BEGIN_CUSTOM_END', [
     /**  Header script goes here.. **/
   </script>
 
- }  <br />
+}  <br />
 xHEAD();
 _BODY();
 </pre>
