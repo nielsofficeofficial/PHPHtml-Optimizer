@@ -9,7 +9,7 @@ When the browser detect that there will no HTML printed the interpreter will exe
 To refractor/optimize code is a hassle and heavy load burden in programming, Allow PHPHtml-Optimizer will do that for you while you develop your Internet application, with this library will push you driving your codes learning the OOP concept to make more effective your codes into your application neat and clean not just clean but beautiful maintainable codes, you can use this library and feel FREE if you are comfortable.    
 </p>
 
-<h4>CUSTOM ATTR/ELEMENT</h4>
+<h5>Cutom ATTR/ELEMENT</h5>
 <pre>
 // None closing inline element | PARAMETER : CUSTOM_END
 ATTR('CUSTOM_END', [
@@ -26,7 +26,7 @@ ATTR('BEGIN_CUSTOM_END', [
 <h4>Quick Start</h4>
 <h4>Copy and Paste for header.php</h4>
 <pre>
-``<?php`` 
+
 require_once __DIR__ . '/PHPHtml-Optimizer/PHPHtml-Optimizer.php';
 
 USE \PHPHtml\CodeOptimizer\merge\Html;
