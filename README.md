@@ -74,12 +74,30 @@ ATTR('BEGIN_CUSTOM_END', [
  }  <br />
 xHEAD();
 _BODY();
-
 </pre>
 
+<h4>Quick Start : <span>Copy and paste for header.php</span> </h4>
+<pre>
+_FOOTER();
 
+// FOOTER
+ATTR('SCRIPT', [
+ "SP1" => [ 'src' => "css/normalize.css" ],
+ "SP2" => [ 'src' => "css/main.css" ]
+]);
 
+if (isbelongs(['index','portfolio'], 1)) {  
 
+ <script> 
+    /**  Header script goes here.. **/
+ </script>
+
+}
+
+xFOOTER();
+xBODY();
+xHTML();
+</pre>
 
 
 <h4>Installing PHPHtml-Optimizer/Composer</h4>
