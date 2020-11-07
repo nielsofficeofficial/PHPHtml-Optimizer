@@ -1,7 +1,7 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/9aa969ea8b1642588110cc72dd308343)](https://www.codacy.com/gh/nielsofficeofficial/PHPHtml-Optimizer/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nielsofficeofficial/PHPHtml-Optimizer&amp;utm_campaign=Badge_Grade)
 [![Coverage Status](https://coveralls.io/repos/github/nielsofficeofficial/PHPHtml-Optimizer/badge.svg?branch=master)](https://coveralls.io/github/nielsofficeofficial/PHPHtml-Optimizer?branch=master)
 
-<img src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t1.0-9/119389723_1181335685573316_2339548645504738190_n.jpg?_nc_cat=103&_nc_sid=730e14&_nc_eui2=AeFjNkrFhVNjcxR9W-QtwMKG_uGjgyCAqLH-4aODIICosd7orVRodvpIVMgnCL6x0pJ5epFA3U6mpHBm2VkJl7vc&_nc_ohc=VqXGzZi2mvkAX8_tiLn&_nc_ht=scontent.fmnl3-1.fna&oh=0e70840c2f5ec7a5d20b5b94739a5b8a&oe=5F8768AA">
+
 <h6>Support PHP v7.0++ higher | not work for v.7 less</h6>
 <h6>PHPHtml-Optimizer is a PHP FREE library that will help PHP/Developer/Programmer beautiful and optimize codes. </h6>
 <p>It is simplified the code from HTML removing backticks, double quotes and saving time to convert or wrap HTML into PHP through appended variables although appending in the variable will be still possible using for some reason within your codes, PHPHtml-Optimizer is easier to optimize your codes lessen big page-load to your application/program.<br />
@@ -38,42 +38,30 @@ $FileEnhance = NEW OptimizerCare();
  
 _HTML(SetElemAttr(['class','lang'],['no-js','']));
 _HEAD();
-
 ATTR('META', [
  "M0" => [ 'charset'    => "utf-8"],
  "M1" => [ 'http-equiv' => "x-ua-compatible", 'content' => "" ]
 ]); 
-
 ATTR('TITLE', 'QUICK START'); 
-
 ATTR('META', [ 
  "M0" => [ 'name' => "description", 'content' => ""],
  "M1" => [ 'name' => "viewport",    'content' => "width=device-width, initial-scale=1" ]
 ]); 
-
 ATTR('LINK', [ 
-
  "L0" => [ 'rel' => "manifest", 		'src' => "site.webmanifest"],
  "L1" => [ 'rel' => "apple-touch-icon", 'src' => "icon.png"]
-
 ]); 
-
 ATTR('SCRIPT', [
  "SP1" => [ 'src' => "css/normalize.css" ],
  "SP2" => [ 'src' => "css/main.css" ]
 ]);
-
 ATTR('CUSTOM_END', [
  "Optimize" => [ 'src' => "css/normalize.css" ]
 ]);
-
 ATTR('BEGIN_CUSTOM_END', [
  "Opt" => [ 'src' => "css/normalize.css" ]
 ]);
-
-
 if (isbelongs('index', 1)) { ?> 
-
 <!-- 
  
  <style> 
@@ -85,25 +73,22 @@ if (isbelongs('index', 1)) { ?>
  </script>
 
  -->
-
 <?php }  
-
 xHEAD();
 _BODY();
 </pre>
+
+
 <h4>Copy and Paste for footer.php</h4>
 <pre>
 _FOOTER();
 // FOOTER
 ATTR('SCRIPT', [
-    
  "SP1" => [ 'src' => "css/normalize.css" ],
  "SP2" => [ 'src' => "css/main.css" ]
-
 ]);
-      
-if (isbelongs(['index','portfolio'], 1)) { ?> 
 
+if (isbelongs(['index','portfolio'], 1)) { ?> 
 <!--
 
  <script> 
@@ -111,7 +96,6 @@ if (isbelongs(['index','portfolio'], 1)) { ?>
  </script>
 
 -->
-
 <?php }  
 
 xFOOTER();
