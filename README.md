@@ -86,7 +86,7 @@ ATTR('SCRIPT', [
  "LABEL1" => [ 'src' => "css/main.css" ]
 ]);
 
-if (isbelongs(['index','portfolio'], 1)) {  
+if (isbelongs(['index','portfolio'], 1)) {
  <script> 
     /**  Header script goes here.. **/
  </script>
