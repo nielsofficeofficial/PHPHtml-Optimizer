@@ -45,7 +45,7 @@ ATTR('META', [
 ATTR('TITLE', 'QUICK START'); <br />
 ATTR('META', [
  "LABEL3" => [ 'name' => "description", 'content' => ""],
- "LABE4" => [ 'name' => "viewport",    'content' => "width=device-width, initial-scale=1" ]
+ "LABEL4" => [ 'name' => "viewport",    'content' => "width=device-width, initial-scale=1" ]
 ]); <br />
 ATTR('LINK', [ 
  "LABEL0" => [ 'rel' => "manifest", 		'src' => "site.webmanifest"],
