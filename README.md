@@ -82,8 +82,7 @@ _FOOTER();<br />
 ATTR('SCRIPT', [
  "LABEL0" => [ 'src' => "js/normalize.js" ],
  "LABEL1" => [ 'src' => "js/main.js" ]
-]);
-
+]);<br />
 if (isbelongs(['index','portfolio'], 1)) {
  <script> 
     /**  Header script goes here.. **/
