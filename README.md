@@ -76,7 +76,7 @@ xHEAD();
 _BODY();
 </pre>
 
-<h4>Quick Start : <span>Copy and paste for header.php</span> </h4>
+<h4>Quick Start : <span>Copy and paste for footer.php</span> </h4>
 <pre>
 _FOOTER();
 
@@ -87,7 +87,6 @@ ATTR('SCRIPT', [
 ]);
 
 if (isbelongs(['index','portfolio'], 1)) {  
-
  <script> 
     /**  Header script goes here.. **/
  </script>
@@ -99,7 +98,6 @@ xBODY();
 xHTML();
 </pre>
 
-
 <h4>Installing PHPHtml-Optimizer/Composer</h4>
 <pre>
 
@@ -109,7 +107,7 @@ xHTML();
 // Run command
 ~ composer require phphtml-optimizer/phphtml-optimizer
 
-// Usage:
+# Usage:
 
 // Static Default
 USE \PHPHtml\CodeOptimizer\merge\Html;
@@ -124,9 +122,17 @@ $html = NEW \PHPHtml\CodeOptimizer\optimizer\Html();
 USE \PHPHtml\CodeOptimizer\optimizer\Html AS MyElement;
 $html = NEW MyElement();
 
+// Instantiate Default
+$html = NEW \PHPHtml\CodeOptimizer\optimizer\Enhancers();
+
+// Instantiate Alias
+USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS OptimizerCare;
+$html = NEW OptimizerCare();
+
 </pre>
 
-For more samples and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Docx"> Documentation link here </a><br /> 
+For more examples and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Docx"> Documentation link here </a><br /> 
+For File Enhancers and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Enhancers"> Documentation/Reference link here </a><br /> 
 For Developer <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer/issues"> Support link here </a><br /> 
 This Library is 100% secured and fully free ready to use, If you see vulnerability you can email me: @ nieldigitalsolution@gmail.com
 
