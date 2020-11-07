@@ -59,10 +59,11 @@ ATTR('CUSTOM_END', [
 ]);<br />
 ATTR('BEGIN_CUSTOM_END', [ 
  "Opt" => [ 'src' => "css/normalize.css" ]
-]);<br />
+]); <br />
 
- if (isbelongs('index', 1)) { ?> 
+ if (isbelongs('index', 1)) { 
 
+   
 
  <?php }  
 
@@ -70,6 +71,11 @@ xHEAD();
 _BODY();
 
 </pre>
+
+
+
+
+
 
 <h4>Installing PHPHtml-Optimizer/Composer</h4>
 <pre>
