@@ -11,6 +11,10 @@ To refractor/optimize code is a hassle and heavy load burden in programming, All
 
 <h6>Custom ATTR/ELEMENT</h6>
 <pre>
+// PARAMETERS
+META | TITLE | LINK | SCRIPT | CUSTOM_END | BEGIN_CUSTOM_END
+</pre>
+<pre>
 // None closing inline element | PARAMETER : CUSTOM_END
 ATTR('CUSTOM_END', [
  "NAME_OF_ELEMENT" => [ 'name' => "Value" ]
@@ -33,47 +37,38 @@ $Html 		 = NEW Optimizer();
 $FileEnhance = NEW OptimizerCare();<br />
 _HTML(SetElemAttr(['class','lang'],['no-js','']));<br />
 _HEAD();<br />
-ATTR('META', [<br />
+ATTR('META', [
  "M0" => [ 'charset'    => "utf-8"],
- "M1" => [ 'http-equiv' => "x-ua-compatible", 'content' => "" ]<br />
+ "M1" => [ 'http-equiv' => "x-ua-compatible", 'content' => "" ]
 ]); <br />
 ATTR('TITLE', 'QUICK START'); <br />
-ATTR('META', [ <br />
+ATTR('META', [
  "M0" => [ 'name' => "description", 'content' => ""],
- "M1" => [ 'name' => "viewport",    'content' => "width=device-width, initial-scale=1" ]<br />
+ "M1" => [ 'name' => "viewport",    'content' => "width=device-width, initial-scale=1" ]
 ]); <br />
-ATTR('LINK', [<br /> 
+ATTR('LINK', [ 
  "L0" => [ 'rel' => "manifest", 		'src' => "site.webmanifest"],
- "L1" => [ 'rel' => "apple-touch-icon", 'src' => "icon.png"]<br />
+ "L1" => [ 'rel' => "apple-touch-icon", 'src' => "icon.png"]
 ]); <br />
-ATTR('SCRIPT', [<br />
+ATTR('SCRIPT', [
  "SP1" => [ 'src' => "css/normalize.css" ],
- "SP2" => [ 'src' => "css/main.css" ]<br />
+ "SP2" => [ 'src' => "css/main.css" ]
 ]);<br />
-ATTR('CUSTOM_END', [<br />
- "Optimize" => [ 'src' => "css/normalize.css" ]<br />
+ATTR('CUSTOM_END', [
+ "Optimize" => [ 'src' => "css/normalize.css" ]
 ]);<br />
-ATTR('BEGIN_CUSTOM_END', [<br />
- "Opt" => [ 'src' => "css/normalize.css" ]<br />
+ATTR('BEGIN_CUSTOM_END', [ 
+ "Opt" => [ 'src' => "css/normalize.css" ]
 ]);<br />
-if (isbelongs('index', 1)) { ?> 
 
- <!-- 
- 
- <style> 
-   /**  Header style goes here.. **/
- </style>
+ if (isbelongs('index', 1)) { ?> 
 
- <script> 
-    /**  Header script goes here.. **/
- </script>
 
- -->
-
-<?php }  
+ <?php }  
 
 xHEAD();
 _BODY();
+
 </pre>
 
 <h4>Installing PHPHtml-Optimizer/Composer</h4>
