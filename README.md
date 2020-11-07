@@ -39,21 +39,21 @@ $FileEnhance = NEW OptimizerCare();<br />
 _HTML(SetElemAttr(['class','lang'],['no-js','']));<br />
 _HEAD();<br />
 ATTR('META', [
- "M0" => [ 'charset'    => "utf-8"],
- "M1" => [ 'http-equiv' => "x-ua-compatible", 'content' => "" ]
+ "LABEL0" => [ 'charset'    => "utf-8"],
+ "LABEL1" => [ 'http-equiv' => "x-ua-compatible", 'content' => "" ]
 ]); <br />
 ATTR('TITLE', 'QUICK START'); <br />
 ATTR('META', [
- "M0" => [ 'name' => "description", 'content' => ""],
- "M1" => [ 'name' => "viewport",    'content' => "width=device-width, initial-scale=1" ]
+ "LABEL3" => [ 'name' => "description", 'content' => ""],
+ "LABE4" => [ 'name' => "viewport",    'content' => "width=device-width, initial-scale=1" ]
 ]); <br />
 ATTR('LINK', [ 
- "L0" => [ 'rel' => "manifest", 		'src' => "site.webmanifest"],
- "L1" => [ 'rel' => "apple-touch-icon", 'src' => "icon.png"]
+ "LABEL0" => [ 'rel' => "manifest", 		'src' => "site.webmanifest"],
+ "LABEL1" => [ 'rel' => "apple-touch-icon", 'src' => "icon.png"]
 ]); <br />
 ATTR('SCRIPT', [
- "SP1" => [ 'src' => "css/normalize.css" ],
- "SP2" => [ 'src' => "css/main.css" ]
+ "LABE0" => [ 'src' => "css/normalize.css" ],
+ "LABEL1" => [ 'src' => "css/main.css" ]
 ]);<br />
 ATTR('CUSTOM_END', [
  "Optimize" => [ 'src' => "css/normalize.css" ]
@@ -61,13 +61,17 @@ ATTR('CUSTOM_END', [
 ATTR('BEGIN_CUSTOM_END', [ 
  "Opt" => [ 'src' => "css/normalize.css" ]
 ]); <br />
-
  if(isbelongs('index', 1)) { 
 
-   
+  <style> 
+   /**  Header style goes here.. **/
+  </style>
 
- }  
+  <script> 
+    /**  Header script goes here.. **/
+  </script>
 
+ }  <br />
 xHEAD();
 _BODY();
 
