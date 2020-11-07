@@ -52,8 +52,8 @@ ATTR('LINK', [
  "LABEL1" => [ 'rel' => "apple-touch-icon", 'src' => "icon.png"]
 ]); <br />
 ATTR('SCRIPT', [
- "LABE0" => [ 'src' => "css/normalize.css" ],
- "LABEL1" => [ 'src' => "css/main.css" ]
+ "LABEL0" => [ 'src' => "css/normalize.js" ],
+ "LABEL1" => [ 'src' => "css/main.js" ]
 ]);<br />
 ATTR('CUSTOM_END', [
  "Optimize" => [ 'src' => "css/normalize.css" ]
@@ -82,8 +82,8 @@ _FOOTER();
 
 // FOOTER
 ATTR('SCRIPT', [
- "LABEL0" => [ 'src' => "css/normalize.css" ],
- "LABEL1" => [ 'src' => "css/main.css" ]
+ "LABEL0" => [ 'src' => "css/normalize.js" ],
+ "LABEL1" => [ 'src' => "css/main.js" ]
 ]);
 
 if (isbelongs(['index','portfolio'], 1)) {
