@@ -27,7 +27,7 @@ ATTR('BEGIN_CUSTOM_END', [
 <h6>Copy and Paste for header.php</h6>
 
 <pre>
-require_once \_\_DIR\_\_ . '/PHPHtml-Optimizer/PHPHtml-Optimizer.php';
+require_once \_\_DIR\_\_ . '/PHPHtml-Optimizer/PHPHtml-Optimizer.php';<br />
 USE \PHPHtml\CodeOptimizer\merge\Html;
 USE \PHPHtml\CodeOptimizer\optimizer\Html AS Optimizer;
 USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS OptimizerCare; <br />
@@ -60,7 +60,7 @@ ATTR('BEGIN_CUSTOM_END', [<br />
 ]);<br />
 if (isbelongs('index', 1)) { ?> 
 
- < !-- 
+ <!-- 
  
  <style> 
    /**  Header style goes here.. **/
@@ -70,7 +70,7 @@ if (isbelongs('index', 1)) { ?>
     /**  Header script goes here.. **/
  </script>
 
- -- >
+ -->
 
 <?php }  
 
