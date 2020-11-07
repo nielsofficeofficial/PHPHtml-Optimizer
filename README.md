@@ -11,7 +11,7 @@ To refractor/optimize code is a hassle and heavy load burden in programming, All
 
 <h6>Custom ATTR/ELEMENT</h6>
 <pre>
-// PARAMETERS
+// ATTR() VALID PARAMETERS
 META | TITLE | LINK | SCRIPT | CUSTOM_END | BEGIN_CUSTOM_END
 </pre>
 <pre>
