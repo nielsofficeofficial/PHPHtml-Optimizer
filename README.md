@@ -9,7 +9,7 @@ When the browser detect that there will no HTML printed the interpreter will exe
 To refractor/optimize code is a hassle and heavy load burden in programming, Allow PHPHtml-Optimizer will do that for you while you develop your Internet application, with this library will push you driving your codes learning the OOP concept to make more effective your codes into your application neat and clean not just clean but beautiful maintainable codes, you can use this library and feel FREE if you are comfortable.    
 </p>
 
-<h5>Cutom ATTR/ELEMENT</h5>
+<h6>Cutom ATTR/ELEMENT</h6>
 <pre>
 // None closing inline element | PARAMETER : CUSTOM_END
 ATTR('CUSTOM_END', [
@@ -24,45 +24,43 @@ ATTR('BEGIN_CUSTOM_END', [
 </pre>
 
 <h4>Quick Start</h4>
-<h4>Copy and Paste for header.php</h4>
+<h6>Copy and Paste for header.php</h6>
+
 <pre>
-
 require_once \_\_DIR\_\_ . '/PHPHtml-Optimizer/PHPHtml-Optimizer.php';
-
 USE \PHPHtml\CodeOptimizer\merge\Html;
 USE \PHPHtml\CodeOptimizer\optimizer\Html AS Optimizer;
-USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS OptimizerCare;
-
-$Html = NEW Optimizer();
-$FileEnhance = NEW OptimizerCare();
- 
-_HTML(SetElemAttr(['class','lang'],['no-js','']));
-_HEAD();
-ATTR('META', [
+USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS OptimizerCare; <br />
+$Html 		 = NEW Optimizer();
+$FileEnhance = NEW OptimizerCare();<br />
+_HTML(SetElemAttr(['class','lang'],['no-js','']));<br />
+_HEAD();<br />
+ATTR('META', [<br />
  "M0" => [ 'charset'    => "utf-8"],
- "M1" => [ 'http-equiv' => "x-ua-compatible", 'content' => "" ]
-]); 
-ATTR('TITLE', 'QUICK START'); 
-ATTR('META', [ 
+ "M1" => [ 'http-equiv' => "x-ua-compatible", 'content' => "" ]<br />
+]); <br />
+ATTR('TITLE', 'QUICK START'); <br />
+ATTR('META', [ <br />
  "M0" => [ 'name' => "description", 'content' => ""],
- "M1" => [ 'name' => "viewport",    'content' => "width=device-width, initial-scale=1" ]
-]); 
-ATTR('LINK', [ 
+ "M1" => [ 'name' => "viewport",    'content' => "width=device-width, initial-scale=1" ]<br />
+]); <br />
+ATTR('LINK', [<br /> 
  "L0" => [ 'rel' => "manifest", 		'src' => "site.webmanifest"],
- "L1" => [ 'rel' => "apple-touch-icon", 'src' => "icon.png"]
-]); 
-ATTR('SCRIPT', [
+ "L1" => [ 'rel' => "apple-touch-icon", 'src' => "icon.png"]<br />
+]); <br />
+ATTR('SCRIPT', [<br />
  "SP1" => [ 'src' => "css/normalize.css" ],
- "SP2" => [ 'src' => "css/main.css" ]
-]);
-ATTR('CUSTOM_END', [
- "Optimize" => [ 'src' => "css/normalize.css" ]
-]);
-ATTR('BEGIN_CUSTOM_END', [
- "Opt" => [ 'src' => "css/normalize.css" ]
-]);
-if (isbelongs('index', 1)) { \\?\> 
-<!-- 
+ "SP2" => [ 'src' => "css/main.css" ]<br />
+]);<br />
+ATTR('CUSTOM_END', [<br />
+ "Optimize" => [ 'src' => "css/normalize.css" ]<br />
+]);<br />
+ATTR('BEGIN_CUSTOM_END', [<br />
+ "Opt" => [ 'src' => "css/normalize.css" ]<br />
+]);<br />
+if (isbelongs('index', 1)) { ?> 
+
+ < !-- 
  
  <style> 
    /**  Header style goes here.. **/
@@ -72,8 +70,10 @@ if (isbelongs('index', 1)) { \\?\>
     /**  Header script goes here.. **/
  </script>
 
- -->
-\\<\\?\\php \}  
+ -- >
+
+<?php }  
+
 xHEAD();
 _BODY();
 </pre>
