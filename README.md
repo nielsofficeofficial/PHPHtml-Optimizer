@@ -82,8 +82,8 @@ _FOOTER();
 
 // FOOTER
 ATTR('SCRIPT', [
- "SP1" => [ 'src' => "css/normalize.css" ],
- "SP2" => [ 'src' => "css/main.css" ]
+ "LABEL0" => [ 'src' => "css/normalize.css" ],
+ "LABEL1" => [ 'src' => "css/main.css" ]
 ]);
 
 if (isbelongs(['index','portfolio'], 1)) {  
