@@ -27,7 +27,6 @@ ATTR('BEGIN_CUSTOM_END', [
 <h6>Copy and paste for header.php</h6>
 
 <pre>
-require_once __DIR__ . '/PHPHtml-Optimizer/PHPHtml-Optimizer.php';<br />
 USE \PHPHtml\CodeOptimizer\merge\Html;
 USE \PHPHtml\CodeOptimizer\optimizer\Html AS Optimizer;
 USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS OptimizerCare; <br />
