@@ -78,31 +78,6 @@ xHEAD();
 _BODY();
 </pre>
 
-
-<h4>Copy and Paste for footer.php</h4>
-<pre>
-_FOOTER();
-// FOOTER
-ATTR('SCRIPT', [
- "SP1" => [ 'src' => "css/normalize.css" ],
- "SP2" => [ 'src' => "css/main.css" ]
-]);
-
-if (isbelongs(['index','portfolio'], 1)) {\\?\>  
-<!--
-
- <script> 
-    /**  Header script goes here.. **/
- </script>
-
--->
-\\<\\?\\php \} 
-
-xFOOTER();
-xBODY();
-xHTML();
-</pre>
-<br />
 <h4>Installing PHPHtml-Optimizer/Composer</h4>
 <pre>
 
