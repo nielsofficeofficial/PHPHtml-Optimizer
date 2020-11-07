@@ -27,7 +27,7 @@ ATTR('BEGIN_CUSTOM_END', [
 <h4>Copy and Paste for header.php</h4>
 <pre>
 
-require_once __DIR__ . '/PHPHtml-Optimizer/PHPHtml-Optimizer.php';
+require_once \_\_DIR\_\_ . '/PHPHtml-Optimizer/PHPHtml-Optimizer.php';
 
 USE \PHPHtml\CodeOptimizer\merge\Html;
 USE \PHPHtml\CodeOptimizer\optimizer\Html AS Optimizer;
@@ -61,7 +61,7 @@ ATTR('CUSTOM_END', [
 ATTR('BEGIN_CUSTOM_END', [
  "Opt" => [ 'src' => "css/normalize.css" ]
 ]);
-if (isbelongs('index', 1)) { ?> 
+if (isbelongs('index', 1)) { \\?\> 
 <!-- 
  
  <style> 
@@ -73,7 +73,7 @@ if (isbelongs('index', 1)) { ?>
  </script>
 
  -->
-<?php }  
+\\<\\?\\php \}  
 xHEAD();
 _BODY();
 </pre>
@@ -88,7 +88,7 @@ ATTR('SCRIPT', [
  "SP2" => [ 'src' => "css/main.css" ]
 ]);
 
-if (isbelongs(['index','portfolio'], 1)) { ?> 
+if (isbelongs(['index','portfolio'], 1)) {\\?\>  
 <!--
 
  <script> 
@@ -96,7 +96,7 @@ if (isbelongs(['index','portfolio'], 1)) { ?>
  </script>
 
 -->
-<?php }  
+\\<\\?\\php \} 
 
 xFOOTER();
 xBODY();
