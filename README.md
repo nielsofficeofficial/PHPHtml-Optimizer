@@ -30,6 +30,7 @@ ATTR('BEGIN_CUSTOM_END', [
 <h4>Quick Start : <span>Copy and paste for header.php</span> </h4>
 
 <pre>
+
 USE \PHPHtml\CodeOptimizer\merge\Html;
 USE \PHPHtml\CodeOptimizer\optimizer\Html AS Optimizer;
 USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS OptimizerCare; <br />
@@ -65,11 +66,10 @@ ATTR('BEGIN_CUSTOM_END', [
 
    
 
- <?php }  
+ }  
 
 xHEAD();
 _BODY();
-
 </pre>
 
 
