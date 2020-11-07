@@ -24,10 +24,10 @@ ATTR('BEGIN_CUSTOM_END', [
 </pre>
 
 <h4>Quick Start</h4>
-<h6>Copy and Paste for header.php</h6>
+<h6>Copy and paste for header.php</h6>
 
 <pre>
-require_once \_\_DIR\_\_ . '/PHPHtml-Optimizer/PHPHtml-Optimizer.php';<br />
+require_once __DIR__ . '/PHPHtml-Optimizer/PHPHtml-Optimizer.php';<br />
 USE \PHPHtml\CodeOptimizer\merge\Html;
 USE \PHPHtml\CodeOptimizer\optimizer\Html AS Optimizer;
 USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS OptimizerCare; <br />
