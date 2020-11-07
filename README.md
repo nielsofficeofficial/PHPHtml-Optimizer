@@ -23,8 +23,7 @@ ATTR('BEGIN_CUSTOM_END', [
 ]);
 </pre>
 
-<h4>Quick Start</h4>
-<h6>Copy and paste for header.php</h6>
+<h4>Quick Start : <span>Copy and paste for header.php</span> </h4>
 
 <pre>
 USE \PHPHtml\CodeOptimizer\merge\Html;
