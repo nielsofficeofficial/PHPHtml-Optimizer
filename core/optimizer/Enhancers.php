@@ -435,9 +435,8 @@ final private function cpe_FileHander_hdr($PARAM__, $QuickStart__) {
 
     }  
 
-
     # END PERFORM  
-    parent::PERFORM(">".parent::_setGATE()."/".$cpe_FileHander_keys[$QuickStart_].">\n");
+    parent::PERFORM(">".parent::_setGATE()."/".strtolower($cpe_FileHander_keys[$QuickStart_]).">\n");
 
    }
 
