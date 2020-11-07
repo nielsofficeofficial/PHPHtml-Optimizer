@@ -307,138 +307,33 @@ final private function cpe_FileHander_hdr($PARAM__, $QuickStart__) {
  if ($PARAM__ === 'META' || $PARAM__ === __META__ )
  {  
    
-   # LOOP THE MULTI DIMENTIONAL ARRAY INTO FOR EACH LOOP  
-   $cpe_FileHander_keys = array_keys($QuickStart__);
-    
-    # BEGIN FROM ZERO THEN RETURN COUNT QUICKSTART ++
-   for($QuickStart_ = 0; $QuickStart_ < count($QuickStart__); $QuickStart_++) 
-   {
-     
-     # BEGIN PERFORM HTML
-     parent::PERFORM(parent::_setGATE().strtolower($PARAM__).__SPACE()); 
-     
-     # LOOP WITHIN MULTI ASSOC ARRAY INTO FORMS OF VALUE INTO HTML
-     foreach( $QuickStart__[$cpe_FileHander_keys[$QuickStart_]] as $ATTR_NAME => $ATTR_VALUE)  { 
-     
-      #RETURN ALL VALUE IF IT IS TRUE
-      parent::PERFORM($ATTR_NAME."=\"".$ATTR_VALUE."\"".__SPACE()); 
-     
-     }  
-    
-    # END PERFORM
-    parent::PERFORM(">\n");
+    parent::cpe_FileJandler_meta($QuickStart__, $PARAM__);
 
-   }
-  
   # ELSE IF CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER
  } elseif ( $PARAM__ === 'LINK' || $PARAM__ === __LINK__ ) {
    
-   # BEGIN FROM ZERO THEN RETURN COUNT QUICKSTART ++
-   $cpe_FileHander_keys = array_keys($QuickStart__);
-   
-   # BEGIN FROM ZERO THEN RETURN COUNT QUICKSTART ++
-   for($QuickStart_ = 0; $QuickStart_ < count($QuickStart__); $QuickStart_++) 
-   {
-     
-     # BEGIN PERFORM HTML
-     parent::PERFORM(parent::_setGATE().strtolower($PARAM__).__SPACE()); 
-
-     # LOOP WITHIN MULTI ASSOC ARRAY INTO FORMS OF VALUE INTO HTML
-     foreach( $QuickStart__[$cpe_FileHander_keys[$QuickStart_]] as $ATTR_NAME => $ATTR_VALUE)  { 
-
-      #RETURN ALL VALUE IF IT IS TRUE
-      parent::PERFORM($ATTR_NAME."=\"".$ATTR_VALUE."\"".__SPACE()); 
-
-    }  
-
-    # END PERFORM
-    parent::PERFORM(">\n");
-
-   }
+     parent::cpe_FileJandler_link($QuickStart__, $PARAM__);
 
   # ELSE IF CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER
   } elseif ( $PARAM__ === 'SCRIPT' || $PARAM__ === __SCRIPT__ ) {
 
-   # BEGIN FROM ZERO THEN RETURN COUNT QUICKSTART ++
-   $cpe_FileHander_keys = array_keys($QuickStart__);
-   
-   # BEGIN FROM ZERO THEN RETURN COUNT QUICKSTART ++   
-   for($QuickStart_ = 0; $QuickStart_ < count($QuickStart__); $QuickStart_++) 
-   {
-
-     # BEGIN PERFORM HTML
-     parent::PERFORM(parent::_setGATE().strtolower($PARAM__).__SPACE()); 
-
-     # LOOP WITHIN MULTI ASSOC ARRAY INTO FORMS OF VALUE INTO HTML
-     foreach( $QuickStart__[$cpe_FileHander_keys[$QuickStart_]] as $ATTR_NAME => $ATTR_VALUE)  {
-
-      #RETURN ALL VALUE IF IT IS TRUE
-      parent::PERFORM($ATTR_NAME."=\"".$ATTR_VALUE."\"".__SPACE()); 
-
-    }  
-
-    # END PERFORM
-    parent::PERFORM(">".parent::_setGATE()."/".strtolower($PARAM__).">\n");
-
-   }
+     parent::cpe_FileJandler_script($QuickStart__, $PARAM__);
 
   # ELSE IF CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER
   }  elseif ( $PARAM__ === 'TITLE' || $PARAM__ === __TITLE__ ) {
     
     # IF IT IS TITLE PERFORM TITLE OPTIMIZER
-     parent::PERFORM(parent::TITLE($QuickStart_));
+     $this->PERFORM(parent::TITLE($QuickStart_));
 
   # ELSE IF CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER
   }  elseif ( $PARAM__ === 'CUSTOM_END' || $PARAM__ === __CUSTOM_END__ ) {
    
-   # IF THE PARAMETERS IS CUTOM END THEN CUSTOM HTML WILL RETURN
-   $cpe_FileHander_keys = array_keys($QuickStart__);
-   
-   # BEGIN FROM ZERO THEN RETURN COUNT QUICKSTART ++      
-   for($QuickStart_ = 0; $QuickStart_ < count($QuickStart__); $QuickStart_++) 
-   {
-
-     # BEGIN PERFORM HTML
-     parent::PERFORM(parent::_setGATE().strtolower($cpe_FileHander_keys[$QuickStart_])." "); 
-
-     # LOOP WITHIN MULTI ASSOC ARRAY INTO FORMS OF VALUE INTO HTML
-     foreach( $QuickStart__[$cpe_FileHander_keys[$QuickStart_]] as $ATTR_NAME => $ATTR_VALUE) { 
-
-      #RETURN ALL VALUE IF IT IS TRUE
-      parent::PERFORM($ATTR_NAME."=\"".$ATTR_VALUE."\"".__SPACE()); 
-
-    }  
-
-    # END PERFORM    
-    parent::PERFORM(">\n");
-
-  }
+     parent::cpe_FileJandler_cutom_elem_inline($QuickStart__, $PARAM__);
 
   # ELSE IF CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER
 }  elseif ( $PARAM__ === 'BEGIN_CUSTOM_END' || $PARAM__ === __BEGIN_CUSTOM_END__ ) {
 
-   # IF THE PARAMETERS IS CUTOM END THEN CUSTOM HTML WILL RETURN
-   $cpe_FileHander_keys = array_keys($QuickStart__);
-   
-   # BEGIN FROM ZERO THEN RETURN COUNT QUICKSTART ++    
-   for($QuickStart_ = 0; $QuickStart_ < count($QuickStart__); $QuickStart_++) 
-   {
-
-     # BEGIN PERFORM HTML
-     parent::PERFORM(parent::_setGATE().strtolower($cpe_FileHander_keys[$QuickStart_])." "); 
-
-     # LOOP WITHIN MULTI ASSOC ARRAY INTO FORMS OF VALUE INTO HTML
-     foreach( $QuickStart__[$cpe_FileHander_keys[$QuickStart_]] as $ATTR_NAME => $ATTR_VALUE)  {
-
-      #RETURN ALL VALUE IF IT IS TRUE
-      parent::PERFORM($ATTR_NAME."=\"".$ATTR_VALUE."\"".__SPACE()); 
-
-    }  
-
-    # END PERFORM  
-    parent::PERFORM(">".parent::_setGATE()."/".strtolower($cpe_FileHander_keys[$QuickStart_]).">\n");
-
-   }
+     parent::cpe_FileJandler_cutom_elem_closing_tag($QuickStart__, $PARAM__);
 
 } else {
   

@@ -4016,6 +4016,141 @@ protected function _isTrueBREAK_assoc($assoc) {
 }
 
 
+protected function cpe_FileJandler_meta($QuickStart__, $PARAM__) {
+     # LOOP THE MULTI DIMENTIONAL ARRAY INTO FOR EACH LOOP  
+   $cpe_FileHander_keys = array_keys($QuickStart__);
+    
+    # BEGIN FROM ZERO THEN RETURN COUNT QUICKSTART ++
+   for($QuickStart_ = 0; $QuickStart_ < count($QuickStart__); $QuickStart_++) 
+   {
+     
+     # BEGIN PERFORM HTML
+     $this->PERFORM($this->_setGATE().strtolower($PARAM__).__SPACE()); 
+     
+     # LOOP WITHIN MULTI ASSOC ARRAY INTO FORMS OF VALUE INTO HTML
+     foreach( $QuickStart__[$cpe_FileHander_keys[$QuickStart_]] as $ATTR_NAME => $ATTR_VALUE)  { 
+     
+      #RETURN ALL VALUE IF IT IS TRUE
+      $this->PERFORM($ATTR_NAME."=\"".$ATTR_VALUE."\"".__SPACE()); 
+     
+     }  
+    
+    # END PERFORM
+    $this->PERFORM(">\n");
+
+   }
+
+}
+
+protected function cpe_FileJandler_link($QuickStart__, $PARAM__) { 
+
+   # BEGIN FROM ZERO THEN RETURN COUNT QUICKSTART ++
+   $cpe_FileHander_keys = array_keys($QuickStart__);
+   
+   # BEGIN FROM ZERO THEN RETURN COUNT QUICKSTART ++
+   for($QuickStart_ = 0; $QuickStart_ < count($QuickStart__); $QuickStart_++) 
+   {
+     
+     # BEGIN PERFORM HTML
+     $this->PERFORM($this->_setGATE().strtolower($PARAM__).__SPACE()); 
+
+     # LOOP WITHIN MULTI ASSOC ARRAY INTO FORMS OF VALUE INTO HTML
+     foreach( $QuickStart__[$cpe_FileHander_keys[$QuickStart_]] as $ATTR_NAME => $ATTR_VALUE)  { 
+
+      #RETURN ALL VALUE IF IT IS TRUE
+      $this->PERFORM($ATTR_NAME."=\"".$ATTR_VALUE."\"".__SPACE()); 
+
+    }  
+
+    # END PERFORM
+    $this->PERFORM(">\n");
+
+   }
+
+}
+
+protected function cpe_FileJandler_script($QuickStart__, $PARAM__) { 
+
+   # BEGIN FROM ZERO THEN RETURN COUNT QUICKSTART ++
+   $cpe_FileHander_keys = array_keys($QuickStart__);
+   
+   # BEGIN FROM ZERO THEN RETURN COUNT QUICKSTART ++   
+   for($QuickStart_ = 0; $QuickStart_ < count($QuickStart__); $QuickStart_++) 
+   {
+
+     # BEGIN PERFORM HTML
+     $this->PERFORM($this->_setGATE().strtolower($PARAM__).__SPACE()); 
+
+     # LOOP WITHIN MULTI ASSOC ARRAY INTO FORMS OF VALUE INTO HTML
+     foreach( $QuickStart__[$cpe_FileHander_keys[$QuickStart_]] as $ATTR_NAME => $ATTR_VALUE)  {
+
+      #RETURN ALL VALUE IF IT IS TRUE
+      $this->PERFORM($ATTR_NAME."=\"".$ATTR_VALUE."\"".__SPACE()); 
+
+    }  
+
+    # END PERFORM
+    $this->PERFORM(">".$this->_setGATE()."/".strtolower($PARAM__).">\n");
+
+   }
+
+}
+
+
+protected function cpe_FileJandler_cutom_elem_inline($QuickStart__, $PARAM__) { 
+
+  # IF THE PARAMETERS IS CUTOM END THEN CUSTOM HTML WILL RETURN
+   $cpe_FileHander_keys = array_keys($QuickStart__);
+   
+   # BEGIN FROM ZERO THEN RETURN COUNT QUICKSTART ++      
+   for($QuickStart_ = 0; $QuickStart_ < count($QuickStart__); $QuickStart_++) 
+   {
+
+     # BEGIN PERFORM HTML
+     $this->PERFORM($this->_setGATE().strtolower($cpe_FileHander_keys[$QuickStart_])." "); 
+
+     # LOOP WITHIN MULTI ASSOC ARRAY INTO FORMS OF VALUE INTO HTML
+     foreach( $QuickStart__[$cpe_FileHander_keys[$QuickStart_]] as $ATTR_NAME => $ATTR_VALUE) { 
+
+      #RETURN ALL VALUE IF IT IS TRUE
+      $this->PERFORM($ATTR_NAME."=\"".$ATTR_VALUE."\"".__SPACE()); 
+
+    }  
+
+    # END PERFORM    
+    $this->PERFORM(">\n");
+
+  }
+
+}
+
+protected function cpe_FileJandler_cutom_elem_closing_tag($QuickStart__, $PARAM__) { 
+
+   # IF THE PARAMETERS IS CUTOM END THEN CUSTOM HTML WILL RETURN
+   $cpe_FileHander_keys = array_keys($QuickStart__);
+   
+   # BEGIN FROM ZERO THEN RETURN COUNT QUICKSTART ++    
+   for($QuickStart_ = 0; $QuickStart_ < count($QuickStart__); $QuickStart_++) 
+   {
+
+     # BEGIN PERFORM HTML
+     $this->PERFORM($this->_setGATE().strtolower($cpe_FileHander_keys[$QuickStart_])." "); 
+
+     # LOOP WITHIN MULTI ASSOC ARRAY INTO FORMS OF VALUE INTO HTML
+     foreach( $QuickStart__[$cpe_FileHander_keys[$QuickStart_]] as $ATTR_NAME => $ATTR_VALUE)  {
+
+      #RETURN ALL VALUE IF IT IS TRUE
+      $this->PERFORM($ATTR_NAME."=\"".$ATTR_VALUE."\"".__SPACE()); 
+
+    }  
+
+    # END PERFORM  
+    $this->PERFORM(">".$this->_setGATE()."/".strtolower($cpe_FileHander_keys[$QuickStart_]).">\n");
+
+   }
+
+}
+
 /**
   *
   * @method private function noHTML
