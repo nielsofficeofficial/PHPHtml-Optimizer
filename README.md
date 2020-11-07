@@ -78,8 +78,7 @@ _BODY();
 
 <h4>Quick Start : <span>Copy and paste for footer.php</span> </h4>
 <pre>
-_FOOTER();
-
+_FOOTER();<br />
 ATTR('SCRIPT', [
  "LABEL0" => [ 'src' => "js/normalize.js" ],
  "LABEL1" => [ 'src' => "js/main.js" ]
