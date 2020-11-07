@@ -80,7 +80,6 @@ _BODY();
 <pre>
 _FOOTER();
 
-// FOOTER
 ATTR('SCRIPT', [
  "LABEL0" => [ 'src' => "js/normalize.js" ],
  "LABEL1" => [ 'src' => "js/main.js" ]
