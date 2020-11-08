@@ -34,7 +34,6 @@ USE \PHPHtml\CodeOptimizer\optimizer\Html AS Optimizer;
 USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS OptimizerCare; <br />
 $Html 		 = NEW Optimizer();
 $FileEnhance = NEW OptimizerCare();<br />
-<br />
 _HTML(SetElemAttr(['class','lang'],['no-js','']));<br />
 _HEAD();<br />
 ATTR('META', [
