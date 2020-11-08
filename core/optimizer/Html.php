@@ -4152,6 +4152,24 @@ protected function cpe_FileJandler_cutom_elem_inline($elem_inlineQS__, $PARAM__)
 /**
   *
   * @method private function noHTML
+  * @static @private Method Defined cpe_FileJandler_cutom_elem_inline  
+  * RETURN inline elem
+  *
+  **/
+protected function cpe_FileJandler_doctype($PARAM__) { 
+
+  # IF THE PARAMETERS IS CUTOM END THEN CUSTOM HTML WILL RETURN
+  # BEGIN PERFORM HTML
+  $this->PERFORM($this->_setGATE().'!'.strtolower($PARAM__).' html'); 
+
+  # END PERFORM    
+  $this->PERFORM(">\n");
+
+  }
+
+/**
+  *
+  * @method private function noHTML
   * @static @private Method Defined cpe_FileJandler_cutom_elem_closing_tag  
   * RETURN inline closing tag
   *

@@ -12,7 +12,7 @@ To refractor/optimize code is a hassle and heavy load burden in programming, All
 <h6>Custom ATTR/ELEMENT</h6>
 <pre>
 // ATTR() VALID PARAMETERS
-META | TITLE | LINK | SCRIPT | CUSTOM_END | BEGIN_CUSTOM_END
+META | TITLE | LINK | SCRIPT | CUSTOM_END | BEGIN_CUSTOM_END | DOCTYPE
 </pre>
 <pre>
 // None closing inline element | PARAMETER : CUSTOM_END
@@ -36,6 +36,7 @@ USE \PHPHtml\CodeOptimizer\optimizer\Html AS Optimizer;
 USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS OptimizerCare; <br />
 $Html 		 = NEW Optimizer();
 $FileEnhance = NEW OptimizerCare();<br />
+ATTR('DOCTYPE','doctype');<br />
 _HTML(SetElemAttr(['class','lang'],['no-js','']));<br />
 _HEAD();<br />
 ATTR('META', [

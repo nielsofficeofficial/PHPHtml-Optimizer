@@ -401,3 +401,17 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancer AS PHPFileHandler;
    |
    */
   define('__ELEM__', 'ELEM' );
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Set PARAM ELEM
+   |
+   |
+   |
+   |
+   */
+  define('__DOCTYPE__', 'DOCTYPE' );

@@ -349,7 +349,15 @@ final private function cpe_FileHander_hdr($PARAM__, $QuickStart__) {
      $this->PERFORM(parent::TITLE($QuickStart_));
 
   # ELSE IF CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER
-  }  elseif ( $PARAM__ === 'CUSTOM_END' || $PARAM__ === __CUSTOM_END__ ) {
+  } elseif ( $PARAM__ === 'DOCTYPE' || $PARAM__ === __DOCTYPE__ ) {
+    
+    # IF IT IS TITLE PERFORM TITLE OPTIMIZER
+    $QuickStart__ = strtolower($QuickStart__);
+
+     parent::cpe_FileJandler_doctype($QuickStart__);
+
+  # ELSE IF CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER
+  } elseif ( $PARAM__ === 'CUSTOM_END' || $PARAM__ === __CUSTOM_END__ ) {
    
      parent::cpe_FileJandler_cutom_elem_inline($QuickStart__, $PARAM__);
 
