@@ -78,7 +78,7 @@ _BODY();
 <pre>
 _div(SetElemAttr(['data-select'],['true']),'Parent_id','row');<br />
  PERFORM(<br />
-  ELEM('h1','PHPHtml-Optimizer!') .
+  ELEM('h1','Welcome to PHPHtml-Optimizer!') .
   ELEM('p', 'HELLO WORLD - For PHP/Developer - Back End Programmers') <br />
  );<br />
 xdiv(' / END of Class Parent row' );
