@@ -254,22 +254,141 @@ function ATTR($PARAM__, $QuickStart__) {
 
 }
 
+/**
+  *
+  * @since 05.11.2020
+  * @category PHPFileEnhancer
+  * @method Defined MODIFIED ELEM HTML  
+  *
+  **/
+function ELEM($Element__=null, $value__=null, $elemAttr__=null, $elemId__=null, $elemClass__=null) {
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : PHPFileEnhancer
+   * @package : Static Procedural
+   * @method  : MODIFIED ELEM() HTML
+   *
+   *
+   *
+   **/ 
+ $Enhancer = new PHPFileHandler();
+ return $Enhancer->ELEM($Element__, $value__, $elemAttr__, $elemId__, $elemClass__);
+
+}
+
+/**
+  *
+  * @since 05.11.2020
+  * @category PHPFileEnhancer
+  * @method Defined DOELSE()  
+  *
+  **/
+function DOELSE($condition=null, $if_result=null, $else_result=null, $assoc=null) {
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : PHPFileEnhancer
+   * @package : Static Procedural
+   * @method  : DOELSE()
+   *
+   *
+   *
+   **/ 
+ $Enhancer = new PHPFileHandler();
+ return $Enhancer->__magicELSE($condition, $if_result, $else_result, $assoc);
+
+}
 
 
+/**
+  *
+  * @since 05.11.2020
+  * @category PHPFileEnhancer
+  * @method Defined DOIF()  
+  *
+  **/
+function DOIF($condition=null, $if_result=null, $assoc=null) {
 
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : PHPFileEnhancer
+   * @package : Static Procedural
+   * @method  : DOIF()
+   *
+   *
+   *
+   **/ 
+ $Enhancer = new PHPFileHandler();
+ return $Enhancer->__magicIF($condition, $if_result, $assoc);
 
+}
 
+/**
+  *
+  * @since 05.11.2020
+  * @category PHPFileEnhancer
+  * @method Defined MERGE()  
+  *
+  **/
+function MERGE($merge=null) {
 
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : PHPFileEnhancer
+   * @package : Static Procedural
+   * @method  : MERGE()
+   *
+   *
+   *
+   **/ 
+ $Enhancer = new PHPFileHandler();
+ return $Enhancer->MERGE($merge);
 
+}
 
+/**
+  *
+  * @since 05.11.2020
+  * @category PHPFileEnhancer
+  * @method Defined PERFORM()  
+  *
+  **/
+function PERFORM($str=null, $assoc=null) {
 
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : PHPFileEnhancer
+   * @package : Static Procedural
+   * @method  : PERFORM()
+   *
+   *
+   *
+   **/ 
+ $Enhancer = new PHPFileHandler();
+ return $Enhancer->PERFORM($str, $assoc);
 
-
-
-
-
-
-
+}
 
 
 

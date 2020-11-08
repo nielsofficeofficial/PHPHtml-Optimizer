@@ -3162,7 +3162,7 @@ static private function return_elementINLINE($elem_val, $elem_key, $value, $js, 
    
    # WHEN_THE_LOOP_IS_TRUE_THEN
    # DO_CONTENT
-   self::PERFORM( $return_elementINLINE  = !empty($value) && $value !== NULL ? $value : FALSE ); 
+   self::PERFORM( $return_elementINLINE  = (!empty($value) && $value !== NULL) ? $value : FALSE ); 
    
      # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
      # RETURN_GET___HTML_METHOD_INCLUDED_ 
@@ -3226,7 +3226,7 @@ static private function _elemenHTMLINLINE($elem_val, $elem_key, $value, $js, $id
 
      # WHEN_THE_LOOP_IS_TRUE_THEN
      # DO_CONTENT
-     $return_elementINLINE  .= $value; 
+     $return_elementINLINE  .= (!empty($value) && $value !== NULL) ? $value : FALSE ; 
    
      # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
      # RETURN_GET___HTML_METHOD_INCLUDED_ 

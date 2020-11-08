@@ -3118,7 +3118,7 @@ class Html {
    
    # WHEN_THE_LOOP_IS_TRUE_THEN
    # DO_CONTENT
-   self::PERFORM( $return_elementINLINE  = !empty($value) && $value !== NULL ? $value : FALSE  ); 
+   self::PERFORM( $return_elementINLINE  = (!empty($value) && $value !== NULL) ? $value : FALSE  ); 
    
      # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
      # RETURN_GET___HTML_METHOD_INCLUDED_ 
@@ -3139,7 +3139,7 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
- private function _elemenHTMLINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label) {
+ protected function _elemenHTMLINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label) {
    
      if ( $label == TRUE && $label === 'MERGE') {
      
@@ -3182,7 +3182,7 @@ class Html {
 
      # WHEN_THE_LOOP_IS_TRUE_THEN
      # DO_CONTENT
-     $return_elementINLINE  .= $value; 
+     $return_elementINLINE  .= (!empty($value) && $value !== NULL) ? $value : FALSE ;  
    
      # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
      # RETURN_GET___HTML_METHOD_INCLUDED_ 
@@ -3535,8 +3535,7 @@ class Html {
       
                       .$attr_value
       
-                      .$this->_getDQUOTE()
-                      .$this->_tagSPACER() );
+                      .$this->_getDQUOTE());
         }
     }
     
@@ -3587,8 +3586,8 @@ class Html {
    
                       .$attr_value
                       
-                      .$this->_getDQUOTE()
-                      .$this->_tagSPACER();
+                      .$this->_getDQUOTE();
+                      
         }
     }
 
@@ -4186,6 +4185,27 @@ protected function cpe_FileJandler_cutom_elem_closing_tag($QuickStart__, $PARAM_
 
 /**
   *
+  * @method private function cpe_custom_elements
+  * @package @private Method Defined cpe_custom_elements() // use custom HTML
+  *
+  **/
+protected function cpe_custom_elements($Element__, $value__, $elemAttr__, $elemId__, $elemClass__) {
+
+   
+   
+   # GET STRING_ELEMENT_THEN_RETURN
+   $Element__     = strtolower($Element__);
+
+   # GET STRING_ELEMENT_ATTR_RETURN
+   $ElementAttr__ = $this->new_setHTMLattr($elemAttr__, $elemId__, $elemClass__);
+   
+   # THEN RETURN ALL TRUE? RETURN FUNCTION CUSTOM MODIFIED HTML
+   return $this->cpe_Filehandler_Val($value__, $Element__,$ElementAttr__);
+
+}
+
+/**
+  *
   * @method private function noHTML
   * @package @private Method Defined __magicELSE() // use alternaive if else statement inside function
   *
@@ -4438,6 +4458,37 @@ protected function cpe_xib6_FileHandler_MultiPage_array($GMultiP__, $GTCP__) {
 
 }
 
+/**
+  *
+  * @method private function 
+  * @package @private Method Defined  ModifiedHTML
+  *
+  **/
+private function SetReturnElement_ModifiedHTML($modifiedHTMLE_) {
+
+  return $this->_setGATE().$this->_setENDS().strtolower($modifiedHTMLE_).$this->_setENDGATE();
+
+}
+
+/**
+  *
+  * @method private function 
+  * @package @private Method Defined  ModifiedHTML Val
+  *
+  **/
+private function cpe_Filehandler_Val($tagVHtml__, $ValElem__,$ValEAttr__) {
+
+   $cpe_get_customELement  = "";
+
+   $cpe_get_customELement  .= $this->_setGATE().$ValElem__.$ValEAttr__;
+
+   $cpe_get_customELement  .= (!empty($tagVHtml__) && $tagVHtml__ !== NULL) ? $tagVHtml__ : FALSE ; 
+   
+   $cpe_get_customELement  .= $this->SetReturnElement_ModifiedHTML($ValElem__);       
+   
+   return($cpe_get_customELement);
+
+}
 /**
   *
   * @method protected function noHTML

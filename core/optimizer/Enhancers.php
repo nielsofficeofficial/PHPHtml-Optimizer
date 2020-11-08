@@ -87,9 +87,9 @@ public function SPACE() {
   * Neat and clean noHTML
   *
   **/
- public function MERGE($func_merge = null ) { 
+ public function MERGE($merge = null ) { 
 
-  return $this->_isTrue_SET_Merge($func_merge); 
+  return $this->_isTrue_SET_Merge($merge); 
 
 }
 
@@ -232,10 +232,36 @@ public function GetKeyFolderPath() {
 
 }
 
-
+/**
+  *
+  * @method public function PHPFileEnhancer
+  * @static Method Defined Usage: CountFolderFromPath 
+  * RETURN DATA FROM ARRAY PRINT FROM PAGE TO GET THE VALUE 
+  * NEED TO BE REGISTER TO CONFIGP.HP
+  * @since 27.10.2020
+  *
+  * $Enhancer->ATTR()
+  *
+  */
 public function ATTR($PARAM__, $QuickStart__) {
 
   return $this->cpe_FileHander_hdr($PARAM__, $QuickStart__);
+
+}
+
+/**
+  *
+  * @method public function PHPFileEnhancer
+  * @static Method Defined Usage: CountFolderFromPath 
+  * RETURN DATA FROM ARRAY PRINT FROM PAGE TO GET THE VALUE 
+  * NEED TO BE REGISTER TO CONFIGP.HP
+  * @since 27.10.2020
+  *
+  * $Enhancer->ELEM()
+  */
+public function ELEM($Element__=null, $value__=null, $elemAttr__=null, $elemId__=null, $elemClass__=null) {
+  
+  return $this->cpe_FileHandler_custom_elem($Element__, $value__, $elemAttr__, $elemId__, $elemClass__);
 
 }
 
@@ -337,20 +363,28 @@ final private function cpe_FileHander_hdr($PARAM__, $QuickStart__) {
 
 } else {
   
-  # PERFORM ERROR MASSGES
-  $ERROR_MSG  = " ";
-  $ERROR_MSG .= " Check ATTR('VALID_PARAM', [ ] ) only valid parameter can used <br />";
-  $ERROR_MSG .= " For Developer support visit github submit issue: ".parent::ELEMENT('a','Submit Github Support', parent::IssueSubmitAttr()).$this->BREAK(METHOD_ASSOC);   
-  $ERROR_MSG .= " Recomendation: ".parent::ELEMENT('a','Read Documentation Click Here',parent::DocxEnahncerSubmitAttr());      
-  
-   $this->PERFORM($ERROR_MSG);
+   $this->Enhance_ErrorMsg_att();
 
 } // END OF IF META
- 
-
 
 
 } // END OF METHOD
+
+/**
+  *
+  * @method protected function PHPFileEnhancer
+  * @static Method Defined cpe_FileHandler_custom_elem() 
+  * RETURN CUSTOM ELEMENTS
+  * 
+  * @since 08.11.2020
+  *
+  **/
+private function cpe_FileHandler_custom_elem($Element__, $value__, $elemAttr__, $elemId__, $elemClass__) {
+  
+  # RETURN ELEMENT CUSTOM HTML 
+  return parent::cpe_custom_elements($Element__, $value__, $elemAttr__, $elemId__, $elemClass__);
+  
+}
 
 /**
   *
@@ -446,6 +480,18 @@ final private function Enhacer_ErrorMsg() {
   $ERROR_MSG .= " Recomendation: ".parent::ELEMENT('a','Read Documentation Click Here',parent::DocxEnahncerSubmitAttr());      
 
   return ($ERROR_MSG);  
+
+}
+
+private function Enhance_ErrorMsg_att() {
+
+  # PERFORM ERROR MASSGES
+  $ERROR_MSG  = " ";
+  $ERROR_MSG .= " Check ATTR('VALID_PARAM', [ ] ) only valid parameter can used <br />";
+  $ERROR_MSG .= " For Developer support visit github submit issue: ".parent::ELEMENT('a','Submit Github Support', parent::IssueSubmitAttr()).$this->BREAK(METHOD_ASSOC);   
+  $ERROR_MSG .= " Recomendation: ".parent::ELEMENT('a','Read Documentation Click Here',parent::DocxEnahncerSubmitAttr());      
+  
+   $this->PERFORM($ERROR_MSG);
 
 }
 
