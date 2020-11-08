@@ -1873,7 +1873,7 @@ class Html {
   public function _noHTML($js=[], $id=null, $class=null) { 
 
     $Enhancer = NEW \PHPHtml\CodeOptimizer\optimizer\Enhancers();
-    $this->PERFORM( $Enhancer->ATTR('DOCTYPE','doctype')."\n".$this->get__HTML('STRUCTURE', 3, $js, $id, $class) );   }
+    $this->PERFORM( $Enhancer->ATTR('DOCTYPE','doctype').$this->get__HTML('STRUCTURE', 3, $js, $id, $class) );   }
 
 // CLOSING_METHOD_noHTML_TAG
   public function xnoHTML($label = NULL) { $this->PERFORM( $this->get_xHTML('STRUCTURE', 3, $label) ); }
