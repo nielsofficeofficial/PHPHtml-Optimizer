@@ -45,7 +45,7 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS PHPFileHandler;
   * @method Defined isbelong()  noHTML  
   *
   **/
-function isbelongs($page = null , $__GET_KEY_FOLDER_PATH__ = null ) {
+function isbelongs($page = null , $_GETKEYFOLDERPATH_ = null ) {
  
   /**
    *
