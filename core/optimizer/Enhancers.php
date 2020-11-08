@@ -272,19 +272,15 @@ public function ELEM($Element__=null, $value__=null, $elemAttr__=null, $elemId__
   *
   **/
 Protected function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
- 
- // INPUT_CURRENT_PAGE_NAME_VALIDATE
- // CHECL_INPUT_IF_IT_IS_AN_ARRAY | IF_TRUE_THEN_RETURN_AS_ARRAY_IF_FALSE_RETURN_AS_SIGNLE_POST
- $GetMultiPage__ = is_array($page) ? $IsMultiPage__ = $page :  $IsCurrentPage__  = $page; 
- 
- isset($GetMultiPage__) ? $GetMultiPage__ : $GetMultiPage__ = "";
 
  // INPUT_CURRENT_PAGE_NAME_VALIDATE
  // CHECL_INPUT_IF_IT_IS_AN_ARRAY | IF_TRUE_THEN_RETURN_AS_ARRAY_IF_FALSE_RETURN_AS_SIGNLE_POST
- $GetMultiPagesFile__ = is_array($Page_file) ? $IsMultiPagesFile__ = $Page_file :  $Page_file__  = $Page_file; 
+ $GetMultiPage__ = is_array($page) ? $page : $page; 
 
- isset($GetMultiPagesFile__) ? $GetMultiPagesFile__ : $GetMultiPage__ = "";
- 
+ // INPUT_CURRENT_PAGE_NAME_VALIDATE
+ // CHECL_INPUT_IF_IT_IS_AN_ARRAY | IF_TRUE_THEN_RETURN_AS_ARRAY_IF_FALSE_RETURN_AS_SIGNLE_POST
+ $GetMultiPagesFile__ = is_array($Page_file) ? $Page_file : $Page_file; 
+
  // CHECK_WHICH_PAGE_YOU_ARE_CUURENT_REQUEST
  // THEN_GET_THE_FILE_PAGE
  $CheckCurrentPage__ = __SELF_REQUEST__;
