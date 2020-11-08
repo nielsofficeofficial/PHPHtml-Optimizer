@@ -804,7 +804,7 @@ class Html {
   **/
    public function PERFORM($str=null, $assoc=null) { 
 
-    return self::_isTrue_SET_STRING($str, $assoc); 
+    return $this->_isTrue_SET_STRING($str, $assoc); 
 
  }
 
@@ -857,9 +857,9 @@ class Html {
   * RETURN HEADING _ noHTML TAG
   *
   **/
-  public function _H1($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('PRIMARY', 0, $js, $id, $class) ); }
+  public function _H1($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 0, $js, $id, $class) ); }
 // CLOSING_METHOD_noHTML_HEADING_TAG 
-  public function xH1($label = NULL) { self::PERFORM( $this->get_xHTML('PRIMARY', 0, $label) ); }
+  public function xH1($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 0, $label) ); }
 
 /**
   *
@@ -868,9 +868,9 @@ class Html {
   * RETURN HEADING _ noHTML TAG
   *
   **/
-  public function _H2($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('PRIMARY', 1, $js, $id, $class) ); }
+  public function _H2($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 1, $js, $id, $class) ); }
 // CLOSING_METHOD_noHTML_HEADING_TAG 
-  public function xH2($label = NULL) { self::PERFORM( $this->get_xHTML('PRIMARY', 1, $label) ); }
+  public function xH2($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 1, $label) ); }
 
 /**
   *
@@ -879,9 +879,9 @@ class Html {
   * RETURN HEADING _ noHTML TAG
   *
   **/
-  public function _H3($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('PRIMARY', 2, $js, $id, $class) ); }
+  public function _H3($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 2, $js, $id, $class) ); }
 // CLOSING_METHOD_noHTML_HEADING_TAG 
-  public function xH3($label = NULL) { self::PERFORM( $this->get_xHTML('PRIMARY', 2, $label) );  }
+  public function xH3($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 2, $label) );  }
 
 /**
   *
@@ -890,9 +890,9 @@ class Html {
   * RETURN HEADING _ noHTML TAG
   *
   **/
-  public function _H4($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('PRIMARY', 3, $js, $id, $class) );  }
+  public function _H4($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 3, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_HEADING_TAG 
-  public function xH4($label = NULL) { self::PERFORM( $this->get_xHTML('PRIMARY', 3, $label) ); }
+  public function xH4($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 3, $label) ); }
 
 /**
   *
@@ -901,9 +901,9 @@ class Html {
   * RETURN HEADING _ noHTML TAG
   *
   **/
-  public function _H5($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('PRIMARY', 4, $js, $id, $class) );  }
+  public function _H5($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 4, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_HEADING_TAG 
-  public function xH5($label = NULL) { self::PERFORM( $this->get_xHTML('PRIMARY', 4, $label) ); }
+  public function xH5($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 4, $label) ); }
 
 /**
   *
@@ -912,9 +912,9 @@ class Html {
   * RETURN HEADING _ noHTML TAG
   *
   **/
-  public function _H6($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('PRIMARY', 5, $js, $id, $class) ); }
+  public function _H6($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 5, $js, $id, $class) ); }
 // CLOSING_METHOD_noHTML_HEADING_TAG 
-  public function xH6($label = NULL) {  self::PERFORM( $this->get_xHTML('PRIMARY', 5, $label) ); }
+  public function xH6($label = NULL) {  $this->PERFORM( $this->get_xHTML('PRIMARY', 5, $label) ); }
 
 /**
   *
@@ -923,9 +923,9 @@ class Html {
   * RETURN NODE DIV _ noHTML TAG
   *
   **/
-  public function _DIV($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('PRIMARY', 6, $js, $id, $class) ); }
+  public function _DIV($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 6, $js, $id, $class) ); }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xDIV($label = NULL) { self::PERFORM( $this->get_xHTML('PRIMARY', 6, $label) ); }
+  public function xDIV($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 6, $label) ); }
 
 /**
   *
@@ -934,9 +934,9 @@ class Html {
   * RETURN NODE PARAGRAPH _ noHTML TAG
   *
   **/
-  public function _P($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('PRIMARY', 7, $js, $id, $class) );  }
+  public function _P($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 7, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xP($label = NULL) { self::PERFORM( $this->get_xHTML('PRIMARY', 7, $label) ); }
+  public function xP($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 7, $label) ); }
 
 /**
   *
@@ -945,9 +945,9 @@ class Html {
   * RETURN NODE BUTTON _ noHTML TAG
   *
   **/
-  public function _BUTTON($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('PRIMARY', 8, $js, $id, $class) );  }
+  public function _BUTTON($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 8, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xBUTTON($label = NULL) { self::PERFORM( $this->get_xHTML('PRIMARY', 8, $label) ); }
+  public function xBUTTON($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 8, $label) ); }
 
 /**
   *
@@ -956,9 +956,9 @@ class Html {
   * RETURN NODE HYPERLINK _ noHTML TAG
   *
   **/
-  public function _A($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('PRIMARY', 9, $js, $id, $class) ); }
+  public function _A($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 9, $js, $id, $class) ); }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xA($label = NULL) { self::PERFORM( $this->get_xHTML('PRIMARY', 9, $label) ); }
+  public function xA($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 9, $label) ); }
 
 /**
   *
@@ -967,9 +967,9 @@ class Html {
   * RETURN NODE IFRAME _ noHTML TAG
   *
   **/
-  public function _IFRAME($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('PRIMARY', 10, $js, $id, $class) );  }
+  public function _IFRAME($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 10, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xIFRAME($label = NULL) { self::PERFORM( $this->get_xHTML('PRIMARY', 10, $label) ); }
+  public function xIFRAME($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 10, $label) ); }
 
 /**
   *
@@ -978,9 +978,9 @@ class Html {
   * RETURN NODE MAIN _ noHTML TAG
   *
   **/
-  public function _MAIN($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('PRIMARY', 11, $js, $id, $class) );  }
+  public function _MAIN($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 11, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xMAIN($label = NULL) { self::PERFORM( $this->get_xHTML('PRIMARY', 11, $label) ); }
+  public function xMAIN($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 11, $label) ); }
 
 /**
   *
@@ -989,9 +989,9 @@ class Html {
   * RETURN NODE NAV _ noHTML TAG
   *
   **/
-  public function _NAV($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('PRIMARY', 12, $js, $id, $class) );  }
+  public function _NAV($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 12, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xNAV($label = NULL) { self::PERFORM( $this->get_xHTML('PRIMARY', 12, $label) ); }
+  public function xNAV($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 12, $label) ); }
 
 /**
   *
@@ -1000,9 +1000,9 @@ class Html {
   * RETURN NODE SELECT _ noHTML TAG
   *
   **/
-  public function _SELECT($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('PRIMARY', 13, $js, $id, $class) );   }
+  public function _SELECT($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 13, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xSELECT($label = NULL) { self::PERFORM( $this->get_xHTML('PRIMARY', 13, $label) ); }
+  public function xSELECT($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 13, $label) ); }
 
 /**
   *
@@ -1011,9 +1011,9 @@ class Html {
   * RETURN NODE FORM _ noHTML TAG
   *
   **/
-  public function _FORM($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('PRIMARY', 14, $js, $id, $class) );  }
+  public function _FORM($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 14, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xFORM($label = NULL) { self::PERFORM( $this->get_xHTML('PRIMARY', 14, $label) ); }
+  public function xFORM($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 14, $label) ); }
 
 /**
   *
@@ -1022,9 +1022,9 @@ class Html {
   * RETURN NODE PICTURE _ noHTML TAG
   *
   **/
-  public function _PICTURE($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('PRIMARY', 15, $js, $id, $class) );  }
+  public function _PICTURE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 15, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xPICTURE($label = NULL) { self::PERFORM( $this->get_xHTML('PRIMARY', 15, $label) ); }
+  public function xPICTURE($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 15, $label) ); }
 
 /**
   *
@@ -1033,9 +1033,9 @@ class Html {
   * RETURN NODE SECTION _ noHTML TAG
   *
   **/
-  public function _SECTION($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('PRIMARY', 16, $js, $id, $class) );   }
+  public function _SECTION($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 16, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xSECTION($label = NULL) { self::PERFORM( $this->get_xHTML('PRIMARY', 16, $label) ); }
+  public function xSECTION($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 16, $label) ); }
 
 /**
   *
@@ -1044,9 +1044,9 @@ class Html {
   * RETURN NODE TEXTAREA _ noHTML TAG
   *
   **/
-  public function _TEXTAREA($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('PRIMARY', 17, $js, $id, $class) );  }
+  public function _TEXTAREA($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 17, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xTEXTAREA($label = NULL) { self::PERFORM( $this->get_xHTML('PRIMARY', 17, $label) ); }
+  public function xTEXTAREA($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 17, $label) ); }
 
 /**
   *
@@ -1055,9 +1055,9 @@ class Html {
   * RETURN NODE FOOTERA _ noHTML TAG
   *
   **/
-  public function _FOOTER($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('PRIMARY', 18, $js, $id, $class) );  }
+  public function _FOOTER($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 18, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xFOOTER($label = NULL) { self::PERFORM( $this->get_xHTML('PRIMARY', 18, $label) ); }
+  public function xFOOTER($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 18, $label) ); }
 
 
 /**
@@ -1067,9 +1067,9 @@ class Html {
   * RETURN NODE AUDIO _ noHTML TAG
   *
   **/
-  public function _AUDIO($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SECONDARY', 0, $js, $id, $class) );  }
+  public function _AUDIO($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 0, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xAUDIO($label = NULL) { self::PERFORM( $this->get_xHTML('SECONDARY', 0, $label) ); }
+  public function xAUDIO($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 0, $label) ); }
 
 /**
   *
@@ -1078,9 +1078,9 @@ class Html {
   * RETURN NODE VIDEO _ noHTML TAG
   *
   **/
-  public function _VIDEO($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SECONDARY', 1, $js, $id, $class) ); }
+  public function _VIDEO($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 1, $js, $id, $class) ); }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xVIDEO($label = NULL) { self::PERFORM( $this->get_xHTML('SECONDARY', 1, $label) ); }
+  public function xVIDEO($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 1, $label) ); }
 
 /**
   *
@@ -1089,9 +1089,9 @@ class Html {
   * RETURN NODE ADDRESS _ noHTML TAG
   *
   **/
-  public function _ADDRESS($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SECONDARY', 2, $js, $id, $class) ); }
+  public function _ADDRESS($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 2, $js, $id, $class) ); }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xADDRESS($label = NULL) { self::PERFORM( $this->get_xHTML('SECONDARY', 2, $label) ); }
+  public function xADDRESS($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 2, $label) ); }
 
 /**
   *
@@ -1100,9 +1100,9 @@ class Html {
   * RETURN NODE COLGROUP _ noHTML TAG
   *
   **/
-  public function _COLGROUP($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SECONDARY', 3, $js, $id, $class) );  }
+  public function _COLGROUP($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 3, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xCOLGROUP($label = NULL) { self::PERFORM( $this->get_xHTML('SECONDARY', 3, $label) ); }
+  public function xCOLGROUP($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 3, $label) ); }
 
 /**
   *
@@ -1111,9 +1111,9 @@ class Html {
   * RETURN NODE BDI _ noHTML TAG
   *
   **/
-  public function _BDI($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SECONDARY', 4, $js, $id, $class) ); }
+  public function _BDI($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 4, $js, $id, $class) ); }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xBDI($label = NULL) { self::PERFORM( $this->get_xHTML('SECONDARY', 4, $label) ); }
+  public function xBDI($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 4, $label) ); }
 
 /**
   *
@@ -1122,9 +1122,9 @@ class Html {
   * RETURN NODE BDO _ noHTML TAG
   *
   **/
-  public function _BDO($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SECONDARY', 5, $js, $id, $class) );   }
+  public function _BDO($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 5, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xBDO($label = NULL) { self::PERFORM( $this->get_xHTML('SECONDARY', 5, $label) ); }
+  public function xBDO($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 5, $label) ); }
 
 /**
   *
@@ -1133,9 +1133,9 @@ class Html {
   * RETURN NODE BLOCKQUOTE _ noHTML TAG
   *
   **/
-  public function _BLOCKQUOTE($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SECONDARY', 6, $js, $id, $class) );  }
+  public function _BLOCKQUOTE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 6, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xBLOCKQUOTE($label = NULL) { self::PERFORM( $this->get_xHTML('SECONDARY', 6, $label) ); }
+  public function xBLOCKQUOTE($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 6, $label) ); }
 
 /**
   *
@@ -1144,9 +1144,9 @@ class Html {
   * RETURN NODE CAPTION _ noHTML TAG
   *
   **/
-  public function _CAPTION($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SECONDARY', 7, $js, $id, $class) );  }
+  public function _CAPTION($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 7, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xCAPTION($label = NULL) { self::PERFORM( $this->get_xHTML('SECONDARY', 7, $label) ); }
+  public function xCAPTION($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 7, $label) ); }
 
 /**
   *
@@ -1155,9 +1155,9 @@ class Html {
   * RETURN NODE LABEL _ noHTML TAG
   *
   **/
-  public function _LABEL($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SECONDARY', 8, $js, $id, $class) );  }
+  public function _LABEL($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 8, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xLABEL($label = NULL) { self::PERFORM( $this->get_xHTML('SECONDARY', 8, $label) ); }
+  public function xLABEL($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 8, $label) ); }
 
 /**
   *
@@ -1166,9 +1166,9 @@ class Html {
   * RETURN NODE DATALIST _ noHTML TAG
   *
   **/
-  public function _DATALIST($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SECONDARY', 9, $js, $id, $class) );  }
+  public function _DATALIST($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 9, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xDATALIST($label = NULL) { self::PERFORM( $this->get_xHTML('SECONDARY', 9, $label) ); }
+  public function xDATALIST($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 9, $label) ); }
 
 /**
   *
@@ -1177,9 +1177,9 @@ class Html {
   * RETURN NODE DETAILS _ noHTML TAG
   *
   **/
-  public function _DETAILS($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SECONDARY', 10, $js, $id, $class) ); }
+  public function _DETAILS($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 10, $js, $id, $class) ); }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xDETAILS($label = NULL) { self::PERFORM( $this->get_xHTML('SECONDARY', 10, $label) ); }
+  public function xDETAILS($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 10, $label) ); }
 
 /**
   *
@@ -1188,9 +1188,9 @@ class Html {
   * RETURN NODE SUMMARY _ noHTML TAG
   *
   **/
-  public function _SUMMARY($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SECONDARY', 11, $js, $id, $class) );  }
+  public function _SUMMARY($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 11, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xSUMMARY($label = NULL) { self::PERFORM( $this->get_xHTML('SECONDARY', 11, $label) ); }
+  public function xSUMMARY($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 11, $label) ); }
 
 /**
   *
@@ -1199,9 +1199,9 @@ class Html {
   * RETURN NODE DIALOG _ noHTML TAG
   *
   **/
-  public function _DIALOG($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SECONDARY', 12, $js, $id, $class) );  }
+  public function _DIALOG($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 12, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xDIALOG($label = NULL) { self::PERFORM( $this->get_xHTML('SECONDARY', 12, $label) ); }
+  public function xDIALOG($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 12, $label) ); }
 
 /**
   *
@@ -1210,9 +1210,9 @@ class Html {
   * RETURN NODE OPTION _ noHTML TAG
   *
   **/
-  public function _OPTION($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SECONDARY', 12, $js, $id, $class) );  }
+  public function _OPTION($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 12, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG 
-  public function xOPTION($label = NULL) { self::PERFORM( $this->get_xHTML('SECONDARY', 12, $label) ); }
+  public function xOPTION($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 12, $label) ); }
 
 /**
   *
@@ -1221,9 +1221,9 @@ class Html {
   * RETURN NODE FIGURE _ noHTML TAG
   *
   **/
-  public function _FIGURE($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SUPPORT', 0, $js, $id, $class) );  }
+  public function _FIGURE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 0, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG
-  public function xFIGURE($label = NULL) { self::PERFORM( $this->get_xHTML('SUPPORT', 0, $label) ); }
+  public function xFIGURE($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 0, $label) ); }
 
 /**
   *
@@ -1232,9 +1232,9 @@ class Html {
   * RETURN NODE FIGCAPTION _ noHTML TAG
   *
   **/
-  public function _FIGCAPTION($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SUPPORT', 1, $js, $id, $class) );   }
+  public function _FIGCAPTION($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 1, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xFIGCAPTION($label = NULL) { self::PERFORM( $this->get_xHTML('SUPPORT', 1, $label) ); }
+  public function xFIGCAPTION($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 1, $label) ); }
 
 /**
   *
@@ -1243,9 +1243,9 @@ class Html {
   * RETURN NODE METER _ noHTML TAG
   *
   **/
-  public function _METER($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SUPPORT', 2, $js, $id, $class) );   }
+  public function _METER($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 2, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xMETER($label = NULL) { self::PERFORM( $this->get_xHTML('SUPPORT', 2, $label) ); }
+  public function xMETER($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 2, $label) ); }
 
 /**
   *
@@ -1254,9 +1254,9 @@ class Html {
   * RETURN NODE OBJECT _ noHTML TAG
   *
   **/
-  public function _OBJECT($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SUPPORT', 3, $js, $id, $class) );   }
+  public function _OBJECT($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 3, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xOBJECT($label = NULL) { self::PERFORM( $this->get_xHTML('SUPPORT', 3, $label)); }
+  public function xOBJECT($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 3, $label)); }
 
 /**
   *
@@ -1265,9 +1265,9 @@ class Html {
   * RETURN NODE OPTGROUP _ noHTML TAG
   *
   **/
-  public function _OPTGROUP($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SUPPORT', 4, $js, $id, $class));  }
+  public function _OPTGROUP($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 4, $js, $id, $class));  }
 // CLOSING_METHOD_noHTML_TAG
-  public function xOPTGROUP($label = NULL) { self::PERFORM( $this->get_xHTML('SUPPORT', 4, $label)); }
+  public function xOPTGROUP($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 4, $label)); }
 
 /**
   *
@@ -1276,9 +1276,9 @@ class Html {
   * RETURN NODE OUTPUT _ noHTML TAG
   *
   **/
-  public function _OUTPUT($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SUPPORT', 5, $js, $id, $class));   }
+  public function _OUTPUT($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 5, $js, $id, $class));   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xOUTPUT($label = NULL) { self::PERFORM( $this->get_xHTML('SUPPORT', 5, $label)); }
+  public function xOUTPUT($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 5, $label)); }
 
 /**
   *
@@ -1287,9 +1287,9 @@ class Html {
   * RETURN NODE PROGRESS _ noHTML TAG
   *
   **/
-  public function _PROGRESS($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SUPPORT', 6, $js, $id, $class));  }
+  public function _PROGRESS($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 6, $js, $id, $class));  }
 // CLOSING_METHOD_noHTML_TAG
-  public function xPROGRESS($label = NULL) { self::PERFORM( $this->get_xHTML('SUPPORT', 6, $label)); }
+  public function xPROGRESS($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 6, $label)); }
 
 /**
   *
@@ -1298,9 +1298,9 @@ class Html {
   * RETURN NODE SVG _ noHTML TAG
   *
   **/
-  public function _SVG($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SUPPORT', 7, $js, $id, $class));   }
+  public function _SVG($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 7, $js, $id, $class));   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xSVG($label = NULL) { self::PERFORM( $this->get_xHTML('SUPPORT', 7, $label)); }
+  public function xSVG($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 7, $label)); }
 
 /**
   *
@@ -1309,9 +1309,9 @@ class Html {
   * RETURN NODE TEMPLATE _ noHTML TAG
   *
   **/
-  public function _TEMPLATE($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SUPPORT', 8, $js, $id, $class)); }
+  public function _TEMPLATE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 8, $js, $id, $class)); }
 // CLOSING_METHOD_noHTML_TAG
-  public function xTEMPLATE($label = NULL) { self::PERFORM( $this->get_xHTML('SUPPORT', 8, $label)); }
+  public function xTEMPLATE($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 8, $label)); }
 
 /**
   *
@@ -1320,9 +1320,9 @@ class Html {
   * RETURN NODE TIME _ noHTML TAG
   *
   **/
-  public function _TIME($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SUPPORT', 9, $js, $id, $class) );   }
+  public function _TIME($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 9, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xTIME($label = NULL) { self::PERFORM( $this->get_xHTML('SUPPORT', 9, $label) ); }
+  public function xTIME($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 9, $label) ); }
 
 /**
   *
@@ -1331,9 +1331,9 @@ class Html {
   * RETURN NODE VAR _ noHTML TAG
   *
   **/
-  public function _VAR($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('SUPPORT', 10, $js, $id, $class) );   }
+  public function _VAR($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 10, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xVAR($label = NULL) { self::PERFORM( $this->get_xHTML('SUPPORT', 10, $label) ); }
+  public function xVAR($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 10, $label) ); }
 
 /**
   *
@@ -1342,9 +1342,9 @@ class Html {
   * RETURN NODE UL _ noHTML TAG
   *
   **/
-  public function _UL($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('LIST', 0, $js, $id, $class) );  }
+  public function _UL($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 0, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG
-  public function xUL($label = NULL) { self::PERFORM( $this->get_xHTML('LIST', 0, $label) ); }
+  public function xUL($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 0, $label) ); }
 
 /**
   *
@@ -1353,9 +1353,9 @@ class Html {
   * RETURN NODE OL _ noHTML TAG
   *
   **/
-  public function _OL($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('LIST', 1, $js, $id, $class) );   }
+  public function _OL($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 1, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xOL($label = NULL) { self::PERFORM( $this->get_xHTML('LIST', 1, $label) ); }
+  public function xOL($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 1, $label) ); }
 
 /**
   *
@@ -1364,9 +1364,9 @@ class Html {
   * RETURN NODE LI _ noHTML TAG
   *
   **/
-  public function _LI($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('LIST', 2, $js, $id, $class) );    }
+  public function _LI($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 2, $js, $id, $class) );    }
 // CLOSING_METHOD_noHTML_TAG
-  public function xLI($label = NULL) { self::PERFORM( $this->get_xHTML('LIST', 2, $label) ); }
+  public function xLI($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 2, $label) ); }
 
 /**
   *
@@ -1375,9 +1375,9 @@ class Html {
   * RETURN NODE TABLE _ noHTML TAG
   *
   **/
-  public function _TABLE($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('LIST', 3, $js, $id, $class) );    }
+  public function _TABLE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 3, $js, $id, $class) );    }
 // CLOSING_METHOD_noHTML_TAG
-  public function xTABLE($label = NULL) { self::PERFORM( $this->get_xHTML('LIST', 3, $label) ); }
+  public function xTABLE($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 3, $label) ); }
 
 /**
   *
@@ -1386,9 +1386,9 @@ class Html {
   * RETURN NODE TR _ noHTML TAG
   *
   **/
-  public function _TR($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('LIST', 4, $js, $id, $class) );   }
+  public function _TR($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 4, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xTR($label = NULL) { self::PERFORM( $this->get_xHTML('LIST', 4, $label) ); }
+  public function xTR($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 4, $label) ); }
 
 /**
   *
@@ -1397,9 +1397,9 @@ class Html {
   * RETURN NODE TD _ noHTML TAG
   *
   **/
-  public function _TD($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('LIST', 5, $js, $id, $class) );   }
+  public function _TD($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 5, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xTD($label = NULL) { self::PERFORM( $this->get_xHTML('LIST', 5, $label) ); }
+  public function xTD($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 5, $label) ); }
 
 /**
   *
@@ -1408,9 +1408,9 @@ class Html {
   * RETURN NODE TH _ noHTML TAG
   *
   **/
-  public function _TH($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('LIST', 6, $js, $id, $class) );   }
+  public function _TH($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 6, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xTH($label = NULL) { self::PERFORM( $this->get_xHTML('LIST', 6, $label) );  }
+  public function xTH($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 6, $label) );  }
 
 /**
   *
@@ -1419,9 +1419,9 @@ class Html {
   * RETURN NODE LEGEND _ noHTML TAG
   *
   **/
-  public function _LEGEND($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('LIST', 7, $js, $id, $class) );   }
+  public function _LEGEND($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 7, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xLEGEND($label = NULL) { self::PERFORM( $this->get_xHTML('LIST', 7, $label) ); }
+  public function xLEGEND($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 7, $label) ); }
 
 /**
   *
@@ -1430,9 +1430,9 @@ class Html {
   * RETURN NODE FIELDSET _ noHTML TAG
   *
   **/
-  public function _FIELDSET($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('LIST', 8, $js, $id, $class) );   }
+  public function _FIELDSET($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 8, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xFIELDSET($label = NULL) { self::PERFORM( $this->get_xHTML('LIST', 8, $label) ); }
+  public function xFIELDSET($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 8, $label) ); }
 
 /**
   *
@@ -1441,9 +1441,9 @@ class Html {
   * RETURN NODE TBODY _ noHTML TAG
   *
   **/
-  public function _TBODY($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('LIST', 9, $js, $id, $class) );    }
+  public function _TBODY($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 9, $js, $id, $class) );    }
 // CLOSING_METHOD_noHTML_TAG
-  public function xTBODY($label = NULL) { self::PERFORM( $this->get_xHTML('LIST', 9, $label) ); }
+  public function xTBODY($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 9, $label) ); }
 
 /**
   *
@@ -1452,9 +1452,9 @@ class Html {
   * RETURN NODE TFOOT _ noHTML TAG
   *
   **/
-  public function _TFOOT($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('LIST', 10, $js, $id, $class) );    }
+  public function _TFOOT($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 10, $js, $id, $class) );    }
 // CLOSING_METHOD_noHTML_TAG
-  public function xTFOOT($label = NULL) { self::PERFORM( $this->get_xHTML('LIST', 10, $label) );  }
+  public function xTFOOT($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 10, $label) );  }
 
 /**
   *
@@ -1463,9 +1463,9 @@ class Html {
   * RETURN NODE THEAD _ noHTML TAG
   *
   **/
-  public function _THEAD($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('LIST', 11, $js, $id, $class) );   }
+  public function _THEAD($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 11, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xTHEAD($label = NULL) { self::PERFORM( $this->get_xHTML('LIST', 11, $label) );  }
+  public function xTHEAD($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 11, $label) );  }
 
 /**
   *
@@ -1474,9 +1474,9 @@ class Html {
   * RETURN NODE SPAN _ noHTML TAG
   *
   **/
-  public function _SPAN($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMAT', 0, $js, $id, $class) );    }
+  public function _SPAN($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 0, $js, $id, $class) );    }
 // CLOSING_METHOD_noHTML_TAG
-  public function xSPAN($label = NULL) { self::PERFORM( $this->get_xHTML('FORMAT', 0, $label) ); }
+  public function xSPAN($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 0, $label) ); }
 
 /**
   *
@@ -1485,9 +1485,9 @@ class Html {
   * RETURN NODE EM _ noHTML TAG
   *
   **/
-  public function _EM($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMAT', 1, $js, $id, $class) );    }
+  public function _EM($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 1, $js, $id, $class) );    }
 // CLOSING_METHOD_noHTML_TAG
-  public function xEM($label = NULL) { self::PERFORM( $this->get_xHTML('FORMAT', 1, $label) ); }
+  public function xEM($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 1, $label) ); }
 
 /**
   *
@@ -1496,9 +1496,9 @@ class Html {
   * RETURN NODE B _ noHTML TAG
   *
   **/
-  public function _B($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMAT', 2, $js, $id, $class) );   }
+  public function _B($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 2, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xB($label = NULL) { self::PERFORM( $this->get_xHTML('FORMAT', 2, $label) ); }
+  public function xB($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 2, $label) ); }
 
 /**
   *
@@ -1507,9 +1507,9 @@ class Html {
   * RETURN NODE I _ noHTML TAG
   *
   **/
-  public function _I($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMAT', 3, $js, $id, $class) );   }
+  public function _I($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 3, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xI($label = NULL) { self::PERFORM( $this->get_xHTML('FORMAT', 3, $label) );  }
+  public function xI($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 3, $label) );  }
 
 /**
   *
@@ -1518,9 +1518,9 @@ class Html {
   * RETURN NODE SMALL _ noHTML TAG
   *
   **/
-  public function _SMALL($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMAT', 4, $js, $id, $class) );   }
+  public function _SMALL($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 4, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xSMALL($label = NULL) { self::PERFORM( $this->get_xHTML('FORMAT', 4, $label) ); }
+  public function xSMALL($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 4, $label) ); }
 
 /**
   *
@@ -1529,9 +1529,9 @@ class Html {
   * RETURN NODE STRIKE _ noHTML TAG
   *
   **/
-  public function _STRIKE($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMAT', 5, $js, $id, $class) );   }
+  public function _STRIKE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 5, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xSTRIKE($label = NULL) { self::PERFORM( $this->get_xHTML('FORMAT', 5, $label) );  }
+  public function xSTRIKE($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 5, $label) );  }
 
 /**
   *
@@ -1540,9 +1540,9 @@ class Html {
   * RETURN NODE MARQUEE _ noHTML TAG
   *
   **/
-  public function _MARQUEE($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMAT', 6, $js, $id, $class) );    }
+  public function _MARQUEE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 6, $js, $id, $class) );    }
 // CLOSING_METHOD_noHTML_TAG
-  public function xMARQUEE($label = NULL) { self::PERFORM( $this->get_xHTML('FORMAT', 6, $label) ); }
+  public function xMARQUEE($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 6, $label) ); }
 
 /**
   *
@@ -1551,9 +1551,9 @@ class Html {
   * RETURN NODE CENTER _ noHTML TAG
   *
   **/
-  public function _CENTER($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMAT', 7, $js, $id, $class) );   }
+  public function _CENTER($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 7, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xCENTER($label = NULL) { self::PERFORM( $this->get_xHTML('FORMAT', 7, $label) );  }
+  public function xCENTER($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 7, $label) );  }
 
 /**
   *
@@ -1562,9 +1562,9 @@ class Html {
   * RETURN NODE CODE _ noHTML TAG
   *
   **/
-  public function _CODE($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMAT', 8, $js, $id, $class) );   }
+  public function _CODE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 8, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xCODE($label = NULL) { self::PERFORM( $this->get_xHTML('FORMAT', 8, $label) );  }
+  public function xCODE($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 8, $label) );  }
 
 /**
   *
@@ -1573,9 +1573,9 @@ class Html {
   * RETURN NODE ABBR _ noHTML TAG
   *
   **/
-  public function _ABBR($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMAT', 9, $js, $id, $class) );   }
+  public function _ABBR($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 9, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xABBR($label = NULL) { self::PERFORM( $this->get_xHTML('FORMAT', 9, $label) ); }
+  public function xABBR($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 9, $label) ); }
 
 /**
   *
@@ -1584,9 +1584,9 @@ class Html {
   * RETURN NODE MAP _ noHTML TAG
   *
   **/
-  public function _MAP($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMAT', 10, $js, $id, $class) );   }
+  public function _MAP($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 10, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xMAP($label = NULL) { self::PERFORM( $this->get_xHTML('FORMAT', 10, $label) ); }
+  public function xMAP($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 10, $label) ); }
 
 /**
   *
@@ -1595,9 +1595,9 @@ class Html {
   * RETURN NODE CANVAS _ noHTML TAG
   *
   **/
-  public function _CANVAS($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMAT', 11, $js, $id, $class) );    }
+  public function _CANVAS($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 11, $js, $id, $class) );    }
 // CLOSING_METHOD_noHTML_TAG
-  public function xCANVAS($label = NULL) { self::PERFORM( $this->get_xHTML('FORMAT', 11, $label) ); }
+  public function xCANVAS($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 11, $label) ); }
 
 /**
   *
@@ -1606,9 +1606,9 @@ class Html {
   * RETURN NODE CITE _ noHTML TAG
   *
   **/
-  public function _CITE($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMAT', 12, $js, $id, $class) );   }
+  public function _CITE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 12, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xCITE($label = NULL) { self::PERFORM( $this->get_xHTML('FORMAT', 12, $label) ); }
+  public function xCITE($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 12, $label) ); }
 
 /**
   *
@@ -1617,9 +1617,9 @@ class Html {
   * RETURN NODE DATA _ noHTML TAG
   *
   **/
-  public function _DATA($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMAT', 13, $js, $id, $class) );  }
+  public function _DATA($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 13, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG
-  public function xDATA($label = NULL) { self::PERFORM( $this->get_xHTML('FORMAT', 13, $label) ); }
+  public function xDATA($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 13, $label) ); }
 
 /**
   *
@@ -1628,9 +1628,9 @@ class Html {
   * RETURN NODE DL _ noHTML TAG
   *
   **/
-  public function _DL($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMAT', 14, $js, $id, $class) );   }
+  public function _DL($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 14, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xDL($label = NULL) { self::PERFORM( $this->get_xHTML('FORMAT', 14, $label) ); }
+  public function xDL($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 14, $label) ); }
 
 /**
   *
@@ -1639,9 +1639,9 @@ class Html {
   * RETURN NODE DT _ noHTML TAG
   *
   **/
-  public function _DT($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMAT', 15, $js, $id, $class) );   }
+  public function _DT($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 15, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xDT($label = NULL) { self::PERFORM( $this->get_xHTML('FORMAT', 15, $label) ); }
+  public function xDT($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 15, $label) ); }
 
 /**
   *
@@ -1650,9 +1650,9 @@ class Html {
   * RETURN NODE DD _ noHTML TAG
   *
   **/
-  public function _DD($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMAT', 16, $js, $id, $class) );    }
+  public function _DD($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 16, $js, $id, $class) );    }
 // CLOSING_METHOD_noHTML_TAG
-  public function xDD($label = NULL) { self::PERFORM( $this->get_xHTML('FORMAT', 16, $label) ); }
+  public function xDD($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 16, $label) ); }
 
 /**
   *
@@ -1661,9 +1661,9 @@ class Html {
   * RETURN NODE DFN _ noHTML TAG
   *
   **/
-  public function _DFN($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMAT', 17, $js, $id, $class) );   }
+  public function _DFN($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 17, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xDFN($label = NULL) { self::PERFORM( $this->get_xHTML('FORMAT', 17, $label) ); }
+  public function xDFN($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 17, $label) ); }
 
 /**
   *
@@ -1672,9 +1672,9 @@ class Html {
   * RETURN NODE INS _ noHTML TAG
   *
   **/
-  public function _INS($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMAT', 18, $js, $id, $class) );    }
+  public function _INS($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 18, $js, $id, $class) );    }
 // CLOSING_METHOD_noHTML_TAG
-  public function xINS($label = NULL) { self::PERFORM( $this->get_xHTML('FORMAT', 18, $label) ); }
+  public function xINS($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 18, $label) ); }
 
 /**
   *
@@ -1683,9 +1683,9 @@ class Html {
   * RETURN NODE DEL _ noHTML TAG
   *
   **/
-  public function _DEL($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMATC', 0, $js, $id, $class) );    }
+  public function _DEL($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 0, $js, $id, $class) );    }
 // CLOSING_METHOD_noHTML_TAG
-  public function xDEL($label = NULL) { self::PERFORM( $this->get_xHTML('FORMATC', 0, $label) );  }
+  public function xDEL($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 0, $label) );  }
 
 /**
   *
@@ -1694,9 +1694,9 @@ class Html {
   * RETURN NODE KBD _ noHTML TAG
   *
   **/
-  public function _KBD($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMATC', 1, $js, $id, $class) );  }
+  public function _KBD($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 1, $js, $id, $class) );  }
 // CLOSING_METHOD_noHTML_TAG
-  public function xKBD($label = NULL) { self::PERFORM( $this->get_xHTML('FORMATC', 1, $label) );  }
+  public function xKBD($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 1, $label) );  }
 
 /**
   *
@@ -1705,9 +1705,9 @@ class Html {
   * RETURN NODE MARK _ noHTML TAG
   *
   **/
-  public function _MARK($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMATC', 2, $js, $id, $class) );   }
+  public function _MARK($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 2, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xMARK($label = NULL) { self::PERFORM( $this->get_xHTML('FORMATC', 2, $label) );  }
+  public function xMARK($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 2, $label) );  }
 
 /**
   *
@@ -1716,9 +1716,9 @@ class Html {
   * RETURN NODE PRE _ noHTML TAG
   *
   **/
-  public function _PRE($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMATC', 3, $js, $id, $class ) );    }
+  public function _PRE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 3, $js, $id, $class ) );    }
 // CLOSING_METHOD_noHTML_TAG
-  public function xPRE($label = NULL) { self::PERFORM( $this->get_xHTML('FORMATC', 3, $label) );  }
+  public function xPRE($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 3, $label) );  }
 
 /**
   *
@@ -1727,9 +1727,9 @@ class Html {
   * RETURN NODE RT _ noHTML TAG
   *
   **/
-  public function _RT($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMATC', 4, $js, $id, $class) );   }
+  public function _RT($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 4, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xRT($label = NULL) { self::PERFORM( $this->get_xHTML('FORMATC', 4, $label) ); }
+  public function xRT($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 4, $label) ); }
 
 /**
   *
@@ -1738,9 +1738,9 @@ class Html {
   * RETURN NODE RP _ noHTML TAG
   *
   **/
-  public function _RP($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMATC', 5, $js, $id, $class) );   }
+  public function _RP($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 5, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xRP($label = NULL) { self::PERFORM( $this->get_xHTML('FORMATC', 5, $label) );  }
+  public function xRP($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 5, $label) );  }
 
 /**
   *
@@ -1749,9 +1749,9 @@ class Html {
   * RETURN NODE RUBY _ noHTML TAG
   *
   **/
-  public function _RUBY($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMATC', 6, $js, $id, $class) );    }
+  public function _RUBY($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 6, $js, $id, $class) );    }
 // CLOSING_METHOD_noHTML_TAG
-  public function xRUBY($label = NULL) { self::PERFORM( $this->get_xHTML('FORMATC', 6, $label) );  }
+  public function xRUBY($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 6, $label) );  }
 
 /**
   *
@@ -1760,9 +1760,9 @@ class Html {
   * RETURN NODE S _ noHTML TAG
   *
   **/
-  public function _S($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMATC', 7, $js, $id, $class) );   }
+  public function _S($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 7, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xS($label = NULL) { self::PERFORM( $this->get_xHTML('FORMATC', 7, $label) ); }
+  public function xS($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 7, $label) ); }
 
 /**
   *
@@ -1771,9 +1771,9 @@ class Html {
   * RETURN NODE SAMP _ noHTML TAG
   *
   **/
-  public function _SAMP($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMATC', 8, $js, $id, $class) );   }
+  public function _SAMP($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 8, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xSAMP($label = NULL) { self::PERFORM( $this->get_xHTML('FORMATC', 8, $label) );  }
+  public function xSAMP($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 8, $label) );  }
 
 /**
   *
@@ -1782,9 +1782,9 @@ class Html {
   * RETURN NODE STRONG _ noHTML TAG
   *
   **/
-  public function _STRONG($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMATC', 9, $js, $id, $class) );    }
+  public function _STRONG($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 9, $js, $id, $class) );    }
 // CLOSING_METHOD_noHTML_TAG
-  public function xSTRONG($label = NULL) { self::PERFORM( $this->get_xHTML('FORMATC', 9, $label) );  }
+  public function xSTRONG($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 9, $label) );  }
 
 /**
   *
@@ -1793,9 +1793,9 @@ class Html {
   * RETURN NODE SUB _ noHTML TAG
   *
   **/
-  public function _SUB($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMATC', 10, $js, $id, $class) );    }
+  public function _SUB($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 10, $js, $id, $class) );    }
 // CLOSING_METHOD_noHTML_TAG
-  public function xSUB($label = NULL) { self::PERFORM( $this->get_xHTML('FORMATC', 10, $label ));  }
+  public function xSUB($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 10, $label ));  }
 
 /**
   *
@@ -1804,9 +1804,9 @@ class Html {
   * RETURN NODE SUP _ noHTML TAG
   *
   **/
-  public function _SUP($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMATC', 11, $js, $id, $class) );    }
+  public function _SUP($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 11, $js, $id, $class) );    }
 // CLOSING_METHOD_noHTML_TAG
-  public function xSUP($label = NULL) { self::PERFORM( $this->get_xHTML('FORMATC', 11, $label) );  }
+  public function xSUP($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 11, $label) );  }
 
 /**
   *
@@ -1815,9 +1815,9 @@ class Html {
   * RETURN NODE WBR _ noHTML TAG
   *
   **/
-  public function _WBR($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMATC', 12, $js, $id, $class) );   }
+  public function _WBR($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 12, $js, $id, $class) );   }
 // CLOSING_METHOD_noHTML_TAG
-  public function xWBR($label = NULL) { self::PERFORM( $this->get_xHTML('FORMATC', 12, $label) );  }
+  public function xWBR($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 12, $label) );  }
 
 /**
   *
@@ -1826,9 +1826,9 @@ class Html {
   * RETURN NODE Q _ noHTML TAG
   *
   **/
-  public function _Q($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('FORMATC', 13, $js, $id, $class) );     }
+  public function _Q($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 13, $js, $id, $class) );     }
 // CLOSING_METHOD_noHTML_TAG
-  public function xQ($label = NULL) { self::PERFORM( $this->get_xHTML('FORMATC', 13, $label) );  }
+  public function xQ($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 13, $label) );  }
 
 /**
   *
@@ -1837,9 +1837,9 @@ class Html {
   * RETURN NODE HEAD _ noHTML TAG
   *
   **/
-  public function _HEAD($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('STRUCTURE', 0, $js, $id, $class) );    }
+  public function _HEAD($js=[], $id=null, $class=null) { $this->PERFORM($this->get__HTML('STRUCTURE', 0, $js, $id, $class) );    }
 // CLOSING_METHOD_noHTML_TAG
-  public function xHEAD($label = NULL) { self::PERFORM( $this->get_xHTML('STRUCTURE', 0, $label) ); }
+  public function xHEAD($label = NULL) { $this->PERFORM( $this->get_xHTML('STRUCTURE', 0, $label) ); }
 
 /**
   *
@@ -1848,9 +1848,9 @@ class Html {
   * RETURN NODE TITLE _ noHTML TAG
   *
   **/
-  public function _TITLE($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('STRUCTURE', 1, $js, $id, $class) );    }
+  public function _TITLE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('STRUCTURE', 1, $js, $id, $class) );    }
 // CLOSING_METHOD_noHTML_TAG
-  public function xTITLE($label = NULL) { self::PERFORM( $this->get_xHTML('STRUCTURE', 1, $label) );  }
+  public function xTITLE($label = NULL) { $this->PERFORM( $this->get_xHTML('STRUCTURE', 1, $label) );  }
 
 /**
   *
@@ -1859,9 +1859,9 @@ class Html {
   * RETURN NODE BODY _ noHTML TAG
   *
   **/
-  public function _BODY($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('STRUCTURE', 2, $js, $id, $class) );     }
+  public function _BODY($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('STRUCTURE', 2, $js, $id, $class) );     }
 // CLOSING_METHOD_noHTML_TAG
-  public function xBODY($label = NULL) { self::PERFORM( $this->get_xHTML('STRUCTURE', 2, $label) ); }
+  public function xBODY($label = NULL) { $this->PERFORM( $this->get_xHTML('STRUCTURE', 2, $label) ); }
 
 /**
   *
@@ -1870,9 +1870,13 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function _noHTML($js=[], $id=null, $class=null) { self::PERFORM( $this->get__HTML('STRUCTURE', 3, $js, $id, $class) );   }
+  public function _noHTML($js=[], $id=null, $class=null) { 
+
+    $Enhancer = NEW \PHPHtml\CodeOptimizer\optimizer\Enhancers();
+    $this->PERFORM( $Enhancer->ATTR('DOCTYPE','doctype')."\n".$this->get__HTML('STRUCTURE', 3, $js, $id, $class) );   }
+
 // CLOSING_METHOD_noHTML_TAG
-  public function xnoHTML($label = NULL) { self::PERFORM( $this->get_xHTML('STRUCTURE', 3, $label) ); }
+  public function xnoHTML($label = NULL) { $this->PERFORM( $this->get_xHTML('STRUCTURE', 3, $label) ); }
 
 /**
  *
@@ -3080,7 +3084,7 @@ class Html {
        * @method function return_elementINLINE()
        *
        **/
-      self::PERFORM( $this->return_elementINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label) );
+      $this->PERFORM( $this->return_elementINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label) );
   } 
 
   # INLINE_OR_ANY_LABEL_REQUIRED 
@@ -3114,11 +3118,11 @@ class Html {
     * @method function get__HTML
     *
     **/ 
-   self::PERFORM( $return_elementINLINE  = $this->get__HTML($elem_val, $elem_key, $js, $id, $class) );  
+   $this->PERFORM( $return_elementINLINE  = $this->get__HTML($elem_val, $elem_key, $js, $id, $class) );  
    
    # WHEN_THE_LOOP_IS_TRUE_THEN
    # DO_CONTENT
-   self::PERFORM( $return_elementINLINE  = (!empty($value) && $value !== NULL) ? $value : FALSE  ); 
+   $this->PERFORM( $return_elementINLINE  = (!empty($value) && $value !== NULL) ? $value : FALSE  ); 
    
      # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
      # RETURN_GET___HTML_METHOD_INCLUDED_ 
@@ -3128,7 +3132,7 @@ class Html {
      * @method function get_xHTML()
      *
      **/ 
-   self::PERFORM( $return_elementINLINE  = $this->get_xHTML($elem_val, $elem_key, $label) ); 
+   $this->PERFORM( $return_elementINLINE  = $this->get_xHTML($elem_val, $elem_key, $label) ); 
 
 }
 
@@ -3224,8 +3228,8 @@ class Html {
        * @var $js, $id, $class, NULL
        *
        **/
-     self::PERFORM( $get_inline__HTML  = $this->_setELEMENT($elem_val, $elem_key) );
-     self::PERFORM( $get_inline__HTML  = $this->_setinLINEHTMLattr($js, $id, $class, NULL) );   
+     $this->PERFORM( $get_inline__HTML  = $this->_setELEMENT($elem_val, $elem_key) );
+     $this->PERFORM( $get_inline__HTML  = $this->_setinLINEHTMLattr($js, $id, $class, NULL) );   
   
   }
   # CHECK_ASSOC_IF_IT_IS_TRUE_THEN
@@ -3266,8 +3270,8 @@ class Html {
       * @method function _setHTMLattr()
       *
       **/     
-    self::PERFORM( $get__HTML  = $this->_setELEMENT($elem_val, $elem_key) );
-    self::PERFORM( $get__HTML  = $this->_setHTMLattr($js, $id, $class) );   
+    $this->PERFORM( $get__HTML  = $this->_setELEMENT($elem_val, $elem_key) );
+    $this->PERFORM( $get__HTML  = $this->_setHTMLattr($js, $id, $class) );   
 
 }
 
@@ -3331,11 +3335,11 @@ class Html {
 
      # IF-IT_IS_FALSE_THEN
      # ELSE RETURN EMPTY_COMMENT
-     self::PERFORM( "" );
+     $this->PERFORM( "" );
    
    }
      # IF_TRUE_EXECUTE_DEFINED
-     self::PERFORM( $defined_htm ); 
+     $this->PERFORM( $defined_htm ); 
 }
 
 /**
@@ -3389,8 +3393,8 @@ class Html {
       * @method function _getxTAG()
       *
       **/     
-    self::PERFORM( $_setHTMLattr  = $this->_isJStrue($js, $id, $class) );
-    self::PERFORM( $_setHTMLattr = $this->_getxTAG().$this->_getBREAK() );   
+    $this->PERFORM( $_setHTMLattr  = $this->_isJStrue($js, $id, $class) );
+    $this->PERFORM( $_setHTMLattr = $this->_getxTAG().$this->_getBREAK() );   
 }
 
 /**
@@ -3439,8 +3443,8 @@ class Html {
       * @method function _set_tagSPACER()
       *
       **/     
-    self::PERFORM( $_setinLINEHTMLattr = $this->_isJStrue($js, $id, $class) );
-    self::PERFORM( $_setinLINEHTMLattr = $this->_set_tagSPACER().$this->_setENDS().$this->_getxTAG().$this->_getBREAK() );  
+    $this->PERFORM( $_setinLINEHTMLattr = $this->_isJStrue($js, $id, $class) );
+    $this->PERFORM( $_setinLINEHTMLattr = $this->_set_tagSPACER().$this->_setENDS().$this->_getxTAG().$this->_getBREAK() );  
 
   } /**
       *
@@ -3482,7 +3486,7 @@ class Html {
      *
      **/      
      $js_false = $this->_isJStrue($js, $id, $class);
-     self::PERFORM(  $js_false );
+     $this->PERFORM(  $js_false );
   } 
     # ELSE_IF_IT_IS_NOT_NULL_NOT_FALSE_NOT_DEFAULT_OR_IT_IS_SET_AS_TRUE_THEN
     # CHECK_IF_IT_IS_FUNCASSOC_CLASSASSOC_METHOD_ASSOC_THE_SET_RETURN
@@ -3528,7 +3532,7 @@ class Html {
        {
          
          # SET_PRINT_DATA_STATIC_LOOPING  
-         self::PERFORM( $this->_tagSPACER().$attr_name
+         $this->PERFORM( $this->_tagSPACER().$attr_name
       
                       .$this->_getES()
                       .$this->_getDQUOTE()
@@ -3546,7 +3550,7 @@ class Html {
     * @method function html_attr
     *
     **/        
-    self::PERFORM( $html_attributes = $this->html_attr($id, $class ) );
+    $this->PERFORM( $html_attributes = $this->html_attr($id, $class ) );
 }
 
 /**
@@ -3669,7 +3673,7 @@ class Html {
     * @method function have_id_class
     *
     **/  
-   if ($id == TRUE && $class == TRUE)         {   self::PERFORM(  $this->_tagSPACER().$this->have_id_class($id, $class) ); 
+   if ($id == TRUE && $class == TRUE)         {   $this->PERFORM(  $this->_tagSPACER().$this->have_id_class($id, $class) ); 
    }  
 
   /**
@@ -3678,7 +3682,7 @@ class Html {
     * @method function haveId
     *
     **/       
-    elseif ($id == TRUE  && $class == FALSE )  {   self::PERFORM( $this->_tagSPACER().$this->haveId($id) );
+    elseif ($id == TRUE  && $class == FALSE )  {   $this->PERFORM( $this->_tagSPACER().$this->haveId($id) );
    }
 
  /**
@@ -3687,7 +3691,7 @@ class Html {
    * @method function haveClass
    *
    **/       
-   elseif ($id == FALSE && $class == TRUE  )    {   self::PERFORM(  $this->_tagSPACER().$this->haveClass($class) ); 
+   elseif ($id == FALSE && $class == TRUE  )    {   $this->PERFORM(  $this->_tagSPACER().$this->haveClass($class) ); 
    }  
   
  /**
@@ -3730,7 +3734,7 @@ protected function HtmlELements_Optimizer($inline, $elem, $js, $id, $class, $ass
         }
       
         # RETURN_INLINE_ELEMENT_NO_HTML_CLOSING_TAG 
-        self::PERFORM( $this->_setReturnINLINELEMENT($this->_setINLINELEMENTS($elem),$js, $id, $class, NULL) ); 
+        $this->PERFORM( $this->_setReturnINLINELEMENT($this->_setINLINELEMENTS($elem),$js, $id, $class, NULL) ); 
    } else {
 
       # CHECK_IF_INLINE_IS_ASSOC_WITH_FUNC_ASSOC_OR_CLASS_ASSOC_OR_METHOD_ASSOC
@@ -3978,7 +3982,7 @@ protected function HtmlELements_Optimizer($inline, $elem, $js, $id, $class, $ass
 
     # CHECK_IF_aSSOC_IS_NOT_TRUE_OR_IF_IT_IS_FALSE
     # SET_AS_PRINT_STATIC_HTML    
-    self::PERFORM( $this->_get_TAG().$this->_makeLine().$this->_tagSPACER().$this->_getENDS().$this->_getxTAG().$this->_getBREAK() );
+    $this->PERFORM( $this->_get_TAG().$this->_makeLine().$this->_tagSPACER().$this->_getENDS().$this->_getxTAG().$this->_getBREAK() );
       
    } 
     
@@ -4004,13 +4008,13 @@ protected function _isTrueBREAK_assoc($assoc) {
      
     # CHECK_IF_aSSOC_IS_NOT_TRUE_OR_IF_IT_IS_FALSE
     # SET_AS_PRINT_STATIC_HTML 
-    self::PERFORM( self::_get_TAG().self::_doBREAK().self::_tagSPACER().self::_getENDS().self::_getxTAG().self::_getBREAK() ); 
+    $this->PERFORM( $this->_get_TAG().$this->_doBREAK().$this->_tagSPACER().$this->_getENDS().$this->_getxTAG().$this->_getBREAK() ); 
    } 
 
     # ELSE_IF_THE_ASSOC_PARA_IS_TRUE_THEN_SET_RETURN 
     elseif ($assoc === FUNC_ASSOC || $assoc === CLASS_ASSOC || $assoc === METHOD_ASSOC) {
     # RETURN_METHOD_ASSOC
-    return self::_get_TAG().self::_doBREAK().self::_tagSPACER().self::_getENDS().self::_getxTAG().self::_getBREAK();       
+    return $this->_get_TAG().$this->_doBREAK().$this->_tagSPACER().$this->_getENDS().$this->_getxTAG().$this->_getBREAK();       
    }
 }
 
@@ -4355,7 +4359,7 @@ protected function cpe_xib6_FileHandler_mulipath_array($MultiPagefile__, $CheckC
  protected function Validate_extension_assets_files($Extension__) {
   
   // GET_ALL_AVAILABLE_EXTENSION_FILES 
-  $currentSet_Ext     = self::__FILEEXTENSION__;
+  $currentSet_Ext     = $this->__FILEEXTENSION__;
 
   // SET_DONT_EXTENSION_POINT
   $InsertDotOperation = '.';

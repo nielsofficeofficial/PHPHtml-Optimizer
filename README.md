@@ -1,6 +1,4 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/9aa969ea8b1642588110cc72dd308343)](https://www.codacy.com/gh/nielsofficeofficial/PHPHtml-Optimizer/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nielsofficeofficial/PHPHtml-Optimizer&amp;utm_campaign=Badge_Grade)
-[![Coverage Status](https://coveralls.io/repos/github/nielsofficeofficial/PHPHtml-Optimizer/badge.svg?branch=master)](https://coveralls.io/github/nielsofficeofficial/PHPHtml-Optimizer?branch=master)
-
 
 <h6>Support PHP v7.0++ higher | not work for v.7 less</h6>
 <h6>PHPHtml-Optimizer is a PHP FREE library that will help PHP/Developer/Programmer beautiful and optimize codes. </h6>
@@ -12,7 +10,7 @@ To refractor/optimize code is a hassle and heavy load burden in programming, All
 <h6>Custom ATTR/ELEMENT</h6>
 <pre>
 // ATTR() VALID PARAMETERS
-META | TITLE | LINK | SCRIPT | CUSTOM_END | BEGIN_CUSTOM_END | DOCTYPE
+META | TITLE | LINK | SCRIPT | CUSTOM_END | BEGIN_CUSTOM_END
 </pre>
 <pre>
 // None closing inline element | PARAMETER : CUSTOM_END
@@ -36,7 +34,7 @@ USE \PHPHtml\CodeOptimizer\optimizer\Html AS Optimizer;
 USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS OptimizerCare; <br />
 $Html 		 = NEW Optimizer();
 $FileEnhance = NEW OptimizerCare();<br />
-ATTR('DOCTYPE','doctype');<br />
+<br />
 _HTML(SetElemAttr(['class','lang'],['no-js','']));<br />
 _HEAD();<br />
 ATTR('META', [
