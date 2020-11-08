@@ -105,7 +105,7 @@ xBODY();
 xHTML();
 </pre>
 
-For installlation <a href="https://github.com/nielsofficeofficial/Installations"> Process link here </a><br /> 
+For installation <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Installations"> Process link here </a><br /> 
 For more examples and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Docx"> Documentation link here </a><br /> 
 For File Enhancers and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Enhancers"> Documentation/Reference link here </a><br /> 
 For Developer <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer/issues"> Support link here </a><br /> 
