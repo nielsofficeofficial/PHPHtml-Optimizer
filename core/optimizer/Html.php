@@ -4466,7 +4466,7 @@ protected function cpe_xib6_FileHandler_MultiPage_array($GMultiP__, $GTCP__) {
   **/
 private function SetReturnElement_ModifiedHTML($modifiedHTMLE_) {
 
-  return $this->_setGATE().$this->_setENDS().strtolower($modifiedHTMLE_).$this->_setENDGATE();
+  return $this->_setGATE().$this->_setENDS().strtolower($modifiedHTMLE_).$this->_setENDGATE()."\n";
 
 }
 

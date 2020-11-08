@@ -76,6 +76,16 @@ xHEAD();
 _BODY();
 </pre>
 
+<h4>Quick Start : <span>Copy and paste for body or page.php</span> </h4>
+<pre>
+_div(SetElemAttr(['data-select'],['true']),'Parent_id','row');<br />
+ PERFORM(<br />
+  ELEM('h1','PHPHtml-Optimizer!') .
+  ELEM('p', 'HELLO WORLD - For PHP/Developer - Back End Programmers') <br />
+ );<br />
+xdiv(' / END of Class Parent row' );
+</pre>
+
 <h4>Quick Start : <span>Copy and paste for footer.php</span> </h4>
 <pre>
 _FOOTER();<br />
@@ -95,7 +105,8 @@ xBODY();
 xHTML();
 </pre>
 
-For Installlation &more examples and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Docx"> Documentation link here </a><br /> 
+For installlation <a href="https://github.com/nielsofficeofficial/Installations"> Process link here </a><br /> 
+For more examples and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Docx"> Documentation link here </a><br /> 
 For File Enhancers and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Enhancers"> Documentation/Reference link here </a><br /> 
 For Developer <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer/issues"> Support link here </a><br /> 
 This Library is 100% secured and fully free ready to use, If you see vulnerability you can email me: @ nieldigitalsolution@gmail.com
@@ -107,9 +118,6 @@ php.net : To oppurtunity Develop web application using corePHP - PHPFrameworks<b
 w3school : HTML Elements reference</h5>
 
 __For Suggestion and Donation/Sponsorship You can send via My GCash : +639650332900__ <br />
-__Also You can send via My Paypal account: syncdevprojects@gmail.com__
-
- 
-
+__Also You can send via My Paypal account: syncdevprojects@gmail.com__ <br />
 Thanks and good luck! 
 
