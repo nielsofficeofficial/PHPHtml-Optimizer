@@ -409,11 +409,11 @@ final private function cpe_xib6_FileHandler_count() {
  if (  $PathValue == TRUE ) {
    
    // LOOP THE FILE IF IT IS TRUE THEN RETURN THEY KEY AND VALUE
-  foreach ($PathValue  as $PathValue_$key => $PathValue_val) 
+  foreach ($PathValue  as $PathValue_key => $PathValue_val) 
   {
     
     // THEN COUNT RETURN NUMBER DESIGNATION WITH ARRAY VALUE
-    for ($PathValue_i = $PathValue_$key; $PathValue_i <= $PathValue_$key; $PathValue_i++) 
+    for ($PathValue_i = $PathValue_key; $PathValue_i <= $PathValue_key; $PathValue_i++) 
     { 
      
      // CONCAT HTML WITH MERGE VERSION

@@ -61,7 +61,7 @@ function isbelongs($page = null , $_GETKEYFOLDERPATH_ = null ) {
    *
    **/ 
  $Enhancer = new PHPFileHandler();
- return $Enhancer->belongs_to($page, $__GET_KEY_FOLDER_PATH__);
+ return $Enhancer->belongs_to($page, $_GETKEYFOLDERPATH_);
 
 }
 
