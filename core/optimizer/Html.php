@@ -1870,10 +1870,7 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function _noHTML($js=[], $id=null, $class=null) { 
-
-    $Enhancer = NEW \PHPHtml\CodeOptimizer\optimizer\Enhancers();
-    $this->PERFORM( $Enhancer->ATTR('DOCTYPE','doctype').$this->get__HTML('STRUCTURE', 3, $js, $id, $class) );   }
+  public function _noHTML($js=[], $id=null, $class=null) { $this->PERFORM($this->cpe_FileHandler_html_type($js, $id, $class)); }
 
 // CLOSING_METHOD_noHTML_TAG
   public function xnoHTML($label = NULL) { $this->PERFORM( $this->get_xHTML('STRUCTURE', 3, $label) ); }
@@ -4212,9 +4209,7 @@ protected function cpe_FileJandler_cutom_elem_closing_tag($QuickStart__, $PARAM_
   *
   **/
 protected function cpe_custom_elements($Element__, $value__, $elemAttr__, $elemId__, $elemClass__) {
-
-   
-   
+  
    # GET STRING_ELEMENT_THEN_RETURN
    $Element__     = strtolower($Element__);
 
@@ -4224,6 +4219,19 @@ protected function cpe_custom_elements($Element__, $value__, $elemAttr__, $elemI
    # THEN RETURN ALL TRUE? RETURN FUNCTION CUSTOM MODIFIED HTML
    return $this->cpe_Filehandler_Val($value__, $Element__,$ElementAttr__);
 
+}
+
+/**
+  *
+  * @method private function cpe_FileHandler_html_type()
+  * @package @private Method Defined cpe_FileHandler_html_type() // use custom HTML
+  *
+  **/
+private function cpe_FileHandler_html_type($js, $id, $class) {
+
+    $Enhancer = NEW \PHPHtml\CodeOptimizer\optimizer\Enhancers();
+    
+    return $Enhancer->ATTR('_xhtml_modify','doctype').$this->get__HTML('STRUCTURE', 3, $js, $id, $class);  
 }
 
 /**
