@@ -390,6 +390,34 @@ function PERFORM($str=null, $assoc=null) {
 
 }
 
+/**
+  *
+  * @since 05.11.2020
+  * @category PHPFileEnhancer
+  * @method Defined STRING()  
+  *
+  **/
+function STRING($str=null, $assoc=null) {
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : PHPFileEnhancer
+   * @package : Static Procedural
+   * @method  : STRING()
+   *
+   *
+   *
+   **/ 
+ $Enhancer = new PHPFileHandler();
+ return $Enhancer->STRING($str, $assoc);
+
+}
+
+
 
 
 

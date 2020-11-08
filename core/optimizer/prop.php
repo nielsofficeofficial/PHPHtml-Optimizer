@@ -289,4 +289,115 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancer AS PHPFileHandler;
    |
    */
   define('__BEGIN_CUSTOM_END__', 'BEGIN_CUSTOM_END' );
-    
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Set PARAM MERGE
+   |
+   |
+   |
+   |
+   */    
+  define('__MERGE__', 'MERGE' );
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Set PARAM SetElemAttr
+   |
+   |
+   |
+   |
+   */
+  define('__SetElemAttr__', 'SetElemAttr' );
+  
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Set PARAM DOELSE
+   |
+   |
+   |
+   |
+   */
+  define('__DOELSE__', 'DOELSE' );
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Set PARAM DOIF
+   |
+   |
+   |
+   |
+   */
+  define('__DOIF__', 'DOIF' );
+
+    /*
+   |
+   |
+   |
+   |
+   |
+   | Set PARAM PERFORM
+   |
+   |
+   |
+   |
+   */
+  define('__PERFORM__', 'PERFORM' );
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Set PARAM STRING
+   |
+   |
+   |
+   |
+   */
+  define('__STRING__', 'STRING' );
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Set PARAM ATTR
+   |
+   |
+   |
+   |
+   */
+   define('__ATTR__', 'ATTR' );
+
+  /*
+   |
+   |
+   |
+   |
+   |
+   | Set PARAM ELEM
+   |
+   |
+   |
+   |
+   */
+  define('__ELEM__', 'ELEM' );

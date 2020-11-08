@@ -50,7 +50,7 @@ class Enhancers Extends Optimizer {
   **/
   public function BREAK($assoc=null) { 
  
-   return function_exists(__BR__) ? parent::_isTrueBREAK_assoc($assoc) : FALSE ; 
+   return function_exists(__BR__) ? parent::_isTrueBREAK_assoc($assoc) : $this->EnhanceeCoreErrorMsg(); 
 }
 
 /**
@@ -62,7 +62,7 @@ class Enhancers Extends Optimizer {
   **/
    public function LINE($assoc=null) { 
 
-  return function_exists(__HR__) ? parent::_isTrueLine_assoc($assoc) : FALSE;     
+  return function_exists(__HR__) ? parent::_isTrueLine_assoc($assoc) : $this->EnhanceeCoreErrorMsg();     
  
  }
 
@@ -75,7 +75,7 @@ class Enhancers Extends Optimizer {
   **/
 public function SPACE() { 
  
-  return function_exists(__SPACE__) ? parent::_tagSPACER() : FALSE;     
+  return function_exists(__SPACE__) ? parent::_tagSPACER() : $this->EnhanceeCoreErrorMsg();     
 
 }
 
@@ -89,7 +89,7 @@ public function SPACE() {
   **/
  public function MERGE($merge = null ) { 
 
-  return $this->_isTrue_SET_Merge($merge); 
+ return function_exists(__MERGE__) ? $this->_isTrue_SET_Merge($merge) : $this->EnhanceeCoreErrorMsg();     
 
 }
 
@@ -118,7 +118,7 @@ public function SPACE() {
   **/  
   public function SetFileExtension($argu = null) {
 
-  return function_exists(__FILEEXTENSION__) ? parent::Validate_extension_assets_files($argu) : FALSE;    
+  return function_exists(__FILEEXTENSION__) ? parent::Validate_extension_assets_files($argu) : $this->EnhanceeCoreErrorMsg();    
 
 }
 
@@ -135,7 +135,7 @@ public function SPACE() {
  **/ 
  public function SetElemAttr($array_set_1 , $array_set_2) { 
    
-   return parent::set_Element_Attr($array_set_1,$array_set_2); 
+  return function_exists(__SetElemAttr__) ? parent::set_Element_Attr($array_set_1,$array_set_2) : $this->EnhanceeCoreErrorMsg();     
  
  }
 
@@ -149,11 +149,10 @@ public function SPACE() {
   *
   **/
   public function __magicELSE($condition=null, $if_result=null, $else_result=null, $assoc=null) { 
-
-  return parent::return_method_concat_else( $condition, $if_result, $else_result, $assoc); 
+ 
+   return function_exists(__DOELSE__) ? parent::return_method_concat_else( $condition, $if_result, $else_result, $assoc) : $this->EnhanceeCoreErrorMsg();      
 
 }
-
 
 /**
   *
@@ -166,7 +165,7 @@ public function SPACE() {
   **/
   public function __magicIF($condition=null, $if_result=null, $assoc=null) { 
 
-  return parent::return_method_concat_else( $condition, $if_result, null, $assoc); 
+   return function_exists(__DOIF__) ? parent::return_method_concat_else( $condition, $if_result, null, $assoc) : $this->EnhanceeCoreErrorMsg();  
 
 }
  
@@ -179,10 +178,9 @@ public function SPACE() {
   **/
    public function PERFORM($str=null, $assoc=null) { 
 
-    return parent::_isTrue_SET_STRING($str, $assoc); 
+   return function_exists(__PERFORM__) ? parent::_isTrue_SET_STRING($str, $assoc) : $this->EnhanceeCoreErrorMsg(); 
 
  }
-
 
 /**
   *
@@ -193,8 +191,7 @@ public function SPACE() {
   **/
    public function STRING($str=null, $assoc=null) { 
 
-    return parent::_isTrue_SET_STRING($str, $assoc); 
-
+   return function_exists(__STRING__) ? parent::_isTrue_SET_STRING($str, $assoc) : $this->EnhanceeCoreErrorMsg(); 
  }
 
 /**
@@ -245,7 +242,7 @@ public function GetKeyFolderPath() {
   */
 public function ATTR($PARAM__, $QuickStart__) {
 
-  return $this->cpe_FileHander_hdr($PARAM__, $QuickStart__);
+  return function_exists(__ATTR__) ? $this->cpe_FileHander_hdr($PARAM__, $QuickStart__) : $this->PERFORM($this->Enhance_ErrorMsg_att()); 
 
 }
 
@@ -260,8 +257,8 @@ public function ATTR($PARAM__, $QuickStart__) {
   * $Enhancer->ELEM()
   */
 public function ELEM($Element__=null, $value__=null, $elemAttr__=null, $elemId__=null, $elemClass__=null) {
-  
-  return $this->cpe_FileHandler_custom_elem($Element__, $value__, $elemAttr__, $elemId__, $elemClass__);
+   
+ return function_exists(__ELEM__) ? $this->cpe_FileHandler_custom_elem($Element__, $value__, $elemAttr__, $elemId__, $elemClass__) : $this->PERFORM($this->Enhance_ErrorMsg_att()); 
 
 }
 
@@ -475,7 +472,7 @@ final private function cpe_xib6_FileHandler_count() {
 final private function Enhacer_ErrorMsg() {
         
   $ERROR_MSG  = " ";
-  $ERROR_MSG .= " Check Method Instantiate <br />";
+  $ERROR_MSG .= " Classes Must be Instantiated <br />";
   $ERROR_MSG .= " For Developer support visit github submit issue: ".parent::ELEMENT('a','Submit Github Support', parent::IssueSubmitAttr()).$this->BREAK(METHOD_ASSOC);   
   $ERROR_MSG .= " Recomendation: ".parent::ELEMENT('a','Read Documentation Click Here',parent::DocxEnahncerSubmitAttr());      
 
@@ -488,6 +485,19 @@ private function Enhance_ErrorMsg_att() {
   # PERFORM ERROR MASSGES
   $ERROR_MSG  = " ";
   $ERROR_MSG .= " Check ATTR('VALID_PARAM', [ ] ) only valid parameter can used <br />";
+  $ERROR_MSG .= " For Developer support visit github submit issue: ".parent::ELEMENT('a','Submit Github Support', parent::IssueSubmitAttr()).$this->BREAK(METHOD_ASSOC);   
+  $ERROR_MSG .= " Recomendation: ".parent::ELEMENT('a','Read Documentation Click Here',parent::DocxEnahncerSubmitAttr());      
+  
+   $this->PERFORM($ERROR_MSG);
+
+}
+
+private function EnhanceeCoreErrorMsg() {
+
+  # PERFORM ERROR MASSGES
+  $ERROR_MSG  = " ";
+  $ERROR_MSG .= " Class can be extends But Function and Method Cannot be modify! <br />";
+  $ERROR_MSG .= " Warning Retore all Modification PHPHtml-Optimizer use default! <br />";  
   $ERROR_MSG .= " For Developer support visit github submit issue: ".parent::ELEMENT('a','Submit Github Support', parent::IssueSubmitAttr()).$this->BREAK(METHOD_ASSOC);   
   $ERROR_MSG .= " Recomendation: ".parent::ELEMENT('a','Read Documentation Click Here',parent::DocxEnahncerSubmitAttr());      
   
