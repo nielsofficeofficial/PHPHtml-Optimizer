@@ -371,7 +371,7 @@
    |
    |
    */ 
-  define('__DIRECTORY_OPTIMIZER_PAGE__', __DIR__ . DIRECTORY_SEPARATOR . 'core/merge/html.php');
+  define('__DIRECTORY_OPTIMIZER_PAGE__', SOM_PATH_DIR . 'core/merge/html.php');
 
   /*
    |
@@ -428,7 +428,7 @@
    |
    |
    */
-  define('__GET_MERGE_FILES__', __DIR__ . DIRECTORY_SEPARATOR . 'core/merge/prop.php');    
+  define('__GET_MERGE_FILES__', SOM_PATH_DIR . 'core/merge/prop.php');    
   
   /*
    |
@@ -558,7 +558,7 @@
    |
    |
    */
-  define('__GET_LOAD_MERGE__', __DIR__ . DIRECTORY_SEPARATOR . 'core/merge/Merge.php' );
+  define('__GET_LOAD_MERGE__', SOM_PATH_DIR . 'core/merge/Merge.php' );
  
    /*
    |
@@ -572,7 +572,7 @@
    |
    |
    */
-  define('__GET_LOAD_MERGEBOX__', __DIR__ . DIRECTORY_SEPARATOR . 'core/merge/MergeBox.php' );
+  define('__GET_LOAD_MERGEBOX__', SOM_PATH_DIR . 'core/merge/MergeBox.php' );
  
    /*
    |
@@ -586,7 +586,7 @@
    |
    |
    */
-  define('__GET_LOAD_MERGEELEMENT__', __DIR__ . DIRECTORY_SEPARATOR . 'core/merge/MergeElements.php' );
+  define('__GET_LOAD_MERGEELEMENT__',SOM_PATH_DIR . 'core/merge/MergeElements.php' );
 
    /*
    |
@@ -600,4 +600,4 @@
    |
    |
    */
-  define('__GET_PROPERTY_ITSELF__', __DIR__ . DIRECTORY_SEPARATOR . ' ../../prop.php' );
+  define('__GET_PROPERTY_ITSELF__', SOM_PATH_DIR . ' ../../prop.php' );
