@@ -409,33 +409,37 @@ final private function cpe_xib6_FileHandler_count() {
  if (  $PathValue == TRUE ) {
    
    // LOOP THE FILE IF IT IS TRUE THEN RETURN THEY KEY AND VALUE
-  foreach ($PathValue  as $key => $val) 
+  foreach ($PathValue  as $PathValue_$key => $PathValue_val) 
   {
     
     // THEN COUNT RETURN NUMBER DESIGNATION WITH ARRAY VALUE
-    for ($i = $key; $i <= $key; $i++) 
+    for ($PathValue_i = $PathValue_$key; $PathValue_i <= $PathValue_$key; $PathValue_i++) 
     { 
      
      // CONCAT HTML WITH MERGE VERSION
      // EMTPY ARRAY 
      $Merge    = "";
      // BEGIN MERGE
-     $Merge   .=  _MERGE('PRE') .  $i . '  => '; 
+     $Merge   .=  _MERGE('PRE') .  $PathValue_i . '  => '; 
       
      // THEN CHECK i IF EQUAL ZERO MEANS WEB ROOT 
-     if( $i === 0 ) {
+     if( $PathValue_i === 0 ) {
        
        // RETURN WEB ROOT
        $Merge .= '[\'Web-root, localhost\']'; 
        
       // ELSE THAT IS SECONDARY FOLDER SHOWS FOR MAPPING 
-      } elseif ( $i >= 2 )  { 
+      } elseif ( $PathValue_i >= 2 )  { 
        
        // RETURN SUB FOLDER MAPPING
-       $Merge .= '[\''. $subFolder . ' -> ' . $val . '\']'; 
+       $Merge .= '[\''. $subFolder . ' -> ' . $PathValue_val . '\']'; 
      
      // RETURN OTHER DIRECTORY FOLDER FOR MAPPING
-     }  else { $Merge .=  '[\''. $Folder . ' -> ' .$val . '\']'; } 
+     } else { 
+
+     $Merge .=  '[\''. $Folder . ' -> ' . $PathValue_val . '\']'; 
+
+     } 
      
      // END OF MERGE
      $Merge .= xMERGE('PRE');
