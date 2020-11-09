@@ -13,7 +13,7 @@ To refractor/optimize code is a hassle and heavy load burden in programming, All
 META | TITLE | LINK | SCRIPT | CUSTOM_END | BEGIN_CUSTOM_END
 </pre>
 <pre>
-// None closing inline element / PARAMETER : CUSTOM_END
+// None closing inline element | PARAMETER : CUSTOM_END
 ATTR('CUSTOM_END', [
  "NAME_OF_ELEMENT" => [ 'name' => "Value" ]
 ]);
@@ -99,18 +99,19 @@ xdiv(' / END of Class Parent row' );
 </pre>
 
 <h4>Quick Start : <span>Copy and paste for footer.php</span> </h4>
-<pre>
-_FOOTER();<br />
+```
+_FOOTER();
+
 ATTR('SCRIPT', [
  "LABEL0" => [ 'src' => "js/normalize.js" ],
  "LABEL1" => [ 'src' => "js/main.js" ]
-]);<br />
-if (isbelongs(['index','portfolio'], 1)) {
+]);
+if (isbelongs(['index','portfolio'], 1)) { ?>
  <script> 
     /**  Header script goes here.. **/
  </script>
 
-}
+<?php }
 
 xFOOTER();
 xBODY();
