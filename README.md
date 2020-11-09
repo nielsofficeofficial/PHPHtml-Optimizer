@@ -8,26 +8,26 @@ To refractor/optimize code is a hassle and heavy load burden in programming, All
 </p>
 
 <h6>Custom ATTR/ELEMENT</h6>
-<pre>
+```
 // ATTR() VALID PARAMETERS
 META | TITLE | LINK | SCRIPT | CUSTOM_END | BEGIN_CUSTOM_END
-</pre>
-<pre>
+```
+```
 // None closing inline element | PARAMETER : CUSTOM_END
 ATTR('CUSTOM_END', [
  "NAME_OF_ELEMENT" => [ 'name' => "Value" ]
 ]);
-</pre>
-<pre>
+```
+```
 // With Closing Element | PARAMETER : BEGIN_CUSTOM_END	
 ATTR('BEGIN_CUSTOM_END', [
  "NAME_OF_ELEMENT" => [ 'name' => "Value" ]
 ]);
-</pre>
+```
 
 <h4>Quick Start : <span>Copy and paste for header.php</span> </h4>
 
-<pre>
+```
 
 USE \PHPHtml\CodeOptimizer\merge\Html;
 USE \PHPHtml\CodeOptimizer\optimizer\Html AS Optimizer;
@@ -72,10 +72,10 @@ if(isbelongs('index', 1)) {
 }  <br />
 xHEAD();
 _BODY();
-</pre>
+```
 
 <h4>Quick Start : <span>Copy and paste for body or page.php</span> </h4>
-<pre>
+```
 _div(SetElemAttr(['data-select'],['true']),'Parent_id','row');<br />
  PERFORM(<br />
   ELEM('h1','Welcome to PHPHtml-Optimizer!') .
@@ -101,7 +101,7 @@ if (isbelongs(['index','portfolio'], 1)) {
 xFOOTER();
 xBODY();
 xHTML();
-</pre>
+```
 
 For installation <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Installations"> Process link here </a><br /> 
 For more examples and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Docx"> Documentation link here </a><br /> 
