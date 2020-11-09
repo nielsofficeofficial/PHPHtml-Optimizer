@@ -10,10 +10,10 @@ To refractor/optimize code is a hassle and heavy load burden in programming, All
 <h6>Custom ATTR/ELEMENT</h6>
 ```
 // ATTR() VALID PARAMETERS
-META | TITLE | LINK | SCRIPT | CUSTOM_END | BEGIN_CUSTOM_END
+META / TITLE / LINK / SCRIPT / CUSTOM_END / BEGIN_CUSTOM_END
 ```
 ```
-// None closing inline element | PARAMETER : CUSTOM_END
+// None closing inline element / PARAMETER : CUSTOM_END
 ATTR('CUSTOM_END', [
  "NAME_OF_ELEMENT" => [ 'name' => "Value" ]
 ]);
