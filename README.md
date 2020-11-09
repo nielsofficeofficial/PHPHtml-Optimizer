@@ -31,35 +31,47 @@ ATTR('BEGIN_CUSTOM_END', [
 
 USE \PHPHtml\CodeOptimizer\merge\Html;
 USE \PHPHtml\CodeOptimizer\optimizer\Html AS Optimizer;
-USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS OptimizerCare; <br />
+USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS OptimizerCare; 
+
 $Html 		 = NEW Optimizer();
-$FileEnhance = NEW OptimizerCare();<br />
-_HTML(SetElemAttr(['class','lang'],['no-js','']));<br />
-_HEAD();<br />
+
+$FileEnhance = NEW OptimizerCare();
+
+_HTML(SetElemAttr(['class','lang'],['no-js','']));
+
+_HEAD();
+
 ATTR('META', [
  "LABEL0" => [ 'charset'    => "utf-8"],
  "LABEL1" => [ 'http-equiv' => "x-ua-compatible", 'content' => "" ]
-]); <br />
-ATTR('TITLE', 'QUICK START'); <br />
+]); 
+
+ATTR('TITLE', 'QUICK START'); 
+
 ATTR('META', [
  "LABEL3" => [ 'name' => "description", 'content' => ""],
  "LABEL4" => [ 'name' => "viewport",    'content' => "width=device-width, initial-scale=1" ]
-]); <br />
+]); 
+
 ATTR('LINK', [ 
  "LABEL0" => [ 'rel' => "manifest", 		'src' => "site.webmanifest"],
  "LABEL1" => [ 'rel' => "apple-touch-icon", 'src' => "icon.png"]
-]); <br />
+]); 
+
 ATTR('SCRIPT', [
  "LABEL0" => [ 'src' => "js/normalize.js" ],
  "LABEL1" => [ 'src' => "js/main.js" ]
-]);<br />
+]);
+
 ATTR('CUSTOM_END', [
  "Optimize" => [ 'src' => "css/normalize.css" ]
-]);<br />
+]);
+
 ATTR('BEGIN_CUSTOM_END', [ 
  "Opt" => [ 'src' => "css/normalize.css" ]
-]); <br />
-if(isbelongs('index', 1)) { 
+]);
+
+if(isbelongs('index', 1)) { ?>
 
   <style> 
    /**  Header style goes here.. **/
@@ -69,9 +81,10 @@ if(isbelongs('index', 1)) {
     /**  Header script goes here.. **/
   </script>
 
-}  <br />
+<?php } 
 xHEAD();
 _BODY();
+
 ```
 
 <h4>Quick Start : <span>Copy and paste for body or page.php</span> </h4>
