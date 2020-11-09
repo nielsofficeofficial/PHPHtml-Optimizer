@@ -8,22 +8,22 @@ To refractor/optimize code is a hassle and heavy load burden in programming, All
 </p>
 
 <h6>Custom ATTR/ELEMENT</h6>
-```
+<pre>
 // ATTR() VALID PARAMETERS
-META / TITLE / LINK / SCRIPT / CUSTOM_END / BEGIN_CUSTOM_END
-```
-```
+META | TITLE | LINK | SCRIPT | CUSTOM_END | BEGIN_CUSTOM_END
+</pre>
+<pre>
 // None closing inline element / PARAMETER : CUSTOM_END
 ATTR('CUSTOM_END', [
  "NAME_OF_ELEMENT" => [ 'name' => "Value" ]
 ]);
-```
-```
+</pre>
+<pre>
 // With Closing Element | PARAMETER : BEGIN_CUSTOM_END	
 ATTR('BEGIN_CUSTOM_END', [
  "NAME_OF_ELEMENT" => [ 'name' => "Value" ]
 ]);
-```
+</pre>
 
 <h4>Quick Start : <span>Copy and paste for header.php</span> </h4>
 
@@ -81,7 +81,8 @@ if(isbelongs('index', 1)) { ?>
     /**  Header script goes here.. **/
   </script>
 
-<?php } 
+<?php }
+
 xHEAD();
 _BODY();
 
