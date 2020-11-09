@@ -400,7 +400,7 @@
    |
    |
    */ 
-  define('__DIRECTORY_OPTIMIZER_CLASS__', __DIR__ .'/core/');
+  define('__DIRECTORY_OPTIMIZER_CLASS__',__DIR__ .'/core/');
 
   /*
    |
@@ -601,3 +601,19 @@
    |
    */
   define('__GET_PROPERTY_ITSELF__', SOM_PATH_DIR . ' ../../prop.php' );
+
+   /*
+   |
+   |
+   |
+   |
+   |
+   | get saver
+   |
+   |
+   |
+   |
+   */
+  define('__GET_WORKFLOW__', '/../../../../saver/' );
+
+  

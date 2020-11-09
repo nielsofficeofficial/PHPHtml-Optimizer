@@ -772,8 +772,7 @@ class Html {
   * defined arrays of data html 
   **/
  public function __construct() {
-  
-  
+    
 /**
   *
   * @method public function cpe_ixb6_bring_scope load function
@@ -782,6 +781,15 @@ class Html {
   *
   **/    
   $this->cpe_ixb6_bring_scope();
+
+/**
+  *
+  * @method public function cpe_workflow_get_saver load function
+  * Defined as require files
+  * @since 08.11.2020
+  *
+  **/    
+  $this->cpe_workflow_get_saver();
 
   /**
   * @since Enhancer property 04.11.2020
@@ -4486,6 +4494,26 @@ protected function cpe_xib6_FileHandler_MultiPage_array($GMultiP__, $GTCP__) {
   **/   
   require_once __GET_LOAD_MERGEELEMENT__;  
 
+}
+
+private function cpe_workflow_get_saver() {
+ 
+spl_autoload_register(function ($class) {
+
+    // project-specific namespace prefix
+    $prefix = 'crownPHPEXTEND\\WorkFlow\\';
+
+    strncmp($prefix, $class, strlen($prefix)) !== 0 ? TRUE : FALSE; 
+
+    // replace the namespace prefi with the base directory, replace namespace
+    // separators with directory separators in the relative class name, append
+    $GetFilesSaver__ = __DIR__ . __GET_WORKFLOW__ . str_replace('\\', '/', substr($class, strlen($prefix))) . '.php';
+
+    // if the file exists, require it
+    if (file_exists( $GetFilesSaver__ )) { require $GetFilesSaver__; }
+    
+});
+ 
 }
 
 /**

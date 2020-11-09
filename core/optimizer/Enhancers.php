@@ -40,7 +40,10 @@
  */
 
 class Enhancers Extends Optimizer {
- 
+
+public function __construct() {
+
+} 
 /**
   *
   * @method public function add breaktag html as noHTML

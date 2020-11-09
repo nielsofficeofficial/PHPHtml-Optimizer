@@ -159,25 +159,8 @@ if ( __GET_STATIC_CLASS_HTML__  && __GET_INSTANTIATE_CLASS_HTML__ ) {
         *@since 09.142020
         **/
     
-        $getClass_ = $root_file . str_replace('\\', '/', $InterconnectedClass_) . '.php';
-    
-        /*
-        |
-        |
-        |
-        |
-        |  
-        | get return class empty
-        |
-        |
-        |
-        |
-        */     
-        /**
-        *@since 09.142020
-        **/
-        if ($getClass_) { require $getClass_;  }
-    
+        return require $root_file . str_replace('\\', '/', $InterconnectedClass_) . '.php';
+
       }); 
  
     }  else  {
