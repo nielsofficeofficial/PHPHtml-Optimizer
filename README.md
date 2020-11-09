@@ -33,8 +33,7 @@ USE \PHPHtml\CodeOptimizer\merge\Html;
 USE \PHPHtml\CodeOptimizer\optimizer\Html AS Optimizer;
 USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS OptimizerCare; 
 
-$Html 		 = NEW Optimizer();
-
+$Html 		     = NEW Optimizer();
 $FileEnhance = NEW OptimizerCare();
 
 _HTML(SetElemAttr(['class','lang'],['no-js','']));
@@ -42,25 +41,29 @@ _HTML(SetElemAttr(['class','lang'],['no-js','']));
 _HEAD();
 
 ATTR('META', [
- "LABEL0" => [ 'charset'    => "utf-8"],
- "LABEL1" => [ 'http-equiv' => "x-ua-compatible", 'content' => "" ]
+ "meta-charset" => [ 'charset'    => "utf-8"],
+ "meta-compat"  => [ 'http-equiv' => "x-ua-compatible", 'content' => "" ]
 ]); 
 
-ATTR('TITLE', 'QUICK START'); 
+ATTR('TITLE', 'Quick Start'); 
 
 ATTR('META', [
- "LABEL3" => [ 'name' => "description", 'content' => ""],
- "LABEL4" => [ 'name' => "viewport",    'content' => "width=device-width, initial-scale=1" ]
+ "meta-des"    => [ 'name' => "description", 'content' => ""],
+ "meta-vport"  => [ 'name' => "viewport",    'content' => "width=device-width, initial-scale=1" ]
 ]); 
 
 ATTR('LINK', [ 
- "LABEL0" => [ 'rel' => "manifest", 		'src' => "site.webmanifest"],
- "LABEL1" => [ 'rel' => "apple-touch-icon", 'src' => "icon.png"]
+ "manifest"   => [ 'rel' => "manifest", 		      'src' => "site.webmanifest"],
+ "icon" 	     => [ 'rel' => "apple-touch-icon", 'src' => "icon.png"]
+]); 
+
+ATTR('LINK', [ 
+ "mains-style" => [ 'rel'  		=> "stylesheet", 		'src' => "css/style.css"]
 ]); 
 
 ATTR('SCRIPT', [
- "LABEL0" => [ 'src' => "js/normalize.js" ],
- "LABEL1" => [ 'src' => "js/main.js" ]
+ "normz"    => [ 'src' => "js/normalize.js" ],
+ "main-js"  => [ 'src' => "js/main.js" ]
 ]);
 
 ATTR('CUSTOM_END', [
