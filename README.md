@@ -53,12 +53,12 @@ ATTR('META', [
 ]); 
 
 ATTR('LINK', [ 
- "manifest"   => [ 'rel' => "manifest", 		      'src' => "site.webmanifest"],
- "icon" 	     => [ 'rel' => "apple-touch-icon", 'src' => "icon.png"]
+ "manifest"   => [ 'rel' => "manifest", 'src' => "site.webmanifest"],
+ "icon" => [ 'rel' => "apple-touch-icon", 'src' => "icon.png"]
 ]); 
 
 ATTR('LINK', [ 
- "mains-style" => [ 'rel'  		=> "stylesheet", 		'src' => "css/style.css"]
+ "mains-style" => [ 'rel' => "stylesheet", 'src' => "css/style.css"]
 ]); 
 
 ATTR('SCRIPT', [
