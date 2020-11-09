@@ -99,6 +99,7 @@ xdiv(' / END of Class Parent row' );
 </pre>
 
 <h4>Quick Start : <span>Copy and paste for footer.php</span> </h4>
+
 ```
 _FOOTER();
 
@@ -107,6 +108,7 @@ ATTR('SCRIPT', [
  "LABEL1" => [ 'src' => "js/main.js" ]
 ]);
 if (isbelongs(['index','portfolio'], 1)) { ?>
+
  <script> 
     /**  Header script goes here.. **/
  </script>
