@@ -89,7 +89,7 @@ _BODY();
 ```
 
 <h4>Quick Start : <span>Copy and paste for body or page.php</span> </h4>
-```
+<pre>
 _div(SetElemAttr(['data-select'],['true']),'Parent_id','row');<br />
  PERFORM(<br />
   ELEM('h1','Welcome to PHPHtml-Optimizer!') .
