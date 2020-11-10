@@ -91,14 +91,15 @@ _BODY();
 
 ```
 
-<h4>Quick Start : <span>Copy and paste for body or page.php</span> </h4>
+<h4>Quick Start : <span>Copy and paste for index or page.php</span> </h4>
 <pre>
-_div(SetElemAttr(['data-select'],['true']),'Parent_id','row');<br />
- PERFORM(<br />
-  ELEM('h1','Welcome to PHPHtml-Optimizer!') .
-  ELEM('p', 'HELLO WORLD - For PHP/Developer - Back End Programmers') <br />
+_div( SetElemAttr(['id','class'],['QuickStart','row']) ); <br />
+ _xdiv(<br />
+     ELEM('h1','Welcome to PHPHtml-Optimizer!') .
+     ELEM('p', 'HELLO WORLD - For PHP/Developer - Back End Programmers') <br />
+   , SetElemAttr(['class'],['container'])<br />
  );<br />
-xdiv(' / END of Class Parent row' );
+xdiv('End of / row');
 </pre>
 
 <h4>Quick Start : <span>Copy and paste for footer.php</span> </h4>
