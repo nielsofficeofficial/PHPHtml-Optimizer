@@ -67,7 +67,7 @@ ATTR('SCRIPT', [
 ]);
 
 ATTR('CUSTOM_END', [
- "Optimize" => [ 'src' => "css/normalize.css" ]
+ "Optimize" => [ 'href' => "css/normalize.css" ]
 ]);
 
 ATTR('BEGIN_CUSTOM_END', [ 
