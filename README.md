@@ -137,7 +137,7 @@ ATTR('SCRIPT', [
 if (isbelongs(['index','portfolio'], 1)) { ?>
 
  <script> 
-    /**  Header script goes here.. **/
+    /**  Footer script goes here.. **/
  </script>
 
 <?php }
