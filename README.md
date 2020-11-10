@@ -58,7 +58,7 @@ ATTR('LINK', [
 ]); 
 
 ATTR('LINK', [ 
- "mains-style" => [ 'rel' => "stylesheet", 'src' => "css/style.css"]
+ "mains-style" => [ 'rel' => "stylesheet", 'href' => "css/style.css"]
 ]); 
 
 ATTR('SCRIPT', [
@@ -71,7 +71,7 @@ ATTR('CUSTOM_END', [
 ]);
 
 ATTR('BEGIN_CUSTOM_END', [ 
- "Opt" => [ 'src' => "css/normalize.css" ]
+ "Opt" => [ 'href' => "css/normalize.css" ]
 ]);
 
 if(isbelongs('index', 1)) { ?>
