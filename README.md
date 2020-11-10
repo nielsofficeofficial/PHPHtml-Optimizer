@@ -8,22 +8,31 @@ To refractor/optimize code is a hassle and heavy load burden in programming, All
 </p>
 
 <h6>Custom ATTR/ELEMENT</h6>
-<pre>
+
+```PHP
+
 // ATTR() VALID PARAMETERS
 META | TITLE | LINK | SCRIPT | CUSTOM_END | BEGIN_CUSTOM_END
-</pre>
-<pre>
+
+```
+
+```PHP
+
 // None closing inline element | PARAMETER : CUSTOM_END
 ATTR('CUSTOM_END', [
  "NAME_OF_ELEMENT" => [ 'name' => "Value" ]
 ]);
-</pre>
-<pre>
+
+```
+
+```PHP
+
 // With Closing Element | PARAMETER : BEGIN_CUSTOM_END	
 ATTR('BEGIN_CUSTOM_END', [
  "NAME_OF_ELEMENT" => [ 'name' => "Value" ]
 ]);
-</pre>
+
+```
 
 <h4>Quick Start : <span>Copy and paste for header.php</span> </h4>
 
@@ -33,7 +42,7 @@ USE \PHPHtml\CodeOptimizer\merge\Html;
 USE \PHPHtml\CodeOptimizer\optimizer\Html AS Optimizer;
 USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS OptimizerCare; 
 
-$Html 		     = NEW Optimizer();
+$Html = NEW Optimizer();
 $FileEnhance = NEW OptimizerCare();
 
 _HTML(SetElemAttr(['class','lang'],['no-js','']));
@@ -89,27 +98,40 @@ if(isbelongs('index', 1)) { ?>
 xHEAD();
 _BODY();
 
+
 ```
 
 <h4>Quick Start : <span>Copy and paste for index or page.php</span> </h4>
-<pre>
-_div( SetElemAttr(['id','class'],['QuickStart','row']) ); <br />
- _xdiv(<br />
+
+```PHP
+
+_div( SetElemAttr(['id','class'],['QuickStart','row']) ); 
+
+ _xdiv(
+ 
      ELEM('h1','Welcome to PHPHtml-Optimizer!') .
-     ELEM('p', 'HELLO WORLD - For PHP/Developer - Back End Programmers') <br />
-   , SetElemAttr(['class'],['container'])<br />
- );<br />
+     ELEM('p', 'HELLO WORLD - For PHP/Developer - Back End Programmers') 
+     
+   ,SetElemAttr(['class'],['container']) 
+ 
+  );
+ 
 xdiv('End of / row');
-</pre>
+
+```
 
 <h4>Quick Start : <span>Copy and paste for footer.php</span> </h4>
 
-```
+
+```PHP
+
 _FOOTER();
 
 ATTR('SCRIPT', [
- "LABEL0" => [ 'src' => "js/normalize.js" ],
- "LABEL1" => [ 'src' => "js/main.js" ]
+
+"LABEL0" => [ 'src' => "js/normalize.js" ],
+"LABEL1" => [ 'src' => "js/main.js" ]
+
 ]);
 
 if (isbelongs(['index','portfolio'], 1)) { ?>
@@ -123,6 +145,7 @@ if (isbelongs(['index','portfolio'], 1)) { ?>
 xFOOTER();
 xBODY();
 xHTML();
+
 ```
 
 For installation <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Installations"> Process link here </a><br /> 
