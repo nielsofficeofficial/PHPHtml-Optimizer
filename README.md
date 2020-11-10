@@ -114,7 +114,7 @@ _div( SetElemAttr(['id','class'],['QuickStart','row']) );
      
    ,SetElemAttr(['class'],['container']) 
  
-  );
+ );
  
 xdiv('End of / row');
 
