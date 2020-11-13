@@ -541,7 +541,6 @@
    |
    |
    */
-//   define('__CHECK_MAIN_MERGE_ON_CLASS__', file_exists(dirname(__FILE__) . '/../optimizer/Html.php')); 
   define('__CHECK_MAIN_MERGE_ON_CLASS__', '/../optimizer/Html.php'); 
    /*
    |
