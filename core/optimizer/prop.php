@@ -86,20 +86,6 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancer AS PHPFileHandler;
    |
    |
    |
-   | Get SELF_REQUEST
-   |
-   |
-   |
-   |
-   */   
-  define('__SELF_REQUEST__', explode('/', isset( $_SERVER['PHP_SELF'] ) || $_SERVER['PHP_SELF'] !== NULL ) ? $_SERVER['PHP_SELF'] : FALSE );
-
-  /*
-   |
-   |
-   |
-   |
-   |
    | Set Empty
    |
    |
