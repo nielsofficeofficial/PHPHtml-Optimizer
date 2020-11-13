@@ -40,10 +40,7 @@
  */
 
 class Enhancers Extends Optimizer {
-
-public function __construct() {
-
-} 
+ 
 /**
   *
   * @method public function add breaktag html as noHTML
@@ -286,7 +283,7 @@ Protected function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
 
  // CHECK_WHICH_PAGE_YOU_ARE_CUURENT_REQUEST
  // THEN_GET_THE_FILE_PAGE
- $CheckCurrentPage__ = explode('/', isset( $_SERVER['PHP_SELF'] ) || $_SERVER['PHP_SELF'] !== NULL ? $_SERVER['PHP_SELF'] : FALSE );
+ $CheckCurrentPage__ = __SELF_REQUEST__;
    
    // CHECK_IF_SECOND_PARAM_IS_EQUAL_TO_MapFolderPath_OR___MAP_FOLDER_PATH__THEN_RETURN_FOLDER_MAP
    // ELSE_RETURN_TRUE_AS_BASE_ON_INT_PARAM_ASSIGNED_TO_BE_TRUE
@@ -414,7 +411,7 @@ final private function cpe_xib6_FileHandler_count() {
   **/ 
  $Folder          = 'Main-forder';
  $subFolder       = 'Sub-forder';
- $PathValue       =  explode('/', isset( $_SERVER['PHP_SELF'] ) || $_SERVER['PHP_SELF'] !== NULL ? $_SERVER['PHP_SELF'] : FALSE );  
+ $PathValue       =  __SELF_REQUEST__;  
   
  // CHECK IF THE FILE IS TRUE 
  if (  $PathValue == TRUE ) {
