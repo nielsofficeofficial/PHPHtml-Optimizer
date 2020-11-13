@@ -499,8 +499,7 @@
    |
    |
    */ 
-  // define('__GET_STATIC_CLASS_HTML__', file_exists(dirname(__FILE__) . '/core/merge/Html.php'));
-  define('__GET_STATIC_CLASS_HTML__', '/core/merge/Html.php');
+    define('__GET_STATIC_CLASS_HTML__', '/core/merge/Html.php');
 
    /*
    |
@@ -513,8 +512,7 @@
    |
    |
    |
-   */ 
-  // define('__GET_INSTANTIATE_CLASS_HTML__', file_exists(dirname(__FILE__) . '/core/optimizer/Html.php'));  
+   */   
   define('__GET_INSTANTIATE_CLASS_HTML__', '/core/optimizer/Html.php');  
 
    /*
@@ -529,7 +527,6 @@
    |
    |
    */ 
- // define('__CHECK_MAIN_MERGE_ON_PAGE__', file_exists(dirname(__FILE__) . '/../merge/Html.php'));
   define('__CHECK_MAIN_MERGE_ON_PAGE__', '/../merge/Html.php');
   
    /*
