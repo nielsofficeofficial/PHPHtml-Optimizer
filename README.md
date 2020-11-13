@@ -8,33 +8,41 @@ To refractor/optimize code is a hassle and heavy load burden in programming, All
 </p>
 
 <h6>Custom ATTR/ELEMENT</h6>
-<pre>
+
+```PHP
+
 // ATTR() VALID PARAMETERS
 META | TITLE | LINK | SCRIPT | CUSTOM_END | BEGIN_CUSTOM_END
-</pre>
-<pre>
+
+```
+
+```PHP
+
 // None closing inline element | PARAMETER : CUSTOM_END
 ATTR('CUSTOM_END', [
  "NAME_OF_ELEMENT" => [ 'name' => "Value" ]
 ]);
-</pre>
-<pre>
+
+```
+
+```PHP
+
 // With Closing Element | PARAMETER : BEGIN_CUSTOM_END	
 ATTR('BEGIN_CUSTOM_END', [
  "NAME_OF_ELEMENT" => [ 'name' => "Value" ]
 ]);
-</pre>
+
+```
 
 <h4>Quick Start : <span>Copy and paste for header.php</span> </h4>
 
-```
+```PHP
 
 USE \PHPHtml\CodeOptimizer\merge\Html;
 USE \PHPHtml\CodeOptimizer\optimizer\Html AS Optimizer;
 USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS OptimizerCare; 
 
-$Html 		 = NEW Optimizer();
-
+$Html = NEW Optimizer();
 $FileEnhance = NEW OptimizerCare();
 
 _HTML(SetElemAttr(['class','lang'],['no-js','']));
@@ -42,33 +50,37 @@ _HTML(SetElemAttr(['class','lang'],['no-js','']));
 _HEAD();
 
 ATTR('META', [
- "LABEL0" => [ 'charset'    => "utf-8"],
- "LABEL1" => [ 'http-equiv' => "x-ua-compatible", 'content' => "" ]
+ "meta-charset" => [ 'charset'    => "utf-8"],
+ "meta-compat"  => [ 'http-equiv' => "x-ua-compatible", 'content' => "" ]
 ]); 
 
-ATTR('TITLE', 'QUICK START'); 
+ATTR('TITLE', 'Quick Start'); 
 
 ATTR('META', [
- "LABEL3" => [ 'name' => "description", 'content' => ""],
- "LABEL4" => [ 'name' => "viewport",    'content' => "width=device-width, initial-scale=1" ]
+ "meta-des"    => [ 'name' => "description", 'content' => ""],
+ "meta-vport"  => [ 'name' => "viewport",    'content' => "width=device-width, initial-scale=1" ]
 ]); 
 
 ATTR('LINK', [ 
- "LABEL0" => [ 'rel' => "manifest", 		'src' => "site.webmanifest"],
- "LABEL1" => [ 'rel' => "apple-touch-icon", 'src' => "icon.png"]
+ "manifest"   => [ 'rel' => "manifest", 'src' => "site.webmanifest"],
+ "icon" => [ 'rel' => "apple-touch-icon", 'src' => "icon.png"]
+]); 
+
+ATTR('LINK', [ 
+ "mains-style" => [ 'rel' => "stylesheet", 'href' => "css/style.css"]
 ]); 
 
 ATTR('SCRIPT', [
- "LABEL0" => [ 'src' => "js/normalize.js" ],
- "LABEL1" => [ 'src' => "js/main.js" ]
+ "normz"    => [ 'src' => "js/normalize.js" ],
+ "main-js"  => [ 'src' => "js/main.js" ]
 ]);
 
 ATTR('CUSTOM_END', [
- "Optimize" => [ 'src' => "css/normalize.css" ]
+ "Optimize" => [ 'href' => "css/normalize.css" ]
 ]);
 
 ATTR('BEGIN_CUSTOM_END', [ 
- "Opt" => [ 'src' => "css/normalize.css" ]
+ "Opt" => [ 'href' => "css/normalize.css" ]
 ]);
 
 if(isbelongs('index', 1)) { ?>
@@ -86,32 +98,46 @@ if(isbelongs('index', 1)) { ?>
 xHEAD();
 _BODY();
 
+
 ```
 
-<h4>Quick Start : <span>Copy and paste for body or page.php</span> </h4>
-<pre>
-_div(SetElemAttr(['data-select'],['true']),'Parent_id','row');<br />
- PERFORM(<br />
-  ELEM('h1','Welcome to PHPHtml-Optimizer!') .
-  ELEM('p', 'HELLO WORLD - For PHP/Developer - Back End Programmers') <br />
- );<br />
-xdiv(' / END of Class Parent row' );
-</pre>
+<h4>Quick Start : <span>Copy and paste for index or page.php</span> </h4>
+
+```PHP
+
+_div( SetElemAttr(['id','class'],['QuickStart','row']) ); 
+
+ _xdiv(
+ 
+     ELEM('h1','Welcome to PHPHtml-Optimizer!') .
+     ELEM('p', 'HELLO WORLD - For PHP/Developer - Back End Programmers') 
+     
+   ,SetElemAttr(['class'],['container']) 
+ 
+ );
+ 
+xdiv('End of / row');
+
+```
 
 <h4>Quick Start : <span>Copy and paste for footer.php</span> </h4>
 
-```
+
+```PHP
+
 _FOOTER();
 
 ATTR('SCRIPT', [
- "LABEL0" => [ 'src' => "js/normalize.js" ],
- "LABEL1" => [ 'src' => "js/main.js" ]
+
+"LABEL0" => [ 'src' => "js/normalize.js" ],
+"LABEL1" => [ 'src' => "js/main.js" ]
+
 ]);
 
 if (isbelongs(['index','portfolio'], 1)) { ?>
 
  <script> 
-    /**  Header script goes here.. **/
+    /**  Footer script goes here.. **/
  </script>
 
 <?php }
@@ -119,6 +145,7 @@ if (isbelongs(['index','portfolio'], 1)) { ?>
 xFOOTER();
 xBODY();
 xHTML();
+
 ```
 
 For installation <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Installations"> Process link here </a><br /> 
@@ -133,7 +160,7 @@ Github : To allow me to upload my PHPHtml-Optimizer PHP Library to repository<br
 php.net : To oppurtunity Develop web application using corePHP - PHPFrameworks<br />
 w3school : HTML Elements reference</h5>
 
-__For Suggestion and Donation/Sponsorship You can send via My GCash : +639650332900__ <br />
-__Also You can send via My Paypal account: syncdevprojects@gmail.com__ <br />
+__For Suggestion and Donation/Sponsorship You can send via GCash : +639650332900__ <br />
+__Also You can send via Paypal account: syncdevprojects@gmail.com__ <br />
 Thanks and good luck! 
 
