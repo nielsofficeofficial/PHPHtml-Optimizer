@@ -3724,7 +3724,7 @@ static private function HtmlELements_Optimizer($inline, $elem, $js, $id, $class,
         }
       
         # RETURN_INLINE_ELEMENT_NO_HTML_CLOSING_TAG 
-        self::PERFORM( $this->_setReturnINLINELEMENT($this->_setINLINELEMENTS($elem),$js, $id, $class, NULL) ); 
+        self::PERFORM( self::_setReturnINLINELEMENT(self::_setINLINELEMENTS($elem),$js, $id, $class, NULL) ); 
    } else {
 
       # CHECK_IF_INLINE_IS_ASSOC_WITH_FUNC_ASSOC_OR_CLASS_ASSOC_OR_METHOD_ASSOC

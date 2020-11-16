@@ -4375,7 +4375,7 @@ protected function cpe_xib6_FileHandler_mulipath_array($MultiPagefile__, $CheckC
  protected function Validate_extension_assets_files($Extension__) {
   
   // GET_ALL_AVAILABLE_EXTENSION_FILES 
-  $currentSet_Ext     = $this->__FILEEXTENSION__;
+  $currentSet_Ext     = self::__FILEEXTENSION__;
 
   // SET_DONT_EXTENSION_POINT
   $InsertDotOperation = '.';

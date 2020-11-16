@@ -220,7 +220,7 @@ public function belongs_to($thisPage = null, $page_array = null) {
   * NEED TO BE REGISTER TO CONFIGP.HP
   * @since 27.10.2020
   *
-  * $Enhancer->MapFolderPath() // MAPFOLDERPATH
+  * $Enhancer->GetKeyFolderPath() // MAPFOLDERPATH
   *
   */
 public function GetKeyFolderPath() {
@@ -271,7 +271,7 @@ public function ELEM($Element__=null, $value__=null, $elemAttr__=null, $elemId__
   * @since 27.10.2020
   *
   **/
-Protected function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
+private function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
 
  // INPUT_CURRENT_PAGE_NAME_VALIDATE
  // CHECL_INPUT_IF_IT_IS_AN_ARRAY | IF_TRUE_THEN_RETURN_AS_ARRAY_IF_FALSE_RETURN_AS_SIGNLE_POST
@@ -291,7 +291,7 @@ Protected function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
       
        // IF_THE_PAGE_FILE_IS_NULL_OR_EMPTY_THEN_DEFAULT_LEVEL_3
        // IF_IT_IS_TRUE_RETURN_DEFAULT 
-     } elseif ( empty($Page_file) || $Page_file == NULL ) {  $TheCurrentPage__  = $CheckCurrentPage__[3];  
+     } elseif ( empty($Page_file) || $Page_file == NULL ) {  $TheCurrentPage__  = $CheckCurrentPage__[1];  
      
     // ELSE_CHECK_IF_NOT_THEN_ASSIGN_
     // THE_RETURN_ASSIGN_FROM_PARAMETER_THEN_REPLACE_DEFAULT
