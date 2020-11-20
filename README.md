@@ -71,7 +71,6 @@ ATTR('LINK', [
 ]); 
 
 ATTR('SCRIPT', [
- "angu-js"  => [ 'src' => "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" ],
  "normz"    => [ 'src' => "js/normalize.js" ],
  "main-js"  => [ 'src' => "js/main.js" ]
 ]);
@@ -107,15 +106,12 @@ _BODY();
 ```PHP
 
 
-_div(SetElemAttr(['ng-app','ng-init'],['true',"myCol='lightblue'"]),'QuickStart_id','row'); 
+_div(SetElemAttr(['data-select'],['true']),'QuickStart_id','row'); 
 
  _xdiv(
  
      ELEM('h1','Welcome to PHPHtml-Optimizer!') .
      ELEM('p', 'HELLO WORLD - For PHP/Developer - Back End Programmers') . __BR() . 
-     
-     // Input 
-     __HTML('Input','input', SetElemAttr(['style','ng-model'],['background-color:{{myCol}}','"myCol']))
      
    ,SetElemAttr(['class'],['container']) 
  
