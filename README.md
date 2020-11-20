@@ -111,7 +111,7 @@ _div(SetElemAttr(['data-select'],['true']),'QuickStart_id','row');
  _xdiv(
  
      ELEM('h1','Welcome to PHPHtml-Optimizer!') .
-     ELEM('p', 'HELLO WORLD - For PHP/Developer - Back End Programmers') . __BR() . 
+     ELEM('p', 'HELLO WORLD - For PHP/Developer - Back End Programmers') 
      
    ,SetElemAttr(['class'],['container']) 
  
