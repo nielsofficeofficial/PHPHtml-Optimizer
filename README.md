@@ -71,7 +71,9 @@ ATTR('LINK', [
 ]); 
 
 ATTR('SCRIPT', [
+ // Intalling 3rd party angular-JS 
  "angu-js"  => [ 'src' => "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" ], 
+
  "normz"    => [ 'src' => "js/normalize.js" ],
  "main-js"  => [ 'src' => "js/main.js" ]
 ]);
@@ -113,7 +115,7 @@ _div(SetElemAttr(['ng-app','ng-init'],['',"myCol='lightblue'"]),'QuickStart_id',
      ELEM('h1','Welcome to PHPHtml-Optimizer!') .
      ELEM('p', 'HELLO WORLD - For PHP/Developer - Back End Programmers') . __BR() . 
      
-     // Input 
+     // Input angular-JS modify
      __HTML('Input','input', SetElemAttr(['style','ng-model'],['background-color:{{myCol}}','myCol']))
      
    ,SetElemAttr(['class'],['container']) 
