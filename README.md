@@ -116,7 +116,7 @@ _div(SetElemAttr(['ng-app','ng-init'],['',"myCol='lightblue'"]),'QuickStart_id',
      ELEM('p', 'HELLO WORLD - For PHP/Developer - Back End Programmers') . __BR() . 
      
      // Input angular-JS modify
-     __HTML('Input','input', SetElemAttr(['style','ng-model'],['background-color:{{myCol}}','myCol']))
+     __HTML('Input','input', SetElemAttr(['style','ng-model'],['background-color:{{myCol}}','myCol']),null,null, FUNC_ASSOC)
      
    ,SetElemAttr(['class'],['container']) 
  
