@@ -180,7 +180,7 @@ $VIEWS['REGISTERED'] = [
 $URI['REGISTERED'] = [
   
   // For LocalHost 
-  'redirect'    => SET_DIR_PATH('files')      
+  'redirect'    => SET_DIR_PATH('404')      
 
 ];
 
