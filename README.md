@@ -155,10 +155,18 @@ xHTML();
 ```
 
 <h4>Bonus config.php </h4>
-<p>Config.php file register file currently support : PATH | DIRECTORY | URI <br />
-make your code clean and safe. 
+<p>Config.php file register file currently support : PATH | DIRECTORY | URI, 
+make your code clean and safe. here's mapping to sure that your config.php file is in correct directory. 
 </p>
 
+```PHP
+ |- root/Theme : 
+   |- Library 
+     |- PHPHtml-Optimizer
+ |- index.php
+ |- portfolio.php
+ |- config.php       
+```
 ```PHP
 
 // REQURE/INCLUDES FILE - PATH
