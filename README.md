@@ -156,7 +156,7 @@ xHTML();
 
 <h4>config.php </h4>
 <p>Config.php file register file currently support : PATH | DIRECTORY | URI, 
-make your code clean and safe. here's mapping to sure that your config.php file is in correct directory. 
+make your code clean and safe. here's mapping to sure that your config.php file is in correct <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Installations"> directory. </a> 
 </p>
 
 ```PHP
