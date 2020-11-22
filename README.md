@@ -27,7 +27,7 @@ ATTR('CUSTOM_END', [
  
 ```PHP
 
-// With Closing Element | PARAMETER : BEGIN_CUSTOM_END	
+// With Closing Element | PARAMETER : BEGIN_CUSTOM_END  
 ATTR('BEGIN_CUSTOM_END', [
  "NAME_OF_ELEMENT" => [ 'name' => "Value" ]
 ]);
@@ -151,6 +151,36 @@ if (isbelongs(['index','portfolio'], 1)) { ?>
 xFOOTER();
 xBODY();
 xHTML();
+
+```
+
+<h4>Bonus : <span>Copy and paste for config.php</span> </h4>
+
+```PHP
+
+// REQURE/INCLUDES FILE - PATH
+$PATH['REGISTERED'] = [
+   
+ 'Library'       => SET_DIR_PATH('library')
+
+];
+
+// VIEWS - DIRECTORY
+$VIEWS['REGISTERED'] = [
+ 
+  'Views'        => SET_DIR_PATH('saver/views/'),
+  'VTemplates'   => SET_DIR_PATH('saver/views/templates')        
+
+];
+
+// REDIRECT - URI
+$URI['REGISTERED'] = [
+  
+  // For LocalHost 
+  'redirect'    => SET_DIR_PATH('files')      
+
+];
+
 
 ```
 
