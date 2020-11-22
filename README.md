@@ -172,14 +172,14 @@ make your code clean and safe. here's mapping to sure that your config.php file 
 // REQURE/INCLUDES FILE - PATH
 $PATH['REGISTERED'] = [
    
-  'Includes' => SET_DIR_PATH('Includes/')
+  'Includes' => SET_DIR_PATH('Includes')
 
 ];
 
 // VIEWS - DIRECTORY
 $VIEWS['REGISTERED'] = [
  
-  'Views'        => SET_DIR_PATH('saver/views/'),
+  'Views'        => SET_DIR_PATH('saver/views'),
   'VTemplates'   => SET_DIR_PATH('saver/views/templates')        
 
 ];
