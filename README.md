@@ -169,6 +169,9 @@ make your code clean and safe. here's mapping to sure that your config.php file 
 ```
 ```PHP
 
+<?php $Care = NEW \PHPHtml\CodeOptimizer\optimizer\Enhancers(); ?>
+<?php 
+
 // REQURE/INCLUDES FILE - PATH
 $PATH['REGISTERED'] = [
    
@@ -191,7 +194,6 @@ $URI['REGISTERED'] = [
   'redirect'    => SET_DIR_PATH('404')      
 
 ];
-
 
 ```
 
