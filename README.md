@@ -155,6 +155,9 @@ xHTML();
 ```
 
 <h4>Bonus : <span>Copy and paste for config.php</span> </h4>
+<p>Config.php file register file currently support : PATH | DIRECTORY | URI <br />
+make your code clean and safe. 
+</p>
 
 ```PHP
 
