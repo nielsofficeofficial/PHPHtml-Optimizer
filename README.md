@@ -163,9 +163,9 @@ make your code clean and safe. here's mapping to sure that your config.php file 
  |- root/Theme : 
    |- Library 
      |- PHPHtml-Optimizer
- |- index.php
- |- portfolio.php
- |- config.php       
+   |- index.php
+   |- portfolio.php
+   |- config.php       
 ```
 ```PHP
 
