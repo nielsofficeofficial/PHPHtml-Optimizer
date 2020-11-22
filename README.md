@@ -154,7 +154,7 @@ xHTML();
 
 ```
 
-<h4>Bonus config.php </h4>
+<h4>config.php </h4>
 <p>Config.php file register file currently support : PATH | DIRECTORY | URI, 
 make your code clean and safe. here's mapping to sure that your config.php file is in correct directory. 
 </p>
@@ -195,7 +195,7 @@ $URI['REGISTERED'] = [
 
 ```
 
-For Installation <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Installations"> Process link here </a><br /> 
+For Installation / Configuration <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Installations"> Process link here </a><br /> 
 For PHPOptimizer more examples and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Docx"> Documentation link here </a><br /> 
 For PHPFileEnhancers and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Enhancers"> Reference link here </a><br /> 
 For PHPAuthenication and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v1.4 </a><br />
