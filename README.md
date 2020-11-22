@@ -164,7 +164,7 @@ make your code clean and safe.
 // REQURE/INCLUDES FILE - PATH
 $PATH['REGISTERED'] = [
    
- 'Library'       => SET_DIR_PATH('library')
+  'Includes' => SET_DIR_PATH('Includes/')
 
 ];
 
