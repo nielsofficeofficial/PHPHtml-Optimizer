@@ -160,18 +160,6 @@ make your code clean and safe. here's mapping to sure that your config.php file 
 </p>
 
 ```PHP
- |- root/Theme : 
-   |- Library 
-     |- PHPHtml-Optimizer
-   |- index.php
-   |- portfolio.php
-   |- config.php       
-```
-```PHP
-
-<?php $Care = NEW \PHPHtml\CodeOptimizer\optimizer\Enhancers(); ?>
-<?php 
-
 // REQURE/INCLUDES FILE - PATH
 $PATH['REGISTERED'] = [
    
