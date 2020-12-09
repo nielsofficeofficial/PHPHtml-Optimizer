@@ -188,7 +188,6 @@ $URI['REGISTERED'] = [
 For Installation / Configuration <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Installations"> Process link here </a><br /> 
 For PHPOptimizer more examples and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Docx"> Documentation link here </a><br /> 
 For PHPFileEnhancers and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Enhancers"> Reference link here </a><br /> 
-For PHPAuthenication and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v1.4 </a><br />
 For PHPMaintenance Mode and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v1.4 </a><br />
 For PHPForm and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v1.4 </a><br /> 
 For PHPLayout and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v1.5 </a><br /> 
