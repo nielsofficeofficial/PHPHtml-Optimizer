@@ -39,86 +39,60 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS PHPFileHandler;
  */
 
 
-function bring_to($config, $fileName=null, $extension=null, $Optional=null) {
-  
- /**
-   *
-   *
-   *
-   *
-   * @package : PHPFileEnhancer
-   * @package : Static Procedural
-   * @method  : $FileEnhance->bring_to(GETFROM(['PATH','F']), 'file',__PHP__, OPTIONAL); "Optional" // REQUIRE | INCLUDES | INCLUDES ONCE | REQUIREONCE DEFAULT
-   *
-   *
-   *
-   **/  
- $Enhancer = new PHPFileHandler();
- return $Enhancer->bring_to($config, $fileName, $extension, $Optional);
- 
-} 
-
-
-/**
-  *
-  * @since 22.11.2020
-  * @category PHPFileEnhancer
-  * @method Defined 'UNIQUE_KEY' => SET_DIR_PATH('dir');  
-  * 
-  *
-  **/
+//var_dump(array_keys($PATH['REGISTERED']));
 function SET_DIR_PATH($uri) {
  
-  /**
-   *
-   *
-   *
-   *
-   *
-   * @package : PHPFileEnhancer
-   * @package : Static Procedural
-   * @method  : $FileEnhance->SET_DIR_PATH(['path','dir'])
-   *
-   *
-   *
-   **/  
- $Enhancer = new PHPFileHandler();
- return $Enhancer->SET_DIR_PATH($uri);
+ $ReturnUri = trim($uri);
+
+ $set =   str_replace( __REPLACE_ABSOLUTE_PATH__, __EMPTY__ , dirname(__FILE__) );
+ return $set ."/". $ReturnUri . '/' ;
 
 }
 
-/**
-  *
-  * @since 20.19.2020
-  * @category PHPFileEnhancer
-  * @method Defined GETFROM(['array'])  
-  * GETFROM(['PATH','DIR']) //  SUPPRTED/VALID PARAM  : PATH | VIEWS | RURI 
-  *
-  **/
-function  GETFROM( $array_realpath_dir = null) {  
- 
-  /**
-   *
-   *
-   *
-   *
-   *
-   * @package : PHPFileEnhancer
-   * @package : Static Procedural
-   * @method  : $FileEnhance->GETFROM(['path','dir'])
-   *
-   *
-   *
-   **/ 
- $array_realpath_dir = !is_array($array_realpath_dir) ? FILE_HANDLER_MSG_STR : $array_realpath_dir ;
-  
- $getValues = array_values($array_realpath_dir);
+// bring_to(GETFORM[0],);   
+function  GETFROM( $param = null) {  
+
+  //\  global $PATH;
+  //   return $PATH['REGISTERED'][$param]; 
+
+  // var_dump($PATH['REGISTERED'][$param]);
+
+ $param = !is_array($param) ? FILE_HANDLER_MSG_STR : $param ;
+
+ var_dump($param[0]);
+ var_dump($param[1]);
+
+ $getValues = array_values($param);
  $REAL_PATH = strtolower($getValues[0]);
 
- $Enhancer = new PHPFileHandler();
- return $Enhancer->GETFROM($REAL_PATH, $array_realpath_dir[1]);
+var_dump(__ARRPATH__);
+ switch ($REAL_PATH) {
+    
+    case  __ARRPATH__:
+    
+    global $PATH;
+    return $PATH['REGISTERED'][$param[1]];     
+ 
+    break;
+    
+    default:
+     echo "Error";
+    break;
+  } 
+
+
+  //echo $ConvertArray[0] == 'view' ? 'Yes' : 'no' ;
+
 
 }
+
+// $PATH['REGISTERED'] = [
+   
+//   'Library' => SET_DIR_PATH('library'),
+//   'FT'      => SET_DIR_PATH('files/TEST'),
+//   'F'       => SET_DIR_PATH('files')
+
+// ];
 
 /**
   *

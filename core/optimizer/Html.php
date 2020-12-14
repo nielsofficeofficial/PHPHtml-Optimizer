@@ -1,7 +1,7 @@
 <?php 
 
   namespace PHPHtml\CodeOptimizer\optimizer;
-
+  
 /**
  * @copyright (c) 2020-2021 PHPHtml-Optimizer v1.3 Cooked by nielsoffice
  *
@@ -507,6 +507,13 @@ class Html {
  private $str;
 
 /**
+  * @var @property Private 
+  * defined path
+  * get thirdparty library 
+  **/
+ private $path;
+
+/**
   * @var @property CONST | FUNC_ASSOC  
   * defined Assigned associsated dstring within the function/Class/Method
   * minify optimized html attribute 
@@ -665,15 +672,14 @@ class Html {
   * @since 11.05.2020
   * defined Assigned Image Extenstion as ._RTF
   **/ 
- CONST __OPTI_PROP__ = '/prop.php'; 
-
+ CONST __OPTI_PROP__ = __DIR__ . '/prop.php'; 
 
 /**
   * @var @property @static CONST | PHPHtml-OPTIMIZER PROP  
   * @since 11.05.2020
   * defined Assigned Image Extenstion as ._RTF
   **/ 
- CONST __PHPHO_PROP__ = '/../../prop.php'; 
+ CONST __PHPHO_PROP__ = __DIR__ . '/../../prop.php'; 
 
 /**
   * @var @property Array of data 
@@ -772,7 +778,7 @@ class Html {
   * defined arrays of data html 
   **/
  public function __construct() {
-    
+
 /**
   *
   * @method public function cpe_ixb6_bring_scope load function
@@ -785,21 +791,30 @@ class Html {
 /**
   *
   * @method public function cpe_workflow_get_saver load function
-  * Defined as require files
+  * Defined as require files Saver
   * @since 08.11.2020
   *
   **/    
-  $this->cpe_workflow_get_saver();
+  $this->cpe_workflow_get_saver(__GET_WORKFLOW__);
+
+/**
+  *
+  * @method public function cpe_workflow_get_saver load function
+  * Defined as require files PHP AUTH
+  * @since 18.11.2020
+  *
+  **/    
+   // $this->cpe_workflow_get_saver(__GET_PHPAUTH__);
 
   /**
   * @since Enhancer property 04.11.2020
   **/ 
-  require_once  __DIR__ . self::__OPTI_PROP__;
+  require_once self::__OPTI_PROP__;
 
   /**
   * @since property file 04.11.2020
   **/ 
-  require_once __DIR__ . self::__PHPHO_PROP__;   
+  require_once self::__PHPHO_PROP__;         
 
  }
 
@@ -4084,7 +4099,7 @@ protected function cpe_FileJandler_link($linkQt__, $linkPara__) {
     }  
 
     # END PERFORM
-    $this->PERFORM(">\n");
+    $this->PERFORM("/>\n");
 
    }
 
@@ -4496,10 +4511,10 @@ protected function cpe_xib6_FileHandler_MultiPage_array($GMultiP__, $GTCP__) {
 
 }
 
-private function cpe_workflow_get_saver() {
+private function cpe_workflow_get_saver($GetPath__) {
  
-spl_autoload_register(function ($class) {
-
+spl_autoload_register(function ($class) use ($GetPath__){
+    
     // project-specific namespace prefix
     $prefix = 'crownPHPEXTEND\\WorkFlow\\';
 
@@ -4507,7 +4522,7 @@ spl_autoload_register(function ($class) {
 
     // replace the namespace prefi with the base directory, replace namespace
     // separators with directory separators in the relative class name, append
-    $GetFilesSaver__ = __DIR__ . __GET_WORKFLOW__ . str_replace('\\', '/', substr($class, strlen($prefix))) . '.php';
+    $GetFilesSaver__ = __DIR__ . $this->cpx_ixb6_proprty_get_path($GetPath__) . str_replace('\\', '/', substr($class, strlen($prefix))) . '.php';
 
     // if the file exists, require it
     if (file_exists( $GetFilesSaver__ )) { require $GetFilesSaver__; }
@@ -4547,6 +4562,19 @@ private function cpe_Filehandler_Val($tagVHtml__, $ValElem__,$ValEAttr__) {
    return($cpe_get_customELement);
 
 }
+
+/**
+  *
+  * @method private function 
+  * @package @private Method Defined setPath dependency
+  *
+  **/
+private function cpx_ixb6_proprty_get_path($path) {
+
+   return $this->$path = $path;
+
+}
+
 /**
   *
   * @method protected function noHTML
@@ -4887,6 +4915,45 @@ private function cpe_Filehandler_Val($tagVHtml__, $ValElem__,$ValEAttr__) {
    } 
  
  }
+
+/**
+  *
+  * @method protected cpe_ixb6_FielEnhancers_do_swicth_path
+  * @protected Method Defined ['',''] // First which to switch ?  PATH | VIEWS | RURI
+  * @protected Method Defined ['',''] // second directory which to fetch through global array  
+  *
+  **/
+protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_PATH=null)  {
+ 
+ switch ($REAL_PATH) {
+    
+    case  __ARRPATH__: // IF THE GOAL VAR IS $PATH['REGISTERED'] THEN RETURN
+    
+    global $PATH;
+    return $PATH['REGISTERED'][ isset($GET_PATH) ? $GET_PATH : FALSE ];     
+    break;
+
+    case  __ARRVIEWS__: // IF THE GOAL VAR IS $VIEWS['REGISTERED'] THEN RETURN
+    
+    global $VIEWS;
+    return $VIEWS['REGISTERED'][ isset($GET_PATH) ? $GET_PATH : FALSE  ];     
+    break;    
+
+    case  __ARRVRURI__:  // IF THE GOAL VAR IS $RURI['REGISTERED'] THEN RETURN
+
+    global $RURI;
+    return $RURI['REGISTERED'][ isset($GET_PATH) ? $GET_PATH : FALSE  ];     
+    break;    
+
+    default:
+
+    return FALSE;
+    break;
+    
+  } 
+
+}
+
 
 /**
   *
@@ -7724,6 +7791,7 @@ private function cpe_Filehandler_Val($tagVHtml__, $ValElem__,$ValEAttr__) {
   }
 
  } #END OF SET RETURN ELEMENT
+
 
 }  
 

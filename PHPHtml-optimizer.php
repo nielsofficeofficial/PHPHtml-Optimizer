@@ -42,145 +42,28 @@ require_once __DIR__ . '/prop.php';
 **/
 if ( __GET_STATIC_CLASS_HTML__  && __GET_INSTANTIATE_CLASS_HTML__ ) {
      
-      /**
-        *
-        * @method get return loader
-        * @since  14.09.2020 
-        *
-        **/
-        spl_autoload_register(function ($class) {
-    
-        /*
-        |
-        |
-        |
-        |
-        |  
-        | get commit Set Project load framework function
-        |
-        |
-        |
-        |
-        */     
-        /**
-        *@since 06.082020
-        **/
-    
-        $frameLoader  = loader_framwork();
-      
-        /*
-        |
-        |
-        |
-        |
-        |  
-        | get commit Set Project get path installed
-        |
-        |
-        |
-        |
-        */     
-        /**
-        *@since 09.142020
-        **/
-    
-        $root_file    = __DIRECTORY_OPTIMIZER_CLASS__;
-    
-        /*
-        |
-        |
-        |
-        |
-        |  
-        | get len
-        |
-        |
-        |
-        |
-        */     
-        /**
-        *@since  09.142020
-        **/
-    
-        $Getlenght_   = strlen(loader_framwork());
-    
-        /*
-        |
-        |
-        |
-        |
-        |  
-        |  Set validate len
-        |
-        |
-        |
-        |
-        */     
-        /**
-        *@since  09.142020
-        **/
-    
-        if (strncmp(loader_framwork(), $class, $Getlenght_) !== 0) {
-    
-            return;
-        }
-    
-        /*
-        |
-        |
-        |
-        |
-        |  
-        | Set merege
-        |
-        |
-        |
-        |
-        */     
-        /**
-        *@since  09.142020
-        **/
-    
-        $InterconnectedClass_ = substr($class, $Getlenght_);
-    
-        /*
-        |
-        |
-        |
-        |
-        |  
-        | get file
-        |
-        |
-        |
-        |
-        */     
-        /**
-        *@since 09.142020
-        **/
-    
-        return require $root_file . str_replace('\\', '/', $InterconnectedClass_) . '.php';
+spl_autoload_register(function ($class) { 
 
-      }); 
- 
-    }  else  {
+  strncmp(loader_framwork(), $class, strlen(loader_framwork()) ) !== 0 ?  TRUE : FALSE; 
 
-    	 // check if there's something wrong directory then return error msg!
-    	 if ( __GET_VALIDATE_FILE_PAGE_EXIST__) {
-            /*
-             |
-             |
-             |
-             |
-             |
-             | Perform Error handler 
-             |
-             |
-             |
-             |
-             */ 
-    		    Html::PERFORM(FILE_HANDLER_MSG);
-    
-    	}
-    	
-    }   
+    return require __DIRECTORY_OPTIMIZER_CLASS__ . str_replace('\\', '/', substr($class, strlen(loader_framwork()))) . '.php'; 
+
+  }
+
+); 
+       
+   file_exists( __FILECONFIG__) ? require_once __FILECONFIG__ : FALSE ;   }  else  {
+
+   // check if there's something wrong directory then return error msg!
+   if ( __GET_VALIDATE_FILE_PAGE_EXIST__) {
+     /*
+      |
+      |
+      | Perform Error handler 
+      |
+      |
+      */ 
+     Html::PERFORM(FILE_HANDLER_MSG);
+  }
+       	
+}   

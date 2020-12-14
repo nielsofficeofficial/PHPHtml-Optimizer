@@ -32,6 +32,8 @@
 
 // Get Error Msg
 const FILE_HANDLER_MSG = 'Directory or files is not exist';
+// Get Error Msg
+const FILE_HANDLER_MSG_STR = 'This is a Directory array value cannot be string! ';
 
 /**
  *

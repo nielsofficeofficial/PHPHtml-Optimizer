@@ -35,12 +35,75 @@
  *
  *
  * @method belongs_to(); 
- * @method GetKeyFolderPath();  
+ * @method GetKeyFolderPath(); 
+ * @method bring_to(); 
+ * @method deliver_to(); 
+ * @method send_to(); 
+ * @method view_to();
+ * @method SetFileExtension()
+ * @method SetElemAttr() 
+ * @method BREAK();     
+ * @method LINE();  
+ * @method SPACE();    
+ * @method MERGE();   
+ * @method PERFORM();    
+ * @method DOIF();  
+ * @method DOELSE();    
+ * @method STRING();   
+ * @method ATTR();     
+ * @method ELEM();  
  *
  */
 
 class Enhancers Extends Optimizer {
- 
+
+
+// deliver_to() is combined of isbelongs() and bring_to()
+public function deliver_to() {
+  
+  return false;
+}
+
+// send_to() is redirect header() PHP native function
+
+public function send_to() {
+  
+  return false;
+}
+
+// view_to() is get file from views folder which have directory to be register on config.php 
+public function view_to() {
+  
+  return false;
+
+}
+
+
+/**
+  * @method _construct 
+  * @property @html_extend load functions file get from parents
+  * defined __construct parent Optimizer
+  **/
+public function __construct() {
+
+/**
+  *
+  * @method public function parent __construct() load function
+  * Defined as require files
+  * @since 11.04.2020
+  *
+  **/    
+  parent::__construct();
+
+} 
+
+// bring_to() is a like require or include file 
+public function bring_to($config, $fileName=null, $extension=null, $Optional=null) {
+  
+ return function_exists(__BRINGTO__) ? $this->cps_ixb6_FileHandler_bring_to($config, $fileName, $extension, $Optional) : $this->EnhanceeCoreErrorMsg(); 
+
+}
+
 /**
   *
   * @method public function add breaktag html as noHTML
@@ -218,9 +281,9 @@ public function belongs_to($thisPage = null, $page_array = null) {
   * @static Method Defined Usage: CountFolderFromPath 
   * RETURN DATA FROM ARRAY PRINT FROM PAGE TO GET THE VALUE 
   * NEED TO BE REGISTER TO CONFIGP.HP
-  * @since 27.10.2020
+  * @since 27.10.2020`
   *
-  * $Enhancer->GetKeyFolderPath() // MAPFOLDERPATH
+  * $Enhancer->MapFolderPath() // MAPFOLDERPATH
   *
   */
 public function GetKeyFolderPath() {
@@ -259,6 +322,53 @@ public function ATTR($PARAM__, $QuickStart__) {
 public function ELEM($Element__=null, $value__=null, $elemAttr__=null, $elemId__=null, $elemClass__=null) {
    
  return function_exists(__ELEM__) ? $this->cpe_FileHandler_custom_elem($Element__, $value__, $elemAttr__, $elemId__, $elemClass__) : $this->PERFORM($this->Enhance_ErrorMsg_att()); 
+
+}
+
+/**
+  *
+  * @method public function PHPFileEnhancer
+  * @static Method Defined Usage: Switch Support/Valid GLOBAL ARRAY 
+  * RETURN DATA FROM ARRAY METHOD ACCODING TO SWITCH 
+  * NEED TO BE REGISTER TO CONFIGP.HP
+  * @since 27.10.2020
+  * USAGE: bring_to(GETFROM(['PATH','F']), 'file2.php'); || bring_to(GETFROM(['PATH','F']), 'file',__PHP__, OPTIONAL); "Optional" // REQUIRE | INCLUDES | INCLUDES ONCE | REQUIREONCE DEFAULT
+  *
+  *
+  * MAP
+   |- root
+   |- library
+     |- files.php
+   |- files
+     |- TEST 
+       |- apps.php
+
+   $PATH['REGISTERED'] = [
+    
+     'Library' => SET_DIR_PATH('library'),
+     'FT'      => SET_DIR_PATH('files/TEST'),
+     'F'       => SET_DIR_PATH('files')
+ 
+   ];
+
+  * $Enhancer->DO_PATH_SWITCH()
+  */
+public function GETFROM($rPwhitch_to_swicth, $gP_whitch_to_fetch) {
+
+ return function_exists(__GETFROM__) ? $this->cpe_ixb6_FielEnhancers_do_swicth_path($rPwhitch_to_swicth, $gP_whitch_to_fetch) : $this->PERFORM($this->Enhance_ErrorMsg_att()); 
+
+}
+
+public function SET_DIR_PATH($uri) {
+ 
+ // Trim any uri that sent to var
+ $ReturnUri     = trim($uri);
+ 
+ // remove given directory bby replacing emoty
+ $registeredURI = str_replace( __REPLACE_ABSOLUTE_PATH__ , __EMPTY__ , dirname(__FILE__) );
+
+ // assigned direcotry return looking for "library" folder
+ return function_exists(__SETDIRPATH__) ? $registeredURI ."/". $ReturnUri . '/'  : $this->PERFORM($this->Enhance_ErrorMsg_att()); 
 
 }
 
@@ -307,7 +417,7 @@ private function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
     
   }  // END OF / IF STATEMENT
   
-  return isset($GetData__) ? $GetData__ : FALSE;
+  return isset($GetData__) ? $GetData__ : '';
 
 } // End of Method 
 
@@ -325,55 +435,91 @@ final private function cpe_FileHander_hdr($PARAM__, $QuickStart__) {
   # CHECK_IF_THE_QUICKSTART_vAR_IS_IN_ARRAY_AND_IF_IT_IS_TRUE
   # DO_ARRAY_RETURN_ESLE_SINGLE_VALUE
   is_array($QuickStart__)  ? $QuickStart__ = $QuickStart__ : $QuickStart_ = $QuickStart__;
- 
- # CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER
- if ($PARAM__ === 'META' || $PARAM__ === __META__ )
- {  
-   
-    parent::cpe_FileJandler_meta($QuickStart__, $PARAM__);
-
-  # ELSE IF CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER
- } elseif ( $PARAM__ === 'LINK' || $PARAM__ === __LINK__ ) {
-   
-     parent::cpe_FileJandler_link($QuickStart__, $PARAM__);
-
-  # ELSE IF CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER
-  } elseif ( $PARAM__ === 'SCRIPT' || $PARAM__ === __SCRIPT__ ) {
-
-     parent::cpe_FileJandler_script($QuickStart__, $PARAM__);
-
-  # ELSE IF CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER
-  }  elseif ( $PARAM__ === 'TITLE' || $PARAM__ === __TITLE__ ) {
-    
-    # IF IT IS TITLE PERFORM TITLE OPTIMIZER
-     $this->PERFORM(parent::TITLE($QuickStart_));
-
-  # ELSE IF CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER
-  } elseif ( $PARAM__ === 'CUSTOM_END' || $PARAM__ === __CUSTOM_END__ ) {
-   
-     parent::cpe_FileJandler_cutom_elem_inline($QuickStart__, $PARAM__);
-
-  # ELSE IF CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER
-}  elseif ( $PARAM__ === 'BEGIN_CUSTOM_END' || $PARAM__ === __BEGIN_CUSTOM_END__ ) {
-
-     parent::cpe_FileJandler_cutom_elem_closing_tag($QuickStart__, $PARAM__);
-
-} elseif ( $PARAM__ === '_xhtml_modify' || $PARAM__ === __DOCTYPE__ ) {
-    
-    # IF IT IS TITLE PERFORM TITLE OPTIMIZER
-    $QuickStart__ = strtolower($QuickStart__);
-
-    parent::cpe_FileJandler_doctype($QuickStart__);
-
- # ELSE IF CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER
-} else {
   
-   $this->Enhance_ErrorMsg_att();
+  # CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER 
+  switch ($PARAM__) {
 
-} // END OF IF META
+     case __META__:
+       
+       parent::cpe_FileJandler_meta($QuickStart__, $PARAM__);
+       break;
 
+     case __LINK__:
+       
+       parent::cpe_FileJandler_link($QuickStart__, $PARAM__);
+       break;     
+
+     case __SCRIPT__:
+       
+       parent::cpe_FileJandler_script($QuickStart__, $PARAM__);
+       break;   
+
+     case __TITLE__:
+       
+       $this->PERFORM(parent::TITLE($QuickStart_));
+       break;  
+
+     case __CUSTOM_END__:
+       
+       parent::cpe_FileJandler_cutom_elem_inline($QuickStart__, $PARAM__);
+       break;  
+
+     case __BEGIN_CUSTOM_END__:
+       
+       parent::cpe_FileJandler_cutom_elem_closing_tag($QuickStart__, $PARAM__);
+       break;  
+
+     case '_xhtml_modify':
+       
+       $QuickStart__ = strtolower($QuickStart__);
+       parent::cpe_FileJandler_doctype($QuickStart__);
+       break; 
+
+     default:
+       $this->Enhance_ErrorMsg_att();
+       break;
+   } 
 
 } // END OF METHOD
+
+/**
+  *
+  * @method protected function PHPFileEnhancer
+  * @static Method Defined cps_ixb6_FileHandler_bring_to() 
+  * RETURN bring_to(GETFROM(['PATH','F']), 'file',__PHP__, OPTIONAL); "Optional" // REQUIRE | INCLUDES | INCLUDES ONCE | REQUIREONCE DEFAULT
+  * 
+  * @since 08.11.2020
+  *
+  **/
+private function cps_ixb6_FileHandler_bring_to($config=null, $fileName=nul, $extension=null, $Optional=null) {
+  
+   $DesignateDiR = trim($config.$fileName);
+
+  switch ($Optional) {
+     
+     case __INC__:
+
+       empty($extension) || $extension == null ? include $DesignateDiR : include $DesignateDiR.SetFileExT($extension);  
+       break;
+     
+     case __INCONCE__:
+        
+       empty($extension) || $extension == null ? include_once $DesignateDiR : include_once $DesignateDiR.SetFileExT($extension);        
+       break;
+
+     case __REQUIRE__:
+        
+       empty($extension) || $extension == null ? require $DesignateDiR : require $DesignateDiR.SetFileExT($extension);       
+       break;
+
+     default:
+        
+       empty($extension) || $extension == null ? require_once $DesignateDiR : require_once $DesignateDiR.SetFileExT($extension);        
+       break;
+       
+  } 
+
+}
 
 /**
   *
