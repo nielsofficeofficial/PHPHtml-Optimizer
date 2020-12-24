@@ -98,9 +98,9 @@ public function __construct() {
 } 
 
 // bring_to() is a like require or include file 
-public function bring_to($config, $fileName=null, $extension=null, $Optional=null) {
+public function bring_to($config, $fileName=null, $extension=null, $optional=null) {
   
- return function_exists(__BRINGTO__) ? $this->cps_ixb6_FileHandler_bring_to($config, $fileName, $extension, $Optional) : $this->EnhanceeCoreErrorMsg(); 
+ return function_exists(__BRINGTO__) ? $this->cps_ixb6_FileHandler_bring_to($config, $fileName, $extension, $optional) : $this->EnhanceeCoreErrorMsg(); 
 
 }
 
@@ -303,9 +303,9 @@ public function GetKeyFolderPath() {
   * $Enhancer->ATTR()
   *
   */
-public function ATTR($PARAM__, $QuickStart__) {
+public function ATTR($PARAM__, $quickStart__) {
 
-  return function_exists(__ATTR__) ? $this->cpe_FileHander_hdr($PARAM__, $QuickStart__) : $this->PERFORM($this->Enhance_ErrorMsg_att()); 
+  return function_exists(__ATTR__) ? $this->cpe_FileHander_hdr($PARAM__, $quickStart__) : $this->PERFORM($this->Enhance_ErrorMsg_att()); 
 
 }
 
@@ -381,40 +381,40 @@ public function SET_DIR_PATH($uri) {
   * @since 27.10.2020
   *
   **/
-private function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
+private function cpe_xib6_FileHandler_belongs_to($page, $page_file)  {
 
  // INPUT_CURRENT_PAGE_NAME_VALIDATE
  // CHECL_INPUT_IF_IT_IS_AN_ARRAY | IF_TRUE_THEN_RETURN_AS_ARRAY_IF_FALSE_RETURN_AS_SIGNLE_POST
- $GetMultiPage__ = is_array($page) ? $page : $page; 
+ $getMultiPage__ = is_array($page) ? $page : $page; 
 
  // INPUT_CURRENT_PAGE_NAME_VALIDATE
  // CHECL_INPUT_IF_IT_IS_AN_ARRAY | IF_TRUE_THEN_RETURN_AS_ARRAY_IF_FALSE_RETURN_AS_SIGNLE_POST
- $GetMultiPagesFile__ = is_array($Page_file) ? $Page_file : $Page_file; 
+ $getMultiPagesFile__ = is_array($page_file) ? $page_file : $page_file; 
 
  // CHECK_WHICH_PAGE_YOU_ARE_CUURENT_REQUEST
  // THEN_GET_THE_FILE_PAGE
- $CheckCurrentPage__ = __SELF_REQUEST__;
+ $checkCurrentPage__ = __SELF_REQUEST__;
    
    // CHECK_IF_SECOND_PARAM_IS_EQUAL_TO_MapFolderPath_OR___MAP_FOLDER_PATH__THEN_RETURN_FOLDER_MAP
    // ELSE_RETURN_TRUE_AS_BASE_ON_INT_PARAM_ASSIGNED_TO_BE_TRUE
-   if ($Page_file === 'GetKeyFolderPath' || $Page_file === __GET_KEY_FOLDER_PATH__) {  $this->PERFORM( $this->GetKeyFolderPath() );
+   if ($page_file === 'GetKeyFolderPath' || $page_file === __GET_KEY_FOLDER_PATH__) {  $this->PERFORM( $this->GetKeyFolderPath() );
       
        // IF_THE_PAGE_FILE_IS_NULL_OR_EMPTY_THEN_DEFAULT_LEVEL_3
        // IF_IT_IS_TRUE_RETURN_DEFAULT 
-     } elseif ( empty($Page_file) || $Page_file == NULL ) { 
+     } elseif ( empty($page_file) || $page_file == NULL ) { 
 
-        $CheckCurrentPage__[1];   
+        $checkCurrentPage__[1];   
      } 
       
       // CHECK_IF_THE_PATH_IS_IN_ARRAY_THE_IF_TRUE_RETURN_ARRAYS_IF_FALSE_RETURN_SINGLE_PAGE 
       // REMOVE_PHP_EXTENSION_VALIDATE_FROM_PAGE_PARAM
       // IF_PARAM_AND_GIVE_IS_EQUAL_TRUE 
-      $GetData__ = parent::cpe_xib6_FileHandler_MultiPage_array($GetMultiPage__, 
+      $getData__ = parent::cpe_xib6_FileHandler_MultiPage_array($getMultiPage__, 
 
         // CHECK_IF_THE_PAGE_IS_IN_ARRAY_THE_IF_TRUE_RETURN_ARRAYS_IF_FALSE_RETURN_SINGLE_PAGE 
-        str_replace( __PHPFILE__ , __EMPTY__ , parent::cpe_xib6_FileHandler_mulipath_array($GetMultiPagesFile__, $CheckCurrentPage__, $Page_file)));
+        str_replace( __PHPFILE__ , __EMPTY__ , parent::cpe_xib6_FileHandler_mulipath_array($getMultiPagesFile__, $checkCurrentPage__, $page_file)));
 
-  return isset($GetData__) ? $GetData__ : '';
+  return isset($getData__) ? $getData__ : '';
 
 } // End of Method 
 
@@ -427,49 +427,48 @@ private function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
   * @since 27.10.2020
   *
   **/
-final private function cpe_FileHander_hdr($PARAM__, $QuickStart__) {
+final private function cpe_FileHander_hdr($PARAM__, $quickStart__) {
   
   # CHECK_IF_THE_QUICKSTART_vAR_IS_IN_ARRAY_AND_IF_IT_IS_TRUE
   # DO_ARRAY_RETURN_ESLE_SINGLE_VALUE
-  is_array($QuickStart__)  ? $QuickStart__ = $QuickStart__ : $QuickStart_ = $QuickStart__;
+  is_array($quickStart__) ? $quickStart__ = $quickStart__ : $quickStart_ = $quickStart__;
   
   # CHECK THE PARAMTERS IF EQUAL TOO GIVEN REQUIRED PARAMETER 
   switch ($PARAM__) {
 
      case __META__:
        
-       parent::cpe_FileJandler_meta($QuickStart__, $PARAM__);
+       parent::cpe_FileJandler_meta($quickStart__, $PARAM__);
        break;
 
      case __LINK__:
        
-       parent::cpe_FileJandler_link($QuickStart__, $PARAM__);
+       parent::cpe_FileJandler_link($quickStart__, $PARAM__);
        break;     
 
      case __SCRIPT__:
        
-       parent::cpe_FileJandler_script($QuickStart__, $PARAM__);
+       parent::cpe_FileJandler_script($quickStart__, $PARAM__);
        break;   
 
      case __TITLE__:
        
-       $this->PERFORM(parent::TITLE($QuickStart_));
+       $this->PERFORM(parent::TITLE($quickStart_));
        break;  
 
      case __CUSTOM_END__:
        
-       parent::cpe_FileJandler_cutom_elem_inline($QuickStart__, $PARAM__);
+       parent::cpe_FileJandler_cutom_elem_inline($quickStart__, $PARAM__);
        break;  
 
      case __BEGIN_CUSTOM_END__:
        
-       parent::cpe_FileJandler_cutom_elem_closing_tag($QuickStart__, $PARAM__);
+       parent::cpe_FileJandler_cutom_elem_closing_tag($quickStart__, $PARAM__);
        break;  
 
      case '_xhtml_modify':
        
-       $QuickStart__ = strtolower($QuickStart__);
-       parent::cpe_FileJandler_doctype($QuickStart__);
+       parent::cpe_FileJandler_doctype(strtolower($quickStart__));
        break; 
 
      default:
