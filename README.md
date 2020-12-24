@@ -23,7 +23,7 @@ ATTR('CUSTOM_END', [
  "NAME_OF_ELEMENT" => [ 'name' => "Value" ]
 ]);
 
-``` 
+```
  
 ```PHP
 
@@ -154,12 +154,21 @@ xHTML();
 
 ```
 
-<h4>config.php (Enhancer alpha v0)</h4>
-<p>Config.php file register file currently support : PATH | VIEWS | RURI, 
-make your code clean and safe. here's mapping to sure that your config.php file is in correct <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Installations"> directory. </a> 
+<h4>config.php </h4>
+<p>Config.php file register file currently support : PATH | DIRECTORY | URI, 
+make your code clean and safe. here's mapping to sure that your config.php file is in correct directory. 
 </p>
 
 ```PHP
+ |- root/Theme : 
+   |- Library 
+     |- PHPHtml-Optimizer
+ |- index.php
+ |- portfolio.php
+ |- config.php       
+```
+```PHP
+
 // REQURE/INCLUDES FILE - PATH
 $PATH['REGISTERED'] = [
    
@@ -183,11 +192,13 @@ $URI['REGISTERED'] = [
 
 ];
 
+
 ```
 
 For Installation / Configuration <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Installations"> Process link here </a><br /> 
 For PHPOptimizer more examples and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Docx"> Documentation link here </a><br /> 
 For PHPFileEnhancers and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Enhancers"> Reference link here </a><br /> 
+For PHPAuthenication and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v1.4 </a><br />
 For PHPMaintenance Mode and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v1.4 </a><br />
 For PHPForm and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v1.4 </a><br /> 
 For PHPLayout and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v1.5 </a><br /> 

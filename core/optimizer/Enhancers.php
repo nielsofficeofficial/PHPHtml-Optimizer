@@ -401,7 +401,7 @@ private function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
       
        // IF_THE_PAGE_FILE_IS_NULL_OR_EMPTY_THEN_DEFAULT_LEVEL_3
        // IF_IT_IS_TRUE_RETURN_DEFAULT 
-     } elseif ( empty($Page_file) || $Page_file == NULL ) {  $TheCurrentPage__  = $CheckCurrentPage__[1];  
+     } elseif ( empty($Page_file) || $Page_file == NULL ) {  $TheCurrentPage__ = $CheckCurrentPage__[1];  
      
     // ELSE_CHECK_IF_NOT_THEN_ASSIGN_
     // THE_RETURN_ASSIGN_FROM_PARAMETER_THEN_REPLACE_DEFAULT
@@ -491,30 +491,31 @@ final private function cpe_FileHander_hdr($PARAM__, $QuickStart__) {
   * @since 08.11.2020
   *
   **/
-private function cps_ixb6_FileHandler_bring_to($config=null, $fileName=nul, $extension=null, $Optional=null) {
-  
-   $DesignateDiR = trim($config.$fileName);
+private function cps_ixb6_FileHandler_bring_to($config=null, $fileName=nul, $extension=null, $optional=null) {
 
-  switch ($Optional) {
+   $designateDiR    = trim($config  . $fileName);
+   $getDesignateDiR = $designateDiR . SetFileExT($extension); 
+
+  switch ($optional) {
      
      case __INC__:
 
-       empty($extension) || $extension == null ? include $DesignateDiR : include $DesignateDiR.SetFileExT($extension);  
+       empty($extension) || $extension == null ? include $designateDiR : include  $getDesignateDiR;
        break;
      
      case __INCONCE__:
         
-       empty($extension) || $extension == null ? include_once $DesignateDiR : include_once $DesignateDiR.SetFileExT($extension);        
+       empty($extension) || $extension == null ? include_once $designateDiR : include_once $getDesignateDiR;        
        break;
 
      case __REQUIRE__:
         
-       empty($extension) || $extension == null ? require $DesignateDiR : require $DesignateDiR.SetFileExT($extension);       
+       empty($extension) || $extension == null ? require $designateDiR : require $getDesignateDiR;       
        break;
 
      default:
         
-       empty($extension) || $extension == null ? require_once $DesignateDiR : require_once $DesignateDiR.SetFileExT($extension);        
+       empty($extension) || $extension == null ? require_once $designateDiR : require_once $getDesignateDiR;        
        break;
        
   } 

@@ -791,15 +791,6 @@ class Html {
 /**
   *
   * @method public function cpe_workflow_get_saver load function
-  * Defined as require files Saver
-  * @since 08.11.2020
-  *
-  **/    
-  $this->cpe_workflow_get_saver(__GET_WORKFLOW__);
-
-/**
-  *
-  * @method public function cpe_workflow_get_saver load function
   * Defined as require files PHP AUTH
   * @since 18.11.2020
   *
