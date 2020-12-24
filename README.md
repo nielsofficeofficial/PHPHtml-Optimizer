@@ -103,7 +103,6 @@ _BODY();
 
 
 ```
-
 <h4>Quick Start : <span>Copy and paste for index or page.php</span> </h4>
 
 ```PHP
@@ -125,9 +124,7 @@ _div(SetElemAttr(['ng-app','ng-init'],['',"myCol='lightblue'"]),'QuickStart_id',
 xdiv('End of / row');
 
 ```
-
 <h4>Quick Start : <span>Copy and paste for footer.php</span></h4>
-
 
 ```PHP
 
@@ -153,7 +150,6 @@ xBODY();
 xHTML();
 
 ```
-
 <h4>config.php </h4>
 <p>Config.php file register file currently support : PATH | DIRECTORY | URI, 
 make your code clean and safe. here's mapping to sure that your config.php file is in correct directory. 
@@ -213,6 +209,5 @@ php.net : To oppurtunity Develop web application using corePHP - PHPFrameworks<b
 w3school : HTML Elements reference</h5>
 
 __For Suggestion and Donation/Sponsorship You can send via GCash : +639650332900__ <br />
-__Also You can send via Paypal account: syncdevprojects@gmail.com__ <br />
-Thanks and good luck! 
+__Also You can send via Paypal account: syncdevprojects@gmail.com__ <br /> Thanks and good luck! 
 
