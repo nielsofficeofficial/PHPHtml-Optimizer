@@ -365,7 +365,7 @@ public function SET_DIR_PATH($uri) {
  $ReturnUri     = trim($uri);
  
  // remove given directory bby replacing emoty
- $registeredURI = str_replace( __REPLACE_ABSOLUTE_PATH__ , __EMPTY__ , dirname(__FILE__) );
+ $registeredURI = str_replace( __REPLACE_ABSOLUTE_PATH__ , __EMPTY__ , __DIR__ );
 
  // assigned direcotry return looking for "library" folder
  return function_exists(__SETDIRPATH__) ? $registeredURI ."/". $ReturnUri . '/'  : $this->PERFORM($this->Enhance_ErrorMsg_att()); 
