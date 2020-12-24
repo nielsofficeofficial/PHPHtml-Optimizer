@@ -401,11 +401,10 @@ private function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
       
        // IF_THE_PAGE_FILE_IS_NULL_OR_EMPTY_THEN_DEFAULT_LEVEL_3
        // IF_IT_IS_TRUE_RETURN_DEFAULT 
-     } elseif ( empty($Page_file) || $Page_file == NULL ) { $CheckCurrentPage__[1];  
-     
-    // ELSE_CHECK_IF_NOT_THEN_ASSIGN_
-    // THE_RETURN_ASSIGN_FROM_PARAMETER_THEN_REPLACE_DEFAULT
-    } else { 
+     } elseif ( empty($Page_file) || $Page_file == NULL ) { 
+
+        $CheckCurrentPage__[1];   
+     } 
       
       // CHECK_IF_THE_PATH_IS_IN_ARRAY_THE_IF_TRUE_RETURN_ARRAYS_IF_FALSE_RETURN_SINGLE_PAGE 
       // REMOVE_PHP_EXTENSION_VALIDATE_FROM_PAGE_PARAM
@@ -414,9 +413,7 @@ private function cpe_xib6_FileHandler_belongs_to($page, $Page_file)  {
 
         // CHECK_IF_THE_PAGE_IS_IN_ARRAY_THE_IF_TRUE_RETURN_ARRAYS_IF_FALSE_RETURN_SINGLE_PAGE 
         str_replace( __PHPFILE__ , __EMPTY__ , parent::cpe_xib6_FileHandler_mulipath_array($GetMultiPagesFile__, $CheckCurrentPage__, $Page_file)));
-    
-  }  // END OF / IF STATEMENT
-  
+
   return isset($GetData__) ? $GetData__ : '';
 
 } // End of Method 
