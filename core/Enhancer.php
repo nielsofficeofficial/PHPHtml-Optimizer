@@ -38,7 +38,14 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS PHPFileHandler;
  *
  */
 
-
+/**
+  *
+  * @since 22.11.2020
+  * @category PHPFileEnhancer
+  * @method Defined bring_to(GETFROM(['PATH','KEY']), 'file',__PHP__, OPTIONAL);
+  * 
+  *
+  **/
 function bring_to($config, $fileName=null, $extension=null, $Optional=null) {
   
  /**
@@ -58,7 +65,14 @@ function bring_to($config, $fileName=null, $extension=null, $Optional=null) {
  
 } 
 
-
+/**
+  *
+  * @since 22.11.2020
+  * @category PHPFileEnhancer
+  * @method Defined view_to(GETFROM(['PATH','KEY']), 'about' );
+  * 
+  *
+  **/
 function view_to($config, $fileName) {
   
  /**
@@ -78,6 +92,14 @@ function view_to($config, $fileName) {
  
 } 
 
+/**
+  *
+  * @since 22.11.2020
+  * @category PHPFileEnhancer
+  * @method Defined send_to($uri);
+  * 
+  *
+  **/
 function send_to($uri) {
   
  /**

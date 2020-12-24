@@ -67,6 +67,7 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancer AS PHPFileHandler;
   define('__GETFROM__', 'GETFROM' ); // Set PARAM GETFROM
   define('__BRINGTO__', 'bring_to' ); // Set PARAM GETFROM
   define('__VIEWSTO__', 'view_to' ); //  Set Param GETFROM
+  define('__SENDTO__', 'send_to' ); //  Set redirect to
   define('__SETDIRPATH__', 'SET_DIR_PATH' ); // Set PARAM SET_PATH_DIR
   define('__DOCTYPE__', 'DOCTYPE' ); // Set PARAM ELEM
   define('__REPLACE_ABSOLUTE_PATH__', '\library\PHPHtml-Optimizer\core\optimizer' ); // Set PARAM __REPLACE_ABSOLUTE_PATH__ SET_PAT_DIR

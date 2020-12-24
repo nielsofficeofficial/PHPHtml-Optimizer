@@ -57,31 +57,6 @@
 
 class Enhancers Extends Optimizer {
 
-
-// deliver_to() is combined of isbelongs() and bring_to()
-public function deliver_to() {
-  
- return false;
-  
-}
-
-// send_to() is redirect header() PHP native function
-public function send_to($uri) {
-  
-  
-
-  return header('Location: https://www.'.trim($uri).'.com/');  // 
-
-}
-
-// view_to() is get file from views folder which have directory to be register on config.php 
-public function view_to($config, $fileName) {
-  
- return function_exists(__VIEWSTO__) ? $this->cps_ixb6_FileHandler_bring_to($config, $fileName, __PHP__, __INCONCE__) : $this->EnhanceeCoreErrorMsg(); 
-
-}
-
-
 /**
   * @method _construct 
   * @property @html_extend load functions file get from parents
@@ -100,7 +75,46 @@ public function __construct() {
 
 } 
 
-// bring_to() is a like require or include file 
+// deliver_to() is combined of isbelongs() and bring_to()
+public function deliver_to() {
+  
+ return false;
+  
+}
+
+/**
+  *
+  * @method public function add breaktag html as noHTML
+  * Defined as break tag no string quotes 
+  * send_to()
+  *
+  **/ 
+public function send_to($uri) {
+
+  return function_exists(__SENDTO__) ? header('Location: https://www.'.trim($uri).'.com/') : $this->EnhanceeCoreErrorMsg();   // 
+
+}
+
+/**
+  *
+  * @method public function add breaktag html as noHTML
+  * Defined as break tag no string quotes 
+  * view_to()
+  *
+  **/ 
+public function view_to($config, $fileName) {
+  
+ return function_exists(__VIEWSTO__) ? $this->cps_ixb6_FileHandler_bring_to($config, $fileName, __PHP__, __INCONCE__) : $this->EnhanceeCoreErrorMsg(); 
+
+}
+
+/**
+  *
+  * @method public function add breaktag html as noHTML
+  * Defined as break tag no string quotes 
+  * bring_to()
+  *
+  **/ 
 public function bring_to($config, $fileName=null, $extension=null, $optional=null) {
   
  return function_exists(__BRINGTO__) ? $this->cps_ixb6_FileHandler_bring_to($config, $fileName, $extension, $optional) : $this->EnhanceeCoreErrorMsg(); 
