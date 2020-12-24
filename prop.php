@@ -77,7 +77,6 @@
   define('__GET_LOAD_MERGEBOX__', SOM_PATH_DIR . 'core/merge/MergeBox.php' ); // get root file GET_LOAD_MERGEBOX
   define('__GET_LOAD_MERGEELEMENT__',SOM_PATH_DIR . 'core/merge/MergeElements.php' ); // get root file GET_LOAD_MERGEELEMENT
   define('__GET_PROPERTY_ITSELF__', SOM_PATH_DIR . ' ../../prop.php' ); // get root file GET_PROPERTY_ITSELF
-  define('__GET_WORKFLOW__', '/../../../../saver/' ); // get saver
   define('__FILECONFIG__', SOM_PATH_DIR . '/../../config.php' ); // get config file cient
 
 
