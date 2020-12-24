@@ -61,8 +61,7 @@ function bring_to($config, $fileName=null, $extension=null, $Optional=null) {
    *
    **/  
  $Enhancer = new PHPFileHandler();
- return $Enhancer->bring_to($config, $fileName, $extension, $Optional);
- 
+ return method_exists($Enhancer, 'bring_to') ? $Enhancer->bring_to($config, $fileName, $extension, $Optional) : PERFORM(erorrMessage());
 } 
 
 /**
@@ -87,8 +86,8 @@ function view_to($config, $fileName) {
    *
    *
    **/  
- $Enhancer = new PHPFileHandler();
- return $Enhancer->view_to($config, $fileName);
+  $Enhancer = new PHPFileHandler();
+  return method_exists($Enhancer, 'view_to') ? $Enhancer->view_to($config, $fileName) : PERFORM(erorrMessage());
  
 } 
 
@@ -559,6 +558,13 @@ function STRING($str=null, $assoc=null) {
 
 }
 
+
+
+function erorrMessage() {
+
+  return "Class can Extends but cannot be modify" . __BR();
+ 
+}
 
 
 
