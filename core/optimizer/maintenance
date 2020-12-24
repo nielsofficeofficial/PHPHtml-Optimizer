@@ -1,11 +1,11 @@
 <?php 
 
- namespace PHPHtml\CodeOptimizer\optimizer;
+ namespace PHPHtml\CodeOptimizer\maintenance;
 
 /**
- * @copyright (c) 2020-2021 Designer v1.0 Cooked by nielsoffice
+ * @copyright (c) 2020-2021 maintenance v1.0 Cooked by nielsoffice
  *
- * Designer v1.0 free software: you can redistribute it and/or modify
+ * maintenance v1.0 free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
@@ -35,6 +35,6 @@
  *
  */
 
-class Forms {
+class maintenance {
 
 }

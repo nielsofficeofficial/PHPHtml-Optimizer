@@ -58,7 +58,7 @@ function __HTML($label="INLINE", $elem=null, $attr=null, $element_id=null, $elem
    *
    **/ 
   $Html = NEW MergeElements();
-  return $Html->_ELEMENT($label, $elem, $attr, $element_id, $element_class, $assoc);
+  return method_exists($Html,'ELEMS') ? $Html->ELEMS($label, $elem, $attr, $element_id, $element_class, $assoc) : PERFORM(erorrMessage());
 
 }
 
@@ -86,7 +86,7 @@ function _xHTML($elem=null, $value=null, $attr=null, $element_id=null, $element_
    *
    **/ 
   $Html = NEW MergeElements();
-  return $Html->ELEMENT($elem, $value, $attr, $element_id, $element_class, $label); 
+  return method_exists($Html,'ELEMENT') ? $Html->ELEMENT($elem, $value, $attr, $element_id, $element_class, $label) : PERFORM(erorrMessage()); 
 
 }
 
@@ -114,7 +114,7 @@ function _MERGE($elem=null, $attr=null, $element_id=null, $element_class=null) {
    *
    **/ 
   $Html = NEW MergeElements();
-  return $Html->__magicMERGE($elem, 'MERGE', $attr, $element_id, $element_class);
+  return method_exists($Html,'__magicMERGE') ? $Html->__magicMERGE($elem, 'MERGE', $attr, $element_id, $element_class) : PERFORM(erorrMessage());
 
 }
 
@@ -128,7 +128,8 @@ function _MERGE($elem=null, $attr=null, $element_id=null, $element_class=null) {
   **/
 function xMERGE($elem=null) {
 
- $Html = NEW MergeElements(); return $Html->__magicMERGE($elem, 'MERGE_END');
+ $Html = NEW MergeElements(); 
+ return method_exists($Html,'__magicMERGE') ? $Html->__magicMERGE($elem, 'MERGE_END') : PERFORM(erorrMessage());
 	
 }
 

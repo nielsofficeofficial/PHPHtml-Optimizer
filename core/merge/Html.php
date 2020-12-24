@@ -891,7 +891,7 @@ static protected $hextend = [];
   * Neat and clean noHTML
   *
   **/
-  static public function _ELEMENT($inline="INLINE", $elem, $js=[], $id=null, $class=null, $assoc=null) { 
+  static public function ELEMS($inline="INLINE", $elem, $js=[], $id=null, $class=null, $assoc=null) { 
    
      return self::HtmlELements_Optimizer($inline, $elem, $js, $id, $class, $assoc);
 }

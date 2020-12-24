@@ -338,7 +338,7 @@ function _xIFRAME( $value=null, $attr=null, $element_id=null, $element_class=nul
    *
    **/
    $Html = NEW Merge(); 
-   return $Html->IFRAME($value, $attr, $element_id, $element_class, $label, $assoc); 
+   return method_exists($Html,'IFRAME') ? $Html->IFRAME($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -366,7 +366,7 @@ function _xMAIN( $value=null, $attr=null, $element_id=null, $element_class=null,
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->MAIN($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'MAIN') ? $Html->MAIN($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -394,7 +394,7 @@ function _xNAV( $value=null, $attr=null, $element_id=null, $element_class=null, 
    *
    **/
    $Html = NEW Merge(); 
-   return $Html->NAV($value, $attr, $element_id, $element_class, $label, $assoc); 
+   return method_exists($Html,'NAV') ? $Html->NAV($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -422,7 +422,7 @@ function _xSELECT( $value=null, $attr=null, $element_id=null, $element_class=nul
    *
    **/
    $Html = NEW Merge(); 
-   return $Html->SELECT($value, $attr, $element_id, $element_class, $label, $assoc); 
+   return method_exists($Html,'SELECT') ? $Html->SELECT($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -450,7 +450,7 @@ function _xFORM( $value=null, $attr=null, $element_id=null, $element_class=null,
    *
    **/
    $Html = NEW Merge(); 
-   return $Html->FORM($value, $attr, $element_id, $element_class, $label, $assoc); 
+   return method_exists($Html,'FORM') ? $Html->FORM($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -478,7 +478,7 @@ function _xPICTURE( $value=null, $attr=null, $element_id=null, $element_class=nu
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->PICTURE($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'PICTURE') ? $Html->PICTURE($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -506,7 +506,7 @@ function _xSECTION( $value=null, $attr=null, $element_id=null, $element_class=nu
    *
    **/
    $Html = NEW Merge(); 
-   return $Html->SECTION($value, $attr, $element_id, $element_class, $label, $assoc); 
+   return method_exists($Html,'SECTION') ? $Html->SECTION($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -534,7 +534,7 @@ function _xTEXTAREA( $value=null, $attr=null, $element_id=null, $element_class=n
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->TEXTAREA($value, $attr, $element_id, $element_class, $label, $assoc);
+  return method_exists($Html,'TEXTAREA') ? $Html->TEXTAREA($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -562,7 +562,7 @@ function _xFOOTER( $value=null, $attr=null, $element_id=null, $element_class=nul
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->FOOTER($value, $attr, $element_id, $element_class, $label, $assoc);
+  return method_exists($Html,'FOOTER') ? $Html->FOOTER($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());
 
 }
 
@@ -590,7 +590,7 @@ function _xAUDIO( $value=null, $attr=null, $element_id=null, $element_class=null
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->AUDIO($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'AUDIO') ? $Html->AUDIO($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -617,8 +617,8 @@ function _xVIDEO( $value=null, $attr=null, $element_id=null, $element_class=null
    *
    *
    **/
-  $Html = NEW Merge(); 
-  return $Html->VIDEO($value, $attr, $element_id, $element_class, $label, $assoc); 
+  $Html = NEW Merge();
+  return method_exists($Html,'VIDEO') ? $Html->VIDEO($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -645,8 +645,8 @@ function _xADDRESS( $value=null, $attr=null, $element_id=null, $element_class=nu
    *
    *
    **/
-  $Html = NEW Merge(); 
-  return $Html->ADDRESS($value, $attr, $element_id, $element_class, $label, $assoc);
+  $Html = NEW Merge();
+  return method_exists($Html,'ADDRESS') ? $Html->ADDRESS($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -674,7 +674,7 @@ function _xCOLGROUP( $value=null, $attr=null, $element_id=null, $element_class=n
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->COLGROUP($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'COLGROUP') ? $Html->COLGROUP($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -702,7 +702,7 @@ function _xBDI( $value=null, $attr=null, $element_id=null, $element_class=null, 
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->BDI($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'COLGROUP') ? $Html->BDI($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -730,7 +730,7 @@ function _xBDO( $value=null, $attr=null, $element_id=null, $element_class=null, 
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->BDO($value, $attr, $element_id, $element_class, $label, $assoc);
+  return method_exists($Html,'BDO') ? $Html->BDO($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());
 
 }
 
@@ -758,7 +758,7 @@ function _xBLOCKQUOTE( $value=null, $attr=null, $element_id=null, $element_class
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->BLOCKQUOTE($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'BLOCKQUOTE') ? $Html->BLOCKQUOTE($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -786,7 +786,7 @@ function _xCAPTION( $value=null, $attr=null, $element_id=null, $element_class=nu
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->CAPTION($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'CAPTION') ? $Html->CAPTION($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -814,7 +814,7 @@ function _xLABEL( $value=null, $attr=null, $element_id=null, $element_class=null
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->LABEL($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'LABEL') ? $Html->LABEL($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -842,7 +842,7 @@ function _xDATALIST( $value=null, $attr=null, $element_id=null, $element_class=n
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->DATALIST($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'DATALIST') ? $Html->DATALIST($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -870,7 +870,7 @@ function _xDETAILS( $value=null, $attr=null, $element_id=null, $element_class=nu
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->DETAILS($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'DETAILS') ? $Html->DETAILS($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -898,7 +898,7 @@ function _xSUMMARY( $value=null, $attr=null, $element_id=null, $element_class=nu
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->SUMMARY($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'SUMMARY') ? $Html->SUMMARY($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -925,8 +925,8 @@ function _xDIALOG( $value=null, $attr=null, $element_id=null, $element_class=nul
    *
    *
    **/
-  $Html = NEW Merge(); 
-  return $Html->DIALOG($value, $attr, $element_id, $element_class, $label, $assoc); 
+  $Html = NEW Merge();
+  return method_exists($Html,'DIALOG') ? $Html->DIALOG($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());   
 
 }
 
@@ -953,8 +953,8 @@ function _xOPTION( $value=null, $attr=null, $element_id=null, $element_class=nul
    *
    *
    **/
-  $Html = NEW Merge(); 
-  return $Html->OPTION($value, $attr, $element_id, $element_class, $label, $assoc); 
+  $Html = NEW Merge();
+  return method_exists($Html,'OPTION') ? $Html->OPTION($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -982,7 +982,7 @@ function _xFIGURE( $value=null, $attr=null, $element_id=null, $element_class=nul
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->FIGURE($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'FIGURE') ? $Html->FIGURE($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -1010,7 +1010,7 @@ function _xFIGCAPTION( $value=null, $attr=null, $element_id=null, $element_class
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->FIGCAPTION($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'FIGCAPTION') ? $Html->FIGCAPTION($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -1038,7 +1038,7 @@ function _xMETER( $value=null, $attr=null, $element_id=null, $element_class=null
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->METER($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'METER') ? $Html->METER($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -1065,8 +1065,8 @@ function _xOBJECT( $value=null, $attr=null, $element_id=null, $element_class=nul
    *
    *
    **/
-  $Html = NEW Merge(); 
-  return $Html->OBJECT($value, $attr, $element_id, $element_class, $label, $assoc); 
+  $Html = NEW Merge();
+  return method_exists($Html,'OBJECT') ? $Html->OBJECT($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -1093,7 +1093,8 @@ function _xOPTGROUP( $value=null, $attr=null, $element_id=null, $element_class=n
    *
    *
    **/
-  $Html = NEW Merge(); return $Html->OPTGROUP($value, $attr, $element_id, $element_class, $label, $assoc); 
+  $Html = NEW Merge(); 
+  return method_exists($Html,'OPTGROUP') ? $Html->OPTGROUP($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());   
 
 }
 
@@ -1121,7 +1122,7 @@ function _xOUTPUT( $value=null, $attr=null, $element_id=null, $element_class=nul
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->OUTPUT($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'OUTPUT') ? $Html->OUTPUT($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -1149,7 +1150,7 @@ function _xPROGRESS( $value=null, $attr=null, $element_id=null, $element_class=n
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->PROGRESS($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'PROGRESS') ? $Html->PROGRESS($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -1177,7 +1178,7 @@ function _xSVG( $value=null, $attr=null, $element_id=null, $element_class=null, 
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->SVG($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'SVG') ? $Html->SVG($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -1205,7 +1206,7 @@ function _xTEMPLATE( $value=null, $attr=null, $element_id=null, $element_class=n
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->TEMPLATE($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'TEMPLATE') ? $Html->TEMPLATE($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -1233,7 +1234,7 @@ function _xUL( $value=null, $attr=null, $element_id=null, $element_class=null, $
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->UL($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'UL') ? $Html->UL($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -1261,7 +1262,7 @@ function _xOL( $value=null, $attr=null, $element_id=null, $element_class=null, $
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->OL($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'OL') ? $Html->OL($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -1288,8 +1289,8 @@ function _xLI( $value=null, $attr=null, $element_id=null, $element_class=null, $
    *
    *
    **/
-  $Html = NEW Merge(); 
-  return $Html->LI($value, $attr, $element_id, $element_class, $label, $assoc); 
+  $Html = NEW Merge();
+  return method_exists($Html,'LI') ? $Html->LI($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -1317,7 +1318,7 @@ function _xTABLE( $value=null, $attr=null, $element_id=null, $element_class=null
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->TABLE($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'TABLE') ? $Html->TABLE($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -1345,7 +1346,7 @@ function _xTR( $value=null, $attr=null, $element_id=null, $element_class=null, $
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->TR($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'TR') ? $Html->TR($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -1373,7 +1374,7 @@ function _xTD( $value=null, $attr=null, $element_id=null, $element_class=null, $
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->TD($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'TD') ? $Html->TD($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -1400,8 +1401,8 @@ function _xTH( $value=null, $attr=null, $element_id=null, $element_class=null, $
    *
    *
    **/
-  $Html = NEW Merge(); 
-  return $Html->TH($value, $attr, $element_id, $element_class, $label, $assoc); 
+  $Html = NEW Merge();
+  return method_exists($Html,'TH') ? $Html->TH($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -1429,7 +1430,7 @@ function _xLEGEND( $value=null, $attr=null, $element_id=null, $element_class=nul
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->LEGEND($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'LEGEND') ? $Html->LEGEND($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -1457,7 +1458,7 @@ function _xFIELDSET( $value=null, $attr=null, $element_id=null, $element_class=n
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->FIELDSET($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'FIELDSET') ? $Html->FIELDSET($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -1485,7 +1486,7 @@ function _xTBODY( $value=null, $attr=null, $element_id=null, $element_class=null
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->TBODY($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'TBODY') ? $Html->TBODY($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -1513,7 +1514,7 @@ function _xTFOOTER( $value=null, $attr=null, $element_id=null, $element_class=nu
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->TFOOTER($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'TFOOTER') ? $Html->TFOOTER($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -1541,7 +1542,7 @@ function _xTHEAD( $value=null, $attr=null, $element_id=null, $element_class=null
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->THEAD($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'THEAD') ? $Html->THEAD($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());
 
 }
 
@@ -1569,7 +1570,7 @@ function _xSPAN( $value=null, $attr=null, $element_id=null, $element_class=null,
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->SPAN($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'SPAN') ? $Html->SPAN($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -1597,7 +1598,7 @@ function _xEM( $value=null, $attr=null, $element_id=null, $element_class=null, $
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->EM($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'EM') ? $Html->EM($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -1625,7 +1626,7 @@ function _xB( $value=null, $attr=null, $element_id=null, $element_class=null, $l
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->B($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'B') ? $Html->B($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -1653,7 +1654,7 @@ function _xI( $value=null, $attr=null, $element_id=null, $element_class=null, $l
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->I($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'I') ? $Html->I($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -1681,7 +1682,7 @@ function _xSMALL( $value=null, $attr=null, $element_id=null, $element_class=null
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->SMALL($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'SMALL') ? $Html->SMALL($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -1709,7 +1710,7 @@ function _xMARQUEE( $value=null, $attr=null, $element_id=null, $element_class=nu
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->MARQUEE($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'MARQUEE') ? $Html->MARQUEE($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -1737,7 +1738,7 @@ function _xCENTER( $value=null, $attr=null, $element_id=null, $element_class=nul
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->CENTER($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'CENTER') ? $Html->CENTER($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -1764,8 +1765,8 @@ function _xCODE( $value=null, $attr=null, $element_id=null, $element_class=null,
    *
    *
    **/
-  $Html = NEW Merge(); 
-  return $Html->CODE($value, $attr, $element_id, $element_class, $label, $assoc); 
+  $Html = NEW Merge();
+  return method_exists($Html,'CODE') ? $Html->CODE($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -1793,7 +1794,7 @@ function _xABBR( $value=null, $attr=null, $element_id=null, $element_class=null,
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->ABBR($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'ABBR') ? $Html->ABBR($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -1821,7 +1822,7 @@ function _xMAP( $value=null, $attr=null, $element_id=null, $element_class=null, 
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->MAP($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'MAP') ? $Html->MAP($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -1848,8 +1849,8 @@ function _xCANVAS( $value=null, $attr=null, $element_id=null, $element_class=nul
    *
    *
    **/
-  $Html = NEW Merge(); 
-  return $Html->CANVAS($value, $attr, $element_id, $element_class, $label, $assoc); 
+  $Html = NEW Merge();
+  return method_exists($Html,'CANVAS') ? $Html->CANVAS($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());   
 
 }
 
@@ -1876,8 +1877,8 @@ function _xSITE( $value=null, $attr=null, $element_id=null, $element_class=null,
    *
    *
    **/
-  $Html = NEW Merge(); 
-  return $Html->SITE($value, $attr, $element_id, $element_class, $label, $assoc); 
+  $Html = NEW Merge();
+  return method_exists($Html,'SITE') ? $Html->SITE($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -1905,7 +1906,7 @@ function _xDATA( $value=null, $attr=null, $element_id=null, $element_class=null,
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->DATA($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'DATA') ? $Html->DATA($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());
 
 }
 
@@ -1933,7 +1934,7 @@ function _xDL( $value=null, $attr=null, $element_id=null, $element_class=null, $
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->DL($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'DL') ? $Html->DL($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -1960,7 +1961,8 @@ function _xDT( $value=null, $attr=null, $element_id=null, $element_class=null, $
    *
    *
    **/
-  $Html = NEW Merge(); return $Html->DT($value, $attr, $element_id, $element_class, $label, $assoc); 
+  $Html = NEW Merge(); 
+  return method_exists($Html,'DT') ? $Html->DT($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());
 
 }
 
@@ -1988,7 +1990,7 @@ function _xDD( $value=null, $attr=null, $element_id=null, $element_class=null, $
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->DD($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'DD') ? $Html->DD($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -2016,7 +2018,7 @@ function _xDFN( $value=null, $attr=null, $element_id=null, $element_class=null, 
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->DFN($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'DFN') ? $Html->DFN($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());
 
 }
 
@@ -2044,7 +2046,7 @@ function _xINS( $value=null, $attr=null, $element_id=null, $element_class=null, 
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->INS($value, $attr, $element_id, $element_class, $label, $assoc);
+  return method_exists($Html,'INS') ? $Html->INS($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());
 
 }
 
@@ -2072,7 +2074,7 @@ function _xDEL( $value=null, $attr=null, $element_id=null, $element_class=null, 
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->DEL($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'DEL') ? $Html->DEL($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -2099,8 +2101,8 @@ function _xKBD( $value=null, $attr=null, $element_id=null, $element_class=null, 
    *
    *
    **/
-  $Html = NEW Merge(); 
-  return $Html->KBD($value, $attr, $element_id, $element_class, $label, $assoc); 
+  $Html = NEW Merge();
+  return method_exists($Html,'KBD') ? $Html->KBD($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -2128,7 +2130,7 @@ function _xMARK( $value=null, $attr=null, $element_id=null, $element_class=null,
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->MARK($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'MARK') ? $Html->MARK($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -2156,7 +2158,7 @@ function _xPRE( $value=null, $attr=null, $element_id=null, $element_class=null, 
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->PRE($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'PRE') ? $Html->PRE($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -2184,7 +2186,7 @@ function _xRT( $value=null, $attr=null, $element_id=null, $element_class=null, $
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->RT($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'RT') ? $Html->RT($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -2211,8 +2213,8 @@ function _xS( $value=null, $attr=null, $element_id=null, $element_class=null, $l
    *
    *
    **/
-  $Html = NEW Merge(); 
-  return $Html->S($value, $attr, $element_id, $element_class, $label, $assoc); 
+  $Html = NEW Merge();
+  return method_exists($Html,'S') ? $Html->S($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -2239,8 +2241,8 @@ function _xSAMP( $value=null, $attr=null, $element_id=null, $element_class=null,
    *
    *
    **/
-  $Html = NEW Merge(); 
-  return $Html->SAMP($value, $attr, $element_id, $element_class, $label, $assoc); 
+  $Html = NEW Merge();
+  return method_exists($Html,'SAMP') ? $Html->SAMP($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -2268,7 +2270,7 @@ function _xSTRONG( $value=null, $attr=null, $element_id=null, $element_class=nul
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->STRONG($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'STRONG') ? $Html->STRONG($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -2296,7 +2298,7 @@ function _xSUB( $value=null, $attr=null, $element_id=null, $element_class=null, 
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->SUB($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'SUB') ? $Html->SUB($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -2324,7 +2326,7 @@ function _xSUP( $value=null, $attr=null, $element_id=null, $element_class=null, 
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->SUP($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'SUP') ? $Html->SUP($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());
 
 }
 
@@ -2352,7 +2354,7 @@ function _xWBR( $value=null, $attr=null, $element_id=null, $element_class=null, 
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->WBR($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'WBR') ? $Html->WBR($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -2380,7 +2382,7 @@ function _xQ( $value=null, $attr=null, $element_id=null, $element_class=null, $l
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->Q($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'Q') ? $Html->Q($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage()); 
 
 }
 
@@ -2408,7 +2410,7 @@ function _xHEAD( $value=null, $attr=null, $element_id=null, $element_class=null,
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->HEAD($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'HEAD') ? $Html->HEAD($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -2436,7 +2438,7 @@ function _xTITLE( $value=null, $attr=null, $element_id=null, $element_class=null
    *
    **/
   $Html = NEW Merge(); 
-  return $Html->TITLE($value, $attr, $element_id, $element_class, $label, $assoc); 
+  return method_exists($Html,'TITLE') ? $Html->TITLE($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
@@ -2463,8 +2465,8 @@ function _xBODY( $value=null, $attr=null, $element_id=null, $element_class=null,
    *
    *
    **/
-  $Html = NEW Merge(); 
-  return $Html->BODY($value, $attr, $element_id, $element_class, $label, $assoc); 
+  $Html = NEW Merge();
+  return method_exists($Html,'BODY') ? $Html->BODY($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 

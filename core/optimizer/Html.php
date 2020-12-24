@@ -845,7 +845,7 @@ class Html {
   * Neat and clean noHTML
   *
   **/
-   public function _ELEMENT($inline="INLINE", $elem, $js=null, $id=null, $class=null, $assoc=null) { 
+   public function ELEMS($inline="INLINE", $elem, $js=null, $id=null, $class=null, $assoc=null) { 
     
    return $this->HtmlELements_Optimizer($inline, $elem, $js, $id, $class, $assoc);
   
