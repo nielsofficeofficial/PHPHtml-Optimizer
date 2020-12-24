@@ -59,6 +59,44 @@ function bring_to($config, $fileName=null, $extension=null, $Optional=null) {
 } 
 
 
+function view_to($config, $fileName) {
+  
+ /**
+   *
+   *
+   *
+   *
+   * @package : PHPFileEnhancer
+   * @package : Static Procedural
+   * @method  : $FileEnhance->bring_to(GETFROM(['PATH','F']), 'file',__PHP__, OPTIONAL); "Optional" // REQUIRE | INCLUDES | INCLUDES ONCE | REQUIREONCE DEFAULT
+   *
+   *
+   *
+   **/  
+ $Enhancer = new PHPFileHandler();
+ return $Enhancer->view_to($config, $fileName);
+ 
+} 
+
+function send_to($uri) {
+  
+ /**
+   *
+   *
+   *
+   *
+   * @package : PHPFileEnhancer
+   * @package : Static Procedural
+   * @method  : $FileEnhance->bring_to(GETFROM(['PATH','F']), 'file',__PHP__, OPTIONAL); "Optional" // REQUIRE | INCLUDES | INCLUDES ONCE | REQUIREONCE DEFAULT
+   *
+   *
+   *
+   **/  
+ $Enhancer = new PHPFileHandler();
+ return $Enhancer->send_to($uri);
+ 
+} 
+
 /**
   *
   * @since 22.11.2020

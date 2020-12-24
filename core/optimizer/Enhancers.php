@@ -61,20 +61,23 @@ class Enhancers Extends Optimizer {
 // deliver_to() is combined of isbelongs() and bring_to()
 public function deliver_to() {
   
-  return false;
+ return false;
+  
 }
 
 // send_to() is redirect header() PHP native function
-
-public function send_to() {
+public function send_to($uri) {
   
-  return false;
+  
+
+  return header('Location: https://www.'.trim($uri).'.com/');  // 
+
 }
 
 // view_to() is get file from views folder which have directory to be register on config.php 
-public function view_to() {
+public function view_to($config, $fileName) {
   
-  return false;
+ return function_exists(__VIEWSTO__) ? $this->cps_ixb6_FileHandler_bring_to($config, $fileName, __PHP__, __INCONCE__) : $this->EnhanceeCoreErrorMsg(); 
 
 }
 

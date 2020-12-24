@@ -66,6 +66,7 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancer AS PHPFileHandler;
   define('__ELEM__', 'ELEM' ); // Set PARAM ELEM
   define('__GETFROM__', 'GETFROM' ); // Set PARAM GETFROM
   define('__BRINGTO__', 'bring_to' ); // Set PARAM GETFROM
+  define('__VIEWSTO__', 'view_to' ); //  Set Param GETFROM
   define('__SETDIRPATH__', 'SET_DIR_PATH' ); // Set PARAM SET_PATH_DIR
   define('__DOCTYPE__', 'DOCTYPE' ); // Set PARAM ELEM
   define('__REPLACE_ABSOLUTE_PATH__', '\library\PHPHtml-Optimizer\core\optimizer' ); // Set PARAM __REPLACE_ABSOLUTE_PATH__ SET_PAT_DIR
@@ -73,5 +74,5 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancer AS PHPFileHandler;
   define('__INCONCE__', '' ); // Set PARAM SWICTH TO OPTIONAL INCLUDES ONCE 
   define('__REQUIRE__', '' ); // Set PARAM SWICTH TO OPTIONAL REQUIRE
   define('__ARRPATH__', 'path' ); // Set PARAM ARRAY PATH valid/supported global variable
-  define('__ARRVIEWS__', 'views' ); // Set PARAM ARRAY VIEWS valid/supported global variable
+  define('__ARRVIEWS__', 'dir' ); // Set PARAM ARRAY VIEWS valid/supported global variable
   define('__ARRVRURI__', 'ruri' ); // Set PARAM ARRAY RURI valid/supported global variable

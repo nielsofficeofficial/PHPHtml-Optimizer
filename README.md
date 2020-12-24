@@ -126,7 +126,7 @@ xdiv('End of / row');
 
 ```
 
-<h4>Quick Start : <span>Copy and paste for footer.php</span> </h4>
+<h4>Quick Start : <span>Copy and paste for footer.php</span></h4>
 
 
 ```PHP
