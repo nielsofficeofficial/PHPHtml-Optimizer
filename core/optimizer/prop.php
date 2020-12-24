@@ -37,12 +37,11 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancer AS PHPFileHandler;
  * @method MapFolderPath();  
  *
  */
-
   
   define('__PATH__', __DIR__ . DIRECTORY_SEPARATOR ); // Set DIR PATH Default
   define('__ROOTPATH__', __PATH__ . '../../' ); // Get Root file DIR 
   define('__PHPFILE__','.php'); // Get Extension
-  define('__SELF_REQUEST__', explode('/', isset($_SERVER['PHP_SELF']))); // Get SELF_REQUEST
+  define('__SELF_REQUEST__', explode('/', $_SERVER['PHP_SELF'] !== null ? $_SERVER['PHP_SELF'] : false )); // Get SELF_REQUEST
   define('__EMPTY__',''); // Set Empty  
   define('__GET_KEY_FOLDER_PATH__','GetKeyFolderPath');  // Return Map Path
   define('__ISBELONG__', 'isbelongs' ); // Set Function ISBELONG
@@ -76,5 +75,3 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancer AS PHPFileHandler;
   define('__ARRPATH__', 'path' ); // Set PARAM ARRAY PATH valid/supported global variable
   define('__ARRVIEWS__', 'views' ); // Set PARAM ARRAY VIEWS valid/supported global variable
   define('__ARRVRURI__', 'ruri' ); // Set PARAM ARRAY RURI valid/supported global variable
-
-
