@@ -42,7 +42,10 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancer AS PHPFileHandler;
   define('__PATH__', __DIR__ . DIRECTORY_SEPARATOR ); // Set DIR PATH Default
   define('__ROOTPATH__', __PATH__ . '../../' ); // Get Root file DIR 
   define('__PHPFILE__','.php'); // Get Extension
-  define('__SELF_REQUEST__', $GetKey = (explode('/',$_SERVER['PHP_SELF']) !== NULL) ? $GetKey = explode('/',$_SERVER['PHP_SELF']) : FALSE ); // Get SELF_REQUEST
+  define('__SELF_REQUEST__', 
+        
+      (explode('/',$_SERVER['PHP_SELF']) !== NULL || empty(explode('/',$_SERVER['PHP_SELF'])) || isset(explode('/',$_SERVER['PHP_SELF'])) ) ? explode('/',$_SERVER['PHP_SELF']) : FALSE ); // Get SELF_REQUEST
+
   define('__EMPTY__',''); // Set Empty  
   define('__GET_KEY_FOLDER_PATH__','GetKeyFolderPath');  // Return Map Path
   define('__ISBELONG__', 'isbelongs' ); // Set Function ISBELONG
