@@ -114,7 +114,7 @@ function send_to($uri) {
    *
    **/  
  $Enhancer = new PHPFileHandler();
- return $Enhancer->send_to($uri);
+ return method_exists($Enhancer, 'send_to') ? $Enhancer->send_to($uri) : PERFORM(erorrMessage());
  
 } 
 
@@ -142,7 +142,7 @@ function SET_DIR_PATH($uri) {
    *
    **/  
  $Enhancer = new PHPFileHandler();
- return $Enhancer->SET_DIR_PATH($uri);
+ return method_exists($Enhancer, 'SET_DIR_PATH') ? $Enhancer->SET_DIR_PATH($uri) : PERFORM(erorrMessage());
 
 }
 
@@ -175,7 +175,7 @@ function  GETFROM( $array_realpath_dir = null) {
  $REAL_PATH = strtolower($getValues[0]);
 
  $Enhancer = new PHPFileHandler();
- return $Enhancer->GETFROM($REAL_PATH, $array_realpath_dir[1]);
+ return method_exists($Enhancer, 'GETFROM') ? $Enhancer->GETFROM($REAL_PATH, $array_realpath_dir[1]) : PERFORM(erorrMessage());
 
 }
 
@@ -202,7 +202,7 @@ function isbelongs($page = null , $_GETKEYFOLDERPATH_ = null ) {
    *
    **/ 
  $Enhancer = new PHPFileHandler();
- return $Enhancer->belongs_to($page, $_GETKEYFOLDERPATH_);
+ return method_exists($Enhancer, 'belongs_to') ? $Enhancer->belongs_to($page, $_GETKEYFOLDERPATH_) : PERFORM(erorrMessage());
 
 }
 
@@ -210,10 +210,10 @@ function isbelongs($page = null , $_GETKEYFOLDERPATH_ = null ) {
   *
   * @since 20.19.2020
   * @category PHPFileEnhancer
-  * @method Defined isbelong()  noHTML  
+  * @method Defined getKeyPath() noHTML  
   *
   **/
-function GetKeyPath() {
+function getKeyPath() {
 
   /**
    *
@@ -229,7 +229,7 @@ function GetKeyPath() {
    *
    **/ 
  $Enhancer = new PHPFileHandler();
- return $Enhancer->GetKeyFolderPath();
+ return method_exists($Enhancer, 'GetKeyFolderPath') ? $Enhancer->GetKeyFolderPath() : PERFORM(erorrMessage());
 
 }
 
@@ -256,7 +256,7 @@ function __BR($optional_assoc = null) {
    *
    **/ 
  $Enhancer = new PHPFileHandler();
- return $Enhancer->BREAK($optional_assoc);
+ return method_exists($Enhancer, 'BREAK') ? $Enhancer->BREAK($optional_assoc) : PERFORM(erorrMessage());
 
 }
 
@@ -283,7 +283,7 @@ function __HR($optional_assoc = null) {
    *
    **/ 
  $Enhancer = new PHPFileHandler();
- return $Enhancer->LINE($optional_assoc);
+ return method_exists($Enhancer, 'LINE') ? $Enhancer->LINE($optional_assoc) : PERFORM(erorrMessage());
 
 }
 
@@ -310,7 +310,7 @@ function __space() {
    *
    **/ 
  $Enhancer = new PHPFileHandler();
- return $Enhancer->SPACE();
+ return method_exists($Enhancer, 'SPACE') ? $Enhancer->SPACE() : PERFORM(erorrMessage());
 
 }
 
@@ -337,7 +337,7 @@ function SetFileExT($argu) {
    *
    **/ 
  $Enhancer = new PHPFileHandler();
- return $Enhancer->SetFileExtension($argu);
+ return method_exists($Enhancer, 'SetFileExtension') ? $Enhancer->SetFileExtension($argu) : PERFORM(erorrMessage());
 
 }
 
@@ -364,7 +364,7 @@ function SetElemAttr($array_set_1, $array_set_2) {
    *
    **/ 
  $Enhancer = new PHPFileHandler();
- return $Enhancer->SetElemAttr($array_set_1 , $array_set_2);
+ return method_exists($Enhancer, 'SetElemAttr') ? $Enhancer->SetElemAttr($array_set_1, $array_set_2) : PERFORM(erorrMessage());
 
 }
 
@@ -375,7 +375,7 @@ function SetElemAttr($array_set_1, $array_set_2) {
   * @method Defined ATTR  
   *
   **/
-function ATTR($PARAM__, $QuickStart__) {
+function ATTR($PARAM__, $quickStart__) {
 
   /**
    *
@@ -391,7 +391,7 @@ function ATTR($PARAM__, $QuickStart__) {
    *
    **/ 
  $Enhancer = new PHPFileHandler();
- return $Enhancer->ATTR($PARAM__, $QuickStart__);
+ return method_exists($Enhancer, 'ATTR') ? $Enhancer->ATTR($PARAM__, $quickStart__) : PERFORM(erorrMessage());
 
 }
 
@@ -418,7 +418,7 @@ function ELEM($Element__=null, $value__=null, $elemAttr__=null, $elemId__=null, 
    *
    **/ 
  $Enhancer = new PHPFileHandler();
- return $Enhancer->ELEM($Element__, $value__, $elemAttr__, $elemId__, $elemClass__);
+ return method_exists($Enhancer, 'ELEM') ? $Enhancer->ELEM($Element__, $value__, $elemAttr__, $elemId__, $elemClass__) : PERFORM(erorrMessage());
 
 }
 
@@ -445,7 +445,7 @@ function DOELSE($condition=null, $if_result=null, $else_result=null, $assoc=null
    *
    **/ 
  $Enhancer = new PHPFileHandler();
- return $Enhancer->__magicELSE($condition, $if_result, $else_result, $assoc);
+ return method_exists($Enhancer, '__magicELSE') ? $Enhancer->__magicELSE($condition, $if_result, $else_result, $assoc) : PERFORM(erorrMessage());
 
 }
 
@@ -473,7 +473,7 @@ function DOIF($condition=null, $if_result=null, $assoc=null) {
    *
    **/ 
  $Enhancer = new PHPFileHandler();
- return $Enhancer->__magicIF($condition, $if_result, $assoc);
+ return method_exists($Enhancer, '__magicIF') ? $Enhancer->__magicIF($condition, $if_result, $assoc) : PERFORM(erorrMessage());
 
 }
 
@@ -500,7 +500,7 @@ function MERGE($merge=null) {
    *
    **/ 
  $Enhancer = new PHPFileHandler();
- return $Enhancer->MERGE($merge);
+ return method_exists($Enhancer, 'MERGE') ? $Enhancer->MERGE($merge) : PERFORM(erorrMessage());
 
 }
 
@@ -527,7 +527,7 @@ function PERFORM($str=null, $assoc=null) {
    *
    **/ 
  $Enhancer = new PHPFileHandler();
- return $Enhancer->PERFORM($str, $assoc);
+ return method_exists($Enhancer, 'PERFORM') ? $Enhancer->PERFORM($str, $assoc) : PERFORM(erorrMessage());
 
 }
 
@@ -554,7 +554,7 @@ function STRING($str=null, $assoc=null) {
    *
    **/ 
  $Enhancer = new PHPFileHandler();
- return $Enhancer->STRING($str, $assoc);
+ return method_exists($Enhancer, 'STRING') ? $Enhancer->STRING($str, $assoc) : PERFORM(erorrMessage());
 
 }
 

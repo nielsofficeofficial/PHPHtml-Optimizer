@@ -31,7 +31,7 @@
  * @link      https://github.com/nielsofficeofficial/PHPHtml-Optimizer
  * @link      https://github.com/nielsofficeofficial/PHPHtml-Optimizer/blob/master/README.md
  * @link      https://www.facebook.com/nielsofficeofficial
- * @version   v0
+ * @version   v1.0
  *
  *
  * @method belongs_to(); 
@@ -74,13 +74,6 @@ public function __construct() {
   parent::__construct();
 
 } 
-
-// deliver_to() is combined of isbelongs() and bring_to()
-public function deliver_to() {
-  
- return false;
-  
-}
 
 /**
   *
