@@ -111,6 +111,40 @@ public function view_to($config, $fileName) {
 public function bring_to($config, $fileName=null, $extension=null, $optional=null) {
   
  return function_exists(__BRINGTO__) ? $this->cps_ixb6_FileHandler_bring_to($config, $fileName, $extension, $optional) : $this->EnhanceeCoreErrorMsg(); 
+}
+
+/**
+  *
+  * @method protected function PHPFileEnhancer
+  * @static Method Defined Usage: belong_to() 
+  * RETURN TRUE IF YOU ARE IN CURRENT PAGE BASE ON CONFIG.PHP
+  * @since 27.10.2020
+  *
+  * belong_to('PageName', __KEY_FOLDER_PATH__ ) ||  belong_to('PageName', 'keyFolderPath' ) // MAPFOLDERPATH
+  * belong_to('PageName', 4 ) // ASSIGN MAP  || IN ARRAY  belong_to(['PageName1','PageName2']', [4,5] ) 
+  * belong_to('PageName') //  DEFAULT PAGE 
+  *
+  */
+public function belongs_to($thisPage = null, $page_array = null) {
+   
+  return function_exists(__ISBELONG__) ? $this->cpe_xib6_FileHandler_belongs_to($thisPage, $page_array) : $this->PERFORM($this->Enhacer_ErrorMsg());  
+ 
+}
+
+/**
+  *
+  * @method public function PHPFileEnhancer
+  * @static Method Defined Usage: CountFolderFromPath 
+  * RETURN DATA FROM ARRAY PRINT FROM PAGE TO GET THE VALUE 
+  * NEED TO BE REGISTER TO CONFIGP.HP
+  * @since 27.10.2020`
+  *
+  * $Enhancer->MapFolderPath() // MAPFOLDERPATH
+  *
+  */
+public function GetKeyFolderPath() {
+ 
+  return function_exists(__KEYPATH__) ? $this->cpe_xib6_FileHandler_count() : $this->PERFORM($this->Enhacer_ErrorMsg()); 
 
 }
 
@@ -266,41 +300,6 @@ public function SPACE() {
 
    return function_exists(__STRING__) ? parent::_isTrue_SET_STRING($str, $assoc) : $this->EnhanceeCoreErrorMsg(); 
  }
-
-/**
-  *
-  * @method protected function PHPFileEnhancer
-  * @static Method Defined Usage: belong_to() 
-  * RETURN TRUE IF YOU ARE IN CURRENT PAGE BASE ON CONFIG.PHP
-  * @since 27.10.2020
-  *
-  * belong_to('PageName', __KEY_FOLDER_PATH__ ) ||  belong_to('PageName', 'keyFolderPath' ) // MAPFOLDERPATH
-  * belong_to('PageName', 4 ) // ASSIGN MAP  || IN ARRAY  belong_to(['PageName1','PageName2']', [4,5] ) 
-  * belong_to('PageName') //  DEFAULT PAGE 
-  *
-  */
-public function belongs_to($thisPage = null, $page_array = null) {
-   
-  return function_exists(__ISBELONG__) ? $this->cpe_xib6_FileHandler_belongs_to($thisPage, $page_array) : $this->PERFORM($this->Enhacer_ErrorMsg());  
- 
-}
-
-/**
-  *
-  * @method public function PHPFileEnhancer
-  * @static Method Defined Usage: CountFolderFromPath 
-  * RETURN DATA FROM ARRAY PRINT FROM PAGE TO GET THE VALUE 
-  * NEED TO BE REGISTER TO CONFIGP.HP
-  * @since 27.10.2020`
-  *
-  * $Enhancer->MapFolderPath() // MAPFOLDERPATH
-  *
-  */
-public function GetKeyFolderPath() {
- 
-  return function_exists(__KEYPATH__) ? $this->cpe_xib6_FileHandler_count() : $this->PERFORM($this->Enhacer_ErrorMsg()); 
-
-}
 
 /**
   *

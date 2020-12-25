@@ -5,9 +5,9 @@ USE \PHPHtml\CodeOptimizer\optimizer\Html AS Optimzer;
 USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS PHPFileHandler;
 
 /**
- * @copyright (c) 2020-2021 PHPFILEnhancer v0 Cooked by nielsoffice
+ * @copyright (c) 2020-2021 PHPFILEnhancer v1 Cooked by nielsoffice
  *
- * PHPFILEnhancer v0 free software: you can redistribute it and/or modify
+ * PHPFILEnhancer v1 free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
@@ -30,7 +30,7 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS PHPFileHandler;
  * @link      https://github.com/nielsofficeofficial/PHPHtml-Optimizer
  * @link      https://github.com/nielsofficeofficial/PHPHtml-Optimizer/blob/master/README.md
  * @link      https://www.facebook.com/nielsofficeofficial
- * @version   v0
+ * @version   v1
  *
  *
  * @method belongs_to(); 

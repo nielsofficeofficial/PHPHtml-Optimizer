@@ -5,7 +5,7 @@ USE \PHPHtml\CodeOptimizer\optimizer\Html AS MergeBox;
 USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS PHPFileHandler;
 
 /**
- * @copyright (c) 2020-2021 PHPHtml-Merge v1.3 Cooked by nielsoffice
+ * @copyright (c) 2020-2021 PHPHtml-Merge v1.3 Cooked by nielsoffice  
  *
  * PHPHtml-Merge v1.3 free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -58,7 +58,7 @@ function _H1($attr=null, $element_id=null, $element_class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_H1($attr, $element_id, $element_class);	
+  return method_exists($Html, '_H1') ? $Html->_H1($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 /**
@@ -71,7 +71,8 @@ function _H1($attr=null, $element_id=null, $element_class=null) {
   **/
 function xH1($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xH1($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xH1') ? $Html->xH1($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -99,7 +100,7 @@ function _H2($attr=null, $element_id=null, $element_class=null) {
    *
    **/   
  $Html = NEW MergeBox(); 
- return $Html->_H2($attr, $element_id, $element_class);	
+ return method_exists($Html, '_H2') ? $Html->_H2($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -113,7 +114,8 @@ function _H2($attr=null, $element_id=null, $element_class=null) {
   **/
 function xH2($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xH2($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xH2') ? $Html->xH2($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -141,7 +143,7 @@ function _H3($attr=null, $element_id=null, $element_class=null) {
    *
    **/   
  $Html = NEW MergeBox(); 
- return $Html->_H3($attr, $element_id, $element_class);	
+ return method_exists($Html, '_H3') ? $Html->_H3($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -155,7 +157,8 @@ function _H3($attr=null, $element_id=null, $element_class=null) {
   **/
 function xH3($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xH3($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xH3') ? $Html->xH3($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -183,7 +186,7 @@ function _H4($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 
  $Html = NEW MergeBox(); 
- return $Html->_H4($attr, $element_id, $element_class);	
+ return method_exists($Html, '_H4') ? $Html->_H4($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -197,7 +200,8 @@ function _H4($attr=null, $element_id=null, $element_class=null) {
   **/
 function xH4($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xH4($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xH4') ? $Html->xH4($label) : PERFORM(erorrMessage());  	
 
 }
 
@@ -225,7 +229,7 @@ function _H5($attr=null, $element_id=null, $element_class=null) {
    *
    **/
  $Html = NEW MergeBox(); 
- return $Html->_H5($attr, $element_id, $element_class);	
+ return method_exists($Html, '_H5') ? $Html->_H5($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -239,7 +243,8 @@ function _H5($attr=null, $element_id=null, $element_class=null) {
   **/
 function xH5($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xH5($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xH5') ? $Html->xH5($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -267,7 +272,7 @@ function _H6($attr=null, $element_id=null, $element_class=null) {
    *
    **/  	
  $Html = NEW MergeBox(); 
- return $Html->_H6($attr, $element_id, $element_class);	
+ return method_exists($Html, '_H6') ? $Html->_H6($attr, $element_id, $element_class) : PERFORM(erorrMessage()); 	
 
 }
 
@@ -281,7 +286,8 @@ function _H6($attr=null, $element_id=null, $element_class=null) {
   **/
 function xH6($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xH6($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xH6') ? $Html->xH6($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -309,7 +315,7 @@ function _DIV($attr=null, $element_id=null, $element_class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_DIV($attr, $element_id, $element_class);	
+  return method_exists($Html, '_DIV') ? $Html->_DIV($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -323,7 +329,8 @@ function _DIV($attr=null, $element_id=null, $element_class=null) {
   **/
 function xDIV($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xDIV($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xDIV') ? $Html->xDIV($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -351,7 +358,7 @@ function _BUTTON($attr=null, $element_id=null, $element_class=null) {
    *
    **/   	
   $Html = NEW MergeBox(); 
-  return $Html->_BUTTON($attr, $element_id, $element_class);	
+  return method_exists($Html, '_BUTTON') ? $Html->_BUTTON($attr, $element_id, $element_class) : PERFORM(erorrMessage());  	
 
 }
 
@@ -365,7 +372,8 @@ function _BUTTON($attr=null, $element_id=null, $element_class=null) {
   **/
 function xBUTTON($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xBUTTON($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xBUTTON') ? $Html->xBUTTON($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -393,7 +401,7 @@ function _IFRAME($attr=null, $element_id=null, $element_class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_IFRAME($attr, $element_id, $element_class);	
+  return method_exists($Html, '_IFRAME') ? $Html->_IFRAME($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -407,7 +415,8 @@ function _IFRAME($attr=null, $element_id=null, $element_class=null) {
   **/
 function xIFRAME($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xIFRAME($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xIFRAME') ? $Html->xIFRAME($label) : PERFORM(erorrMessage());  	
 
 }
 
@@ -435,7 +444,7 @@ function _MAIN($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_MAIN($attr, $element_id, $element_class);	
+  return method_exists($Html, '_MAIN') ? $Html->_MAIN($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -449,7 +458,8 @@ function _MAIN($attr=null, $element_id=null, $element_class=null) {
   **/
 function xMAIN($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xMAIN($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xMAIN') ? $Html->xMAIN($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -477,7 +487,7 @@ function _NAV($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_NAV($attr, $element_id, $element_class);	
+  return method_exists($Html, '_NAV') ? $Html->_NAV($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -491,7 +501,8 @@ function _NAV($attr=null, $element_id=null, $element_class=null) {
   **/
 function xNAV($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xNAV($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xNAV') ? $Html->xNAV($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -519,7 +530,7 @@ function _SELECT($attr=null, $element_id=null, $element_class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_SELECT($attr, $element_id, $element_class);	
+  return method_exists($Html, '_SELECT') ? $Html->_SELECT($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -533,7 +544,8 @@ function _SELECT($attr=null, $element_id=null, $element_class=null) {
   **/
 function xSELECT($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xSELECT($label);	
+  $Html = NEW MergeBox();
+  return method_exists($Html, 'xSELECT') ? $Html->xSELECT($label) : PERFORM(erorrMessage());
 
 }
 
@@ -561,7 +573,7 @@ function _FORM($attr=null, $element_id=null, $element_class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_FORM($attr, $element_id, $element_class);	
+  return method_exists($Html, '_FORM') ? $Html->_FORM($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -575,7 +587,8 @@ function _FORM($attr=null, $element_id=null, $element_class=null) {
   **/
 function xFORM($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xFORM($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xFORM') ? $Html->xFORM($label) : PERFORM(erorrMessage());  	
 
 }
 
@@ -603,7 +616,7 @@ function _PICTURE($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 
   $Html = NEW MergeBox(); 
-  return $Html->_PICTURE($attr, $element_id, $element_class);	
+  return method_exists($Html, '_PICTURE') ? $Html->_PICTURE($attr, $element_id, $element_class) : PERFORM(erorrMessage());  	
 
 }
 
@@ -617,7 +630,8 @@ function _PICTURE($attr=null, $element_id=null, $element_class=null) {
   **/
 function xPICTURE($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xPICTURE($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xPICTURE') ? $Html->xPICTURE($label) : PERFORM(erorrMessage()); 	
 
 }
 
@@ -645,7 +659,7 @@ function _SECTION($attr=null, $element_id=null, $element_class=null) {
    *
    **/   
   $Html = NEW MergeBox(); 
-  return $Html->_SECTION($attr, $element_id, $element_class);	
+  return method_exists($Html, '_SECTION') ? $Html->_SECTION($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -659,7 +673,8 @@ function _SECTION($attr=null, $element_id=null, $element_class=null) {
   **/
 function xSECTION($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xSECTION($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xSECTION') ? $Html->xSECTION($label) : PERFORM(erorrMessage());  	
 
 }
 
@@ -687,7 +702,7 @@ function _TEXTAREA($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_TEXTAREA($attr, $element_id, $element_class);	
+  return method_exists($Html, '_TEXTAREA') ? $Html->_TEXTAREA($attr, $element_id, $element_class) : PERFORM(erorrMessage());  	
 
 }
 
@@ -701,7 +716,8 @@ function _TEXTAREA($attr=null, $element_id=null, $element_class=null) {
   **/
 function xTEXTAREA($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xTEXTAREA($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xTEXTAREA') ? $Html->xTEXTAREA($label) : PERFORM(erorrMessage()); 
 
 }
 
@@ -729,7 +745,7 @@ function _FOOTER($attr=null, $element_id=null, $element_class=null) {
    *
    **/  
   $Html = NEW MergeBox(); 
-  return $Html->_FOOTER($attr, $element_id, $element_class);  
+  return method_exists($Html, '_FOOTER') ? $Html->_FOOTER($attr, $element_id, $element_class) : PERFORM(erorrMessage());   
 
 }
 
@@ -743,7 +759,8 @@ function _FOOTER($attr=null, $element_id=null, $element_class=null) {
   **/
 function xFOOTER($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xFOOTER($label);  
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xFOOTER') ? $Html->xFOOTER($label) : PERFORM(erorrMessage());   
 
 }
 
@@ -771,7 +788,7 @@ function _AUDIO($attr=null, $element_id=null, $element_class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_AUDIO($attr, $element_id, $element_class);	
+  return method_exists($Html, '_AUDIO') ? $Html->_AUDIO($attr, $element_id, $element_class) : PERFORM(erorrMessage()); 	
 
 }
 
@@ -785,7 +802,8 @@ function _AUDIO($attr=null, $element_id=null, $element_class=null) {
   **/
 function xAUDIO($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xAUDIO($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xAUDIO') ? $Html->xAUDIO($label) : PERFORM(erorrMessage()); 
 
 }
 
@@ -813,7 +831,7 @@ function _VIDEO($attr=null, $element_id=null, $element_class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_VIDEO($attr, $element_id, $element_class);	
+  return method_exists($Html, '_VIDEO') ? $Html->_VIDEO($attr, $element_id, $element_class) : PERFORM(erorrMessage()); 
 
 }
 
@@ -827,7 +845,8 @@ function _VIDEO($attr=null, $element_id=null, $element_class=null) {
   **/
 function xVIDEO($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xVIDEO($label);	
+  $Html = NEW MergeBox();
+  return method_exists($Html, 'xVIDEO') ? $Html->xVIDEO($label) : PERFORM(erorrMessage());
 
 }
 
@@ -855,7 +874,7 @@ function _ADDRESS($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 
   $Html = NEW MergeBox(); 
-  return $Html->_ADDRESS($attr, $element_id, $element_class);	
+  return method_exists($Html, '_ADDRESS') ? $Html->_ADDRESS($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -869,7 +888,8 @@ function _ADDRESS($attr=null, $element_id=null, $element_class=null) {
   **/
 function xADDRESS($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xADDRESS($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xADDRESS') ? $Html->xADDRESS($label) : PERFORM(erorrMessage());  	
 
 }
 
@@ -897,7 +917,7 @@ function _COLGROUP($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_COLGROUP($attr, $element_id, $element_class);	
+  return method_exists($Html, '_COLGROUP') ? $Html->_COLGROUP($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -911,7 +931,8 @@ function _COLGROUP($attr=null, $element_id=null, $element_class=null) {
   **/
 function xCOLGROUP($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xCOLGROUP($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xCOLGROUP') ? $Html->xCOLGROUP($label) : PERFORM(erorrMessage());  	
 
 }
 
@@ -939,7 +960,7 @@ function _BDI($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_BDI($attr, $element_id, $element_class);	
+  return method_exists($Html, '_BDI') ? $Html->_BDI($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -953,7 +974,8 @@ function _BDI($attr=null, $element_id=null, $element_class=null) {
   **/
 function xBDI($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xBDI($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xBDI') ? $Html->xBDI($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -981,7 +1003,7 @@ function _BDO($attr=null, $element_id=null, $element_class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_BDO($attr, $element_id, $element_class);	
+  return method_exists($Html, '_BDO') ? $Html->_BDO($attr, $element_id, $element_class) : PERFORM(erorrMessage());  	
 
 }
 
@@ -995,7 +1017,8 @@ function _BDO($attr=null, $element_id=null, $element_class=null) {
   **/
 function xBDO($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xBDO($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xBDO') ? $Html->xBDO($label) : PERFORM(erorrMessage()); 	
 
 }
 
@@ -1023,7 +1046,7 @@ function _BLOCKQUOTE($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
  $Html = NEW MergeBox(); 
- return $Html->_BLOCKQUOTE($attr, $element_id, $element_class);	
+ return method_exists($Html, '_BLOCKQUOTE') ? $Html->_BLOCKQUOTE($attr, $element_id, $element_class) : PERFORM(erorrMessage());
 
 }
 
@@ -1037,7 +1060,8 @@ function _BLOCKQUOTE($attr=null, $element_id=null, $element_class=null) {
   **/
 function xBLOCKQUOTE($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xBLOCKQUOTE($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xBLOCKQUOTE') ? $Html->xBLOCKQUOTE($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -1065,7 +1089,7 @@ function _CAPTION($attr=null, $element_id=null, $element_class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_CAPTION($attr, $element_id, $element_class);	
+  return method_exists($Html, '_CAPTION') ? $Html->_CAPTION($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -1079,7 +1103,8 @@ function _CAPTION($attr=null, $element_id=null, $element_class=null) {
   **/
 function xCAPTION($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xCAPTION($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xCAPTION') ? $Html->xCAPTION($label) : PERFORM(erorrMessage());
 
 }
 
@@ -1106,8 +1131,8 @@ function _LABEL($attr=null, $element_id=null, $element_class=null) {
    *
    *
    **/ 
-  $Html = NEW MergeBox(); 
-  return $Html->_LABEL($attr, $element_id, $element_class);	
+  $Html = NEW MergeBox();
+  return method_exists($Html, '_LABEL') ? $Html->_LABEL($attr, $element_id, $element_class) : PERFORM(erorrMessage()); 	
 
 }
 
@@ -1120,7 +1145,8 @@ function _LABEL($attr=null, $element_id=null, $element_class=null) {
   *
   **/
 function xLABEL($label = NULL) {
-  $Html = NEW MergeBox(); return $Html->xLABEL($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xLABEL') ? $Html->xLABEL($label) : PERFORM(erorrMessage());	
 }
 
 /**
@@ -1147,7 +1173,7 @@ function _DATALIST($attr=null, $element_id=null, $element_class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_DATALIST($attr, $element_id, $element_class);	
+  return method_exists($Html, '_DATALIST') ? $Html->_DATALIST($attr, $element_id, $element_class) : PERFORM(erorrMessage());  	
 
 }
 
@@ -1161,7 +1187,8 @@ function _DATALIST($attr=null, $element_id=null, $element_class=null) {
   **/
 function xDATALIST($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xDATALIST($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xDATALIST') ? $Html->xDATALIST($label) : PERFORM(erorrMessage());  	
 
 }
 
@@ -1189,7 +1216,7 @@ function _DETAILS($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
  $Html = NEW MergeBox(); 
- return $Html->_DETAILS($attr, $element_id, $element_class);	
+ return method_exists($Html, '_DETAILS') ? $Html->_DETAILS($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -1203,7 +1230,8 @@ function _DETAILS($attr=null, $element_id=null, $element_class=null) {
   **/
 function xDETAILS($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xDETAILS($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xDETAILS') ? $Html->xDETAILS($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -1231,7 +1259,7 @@ function _SUMMARY($attr=null, $element_id=null, $element_class=null) {
    *
    **/   	
   $Html = NEW MergeBox(); 
-  return $Html->_SUMMARY($attr, $element_id, $element_class);	
+  return method_exists($Html, '_SUMMARY') ? $Html->_SUMMARY($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -1245,7 +1273,8 @@ function _SUMMARY($attr=null, $element_id=null, $element_class=null) {
   **/
 function xSUMMARY($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xSUMMARY($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xSUMMARY') ? $Html->xSUMMARY($label) : PERFORM(erorrMessage());  	
 
 }
 
@@ -1273,7 +1302,7 @@ function _DIALOG($attr=null, $element_id=null, $element_class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_DIALOG($attr, $element_id, $element_class);	
+  return method_exists($Html, '_DIALOG') ? $Html->_DIALOG($attr, $element_id, $element_class) : PERFORM(erorrMessage()); 	
 
 }
 
@@ -1287,7 +1316,8 @@ function _DIALOG($attr=null, $element_id=null, $element_class=null) {
   **/
 function xDIALOG($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xDIALOG($label);	
+  $Html = NEW MergeBox();
+  return method_exists($Html, 'xDIALOG') ? $Html->xDIALOG($label) : PERFORM(erorrMessage()); 	
 
 }
 
@@ -1314,8 +1344,8 @@ function _OPTION($attr=null, $element_id=null, $element_class=null) {
    *
    *
    **/   	
-  $Html = NEW MergeBox(); 
-  return $Html->_OPTION($attr, $element_id, $element_class);	
+  $Html = NEW MergeBox();
+  return method_exists($Html, '_OPTION') ? $Html->_OPTION($attr, $element_id, $element_class) : PERFORM(erorrMessage());  	
 
 }
 
@@ -1329,7 +1359,8 @@ function _OPTION($attr=null, $element_id=null, $element_class=null) {
   **/
 function xOPTION($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xOPTION($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xOPTION') ? $Html->xOPTION($label) : PERFORM(erorrMessage());  	
 
 }
 
@@ -1357,7 +1388,7 @@ function _FIGURE($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_FIGURE($attr, $element_id, $element_class);	
+  return method_exists($Html, '_FIGURE') ? $Html->_FIGURE($attr, $element_id, $element_class) : PERFORM(erorrMessage()); 	
 
 }
 
@@ -1371,7 +1402,8 @@ function _FIGURE($attr=null, $element_id=null, $element_class=null) {
   **/
 function xFIGURE($label = NULL) {
   
-  $Html = NEW MergeBox(); return $Html->xFIGURE($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xFIGURE') ? $Html->xFIGURE($label) : PERFORM(erorrMessage());
 
 }
 
@@ -1399,7 +1431,7 @@ function _FIGCAPTION($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_FIGCAPTION($attr, $element_id, $element_class);	
+  return method_exists($Html, '_FIGCAPTION') ? $Html->_FIGCAPTION($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -1413,7 +1445,8 @@ function _FIGCAPTION($attr=null, $element_id=null, $element_class=null) {
   **/
 function xFIGCAPTION($label = NULL) {
   
-  $Html = NEW MergeBox(); return $Html->xFIGCAPTION($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xFIGCAPTION') ? $Html->xFIGCAPTION($label) : PERFORM(erorrMessage());
 
 }
 
@@ -1441,7 +1474,7 @@ function _METER($attr=null, $element_id=null, $element_class=null) {
    *
    **/   
   $Html = NEW MergeBox(); 
-  return $Html->_METER($attr, $element_id, $element_class);	
+  return method_exists($Html, '_METER') ? $Html->_METER($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -1455,7 +1488,8 @@ function _METER($attr=null, $element_id=null, $element_class=null) {
   **/
 function xMETER($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xMETER($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xMETER') ? $Html->xMETER($label) : PERFORM(erorrMessage());  	
 
 }
 
@@ -1484,7 +1518,7 @@ function _OBJECT($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_OBJECT($attr, $element_id, $element_class);	
+  return method_exists($Html, '_OBJECT') ? $Html->_OBJECT($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -1498,7 +1532,8 @@ function _OBJECT($attr=null, $element_id=null, $element_class=null) {
   **/
 function xOBJECT($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xOBJECT($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xOBJECT') ? $Html->xOBJECT($label) : PERFORM(erorrMessage());  	
 
 }
 
@@ -1526,7 +1561,7 @@ function _OPTGROUP($attr=null, $element_id=null, $element_class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_OPTGROUP($attr, $element_id, $element_class);	
+  return method_exists($Html, '_OPTGROUP') ? $Html->_OPTGROUP($attr, $element_id, $element_class) : PERFORM(erorrMessage()); 	
 
 }
 
@@ -1540,7 +1575,8 @@ function _OPTGROUP($attr=null, $element_id=null, $element_class=null) {
   **/
 function xOPTGROUP($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xOPTGROUP($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xOPTGROUP') ? $Html->xOPTGROUP($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -1567,8 +1603,8 @@ function _OUTPUT($attr=null, $element_id=null, $element_class=null) {
    *
    *
    **/  	
-  $Html = NEW MergeBox(); 
-  return $Html->_OUTPUT($attr, $element_id, $element_class);	
+  $Html = NEW MergeBox();
+  return method_exists($Html, '_OUTPUT') ? $Html->_OUTPUT($attr, $element_id, $element_class) : PERFORM(erorrMessage());   	
 
 }
 
@@ -1582,7 +1618,8 @@ function _OUTPUT($attr=null, $element_id=null, $element_class=null) {
   **/
 function xOUTPUT($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xOUTPUT($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xOUTPUT') ? $Html->xOUTPUT($label) : PERFORM(erorrMessage()); 	
 
 }
 
@@ -1610,7 +1647,7 @@ function _PROGRESS($attr=null, $element_id=null, $element_class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_PROGRESS($attr, $element_id, $element_class);	
+  return method_exists($Html, '_PROGRESS') ? $Html->_PROGRESS($attr, $element_id, $element_class) : PERFORM(erorrMessage());  	
 
 }
 
@@ -1624,7 +1661,8 @@ function _PROGRESS($attr=null, $element_id=null, $element_class=null) {
   **/
 function xPROGRESS($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xPROGRESS($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xPROGRESS') ? $Html->xPROGRESS($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -1652,7 +1690,7 @@ function _SVG($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_SVG($attr, $element_id, $element_class);	
+  return method_exists($Html, '_SVG') ? $Html->_SVG($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -1666,7 +1704,8 @@ function _SVG($attr=null, $element_id=null, $element_class=null) {
   **/
 function xSVG($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xSVG($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xSVG') ? $Html->xSVG($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -1694,7 +1733,7 @@ function _TEMPLATE($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_TEMPLATE($attr, $element_id, $element_class);	
+  return method_exists($Html, '_TEMPLATE') ? $Html->_TEMPLATE($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -1708,7 +1747,8 @@ function _TEMPLATE($attr=null, $element_id=null, $element_class=null) {
   **/
 function xTEMPLATE($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xTEMPLATE($label);	
+  $Html = NEW MergeBox();
+  return method_exists($Html, 'xTEMPLATE') ? $Html->xTEMPLATE($label) : PERFORM(erorrMessage());  	
 
 }
 
@@ -1736,7 +1776,7 @@ function _UL($attr=null, $element_id=null, $element_class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_UL($attr, $element_id, $element_class);	
+  return method_exists($Html, '_UL') ? $Html->_UL($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -1749,7 +1789,9 @@ function _UL($attr=null, $element_id=null, $element_class=null) {
   *
   **/
 function xUL($label = NULL) {
-  $Html = NEW MergeBox(); return $Html->xUL($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xUL') ? $Html->xUL($label) : PERFORM(erorrMessage());
+	
 }
 
 /**
@@ -1775,8 +1817,8 @@ function _OL($attr=null, $element_id=null, $element_class=null) {
    *
    *
    **/	
-  $Html = NEW MergeBox(); 
-  return $Html->_OL($attr, $element_id, $element_class);	
+  $Html = NEW MergeBox();
+  return method_exists($Html, '_OL') ? $Html->_OL($attr, $element_id, $element_class) : PERFORM(erorrMessage());
 
 }
 
@@ -1790,7 +1832,8 @@ function _OL($attr=null, $element_id=null, $element_class=null) {
   **/
 function xOL($label = NULL) {
   
-  $Html = NEW MergeBox(); return $Html->xOL($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xOL') ? $Html->xOL($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -1818,7 +1861,7 @@ function _LI($attr=null, $element_id=null, $element_class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_LI($attr, $element_id, $element_class);	
+  return method_exists($Html, '_LI') ? $Html->_LI($attr, $element_id, $element_class) : PERFORM(erorrMessage());
 
 }
 
@@ -1832,7 +1875,8 @@ function _LI($attr=null, $element_id=null, $element_class=null) {
   **/
 function xLI($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xLI($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xLI') ? $Html->xLI($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -1860,7 +1904,7 @@ function _TABLE($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_TABLE($attr, $element_id, $element_class);	
+  return method_exists($Html, '_TABLE') ? $Html->_TABLE($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -1874,7 +1918,8 @@ function _TABLE($attr=null, $element_id=null, $element_class=null) {
   **/
 function xTABLE($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xTABLE($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xTABLE') ? $Html->xTABLE($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -1902,7 +1947,7 @@ function _TR($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
  $Html = NEW MergeBox(); 
- return $Html->_TR($attr, $element_id, $element_class);	
+ return method_exists($Html, '_TR') ? $Html->_TR($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -1916,7 +1961,8 @@ function _TR($attr=null, $element_id=null, $element_class=null) {
   **/
 function xTR($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xTR($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xTR') ? $Html->xTR($label) : PERFORM(erorrMessage());  
 
 }
 
@@ -1944,7 +1990,7 @@ function _TD($attr=null, $element_id=null, $element_class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_TD($attr, $element_id, $element_class);	
+  return method_exists($Html, '_TD') ? $Html->_TD($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -1958,7 +2004,8 @@ function _TD($attr=null, $element_id=null, $element_class=null) {
   **/
 function xTD($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xTD($label);	
+  $Html = NEW MergeBox();
+  return method_exists($Html, 'xTD') ? $Html->xTD($label) : PERFORM(erorrMessage());  	
 
 }
 
@@ -1985,8 +2032,8 @@ function _TH($attr=null, $element_id=null, $element_class=null) {
    *
    *
    **/  
-  $Html = NEW MergeBox(); 
-  return $Html->_TH($attr, $element_id, $element_class);	
+  $Html = NEW MergeBox();
+  return method_exists($Html, '_TH') ? $Html->_TH($attr, $element_id, $element_class) : PERFORM(erorrMessage());  	
 
 }
 
@@ -2000,7 +2047,8 @@ function _TH($attr=null, $element_id=null, $element_class=null) {
   **/
 function xTH($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xTH($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xTH') ? $Html->xTH($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -2028,7 +2076,7 @@ function _LEGEND($attr=null, $element_id=null, $element_class=null) {
    *
    **/   	
   $Html = NEW MergeBox(); 
-  return $Html->_LEGEND($attr, $element_id, $element_class);	
+  return method_exists($Html, '_LEGEND') ? $Html->_LEGEND($attr, $element_id, $element_class) : PERFORM(erorrMessage());
 
 }
 
@@ -2042,7 +2090,8 @@ function _LEGEND($attr=null, $element_id=null, $element_class=null) {
   **/
 function xLEGEND($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xLEGEND($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xLEGEND') ? $Html->xLEGEND($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -2070,7 +2119,7 @@ function _FIELDSET($attr=null, $element_id=null, $element_class=null) {
    *
    **/   	
   $Html = NEW MergeBox(); 
-  return $Html->_FIELDSET($attr, $element_id, $element_class);	
+  return method_exists($Html, '_FIELDSET') ? $Html->_FIELDSET($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -2084,7 +2133,8 @@ function _FIELDSET($attr=null, $element_id=null, $element_class=null) {
   **/
 function xFIELDSET($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xFIELDSET($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xFIELDSET') ? $Html->xFIELDSET($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -2112,7 +2162,7 @@ function _TBODY($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_TBODY($attr, $element_id, $element_class);	
+  return method_exists($Html, '_TBODY') ? $Html->_TBODY($attr, $element_id, $element_class) : PERFORM(erorrMessage());  	
 
 }
 
@@ -2126,7 +2176,8 @@ function _TBODY($attr=null, $element_id=null, $element_class=null) {
   **/
 function xTBODY($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xTBODY($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xTBODY') ? $Html->xTBODY($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -2154,7 +2205,7 @@ function _TFOOT($attr=null, $element_id=null, $element_class=null) {
    *
    **/  
   $Html = NEW MergeBox(); 
-  return $Html->_TFOOT($attr, $element_id, $element_class);	
+  return method_exists($Html, '_TFOOT') ? $Html->_TFOOT($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -2168,7 +2219,8 @@ function _TFOOT($attr=null, $element_id=null, $element_class=null) {
   **/
 function xTFOOT($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xTFOOT($label);	
+  $Html = NEW MergeBox();
+  return method_exists($Html, 'xTFOOT') ? $Html->xTFOOT($label) : PERFORM(erorrMessage());  	
 
 }
 
@@ -2196,7 +2248,7 @@ function _THEAD($attr=null, $element_id=null, $element_class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_THEAD($attr, $element_id, $element_class);	
+  return method_exists($Html, '_THEAD') ? $Html->_THEAD($attr, $element_id, $element_class) : PERFORM(erorrMessage());  	
 
 }
 
@@ -2210,7 +2262,8 @@ function _THEAD($attr=null, $element_id=null, $element_class=null) {
   **/
 function xTHEAD($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xTHEAD($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xTHEAD') ? $Html->xTHEAD($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -2238,7 +2291,7 @@ function _SPAN($attr=null, $element_id=null, $element_class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_SPAN($attr, $element_id, $element_class);	
+  return method_exists($Html, '_SPAN') ? $Html->_SPAN($attr, $element_id, $element_class) : PERFORM(erorrMessage());
 
 }
 
@@ -2252,7 +2305,8 @@ function _SPAN($attr=null, $element_id=null, $element_class=null) {
   **/
 function xSPAN($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xSPAN($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xSPAN') ? $Html->xSPAN($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -2280,7 +2334,7 @@ function _EM($attr=null, $element_id=null, $element_class=null) {
    *
    **/  
   $Html = NEW MergeBox(); 
-  return $Html->_EM($attr, $element_id, $element_class);	
+  return method_exists($Html, '_EM') ? $Html->_EM($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -2294,7 +2348,8 @@ function _EM($attr=null, $element_id=null, $element_class=null) {
   **/
 function xEM($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xEM($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xEM') ? $Html->xEM($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -2322,7 +2377,7 @@ function _SMALL($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_SMALL($attr, $element_id, $element_class);	
+  return method_exists($Html, '_SMALL') ? $Html->_SMALL($attr, $element_id, $element_class) : PERFORM(erorrMessage());  	
 
 }
 
@@ -2336,7 +2391,8 @@ function _SMALL($attr=null, $element_id=null, $element_class=null) {
   **/
 function xSMALL($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xSMALL($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xSMALL') ? $Html->xSMALL($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -2364,7 +2420,7 @@ function _STRIKE($attr=null, $element_id=null, $element_class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_STRIKE($attr, $element_id, $element_class);	
+  return method_exists($Html, '_STRIKE') ? $Html->_STRIKE($attr, $element_id, $element_class) : PERFORM(erorrMessage());  	
 
 }
 
@@ -2378,7 +2434,8 @@ function _STRIKE($attr=null, $element_id=null, $element_class=null) {
   **/
 function xSTRIKE($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xSTRIKE($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xSTRIKE') ? $Html->xSTRIKE($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -2406,7 +2463,7 @@ function _MARQUEE($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_MARQUEE($attr, $element_id, $element_class);	
+  return method_exists($Html, '_MARQUEE') ? $Html->_MARQUEE($attr, $element_id, $element_class) : PERFORM(erorrMessage());  
 
 }
 
@@ -2420,7 +2477,8 @@ function _MARQUEE($attr=null, $element_id=null, $element_class=null) {
   **/
 function xMARQUEE($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xMARQUEE($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xMARQUEE') ? $Html->xMARQUEE($label) : PERFORM(erorrMessage());
 
 }
 
@@ -2447,8 +2505,8 @@ function _CENTER($attr=null, $element_id=null, $element_class=null) {
    *
    *
    **/	
-  $Html = NEW MergeBox(); 
-  return $Html->_CENTER($attr, $element_id, $element_class);	
+  $Html = NEW MergeBox();
+  return method_exists($Html, '_CENTER') ? $Html->_CENTER($attr, $element_id, $element_class) : PERFORM(erorrMessage()); 	
 
 }
 
@@ -2462,7 +2520,8 @@ function _CENTER($attr=null, $element_id=null, $element_class=null) {
   **/
 function xCENTER($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xCENTER($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xCENTER') ? $Html->xCENTER($label) : PERFORM(erorrMessage());  	
 
 }
 
@@ -2489,8 +2548,8 @@ function _ABBR($attr=null, $element_id=null, $element_class=null) {
    *
    *
    **/  	
- $Html = NEW MergeBox(); 
- return $Html->_ABBR($attr, $element_id, $element_class);	
+ $Html = NEW MergeBox();
+ return method_exists($Html, '_ABBR') ? $Html->_ABBR($attr, $element_id, $element_class) : PERFORM(erorrMessage()); 	
 
 }
 
@@ -2504,7 +2563,8 @@ function _ABBR($attr=null, $element_id=null, $element_class=null) {
   **/
 function xABBR($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xABBR($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xABBR') ? $Html->xABBR($label) : PERFORM(erorrMessage());  	
 
 }
 
@@ -2531,8 +2591,8 @@ function _MAP($attr=null, $element_id=null, $element_class=null) {
    *
    *
    **/ 	
-  $Html = NEW MergeBox(); 
-  return $Html->_MAP($attr, $element_id, $element_class);	
+  $Html = NEW MergeBox();
+  return method_exists($Html, '_MAP') ? $Html->_MAP($attr, $element_id, $element_class) : PERFORM(erorrMessage());  
 
 }
 
@@ -2546,7 +2606,8 @@ function _MAP($attr=null, $element_id=null, $element_class=null) {
   **/
 function xMAP($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xMAP($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xMAP') ? $Html->xMAP($label) : PERFORM(erorrMessage()); 	
 
 }
 
@@ -2574,7 +2635,7 @@ function _CANVAS($attr=null, $element_id=null, $element_class=null) {
    *
    **/   	
   $Html = NEW MergeBox(); 
-  return $Html->_CANVAS($attr, $element_id, $element_class);	
+  return method_exists($Html, '_CANVAS') ? $Html->_CANVAS($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -2588,7 +2649,8 @@ function _CANVAS($attr=null, $element_id=null, $element_class=null) {
   **/
 function xCANVAS($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xCANVAS($label);	
+  $Html = NEW MergeBox();
+  return method_exists($Html, 'xCANVAS') ? $Html->xCANVAS($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -2616,7 +2678,7 @@ function _CITE($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_CITE($attr, $element_id, $element_class);	
+  return method_exists($Html, '_CITE') ? $Html->_CITE($attr, $element_id, $element_class) : PERFORM(erorrMessage());
 
 }
 
@@ -2630,7 +2692,8 @@ function _CITE($attr=null, $element_id=null, $element_class=null) {
   **/
 function xCITE($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xCITE($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xCITE') ? $Html->xCITE($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -2658,7 +2721,7 @@ function _DATA($attr=null, $element_id=null, $element_class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_DATA($attr, $element_id, $element_class);	
+  return method_exists($Html, '_DATA') ? $Html->_DATA($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -2672,7 +2735,8 @@ function _DATA($attr=null, $element_id=null, $element_class=null) {
   **/
 function xDATA($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xDATA($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xDATA') ? $Html->xDATA($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -2699,8 +2763,8 @@ function _DL($attr=null, $element_id=null, $element_class=null) {
    *
    *
    **/   
-  $Html = NEW MergeBox(); 
-  return $Html->_DL($attr, $element_id, $element_class);	
+  $Html = NEW MergeBox();
+  return method_exists($Html, '_DL') ? $Html->_DL($attr, $element_id, $element_class) : PERFORM(erorrMessage()); 
 
 }
 
@@ -2714,7 +2778,8 @@ function _DL($attr=null, $element_id=null, $element_class=null) {
   **/
 function xDL($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xDL($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xDL') ? $Html->xDL($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -2741,8 +2806,8 @@ function _DT($attr=null, $element_id=null, $element_class=null) {
    *
    *
    **/  	
-  $Html = NEW MergeBox(); 
-  return $Html->_DT($attr, $element_id, $element_class);	
+  $Html = NEW MergeBox();
+  return method_exists($Html, '_DT') ? $Html->_DT($attr, $element_id, $element_class) : PERFORM(erorrMessage()); 	
 
 }
 
@@ -2756,7 +2821,8 @@ function _DT($attr=null, $element_id=null, $element_class=null) {
   **/
 function xDT($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xDT($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xDT') ? $Html->xDT($label) : PERFORM(erorrMessage());  	
 
 }
 
@@ -2784,7 +2850,7 @@ function _DD($attr=null, $element_id=null, $element_class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_DD($attr, $element_id, $element_class);	
+  return method_exists($Html, '_DD') ? $Html->_DD($attr, $element_id, $element_class) : PERFORM(erorrMessage());
 
 }
 
@@ -2798,7 +2864,8 @@ function _DD($attr=null, $element_id=null, $element_class=null) {
   **/
 function xDD($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xDD($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xDD') ? $Html->xDD($label) : PERFORM(erorrMessage());
 
 }
 
@@ -2826,7 +2893,7 @@ function _DFN($attr=null, $element_id=null, $element_class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_DFN($attr, $element_id, $element_class);	
+  return method_exists($Html, '_DFN') ? $Html->_DFN($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -2840,7 +2907,8 @@ function _DFN($attr=null, $element_id=null, $element_class=null) {
   **/
 function xDFN($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xDFN($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xDFN') ? $Html->xDFN($label) : PERFORM(erorrMessage());  
 
 }
 
@@ -2867,8 +2935,8 @@ function _INS($attr=null, $element_id=null, $element_class=null) {
    *
    *
    **/ 	
-  $Html = NEW MergeBox(); 
-  return $Html->_INS($attr, $element_id, $element_class);	
+  $Html = NEW MergeBox();
+  return method_exists($Html, '_INS') ? $Html->_INS($attr, $element_id, $element_class) : PERFORM(erorrMessage()); 
 
 }
 
@@ -2882,7 +2950,8 @@ function _INS($attr=null, $element_id=null, $element_class=null) {
   **/
 function xINS($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xINS($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xINS') ? $Html->xINS($label) : PERFORM(erorrMessage()); 	
 
 }
 
@@ -2910,7 +2979,7 @@ function _DEL($attr=null, $element_id=null, $element_class=null) {
    *
    **/	
   $Html = NEW MergeBox(); 
-  return $Html->_DEL($attr, $element_id, $element_class);	
+  return method_exists($Html, '_DEL') ? $Html->_DEL($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -2924,7 +2993,8 @@ function _DEL($attr=null, $element_id=null, $element_class=null) {
   **/
 function xDEL($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xDEL($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xDEL') ? $Html->xDEL($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -2952,7 +3022,7 @@ function _KBD($attr=null, $element_id=null, $element_class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_KBD($attr, $element_id, $element_class);	
+  return method_exists($Html, '_KBD') ? $Html->_KBD($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -2966,7 +3036,8 @@ function _KBD($attr=null, $element_id=null, $element_class=null) {
   **/
 function xKBD($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xKBD($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xKBD') ? $Html->xKBD($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -2994,7 +3065,7 @@ function _MARK($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_MARK($attr, $element_id, $element_class);	
+  return method_exists($Html, '_MARK') ? $Html->_MARK($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -3008,7 +3079,9 @@ function _MARK($attr=null, $element_id=null, $element_class=null) {
   **/
 function xMARK($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xMARK($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xMARK') ? $Html->xMARK($label) : PERFORM(erorrMessage());
+
 }
 
 /**
@@ -3035,7 +3108,7 @@ function _PRE($attr=null, $element_id=null, $element_class=null) {
    *
    **/  	
   $Html = NEW MergeBox(); 
-  return $Html->_PRE($attr, $element_id, $element_class);	
+  return method_exists($Html, '_PRE') ? $Html->_PRE($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -3049,7 +3122,8 @@ function _PRE($attr=null, $element_id=null, $element_class=null) {
   **/
 function xPRE($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xPRE($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xPRE') ? $Html->xPRE($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -3077,7 +3151,7 @@ function _RT($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 
   $Html = NEW MergeBox(); 
-  return $Html->_RT($attr, $element_id, $element_class);	
+  return method_exists($Html, '_RT') ? $Html->_RT($attr, $element_id, $element_class) : PERFORM(erorrMessage());
 
 }
 
@@ -3091,7 +3165,8 @@ function _RT($attr=null, $element_id=null, $element_class=null) {
   **/
 function xRT($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xRT($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xRT') ? $Html->xRT($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -3118,8 +3193,8 @@ function _RP($attr=null, $element_id=null, $element_class=null) {
    *
    *
    **/	
-  $Html = NEW MergeBox(); 
-  return $Html->_RP($attr, $element_id, $element_class);	
+  $Html = NEW MergeBox();
+  return method_exists($Html, '_RP') ? $Html->_RP($attr, $element_id, $element_class) : PERFORM(erorrMessage()); 	
 
 }
 
@@ -3133,7 +3208,8 @@ function _RP($attr=null, $element_id=null, $element_class=null) {
   **/
 function xRP($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xRP($label);	
+  $Html = NEW MergeBox();
+  return method_exists($Html, 'xRP') ? $Html->xRP($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -3161,7 +3237,7 @@ function _SAMP($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_SAMP($attr, $element_id, $element_class);	
+  return method_exists($Html, '_SAMP') ? $Html->_SAMP($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -3175,7 +3251,8 @@ function _SAMP($attr=null, $element_id=null, $element_class=null) {
   **/
 function xSAMP($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xSAMP($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xSAMP') ? $Html->xSAMP($label) : PERFORM(erorrMessage());	
 
 }
 
@@ -3203,7 +3280,7 @@ function _STRONG($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_STRONG($attr, $element_id, $element_class);	
+  return method_exists($Html, '_STRONG') ? $Html->_STRONG($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -3217,7 +3294,8 @@ function _STRONG($attr=null, $element_id=null, $element_class=null) {
   **/
 function xSTRONG($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xSTRONG($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xSTRONG') ? $Html->xSTRONG($label) : PERFORM(erorrMessage());  
 
 }
 
@@ -3244,8 +3322,8 @@ function _SUB($attr=null, $element_id=null, $element_class=null) {
    *
    *
    **/  	
-  $Html = NEW MergeBox(); 
-  return $Html->_SUB($attr, $element_id, $element_class);	
+  $Html = NEW MergeBox();
+  return method_exists($Html, '_SUB') ? $Html->_SUB($attr, $element_id, $element_class) : PERFORM(erorrMessage());  
 
 }
 
@@ -3258,7 +3336,8 @@ function _SUB($attr=null, $element_id=null, $element_class=null) {
   *
   **/
 function xSUB($label = NULL) {
-  $Html = NEW MergeBox(); return $Html->xSUB($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xSUB') ? $Html->xSUB($label) : PERFORM(erorrMessage());  	
 }
 
 /**
@@ -3285,7 +3364,7 @@ function _SUP($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_SUP($attr, $element_id, $element_class);	
+  return method_exists($Html, '_SUP') ? $Html->_SUP($attr, $element_id, $element_class) : PERFORM(erorrMessage());  	
 
 }
 
@@ -3299,7 +3378,8 @@ function _SUP($attr=null, $element_id=null, $element_class=null) {
   **/
 function xSUP($label = NULL) {
   
-  $Html = NEW MergeBox(); return $Html->xSUP($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xSUP') ? $Html->xSUP($label) : PERFORM(erorrMessage());  	
 
 }
 
@@ -3327,7 +3407,7 @@ function _WBR($attr=null, $element_id=null, $element_class=null) {
    *
    **/   
   $Html = NEW MergeBox(); 
-  return $Html->_WBR($attr, $element_id, $element_class);	
+  return method_exists($Html, '_WBR') ? $Html->_WBR($attr, $element_id, $element_class) : PERFORM(erorrMessage()); 
 
 }
 
@@ -3341,7 +3421,8 @@ function _WBR($attr=null, $element_id=null, $element_class=null) {
   **/
 function xWBR($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xWBR($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xWBR') ? $Html->xWBR($label) : PERFORM(erorrMessage());
 
 }
 
@@ -3369,7 +3450,7 @@ function _HEAD($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_HEAD($attr, $element_id, $element_class);	
+  return method_exists($Html, '_HEAD') ? $Html->_HEAD($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -3383,7 +3464,8 @@ function _HEAD($attr=null, $element_id=null, $element_class=null) {
   **/
 function xHEAD($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xHEAD($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xHEAD') ? $Html->xHEAD($label) : PERFORM(erorrMessage());  
 
 }
 
@@ -3411,7 +3493,7 @@ function _TITLE($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
   $Html = NEW MergeBox(); 
-  return $Html->_TITLE($attr, $element_id, $element_class);	
+  return method_exists($Html, '_TITLE') ? $Html->_TITLE($attr, $element_id, $element_class) : PERFORM(erorrMessage());  	
 
 }
 
@@ -3425,7 +3507,8 @@ function _TITLE($attr=null, $element_id=null, $element_class=null) {
   **/
 function xTITLE($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xTITLE($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xTITLE') ? $Html->xTITLE($label) : PERFORM(erorrMessage());    
 
 }
 
@@ -3453,7 +3536,7 @@ function _BODY($attr=null, $element_id=null, $element_class=null) {
    *
    **/ 	
  $Html = NEW MergeBox(); 
- return $Html->_BODY($attr, $element_id, $element_class);	
+ return method_exists($Html, '_BODY') ? $Html->_BODY($attr, $element_id, $element_class) : PERFORM(erorrMessage());	
 
 }
 
@@ -3467,7 +3550,8 @@ function _BODY($attr=null, $element_id=null, $element_class=null) {
   **/
 function xBODY($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xBODY($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xBODY') ? $Html->xBODY($label) : PERFORM(erorrMessage());
 
 }
 
@@ -3495,7 +3579,7 @@ function _HTML($attr=null, $element_id=null, $element_class=null) {
    *
    **/  	
  $Html = NEW MergeBox(); 
- return $Html->_noHTML($attr, $element_id, $element_class);	
+ return method_exists($Html, '_noHTML') ? $Html->_noHTML($attr, $element_id, $element_class) : PERFORM(erorrMessage());
 
 }
 
@@ -3509,7 +3593,8 @@ function _HTML($attr=null, $element_id=null, $element_class=null) {
   **/
 function xHTML($label = NULL) {
 
-  $Html = NEW MergeBox(); return $Html->xnoHTML($label);	
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xnoHTML') ? $Html->xnoHTML($label) : PERFORM(erorrMessage());	
 
 }
 

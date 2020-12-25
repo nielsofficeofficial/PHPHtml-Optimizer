@@ -2,7 +2,7 @@
 
 /**
  * @copyright (c) 2020-2021 PHPHtml-Merge v1.3 Cooked by nielsoffice
- *
+ * 
  * PHPHtml-Merge v1.3 free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or

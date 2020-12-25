@@ -5,7 +5,7 @@
 <p>It is simplified the code from HTML removing backticks, double quotes and saving time to convert or wrap HTML into PHP through appended variables although appending in the variable will be still possible using for some reason within your codes, PHPHtml-Optimizer is easier to optimize your codes lessen big page-load to your application/program.<br />
 When the browser detect that there will no HTML printed the interpreter will execute your codes once at the same time, not section by section at that point your data will be rendered accurately.<br /><br />
 To refractor/optimize code is a hassle and heavy load burden in programming, Allow PHPHtml-Optimizer will do that for you while you develop your Internet application, with this library will push you driving your codes learning the OOP concept to make more effective your codes into your application neat and clean not just clean but beautiful maintainable codes, you can use this library and feel FREE if you are comfortable.    
-</p>
+</p> 
 
 <h6>Custom ATTR/ELEMENT</h6>
 
@@ -159,16 +159,16 @@ make your code clean and safe. here's mapping to sure that your config.php file 
  |- root/Theme : 
    |- Library 
      |- PHPHtml-Optimizer
- |- index.php
- |- portfolio.php
- |- config.php       
+   |- index.php
+   |- portfolio.php
+   |- config.php       
 ```
 ```PHP
 
 // REQURE/INCLUDES FILE - PATH
 $PATH['REGISTERED'] = [
    
-  'Includes' => SET_DIR_PATH('Includes')
+  'includes' => SET_DIR_PATH('includes')
 
 ];
 

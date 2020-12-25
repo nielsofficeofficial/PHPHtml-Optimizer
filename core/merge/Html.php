@@ -5,7 +5,7 @@
  USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS PHPFileCare;
 
 /**
- * @copyright (c) 2020-2021 PHPHtml-Optimizer v1.3 Cooked by nielsoffice
+ * @copyright (c) 2020-2021 PHPHtml-Optimizer v1.3 Cooked by nielsoffice 
  *
  * PHPHtml-Optimizer v1.3 free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
