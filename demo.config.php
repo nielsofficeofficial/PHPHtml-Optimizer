@@ -12,8 +12,12 @@
 |
 */
 $PATH['REGISTERED'] = [
-   
- 'Includes' => SET_DIR_PATH('Includes')
+ 
+ // live version
+ 'inc' => SET_DIR_PATH('includes'),
+ 
+ // Localhost version 
+ 'inc' => SET_DIR_PATH('includes', LOCALHOST)
 
 ];
 
