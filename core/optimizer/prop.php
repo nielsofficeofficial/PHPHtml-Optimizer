@@ -70,10 +70,14 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancer AS PHPFileHandler;
   define('__SENDTO__'             ,  'send_to' ); //  Set redirect to
   define('__SETDIRPATH__'         ,  'SET_DIR_PATH' ); // Set PARAM SET_PATH_DIR
   define('__DOCTYPE__'            ,  'DOCTYPE' ); // Set PARAM ELEM
-  define('__REPLACE_ABSOLUTE_PATH__', '\library\PHPHtml-Optimizer\core\optimizer' ); // Set PARAM __REPLACE_ABSOLUTE_PATH__ SET_PAT_DIR
+  define('__REPLACE_ABSOLUTE_PATH__', ['\library\PHPHtml-Optimizer\core\optimizer', 'library/PHPHtml-Optimizer/core/optimizer'] ); // Set PARAM __REPLACE_ABSOLUTE_PATH__ SET_PAT_DIR
   define('__INC__'                ,  'INCLUDE' ); // Set PARAM SWICTH TO OPTIONAL INCLUDES
   define('__INCONCE__'            ,  'INCLUDE_ONCE' ); // Set PARAM SWICTH TO OPTIONAL INCLUDES ONCE 
   define('__REQUIRE__'            ,  'REQUIRE' ); // Set PARAM SWICTH TO OPTIONAL REQUIRE
+  define('LOCALHOST'              ,  'LOCALHOST' ); // Set PARAM ARRAY RURI valid/supported global variable
   define('__ARRPATH__'            ,  'path' ); // Set PARAM ARRAY PATH valid/supported global variable
   define('__ARRVIEWS__'           ,  'dir' ); // Set PARAM ARRAY VIEWS valid/supported global variable
   define('__ARRVRURI__'           ,  'ruri' ); // Set PARAM ARRAY RURI valid/supported global variable
+  
+  
+  
