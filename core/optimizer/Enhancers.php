@@ -368,13 +368,17 @@ public function GETFROM($rPwhitch_to_swicth, $gP_whitch_to_fetch) {
 
 }
 
-public function SET_DIR_PATH($uri, $serverHost = null) {
+public function SET_DIR_PATH($uri, $serverHost) {
  
  // Trim any uri that sent to var
  $ReturnUri     = trim($uri);
  
- // remove given directory bby replacing emoty
- ($serverHost !== LOCALHOST || !empty($serverHost) || $serverHost !== null) ? $registeredURI = str_replace( __REPLACE_ABSOLUTE_PATH__[1] , __EMPTY__ , __DIR__ ) : $registeredURI = str_replace( __REPLACE_ABSOLUTE_PATH__[0] , __EMPTY__ , __DIR__ ); 
+ // remove given directory bby replacing emoty  
+ ($serverHost === LOCALHOST || !empty($serverHost) || $serverHost !== null ) ? 
+
+     $registeredURI = str_replace( __REPLACE_ABSOLUTE_PATH__[0] , __EMPTY__ , __DIR__ ) :
+
+        $registeredURI = str_replace( __REPLACE_ABSOLUTE_PATH__[1] , __EMPTY__ , __DIR__ );
  
  // assigned direcotry return looking for "library" folder
  return function_exists(__SETDIRPATH__) ? $registeredURI ."/". $ReturnUri . '/'  : $this->PERFORM($this->Enhance_ErrorMsg_att()); 

@@ -126,7 +126,7 @@ function send_to($uri) {
   * 
   *
   **/
-function SET_DIR_PATH($uri) {
+function SET_DIR_PATH($uri, $serverHost = null) {
  
   /**
    *
@@ -142,7 +142,7 @@ function SET_DIR_PATH($uri) {
    *
    **/  
  $Enhancer = new PHPFileHandler();
- return method_exists($Enhancer, 'SET_DIR_PATH') ? $Enhancer->SET_DIR_PATH($uri) : PERFORM(erorrMessage());
+ return method_exists($Enhancer, 'SET_DIR_PATH') ? $Enhancer->SET_DIR_PATH($uri, $serverHost) : PERFORM(erorrMessage());
 
 }
 
