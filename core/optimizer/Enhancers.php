@@ -82,11 +82,20 @@ public function __construct() {
   * send_to()
   *
   **/ 
-public function send_to($uri) {
+public function send_to(
 
-  return function_exists(__SENDTO__) ? header('Location: https://www.'.trim($uri).'.com/') : $this->EnhanceeCoreErrorMsg();   // 
+     $uri
 
-}
+  )
+  {
+
+     return function_exists(__SENDTO__) ?
+
+        header('Location: https://www.'.trim($uri).'.com/') : 
+
+          $this->EnhanceeCoreErrorMsg();   // 
+
+  }
 
 /**
   *
@@ -95,11 +104,21 @@ public function send_to($uri) {
   * view_to()
   *
   **/ 
-public function view_to($config, $fileName) {
-  
- return function_exists(__VIEWSTO__) ? $this->cps_ixb6_FileHandler_bring_to($config, $fileName, __PHP__, __INCONCE__) : $this->EnhanceeCoreErrorMsg(); 
+public function view_to(
 
-}
+   $config
+  ,$fileName
+
+ )
+ {
+  
+   return function_exists(__VIEWSTO__) ? 
+
+      $this->cps_ixb6_FileHandler_bring_to($config, $fileName, __PHP__, __INCONCE__) : 
+
+         $this->EnhanceeCoreErrorMsg(); 
+
+ }
 
 /**
   *
@@ -108,9 +127,21 @@ public function view_to($config, $fileName) {
   * bring_to()
   *
   **/ 
-public function bring_to($config, $fileName=null, $extension=null, $optional=null) {
+public function bring_to(
+
+   $config
+  ,$fileName      =  null
+  ,$extension     =  null
+  ,$optional      =  null
+
+ )
+ {
   
- return function_exists(__BRINGTO__) ? $this->cps_ixb6_FileHandler_bring_to($config, $fileName, $extension, $optional) : $this->EnhanceeCoreErrorMsg(); 
+    return function_exists(__BRINGTO__) ? 
+
+      $this->cps_ixb6_FileHandler_bring_to($config, $fileName, $extension, $optional) : 
+
+        $this->EnhanceeCoreErrorMsg(); 
 }
 
 /**
@@ -125,11 +156,21 @@ public function bring_to($config, $fileName=null, $extension=null, $optional=nul
   * belong_to('PageName') //  DEFAULT PAGE 
   *
   */
-public function belongs_to($thisPage = null, $page_array = null) {
+public function belongs_to(
+
+    $thisPage     = null
+   ,$page_array   = null
+
+ )
+ {
    
-  return function_exists(__ISBELONG__) ? $this->cpe_xib6_FileHandler_belongs_to($thisPage, $page_array) : $this->PERFORM($this->Enhacer_ErrorMsg());  
+    return function_exists(__ISBELONG__) ? 
+
+       $this->cpe_xib6_FileHandler_belongs_to($thisPage, $page_array) : 
+
+          $this->PERFORM($this->Enhacer_ErrorMsg());  
  
-}
+ }
 
 /**
   *
@@ -144,7 +185,11 @@ public function belongs_to($thisPage = null, $page_array = null) {
   */
 public function GetKeyFolderPath() {
  
-  return function_exists(__KEYPATH__) ? $this->cpe_xib6_FileHandler_count() : $this->PERFORM($this->Enhacer_ErrorMsg()); 
+  return function_exists(__KEYPATH__) ? 
+
+     $this->cpe_xib6_FileHandler_count() : 
+
+       $this->PERFORM($this->Enhacer_ErrorMsg()); 
 
 }
 
@@ -155,10 +200,20 @@ public function GetKeyFolderPath() {
   * Neat and clean noHTML
   *
   **/
-  public function BREAK($assoc=null) { 
+  public function BREAK(
+
+      $assoc      =  null
+
+  )
+  { 
  
-   return function_exists(__BR__) ? parent::_isTrueBREAK_assoc($assoc) : $this->EnhanceeCoreErrorMsg(); 
-}
+   return function_exists(__BR__) ? 
+
+      parent::_isTrueBREAK_assoc($assoc) : 
+
+         $this->EnhanceeCoreErrorMsg(); 
+ 
+ }
 
 /**
   *
@@ -167,11 +222,20 @@ public function GetKeyFolderPath() {
   * Neat and clean noHTML
   *
   **/
-   public function LINE($assoc=null) { 
+   public function LINE(
 
-  return function_exists(__HR__) ? parent::_isTrueLine_assoc($assoc) : $this->EnhanceeCoreErrorMsg();     
+      $assoc     =  null
+
+  )
+  { 
+
+      return function_exists(__HR__) ? 
+
+         parent::_isTrueLine_assoc($assoc) : 
+
+            $this->EnhanceeCoreErrorMsg();     
  
- }
+  }
 
 /**
   *
@@ -182,7 +246,12 @@ public function GetKeyFolderPath() {
   **/
 public function SPACE() { 
  
-  return function_exists(__SPACE__) ? parent::_tagSPACER() : $this->EnhanceeCoreErrorMsg();     
+  return function_exists(__SPACE__) ?
+     
+     parent::_tagSPACER() : 
+
+       $this->EnhanceeCoreErrorMsg();     
+
 
 }
 
@@ -194,11 +263,19 @@ public function SPACE() {
   * Neat and clean noHTML
   *
   **/
- public function MERGE($merge = null ) { 
+ public function MERGE(
 
- return function_exists(__MERGE__) ? $this->_isTrue_SET_Merge($merge) : $this->EnhanceeCoreErrorMsg();     
+     $merge    = null 
 
-}
+ )
+ { 
+
+     return function_exists(__MERGE__) ? 
+
+        $this->_isTrue_SET_Merge($merge) : 
+
+           $this->EnhanceeCoreErrorMsg();     
+ }
 
  /**
   *
@@ -223,11 +300,20 @@ public function SPACE() {
   * Build Beautiful and Maintainable
   *
   **/  
-  public function SetFileExtension($argu = null) {
+  public function SetFileExtension(
 
-  return function_exists(__FILEEXTENSION__) ? parent::Validate_extension_assets_files($argu) : $this->EnhanceeCoreErrorMsg();    
+      $argu     = null
 
-}
+  )
+  {
+
+       return function_exists(__FILEEXTENSION__) ? 
+
+         parent::Validate_extension_assets_files($argu) : 
+
+             $this->EnhanceeCoreErrorMsg();    
+
+ }
 
  /**
  *
@@ -240,9 +326,19 @@ public function SPACE() {
  * Html::_ELEMENT('http-equiv','meta', SetElemAttr(['http-equiv','content'],['X-UA-Compatible','IE=edge']));
  *
  **/ 
- public function SetElemAttr($array_set_1 , $array_set_2) { 
+ public function SetElemAttr(
+
+      $array_set_1
+     ,$array_set_2
+
+  ) 
+  { 
    
-  return function_exists(__SetElemAttr__) ? parent::set_Element_Attr($array_set_1,$array_set_2) : $this->EnhanceeCoreErrorMsg();     
+     return function_exists(__SetElemAttr__) ? 
+
+        parent::set_Element_Attr($array_set_1,$array_set_2) : 
+
+           $this->EnhanceeCoreErrorMsg();     
  
  }
 
@@ -255,11 +351,23 @@ public function SPACE() {
   * html::_PERFORM(__magicELSE( $par == TRUE ,'Yes','NO','FUNC_ASSOC')); // without the function 
   *
   **/
-  public function __magicELSE($condition=null, $if_result=null, $else_result=null, $assoc=null) { 
- 
-   return function_exists(__DOELSE__) ? parent::return_method_concat_else( $condition, $if_result, $else_result, $assoc) : $this->EnhanceeCoreErrorMsg();      
+  public function __magicELSE(
 
-}
+      $condition     =  null
+     ,$if_result     =  null
+     ,$else_result   =  null
+     ,$assoc         =  null
+
+   )
+   { 
+ 
+      return function_exists(__DOELSE__) ? 
+
+         parent::return_method_concat_else( $condition, $if_result, $else_result, $assoc) : 
+
+           $this->EnhanceeCoreErrorMsg();      
+
+  }
 
 /**
   *
@@ -270,11 +378,21 @@ public function SPACE() {
   * html::_PERFORM(__magicIF( $par == TRUE ,'Yes','FUNC_ASSOC')); // without the function 
   *
   **/
-  public function __magicIF($condition=null, $if_result=null, $assoc=null) { 
+  public function __magicIF(
 
-   return function_exists(__DOIF__) ? parent::return_method_concat_else( $condition, $if_result, null, $assoc) : $this->EnhanceeCoreErrorMsg();  
+      $condition     =  null
+     ,$if_result     =  null
+     ,$assoc         =  null
 
-}
+  )
+  { 
+
+     return function_exists(__DOIF__) ? 
+
+       parent::return_method_concat_else( $condition, $if_result, null, $assoc) : 
+
+          $this->EnhanceeCoreErrorMsg();  
+  }
  
 /**
   *
@@ -283,11 +401,20 @@ public function SPACE() {
   * Neat and clean noHTML
   *
   **/
-   public function PERFORM($str=null, $assoc=null) { 
+   public function PERFORM(
 
-   return function_exists(__PERFORM__) ? parent::_isTrue_SET_STRING($str, $assoc) : $this->EnhanceeCoreErrorMsg(); 
+      $str     =  null
+     ,$assoc   =  null
 
- }
+  )
+  { 
+
+     return function_exists(__PERFORM__) ? 
+
+       parent::_isTrue_SET_STRING($str, $assoc) : 
+
+         $this->EnhanceeCoreErrorMsg(); 
+  }
 
 /**
   *
@@ -296,10 +423,20 @@ public function SPACE() {
   * Neat and clean noHTML
   *
   **/
-   public function STRING($str=null, $assoc=null) { 
+   public function STRING(
 
-   return function_exists(__STRING__) ? parent::_isTrue_SET_STRING($str, $assoc) : $this->EnhanceeCoreErrorMsg(); 
- }
+      $str     =  null
+     ,$assoc   =  null
+
+  )
+  { 
+
+     return function_exists(__STRING__) ? 
+
+       parent::_isTrue_SET_STRING($str, $assoc) : 
+
+          $this->EnhanceeCoreErrorMsg(); 
+  }
 
 /**
   *
@@ -312,9 +449,19 @@ public function SPACE() {
   * $Enhancer->ATTR()
   *
   */
-public function ATTR($PARAM__, $quickStart__) {
+public function ATTR(
 
-  return function_exists(__ATTR__) ? $this->cpe_FileHander_hdr($PARAM__, $quickStart__) : $this->PERFORM($this->Enhance_ErrorMsg_att()); 
+    $PARAM__
+   ,$quickStart__
+
+ )
+ {
+
+  return function_exists(__ATTR__) ? 
+
+    $this->cpe_FileHander_hdr($PARAM__, $quickStart__) : 
+
+      $this->PERFORM($this->Enhance_ErrorMsg_att()); 
 
 }
 
@@ -328,11 +475,23 @@ public function ATTR($PARAM__, $quickStart__) {
   *
   * $Enhancer->ELEM()
   */
-public function ELEM($Element__=null, $value__=null, $elemAttr__=null, $elemId__=null, $elemClass__=null) {
-   
- return function_exists(__ELEM__) ? $this->cpe_FileHandler_custom_elem($Element__, $value__, $elemAttr__, $elemId__, $elemClass__) : $this->PERFORM($this->Enhance_ErrorMsg_att()); 
+public function ELEM(
 
-}
+    $Element__     =  null
+   ,$value__       =  null
+   ,$elemAttr__    =  null
+   ,$elemId__      =  null
+   ,$elemClass__   =  null
+
+ )
+ {
+   
+ return function_exists(__ELEM__) ? 
+
+    $this->cpe_FileHandler_custom_elem($Element__, $value__, $elemAttr__, $elemId__, $elemClass__) : 
+
+      $this->PERFORM($this->Enhance_ErrorMsg_att()); 
+ }
 
 /**
   *
@@ -362,13 +521,29 @@ public function ELEM($Element__=null, $value__=null, $elemAttr__=null, $elemId__
 
   * $Enhancer->DO_PATH_SWITCH()
   */
-public function GETFROM($rPwhitch_to_swicth, $gP_whitch_to_fetch) {
+public function GETFROM(
 
- return function_exists(__GETFROM__) ? $this->cpe_ixb6_FielEnhancers_do_swicth_path($rPwhitch_to_swicth, $gP_whitch_to_fetch) : $this->PERFORM($this->Enhance_ErrorMsg_att()); 
+    $rPwhitch_to_swicth
+    ,$gP_whitch_to_fetch
 
+
+)
+{
+
+ return function_exists(__GETFROM__) ? 
+
+   $this->cpe_ixb6_FielEnhancers_do_swicth_path($rPwhitch_to_swicth, $gP_whitch_to_fetch) : 
+
+      $this->PERFORM($this->Enhance_ErrorMsg_att()); 
 }
 
-public function SET_DIR_PATH($uri, $serverHost) {
+public function SET_DIR_PATH(
+
+    $uri
+    ,$serverHost
+
+ )
+ {
  
  // Trim any uri that sent to var
  $ReturnUri     = trim($uri);
@@ -381,7 +556,11 @@ public function SET_DIR_PATH($uri, $serverHost) {
         $registeredURI = str_replace( __REPLACE_ABSOLUTE_PATH__[1] , __EMPTY__ , __DIR__ );
  
  // assigned direcotry return looking for "library" folder
- return function_exists(__SETDIRPATH__) ? $registeredURI ."/". $ReturnUri . '/'  : $this->PERFORM($this->Enhance_ErrorMsg_att()); 
+ return function_exists(__SETDIRPATH__) ? 
+
+    $registeredURI ."/". $ReturnUri . '/'  : 
+
+       $this->PERFORM($this->Enhance_ErrorMsg_att()); 
 
 }
 
