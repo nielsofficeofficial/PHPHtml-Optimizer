@@ -688,10 +688,32 @@ class Html {
   * @var @__getAssEXTENSION__ 
   *
   **/
- CONST __FILEEXTENSION__  = [ __PHP__  => 'php',  __HTML__ => 'html', __CSS__  => 'css',  __JS__   =>'js',   __JPG__ => 'jpg', 
-                              __JPEG__ => 'jpeg', __PNG__  => 'png',  __GIF__  => 'gif',  __BMP__  =>'bmp',  __TEX__ => 'tex',
-                              __XLS__  => 'xls',  __XLSX__ => 'xlsx', __DOCX__ => 'doc',  __DOCX__ =>'docx', __PPT__ => 'ppt',
-                              __PPTX__ => 'pptx', __ODT__  => 'odt',  __TXT__  => 'txt',  __RTF__  =>'rtf']; 
+ CONST __FILEEXTENSION__  = [ 
+
+
+     __PHP__  => 'php'
+    ,__HTML__ => 'html'
+    ,__CSS__  => 'css'
+    ,__JS__   => 'js'
+    ,__JPG__  => 'jpg'
+    ,__JPEG__ => 'jpeg'
+    ,__PNG__  => 'png'
+    ,__GIF__  => 'gif'
+    ,__BMP__  => 'bmp'
+    ,__TEX__  => 'tex'
+    ,__XLS__  => 'xls'
+    ,__XLSX__ => 'xlsx'
+    ,__DOCX__ => 'doc'
+    ,__DOCX__ => 'docx'
+    ,__PPT__  => 'ppt'
+    ,__PPTX__ => 'pptx'
+    ,__ODT__  => 'odt'
+    ,__TXT__  => 'txt'
+    ,__RTF__  => 'rtf'
+
+
+]; 
+
 
 /**
   * @var @property Array of data 
@@ -708,62 +730,202 @@ class Html {
   *
   **/
 
- protected $htm    = ['h1','h2','h3','h4','h5','h6','div','p','button','a','iframe','main','nav','select','form','picture','section','textarea','footer'];
+ protected $htm    = [ 
+
+     'h1'
+    ,'h2'
+    ,'h3'
+    ,'h4'
+    ,'h5'
+    ,'h6'
+    ,'div'
+    ,'p'
+    ,'button'
+    ,'a'
+    ,'iframe'
+    ,'main'
+    ,'nav'
+    ,'select'
+    ,'form'
+    ,'picture'
+    ,'section'
+    ,'textarea'
+    ,'footer'
+
+];
+
 /**
   * @var 
   * @property @SECONDARY_VARIABLE 
   * defined arrays of data html 
   **/
- protected $htm_s  = ['audio','video','address','colgroup','bdi','bdo','blockquote','caption','label','datalist','details','summary','dialog','option'];
+ protected $htm_s  = [ 
+
+   'audio'
+  ,'video'
+  ,'address'
+  ,'colgroup'
+  ,'bdi'
+  ,'bdo'
+  ,'blockquote'
+  ,'caption'
+  ,'label'
+  ,'datalist'
+  ,'details'
+  ,'summary'
+  ,'dialog'
+  ,'option'
+
+];
 
 /**
   * @var 
   * @property @SUPPORT_VARIABLE 
   * defined arrays of data html 
   **/
- protected $htm_ss = ['figure','figcaption','meter','object','optgroup','output','progress','svg','template','time','var'];
+ protected $htm_ss = [ 
+
+  'figure'
+  ,'figcaption'
+  ,'meter'
+  ,'object'
+  ,'optgroup'
+  ,'output'
+  ,'progress'
+  ,'svg'
+  ,'template'
+  ,'time'
+  ,'var'
+
+];
 
 /**
   * @var 
   * @property @LIST_VARIABLE 
   * defined arrays of data html 
   **/
- protected $htm_t  = ['ul','ol','li','table','tr','td','th','legend','fieldset','tbody','tfoot','thead']; 
+ protected $htm_t  = [
+
+   'ul'
+  ,'ol'
+  ,'li'
+  ,'table'
+  ,'tr'
+  ,'td'
+  ,'th'
+  ,'legend'
+  ,'fieldset'
+  ,'tbody'
+  ,'tfoot'
+  ,'thead'
+
+]; 
 
 /**
   * @var 
   * @property @FORMAT_VARIABLE 
   * defined arrays of data html 
   **/
- protected $htm_f  = ['span','em','b','i','small','strike','marquee','center','code','abbr','map','canvas','cite','data','dl','dt','dd','dfn','ins'];
+ protected $htm_f  = [
+
+   'span'
+  ,'em'
+  ,'b'
+  ,'i'
+  ,'small'
+  ,'strike'
+  ,'marquee'
+  ,'center'
+  ,'code'
+  ,'abbr'
+  ,'map'
+  ,'canvas'
+  ,'cite'
+  ,'data'
+  ,'dl'
+  ,'dt'
+  ,'dd'
+  ,'dfn'
+  ,'ins'
+
+];
 
 /**
   * @var 
   * @property @FORMAT_VARIABLE 
   * defined arrays of data html 
   **/
- protected $htm_fc = ['del','kbd','mark','pre','rt','rp','ruby','s','samp','strong','sub','sup','wbr','q'];
+ protected $htm_fc = [ 
+
+
+   'del'
+  ,'kbd'
+  ,'mark'
+  ,'pre'
+  ,'rt'
+  ,'rp'
+  ,'ruby'
+  ,'s'
+  ,'samp'
+  ,'strong'
+  ,'sub'
+  ,'sup'
+  ,'wbr'
+  ,'q'
+
+];
 
 /**
   * @var 
   * @property @INLINE_VARIABLE  (NO x HTML TAG)
   * defined arrays of data html 
   **/
- protected $htm_L  = ['source','track','circle','param','input','meta','link','img','embed','option','col','base','aside','area','DOCTYPE html'];
+ protected $htm_L  = [
+
+   'source'
+  ,'track'
+  ,'circle'
+  ,'param'
+  ,'input'
+  ,'meta'
+  ,'link'
+  ,'img'
+  ,'embed'
+  ,'option'
+  ,'col'
+  ,'base'
+  ,'aside'
+  ,'area'
+  ,'DOCTYPE html'
+
+];
 
 /**
   * @var 
   * @property @STRUCTURE_VARIABLE  (NO x HTML TAG)
   * defined arrays of data html 
   S**/
- protected $htm_st = ['head','title','body','html'];
+ protected $htm_st = [
+
+   'head'
+  ,'title'
+  ,'body'
+  ,'html'
+
+];
 
 /**
   * @var 
   * @property @BREAKS_VARIABLE  (NO x HTML TAG)
   * defined arrays of data html 
   **/
- protected $hBreak = ["\n","br","hr"];
+ protected $hBreak = [ 
+
+    "\n"
+   ,"br"
+   ,"hr"
+
+];
 
 /**
   * @var 
@@ -816,11 +978,17 @@ class Html {
   * Neat and clean noHTML
   *
   **/
-   public function PERFORM($str=null, $assoc=null) { 
+   public function PERFORM(
 
-    return $this->_isTrue_SET_STRING($str, $assoc); 
-
- }
+     $str    = null
+    ,$assoc  = null
+    
+    ) 
+    { 
+   
+       return $this->_isTrue_SET_STRING($str, $assoc); 
+   
+    }
 
 /**
   *
@@ -832,11 +1000,20 @@ class Html {
   * $label = 'MERGE_END' output: </p> | x any tag elements html
   *
   **/
- public function __magicMERGE($elem, $label=null, $js=[], $id=null, $class=null) {
- 
- return $this->_setReturnELEMENT($this->_setELEMENTS($elem), $value=null, $js, $id, $class, $label); 
+ public function __magicMERGE(
 
-} 
+    $elem
+   ,$label  = null
+   ,$attr     = []
+   ,$id     = null
+   ,$class  = null
+
+ )
+ {
+ 
+ return $this->_setReturnELEMENT($this->_setELEMENTS($elem), $value=null, $attr, $id, $class, $label); 
+
+ } 
 
 /**
   *
@@ -845,11 +1022,21 @@ class Html {
   * Neat and clean noHTML
   *
   **/
-   public function ELEMS($inline="INLINE", $elem, $js=null, $id=null, $class=null, $assoc=null) { 
+   public function ELEMS(
+
+     $inline = "INLINE"
+    ,$elem
+    ,$attr     = null
+    ,$id     = null
+    ,$class  = null
+    ,$assoc  = null
+
+  )
+  { 
     
-   return $this->HtmlELements_Optimizer($inline, $elem, $js, $id, $class, $assoc);
+   return $this->HtmlELements_Optimizer($inline, $elem, $attr, $id, $class, $assoc);
   
-}
+  }
 
 /**
   *
@@ -858,11 +1045,22 @@ class Html {
   * Neat and clean noHTML
   *
   **/
-  public function ELEMENT($elem, $value=null, $js=[], $id=null, $class=null, $label=null) {
- 
- return  $this->_setReturnELEMENT($this->_setELEMENTS($elem), $value, $js, $id, $class, $label); 
+  public function ELEMENT(  
 
-} 
+     $elem
+    ,$value = null
+    ,$attr    = []
+
+    ,$id    = null
+    ,$class = null
+    ,$label = null
+
+ ) 
+ {
+ 
+ return  $this->_setReturnELEMENT($this->_setELEMENTS($elem), $value, $attr, $id, $class, $label); 
+
+ } 
 
 /**
   *
@@ -871,9 +1069,30 @@ class Html {
   * RETURN HEADING _ noHTML TAG
   *
   **/
-  public function _H1($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 0, $js, $id, $class) ); }
-// CLOSING_METHOD_noHTML_HEADING_TAG 
-  public function xH1($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 0, $label) ); }
+  public function _H1(
+
+    $attr     =  []
+   ,$id     = null
+   ,$class  = null
+
+ ) 
+ { 
+
+  $this->PERFORM( $this->get__HTML('PRIMARY', 0, $attr, $id, $class) ); 
+
+ }
+
+  // CLOSING_METHOD_noHTML_HEADING_TAG 
+  public function xH1(
+
+    $label = NULL
+
+ ) 
+ { 
+ 
+   $this->PERFORM( $this->get_xHTML('PRIMARY', 0, $label) ); 
+ 
+ }
 
 /**
   *
@@ -882,9 +1101,30 @@ class Html {
   * RETURN HEADING _ noHTML TAG
   *
   **/
-  public function _H2($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 1, $js, $id, $class) ); }
-// CLOSING_METHOD_noHTML_HEADING_TAG 
-  public function xH2($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 1, $label) ); }
+  public function _H2(
+
+   $attr    =  []
+  ,$id    =  null
+  ,$class =  null
+
+  )
+  { 
+
+    $this->PERFORM( $this->get__HTML('PRIMARY', 1, $attr, $id, $class) ); 
+
+  }
+  
+  // CLOSING_METHOD_noHTML_HEADING_TAG 
+  public function xH2(
+
+    $label = NULL
+
+  ) 
+  { 
+
+    $this->PERFORM( $this->get_xHTML('PRIMARY', 1, $label) ); 
+
+  }
 
 /**
   *
@@ -893,9 +1133,30 @@ class Html {
   * RETURN HEADING _ noHTML TAG
   *
   **/
-  public function _H3($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 2, $js, $id, $class) ); }
-// CLOSING_METHOD_noHTML_HEADING_TAG 
-  public function xH3($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 2, $label) );  }
+  public function _H3(
+
+   $attr    =  []
+  ,$id    =  null
+  ,$class =  null
+  
+  ) 
+  { 
+
+    $this->PERFORM( $this->get__HTML('PRIMARY', 2, $attr, $id, $class) ); 
+
+  }
+  
+  // CLOSING_METHOD_noHTML_HEADING_TAG 
+  public function xH3(
+
+    $label = NULL
+
+  ) 
+  { 
+
+    $this->PERFORM( $this->get_xHTML('PRIMARY', 2, $label) ); 
+
+  }
 
 /**
   *
@@ -904,9 +1165,30 @@ class Html {
   * RETURN HEADING _ noHTML TAG
   *
   **/
-  public function _H4($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 3, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_HEADING_TAG 
-  public function xH4($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 3, $label) ); }
+  public function _H4(
+
+    $attr     =  []
+   ,$id     =  null
+   ,$class  =  null
+
+ ) 
+ { 
+
+   $this->PERFORM( $this->get__HTML('PRIMARY', 3, $attr, $id, $class) );  
+
+ }
+
+ // CLOSING_METHOD_noHTML_HEADING_TAG 
+  public function xH4(
+
+    $label = NULL
+
+  )
+  { 
+
+    $this->PERFORM( $this->get_xHTML('PRIMARY', 3, $label) ); 
+
+  }
 
 /**
   *
@@ -915,9 +1197,30 @@ class Html {
   * RETURN HEADING _ noHTML TAG
   *
   **/
-  public function _H5($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 4, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_HEADING_TAG 
-  public function xH5($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 4, $label) ); }
+  public function _H5(
+
+    $attr    =  []
+   ,$id    =  null
+   ,$class =  null
+
+ )
+ { 
+
+   $this->PERFORM( $this->get__HTML('PRIMARY', 4, $attr, $id, $class) );  
+
+ }
+  
+  // CLOSING_METHOD_noHTML_HEADING_TAG 
+  public function xH5(
+
+    $label = NULL
+
+  )
+  { 
+
+    $this->PERFORM( $this->get_xHTML('PRIMARY', 4, $label) ); 
+
+  }
 
 /**
   *
@@ -926,9 +1229,29 @@ class Html {
   * RETURN HEADING _ noHTML TAG
   *
   **/
-  public function _H6($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 5, $js, $id, $class) ); }
-// CLOSING_METHOD_noHTML_HEADING_TAG 
-  public function xH6($label = NULL) {  $this->PERFORM( $this->get_xHTML('PRIMARY', 5, $label) ); }
+  public function _H6(
+
+    $attr    =   []
+   ,$id    =   null
+   ,$class =   null
+
+  ) 
+  { 
+
+     $this->PERFORM( $this->get__HTML('PRIMARY', 5, $attr, $id, $class) ); 
+  }
+
+  // CLOSING_METHOD_noHTML_HEADING_TAG 
+  public function xH6(
+
+    $label = NULL
+
+  )
+  {  
+
+     $this->PERFORM( $this->get_xHTML('PRIMARY', 5, $label) ); 
+
+  }
 
 /**
   *
@@ -937,9 +1260,30 @@ class Html {
   * RETURN NODE DIV _ noHTML TAG
   *
   **/
-  public function _DIV($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 6, $js, $id, $class) ); }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xDIV($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 6, $label) ); }
+  public function _DIV(
+
+    $attr     =   []
+   ,$id     =   null
+   ,$class  =   null
+
+  ) 
+  { 
+
+    $this->PERFORM( $this->get__HTML('PRIMARY', 6, $attr, $id, $class) ); 
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xDIV(
+
+    $label = NULL
+
+  )
+  { 
+
+     $this->PERFORM( $this->get_xHTML('PRIMARY', 6, $label) ); 
+
+  }
 
 /**
   *
@@ -948,9 +1292,30 @@ class Html {
   * RETURN NODE PARAGRAPH _ noHTML TAG
   *
   **/
-  public function _P($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 7, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xP($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 7, $label) ); }
+  public function _P(
+
+    $attr    =   []
+   ,$id    =   null
+   ,$class =   null
+
+   )
+   { 
+
+     $this->PERFORM( $this->get__HTML('PRIMARY', 7, $attr, $id, $class) );  
+   
+   }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xP(
+
+    $label = NULL
+
+  )
+  { 
+
+     $this->PERFORM( $this->get_xHTML('PRIMARY', 7, $label) ); 
+
+  }
 
 /**
   *
@@ -959,9 +1324,30 @@ class Html {
   * RETURN NODE BUTTON _ noHTML TAG
   *
   **/
-  public function _BUTTON($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 8, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xBUTTON($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 8, $label) ); }
+  public function _BUTTON(
+
+   $attr     =   []
+  ,$id     =   null
+  ,$class  =   null
+
+  )
+  { 
+
+     $this->PERFORM( $this->get__HTML('PRIMARY', 8, $attr, $id, $class) );  
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xBUTTON(
+
+    $label = NULL
+
+  )
+  { 
+
+    $this->PERFORM( $this->get_xHTML('PRIMARY', 8, $label) ); 
+
+  }
 
 /**
   *
@@ -970,9 +1356,30 @@ class Html {
   * RETURN NODE HYPERLINK _ noHTML TAG
   *
   **/
-  public function _A($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 9, $js, $id, $class) ); }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xA($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 9, $label) ); }
+  public function _A(
+
+    $attr    =    []
+   ,$id    =    null
+   ,$class =    null
+
+  )
+  { 
+
+     $this->PERFORM( $this->get__HTML('PRIMARY', 9, $attr, $id, $class) ); 
+
+  }
+
+ // CLOSING_METHOD_noHTML_TAG 
+  public function xA(
+
+    $label = NULL
+
+  )
+  { 
+
+    $this->PERFORM( $this->get_xHTML('PRIMARY', 9, $label) ); 
+
+  }
 
 /**
   *
@@ -981,9 +1388,31 @@ class Html {
   * RETURN NODE IFRAME _ noHTML TAG
   *
   **/
-  public function _IFRAME($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 10, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xIFRAME($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 10, $label) ); }
+  public function _IFRAME(
+
+    $attr   =   []
+   ,$id     =   null
+   ,$class  =   null
+
+
+  )
+  { 
+
+     $this->PERFORM( $this->get__HTML('PRIMARY', 10, $attr, $id, $class) ); 
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xIFRAME(
+
+    $label = NULL
+
+  ) 
+  { 
+
+     $this->PERFORM( $this->get_xHTML('PRIMARY', 10, $label) ); 
+
+  }
 
 /**
   *
@@ -992,9 +1421,30 @@ class Html {
   * RETURN NODE MAIN _ noHTML TAG
   *
   **/
-  public function _MAIN($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 11, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xMAIN($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 11, $label) ); }
+  public function _MAIN(
+
+    $attr    =   []
+   ,$id      =   null
+   ,$class   =   null
+
+  )
+  { 
+
+     $this->PERFORM( $this->get__HTML('PRIMARY', 11, $attr, $id, $class) ); 
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xMAIN(
+
+    $label = NULL
+
+  )
+  { 
+
+    $this->PERFORM( $this->get_xHTML('PRIMARY', 11, $label) ); 
+
+  }
 
 /**
   *
@@ -1003,9 +1453,29 @@ class Html {
   * RETURN NODE NAV _ noHTML TAG
   *
   **/
-  public function _NAV($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 12, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xNAV($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 12, $label) ); }
+  public function _NAV(
+
+    $attr     =   []
+   ,$id       =   null
+   ,$class    =   null
+
+  ) 
+  { 
+
+     $this->PERFORM( $this->get__HTML('PRIMARY', 12, $attr, $id, $class) );  
+  }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xNAV(
+
+    $label = NULL
+
+  ) 
+  { 
+
+     $this->PERFORM( $this->get_xHTML('PRIMARY', 12, $label) ); 
+
+  }
 
 /**
   *
@@ -1014,9 +1484,30 @@ class Html {
   * RETURN NODE SELECT _ noHTML TAG
   *
   **/
-  public function _SELECT($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 13, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xSELECT($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 13, $label) ); }
+  public function _SELECT(
+
+     $attr   =   []
+    ,$id     =   null
+    ,$class  =   null
+
+  ) 
+  { 
+
+     $this->PERFORM( $this->get__HTML('PRIMARY', 13, $attr, $id, $class) );   
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xSELECT(
+
+    $label = NULL
+
+  )
+  { 
+
+     $this->PERFORM( $this->get_xHTML('PRIMARY', 13, $label) ); 
+
+  }
 
 /**
   *
@@ -1025,9 +1516,30 @@ class Html {
   * RETURN NODE FORM _ noHTML TAG
   *
   **/
-  public function _FORM($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 14, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xFORM($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 14, $label) ); }
+  public function _FORM(
+
+     $attr    =    []
+    ,$id      =    null
+    ,$class   =    null
+
+  )
+  { 
+
+     $this->PERFORM( $this->get__HTML('PRIMARY', 14, $attr, $id, $class) );  
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xFORM(
+
+     $label  =   NULL
+
+  )
+  { 
+
+     $this->PERFORM( $this->get_xHTML('PRIMARY', 14, $label) ); 
+
+  }
 
 /**
   *
@@ -1036,9 +1548,30 @@ class Html {
   * RETURN NODE PICTURE _ noHTML TAG
   *
   **/
-  public function _PICTURE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 15, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xPICTURE($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 15, $label) ); }
+  public function _PICTURE(
+
+    $attr    =   []
+   ,$id      =   null
+   ,$class   =   null
+
+   )
+   { 
+
+     $this->PERFORM( $this->get__HTML('PRIMARY', 15, $attr, $id, $class) );  
+
+   }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xPICTURE(
+
+     $label = NULL
+
+  )
+  { 
+
+     $this->PERFORM( $this->get_xHTML('PRIMARY', 15, $label) ); 
+
+  }
 
 /**
   *
@@ -1047,9 +1580,30 @@ class Html {
   * RETURN NODE SECTION _ noHTML TAG
   *
   **/
-  public function _SECTION($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 16, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xSECTION($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 16, $label) ); }
+  public function _SECTION(
+
+    $attr    =   []
+   ,$id      =   null
+   ,$class   =   null
+
+ )
+ { 
+
+   $this->PERFORM( $this->get__HTML('PRIMARY', 16, $attr, $id, $class) );   
+
+ }
+ 
+ // CLOSING_METHOD_noHTML_TAG 
+  public function xSECTION(
+
+    $label = NULL
+
+ )
+ { 
+
+   $this->PERFORM( $this->get_xHTML('PRIMARY', 16, $label) ); 
+
+ }
 
 /**
   *
@@ -1058,8 +1612,20 @@ class Html {
   * RETURN NODE TEXTAREA _ noHTML TAG
   *
   **/
-  public function _TEXTAREA($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 17, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
+  public function _TEXTAREA(
+
+    $attr    =  []
+   ,$id      =  null
+   ,$class   =  null
+
+ )
+ { 
+
+     $this->PERFORM( $this->get__HTML('PRIMARY', 17, $attr, $id, $class) );  
+
+ }
+  
+  // CLOSING_METHOD_noHTML_TAG 
   public function xTEXTAREA($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 17, $label) ); }
 
 /**
@@ -1069,9 +1635,30 @@ class Html {
   * RETURN NODE FOOTERA _ noHTML TAG
   *
   **/
-  public function _FOOTER($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('PRIMARY', 18, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xFOOTER($label = NULL) { $this->PERFORM( $this->get_xHTML('PRIMARY', 18, $label) ); }
+  public function _FOOTER(
+
+    $attr    = []
+   ,$id      = null
+   ,$class   = null
+
+  )
+  { 
+
+     $this->PERFORM( $this->get__HTML('PRIMARY', 18, $attr, $id, $class) );  
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xFOOTER(
+
+    $label = NULL
+
+  )
+  { 
+
+     $this->PERFORM( $this->get_xHTML('PRIMARY', 18, $label) ); 
+
+  }
 
 
 /**
@@ -1081,9 +1668,30 @@ class Html {
   * RETURN NODE AUDIO _ noHTML TAG
   *
   **/
-  public function _AUDIO($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 0, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xAUDIO($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 0, $label) ); }
+  public function _AUDIO(
+
+     $attr    =  []
+    ,$id      =  null
+    ,$class   =  null
+
+ )
+ { 
+
+   $this->PERFORM( $this->get__HTML('SECONDARY', 0, $attr, $id, $class) );  
+ 
+ }
+  
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xAUDIO(
+
+    $label = NULL
+
+  )
+  { 
+
+     $this->PERFORM( $this->get_xHTML('SECONDARY', 0, $label) ); 
+
+}
 
 /**
   *
@@ -1092,9 +1700,30 @@ class Html {
   * RETURN NODE VIDEO _ noHTML TAG
   *
   **/
-  public function _VIDEO($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 1, $js, $id, $class) ); }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xVIDEO($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 1, $label) ); }
+  public function _VIDEO(
+
+   $attr    =  []
+  ,$id      =  null
+  ,$class   =  null
+
+ )
+ { 
+
+   $this->PERFORM( $this->get__HTML('SECONDARY', 1, $attr, $id, $class) ); 
+
+ }
+
+ // CLOSING_METHOD_noHTML_TAG 
+  public function xVIDEO(
+
+     $label = NULL
+
+ )
+ { 
+
+  $this->PERFORM( $this->get_xHTML('SECONDARY', 1, $label) ); 
+
+ }
 
 /**
   *
@@ -1103,9 +1732,30 @@ class Html {
   * RETURN NODE ADDRESS _ noHTML TAG
   *
   **/
-  public function _ADDRESS($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 2, $js, $id, $class) ); }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xADDRESS($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 2, $label) ); }
+  public function _ADDRESS(
+
+    $attr     =  []
+   ,$id       =  null
+   ,$class    =  null
+
+  )
+  { 
+
+     $this->PERFORM( $this->get__HTML('SECONDARY', 2, $attr, $id, $class) ); 
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xADDRESS(
+
+    $label = NULL
+  
+  )
+  { 
+
+    $this->PERFORM( $this->get_xHTML('SECONDARY', 2, $label) ); 
+
+  }
 
 /**
   *
@@ -1114,9 +1764,29 @@ class Html {
   * RETURN NODE COLGROUP _ noHTML TAG
   *
   **/
-  public function _COLGROUP($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 3, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xCOLGROUP($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 3, $label) ); }
+  public function _COLGROUP(
+
+    $attr   =  []
+   ,$id     =  null
+   ,$class  =  null
+
+  )
+  { 
+
+     $this->PERFORM( $this->get__HTML('SECONDARY', 3, $attr, $id, $class) );  
+  }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xCOLGROUP(
+
+    $label = NULL
+
+  )
+  { 
+
+     $this->PERFORM( $this->get_xHTML('SECONDARY', 3, $label) ); 
+
+  }
 
 /**
   *
@@ -1125,9 +1795,29 @@ class Html {
   * RETURN NODE BDI _ noHTML TAG
   *
   **/
-  public function _BDI($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 4, $js, $id, $class) ); }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xBDI($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 4, $label) ); }
+  public function _BDI(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+   )
+   { 
+
+     $this->PERFORM( $this->get__HTML('SECONDARY', 4, $attr, $id, $class) ); 
+
+  }
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xBDI(
+
+    $label = NULL
+
+  )
+  { 
+
+     $this->PERFORM( $this->get_xHTML('SECONDARY', 4, $label) ); 
+
+  }
 
 /**
   *
@@ -1136,9 +1826,30 @@ class Html {
   * RETURN NODE BDO _ noHTML TAG
   *
   **/
-  public function _BDO($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 5, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xBDO($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 5, $label) ); }
+  public function _BDO(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+   )
+   { 
+
+     $this->PERFORM( $this->get__HTML('SECONDARY', 5, $attr, $id, $class) ); 
+
+   }
+  
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xBDO(
+
+    $label = NULL
+
+  )
+  { 
+
+     $this->PERFORM( $this->get_xHTML('SECONDARY', 5, $label) ); 
+
+  }
 
 /**
   *
@@ -1147,9 +1858,29 @@ class Html {
   * RETURN NODE BLOCKQUOTE _ noHTML TAG
   *
   **/
-  public function _BLOCKQUOTE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 6, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xBLOCKQUOTE($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 6, $label) ); }
+  public function _BLOCKQUOTE(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+   )
+   { 
+
+     $this->PERFORM( $this->get__HTML('SECONDARY', 6, $attr, $id, $class) ); 
+
+   }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xBLOCKQUOTE(
+
+    $label = NULL
+
+  )
+  { 
+      $this->PERFORM( $this->get_xHTML('SECONDARY', 6, $label) ); 
+
+  }
 
 /**
   *
@@ -1158,9 +1889,29 @@ class Html {
   * RETURN NODE CAPTION _ noHTML TAG
   *
   **/
-  public function _CAPTION($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 7, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xCAPTION($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 7, $label) ); }
+  public function _CAPTION(
+
+     $attr    =  []
+    ,$id      =  null
+    ,$class   =  null
+
+  )
+  { 
+
+      $this->PERFORM( $this->get__HTML('SECONDARY', 7, $attr, $id, $class) ); 
+  }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xCAPTION(
+
+    $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('SECONDARY', 7, $label) ); 
+
+ }
 
 /**
   *
@@ -1169,9 +1920,30 @@ class Html {
   * RETURN NODE LABEL _ noHTML TAG
   *
   **/
-  public function _LABEL($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 8, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xLABEL($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 8, $label) ); }
+  public function _LABEL(
+
+     $attr    =  []
+    ,$id      =  null
+    ,$class   =  null
+
+  )
+  { 
+ 
+      $this->PERFORM( $this->get__HTML('SECONDARY', 8, $attr, $id, $class) ); 
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xLABEL(
+
+    $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('SECONDARY', 8, $label) ); 
+
+  }
 
 /**
   *
@@ -1180,9 +1952,28 @@ class Html {
   * RETURN NODE DATALIST _ noHTML TAG
   *
   **/
-  public function _DATALIST($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 9, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xDATALIST($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 9, $label) ); }
+  public function _DATALIST(
+
+     $attr    =  []
+    ,$id      =  null
+    ,$class   =  null
+
+  )
+  { 
+      $this->PERFORM( $this->get__HTML('SECONDARY', 9, $attr, $id, $class) );  
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xDATALIST(
+
+    $label = NULL
+
+  )
+  { 
+      $this->PERFORM( $this->get_xHTML('SECONDARY', 9, $label) ); 
+
+  }
 
 /**
   *
@@ -1191,9 +1982,30 @@ class Html {
   * RETURN NODE DETAILS _ noHTML TAG
   *
   **/
-  public function _DETAILS($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 10, $js, $id, $class) ); }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xDETAILS($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 10, $label) ); }
+  public function _DETAILS(
+
+     $attr   =  []
+    ,$id     =  null
+    ,$class  =  null
+
+  )
+  { 
+
+     $this->PERFORM( $this->get__HTML('SECONDARY', 10, $attr, $id, $class) ); 
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xDETAILS(
+
+    $label = NULL
+
+  )
+  { 
+
+     $this->PERFORM( $this->get_xHTML('SECONDARY', 10, $label) ); 
+ 
+ }
 
 /**
   *
@@ -1202,9 +2014,30 @@ class Html {
   * RETURN NODE SUMMARY _ noHTML TAG
   *
   **/
-  public function _SUMMARY($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 11, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xSUMMARY($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 11, $label) ); }
+  public function _SUMMARY(
+
+    $attr   =  []
+   ,$id     =  null
+   ,$class  =  null
+
+ )
+ { 
+  
+    $this->PERFORM( $this->get__HTML('SECONDARY', 11, $attr, $id, $class) ); 
+  
+ }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xSUMMARY(
+
+    $label = NULL
+  
+  )
+  { 
+  
+     $this->PERFORM( $this->get_xHTML('SECONDARY', 11, $label) ); 
+  
+  }
 
 /**
   *
@@ -1213,9 +2046,29 @@ class Html {
   * RETURN NODE DIALOG _ noHTML TAG
   *
   **/
-  public function _DIALOG($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 12, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xDIALOG($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 12, $label) ); }
+  public function _DIALOG(
+
+    $attr   =  []
+   ,$id     =  null
+   ,$class  =  null
+
+  )
+  { 
+
+     $this->PERFORM( $this->get__HTML('SECONDARY', 12, $attr, $id, $class) );  
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xDIALOG(
+
+    $label = NULL
+  )
+  { 
+  
+      $this->PERFORM( $this->get_xHTML('SECONDARY', 12, $label) ); 
+
+  }
 
 /**
   *
@@ -1224,9 +2077,29 @@ class Html {
   * RETURN NODE OPTION _ noHTML TAG
   *
   **/
-  public function _OPTION($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SECONDARY', 12, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  public function xOPTION($label = NULL) { $this->PERFORM( $this->get_xHTML('SECONDARY', 12, $label) ); }
+  public function _OPTION(
+
+    $attr    =  []
+   ,$id      =  null
+   ,$class   =  null
+
+ )
+ { 
+
+    $this->PERFORM( $this->get__HTML('SECONDARY', 12, $attr, $id, $class) );  
+
+ }
+
+ // CLOSING_METHOD_noHTML_TAG 
+  public function xOPTION(
+
+    $label = NULL
+  )
+  { 
+  
+      $this->PERFORM( $this->get_xHTML('SECONDARY', 12, $label) ); 
+
+  }
 
 /**
   *
@@ -1235,9 +2108,30 @@ class Html {
   * RETURN NODE FIGURE _ noHTML TAG
   *
   **/
-  public function _FIGURE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 0, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG
-  public function xFIGURE($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 0, $label) ); }
+  public function _FIGURE(  
+
+     $attr   =  []
+    ,$id     =  null
+    ,$class  =  null
+
+   )
+   { 
+
+     $this->PERFORM( $this->get__HTML('SUPPORT', 0, $attr, $id, $class) );  
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xFIGURE(
+
+     $label = NULL  
+
+   )
+   { 
+
+      $this->PERFORM( $this->get_xHTML('SUPPORT', 0, $label) ); 
+
+   }
 
 /**
   *
@@ -1246,9 +2140,30 @@ class Html {
   * RETURN NODE FIGCAPTION _ noHTML TAG
   *
   **/
-  public function _FIGCAPTION($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 1, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xFIGCAPTION($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 1, $label) ); }
+  public function _FIGCAPTION(  
+
+     $attr   =  []
+    ,$id     =  null
+    ,$class  =  null
+
+   )
+   { 
+
+     $this->PERFORM( $this->get__HTML('SUPPORT', 1, $attr, $id, $class) );  
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xFIGCAPTION(
+
+     $label = NULL  
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('SUPPORT', 1, $label) ); 
+
+  }
 
 /**
   *
@@ -1257,9 +2172,30 @@ class Html {
   * RETURN NODE METER _ noHTML TAG
   *
   **/
-  public function _METER($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 2, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xMETER($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 2, $label) ); }
+  public function _METER( 
+
+     $attr   =  []
+    ,$id     =  null
+    ,$class  =  null
+
+   )
+   { 
+
+      $this->PERFORM( $this->get__HTML('SUPPORT', 2, $attr, $id, $class) );  
+
+   }
+ 
+  // CLOSING_METHOD_noHTML_TAG
+  public function xMETER(
+
+     $label = NULL
+
+   )
+   { 
+
+     $this->PERFORM( $this->get_xHTML('SUPPORT', 2, $label) ); 
+
+   }
 
 /**
   *
@@ -1268,9 +2204,30 @@ class Html {
   * RETURN NODE OBJECT _ noHTML TAG
   *
   **/
-  public function _OBJECT($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 3, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xOBJECT($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 3, $label)); }
+  public function _OBJECT( 
+
+     $attr   =  []
+    ,$id     =  null
+    ,$class  =  null
+
+   )
+   { 
+
+      $this->PERFORM( $this->get__HTML('SUPPORT', 3, $attr, $id, $class) );  
+
+   }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xOBJECT(
+
+     $label = NULL
+
+   )
+   { 
+
+     $this->PERFORM( $this->get_xHTML('SUPPORT', 3, $label)); 
+
+   }
 
 /**
   *
@@ -1279,9 +2236,30 @@ class Html {
   * RETURN NODE OPTGROUP _ noHTML TAG
   *
   **/
-  public function _OPTGROUP($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 4, $js, $id, $class));  }
-// CLOSING_METHOD_noHTML_TAG
-  public function xOPTGROUP($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 4, $label)); }
+  public function _OPTGROUP( 
+
+     $attr  =  []
+    ,$id    =  null
+    ,$class =  null
+
+  )
+  { 
+
+      $this->PERFORM( $this->get__HTML('SUPPORT', 4, $attr, $id, $class));  
+
+ }
+ 
+ // CLOSING_METHOD_noHTML_TAG
+  public function xOPTGROUP(
+
+    $label = NULL
+
+  ) 
+  { 
+
+      $this->PERFORM( $this->get_xHTML('SUPPORT', 4, $label)); 
+
+  }
 
 /**
   *
@@ -1290,9 +2268,30 @@ class Html {
   * RETURN NODE OUTPUT _ noHTML TAG
   *
   **/
-  public function _OUTPUT($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 5, $js, $id, $class));   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xOUTPUT($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 5, $label)); }
+  public function _OUTPUT( 
+
+     $attr  =  []
+    ,$id    =  null
+    ,$class =  null
+
+  )
+  { 
+
+      $this->PERFORM( $this->get__HTML('SUPPORT', 5, $attr, $id, $class));  
+
+  }
+  
+  //CLOSING_METHOD_noHTML_TAG
+  public function xOUTPUT(
+
+    $label = NULL
+
+  ) 
+  { 
+
+      $this->PERFORM( $this->get_xHTML('SUPPORT', 5, $label)); 
+
+  }
 
 /**
   *
@@ -1301,9 +2300,30 @@ class Html {
   * RETURN NODE PROGRESS _ noHTML TAG
   *
   **/
-  public function _PROGRESS($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 6, $js, $id, $class));  }
-// CLOSING_METHOD_noHTML_TAG
-  public function xPROGRESS($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 6, $label)); }
+  public function _PROGRESS(
+
+      $attr   =  []
+     ,$id     =  null
+     ,$class  =  null
+
+   )
+  { 
+
+      $this->PERFORM( $this->get__HTML('SUPPORT', 6, $attr, $id, $class));  
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xPROGRESS(
+
+    $label = NULL 
+
+  )
+  { 
+
+    $this->PERFORM( $this->get_xHTML('SUPPORT', 6, $label)); 
+
+  }
 
 /**
   *
@@ -1312,9 +2332,30 @@ class Html {
   * RETURN NODE SVG _ noHTML TAG
   *
   **/
-  public function _SVG($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 7, $js, $id, $class));   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xSVG($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 7, $label)); }
+  public function _SVG(
+
+      $attr   =  []
+     ,$id     =  null
+     ,$class  =  null
+
+   )
+  { 
+
+      $this->PERFORM( $this->get__HTML('SUPPORT', 7, $attr, $id, $class));  
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xSVG(
+
+    $label = NULL 
+
+  )
+  { 
+
+    $this->PERFORM( $this->get_xHTML('SUPPORT', 7, $label)); 
+
+  }
 
 /**
   *
@@ -1323,9 +2364,30 @@ class Html {
   * RETURN NODE TEMPLATE _ noHTML TAG
   *
   **/
-  public function _TEMPLATE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 8, $js, $id, $class)); }
-// CLOSING_METHOD_noHTML_TAG
-  public function xTEMPLATE($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 8, $label)); }
+  public function _TEMPLATE(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+  )
+  { 
+
+      $this->PERFORM( $this->get__HTML('SUPPORT', 8, $attr, $id, $class)); 
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xTEMPLATE(
+
+     $label = NULL
+
+  )
+  {   
+
+      $this->PERFORM( $this->get_xHTML('SUPPORT', 8, $label)); 
+
+  }
 
 /**
   *
@@ -1334,9 +2396,31 @@ class Html {
   * RETURN NODE TIME _ noHTML TAG
   *
   **/
-  public function _TIME($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 9, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xTIME($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 9, $label) ); }
+  public function _TIME(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+  )
+  { 
+
+      $this->PERFORM( $this->get__HTML('SUPPORT', 9, $attr, $id, $class) );
+
+  }
+
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xTIME(
+
+     $label = NULL
+
+  )
+  {   
+
+      $this->PERFORM( $this->get_xHTML('SUPPORT', 9, $label) );
+
+  }
 
 /**
   *
@@ -1345,9 +2429,30 @@ class Html {
   * RETURN NODE VAR _ noHTML TAG
   *
   **/
-  public function _VAR($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('SUPPORT', 10, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xVAR($label = NULL) { $this->PERFORM( $this->get_xHTML('SUPPORT', 10, $label) ); }
+  public function _VAR(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+   )
+   { 
+
+     $this->PERFORM( $this->get__HTML('SUPPORT', 10, $attr, $id, $class) );  
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xVAR(
+
+    $label = NULL
+
+  )
+  { 
+
+     $this->PERFORM( $this->get_xHTML('SUPPORT', 10, $label) ); 
+
+  }
 
 /**
   *
@@ -1356,9 +2461,30 @@ class Html {
   * RETURN NODE UL _ noHTML TAG
   *
   **/
-  public function _UL($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 0, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG
-  public function xUL($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 0, $label) ); }
+  public function _UL(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+  )
+  { 
+
+     $this->PERFORM( $this->get__HTML('LIST', 0, $attr, $id, $class) );  
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xUL(
+
+    $label = NULL
+
+  )
+  { 
+
+     $this->PERFORM( $this->get_xHTML('LIST', 0, $label) ); 
+
+  }
 
 /**
   *
@@ -1367,9 +2493,30 @@ class Html {
   * RETURN NODE OL _ noHTML TAG
   *
   **/
-  public function _OL($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 1, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xOL($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 1, $label) ); }
+  public function _OL(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+   )
+   { 
+
+     $this->PERFORM( $this->get__HTML('LIST', 1, $attr, $id, $class) );   
+
+   }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xOL(
+
+     $label = NULL  
+
+  )
+  { 
+
+    $this->PERFORM( $this->get_xHTML('LIST', 1, $label) ); 
+
+  }
 
 /**
   *
@@ -1378,9 +2525,30 @@ class Html {
   * RETURN NODE LI _ noHTML TAG
   *
   **/
-  public function _LI($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 2, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  public function xLI($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 2, $label) ); }
+  public function _LI(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+   )
+   { 
+
+     $this->PERFORM( $this->get__HTML('LIST', 2, $attr, $id, $class) );   
+
+   }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xLI(
+
+     $label = NULL  
+
+   )
+   { 
+
+     $this->PERFORM( $this->get_xHTML('LIST', 2, $label) ); 
+
+   }
 
 /**
   *
@@ -1389,9 +2557,30 @@ class Html {
   * RETURN NODE TABLE _ noHTML TAG
   *
   **/
-  public function _TABLE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 3, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  public function xTABLE($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 3, $label) ); }
+  public function _TABLE(
+
+    $attr    =  []
+   ,$id      =  null
+   ,$class   =  null
+
+  )
+  { 
+
+     $this->PERFORM( $this->get__HTML('LIST', 3, $attr, $id, $class) );  
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xTABLE(
+
+    $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('LIST', 3, $label) ); 
+
+ }
 
 /**
   *
@@ -1400,9 +2589,30 @@ class Html {
   * RETURN NODE TR _ noHTML TAG
   *
   **/
-  public function _TR($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 4, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xTR($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 4, $label) ); }
+  public function _TR(
+
+    $attr    =  []
+   ,$id      =  null
+   ,$class   =  null
+
+  )
+  { 
+
+     $this->PERFORM( $this->get__HTML('LIST', 4, $attr, $id, $class) );  
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xTR(
+
+    $label = NULL
+
+  )
+  { 
+
+     $this->PERFORM( $this->get_xHTML('LIST', 4, $label) ); 
+
+  }
 
 /**
   *
@@ -1411,9 +2621,29 @@ class Html {
   * RETURN NODE TD _ noHTML TAG
   *
   **/
-  public function _TD($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 5, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xTD($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 5, $label) ); }
+  public function _TD(
+
+     $attr    =  []
+    ,$id      =  null
+    ,$class   =  null
+
+   )
+   { 
+      $this->PERFORM( $this->get__HTML('LIST', 5, $attr, $id, $class) );  
+
+ }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xTD(
+
+    $label = NULL
+
+ )
+ { 
+
+    $this->PERFORM( $this->get_xHTML('LIST', 5, $label) ); 
+
+ }
 
 /**
   *
@@ -1422,9 +2652,29 @@ class Html {
   * RETURN NODE TH _ noHTML TAG
   *
   **/
-  public function _TH($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 6, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xTH($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 6, $label) );  }
+  public function _TH(
+
+     $attr    =  []
+    ,$id      =  null
+    ,$class   =  null
+
+  )
+  { 
+      $this->PERFORM( $this->get__HTML('LIST', 6, $attr, $id, $class) );  
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xTH(
+
+    $label = NULL
+
+ )
+ { 
+
+    $this->PERFORM( $this->get_xHTML('LIST', 6, $label) ); 
+
+ }
 
 /**
   *
@@ -1433,9 +2683,31 @@ class Html {
   * RETURN NODE LEGEND _ noHTML TAG
   *
   **/
-  public function _LEGEND($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 7, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xLEGEND($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 7, $label) ); }
+  public function _LEGEND(
+
+
+    $attr     =  []
+   ,$id       =  null
+   ,$class    =  null
+
+  )
+  { 
+
+      $this->PERFORM( $this->get__HTML('LIST', 7, $attr, $id, $class) );   
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xLEGEND(
+
+    $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('LIST', 7, $label) );
+
+ }
 
 /**
   *
@@ -1444,9 +2716,31 @@ class Html {
   * RETURN NODE FIELDSET _ noHTML TAG
   *
   **/
-  public function _FIELDSET($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 8, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xFIELDSET($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 8, $label) ); }
+  public function _FIELDSET(
+
+
+    $attr     =  []
+   ,$id       =  null
+   ,$class    =  null
+
+  )
+  { 
+
+      $this->PERFORM( $this->get__HTML('LIST', 8, $attr, $id, $class) );   
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xFIELDSET(
+
+    $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('LIST', 8, $label) );
+
+  }
 
 /**
   *
@@ -1455,9 +2749,31 @@ class Html {
   * RETURN NODE TBODY _ noHTML TAG
   *
   **/
-  public function _TBODY($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 9, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  public function xTBODY($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 9, $label) ); }
+  public function _TBODY(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    = null
+
+ )
+ { 
+
+     $this->PERFORM( $this->get__HTML('LIST', 9, $attr, $id, $class) );    
+
+ }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xTBODY(
+
+
+    $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('LIST', 9, $label) );
+
+  }
 
 /**
   *
@@ -1466,9 +2782,31 @@ class Html {
   * RETURN NODE TFOOT _ noHTML TAG
   *
   **/
-  public function _TFOOT($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 10, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  public function xTFOOT($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 10, $label) );  }
+  public function _TFOOT(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    = null
+
+  )
+  { 
+
+     $this->PERFORM( $this->get__HTML('LIST', 10, $attr, $id, $class) );   
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xTFOOT(
+
+
+    $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('LIST', 10, $label) );  
+
+  }
 
 /**
   *
@@ -1477,9 +2815,30 @@ class Html {
   * RETURN NODE THEAD _ noHTML TAG
   *
   **/
-  public function _THEAD($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('LIST', 11, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xTHEAD($label = NULL) { $this->PERFORM( $this->get_xHTML('LIST', 11, $label) );  }
+  public function _THEAD(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+   )
+   { 
+
+      $this->PERFORM( $this->get__HTML('LIST', 11, $attr, $id, $class) );  
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xTHEAD(
+
+    $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('LIST', 11, $label) );  
+
+  }
 
 /**
   *
@@ -1488,9 +2847,30 @@ class Html {
   * RETURN NODE SPAN _ noHTML TAG
   *
   **/
-  public function _SPAN($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 0, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  public function xSPAN($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 0, $label) ); }
+  public function _SPAN(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+   )
+   { 
+
+      $this->PERFORM( $this->get__HTML('FORMAT', 0, $attr, $id, $class) ); 
+
+   }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xSPAN(
+
+    $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('FORMAT', 0, $label) ); 
+
+  }
 
 /**
   *
@@ -1499,9 +2879,30 @@ class Html {
   * RETURN NODE EM _ noHTML TAG
   *
   **/
-  public function _EM($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 1, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  public function xEM($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 1, $label) ); }
+  public function _EM(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+ )
+ { 
+
+     $this->PERFORM( $this->get__HTML('FORMAT', 1, $attr, $id, $class) );  
+
+ }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xEM(
+
+    $label = NULL  
+
+   )
+   { 
+
+     $this->PERFORM( $this->get_xHTML('FORMAT', 1, $label) ); 
+
+   }
 
 /**
   *
@@ -1510,9 +2911,30 @@ class Html {
   * RETURN NODE B _ noHTML TAG
   *
   **/
-  public function _B($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 2, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xB($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 2, $label) ); }
+  public function _B(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+ )
+ { 
+
+     $this->PERFORM( $this->get__HTML('FORMAT', 2, $attr, $id, $class) );  
+
+ }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xB(
+
+    $label = NULL  
+
+ )
+ { 
+
+     $this->PERFORM( $this->get_xHTML('FORMAT', 2, $label) ); 
+
+ }
 
 /**
   *
@@ -1521,9 +2943,30 @@ class Html {
   * RETURN NODE I _ noHTML TAG
   *
   **/
-  public function _I($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 3, $js, $id, $class) );   }
+  public function _I(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+   )
+   {   
+
+       $this->PERFORM( $this->get__HTML('FORMAT', 3, $attr, $id, $class) );   
+
+   }
+
 // CLOSING_METHOD_noHTML_TAG
-  public function xI($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 3, $label) );  }
+  public function xI(
+
+    $label = NULL 
+
+ )
+ { 
+
+     $this->PERFORM( $this->get_xHTML('FORMAT', 3, $label) );  
+ 
+ }
 
 /**
   *
@@ -1532,9 +2975,30 @@ class Html {
   * RETURN NODE SMALL _ noHTML TAG
   *
   **/
-  public function _SMALL($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 4, $js, $id, $class) );   }
+  public function _SMALL(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+  )
+  {   
+
+      $this->PERFORM( $this->get__HTML('FORMAT', 4, $attr, $id, $class) );   
+
+  }
+
 // CLOSING_METHOD_noHTML_TAG
-  public function xSMALL($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 4, $label) ); }
+  public function xSMALL(
+
+    $label = NULL 
+
+  )
+  { 
+ $this->PERFORM( $this->get_xHTML('FORMAT', 4, $label) ); 
+
+  }
+
 
 /**
   *
@@ -1543,9 +3007,30 @@ class Html {
   * RETURN NODE STRIKE _ noHTML TAG
   *
   **/
-  public function _STRIKE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 5, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xSTRIKE($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 5, $label) );  }
+  public function _STRIKE(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+  )
+  { 
+
+     $this->PERFORM( $this->get__HTML('FORMAT', 5, $attr, $id, $class) );   
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xSTRIKE(
+
+     $label = NULL
+
+  )
+  { 
+
+     $this->PERFORM( $this->get_xHTML('FORMAT', 5, $label) ); 
+
+  }
 
 /**
   *
@@ -1554,9 +3039,30 @@ class Html {
   * RETURN NODE MARQUEE _ noHTML TAG
   *
   **/
-  public function _MARQUEE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 6, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  public function xMARQUEE($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 6, $label) ); }
+  public function _MARQUEE(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+  )
+  { 
+
+     $this->PERFORM( $this->get__HTML('FORMAT', 6, $attr, $id, $class) );   
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xMARQUEE(
+
+     $label = NULL
+
+   )
+   { 
+
+     $this->PERFORM( $this->get_xHTML('FORMAT', 6, $label) ); 
+
+   }
 
 /**
   *
@@ -1565,9 +3071,29 @@ class Html {
   * RETURN NODE CENTER _ noHTML TAG
   *
   **/
-  public function _CENTER($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 7, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xCENTER($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 7, $label) );  }
+  public function _CENTER(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+  )
+  {   
+
+       $this->PERFORM( $this->get__HTML('FORMAT', 7, $attr, $id, $class) ); 
+ 
+  }
+  // CLOSING_METHOD_noHTML_TAG
+  public function xCENTER(
+
+    $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('FORMAT', 7, $label) ); 
+
+ }
 
 /**
   *
@@ -1576,9 +3102,29 @@ class Html {
   * RETURN NODE CODE _ noHTML TAG
   *
   **/
-  public function _CODE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 8, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xCODE($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 8, $label) );  }
+  public function _CODE(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+  )
+  {   
+
+       $this->PERFORM( $this->get__HTML('FORMAT', 8, $attr, $id, $class) ); 
+ 
+  }
+  // CLOSING_METHOD_noHTML_TAG
+  public function xCODE(
+
+    $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('FORMAT', 8, $label) ); 
+
+  }
 
 /**
   *
@@ -1587,9 +3133,30 @@ class Html {
   * RETURN NODE ABBR _ noHTML TAG
   *
   **/
-  public function _ABBR($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 9, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xABBR($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 9, $label) ); }
+  public function _ABBR(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+  )
+  { 
+
+      $this->PERFORM( $this->get__HTML('FORMAT', 9, $attr, $id, $class) );   
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xABBR(
+
+      $label = NULL
+
+  )
+  { 
+
+    $this->PERFORM( $this->get_xHTML('FORMAT', 9, $label) ); 
+
+  }
 
 /**
   *
@@ -1598,9 +3165,29 @@ class Html {
   * RETURN NODE MAP _ noHTML TAG
   *
   **/
-  public function _MAP($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 10, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xMAP($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 10, $label) ); }
+  public function _MAP(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+  )
+  { 
+
+      $this->PERFORM( $this->get__HTML('FORMAT', 10, $attr, $id, $class) );  
+
+     }
+  // CLOSING_METHOD_noHTML_TAG
+  public function xMAP(
+
+      $label = NULL
+
+  )
+  { 
+
+    $this->PERFORM( $this->get_xHTML('FORMAT', 10, $label) );
+
+  }
 
 /**
   *
@@ -1609,20 +3196,62 @@ class Html {
   * RETURN NODE CANVAS _ noHTML TAG
   *
   **/
-  public function _CANVAS($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 11, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  public function xCANVAS($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 11, $label) ); }
+  public function _CANVAS(
+
+     $attr     =  []
+    ,$id       =  null
+    ,$class    =  null
+
+  )
+  { 
+
+      $this->PERFORM( $this->get__HTML('FORMAT', 11, $attr, $id, $class) );  
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xCANVAS(
+
+    $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('FORMAT', 11, $label) );
+
+  }
 
 /**
   *
   * @method public function noHTML
   * @ Method Defined CITE _ AND x TAG noHTML  
   * RETURN NODE CITE _ noHTML TAG
-  *
+  * 
   **/
-  public function _CITE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 12, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xCITE($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 12, $label) ); }
+  public function _CITE(
+
+     $attr     =  []
+    ,$id       =  null
+    ,$class    =  null
+
+  )
+  { 
+
+      $this->PERFORM( $this->get__HTML('FORMAT', 12, $attr, $id, $class) );  
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xCITE(
+
+    $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('FORMAT', 12, $label) );
+
+  }
 
 /**
   *
@@ -1631,9 +3260,30 @@ class Html {
   * RETURN NODE DATA _ noHTML TAG
   *
   **/
-  public function _DATA($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 13, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG
-  public function xDATA($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 13, $label) ); }
+  public function _DATA(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+  )
+  { 
+
+    $this->PERFORM( $this->get__HTML('FORMAT', 13, $attr, $id, $class) ); 
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xDATA(
+
+    $label = NULL
+
+  )
+  { 
+
+    $this->PERFORM( $this->get_xHTML('FORMAT', 13, $label) ); 
+
+  }
 
 /**
   *
@@ -1642,9 +3292,30 @@ class Html {
   * RETURN NODE DL _ noHTML TAG
   *
   **/
-  public function _DL($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 14, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xDL($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 14, $label) ); }
+  public function _DL(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+  )
+  { 
+
+    $this->PERFORM( $this->get__HTML('FORMAT', 14, $attr, $id, $class) ); 
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xDL(
+
+    $label = NULL
+
+  )
+  { 
+
+    $this->PERFORM( $this->get_xHTML('FORMAT', 14, $label) ); 
+
+  }
 
 /**
   *
@@ -1653,9 +3324,29 @@ class Html {
   * RETURN NODE DT _ noHTML TAG
   *
   **/
-  public function _DT($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 15, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xDT($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 15, $label) ); }
+  public function _DT(  
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+   )
+   { 
+
+     $this->PERFORM( $this->get__HTML('FORMAT', 15, $attr, $id, $class) );  
+
+   }
+  // CLOSING_METHOD_noHTML_TAG
+  public function xDT(
+
+      $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('FORMAT', 15, $label) );
+
+  }
 
 /**
   *
@@ -1664,9 +3355,29 @@ class Html {
   * RETURN NODE DD _ noHTML TAG
   *
   **/
-  public function _DD($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 16, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  public function xDD($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 16, $label) ); }
+  public function _DD(  
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+   )
+   { 
+
+     $this->PERFORM( $this->get__HTML('FORMAT', 16, $attr, $id, $class) );  
+
+    }
+  // CLOSING_METHOD_noHTML_TAG
+  public function xDD(
+
+      $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('FORMAT', 16, $label) );
+
+  }
 
 /**
   *
@@ -1675,9 +3386,30 @@ class Html {
   * RETURN NODE DFN _ noHTML TAG
   *
   **/
-  public function _DFN($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 17, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xDFN($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 17, $label) ); }
+  public function _DFN(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+  )
+  { 
+
+      $this->PERFORM( $this->get__HTML('FORMAT', 17, $attr, $id, $class) );   
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xDFN(
+
+    $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('FORMAT', 17, $label) ); 
+  
+  }
 
 /**
   *
@@ -1686,9 +3418,30 @@ class Html {
   * RETURN NODE INS _ noHTML TAG
   *
   **/
-  public function _INS($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMAT', 18, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  public function xINS($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMAT', 18, $label) ); }
+  public function _INS(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+  )
+  { 
+
+      $this->PERFORM( $this->get__HTML('FORMAT', 18, $attr, $id, $class) );   
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xINS(
+
+    $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('FORMAT', 18, $label) ); 
+  
+  }
 
 /**
   *
@@ -1697,9 +3450,30 @@ class Html {
   * RETURN NODE DEL _ noHTML TAG
   *
   **/
-  public function _DEL($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 0, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  public function xDEL($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 0, $label) );  }
+  public function _DEL(
+
+       $attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+
+ )
+ { 
+
+    $this->PERFORM( $this->get__HTML('FORMATC', 0, $attr, $id, $class) );  
+
+ }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xDEL(
+
+      $label = NULL
+
+  )
+  { 
+
+       $this->PERFORM( $this->get_xHTML('FORMATC', 0, $label) );  
+
+  }
 
 /**
   *
@@ -1708,9 +3482,30 @@ class Html {
   * RETURN NODE KBD _ noHTML TAG
   *
   **/
-  public function _KBD($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 1, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG
-  public function xKBD($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 1, $label) );  }
+  public function _KBD(
+
+       $attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+
+ )
+ { 
+
+    $this->PERFORM( $this->get__HTML('FORMATC', 1, $attr, $id, $class) );  
+
+ }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xKBD(
+
+      $label = NULL
+
+  )
+  { 
+
+       $this->PERFORM( $this->get_xHTML('FORMATC', 1, $label) );  
+
+  }
 
 /**
   *
@@ -1719,9 +3514,30 @@ class Html {
   * RETURN NODE MARK _ noHTML TAG
   *
   **/
-  public function _MARK($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 2, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xMARK($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 2, $label) );  }
+  public function _MARK(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+  )
+  { 
+
+      $this->PERFORM( $this->get__HTML('FORMATC', 2, $attr, $id, $class) );   
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xMARK(
+
+      $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('FORMATC', 2, $label) );  
+
+ }
 
 /**
   *
@@ -1730,9 +3546,30 @@ class Html {
   * RETURN NODE PRE _ noHTML TAG
   *
   **/
-  public function _PRE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 3, $js, $id, $class ) );    }
-// CLOSING_METHOD_noHTML_TAG
-  public function xPRE($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 3, $label) );  }
+  public function _PRE(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+  )
+  { 
+
+      $this->PERFORM( $this->get__HTML('FORMATC', 3, $attr, $id, $class ) );  
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xPRE(
+
+      $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('FORMATC', 3, $label) );  
+
+  }
 
 /**
   *
@@ -1741,9 +3578,30 @@ class Html {
   * RETURN NODE RT _ noHTML TAG
   *
   **/
-  public function _RT($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 4, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xRT($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 4, $label) ); }
+  public function _RT(
+
+      $attr    = []
+     ,$id      = null
+     ,$class   = null
+
+  )
+  { 
+
+      $this->PERFORM( $this->get__HTML('FORMATC', 4, $attr, $id, $class) );  
+
+ }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xRT(
+
+      $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('FORMATC', 4, $label) ); 
+  
+  }
 
 /**
   *
@@ -1752,9 +3610,30 @@ class Html {
   * RETURN NODE RP _ noHTML TAG
   *
   **/
-  public function _RP($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 5, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xRP($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 5, $label) );  }
+  public function _RP(
+
+      $attr    = []
+     ,$id      = null
+     ,$class   = null
+
+  )
+  { 
+
+      $this->PERFORM( $this->get__HTML('FORMATC', 5, $attr, $id, $class) );  
+
+ }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xRP(
+
+      $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('FORMATC', 5, $label) ); 
+
+ }
 
 /**
   *
@@ -1763,9 +3642,29 @@ class Html {
   * RETURN NODE RUBY _ noHTML TAG
   *
   **/
-  public function _RUBY($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 6, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  public function xRUBY($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 6, $label) );  }
+  public function _RUBY(
+
+        $attr     =  []
+       ,$id       =  null
+       ,$class    =  null
+
+    )
+    { 
+
+        $this->PERFORM( $this->get__HTML('FORMATC', 6, $attr, $id, $class) );   
+   }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xRUBY(
+
+      $label = NULL
+
+   )
+   { 
+
+      $this->PERFORM( $this->get_xHTML('FORMATC', 6, $label) ); 
+
+  }
 
 /**
   *
@@ -1774,9 +3673,29 @@ class Html {
   * RETURN NODE S _ noHTML TAG
   *
   **/
-  public function _S($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 7, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xS($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 7, $label) ); }
+  public function _S(
+
+        $attr     =  []
+       ,$id       =  null
+       ,$class    =  null
+
+    )
+    { 
+
+        $this->PERFORM( $this->get__HTML('FORMATC', 7, $attr, $id, $class) );   
+   }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xS(
+
+      $label = NULL
+
+   )
+   { 
+
+      $this->PERFORM( $this->get_xHTML('FORMATC', 7, $label) ); 
+
+   }
 
 /**
   *
@@ -1785,9 +3704,30 @@ class Html {
   * RETURN NODE SAMP _ noHTML TAG
   *
   **/
-  public function _SAMP($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 8, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xSAMP($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 8, $label) );  }
+  public function _SAMP(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+  )
+  { 
+
+      $this->PERFORM( $this->get__HTML('FORMATC', 8, $attr, $id, $class) );   
+
+ }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xSAMP(
+
+     $label = NULL
+
+  )
+  { 
+
+    $this->PERFORM( $this->get_xHTML('FORMATC', 8, $label) );  
+
+  }
 
 /**
   *
@@ -1796,9 +3736,30 @@ class Html {
   * RETURN NODE STRONG _ noHTML TAG
   *
   **/
-  public function _STRONG($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 9, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  public function xSTRONG($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 9, $label) );  }
+  public function _STRONG(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+  )
+  { 
+
+      $this->PERFORM( $this->get__HTML('FORMATC', 9, $attr, $id, $class) );   
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xSTRONG(
+
+     $label = NULL
+
+  )
+  { 
+
+    $this->PERFORM( $this->get_xHTML('FORMATC', 9, $label) );  
+
+  }
 
 /**
   *
@@ -1807,9 +3768,30 @@ class Html {
   * RETURN NODE SUB _ noHTML TAG
   *
   **/
-  public function _SUB($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 10, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  public function xSUB($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 10, $label ));  }
+  public function _SUB(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+  )
+  { 
+
+     $this->PERFORM( $this->get__HTML('FORMATC', 10, $attr, $id, $class) );  
+ 
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xSUB(
+
+      $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('FORMATC', 10, $label )); 
+
+ }
 
 /**
   *
@@ -1818,9 +3800,30 @@ class Html {
   * RETURN NODE SUP _ noHTML TAG
   *
   **/
-  public function _SUP($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 11, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  public function xSUP($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 11, $label) );  }
+  public function _SUP(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+  )
+  { 
+
+     $this->PERFORM( $this->get__HTML('FORMATC', 11, $attr, $id, $class) );  
+ 
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  public function xSUP(
+
+      $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('FORMATC', 11, $label) ); 
+
+  }
 
 /**
   *
@@ -1829,9 +3832,31 @@ class Html {
   * RETURN NODE WBR _ noHTML TAG
   *
   **/
-  public function _WBR($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 12, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  public function xWBR($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 12, $label) );  }
+  public function _WBR(
+
+
+       $attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+
+  ) 
+  { 
+
+      $this->PERFORM( $this->get__HTML('FORMATC', 12, $attr, $id, $class) );   
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xWBR(
+
+      $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('FORMATC', 12, $label) ); 
+
+  }
 
 /**
   *
@@ -1840,9 +3865,31 @@ class Html {
   * RETURN NODE Q _ noHTML TAG
   *
   **/
-  public function _Q($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('FORMATC', 13, $js, $id, $class) );     }
-// CLOSING_METHOD_noHTML_TAG
-  public function xQ($label = NULL) { $this->PERFORM( $this->get_xHTML('FORMATC', 13, $label) );  }
+  public function _Q(
+
+
+       $attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+
+  ) 
+  { 
+
+      $this->PERFORM( $this->get__HTML('FORMATC', 13, $attr, $id, $class) );   
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xQ(
+
+      $label = NULL
+
+  )
+  { 
+
+      $this->PERFORM( $this->get_xHTML('FORMATC', 13, $label) ); 
+
+  }
 
 /**
   *
@@ -1851,9 +3898,30 @@ class Html {
   * RETURN NODE HEAD _ noHTML TAG
   *
   **/
-  public function _HEAD($js=[], $id=null, $class=null) { $this->PERFORM($this->get__HTML('STRUCTURE', 0, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  public function xHEAD($label = NULL) { $this->PERFORM( $this->get_xHTML('STRUCTURE', 0, $label) ); }
+  public function _HEAD(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+  )
+  { 
+
+      $this->PERFORM($this->get__HTML('STRUCTURE', 0, $attr, $id, $class) );   
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xHEAD(
+
+      $label = NULL  
+
+   )
+   { 
+
+     $this->PERFORM( $this->get_xHTML('STRUCTURE', 0, $label) );
+
+ }
 
 /**
   *
@@ -1862,9 +3930,30 @@ class Html {
   * RETURN NODE TITLE _ noHTML TAG
   *
   **/
-  public function _TITLE($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('STRUCTURE', 1, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  public function xTITLE($label = NULL) { $this->PERFORM( $this->get_xHTML('STRUCTURE', 1, $label) );  }
+  public function _TITLE(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+  )
+  { 
+
+      $this->PERFORM( $this->get__HTML('STRUCTURE', 1, $attr, $id, $class) );  
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xTITLE(
+
+      $label = NULL  
+
+   )
+   { 
+
+     $this->PERFORM( $this->get_xHTML('STRUCTURE', 1, $label) );
+
+  }
 
 /**
   *
@@ -1873,9 +3962,31 @@ class Html {
   * RETURN NODE BODY _ noHTML TAG
   *
   **/
-  public function _BODY($js=[], $id=null, $class=null) { $this->PERFORM( $this->get__HTML('STRUCTURE', 2, $js, $id, $class) );     }
-// CLOSING_METHOD_noHTML_TAG
-  public function xBODY($label = NULL) { $this->PERFORM( $this->get_xHTML('STRUCTURE', 2, $label) ); }
+  public function _BODY(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+  )
+  { 
+
+     $this->PERFORM( $this->get__HTML('STRUCTURE', 2, $attr, $id, $class) ); 
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xBODY(
+
+
+      $label = NULL
+
+ )
+ { 
+
+     $this->PERFORM( $this->get_xHTML('STRUCTURE', 2, $label) ); 
+
+ }
 
 /**
   *
@@ -1884,17 +3995,38 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function _noHTML($js=[], $id=null, $class=null) { $this->PERFORM($this->cpe_FileHandler_html_type($js, $id, $class)); }
+  public function _noHTML(
 
-// CLOSING_METHOD_noHTML_TAG
-  public function xnoHTML($label = NULL) { $this->PERFORM( $this->get_xHTML('STRUCTURE', 3, $label) ); }
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+  )
+  { 
+
+     $this->PERFORM($this->cpe_FileHandler_html_type($attr, $id, $class)); 
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  public function xnoHTML(
+
+
+      $label = NULL
+
+ )
+ { 
+
+     $this->PERFORM( $this->get_xHTML('STRUCTURE', 3, $label) ); 
+
+ }
 
 /**
  *
  *
  * public function inline noHTML
  * @var @property $value = NULL | create function and return the content my_content();
- * @var @property $js = [] | Html attribute for Js DOM such as angular and other HTML attributes
+ * @var @property $attr = [] | Html attribute for Js DOM such as angular and other HTML attributes
  * @var @property $id = NULL | html id in this section must be unique
  * @var @property $class = NULL | html class repared for front end framework such as bootstrap, materialize, foundation
  * @var @property $label = NULL | html comment label where you can identify your codes ib inspec elemnt or view source
@@ -1941,11 +4073,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function H1($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
-  return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 0, $value, $js, $id, $class, $label, $assoc);
+  public function H1(
 
-}
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  ) 
+  {
+  
+    return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 0, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -1954,11 +4096,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function H2($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 1, $value, $js, $id, $class, $label, $assoc);
+  public function H2(
 
-}
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  ) 
+  {
+  
+   return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 1, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -1967,11 +4119,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function H3($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 2, $value, $js, $id, $class, $label, $assoc);
+  public function H3(
 
-}
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+  )
+  {
+  
+     return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 2, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -1980,11 +4142,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function H4($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 3, $value, $js, $id, $class, $label, $assoc);
+  public function H4(
 
-}
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+  )
+  {
+  
+     return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 3, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -1993,11 +4165,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function H5($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 4, $value, $js, $id, $class, $label, $assoc);
+  public function H5(
 
-}
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
+  
+   return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 4, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2006,11 +4188,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function H6($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 5, $value, $js, $id, $class, $label, $assoc);
+  public function H6(
 
-}
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
+  
+   return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 5, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2019,11 +4211,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function DIV($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 6, $value, $js, $id, $class, $label, $assoc);
+  public function DIV(
 
-}
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
+  
+   return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 6, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2032,11 +4234,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function P($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 7, $value, $js, $id, $class, $label, $assoc);
+  public function P(
 
-}
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
+  
+   return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 7, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2045,11 +4257,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function BUTTON($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 8, $value, $js, $id, $class, $label, $assoc);
+  public function BUTTON(
 
-}
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  )
+  {
+  
+     return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 8, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2058,11 +4280,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function A($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 9, $value, $js, $id, $class, $label, $assoc);
+  public function A(
 
-}
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  )
+  {
+  
+     return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 9, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2071,11 +4303,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function IFRAME($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 10, $value, $js, $id, $class, $label, $assoc);
+  public function IFRAME(
 
-}
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+  )
+  {
+  
+    return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 10, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2084,10 +4326,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function MAIN($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function MAIN(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 11, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 11, $value, $attr, $id, $class, $label, $assoc);
+  
+  }  
 
 /**
   *
@@ -2096,10 +4349,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function NAV($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function NAV(
+
+        $value     =  null
+       ,$attr      =  []
+       ,$id        =  null
+       ,$class     =  null
+       ,$label     =  null
+       ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 12, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 12, $value, $attr, $id, $class, $label, $assoc);
+   
+  }
 
 /**
   *
@@ -2108,10 +4372,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function SELECT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function SELECT(
+
+        $value     =  null
+       ,$attr      =  []
+       ,$id        =  null
+       ,$class     =  null
+       ,$label     =  null
+       ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 13, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 13, $value, $attr, $id, $class, $label, $assoc);
+   
+  }
 
 /**
   *
@@ -2120,10 +4395,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function FORM($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function FORM(
+
+        $value     =  null
+       ,$attr      =  []
+       ,$id        =  null
+       ,$class     =  null
+       ,$label     =  null
+       ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 14, $value, $js, $id, $class, $label, $assoc);
-}
+   return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 14, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2132,10 +4418,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function PICTURE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function PICTURE(
+
+        $value     =  null
+       ,$attr      =  []
+       ,$id        =  null
+       ,$class     =  null
+       ,$label     =  null
+       ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 15, $value, $js, $id, $class, $label, $assoc);
-}
+   return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 15, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2144,10 +4441,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function SECTION($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function SECTION(
+
+        $value     =  null
+       ,$attr      =  []
+       ,$id        =  null
+       ,$class     =  null
+       ,$label     =  null
+       ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 16, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 16, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2156,10 +4464,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function TEXTAREA($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function TEXTAREA(
+
+        $value     =  null
+       ,$attr      =  []
+       ,$id        =  null
+       ,$class     =  null
+       ,$label     =  null
+       ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 17, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 17, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2168,10 +4487,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function FOOTER($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function FOOTER(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 18, $value, $js, $id, $class, $label, $assoc);
-}
+   return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 18, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2180,10 +4510,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function AUDIO($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function AUDIO(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 0, $value, $js, $id, $class, $label, $assoc);
-}
+   return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 0, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2192,10 +4533,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function VIDEO($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function VIDEO(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 1, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 1, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2204,10 +4556,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function ADDRESS($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function ADDRESS(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 2, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 2, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2216,10 +4579,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function COLGROUP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function COLGROUP(
+
+        $value     =  null
+       ,$attr      =  []
+       ,$id        =  null
+       ,$class     =  null
+       ,$label     =  null
+       ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 3, $value, $js, $id, $class, $label, $assoc);
-}
+   return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 3, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2228,10 +4602,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function BDI($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function BDI(
+
+        $value     =  null
+       ,$attr      =  []
+       ,$id        =  null
+       ,$class     =  null
+       ,$label     =  null
+       ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 4, $value, $js, $id, $class, $label, $assoc);
-}
+   return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 4, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2240,10 +4625,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function BDO($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function BDO(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 5, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 5, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2252,10 +4648,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function BLOCKQUOTE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function BLOCKQUOTE(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 6, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 6, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2264,10 +4671,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function CAPTION($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function CAPTION(
+
+        $value     =  null
+       ,$attr      =  []
+       ,$id        =  null
+       ,$class     =  null
+       ,$label     =  null
+       ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 7, $value, $js, $id, $class, $label, $assoc);
-}
+     return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 7, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2276,10 +4694,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function LABEL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function LABEL(
+
+        $value     =  null
+       ,$attr      =  []
+       ,$id        =  null
+       ,$class     =  null
+       ,$label     =  null
+       ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 8, $value, $js, $id, $class, $label, $assoc);
-}
+     return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 8, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2288,10 +4717,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function DATALIST($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function DATALIST(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 9, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 9, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2300,10 +4740,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function DETAILS($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function DETAILS(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 10, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 10, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2312,10 +4763,20 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function SUMMARY($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function SUMMARY(
+
+        $value     =  null
+       ,$attr      =  []
+       ,$id        =  null
+       ,$class     =  null
+       ,$label     =  null
+       ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 11, $value, $js, $id, $class, $label, $assoc);
-}
+     return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 11, $value, $attr, $id, $class, $label, $assoc);
+  }
 
 /**
   *
@@ -2324,10 +4785,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function DIALOG($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function DIALOG(
+
+        $value     =  null
+       ,$attr      =  []
+       ,$id        =  null
+       ,$class     =  null
+       ,$label     =  null
+       ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 12, $value, $js, $id, $class, $label, $assoc);
-}
+     return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 12, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2336,10 +4808,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function OPTION($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function OPTION(
+
+         $value     =  null
+        ,$attr      =  []
+        ,$id        =  null
+        ,$class     =  null
+        ,$label     =  null
+        ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 13, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('SECONDARY', 13, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2348,10 +4831,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function FIGURE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function FIGURE(
+
+         $value     =  null
+        ,$attr      =  []
+        ,$id        =  null
+        ,$class     =  null
+        ,$label     =  null
+        ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 0, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 0, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2360,10 +4854,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function FIGCAPTION($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function FIGCAPTION(
+
+         $value     =  null
+        ,$attr      =  []
+        ,$id        =  null
+        ,$class     =  null
+        ,$label     =  null
+        ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 1, $value, $js, $id, $class, $label, $assoc);
-}
+   return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 1, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2372,10 +4877,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function METER($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function METER(
+
+         $value     =  null
+        ,$attr      =  []
+        ,$id        =  null
+        ,$class     =  null
+        ,$label     =  null
+        ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 2, $value, $js, $id, $class, $label, $assoc);
-}
+   return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 2, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2384,10 +4900,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function OBJECT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function OBJECT(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 3, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 3, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2396,10 +4923,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function OPTGROUP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function OPTGROUP(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 4, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 4, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2408,10 +4946,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function OUTPUT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function OUTPUT(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 5, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 5, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2420,10 +4969,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function PROGRESS($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function PROGRESS(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 6, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 6, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2432,10 +4992,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function SVG($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function SVG(
+
+        $value     =  null
+       ,$attr      =  []
+       ,$id        =  null
+       ,$class     =  null
+       ,$label     =  null
+       ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 7, $value, $js, $id, $class, $label, $assoc);
-}
+     return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 7, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2444,10 +5015,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function TEMPLATE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function TEMPLATE(
+
+        $value     =  null
+       ,$attr      =  []
+       ,$id        =  null
+       ,$class     =  null
+       ,$label     =  null
+       ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 8, $value, $js, $id, $class, $label, $assoc);
-}
+     return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 8, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2456,10 +5038,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function TIME($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function TIME(
+
+        $value      =  null
+       ,$attr       =  []
+       ,$id         =  null
+       ,$class      =  null
+       ,$label      =  null
+       ,$assoc      =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 9, $value, $js, $id, $class, $label, $assoc);
-}
+     return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 9, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2468,10 +5061,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function VAR($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function VAR(
+
+        $value      =  null
+       ,$attr       =  []
+       ,$id         =  null
+       ,$class      =  null
+       ,$label      =  null
+       ,$assoc      =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 10, $value, $js, $id, $class, $label, $assoc);
-}
+     return $this->_istrue_assoc_ELEMENTINLINE('SUPPORT', 10, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2480,10 +5084,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function UL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function UL(
+
+        $value      =  null
+       ,$attr       =  []
+       ,$id         =  null
+       ,$class      =  null
+       ,$label      =  null
+       ,$assoc      =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 0, $value, $js, $id, $class, $label, $assoc);
-}
+     return $this->_istrue_assoc_ELEMENTINLINE('LIST', 0, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2492,10 +5107,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function OL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function OL(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 1, $value, $js, $id, $class, $label, $assoc);
-}
+   return $this->_istrue_assoc_ELEMENTINLINE('LIST', 1, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2504,10 +5130,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function LI($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function LI(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 2, $value, $js, $id, $class, $label, $assoc);
-}
+   return $this->_istrue_assoc_ELEMENTINLINE('LIST', 2, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2516,10 +5153,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function TABLE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function TABLE(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 3, $value, $js, $id, $class, $label, $assoc);
-}
+   return $this->_istrue_assoc_ELEMENTINLINE('LIST', 3, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2528,10 +5176,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function TR($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function TR(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 4, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('LIST', 4, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2540,10 +5199,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function TD($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function TD(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 5, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('LIST', 5, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2552,10 +5222,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function TH($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function TH(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 6, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('LIST', 6, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2564,10 +5245,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function LEGEND($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function LEGEND(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 7, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('LIST', 7, $value, $attr, $id, $class, $label, $assoc);
+ 
+ }
 
 /**
   *
@@ -2576,10 +5268,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function FIELDSET($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function FIELDSET(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 8, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('LIST', 8, $value, $attr, $id, $class, $label, $assoc);
+ 
+ }
 
 /**
   *
@@ -2588,10 +5291,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function TBODY($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function TBODY(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 9, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('LIST', 9, $value, $attr, $id, $class, $label, $assoc);
+ 
+ }
 
 /**
   *
@@ -2600,10 +5314,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function TFOOT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function TFOOT(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 10, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('LIST', 10, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2612,10 +5337,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function THEAD($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function THEAD(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return $this->_istrue_assoc_ELEMENTINLINE('LIST', 11, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('LIST', 11, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2624,10 +5360,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function SPAN($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function SPAN(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 0, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 0, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2636,10 +5383,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function EM($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function EM(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        = null
+      ,$class     = null
+      ,$label     = null
+      ,$assoc     = null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 1, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 1, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2648,10 +5406,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function B($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function B(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        = null
+      ,$class     = null
+      ,$label     = null
+      ,$assoc     = null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 2, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 2, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2660,10 +5429,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function I($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function I(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        = null
+      ,$class     = null
+      ,$label     = null
+      ,$assoc     = null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 2, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 2, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2672,10 +5452,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function SMALL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function SMALL(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 3, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 3, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2684,10 +5475,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function STRIKE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function STRIKE(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 4, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 4, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2696,10 +5498,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function MARQUEE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function MARQUEE(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 5, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 5, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2708,10 +5521,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function CENTER($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function CENTER(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 6, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 6, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2720,10 +5544,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function CODE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function CODE(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 7, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 7, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2732,10 +5567,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function ABBR($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function ABBR(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 8, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 8, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2744,10 +5590,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function MAP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function MAP(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 9, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 9, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2756,10 +5613,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function CANVAS($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function CANVAS(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 10, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 10, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2768,10 +5636,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function CITE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function CITE(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 11, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 11, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2780,10 +5659,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function DATA($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function DATA(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 12, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 12, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2792,10 +5682,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function DL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function DL(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 13, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 13, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2804,10 +5705,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function DT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function DT(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 14, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 14, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2816,10 +5728,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function DD($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function DD(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 15, $value, $js, $id, $class, $label, $assoc);
-}
+   return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 15, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2828,10 +5751,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function DFN($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function DFN(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 16, $value, $js, $id, $class, $label, $assoc);
-}
+   return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 16, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2840,10 +5774,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function INS($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function INS(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 17, $value, $js, $id, $class, $label, $assoc);
-}
+   return $this->_istrue_assoc_ELEMENTINLINE('FORMAT', 17, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2852,10 +5797,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function DEL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function DEL(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 0, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 0, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2864,10 +5820,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function KBD($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function KBD(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 1, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 1, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2876,10 +5843,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function MARK($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function MARK(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 2, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 2, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2888,10 +5866,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function PRE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function PRE(
+
+        $value     =  null
+       ,$attr      =  []
+       ,$id        =  null
+       ,$class     =  null
+       ,$label     =  null
+       ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 3, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 3, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2900,10 +5889,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function RT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function RT(
+
+        $value     =  null
+       ,$attr      =  []
+       ,$id        =  null
+       ,$class     =  null
+       ,$label     =  null
+       ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 4, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 4, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2912,10 +5912,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function RP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function RP(
+
+        $value     =  null
+       ,$attr      =  []
+       ,$id        =  null
+       ,$class     =  null
+       ,$label     =  null
+       ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 5, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 5, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2924,10 +5935,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function RUBY($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function RUBY(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 6, $value, $js, $id, $class, $label, $assoc);
-}
+     return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 6, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2936,10 +5958,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function S($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function S(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 7, $value, $js, $id, $class, $label, $assoc);
-}
+     return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 7, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2948,10 +5981,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function SAMP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function SAMP(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 8, $value, $js, $id, $class, $label, $assoc);
-}
+     return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 8, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2960,10 +6004,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function STRONG($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function STRONG(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 9, $value, $js, $id, $class, $label, $assoc);
-}
+   return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 9, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2972,10 +6027,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function SUB($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function SUB(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 10, $value, $js, $id, $class, $label, $assoc);
-}
+   return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 10, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2984,10 +6050,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function SUP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function SUP(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 11, $value, $js, $id, $class, $label, $assoc);
-}
+   return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 11, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2996,10 +6073,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function WBR($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function WBR(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 12, $value, $js, $id, $class, $label, $assoc);
-}
+     return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 12, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -3008,10 +6096,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function Q($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function Q(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 13, $value, $js, $id, $class, $label, $assoc);
-}
+     return $this->_istrue_assoc_ELEMENTINLINE('FORMATC', 13, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -3020,10 +6119,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function HEAD($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function HEAD(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+  )
+  {
   
- return $this->_istrue_assoc_ELEMENTINLINE('STRUCTURE', 0, $value, $js, $id, $class, $label, $assoc);
-}
+     return $this->_istrue_assoc_ELEMENTINLINE('STRUCTURE', 0, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -3032,10 +6142,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function TITLE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function TITLE(
+
+       $value      =  null
+      ,$attr       =  []
+      ,$id         =  null
+      ,$class      =  null
+      ,$label      =  null
+      ,$assoc      =  null
+
+ )
+ {
   
- return $this->_istrue_assoc_ELEMENTINLINE('STRUCTURE', 1, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('STRUCTURE', 1, $value, $attr, $id, $class, $label, $assoc);
+ 
+ }
 
 /**
   *
@@ -3044,10 +6165,21 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function BODY($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function BODY(
+
+       $value      =  null
+      ,$attr       =  []
+      ,$id         =  null
+      ,$class      =  null
+      ,$label      =  null
+      ,$assoc      =  null
+
+ )
+ {
   
- return $this->_istrue_assoc_ELEMENTINLINE('STRUCTURE',2, $value, $js, $id, $class, $label, $assoc);
-}
+    return $this->_istrue_assoc_ELEMENTINLINE('STRUCTURE',2, $value, $attr, $id, $class, $label, $assoc);
+ 
+ }
 
 /**
   *
@@ -3056,9 +6188,20 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  public function noHTML($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  public function noHTML(
+
+       $value      =  null
+      ,$attr       =  []
+      ,$id         =  null
+      ,$class      =  null
+      ,$label      =  null
+      ,$assoc      =  null
+
+ )
+ {
   
- return $this->_istrue_assoc_ELEMENTINLINE('STRUCTURE', 3, $value, $js, $id, $class, $label, $assoc);
+    return $this->_istrue_assoc_ELEMENTINLINE('STRUCTURE', 3, $value, $attr, $id, $class, $label, $assoc); 
+    
 
 } // END OF LINE HTML NO x REQUIRED
 
@@ -3069,9 +6212,9 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   * 
   **/
- private function return_inline_element($elem_val, $elem_key, $js, $id, $class, $assoc) {
+ private function return_inline_element($elem_val, $elem_key, $attr, $id, $class, $assoc) {
 
-   return $this->get_inline__HTML($elem_val, $elem_key, $js, $id, $class, $assoc);    
+   return $this->get_inline__HTML($elem_val, $elem_key, $attr, $id, $class, $assoc);    
 }
 
 /**
@@ -3081,7 +6224,7 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
- private function _istrue_assoc_ELEMENTINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label, $assoc) {
+ private function _istrue_assoc_ELEMENTINLINE($elem_val, $elem_key, $value, $attr, $id, $class, $label, $assoc) {
   
   # INLINE_OR_ANY_LABEL_REQUIRED
   # CHECK_IF_THE_PARAM_REQUIRED_IS_NOT_NULL
@@ -3091,11 +6234,11 @@ class Html {
        # RETURN_INLINE_ELEMENT_NO_HTML_CLOSING_TAG 
      /**
        *
-       * @var $elem_val, $elem_key, $value, $js, $id, $class, $label
+       * @var $elem_val, $elem_key, $value, $attr, $id, $class, $label
        * @method function return_elementINLINE()
        *
        **/
-      $this->PERFORM( $this->return_elementINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label) );
+      $this->PERFORM( $this->return_elementINLINE($elem_val, $elem_key, $value, $attr, $id, $class, $label) );
   } 
 
   # INLINE_OR_ANY_LABEL_REQUIRED 
@@ -3104,11 +6247,11 @@ class Html {
        
      /**
        * THEN_IF_IT_IS TRUE_RETURN!
-       * @var  $elem_val, $elem_key, $value, $js, $id, $class, $label
+       * @var  $elem_val, $elem_key, $value, $attr, $id, $class, $label
        * @method function _elemenHTMLINLINE()
        *
        **/
-     return $this->_elemenHTMLINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label);  
+     return $this->_elemenHTMLINLINE($elem_val, $elem_key, $value, $attr, $id, $class, $label);  
   }
 } 
 
@@ -3119,17 +6262,17 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
- private function return_elementINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label) {
+ private function return_elementINLINE($elem_val, $elem_key, $value, $attr, $id, $class, $label) {
    
     # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
     # RETURN_GET___HTML_METHOD_INCLUDED_ 
   /**
     *
-    * @var | Defined var $elem_val, $elem_key, $js, $id, $class  
+    * @var | Defined var $elem_val, $elem_key, $attr, $id, $class  
     * @method function get__HTML
     *
     **/ 
-   $this->PERFORM( $return_elementINLINE  = $this->get__HTML($elem_val, $elem_key, $js, $id, $class) );  
+   $this->PERFORM( $return_elementINLINE  = $this->get__HTML($elem_val, $elem_key, $attr, $id, $class) );  
    
    # WHEN_THE_LOOP_IS_TRUE_THEN
    # DO_CONTENT
@@ -3154,7 +6297,7 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
- protected function _elemenHTMLINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label) {
+ protected function _elemenHTMLINLINE($elem_val, $elem_key, $value, $attr, $id, $class, $label) {
    
      if ( $label == TRUE && $label === 'MERGE') {
      
@@ -3162,12 +6305,12 @@ class Html {
      # RETURN_GET___HTML_METHOD_INCLUDED_ 
    /**
      *
-     * @var | Defined var $elem_val, $elem_key, $js, $id, $class
+     * @var | Defined var $elem_val, $elem_key, $attr, $id, $class
      * @method function new_get__HTML();
      *
      **/ 
      
-     return $return_elementINLINE = $this->new_get__HTML($elem_val, $elem_key, $js, $id, $class);  
+     return $return_elementINLINE = $this->new_get__HTML($elem_val, $elem_key, $attr, $id, $class);  
 
    } elseif ($label == TRUE && $label === 'MERGE_END') {
      
@@ -3187,11 +6330,11 @@ class Html {
      # RETURN_GET___HTML_METHOD_INCLUDED_ 
    /**
      *
-     * @var | Defined var $elem_val, $elem_key, $js, $id, $class
+     * @var | Defined var $elem_val, $elem_key, $attr, $id, $class
      * @method function new_get__HTML();
      *
      **/ 
-    $return_elementINLINE   = $this->new_get__HTML($elem_val, $elem_key, $js, $id, $class);  
+    $return_elementINLINE   = $this->new_get__HTML($elem_val, $elem_key, $attr, $id, $class);  
   
   
 
@@ -3223,7 +6366,7 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
- private function get_inline__HTML($elem_val, $elem_key, $js, $id, $class, $assoc) {
+ private function get_inline__HTML($elem_val, $elem_key, $attr, $id, $class, $assoc) {
   
   # ÌF_ASSOC_IS_SET_AS_NULL_THEN_RETURN_DATA_SET_ECHO
   # CHECK_IF_ASSOC_IS_FALSE_NULL_DEFAULT
@@ -3236,11 +6379,11 @@ class Html {
        * @method function _setELEMENT()
        * @var $elem_val, $elem_key
        * @method function _setinLINEHTMLattr
-       * @var $js, $id, $class, NULL
+       * @var $attr, $id, $class, NULL
        *
        **/
      $this->PERFORM( $get_inline__HTML  = $this->_setELEMENT($elem_val, $elem_key) );
-     $this->PERFORM( $get_inline__HTML  = $this->_setinLINEHTMLattr($js, $id, $class, NULL) );   
+     $this->PERFORM( $get_inline__HTML  = $this->_setinLINEHTMLattr($attr, $id, $class, NULL) );   
   
   }
   # CHECK_ASSOC_IF_IT_IS_TRUE_THEN
@@ -3256,7 +6399,7 @@ class Html {
        *
        **/ 
      $get_inline__HTML   = $this->_setELEMENT($elem_val, $elem_key);
-     $get_inline__HTML  .= $this->_setinLINEHTMLattr($js, $id, $class, $assoc); 
+     $get_inline__HTML  .= $this->_setinLINEHTMLattr($attr, $id, $class, $assoc); 
 
      return $get_inline__HTML;    
   }
@@ -3270,7 +6413,7 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
- protected function get__HTML($elem_val, $elem_key, $js, $id, $class) {
+ protected function get__HTML($elem_val, $elem_key, $attr, $id, $class) {
        
       # RETURN_GET__HTML_CONTAINS_OFSET_ELEMENTS_SET_HTML_ATTR
       # SET___HTML_AS_PRINT_STATIC_HTML
@@ -3282,7 +6425,7 @@ class Html {
       *
       **/     
     $this->PERFORM( $get__HTML  = $this->_setELEMENT($elem_val, $elem_key) );
-    $this->PERFORM( $get__HTML  = $this->_setHTMLattr($js, $id, $class) );   
+    $this->PERFORM( $get__HTML  = $this->_setHTMLattr($attr, $id, $class) );   
 
 }
 
@@ -3293,7 +6436,7 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
- protected function new_get__HTML($elem_val, $elem_key, $js, $id, $class) {
+ protected function new_get__HTML($elem_val, $elem_key, $attr, $id, $class) {
   
       # RETURN_GET__HTML_CONTAINS_OFSET_ELEMENTS_SET_HTML_ATTR
       # SET___HTML_AS_RETURN_DYNAMIC_ASSOC_HTML
@@ -3305,7 +6448,7 @@ class Html {
       *
       **/      
    $get__HTML   = $this->_setELEMENT($elem_val, $elem_key);
-   $get__HTML  .= $this->new_setHTMLattr($js, $id, $class);   
+   $get__HTML  .= $this->new_setHTMLattr($attr, $id, $class);   
    
    return $get__HTML;
 
@@ -3393,7 +6536,7 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
- protected function _setHTMLattr($js = [], $id=NULL, $class=NULL) {
+ protected function _setHTMLattr($attr = [], $id=NULL, $class=NULL) {
 
       # DEFINE_STATIC_SET_RETURN_TO_HTML
     # METHOD_SET_AS_PRINT
@@ -3404,7 +6547,7 @@ class Html {
       * @method function _getxTAG()
       *
       **/     
-    $this->PERFORM( $_setHTMLattr  = $this->_isJStrue($js, $id, $class) );
+    $this->PERFORM( $_setHTMLattr  = $this->_isJStrue($attr, $id, $class) );
     $this->PERFORM( $_setHTMLattr = $this->_getxTAG().$this->_getBREAK() );   
 }
 
@@ -3415,7 +6558,7 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
- protected function new_setHTMLattr($js = [], $id=NULL, $class=NULL) {
+ protected function new_setHTMLattr($attr = [], $id=NULL, $class=NULL) {
       
       # DEFINE_STATIC_SET_RETURN_TO_HTML
     # METHOD_sET_AS_RETURN
@@ -3426,7 +6569,7 @@ class Html {
       * @method function _getxTAG()
       *
       **/ 
-    $_setHTMLattr  = $this->new_isJStrue($js, $id, $class);
+    $_setHTMLattr  = $this->new_isJStrue($attr, $id, $class);
     $_setHTMLattr .= $this->_getxTAG().$this->_getBREAK();
 
     return $_setHTMLattr;
@@ -3439,7 +6582,7 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
- protected function _setinLINEHTMLattr($js = [], $id=NULL, $class=NULL, $assoc=NULL) {
+ protected function _setinLINEHTMLattr($attr = [], $id=NULL, $class=NULL, $assoc=NULL) {
    
   # CHECK_IF_ASSOC_IS_NULL_OR_FLASE_DEFAULT
   # IF_ASSOC_IS_FALSE_THEN_SET_AS_PRINT_STATIC  
@@ -3454,7 +6597,7 @@ class Html {
       * @method function _set_tagSPACER()
       *
       **/     
-    $this->PERFORM( $_setinLINEHTMLattr = $this->_isJStrue($js, $id, $class) );
+    $this->PERFORM( $_setinLINEHTMLattr = $this->_isJStrue($attr, $id, $class) );
     $this->PERFORM( $_setinLINEHTMLattr = $this->_set_tagSPACER().$this->_setENDS().$this->_getxTAG().$this->_getBREAK() );  
 
   } /**
@@ -3468,7 +6611,7 @@ class Html {
     
       # ELSE_CHECK_IF_THE_ASSOC_IS_TRUE_OR_FUNC_ASSOC_OR_CLASS_ASSOC_METHOD_ASSOC
       # SET_AS_DYNAMIC_ASSOCIATED_WITH_METHOD_CLASS_FUNC_ASSOC      
-      $_setinLINEHTMLattr  = $this->isJStrue_assoc($js, $id, $class, $assoc);
+      $_setinLINEHTMLattr  = $this->isJStrue_assoc($attr, $id, $class, $assoc);
       $_setinLINEHTMLattr .= $this->_set_tagSPACER().$this->_setENDS().$this->_getxTAG().$this->_getBREAK();  
 
       return $_setinLINEHTMLattr;    
@@ -3483,7 +6626,7 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
- private function isJStrue_assoc($js, $id, $class, $assoc) {
+ private function isJStrue_assoc($attr, $id, $class, $assoc) {
 
   # CHECKK_IF_JS-ASSOC_IS_TRUE_THE_RETURN_SET_AS_PRINT
   # IF_ASSOC_IS_FALSE_IF_IS_NULL_IF_IS_DEFAULT  
@@ -3496,8 +6639,8 @@ class Html {
      * @method function new_isJStrue
      *
      **/      
-     $js_false = $this->_isJStrue($js, $id, $class);
-     $this->PERFORM(  $js_false );
+     $attr_false = $this->_isJStrue($attr, $id, $class);
+     $this->PERFORM(  $attr_false );
   } 
     # ELSE_IF_IT_IS_NOT_NULL_NOT_FALSE_NOT_DEFAULT_OR_IT_IS_SET_AS_TRUE_THEN
     # CHECK_IF_IT_IS_FUNCASSOC_CLASSASSOC_METHOD_ASSOC_THE_SET_RETURN
@@ -3509,7 +6652,7 @@ class Html {
     **/   
    elseif ($assoc === FUNC_ASSOC || $assoc === CLASS_ASSOC || $assoc === METHOD_ASSOC) 
    {  
-     return $this->new_isJStrue($js, $id, $class);    
+     return $this->new_isJStrue($attr, $id, $class);    
    }
 
 }
@@ -3521,11 +6664,11 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
- private function _isJStrue($js, $id, $class) {
+ private function _isJStrue($attr, $id, $class) {
   
   # SET_STATIC_PRINT_IF_THE_JS_IS_NOT_ASSOC_WITH_METHOD
   # CHECK_IF_PARAM_JS_HAVE_TRUE_THEN  
-  if ( $js == TRUE ) 
+  if ( $attr == TRUE ) 
     {
         
        # GET_ARRAY_OF_DATA_FROM_APPS_ATT
@@ -3535,7 +6678,7 @@ class Html {
        * @method function apps_att
        *
        **/          
-       $apps_attributes = $this->apps_att($js);
+       $apps_attributes = $this->apps_att($attr);
        
        # GET_DATA_OF_ASSOCIATED_OF_ARRAY_FOR_EACH_DATA_COMBINE
        # IF_THE_JS_RETURN_TRUE_THEN_LOOP_COMBINE_DATA
@@ -3571,7 +6714,7 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
- private function new_isJStrue($js, $id, $class) {
+ private function new_isJStrue($attr, $id, $class) {
    
   # SET_EMPTY_ARRAY_OF_DATA_IF_DATA_IS_ASSOC
   # CHECK_DATA_IF_ASSOC_WITH_METHOD_AND_CLASS 
@@ -3579,7 +6722,7 @@ class Html {
   
   # SET_STATIC_PRINT_IF_THE_JS_IS_NOT_ASSOC_WITH_METHOD
   # CHECK_IF_PARAM_JS_HAVE_TRUE_THEN
-  if ( $js == TRUE ) 
+  if ( $attr == TRUE ) 
     {
         # GET_ARRAY_OF_DATA_FROM_APPS_ATT_COMBINE
       /**
@@ -3588,7 +6731,7 @@ class Html {
         * @method function apps_att
         *
         **/  
-        $apps_attributes = $this->apps_att($js);
+        $apps_attributes = $this->apps_att($attr);
 
         foreach ( $apps_attributes as $attr_name => $attr_value )  
         {
@@ -3649,12 +6792,12 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
- protected function apps_att($js = []) {
+ protected function apps_att($attr = []) {
     
     # COLLECT_DATA_ARRAY_ATTRIBUTE_CALL_BACK_FUNCTION
     # IF_CALL_BACK_IS_TRUE_THEN_SET_ARRAY_aSSOC
-    $set_apps_names = $js[0];
-    $set_apps_value = $js[1];
+    $set_apps_names = $attr[0];
+    $set_apps_value = $attr[1];
     
   /**
     *
@@ -3724,7 +6867,7 @@ class Html {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-protected function HtmlELements_Optimizer($inline, $elem, $js, $id, $class, $assoc) {
+protected function HtmlELements_Optimizer($inline, $elem, $attr, $id, $class, $assoc) {
 
     if ($assoc == NULL || $assoc == FALSE || $assoc == 'DEFUALT') {
 
@@ -3745,7 +6888,7 @@ protected function HtmlELements_Optimizer($inline, $elem, $js, $id, $class, $ass
         }
       
         # RETURN_INLINE_ELEMENT_NO_HTML_CLOSING_TAG 
-        $this->PERFORM( $this->_setReturnINLINELEMENT($this->_setINLINELEMENTS($elem),$js, $id, $class, NULL) ); 
+        $this->PERFORM( $this->_setReturnINLINELEMENT($this->_setINLINELEMENTS($elem),$attr, $id, $class, NULL) ); 
    } else {
 
       # CHECK_IF_INLINE_IS_ASSOC_WITH_FUNC_ASSOC_OR_CLASS_ASSOC_OR_METHOD_ASSOC
@@ -3772,7 +6915,7 @@ protected function HtmlELements_Optimizer($inline, $elem, $js, $id, $class, $ass
           }
       
           # RETURN_INLINE_ELEMENT_NO_HTML_CLOSING_TAG 
-          return $this->_setReturnINLINELEMENT($this->_setINLINELEMENTS($elem),$js, $id, $class, $assoc);      
+          return $this->_setReturnINLINELEMENT($this->_setINLINELEMENTS($elem),$attr, $id, $class, $assoc);      
        }
 
   }
@@ -4241,11 +7384,11 @@ protected function cpe_custom_elements($Element__, $value__, $elemAttr__, $elemI
   * @package @private Method Defined cpe_FileHandler_html_type() // use custom HTML
   *
   **/
-private function cpe_FileHandler_html_type($js, $id, $class) {
+private function cpe_FileHandler_html_type($attr, $id, $class) {
 
     $Enhancer = NEW \PHPHtml\CodeOptimizer\optimizer\Enhancers();
     
-    return $Enhancer->ATTR('_xhtml_modify','doctype').$this->get__HTML('STRUCTURE', 3, $js, $id, $class);  
+    return $Enhancer->ATTR('_xhtml_modify','doctype').$this->get__HTML('STRUCTURE', 3, $attr, $id, $class);  
 }
 
 /**
@@ -6378,7 +9521,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
 } # END OF SET ELEMENTS
 
 
- protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $label) {
+ protected function _setReturnELEMENT($elem, $value, $attr, $id, $class, $label) {
 
   $elem = $this->_setELEMENTS($elem); 
   switch ($elem) {
@@ -6394,7 +9537,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/      
-       return $this->_elemenHTMLINLINE('STRUCTURE', 0, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('STRUCTURE', 0, $value, $attr, $id, $class, $label);
       break;  
     case "title":
     
@@ -6407,7 +9550,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/      
-       return $this->_elemenHTMLINLINE('STRUCTURE', 1, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('STRUCTURE', 1, $value, $attr, $id, $class, $label);
       break;  
     case "body":
 
@@ -6420,7 +9563,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/    
-       return $this->_elemenHTMLINLINE('STRUCTURE', 2, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('STRUCTURE', 2, $value, $attr, $id, $class, $label);
       break;  
     case "html":
 
@@ -6433,7 +9576,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/     
-       return $this->_elemenHTMLINLINE('STRUCTURE', 3, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('STRUCTURE', 3, $value, $attr, $id, $class, $label);
       break;
     case "del":
 
@@ -6446,7 +9589,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/    
-       return $this->_elemenHTMLINLINE('FORMATC', 0, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 0, $value, $attr, $id, $class, $label);
       break;
     case "kbd":
 
@@ -6459,7 +9602,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/     
-       return $this->_elemenHTMLINLINE('FORMATC', 1, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 1, $value, $attr, $id, $class, $label);
       break;
     case "mark":
 
@@ -6472,7 +9615,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/     
-       return $this->_elemenHTMLINLINE('FORMATC', 2, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 2, $value, $attr, $id, $class, $label);
       break;
     case "pre":
 
@@ -6485,7 +9628,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/   
-       return $this->_elemenHTMLINLINE('FORMATC', 3, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 3, $value, $attr, $id, $class, $label);
       break;
     case "rt":
 
@@ -6498,7 +9641,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/     
-       return $this->_elemenHTMLINLINE('FORMATC', 4, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 4, $value, $attr, $id, $class, $label);
       break;
     case "rp":
 
@@ -6511,7 +9654,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/  
-       return $this->_elemenHTMLINLINE('FORMATC', 5, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 5, $value, $attr, $id, $class, $label);
       break;
     case "ruby":
 
@@ -6524,7 +9667,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/  
-       return $this->_elemenHTMLINLINE('FORMATC', 6, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 6, $value, $attr, $id, $class, $label);
       break;
     case "s":
 
@@ -6537,7 +9680,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/  
-       return $this->_elemenHTMLINLINE('FORMATC', 7, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 7, $value, $attr, $id, $class, $label);
       break;        
     case "samp":
 
@@ -6550,7 +9693,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/     
-       return $this->_elemenHTMLINLINE('FORMATC', 8, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 8, $value, $attr, $id, $class, $label);
       break; 
     case "strong":
 
@@ -6563,7 +9706,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('FORMATC', 9, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 9, $value, $attr, $id, $class, $label);
       break; 
     case "sub":
 
@@ -6576,7 +9719,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('FORMATC', 10, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 10, $value, $attr, $id, $class, $label);
       break;
     case "sup":
 
@@ -6589,7 +9732,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('FORMATC', 11, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 11, $value, $attr, $id, $class, $label);
       break;
     case "wbr":
 
@@ -6602,7 +9745,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('FORMATC', 12, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 12, $value, $attr, $id, $class, $label);
       break;
     case "q":
 
@@ -6615,7 +9758,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('FORMATC', 13, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMATC', 13, $value, $attr, $id, $class, $label);
       break;
 
     case "span":
@@ -6629,7 +9772,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('FORMAT', 0, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 0, $value, $attr, $id, $class, $label);
       break;
     case "em":
 
@@ -6642,7 +9785,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('FORMAT', 1, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 1, $value, $attr, $id, $class, $label);
       break;
     case "b":
 
@@ -6655,7 +9798,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 2, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 2, $value, $attr, $id, $class, $label);
       break;
     case "i":
 
@@ -6668,7 +9811,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 3, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 3, $value, $attr, $id, $class, $label);
       break;
     case "small":
 
@@ -6681,7 +9824,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 4, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 4, $value, $attr, $id, $class, $label);
       break;
     case "strike":
 
@@ -6694,7 +9837,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 5, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 5, $value, $attr, $id, $class, $label);
       break;
     case "marquee":
 
@@ -6707,7 +9850,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 6, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 6, $value, $attr, $id, $class, $label);
       break;
     case "center":
 
@@ -6720,7 +9863,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 7, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 7, $value, $attr, $id, $class, $label);
       break;
     case "code":
 
@@ -6733,7 +9876,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 8, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 8, $value, $attr, $id, $class, $label);
       break;
     case "abbr":
 
@@ -6746,7 +9889,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 9, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 9, $value, $attr, $id, $class, $label);
       break;
     case "map":
 
@@ -6759,7 +9902,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 10, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 10, $value, $attr, $id, $class, $label);
       break;
     case "canvas":
 
@@ -6772,7 +9915,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 11, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 11, $value, $attr, $id, $class, $label);
       break;
     case "cite":
 
@@ -6785,7 +9928,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 12, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 12, $value, $attr, $id, $class, $label);
       break;
     case "data":
 
@@ -6798,7 +9941,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 13, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 13, $value, $attr, $id, $class, $label);
       break;
     case "dl":
 
@@ -6811,7 +9954,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 14, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 14, $value, $attr, $id, $class, $label);
       break;
     case "dt":
 
@@ -6824,7 +9967,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 15, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 15, $value, $attr, $id, $class, $label);
       break;
     case "dd":
 
@@ -6837,7 +9980,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 16, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 16, $value, $attr, $id, $class, $label);
       break;
     case "dfn":
 
@@ -6850,7 +9993,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 17, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 17, $value, $attr, $id, $class, $label);
       break;
     case "ins":
 
@@ -6863,7 +10006,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('FORMAT', 18, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('FORMAT', 18, $value, $attr, $id, $class, $label);
       break;
     case "ul":
 
@@ -6876,7 +10019,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 0, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 0, $value, $attr, $id, $class, $label);
       break;
     case "ol":
 
@@ -6889,7 +10032,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 1, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 1, $value, $attr, $id, $class, $label);
       break;
     case "li":
 
@@ -6902,7 +10045,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 2, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 2, $value, $attr, $id, $class, $label);
       break;
     case "table":
 
@@ -6915,7 +10058,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 3, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 3, $value, $attr, $id, $class, $label);
       break;
     case "tr":
 
@@ -6928,7 +10071,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 4, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 4, $value, $attr, $id, $class, $label);
       break;
     case "td":
 
@@ -6941,7 +10084,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 5, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 5, $value, $attr, $id, $class, $label);
       break;
     case "th":
 
@@ -6954,7 +10097,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 6, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 6, $value, $attr, $id, $class, $label);
       break;
     case "legend":
 
@@ -6967,7 +10110,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 7, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 7, $value, $attr, $id, $class, $label);
       break;
     case "fieldset":
 
@@ -6980,7 +10123,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 8, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 8, $value, $attr, $id, $class, $label);
       break;
     case "tbody":
 
@@ -6993,7 +10136,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 9, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 9, $value, $attr, $id, $class, $label);
       break;
     case "tfoot":
 
@@ -7006,7 +10149,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 10, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 10, $value, $attr, $id, $class, $label);
       break;
     case "thead":
 
@@ -7019,7 +10162,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('LIST', 11, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('LIST', 11, $value, $attr, $id, $class, $label);
       break;
     case "figure":
 
@@ -7032,7 +10175,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 0, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 0, $value, $attr, $id, $class, $label);
       break;
     case "figcaption":
 
@@ -7045,7 +10188,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 1, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 1, $value, $attr, $id, $class, $label);
       break;      
     case "meter":
 
@@ -7058,7 +10201,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 2, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 2, $value, $attr, $id, $class, $label);
       break;      
     case "object":
 
@@ -7071,7 +10214,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 3, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 3, $value, $attr, $id, $class, $label);
       break;     
     case "optgroup":
 
@@ -7084,7 +10227,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 4, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 4, $value, $attr, $id, $class, $label);
       break;     
     case "output":
 
@@ -7097,7 +10240,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 5, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 5, $value, $attr, $id, $class, $label);
       break;  
     case "progress":
 
@@ -7110,7 +10253,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 6, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 6, $value, $attr, $id, $class, $label);
       break;
     case "svg":
 
@@ -7123,7 +10266,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 7, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 7, $value, $attr, $id, $class, $label);
       break;
     case "template":
 
@@ -7136,7 +10279,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 8, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 8, $value, $attr, $id, $class, $label);
       break;
     case "time":
 
@@ -7149,7 +10292,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 9, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 9, $value, $attr, $id, $class, $label);
       break;
     case "var":
 
@@ -7162,7 +10305,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SUPPORT', 10, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SUPPORT', 10, $value, $attr, $id, $class, $label);
       break;
 
     case "audio":
@@ -7176,7 +10319,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 0, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 0, $value, $attr, $id, $class, $label);
       break;
     case "video":
 
@@ -7189,7 +10332,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 1, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 1, $value, $attr, $id, $class, $label);
       break;
     case "address":
 
@@ -7202,7 +10345,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 2, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 2, $value, $attr, $id, $class, $label);
       break;
     case "colgroup":
 
@@ -7215,7 +10358,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 3, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 3, $value, $attr, $id, $class, $label);
       break;
     case "bdi":
 
@@ -7228,7 +10371,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 4, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 4, $value, $attr, $id, $class, $label);
       break;
     case "bdo":
 
@@ -7241,7 +10384,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 5, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 5, $value, $attr, $id, $class, $label);
       break;
     case "blockquote":
 
@@ -7254,7 +10397,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 6, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 6, $value, $attr, $id, $class, $label);
       break;
     case "caption":
 
@@ -7267,7 +10410,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 7, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 7, $value, $attr, $id, $class, $label);
       break;
     case "label":
 
@@ -7279,7 +10422,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 8, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 8, $value, $attr, $id, $class, $label);
       break;
     case "datalist":
 
@@ -7291,7 +10434,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 9, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 9, $value, $attr, $id, $class, $label);
       break;
     case "details":
 
@@ -7303,7 +10446,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 10, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 10, $value, $attr, $id, $class, $label);
       break;
     case "summary":
 
@@ -7315,7 +10458,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 11, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 11, $value, $attr, $id, $class, $label);
       break;
     case "dialog":
 
@@ -7327,7 +10470,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 12, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 12, $value, $attr, $id, $class, $label);
       break;
     case "option":
 
@@ -7339,7 +10482,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('SECONDARY', 13, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('SECONDARY', 13, $value, $attr, $id, $class, $label);
       break;
     case "h1":
 
@@ -7351,7 +10494,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-       return $this->_elemenHTMLINLINE('PRIMARY', 0, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('PRIMARY', 0, $value, $attr, $id, $class, $label);
       break;
     case "h2":
 
@@ -7363,7 +10506,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-      return $this->_elemenHTMLINLINE('PRIMARY', 1, $value, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 1, $value, $attr, $id, $class, $label);
       break;
     case "h3":
 
@@ -7375,7 +10518,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-      return $this->_elemenHTMLINLINE('PRIMARY', 2, $value, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 2, $value, $attr, $id, $class, $label);
       break; 
     case "h4":
 
@@ -7387,7 +10530,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-      return $this->_elemenHTMLINLINE('PRIMARY', 3, $value, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 3, $value, $attr, $id, $class, $label);
       break;
     case "h5":
 
@@ -7399,7 +10542,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-      return $this->_elemenHTMLINLINE('PRIMARY', 4, $value, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 4, $value, $attr, $id, $class, $label);
       break;
     case "h6":
 
@@ -7411,7 +10554,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-      return $this->_elemenHTMLINLINE('PRIMARY', 5, $value, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 5, $value, $attr, $id, $class, $label);
       break;                 
   case "div":
 
@@ -7423,7 +10566,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/
-      return $this->_elemenHTMLINLINE('PRIMARY', 6, $value, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 6, $value, $attr, $id, $class, $label);
       break;       
     case "p":
 
@@ -7435,7 +10578,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('PRIMARY', 7, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('PRIMARY', 7, $value, $attr, $id, $class, $label);
       break;
     case "button":
 
@@ -7447,7 +10590,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('PRIMARY', 8, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('PRIMARY', 8, $value, $attr, $id, $class, $label);
       break;
     case "a":
 
@@ -7459,7 +10602,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-      return $this->_elemenHTMLINLINE('PRIMARY', 9, $value, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 9, $value, $attr, $id, $class, $label);
       break;
     case "iframe":
 
@@ -7471,7 +10614,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('PRIMARY', 10, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('PRIMARY', 10, $value, $attr, $id, $class, $label);
       break;
     case "main":
 
@@ -7483,7 +10626,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-      return $this->_elemenHTMLINLINE('PRIMARY', 11, $value, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 11, $value, $attr, $id, $class, $label);
       break;
     case "nav":
 
@@ -7495,7 +10638,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('PRIMARY', 12, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('PRIMARY', 12, $value, $attr, $id, $class, $label);
       break;
     case "select":
 
@@ -7507,7 +10650,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-      return $this->_elemenHTMLINLINE('PRIMARY', 13, $value, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 13, $value, $attr, $id, $class, $label);
       break;
     case "form":
 
@@ -7519,7 +10662,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('PRIMARY', 14, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('PRIMARY', 14, $value, $attr, $id, $class, $label);
       break;
     case "picture":
 
@@ -7531,7 +10674,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-      return $this->_elemenHTMLINLINE('PRIMARY', 15, $value, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 15, $value, $attr, $id, $class, $label);
       break;
     case "section":
 
@@ -7543,7 +10686,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->_elemenHTMLINLINE('PRIMARY', 16, $value, $js, $id, $class, $label);
+       return $this->_elemenHTMLINLINE('PRIMARY', 16, $value, $attr, $id, $class, $label);
       break;
     case "textarea":
 
@@ -7555,7 +10698,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-      return $this->_elemenHTMLINLINE('PRIMARY', 17, $value, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 17, $value, $attr, $id, $class, $label);
       break;
 
     case "footer":
@@ -7568,7 +10711,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-      return $this->_elemenHTMLINLINE('PRIMARY', 18, $value, $js, $id, $class, $label);
+      return $this->_elemenHTMLINLINE('PRIMARY', 18, $value, $attr, $id, $class, $label);
       break;
 
     default:
@@ -7584,7 +10727,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
   }
 } # END OF SET ELEMENT
 
- protected function _setReturnINLINELEMENT($elem, $js, $id, $class,$assoc){
+ protected function _setReturnINLINELEMENT($elem, $attr, $id, $class,$assoc){
 
    $elem = $this->_setINLINELEMENTS($elem);
 
@@ -7599,7 +10742,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->return_inline_element('INLINE', 0, $js, $id, $class, $assoc);
+       return $this->return_inline_element('INLINE', 0, $attr, $id, $class, $assoc);
       break;
     case "track":
 
@@ -7611,7 +10754,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->return_inline_element('INLINE', 1, $js, $id, $class, $assoc);
+       return $this->return_inline_element('INLINE', 1, $attr, $id, $class, $assoc);
       break;
     case "circle":
 
@@ -7623,7 +10766,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->return_inline_element('INLINE', 2, $js, $id, $class, $assoc);
+       return $this->return_inline_element('INLINE', 2, $attr, $id, $class, $assoc);
       break;
     case "param":
 
@@ -7635,7 +10778,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->return_inline_element('INLINE', 3, $js, $id, $class, $assoc);
+       return $this->return_inline_element('INLINE', 3, $attr, $id, $class, $assoc);
       break;
     case "input":
 
@@ -7647,7 +10790,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->return_inline_element('INLINE', 4, $js, $id, $class, $assoc);
+       return $this->return_inline_element('INLINE', 4, $attr, $id, $class, $assoc);
       break;
     case "meta":
 
@@ -7659,7 +10802,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->return_inline_element('INLINE', 5, $js, $id, $class, $assoc);
+       return $this->return_inline_element('INLINE', 5, $attr, $id, $class, $assoc);
       break;
     case "link":
 
@@ -7671,7 +10814,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->return_inline_element('INLINE', 6, $js, $id, $class, $assoc);
+       return $this->return_inline_element('INLINE', 6, $attr, $id, $class, $assoc);
       break;
     case "img":
 
@@ -7683,7 +10826,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->return_inline_element('INLINE', 7, $js, $id, $class, $assoc);
+       return $this->return_inline_element('INLINE', 7, $attr, $id, $class, $assoc);
       break;      
     case "embed":
 
@@ -7695,7 +10838,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->return_inline_element('INLINE', 8, $js, $id, $class, $assoc);
+       return $this->return_inline_element('INLINE', 8, $attr, $id, $class, $assoc);
       break;
     case "option":
 
@@ -7707,7 +10850,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->return_inline_element('INLINE', 9, $js, $id, $class, $assoc);
+       return $this->return_inline_element('INLINE', 9, $attr, $id, $class, $assoc);
       break;
     case "col":
 
@@ -7719,7 +10862,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->return_inline_element('INLINE', 10, $js, $id, $class, $assoc);
+       return $this->return_inline_element('INLINE', 10, $attr, $id, $class, $assoc);
       break;
     case "base":
 
@@ -7731,7 +10874,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->return_inline_element('INLINE', 11, $js, $id, $class, $assoc);
+       return $this->return_inline_element('INLINE', 11, $attr, $id, $class, $assoc);
       break;
     case "aside":
 
@@ -7743,7 +10886,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->return_inline_element('INLINE', 12, $js, $id, $class, $assoc);
+       return $this->return_inline_element('INLINE', 12, $attr, $id, $class, $assoc);
       break;
     case "area":
 
@@ -7755,7 +10898,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->return_inline_element('INLINE', 13, $js, $id, $class, $assoc);
+       return $this->return_inline_element('INLINE', 13, $attr, $id, $class, $assoc);
       break;
   case "DOCTYPE":
 
@@ -7767,7 +10910,7 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
        *
       **/ 
-       return $this->return_inline_element('INLINE', 14, $js, $id, $class, $assoc);
+       return $this->return_inline_element('INLINE', 14, $attr, $id, $class, $assoc);
       break;
     default:
     
