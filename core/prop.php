@@ -31,7 +31,7 @@
  */
 
 // Get Error Msg
-const FILE_HANDLER_MSG = 'Directory or files is not exist';
+const FILE_HANDLER_MSG     = 'Directory or files is not exist';
 // Get Error Msg
 const FILE_HANDLER_MSG_STR = 'This is a Directory array value cannot be string! ';
 
@@ -50,47 +50,13 @@ function loader_framwork() {
 |
 |
 |  
-| get Project PrefixName
-|
-|
-|
-|
-*/     
-/**
-*@since 06.082020
-**/
- $project_Name   = __GET_LOADER_PROJECT_SUFFIX__;
-
-/*
-|
-|
-|
-|
-|  
-| get Project Class PrefixName
-|
-|
-|
-|
-*/     
-/**
-*@since 06.082020
-**/     
- $project_Folder = __GET_LOADER_CLASS_SUFFIX__;
-
-/*
-|
-|
-|
-|
-|  
 | get commit ferform name
 |
 |
 |
 |
 */  
-$framework_prefix  = "{$project_Name}\\{$project_Folder}\\";
+$framework_prefix  = "".__GET_LOADER_PROJECT_SUFFIX__."\\".__GET_LOADER_CLASS_SUFFIX__."\\";
 
 return $framework_prefix;
 

@@ -32,7 +32,7 @@
 
 /**
  *
- * @method return define constant
+ * @method return defined properties
  * @since  28.08.2020 
  *
  **/
