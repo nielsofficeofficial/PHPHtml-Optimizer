@@ -63,11 +63,6 @@
   define('__ODT__'      ,  '__ODT__');  // get function assined EXTENSION IMG .ODT
   define('__TXT__'      ,  '__TXT__');  // get function assined EXTENSION IMG .TXT 
   define('__RTF__'      ,  '__RTF__'); // get function assined EXTENSION IMG .RTF
-  define('__DIRECTORY_OPTIMIZER_PAGE__'    ,   SOM_PATH_DIR . 'core/merge/html.php'); // get directory 
-  define('__DIRECTORY_OPTIMIZER_CLASS__'   ,   __DIR__ .'/core/'); // get directory
-  define('__HTMLOPTIMIZER__'               ,   'Html.php'); // get file
-  define('__GET_VALIDATE_FILE_PAGE_EXIST__',   '/core/merge/Html.php'); // get validate file exist
-  define('__GET_MERGE_FILES__'             ,   SOM_PATH_DIR . 'core/merge/prop.php'); // get merge    
   define('__GET_LOADER_PROJECT_SUFFIX__'   ,   'PHPHtml' ); // get Project suffix 
   define('__GET_LOADER_CLASS_SUFFIX__'     ,   'CodeOptimizer'); // get class suffix
   define('__GET_FROM_DIR_ROOT__'           ,   __DIR__ ); // get root file
@@ -75,6 +70,11 @@
   define('__GET_INSTANTIATE_CLASS_HTML__'  ,   '/core/optimizer/Html.php'); // get root file instantiate Html   
   define('__CHECK_MAIN_MERGE_ON_PAGE__'    ,   '/../merge/Html.php'); // get root file CHECK_MAIN_MERGE_ON_PAGE
   define('__CHECK_MAIN_MERGE_ON_CLASS__'   ,   '/../optimizer/Html.php');  // get root file CHECK_MAIN_MERGE_ON_CLASS
+  define('__GET_VALIDATE_FILE_PAGE_EXIST__',   '/core/merge/Html.php'); // get validate file exist
+  define('__HTMLOPTIMIZER__'               ,   'Html.php'); // get file
+  define('__GET_MERGE_FILES__'             ,   SOM_PATH_DIR . 'core/merge/prop.php'); // get merge   
+  define('__DIRECTORY_OPTIMIZER_CLASS__'   ,   SOM_PATH_DIR . 'core/'); // get directory
+  define('__DIRECTORY_OPTIMIZER_PAGE__'    ,   SOM_PATH_DIR . 'core/merge/html.php'); // get directory 
   define('__GET_LOAD_MERGE__'              ,   SOM_PATH_DIR . 'core/merge/Merge.php' ); // get root file GET_LOAD_MERGE
   define('__GET_LOAD_MERGEBOX__'           ,   SOM_PATH_DIR . 'core/merge/MergeBox.php' ); // get root file GET_LOAD_MERGEBOX
   define('__GET_LOAD_MERGEELEMENT__'       ,   SOM_PATH_DIR . 'core/merge/MergeElements.php' ); // get root file GET_LOAD_MERGEELEMENT
