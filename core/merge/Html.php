@@ -6922,7 +6922,8 @@ static private function HtmlELements_Optimizer($inline, $elem, $attr, $id, $clas
         }
       
         # RETURN_INLINE_ELEMENT_NO_HTML_CLOSING_TAG 
-        self::PERFORM( $this->_setReturnINLINELEMENT($this->_setINLINELEMENTS($elem),$attr, $id, $class, NULL) ); 
+        self::PERFORM( self::_setReturnINLINELEMENT(self::_setINLINELEMENTS($elem),$attr, $id, $class, NULL) ); 
+
    } else {
 
       # CHECK_IF_INLINE_IS_ASSOC_WITH_FUNC_ASSOC_OR_CLASS_ASSOC_OR_METHOD_ASSOC
@@ -6949,7 +6950,7 @@ static private function HtmlELements_Optimizer($inline, $elem, $attr, $id, $clas
           }
       
           # RETURN_INLINE_ELEMENT_NO_HTML_CLOSING_TAG 
-          return $this->_setReturnINLINELEMENT($this->_setINLINELEMENTS($elem),$attr, $id, $class, $assoc);      
+          return self::_setReturnINLINELEMENT(self::_setINLINELEMENTS($elem),$attr, $id, $class, $assoc);      
        }
 
   }
