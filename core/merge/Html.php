@@ -670,10 +670,29 @@ static private $str;
   * @var @__getAssEXTENSION__ 
   *
   **/
- CONST __FILEEXTENSION__  = [ __PHP__  => 'php',  __HTML__ => 'html', __CSS__  => 'css',  __JS__   =>'js',   __JPG__ => 'jpg', 
-                              __JPEG__ => 'jpeg', __PNG__  => 'png',  __GIF__  => 'gif',  __BMP__  =>'bmp',  __TEX__ => 'tex',
-                              __XLS__  => 'xls',  __XLSX__ => 'xlsx', __DOCX__ => 'doc',  __DOCX__ =>'docx', __PPT__ => 'ppt',
-                              __PPTX__ => 'pptx', __ODT__  => 'odt',  __TXT__  => 'txt',  __RTF__  =>'rtf']; 
+ CONST __FILEEXTENSION__  = [ 
+
+  __PHP__  => 'php'
+ ,__HTML__ => 'html'
+ ,__CSS__  => 'css'
+ ,__JS__   => 'js'
+ ,__JPG__  => 'jpg'
+ ,__JPEG__ => 'jpeg'
+ ,__PNG__  => 'png'
+ ,__GIF__  => 'gif'
+ ,__BMP__  => 'bmp'
+ ,__TEX__  => 'tex'
+ ,__XLS__  => 'xls'
+ ,__XLSX__ => 'xlsx'
+ ,__DOCX__ => 'doc'
+ ,__DOCX__ =>'docx'
+ ,__PPT__  => 'ppt'
+ ,__PPTX__ => 'pptx'
+ ,__ODT__  => 'odt'
+ ,__TXT__  => 'txt'
+ ,__RTF__  =>'rtf'
+
+]; 
 
 /**
   * @var @property Array of data 
@@ -689,62 +708,200 @@ static private $str;
   * @var @BREAKTAG_ARRAY
   *
   **/
-static protected $htm    = ['h1','h2','h3','h4','h5','h6','div','p','button','a','iframe','main','nav','select','form','picture','section','textarea'];
+static protected $htm    = [
+
+   'h1'
+  ,'h2'
+  ,'h3'
+  ,'h4'
+  ,'h5'
+  ,'h6'
+  ,'div'
+  ,'p'
+  ,'button'
+  ,'a'
+  ,'iframe'
+  ,'main'
+  ,'nav'
+  ,'select'
+  ,'form'
+  ,'picture'
+  ,'section'
+  ,'textarea'
+
+];
+
 /**
   * @var 
   * @property @SECONDARY_VARIABLE 
   * defined arrays of data html 
   **/
-static protected $htm_s  = ['audio','video','address','colgroup','bdi','bdo','blockquote','caption','label','datalist','details','summary','dialog','option'];
+static protected $htm_s  = [
+
+   'audio'
+  ,'video'
+  ,'address'
+  ,'colgroup'
+  ,'bdi'
+  ,'bdo'
+  ,'blockquote'
+  ,'caption'
+  ,'label'
+  ,'datalist'
+  ,'details'
+  ,'summary'
+  ,'dialog'
+  ,'option'
+
+];
 
 /**
   * @var 
   * @property @SUPPORT_VARIABLE 
   * defined arrays of data html 
   **/
-static protected $htm_ss = ['figure','figcaption','meter','object','optgroup','output','progress','svg','template','time','var'];
+static protected $htm_ss = [
+
+   'figure'
+  ,'figcaption'
+  ,'meter'
+  ,'object'
+  ,'optgroup'
+  ,'output'
+  ,'progress'
+  ,'svg'
+  ,'template'
+  ,'time'
+  ,'var'
+
+];
 
 /**
   * @var 
   * @property @LIST_VARIABLE 
   * defined arrays of data html 
   **/
-static protected $htm_t  = ['ul','ol','li','table','tr','td','th','legend','fieldset','tbody','tfoot','thead']; 
+static protected $htm_t  = [
+
+   'ul'
+  ,'ol'
+  ,'li'
+  ,'table'
+  ,'tr'
+  ,'td'
+  ,'th'
+  ,'legend'
+  ,'fieldset'
+  ,'tbody'
+  ,'tfoot'
+  ,'thead'
+
+]; 
 
 /**
   * @var 
   * @property @FORMAT_VARIABLE 
   * defined arrays of data html 
   **/
-static protected $htm_f  = ['span','em','b','i','small','strike','marquee','center','code','abbr','map','canvas','cite','data','dl','dt','dd','dfn','ins'];
+static protected $htm_f  = [
+
+   'span'
+  ,'em'
+  ,'b'
+  ,'i'
+  ,'small'
+  ,'strike'
+  ,'marquee'
+  ,'center'
+  ,'code'
+  ,'abbr'
+  ,'map'
+  ,'canvas'
+  ,'cite'
+  ,'data'
+  ,'dl'
+  ,'dt'
+  ,'dd'
+  ,'dfn'
+  ,'ins'
+
+];
 
 /**
   * @var 
   * @property @FORMAT_VARIABLE 
   * defined arrays of data html 
   **/
-static protected $htm_fc = ['del','kbd','mark','pre','rt','rp','ruby','s','samp','strong','sub','sup','wbr','q'];
+static protected $htm_fc = [
+
+   'del'
+  ,'kbd'
+  ,'mark'
+  ,'pre'
+  ,'rt'
+  ,'rp'
+  ,'ruby'
+  ,'s'
+  ,'samp'
+  ,'strong'
+  ,'sub'
+  ,'sup'
+  ,'wbr'
+  ,'q'
+
+];
 
 /**
   * @var 
   * @property @INLINE_VARIABLE  (NO x HTML TAG)
   * defined arrays of data html 
   **/
-static protected $htm_L  = ['source','track','circle','param','input','meta','link','img','embed','option','col','base','aside','area','DOCTYPE html'];
+static protected $htm_L  = [
+
+   'source'
+  ,'track'
+  ,'circle'
+  ,'param'
+  ,'input'
+  ,'meta'
+  ,'link'
+  ,'img'
+  ,'embed'
+  ,'option'
+  ,'col'
+  ,'base'
+  ,'aside'
+  ,'area'
+  ,'DOCTYPE html'
+
+];
 
 /**
   * @var 
   * @property @STRUCTURE_VARIABLE  (NO x HTML TAG)
   * defined arrays of data html 
   S**/
-static protected $htm_st = ['head','title','body','html'];
+static protected $htm_st = [
+
+   'head'
+  ,'title'
+  ,'body'
+  ,'html'
+
+];
 
 /**
   * @var 
   * @property @BREAKS_VARIABLE  (NO x HTML TAG)
   * defined arrays of data html 
   **/
-static protected $hBreak = ["\n","br","hr"];
+static protected $hBreak = [
+
+    "\n"
+   ,"br"
+   ,"hr"
+
+];
 
 /**
   * @var 
@@ -760,7 +917,16 @@ static protected $hextend = [];
   * Neat and clean noHTML
   *
   **/
-  static public function BREAK($assoc=null) { return self::_isTrueBREAK_assoc($assoc); }
+  static public function BREAK(
+
+    $assoc     =  null
+
+  )
+  { 
+
+      return self::_isTrueBREAK_assoc($assoc); 
+
+  }
 
 /**
   *
@@ -769,7 +935,16 @@ static protected $hextend = [];
   * Neat and clean noHTML
   *
   **/
-  static public function LINE($assoc=null) { return self::_isTrueLine_assoc($assoc); }
+  static public function LINE(
+
+      $assoc    =  null
+
+  )
+  { 
+  
+      return self::_isTrueLine_assoc($assoc);
+
+  }
 
 /**
   *
@@ -778,7 +953,16 @@ static protected $hextend = [];
   * Neat and clean noHTML
   *
   **/
-  static public function SPACE($assoc=null) { return self::_tagSPACER(); }
+  static public function SPACE(
+
+      $assoc    =  null
+
+  )
+  { 
+  
+      return self::_tagSPACER(); 
+  
+  }
 
 /**
   *
@@ -788,7 +972,17 @@ static protected $hextend = [];
   * Neat and clean noHTML
   *
   **/
-  static public function PERFORM($str=null, $assoc=null) { return self::_isTrue_SET_STRING($str, $assoc); }
+  static public function PERFORM(
+
+       $str     =  null
+      ,$assoc   =  null
+
+  )
+  { 
+
+      return self::_isTrue_SET_STRING($str, $assoc); 
+
+  }
 
 /**
   *
@@ -798,7 +992,16 @@ static protected $hextend = [];
   * Neat and clean noHTML
   *
   **/
-   static public function _MERGE($func_merge = null ) { return self::_isTrue_SET_Merge($func_merge); }
+   static public function _MERGE(
+
+       $func_merge     =  null 
+
+   )
+   { 
+
+       return self::_isTrue_SET_Merge($func_merge); 
+
+   }
 
 /**
   *
@@ -823,7 +1026,16 @@ static protected $hextend = [];
   * Build Beautiful and Maintainable
   *
   **/  
-   static public function SetFileExtension($argu = null) { return self::Validate_extension_assets_files($argu); }
+   static public function SetFileExtension(
+
+       $argu    =  null
+
+   )
+   { 
+
+       return self::Validate_extension_assets_files($argu); 
+
+   }
   
   /**
   *
@@ -836,7 +1048,17 @@ static protected $hextend = [];
   * Html::_ELEMENT('http-equiv','meta', SetElemAttr(['http-equiv','content'],['X-UA-Compatible','IE=edge']));
   *
   **/ 
-  static public function SetElemAttr($array_set_1,$array_set_2) { return self::Set_Element_Attr($array_set_1,$array_set_2); }
+  static public function SetElemAttr(
+
+     $array_set_1
+    ,$array_set_2
+
+  )
+  { 
+
+       return self::Set_Element_Attr($array_set_1,$array_set_2); 
+
+  }
 
 /**
   *
@@ -848,9 +1070,18 @@ static protected $hextend = [];
   * $label = 'MAGIC_END' output: </p> | x any tag elements html
   *
   **/
-  static public function __magicELEMENT($elem, $label=null, $js=[], $id=null, $class=null) {
+  static public function __magicELEMENT(
+
+      $elem
+     ,$label    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+)
+{
  
- return  self::_setReturnELEMENT(self::_setELEMENTS($elem), $value=null, $js, $id, $class, $label); 
+  return  self::_setReturnELEMENT(self::_setELEMENTS($elem), $value=null, $attr, $id, $class, $label); 
 
 } 
 
@@ -863,11 +1094,19 @@ static protected $hextend = [];
   * html::PERFORM(__magicELSE( $par == TRUE ,'Yes','NO','FUNC_ASSOC')); // without the function 
   *
   **/
-  static public function __magicELSE($condition=null, $if_result=null, $else_result=null, $assoc=null) { 
+  static public function __magicELSE(
 
-  return self::return_method_concat_else( $condition, $if_result, $else_result, $assoc); 
+      $condition    =  null
+     ,$if_result    =  null
+     ,$else_result  =  null
+     ,$assoc        =  null
 
-}
+  )
+  { 
+
+    return self::return_method_concat_else( $condition, $if_result, $else_result, $assoc); 
+
+ }
 
 /**
   *
@@ -878,11 +1117,18 @@ static protected $hextend = [];
   * html::PERFORM(__magicIF( $par == TRUE ,'Yes','FUNC_ASSOC')); // without the function 
   *
   **/
-  static public function __magicIF($condition=null, $if_result=null, $assoc=null) { 
+  static public function __magicIF(
 
-  return self::return_method_concat_else($condition,$if_result,NULL,$assoc); 
+      $condition    =  null
+     ,$if_result    =  null
+     ,$assoc        =  null  
 
-}
+  )
+  { 
+
+    return self::return_method_concat_else($condition,$if_result,NULL,$assoc); 
+
+ }
 
 /**
   *
@@ -891,10 +1137,22 @@ static protected $hextend = [];
   * Neat and clean noHTML
   *
   **/
-  static public function ELEMS($inline="INLINE", $elem, $js=[], $id=null, $class=null, $assoc=null) { 
+  static public function ELEMS(
+
+
+    $inline     =  "INLINE"
+   ,$elem 
+   ,$attr       =  []
+   ,$id         =  null
+   ,$class      =  null
+   ,$assoc      =  null
+
+ )
+ { 
    
-     return self::HtmlELements_Optimizer($inline, $elem, $js, $id, $class, $assoc);
-}
+     return self::HtmlELements_Optimizer($inline, $elem, $attr, $id, $class, $assoc);
+ 
+ }
 
 /**
   *
@@ -903,7 +1161,17 @@ static protected $hextend = [];
   * Neat and clean noHTML
   *
   **/
-  static public function STRING($str=null, $assoc=null) { return self::_isTrue_SET_STRING($str, $assoc); }
+  static public function STRING(
+
+    $str    = null
+   ,$assoc  = null
+
+  )
+  { 
+
+     return self::_isTrue_SET_STRING($str, $assoc); 
+
+  }
 
 /**
   *
@@ -912,11 +1180,21 @@ static protected $hextend = [];
   * Neat and clean noHTML
   *
   **/
-  static public function ELEMENT($elem, $value=null, $js=[], $id=null, $class=null, $label=null) {
- 
- return  self::_setReturnELEMENT(self::_setELEMENTS($elem), $value, $js, $id, $class, $label); 
+  static public function ELEMENT(
 
-} 
+      $elem
+     ,$value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+
+  )
+  {
+ 
+     return  self::_setReturnELEMENT(self::_setELEMENTS($elem), $value, $attr, $id, $class, $label); 
+
+ } 
 
 /**
   *
@@ -925,9 +1203,29 @@ static protected $hextend = [];
   * RETURN HEADING _ noHTML TAG
   *
   **/
-  static public function _H1($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('PRIMARY', 0, $js, $id, $class) ); }
-// CLOSING_METHOD_noHTML_HEADING_TAG 
-  static public function xH1($label = NULL) { self::PERFORM(self::get_xHTML('PRIMARY', 0, $label)); }
+  static public function _H1(
+
+       $attr     =  []
+      ,$i        =  null
+      ,$class    =  null
+
+  )
+  { 
+
+       self::PERFORM( self::get__HTML('PRIMARY', 0, $attr, $id, $class) ); 
+
+  }
+  // CLOSING_METHOD_noHTML_HEADING_TAG 
+  static public function xH1(
+
+      $label     =  NULL
+
+ )
+ { 
+
+    self::PERFORM(self::get_xHTML('PRIMARY', 0, $label)); 
+
+ }
 
 /**
   *
@@ -936,9 +1234,29 @@ static protected $hextend = [];
   * RETURN HEADING _ noHTML TAG
   *
   **/
-  static public function _H2($js=[], $id=null, $class=null) { self::PERFORM(  self::get__HTML('PRIMARY', 1, $js, $id, $class) ); }
-// CLOSING_METHOD_noHTML_HEADING_TAG 
-  static public function xH2($label = NULL) { self::PERFORM(  self::get_xHTML('PRIMARY', 1, $label) ); }
+  static public function _H2(
+
+       $attr     =  []
+      ,$i        =  null
+      ,$class    =  null
+
+  )
+  { 
+
+       self::PERFORM(  self::get__HTML('PRIMARY', 1, $attr, $id, $class) ); 
+
+  }
+  // CLOSING_METHOD_noHTML_HEADING_TAG 
+  static public function xH2(
+
+      $label     =  NULL
+
+  )
+  { 
+
+    self::PERFORM(  self::get_xHTML('PRIMARY', 1, $label) ); 
+
+  }
 
 /**
   *
@@ -947,9 +1265,30 @@ static protected $hextend = [];
   * RETURN HEADING _ noHTML TAG
   *
   **/
-  static public function _H3($js=[], $id=null, $class=null) { self::PERFORM(  self::get__HTML('PRIMARY', 2, $js, $id, $class) ); }
-// CLOSING_METHOD_noHTML_HEADING_TAG 
-  static public function xH3($label = NULL) { self::PERFORM(  self::get_xHTML('PRIMARY', 2, $label) );  }
+  static public function _H3(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+  )
+  { 
+
+      self::PERFORM(  self::get__HTML('PRIMARY', 2, $attr, $id, $class) ); 
+
+   }
+
+  // CLOSING_METHOD_noHTML_HEADING_TAG 
+  static public function xH3(
+
+     $label   = NULL
+
+  )
+  { 
+
+    self::PERFORM(  self::get_xHTML('PRIMARY', 2, $label) ); 
+
+  }
 
 /**
   *
@@ -958,9 +1297,30 @@ static protected $hextend = [];
   * RETURN HEADING _ noHTML TAG
   *
   **/
-  static public function _H4($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('PRIMARY', 3, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_HEADING_TAG 
-  static public function xH4($label = NULL) { self::PERFORM( self::get_xHTML('PRIMARY', 3, $label) ); }
+  static public function _H4(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('PRIMARY', 3, $attr, $id, $class) ); 
+
+  }
+  
+  // CLOSING_METHOD_noHTML_HEADING_TAG 
+  static public function xH4(
+
+     $label   = NULL
+
+  )
+  { 
+
+    self::PERFORM( self::get_xHTML('PRIMARY', 3, $label) ); 
+
+  }
 
 /**
   *
@@ -969,9 +1329,31 @@ static protected $hextend = [];
   * RETURN HEADING _ noHTML TAG
   *
   **/
-  static public function _H5($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('PRIMARY', 4, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_HEADING_TAG 
-  static public function xH5($label = NULL) { self::PERFORM( self::get_xHTML('PRIMARY', 4, $label) ); }
+  static public function _H5(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('PRIMARY', 4, $attr, $id, $class) ); 
+
+
+  }
+  
+  // CLOSING_METHOD_noHTML_HEADING_TAG 
+  static public function xH5(
+
+     $label    =  NULL
+
+   )
+   { 
+
+      self::PERFORM( self::get_xHTML('PRIMARY', 4, $label) ); 
+
+   }
 
 /**
   *
@@ -980,9 +1362,28 @@ static protected $hextend = [];
   * RETURN HEADING _ noHTML TAG
   *
   **/
-  static public function _H6($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('PRIMARY', 5, $js, $id, $class) ); }
-// CLOSING_METHOD_noHTML_HEADING_TAG 
-  static public function xH6($label = NULL) { self::PERFORM( self::get_xHTML('PRIMARY', 5, $label) ); }
+  static public function _H6(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+ )
+ { 
+
+    self::PERFORM( self::get__HTML('PRIMARY', 5, $attr, $id, $class) ); 
+
+ }
+  // CLOSING_METHOD_noHTML_HEADING_TAG 
+  static public function xH6(
+
+       $label     =  NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('PRIMARY', 5, $label) );
+
+  }
 
 /**
   *
@@ -991,9 +1392,28 @@ static protected $hextend = [];
   * RETURN NODE DIV _ noHTML TAG
   *
   **/
-  static public function _DIV($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('PRIMARY', 6, $js, $id, $class) ); }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xDIV($label = NULL) { self::PERFORM( self::get_xHTML('PRIMARY', 6, $label)); }
+  static public function _DIV(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+ )
+ { 
+
+    self::PERFORM( self::get__HTML('PRIMARY', 6, $attr, $id, $class) ); 
+
+ }
+  // CLOSING_METHOD_noHTML_TAG 
+  static public function xDIV(
+
+       $label     =  NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('PRIMARY', 6, $label)); 
+  
+  }
 
 /**
   *
@@ -1002,9 +1422,29 @@ static protected $hextend = [];
   * RETURN NODE PARAGRAPH _ noHTML TAG
   *
   **/
-  static public function _P($js=[], $id=null, $class=null) { self::PERFORM(  self::get__HTML('PRIMARY', 7, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xP($label = NULL) { self::PERFORM( self::get_xHTML('PRIMARY', 7, $label) ); }
+  static public function _P(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+ )
+ { 
+
+    self::PERFORM(  self::get__HTML('PRIMARY', 7, $attr, $id, $class) );
+
+ }
+
+ // CLOSING_METHOD_noHTML_TAG 
+  static public function xP(
+
+      $label   =  NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('PRIMARY', 7, $label) ); 
+
+  }
 
 /**
   *
@@ -1013,9 +1453,29 @@ static protected $hextend = [];
   * RETURN NODE BUTTON _ noHTML TAG
   *
   **/
-  static public function _BUTTON($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('PRIMARY', 8, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xBUTTON($label = NULL) { self::PERFORM( self::get_xHTML('PRIMARY', 8, $label) ); }
+  static public function _BUTTON(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('PRIMARY', 8, $attr, $id, $class) ); 
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  static public function xBUTTON(
+
+      $label    =  NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('PRIMARY', 8, $label) );
+
+  }
 
 /**
   *
@@ -1024,9 +1484,29 @@ static protected $hextend = [];
   * RETURN NODE HYPERLINK _ noHTML TAG
   *
   **/
-  static public function _A($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('PRIMARY', 9, $js, $id, $class) ); }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xA($label = NULL) { self::PERFORM( self::get_xHTML('PRIMARY', 9, $label) ); }
+  static public function _A(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('PRIMARY', 9, $attr, $id, $class) ); 
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  static public function xA(
+
+      $label    =  NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('PRIMARY', 9, $label) );
+
+  }
 
 /**
   *
@@ -1035,9 +1515,29 @@ static protected $hextend = [];
   * RETURN NODE IFRAME _ noHTML TAG
   *
   **/
-  static public function _IFRAME($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('PRIMARY', 10, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xIFRAME($label = NULL) { self::PERFORM( self::get_xHTML('PRIMARY', 10, $label) ); }
+  static public function _IFRAME(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('PRIMARY', 10, $attr, $id, $class) ); 
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  static public function xIFRAME(
+
+    $label     =  NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('PRIMARY', 10, $label) ); 
+
+  }
 
 /**
   *
@@ -1046,9 +1546,30 @@ static protected $hextend = [];
   * RETURN NODE MAIN _ noHTML TAG
   *
   **/
-  static public function _MAIN($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('PRIMARY', 11, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xMAIN($label = NULL) { self::PERFORM( self::get_xHTML('PRIMARY', 11, $label) ); }
+  static public function _MAIN(
+
+       $attr    =  []
+      ,$id      =  null
+      ,$class   =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('PRIMARY', 11, $attr, $id, $class) ); 
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG 
+  static public function xMAIN(
+
+      $label     =  NULL
+
+ )
+ { 
+
+     self::PERFORM( self::get_xHTML('PRIMARY', 11, $label) ); 
+
+ }
 
 /**
   *
@@ -1057,9 +1578,30 @@ static protected $hextend = [];
   * RETURN NODE NAV _ noHTML TAG
   *
   **/
-  static public function _NAV($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('PRIMARY', 12, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xNAV($label = NULL) { self::PERFORM( self::get_xHTML('PRIMARY', 12, $label) ); }
+  static public function _NAV(
+
+       $attr    =  []
+      ,$id      =  null
+      ,$class   =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('PRIMARY', 12, $attr, $id, $class) ); 
+
+  }
+ 
+ // CLOSING_METHOD_noHTML_TAG 
+  static public function xNAV(
+
+      $label     =  NULL
+
+ )
+ { 
+
+     self::PERFORM( self::get_xHTML('PRIMARY', 12, $label) ); 
+
+ }
 
 /**
   *
@@ -1068,9 +1610,30 @@ static protected $hextend = [];
   * RETURN NODE SELECT _ noHTML TAG
   *
   **/
-  static public function _SELECT($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('PRIMARY', 13, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xSELECT($label = NULL) { self::PERFORM( self::get_xHTML('PRIMARY', 13, $label) ); }
+  static public function _SELECT(
+
+       $attr    =  []
+      ,$id      =  null
+      ,$class   =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('PRIMARY', 13, $attr, $id, $class) ); 
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  static public function xSELECT(
+
+      $label     = NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('PRIMARY', 13, $label) );
+
+  }
 
 /**
   *
@@ -1079,9 +1642,30 @@ static protected $hextend = [];
   * RETURN NODE FORM _ noHTML TAG
   *
   **/
-  static public function _FORM($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('PRIMARY', 14, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xFORM($label = NULL) { self::PERFORM( self::get_xHTML('PRIMARY', 14, $label) ); }
+  static public function _FORM(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+   )
+   { 
+
+      self::PERFORM( self::get__HTML('PRIMARY', 14, $attr, $id, $class) ); 
+
+   }
+  
+  // CLOSING_METHOD_noHTML_TAG 
+  static public function xFORM(
+
+      $label    =  NULL
+
+  )
+  { 
+
+     self::PERFORM( self::get_xHTML('PRIMARY', 14, $label) );
+  
+  }
 
 /**
   *
@@ -1090,9 +1674,30 @@ static protected $hextend = [];
   * RETURN NODE PICTURE _ noHTML TAG
   *
   **/
-  static public function _PICTURE($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('PRIMARY', 15, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xPICTURE($label = NULL) { self::PERFORM( self::get_xHTML('PRIMARY', 15, $label) ); }
+  static public function _PICTURE(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+   )
+   { 
+
+      self::PERFORM( self::get__HTML('PRIMARY', 15, $attr, $id, $class) ); 
+
+   }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  static public function xPICTURE(
+
+      $label    =  NULL
+
+  )
+  { 
+
+     self::PERFORM( self::get_xHTML('PRIMARY', 15, $label) );
+  
+  }
 
 /**
   *
@@ -1101,9 +1706,30 @@ static protected $hextend = [];
   * RETURN NODE SECTION _ noHTML TAG
   *
   **/
-  static public function _SECTION($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('PRIMARY', 16, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xSECTION($label = NULL) { self::PERFORM( self::get_xHTML('PRIMARY', 16, $label) ); }
+  static public function _SECTION(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+   )
+   { 
+
+      self::PERFORM( self::get__HTML('PRIMARY', 16, $attr, $id, $class) ); 
+
+   }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  static public function xSECTION(
+
+      $label    =  NULL
+
+  )
+  { 
+
+     self::PERFORM( self::get_xHTML('PRIMARY', 16, $label) ); 
+
+  }
 
 /**
   *
@@ -1112,9 +1738,30 @@ static protected $hextend = [];
   * RETURN NODE TEXTAREA _ noHTML TAG
   *
   **/
-  static public function _TEXTAREA($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('PRIMARY', 17, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xTEXTAREA($label = NULL) { self::PERFORM( self::get_xHTML('PRIMARY', 17, $label) ); }
+  static public function _TEXTAREA(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+  
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('PRIMARY', 17, $attr, $id, $class) ); 
+
+  }
+
+ // CLOSING_METHOD_noHTML_TAG 
+  static public function xTEXTAREA(
+
+      $label    = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('PRIMARY', 17, $label) );
+
+ }
 
 /**
   *
@@ -1123,9 +1770,30 @@ static protected $hextend = [];
   * RETURN NODE AUDIO _ noHTML TAG
   *
   **/
-  static public function _AUDIO($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SECONDARY', 0, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xAUDIO($label = NULL) { self::PERFORM( self::get_xHTML('SECONDARY', 0, $label) ); }
+  static public function _AUDIO(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+  
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('SECONDARY', 0, $attr, $id, $class) ); 
+
+  }
+
+ // CLOSING_METHOD_noHTML_TAG 
+  static public function xAUDIO(
+
+      $label    = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('SECONDARY', 0, $label) );
+
+ }
 
 /**
   *
@@ -1134,9 +1802,30 @@ static protected $hextend = [];
   * RETURN NODE VIDEO _ noHTML TAG
   *
   **/
-  static public function _VIDEO($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SECONDARY', 1, $js, $id, $class) ); }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xVIDEO($label = NULL) { self::PERFORM( self::get_xHTML('SECONDARY', 1, $label) ); }
+  static public function _VIDEO(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+  
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('SECONDARY', 1, $attr, $id, $class) ); 
+  
+  }
+
+ // CLOSING_METHOD_noHTML_TAG 
+  static public function xVIDEO(
+
+      $label    = NULL
+
+  )
+  { 
+
+     self::PERFORM( self::get_xHTML('SECONDARY', 1, $label) ); 
+
+  }
 
 /**
   *
@@ -1145,9 +1834,30 @@ static protected $hextend = [];
   * RETURN NODE ADDRESS _ noHTML TAG
   *
   **/
-  static public function _ADDRESS($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SECONDARY', 2, $js, $id, $class) ); }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xADDRESS($label = NULL) { self::PERFORM( self::get_xHTML('SECONDARY', 2, $label) ); }
+  static public function _ADDRESS(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('SECONDARY', 2, $attr, $id, $class) ); 
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG 
+  static public function xADDRESS(
+
+      $label    = NULL
+
+  )
+  { 
+
+    self::PERFORM( self::get_xHTML('SECONDARY', 2, $label) ); 
+
+  }
 
 /**
   *
@@ -1156,9 +1866,30 @@ static protected $hextend = [];
   * RETURN NODE COLGROUP _ noHTML TAG
   *
   **/
-  static public function _COLGROUP($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SECONDARY', 3, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xCOLGROUP($label = NULL) { self::PERFORM( self::get_xHTML('SECONDARY', 3, $label) ); }
+  static public function _COLGROUP(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('SECONDARY', 3, $attr, $id, $class) ); 
+
+  } 
+  
+  // CLOSING_METHOD_noHTML_TAG 
+  static public function xCOLGROUP(
+
+      $label    = NULL
+
+  )
+  { 
+
+    self::PERFORM( self::get_xHTML('SECONDARY', 3, $label) ); 
+
+  }
 
 /**
   *
@@ -1167,9 +1898,30 @@ static protected $hextend = [];
   * RETURN NODE BDI _ noHTML TAG
   *
   **/
-  static public function _BDI($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SECONDARY', 4, $js, $id, $class) ); }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xBDI($label = NULL) { self::PERFORM( self::get_xHTML('SECONDARY', 4, $label) ); }
+  static public function _BDI(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('SECONDARY', 4, $attr, $id, $class) ); 
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  static public function xBDI(
+
+       $label   = NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('SECONDARY', 4, $label) ); 
+
+  }
 
 /**
   *
@@ -1178,9 +1930,29 @@ static protected $hextend = [];
   * RETURN NODE BDO _ noHTML TAG
   *
   **/
-  static public function _BDO($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SECONDARY', 5, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xBDO($label = NULL) { self::PERFORM( self::get_xHTML('SECONDARY', 5, $label) ); }
+  static public function _BDO(
+
+       $attr    =  []
+      ,$id      =  null
+      ,$class   =  null
+
+  )
+  { 
+
+     self::PERFORM( self::get__HTML('SECONDARY', 5, $attr, $id, $class) ); 
+
+   }
+  
+  // CLOSING_METHOD_noHTML_TAG 
+  static public function xBDO(
+
+      $label   =  NULL
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('SECONDARY', 5, $label) ); 
+
+  }
 
 /**
   *
@@ -1189,9 +1961,29 @@ static protected $hextend = [];
   * RETURN NODE BLOCKQUOTE _ noHTML TAG
   *
   **/
-  static public function _BLOCKQUOTE($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SECONDARY', 6, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xBLOCKQUOTE($label = NULL) { self::PERFORM( self::get_xHTML('SECONDARY', 6, $label) ); }
+  static public function _BLOCKQUOTE(
+
+       $attr    =  []
+      ,$id      =  null
+      ,$class   =  null
+
+  )
+  { 
+
+     self::PERFORM( self::get__HTML('SECONDARY', 6, $attr, $id, $class) ); 
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG 
+  static public function xBLOCKQUOTE(
+
+      $label   =  NULL
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('SECONDARY', 6, $label) ); 
+
+  }
 
 /**
   *
@@ -1200,9 +1992,30 @@ static protected $hextend = [];
   * RETURN NODE CAPTION _ noHTML TAG
   *
   **/
-  static public function _CAPTION($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SECONDARY', 7, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xCAPTION($label = NULL) { self::PERFORM( self::get_xHTML('SECONDARY', 7, $label) ); }
+  static public function _CAPTION(
+
+       $attr    =  []
+      ,$id      =  null
+      ,$class   =  null
+
+  )
+  { 
+
+     self::PERFORM( self::get__HTML('SECONDARY', 7, $attr, $id, $class) ); 
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG 
+  static public function xCAPTION(
+
+       $label  =  NULL
+
+  )
+  { 
+
+     self::PERFORM( self::get_xHTML('SECONDARY', 7, $label) ); 
+ 
+  }
 
 /**
   *
@@ -1211,9 +2024,30 @@ static protected $hextend = [];
   * RETURN NODE LABEL _ noHTML TAG
   *
   **/
-  static public function _LABEL($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SECONDARY', 8, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xLABEL($label = NULL) { self::PERFORM( self::get_xHTML('SECONDARY', 8, $label) ); }
+  static public function _LABEL(
+
+     $attr     =  []
+    ,$id       =  null
+    ,$class    =  null
+  
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('SECONDARY', 8, $attr, $id, $class) ); 
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  static public function xLABEL(
+
+      $label    =  NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('SECONDARY', 8, $label) ); 
+
+  }
 
 /**
   *
@@ -1222,9 +2056,30 @@ static protected $hextend = [];
   * RETURN NODE DATALIST _ noHTML TAG
   *
   **/
-  static public function _DATALIST($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SECONDARY', 9, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xDATALIST($label = NULL) { self::PERFORM( self::get_xHTML('SECONDARY', 9, $label) ); }
+  static public function _DATALIST(
+
+     $attr     =  []
+    ,$id       =  null
+    ,$class    =  null
+  
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('SECONDARY', 9, $attr, $id, $class) ); 
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG 
+  static public function xDATALIST(
+
+      $label    =  NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('SECONDARY', 9, $label) ); 
+
+  }
 
 /**
   *
@@ -1233,9 +2088,30 @@ static protected $hextend = [];
   * RETURN NODE DETAILS _ noHTML TAG
   *
   **/
-  static public function _DETAILS($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SECONDARY', 10, $js, $id, $class) ); }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xDETAILS($label = NULL) { self::PERFORM( self::get_xHTML('SECONDARY', 10, $label) ); }
+  static public function _DETAILS(
+
+     $attr     =  []
+    ,$id       =  null
+    ,$class    =  null
+  
+  )
+  { 
+ 
+      self::PERFORM( self::get__HTML('SECONDARY', 10, $attr, $id, $class) ); 
+ 
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG 
+  static public function xDETAILS(
+
+    $label   = NULL
+ 
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('SECONDARY', 10, $label) ); 
+
+ }
 
 /**
   *
@@ -1244,9 +2120,30 @@ static protected $hextend = [];
   * RETURN NODE SUMMARY _ noHTML TAG
   *
   **/
-  static public function _SUMMARY($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SECONDARY', 11, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xSUMMARY($label = NULL) { self::PERFORM( self::get_xHTML('SECONDARY', 11, $label) ); }
+  static public function _SUMMARY(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('SECONDARY', 11, $attr, $id, $class) ); 
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG 
+  static public function xSUMMARY(
+
+      $label   = NULL
+ 
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('SECONDARY', 11, $label) ); 
+
+ }
 
 /**
   *
@@ -1255,9 +2152,30 @@ static protected $hextend = [];
   * RETURN NODE DIALOG _ noHTML TAG
   *
   **/
-  static public function _DIALOG($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SECONDARY', 12, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xDIALOG($label = NULL) { self::PERFORM( self::get_xHTML('SECONDARY', 12, $label) ); }
+  static public function _DIALOG(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('SECONDARY', 12, $attr, $id, $class) ); 
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  static public function xDIALOG(
+
+      $label   = NULL
+ 
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('SECONDARY', 12, $label) ); 
+
+ }
 
 /**
   *
@@ -1266,9 +2184,30 @@ static protected $hextend = [];
   * RETURN NODE OPTION _ noHTML TAG
   *
   **/
-  static public function _OPTION($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SECONDARY', 12, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG 
-  static public function xOPTION($label = NULL) { self::PERFORM( self::get_xHTML('SECONDARY', 12, $label) ); }
+  static public function _OPTION(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('SECONDARY', 12, $attr, $id, $class) ); 
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  static public function xOPTION(
+
+    $label    = NULL
+  
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('SECONDARY', 12, $label) ); 
+
+ }
 
 /**
   *
@@ -1277,9 +2216,30 @@ static protected $hextend = [];
   * RETURN NODE FIGURE _ noHTML TAG
   *
   **/
-  static public function _FIGURE($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SUPPORT', 0, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xFIGURE($label = NULL) { self::PERFORM( self::get_xHTML('SUPPORT', 0, $label) ); }
+  static public function _FIGURE(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('SUPPORT', 0, $attr, $id, $class) ); 
+
+ }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xFIGURE(
+
+      $label     = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('SUPPORT', 0, $label) ); 
+ 
+ }
 
 /**
   *
@@ -1288,9 +2248,30 @@ static protected $hextend = [];
   * RETURN NODE FIGCAPTION _ noHTML TAG
   *
   **/
-  static public function _FIGCAPTION($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SUPPORT', 1, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xFIGCAPTION($label = NULL) { self::PERFORM( self::get_xHTML('SUPPORT', 1, $label) ); }
+  static public function _FIGCAPTION(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('SUPPORT', 1, $attr, $id, $class) ); 
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xFIGCAPTION(
+
+      $label     = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('SUPPORT', 1, $label) ); 
+ 
+ }
 
 /**
   *
@@ -1299,9 +2280,30 @@ static protected $hextend = [];
   * RETURN NODE METER _ noHTML TAG
   *
   **/
-  static public function _METER($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SUPPORT', 2, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xMETER($label = NULL) { self::PERFORM( self::get_xHTML('SUPPORT', 2, $label) ); }
+  static public function _METER(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('SUPPORT', 2, $attr, $id, $class) ); 
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xMETER(
+
+      $label     = NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('SUPPORT', 2, $label) ); 
+
+  }
 
 /**
   *
@@ -1310,9 +2312,30 @@ static protected $hextend = [];
   * RETURN NODE OBJECT _ noHTML TAG
   *
   **/
-  static public function _OBJECT($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SUPPORT', 3, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xOBJECT($label = NULL) { self::PERFORM( self::get_xHTML('SUPPORT', 3, $label) ); }
+  static public function _OBJECT(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('SUPPORT', 3, $attr, $id, $class) );  
+
+ }
+
+ // CLOSING_METHOD_noHTML_TAG
+  static public function xOBJECT(
+
+      $label   = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('SUPPORT', 3, $label) ); 
+
+ }
 
 /**
   *
@@ -1321,9 +2344,30 @@ static protected $hextend = [];
   * RETURN NODE OPTGROUP _ noHTML TAG
   *
   **/
-  static public function _OPTGROUP($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SUPPORT', 4, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xOPTGROUP($label = NULL) { self::PERFORM( self::get_xHTML('SUPPORT', 4, $label) ); }
+  static public function _OPTGROUP(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('SUPPORT', 4, $attr, $id, $class) ); 
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xOPTGROUP(
+
+      $label   = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('SUPPORT', 4, $label) ); 
+
+ }
 
 /**
   *
@@ -1332,9 +2376,30 @@ static protected $hextend = [];
   * RETURN NODE OUTPUT _ noHTML TAG
   *
   **/
-  static public function _OUTPUT($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SUPPORT', 5, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xOUTPUT($label = NULL) { self::PERFORM( self::get_xHTML('SUPPORT', 5, $label) ); }
+  static public function _OUTPUT(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('SUPPORT', 5, $attr, $id, $class) );  
+
+ }
+
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xOUTPUT(
+
+      $label    = NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('SUPPORT', 5, $label) ); 
+
+  }
 
 /**
   *
@@ -1343,9 +2408,30 @@ static protected $hextend = [];
   * RETURN NODE PROGRESS _ noHTML TAG
   *
   **/
-  static public function _PROGRESS($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SUPPORT', 6, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xPROGRESS($label = NULL) { self::PERFORM( self::get_xHTML('SUPPORT', 6, $label) ); }
+  static public function _PROGRESS(
+
+      $attr     = []
+     ,$id       = null
+     ,$class    = null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('SUPPORT', 6, $attr, $id, $class) ); 
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xPROGRESS(
+
+      $label     =  NULL
+ 
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('SUPPORT', 6, $label) ); 
+ 
+ }
 
 /**
   *
@@ -1354,9 +2440,30 @@ static protected $hextend = [];
   * RETURN NODE SVG _ noHTML TAG
   *
   **/
-  static public function _SVG($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SUPPORT', 7, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xSVG($label = NULL) { self::PERFORM( self::get_xHTML('SUPPORT', 7, $label) ); }
+  static public function _SVG(
+
+      $attr     = []
+     ,$id       = null
+     ,$class    = null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('SUPPORT', 7, $attr, $id, $class) ); 
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xSVG(
+
+      $label     =  NULL
+ 
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('SUPPORT', 7, $label) ); 
+ 
+ }
 
 /**
   *
@@ -1365,9 +2472,30 @@ static protected $hextend = [];
   * RETURN NODE TEMPLATE _ noHTML TAG
   *
   **/
-  static public function _TEMPLATE($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SUPPORT', 8, $js, $id, $class) ); }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xTEMPLATE($label = NULL) { self::PERFORM( self::get_xHTML('SUPPORT', 8, $label) ); }
+  static public function _TEMPLATE(
+
+      $attr     = []
+     ,$id       = null
+     ,$class    = null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('SUPPORT', 8, $attr, $id, $class) ); 
+
+
+  }
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xTEMPLATE(
+
+      $label     = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('SUPPORT', 8, $label) ); 
+
+ }
 
 /**
   *
@@ -1376,9 +2504,30 @@ static protected $hextend = [];
   * RETURN NODE TIME _ noHTML TAG
   *
   **/
-  static public function _TIME($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SUPPORT', 9, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xTIME($label = NULL) { self::PERFORM( self::get_xHTML('SUPPORT', 9, $label) ); }
+  static public function _TIME(
+
+       $attr    =  []
+      ,$id      =  null
+      ,$class   =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('SUPPORT', 9, $attr, $id, $class) );  
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xTIME(
+
+      $label    = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('SUPPORT', 9, $label) );
+
+ }
 
 /**
   *
@@ -1387,9 +2536,30 @@ static protected $hextend = [];
   * RETURN NODE VAR _ noHTML TAG
   *
   **/
-  static public function _VAR($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('SUPPORT', 10, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xVAR($label = NULL) { self::PERFORM( self::get_xHTML('SUPPORT', 10, $label) ); }
+  static public function _VAR(
+
+       $attr    =  []
+      ,$id      =  null
+      ,$class   =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('SUPPORT', 10, $attr, $id, $class) );  
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xVAR(
+
+      $label    = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('SUPPORT', 10, $label) );
+
+ }
 
 /**
   *
@@ -1398,9 +2568,29 @@ static protected $hextend = [];
   * RETURN NODE UL _ noHTML TAG
   *
   **/
-  static public function _UL($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('LIST', 0, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xUL($label = NULL) { self::PERFORM( self::get_xHTML('LIST', 0, $label) ); }
+  static public function _UL(
+
+       $attr    =  []
+      ,$id      =  null
+      ,$class   =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('LIST', 0, $attr, $id, $class) );  
+ }
+
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xUL(
+
+      $label    = NULL
+
+  )
+  { 
+
+     self::PERFORM( self::get_xHTML('LIST', 0, $label) ); 
+
+  }
 
 /**
   *
@@ -1409,9 +2599,30 @@ static protected $hextend = [];
   * RETURN NODE OL _ noHTML TAG
   *
   **/
-  static public function _OL($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('LIST', 1, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xOL($label = NULL) { self::PERFORM( self::get_xHTML('LIST', 1, $label) ); }
+  static public function _OL(
+
+       $attr    =  []
+      ,$id      =  null
+      ,$class   =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('LIST', 1, $attr, $id, $class) ); 
+  
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xOL(
+
+       $label    = NULL
+
+ )
+ { 
+
+     self::PERFORM( self::get_xHTML('LIST', 1, $label) ); 
+
+ }
 
 /**
   *
@@ -1420,9 +2631,31 @@ static protected $hextend = [];
   * RETURN NODE LI _ noHTML TAG
   *
   **/
-  static public function _LI($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('LIST', 2, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xLI($label = NULL) { self::PERFORM( self::get_xHTML('LIST', 2, $label) ); }
+  static public function _LI(
+
+       $attr    =  []
+      ,$id      =  null
+      ,$class   =  null
+
+  )
+  { 
+
+  
+      self::PERFORM( self::get__HTML('LIST', 2, $attr, $id, $class) ); 
+  
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xLI(
+
+       $label    = NULL
+
+ )
+ { 
+
+     self::PERFORM( self::get_xHTML('LIST', 2, $label) ); 
+
+ }
 
 /**
   *
@@ -1431,9 +2664,29 @@ static protected $hextend = [];
   * RETURN NODE TABLE _ noHTML TAG
   *
   **/
-  static public function _TABLE($js=[], $id=null, $class=null) { self::PERFORM(self::get__HTML('LIST', 3, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xTABLE($label = NULL) { self::PERFORM( self::get_xHTML('LIST', 3, $label) ); }
+  static public function _TABLE(
+
+       $attr    =  []
+      ,$id      =  null
+      ,$class   =  null
+
+  )
+  { 
+
+      self::PERFORM(self::get__HTML('LIST', 3, $attr, $id, $class) );  
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xTABLE(
+
+      $label     = NULL
+
+ )
+ { 
+
+     self::PERFORM( self::get_xHTML('LIST', 3, $label) );
+
+ }
 
 /**
   *
@@ -1442,9 +2695,30 @@ static protected $hextend = [];
   * RETURN NODE TR _ noHTML TAG
   *
   **/
-  static public function _TR($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('LIST', 4, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xTR($label = NULL) { self::PERFORM( self::get_xHTML('LIST', 4, $label) ); }
+  static public function _TR(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+ )
+ { 
+
+    self::PERFORM( self::get__HTML('LIST', 4, $attr, $id, $class) ); 
+
+ }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xTR(
+
+      $label    = NULL
+
+  )
+  { 
+
+     self::PERFORM( self::get_xHTML('LIST', 4, $label) );
+
+  }
 
 /**
   *
@@ -1453,9 +2727,30 @@ static protected $hextend = [];
   * RETURN NODE TD _ noHTML TAG
   *
   **/
-  static public function _TD($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('LIST', 5, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xTD($label = NULL) { self::PERFORM( self::get_xHTML('LIST', 5, $label) ); }
+  static public function _TD(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+ )
+ { 
+
+    self::PERFORM( self::get__HTML('LIST', 5, $attr, $id, $class) ); 
+
+ }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xTD(
+
+      $label    = NULL
+
+  )
+  { 
+
+     self::PERFORM( self::get_xHTML('LIST', 5, $label) );
+
+  }
 
 /**
   *
@@ -1464,9 +2759,30 @@ static protected $hextend = [];
   * RETURN NODE TH _ noHTML TAG
   *
   **/
-  static public function _TH($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('LIST', 6, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xTH($label = NULL) { self::PERFORM( self::get_xHTML('LIST', 6, $label) );  }
+  static public function _TH(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+ )
+ { 
+
+    self::PERFORM( self::get__HTML('LIST', 6, $attr, $id, $class) ); 
+
+ }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xTH(
+
+     $label      = NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('LIST', 6, $label) ); 
+
+  }
 
 /**
   *
@@ -1475,9 +2791,30 @@ static protected $hextend = [];
   * RETURN NODE LEGEND _ noHTML TAG
   *
   **/
-  static public function _LEGEND($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('LIST', 7, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xLEGEND($label = NULL) { self::PERFORM( self::get_xHTML('LIST', 7, $label) ); }
+  static public function _LEGEND(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+ 
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('LIST', 7, $attr, $id, $class) );  
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xLEGEND(
+
+      $label     = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('LIST', 7, $label) ); 
+ 
+ }
 
 /**
   *
@@ -1486,9 +2823,30 @@ static protected $hextend = [];
   * RETURN NODE FIELDSET _ noHTML TAG
   *
   **/
-  static public function _FIELDSET($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('LIST', 8, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xFIELDSET($label = NULL) { self::PERFORM( self::get_xHTML('LIST', 8, $label) ); }
+  static public function _FIELDSET(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+ 
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('LIST', 8, $attr, $id, $class) );  
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xFIELDSET(
+
+      $label     = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('LIST', 8, $label) ); 
+ 
+ }
 
 /**
   *
@@ -1497,9 +2855,30 @@ static protected $hextend = [];
   * RETURN NODE TBODY _ noHTML TAG
   *
   **/
-  static public function _TBODY($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('LIST', 9, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xTBODY($label = NULL) { self::PERFORM( self::get_xHTML('LIST', 9, $label) ); }
+  static public function _TBODY(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+ 
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('LIST', 9, $attr, $id, $class) );  
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xTBODY(
+
+      $label     = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('LIST', 9, $label) ); 
+
+ }
 
 /**
   *
@@ -1508,9 +2887,30 @@ static protected $hextend = [];
   * RETURN NODE TFOOT _ noHTML TAG
   *
   **/
-  static public function _TFOOT($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('LIST', 10, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xTFOOT($label = NULL) { self::PERFORM( self::get_xHTML('LIST', 10, $label) );  }
+  static public function _TFOOT(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('LIST', 10, $attr, $id, $class) );  
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xTFOOT(
+
+      $label    = NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('LIST', 10, $label) ); 
+
+  }
 
 /**
   *
@@ -1519,9 +2919,30 @@ static protected $hextend = [];
   * RETURN NODE THEAD _ noHTML TAG
   *
   **/
-  static public function _THEAD($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('LIST', 11, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xTHEAD($label = NULL) { self::PERFORM( self::get_xHTML('LIST', 11, $label) );  }
+  static public function _THEAD(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('LIST', 11, $attr, $id, $class) );  
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xTHEAD(
+
+      $label    = NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('LIST', 11, $label) ); 
+
+  }
 
 /**
   *
@@ -1530,9 +2951,30 @@ static protected $hextend = [];
   * RETURN NODE SPAN _ noHTML TAG
   *
   **/
-  static public function _SPAN($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMAT', 0, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xSPAN($label = NULL) { self::PERFORM( self::get_xHTML('FORMAT', 0, $label) ); }
+  static public function _SPAN(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('FORMAT', 0, $attr, $id, $class) );  
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xSPAN(
+
+     $label     = NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('FORMAT', 0, $label) ); 
+
+  }
 
 /**
   *
@@ -1541,9 +2983,30 @@ static protected $hextend = [];
   * RETURN NODE EM _ noHTML TAG
   *
   **/
-  static public function _EM($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMAT', 1, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xEM($label = NULL) { self::PERFORM( self::get_xHTML('FORMAT', 1, $label) ); }
+  static public function _EM(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+ 
+ )
+ { 
+
+    self::PERFORM( self::get__HTML('FORMAT', 1, $attr, $id, $class) );  
+
+ }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xEM(
+
+       $label    = NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('FORMAT', 1, $label) ); 
+
+  }
 
 /**
   *
@@ -1552,9 +3015,30 @@ static protected $hextend = [];
   * RETURN NODE B _ noHTML TAG
   *
   **/
-  static public function _B($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMAT', 2, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xB($label = NULL) { self::PERFORM( self::get_xHTML('FORMAT', 2, $label) ); }
+  static public function _B(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+ 
+ )
+ { 
+
+    self::PERFORM( self::get__HTML('FORMAT', 2, $attr, $id, $class) ); 
+
+ }
+
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xB(
+
+       $label    = NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('FORMAT', 2, $label) ); 
+
+  }
 
 /**
   *
@@ -1563,9 +3047,30 @@ static protected $hextend = [];
   * RETURN NODE I _ noHTML TAG
   *
   **/
-  static public function _I($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMAT', 3, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xI($label = NULL) { self::PERFORM( self::get_xHTML('FORMAT', 3, $label) );  }
+  static public function _I(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+ 
+ )
+ { 
+
+    self::PERFORM( self::get__HTML('FORMAT', 3, $attr, $id, $class) ); 
+
+ }
+ 
+ // CLOSING_METHOD_noHTML_TAG
+  static public function xI(
+
+      $label      = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('FORMAT', 3, $label) ); 
+
+ }
 
 /**
   *
@@ -1574,9 +3079,30 @@ static protected $hextend = [];
   * RETURN NODE SMALL _ noHTML TAG
   *
   **/
-  static public function _SMALL($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMAT', 4, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xSMALL($label = NULL) { self::PERFORM( self::get_xHTML('FORMAT', 4, $label) ); }
+  static public function _SMALL(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+ 
+ )
+ { 
+
+    self::PERFORM( self::get__HTML('FORMAT', 4, $attr, $id, $class) ); 
+
+ }
+
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xSMALL(
+
+      $label     = NULL
+
+ )
+ { 
+ 
+     self::PERFORM( self::get_xHTML('FORMAT', 4, $label) ); 
+ 
+ }
 
 /**
   *
@@ -1585,9 +3111,30 @@ static protected $hextend = [];
   * RETURN NODE STRIKE _ noHTML TAG
   *
   **/
-  static public function _STRIKE($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMAT', 5, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xSTRIKE($label = NULL) { self::PERFORM( self::get_xHTML('FORMAT', 5, $label) );  }
+  static public function _STRIKE(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+ 
+ )
+ { 
+
+    self::PERFORM( self::get__HTML('FORMAT', 5, $attr, $id, $class) ); 
+
+ }
+
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xSTRIKE(
+
+      $label     = NULL
+
+ )
+ { 
+ 
+     self::PERFORM( self::get_xHTML('FORMAT', 5, $label) );  
+ 
+ }
 
 /**
   *
@@ -1596,9 +3143,30 @@ static protected $hextend = [];
   * RETURN NODE MARQUEE _ noHTML TAG
   *
   **/
-  static public function _MARQUEE($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMAT', 6, $js, $id, $class) );    }
+  static public function _MARQUEE(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+ 
+ )
+ { 
+
+    self::PERFORM( self::get__HTML('FORMAT', 6, $attr, $id, $class) ); 
+
+  }
+
 // CLOSING_METHOD_noHTML_TAG
-  static public function xMARQUEE($label = NULL) { self::PERFORM( self::get_xHTML('FORMAT', 6, $label) ); }
+  static public function xMARQUEE(
+
+        $label    = NULL
+
+)
+{ 
+
+     self::PERFORM( self::get_xHTML('FORMAT', 6, $label) );
+
+}
 
 /**
   *
@@ -1607,9 +3175,30 @@ static protected $hextend = [];
   * RETURN NODE CENTER _ noHTML TAG
   *
   **/
-  static public function _CENTER($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMAT', 7, $js, $id, $class) );   }
+  static public function _CENTER(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+ 
+ )
+ { 
+
+    self::PERFORM( self::get__HTML('FORMAT', 7, $attr, $id, $class) ); 
+
+ }
+
 // CLOSING_METHOD_noHTML_TAG
-  static public function xCENTER($label = NULL) { self::PERFORM( self::get_xHTML('FORMAT', 7, $label) );  }
+  static public function xCENTER(
+
+        $label    = NULL
+
+)
+{ 
+
+     self::PERFORM( self::get_xHTML('FORMAT', 7, $label) );
+
+}
 
 /**
   *
@@ -1618,9 +3207,30 @@ static protected $hextend = [];
   * RETURN NODE CODE _ noHTML TAG
   *
   **/
-  static public function _CODE($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMAT', 8, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xCODE($label = NULL) { self::PERFORM( self::get_xHTML('FORMAT', 8, $label) );  }
+  static public function _CODE(
+
+       $attr    =  []
+      ,$id      =  null
+      ,$class   =  null
+
+ ) 
+ { 
+
+    self::PERFORM( self::get__HTML('FORMAT', 8, $attr, $id, $class) ); 
+
+ }
+ 
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xCODE(
+
+       $label   = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('FORMAT', 8, $label) ); 
+
+}
 
 /**
   *
@@ -1629,9 +3239,31 @@ static protected $hextend = [];
   * RETURN NODE ABBR _ noHTML TAG
   *
   **/
-  static public function _ABBR($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMAT', 9, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xABBR($label = NULL) { self::PERFORM( self::get_xHTML('FORMAT', 9, $label) ); }
+  static public function _ABBR(
+
+       $attr    =  []
+      ,$id      =  null
+      ,$class   =  null
+
+ ) 
+ { 
+
+    self::PERFORM( self::get__HTML('FORMAT', 9, $attr, $id, $class) ); 
+
+ }
+ 
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xABBR(
+
+       $label   = NULL
+
+ )
+ { 
+
+
+    self::PERFORM( self::get_xHTML('FORMAT', 9, $label) ); 
+ 
+ }
 
 /**
   *
@@ -1640,9 +3272,30 @@ static protected $hextend = [];
   * RETURN NODE MAP _ noHTML TAG
   *
   **/
-  static public function _MAP($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMAT', 10, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xMAP($label = NULL) { self::PERFORM( self::get_xHTML('FORMAT', 10, $label) ); }
+  static public function _MAP(
+
+       $attr    =  []
+      ,$id      =  null
+      ,$class   =  null
+
+ ) 
+ { 
+
+    self::PERFORM( self::get__HTML('FORMAT', 10, $attr, $id, $class) ); 
+
+ }
+ 
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xMAP(
+
+      $label    = NULL
+  
+)
+{ 
+
+    self::PERFORM( self::get_xHTML('FORMAT', 10, $label) );
+
+}
 
 /**
   *
@@ -1651,9 +3304,30 @@ static protected $hextend = [];
   * RETURN NODE CANVAS _ noHTML TAG
   *
   **/
-  static public function _CANVAS($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMAT', 11, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xCANVAS($label = NULL) { self::PERFORM( self::get_xHTML('FORMAT', 11, $label) ); }
+  static public function _CANVAS(
+
+       $attr    =  []
+      ,$id      =  null
+      ,$class   =  null
+
+ ) 
+ { 
+
+    self::PERFORM( self::get__HTML('FORMAT', 11, $attr, $id, $class) ); 
+
+ }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xCANVAS(
+
+      $label    = NULL
+  
+)
+{ 
+
+    self::PERFORM( self::get_xHTML('FORMAT', 11, $label) );
+
+}
 
 /**
   *
@@ -1662,9 +3336,30 @@ static protected $hextend = [];
   * RETURN NODE CITE _ noHTML TAG
   *
   **/
-  static public function _CITE($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMAT', 12, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xCITE($label = NULL) { self::PERFORM( self::get_xHTML('FORMAT', 12, $label) ); }
+  static public function _CITE(
+
+        $attr     =  []
+       ,$id       =  null
+       ,$class    =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('FORMAT', 12, $attr, $id, $class) ); 
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xCITE(
+
+      $label     = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('FORMAT', 12, $label) ); 
+
+ }
 
 /**
   *
@@ -1673,9 +3368,30 @@ static protected $hextend = [];
   * RETURN NODE DATA _ noHTML TAG
   *
   **/
-  static public function _DATA($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMAT', 13, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xDATA($label = NULL) { self::PERFORM( self::get_xHTML('FORMAT', 13, $label) ); }
+  static public function _DATA(
+
+        $attr     =  []
+       ,$id       =  null
+       ,$class    =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('FORMAT', 13, $attr, $id, $class) ); 
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xDATA(
+
+      $label     = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('FORMAT', 13, $label) ); 
+
+ }
 
 /**
   *
@@ -1684,9 +3400,31 @@ static protected $hextend = [];
   * RETURN NODE DL _ noHTML TAG
   *
   **/
-  static public function _DL($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMAT', 14, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xDL($label = NULL) { self::PERFORM( self::get_xHTML('FORMAT', 14, $label) ); }
+  static public function _DL(
+
+        $attr     =  []
+       ,$id       =  null
+       ,$class    =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('FORMAT', 14, $attr, $id, $class) ); 
+
+  }
+
+ // CLOSING_METHOD_noHTML_TAG
+  static public function xDL(
+
+      $label      = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('FORMAT', 14, $label) );
+
+
+ }
 
 /**
   *
@@ -1695,9 +3433,31 @@ static protected $hextend = [];
   * RETURN NODE DT _ noHTML TAG
   *
   **/
-  static public function _DT($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMAT', 15, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xDT($label = NULL) { self::PERFORM( self::get_xHTML('FORMAT', 15, $label) ); }
+  static public function _DT(
+
+        $attr     =  []
+       ,$id       =  null
+       ,$class    =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('FORMAT', 15, $attr, $id, $class) ); 
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xDT(
+
+      $label      = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('FORMAT', 15, $label) );
+
+
+ }
 
 /**
   *
@@ -1706,9 +3466,29 @@ static protected $hextend = [];
   * RETURN NODE DD _ noHTML TAG
   *
   **/
-  static public function _DD($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMAT', 16, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xDD($label = NULL) { self::PERFORM( self::get_xHTML('FORMAT', 16, $label) ); }
+  static public function _DD( 
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+ )
+ { 
+
+    self::PERFORM( self::get__HTML('FORMAT', 16, $attr, $id, $class) );  
+
+ }
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xDD(
+
+      $label     = NULL
+
+  )
+  {   
+
+      self::PERFORM( self::get_xHTML('FORMAT', 16, $label) ); 
+
+  }
 
 /**
   *
@@ -1717,9 +3497,30 @@ static protected $hextend = [];
   * RETURN NODE DFN _ noHTML TAG
   *
   **/
-  static public function _DFN($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMAT', 17, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xDFN($label = NULL) { self::PERFORM( self::get_xHTML('FORMAT', 17, $label) ); }
+  static public function _DFN( 
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+ )
+ { 
+
+    self::PERFORM( self::get__HTML('FORMAT', 17, $attr, $id, $class) );  
+
+ }
+
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xDFN(
+
+      $label     = NULL
+
+  )
+  {   
+
+      self::PERFORM( self::get_xHTML('FORMAT', 17, $label) ); 
+
+  }
 
 /**
   *
@@ -1728,9 +3529,30 @@ static protected $hextend = [];
   * RETURN NODE INS _ noHTML TAG
   *
   **/
-  static public function _INS($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMAT', 18, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xINS($label = NULL) { self::PERFORM( self::get_xHTML('FORMAT', 18, $label) ); }
+  static public function _INS( 
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+ )
+ { 
+
+    self::PERFORM( self::get__HTML('FORMAT', 18, $attr, $id, $class) );  
+
+ }
+
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xINS(
+
+      $label     = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('FORMAT', 18, $label) ); 
+
+ }
 
 /**
   *
@@ -1739,9 +3561,30 @@ static protected $hextend = [];
   * RETURN NODE DEL _ noHTML TAG
   *
   **/
-  static public function _DEL($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMATC', 0, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xDEL($label = NULL) { self::PERFORM( self::get_xHTML('FORMATC', 0, $label) );  }
+  static public function _DEL( 
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+ )
+ { 
+
+    self::PERFORM( self::get__HTML('FORMATC', 0, $attr, $id, $class) );  
+
+ }
+ 
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xDEL(
+
+      $label     = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('FORMATC', 0, $label) ); 
+
+ }
 
 /**
   *
@@ -1750,9 +3593,30 @@ static protected $hextend = [];
   * RETURN NODE KBD _ noHTML TAG
   *
   **/
-  static public function _KBD($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMATC', 1, $js, $id, $class) );  }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xKBD($label = NULL) { self::PERFORM( self::get_xHTML('FORMATC', 1, $label) );  }
+  static public function _KBD(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+ 
+ )
+ { 
+
+      self::PERFORM( self::get__HTML('FORMATC', 1, $attr, $id, $class) ); 
+
+ }
+ 
+ // CLOSING_METHOD_noHTML_TAG
+  static public function xKBD(
+
+      $label    = NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('FORMATC', 1, $label) ); 
+
+  }
 
 /**
   *
@@ -1761,9 +3625,30 @@ static protected $hextend = [];
   * RETURN NODE MARK _ noHTML TAG
   *
   **/
-  static public function _MARK($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMATC', 2, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xMARK($label = NULL) { self::PERFORM( self::get_xHTML('FORMATC', 2, $label) );  }
+  static public function _MARK(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+ 
+ )
+ { 
+
+      self::PERFORM( self::get__HTML('FORMATC', 2, $attr, $id, $class) ); 
+
+ }
+ 
+ // CLOSING_METHOD_noHTML_TAG
+  static public function xMARK(
+
+      $label    = NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('FORMATC', 2, $label) ); 
+
+  }
 
 /**
   *
@@ -1772,9 +3657,30 @@ static protected $hextend = [];
   * RETURN NODE PRE _ noHTML TAG
   *
   **/
-  static public function _PRE($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMATC', 3, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xPRE($label = NULL) { self::PERFORM( self::get_xHTML('FORMATC', 3, $label) );  }
+  static public function _PRE(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+ 
+ )
+ { 
+
+      self::PERFORM( self::get__HTML('FORMATC', 3, $attr, $id, $class) ); 
+
+ }
+
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xPRE(
+
+      $label    = NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('FORMATC', 3, $label) ); 
+
+  }
 
 /**
   *
@@ -1783,9 +3689,30 @@ static protected $hextend = [];
   * RETURN NODE RT _ noHTML TAG
   *
   **/
-  static public function _RT($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMATC', 4, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xRT($label = NULL) { self::PERFORM( self::get_xHTML('FORMATC', 4, $label) ); }
+  static public function _RT(
+
+      $attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+ 
+ )
+ { 
+
+      self::PERFORM( self::get__HTML('FORMATC', 4, $attr, $id, $class) ); 
+
+ }
+ 
+ // CLOSING_METHOD_noHTML_TAG
+  static public function xRT(
+
+      $label    = NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('FORMATC', 4, $label) ); 
+
+  }
 
 /**
   *
@@ -1794,9 +3721,30 @@ static protected $hextend = [];
   * RETURN NODE RP _ noHTML TAG
   *
   **/
-  static public function _RP($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMATC', 5, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xRP($label = NULL) { self::PERFORM( self::get_xHTML('FORMATC', 5, $label) );  }
+  static public function _RP(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+ )
+ { 
+
+    self::PERFORM( self::get__HTML('FORMATC', 5, $attr, $id, $class) ); 
+
+ }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xRP(
+
+       $label    = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('FORMATC', 5, $label) ); 
+
+ }
 
 /**
   *
@@ -1805,9 +3753,30 @@ static protected $hextend = [];
   * RETURN NODE RUBY _ noHTML TAG
   *
   **/
-  static public function _RUBY($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMATC', 6, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xRUBY($label = NULL) { self::PERFORM( self::get_xHTML('FORMATC', 6, $label) );  }
+  static public function _RUBY(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+ )
+ { 
+
+    self::PERFORM( self::get__HTML('FORMATC', 6, $attr, $id, $class) ); 
+
+ }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xRUBY(
+
+       $label    = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('FORMATC', 6, $label) ); 
+
+ }
 
 /**
   *
@@ -1816,9 +3785,30 @@ static protected $hextend = [];
   * RETURN NODE S _ noHTML TAG
   *
   **/
-  static public function _S($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMATC', 7, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xS($label = NULL) { self::PERFORM( self::get_xHTML('FORMATC', 7, $label) ); }
+  static public function _S(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+ )
+ { 
+
+    self::PERFORM( self::get__HTML('FORMATC', 7, $attr, $id, $class) ); 
+
+ }
+
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xS(
+
+        $label   = NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('FORMATC', 7, $label) ); 
+
+  }
 
 /**
   *
@@ -1827,9 +3817,30 @@ static protected $hextend = [];
   * RETURN NODE SAMP _ noHTML TAG
   *
   **/
-  static public function _SAMP($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMATC', 8, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xSAMP($label = NULL) { self::PERFORM( self::get_xHTML('FORMATC', 8, $label) );  }
+  static public function _SAMP(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+ )
+ { 
+
+    self::PERFORM( self::get__HTML('FORMATC', 8, $attr, $id, $class) ); 
+
+ }
+
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xSAMP(
+
+        $label   = NULL
+
+ )
+ { 
+
+      self::PERFORM( self::get_xHTML('FORMATC', 8, $label) );  
+
+ }
 
 /**
   *
@@ -1838,9 +3849,30 @@ static protected $hextend = [];
   * RETURN NODE STRONG _ noHTML TAG
   *
   **/
-  static public function _STRONG($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMATC', 9, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xSTRONG($label = NULL) { self::PERFORM( self::get_xHTML('FORMATC', 9, $label) );  }
+  static public function _STRONG(
+
+       $attr    =  []
+      ,$id      =  null
+      ,$class   =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('FORMATC', 9, $attr, $id, $class) );  
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xSTRONG(
+
+       $label   = NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('FORMATC', 9, $label) ); 
+
+  }
 
 /**
   *
@@ -1849,9 +3881,30 @@ static protected $hextend = [];
   * RETURN NODE SUB _ noHTML TAG
   *
   **/
-  static public function _SUB($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMATC', 10, $js, $id, $class) );    }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xSUB($label = NULL) { self::PERFORM( self::get_xHTML('FORMATC', 10, $label) );  }
+  static public function _SUB(
+
+       $attr    =  []
+      ,$id      =  null
+      ,$class   =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('FORMATC', 10, $attr, $id, $class) );  
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xSUB(
+
+       $label   = NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('FORMATC', 10, $label) ); 
+
+  }
 
 /**
   *
@@ -1860,9 +3913,30 @@ static protected $hextend = [];
   * RETURN NODE SUP _ noHTML TAG
   *
   **/
-  static public function _SUP($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMATC', 11, $js, $id, $class));    }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xSUP($label = NULL) { self::PERFORM( self::get_xHTML('FORMATC', 11, $label));  }
+  static public function _SUP(
+
+       $attr    =  []
+      ,$id      =  null
+      ,$class   =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('FORMATC', 11, $attr, $id, $class));   
+
+  }
+
+ // CLOSING_METHOD_noHTML_TAG
+ static public function xSUP(
+
+     $label     = NULL
+ 
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('FORMATC', 11, $label)); 
+
+ }
 
 /**
   *
@@ -1871,9 +3945,30 @@ static protected $hextend = [];
   * RETURN NODE WBR _ noHTML TAG
   *
   **/
-  static public function _WBR($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMATC', 12, $js, $id, $class));   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xWBR($label = NULL) { self::PERFORM( self::get_xHTML('FORMATC', 12, $label));  }
+  static public function _WBR(
+
+       $attr    =  []
+      ,$id      =  null
+      ,$class   =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('FORMATC', 12, $attr, $id, $class));   
+  
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xWBR(
+
+       $label     = NULL
+
+  )
+  { 
+
+      self::PERFORM( self::get_xHTML('FORMATC', 12, $label)); 
+
+  }
 
 /**
   *
@@ -1882,9 +3977,30 @@ static protected $hextend = [];
   * RETURN NODE Q _ noHTML TAG
   *
   **/
-  static public function _Q($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('FORMATC', 13, $js, $id, $class));     }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xQ($label = NULL) { self::PERFORM( self::get_xHTML('FORMATC', 13, $label));  }
+  static public function _Q(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+  )
+  {  
+
+      self::PERFORM( self::get__HTML('FORMATC', 13, $attr, $id, $class));   
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xQ(
+
+      $label   = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('FORMATC', 13, $label)); 
+
+ }
 
 /**
   *
@@ -1893,9 +4009,30 @@ static protected $hextend = [];
   * RETURN NODE HEAD _ noHTML TAG
   *
   **/
-  static public function _HEAD($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('STRUCTURE', 0, $js, $id, $class));    }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xHEAD($label = NULL) { self::PERFORM( self::get_xHTML('STRUCTURE', 0, $label)); }
+  static public function _HEAD(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+  )
+  {  
+
+      self::PERFORM( self::get__HTML('STRUCTURE', 0, $attr, $id, $class));  
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xHEAD(
+
+      $label   = NULL
+
+ )
+ { 
+
+    self::PERFORM( self::get_xHTML('STRUCTURE', 0, $label));
+
+ }
 
 /**
   *
@@ -1904,9 +4041,29 @@ static protected $hextend = [];
   * RETURN NODE TITLE _ noHTML TAG
   *
   **/
-  static public function _TITLE($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('STRUCTURE', 1, $js, $id, $class));    }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xTITLE($label = NULL) { self::PERFORM( self::get_xHTML('STRUCTURE', 1, $label));  }
+  static public function _TITLE(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+  )
+  {  
+
+      self::PERFORM( self::get__HTML('STRUCTURE', 1, $attr, $id, $class));  
+
+  }
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xTITLE(
+
+      $label     =  NULL
+
+ )
+ { 
+
+     self::PERFORM( self::get_xHTML('STRUCTURE', 1, $label)); 
+
+ }
 
 /**
   *
@@ -1915,9 +4072,30 @@ static protected $hextend = [];
   * RETURN NODE BODY _ noHTML TAG
   *
   **/
-  static public function _BODY($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('STRUCTURE', 2, $js, $id, $class));     }
+  static public function _BODY(
+
+      $attr    =  []
+     ,$id      =  null
+     ,$class   =  null
+
+  )
+  {  
+
+      self::PERFORM( self::get__HTML('STRUCTURE', 2, $attr, $id, $class));   
+
+  }
+
 // CLOSING_METHOD_noHTML_TAG
-  static public function xBODY($label = NULL) { self::PERFORM( self::get_xHTML('STRUCTURE', 2, $label)); }
+  static public function xBODY(
+
+      $label     =  NULL
+
+ )
+ { 
+
+     self::PERFORM( self::get_xHTML('STRUCTURE', 2, $label));
+
+ }
 
 /**
   *
@@ -1926,16 +4104,36 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function _noHTML($js=[], $id=null, $class=null) { self::PERFORM( self::get__HTML('STRUCTURE', 3, $js, $id, $class) );   }
-// CLOSING_METHOD_noHTML_TAG
-  static public function xnoHTML($label = NULL) { self::PERFORM( self::get_xHTML('STRUCTURE', 3, $label) ); }
+  static public function _noHTML(
+
+       $attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+
+  )
+  { 
+
+      self::PERFORM( self::get__HTML('STRUCTURE', 3, $attr, $id, $class) ); 
+
+  }
+  
+  // CLOSING_METHOD_noHTML_TAG
+  static public function xnoHTML(
+
+      $label     = NULL
+  )
+  { 
+
+     self::PERFORM( self::get_xHTML('STRUCTURE', 3, $label) ); 
+
+  }
 
 /**
  *
  *
  * public function inline noHTML
  * @var @property $value = NULL | create function and return the content my_content();
- * @var @property $js = [] | Html attribute for Js DOM such as angular and other HTML attributes
+ * @var @property $attr = [] | Html attribute for Js DOM such as angular and other HTML attributes
  * @var @property $id = NULL | html id in this section must be unique
  * @var @property $class = NULL | html class repared for front end framework such as bootstrap, materialize, foundation
  * @var @property $label = NULL | html comment label where you can identify your codes ib inspec elemnt or view source
@@ -1982,11 +4180,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function H1($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
-  return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 0, $value, $js, $id, $class, $label, $assoc);
+  static public function H1(
 
-}
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
+  
+   return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 0, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -1995,11 +4203,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function H2($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 1, $value, $js, $id, $class, $label, $assoc);
+  static public function H2(
 
-}
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
+  
+   return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 1, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2008,11 +4226,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function H3($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 2, $value, $js, $id, $class, $label, $assoc);
+  static public function H3(
 
-}
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+  )
+  {
+  
+   return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 2, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2021,11 +4249,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function H4($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 3, $value, $js, $id, $class, $label, $assoc);
+  static public function H4(
 
-}
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+  )
+  {
+  
+   return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 3, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2034,11 +4272,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function H5($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 4, $value, $js, $id, $class, $label, $assoc);
+  static public function H5(
 
-}
+     $value    =  null
+    ,$attr     =  []
+    ,$id       =  null
+    ,$class    =  null
+    ,$label    =  null
+    ,$assoc    =  null
+
+ )
+ {
+  
+   return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 4, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2047,11 +4295,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function H6($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 5, $value, $js, $id, $class, $label, $assoc);
+  static public function H6(
 
-}
+     $value    =  null
+    ,$attr     =  []
+    ,$id       =  null
+    ,$class    =  null
+    ,$label    =  null
+    ,$assoc    =  null
+
+ )
+ {
+  
+   return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 5, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2060,11 +4318,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function DIV($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 6, $value, $js, $id, $class, $label, $assoc);
+  static public function DIV(
 
-}
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
+  
+   return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 6, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2073,11 +4341,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function P($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 7, $value, $js, $id, $class, $label, $assoc);
+  static public function P(
 
-}
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
+  
+   return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 7, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2086,11 +4364,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function BUTTON($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 8, $value, $js, $id, $class, $label, $assoc);
+  static public function BUTTON(
 
-}
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  )
+  {
+  
+   return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 8, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2099,11 +4387,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function A($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 9, $value, $js, $id, $class, $label, $assoc);
+  static public function A(
 
-}
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  )
+  {
+  
+   return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 9, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2112,11 +4410,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function IFRAME($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 10, $value, $js, $id, $class, $label, $assoc);
+  static public function IFRAME(
 
-}
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
+  
+   return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 10, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2125,10 +4433,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function MAIN($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function MAIN(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 11, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 11, $value, $attr, $id, $class, $label, $assoc);
+
+ }  
 
 /**
   *
@@ -2137,10 +4456,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function NAV($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function NAV(
+
+       $value    =  null
+      ,$attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+      ,$label    =  null
+      ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 12, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 12, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2149,10 +4479,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function SELECT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function SELECT(
+
+       $value    =  null
+      ,$attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+      ,$label    =  null
+      ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 13, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 13, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2161,10 +4502,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function FORM($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function FORM(
+
+       $value    =  null
+      ,$attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+      ,$label    =  null
+      ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 14, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 14, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2173,10 +4525,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function PICTURE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function PICTURE(
+
+       $value    =  null
+      ,$attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+      ,$label    =  null
+      ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 15, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 15, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2185,10 +4548,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function SECTION($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function SECTION(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 16, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 16, $value, $attr, $id, $class, $label, $assoc);
+ 
+ }
 
 /**
   *
@@ -2197,10 +4571,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function TEXTAREA($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function TEXTAREA(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 17, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('PRIMARY', 17, $value, $attr, $id, $class, $label, $assoc);
+ 
+ }
 
 /**
   *
@@ -2209,10 +4594,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function AUDIO($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function AUDIO(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 0, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 0, $value, $attr, $id, $class, $label, $assoc);
+ 
+ }
 
 /**
   *
@@ -2221,10 +4617,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function VIDEO($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function VIDEO(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 1, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 1, $value, $attr, $id, $class, $label, $assoc);
+ 
+ }
 
 /**
   *
@@ -2233,10 +4640,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function ADDRESS($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function ADDRESS(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 2, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 2, $value, $attr, $id, $class, $label, $assoc);
+  
+ }
 
 /**
   *
@@ -2245,10 +4663,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function COLGROUP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function COLGROUP(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 3, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 3, $value, $attr, $id, $class, $label, $assoc);
+  
+ }
 
 /**
   *
@@ -2257,10 +4686,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function BDI($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function BDI(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 4, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 4, $value, $attr, $id, $class, $label, $assoc);
+  
+ }
 
 /**
   *
@@ -2269,10 +4709,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function BDO($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function BDO(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 5, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 5, $value, $attr, $id, $class, $label, $assoc);
+  
+ }
 
 /**
   *
@@ -2281,10 +4732,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function BLOCKQUOTE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function BLOCKQUOTE(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 6, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 6, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2293,10 +4755,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function CAPTION($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function CAPTION(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 7, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 7, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2305,10 +4778,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function LABEL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function LABEL(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 8, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 8, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2317,10 +4801,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function DATALIST($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function DATALIST(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 9, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 9, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2329,10 +4824,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function DETAILS($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function DETAILS(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 10, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 10, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2341,10 +4847,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function SUMMARY($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function SUMMARY(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 11, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 11, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2353,10 +4870,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function DIALOG($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function DIALOG(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 12, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 12, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2365,10 +4893,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function OPTION($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function OPTION(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 13, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('SECONDARY', 13, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2377,10 +4916,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function FIGURE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function FIGURE(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 0, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 0, $value, $attr, $id, $class, $label, $assoc);
+ 
+ }
 
 /**
   *
@@ -2389,10 +4939,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function FIGCAPTION($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function FIGCAPTION(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 1, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 1, $value, $attr, $id, $class, $label, $assoc);
+ 
+ }
 
 /**
   *
@@ -2401,10 +4962,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function METER($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function METER(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 2, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 2, $value, $attr, $id, $class, $label, $assoc);
+ 
+ }
 
 /**
   *
@@ -2413,10 +4985,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function OBJECT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function OBJECT(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 3, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 3, $value, $attr, $id, $class, $label, $assoc);
+ 
+ }
 
 /**
   *
@@ -2425,10 +5008,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function OPTGROUP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function OPTGROUP(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+  )
+  {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 4, $value, $js, $id, $class, $label, $assoc);
-}
+    return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 4, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2437,10 +5031,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function OUTPUT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function OUTPUT(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+  )
+  {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 5, $value, $js, $id, $class, $label, $assoc);
-}
+    return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 5, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2449,10 +5054,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function PROGRESS($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function PROGRESS(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+  )
+  {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 6, $value, $js, $id, $class, $label, $assoc);
-}
+    return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 6, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2461,10 +5077,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function SVG($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function SVG(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+  )
+  {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 7, $value, $js, $id, $class, $label, $assoc);
-}
+    return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 7, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2473,10 +5100,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function TEMPLATE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function TEMPLATE(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 8, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 8, $value, $attr, $id, $class, $label, $assoc);
+ 
+ }
 
 /**
   *
@@ -2485,10 +5123,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function TIME($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function TIME(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 9, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 9, $value, $attr, $id, $class, $label, $assoc);
+ 
+ }
 
 /**
   *
@@ -2497,10 +5146,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function VAR($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function VAR(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 10, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('SUPPORT', 10, $value, $attr, $id, $class, $label, $assoc);
+ 
+ }
 
 /**
   *
@@ -2509,10 +5169,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function UL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function UL(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 0, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('LIST', 0, $value, $attr, $id, $class, $label, $assoc);
+ 
+ }
 
 /**
   *
@@ -2521,10 +5192,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function OL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function OL(
+
+       $value    =  null
+      ,$attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+      ,$label    =  null
+      ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 1, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('LIST', 1, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2533,10 +5215,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function LI($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function LI(
+
+       $value    =  null
+      ,$attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+      ,$label    =  null
+      ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 2, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('LIST', 2, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2545,10 +5238,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function TABLE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function TABLE(
+
+       $value    =  null
+      ,$attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+      ,$label    =  null
+      ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 3, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('LIST', 3, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2557,10 +5261,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function TR($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function TR(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  )
+  {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 4, $value, $js, $id, $class, $label, $assoc);
-}
+    return self::_istrue_assoc_ELEMENTINLINE('LIST', 4, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2569,10 +5284,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function TD($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function TD(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  )
+  {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 5, $value, $js, $id, $class, $label, $assoc);
-}
+    return self::_istrue_assoc_ELEMENTINLINE('LIST', 5, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2581,10 +5307,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function TH($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function TH(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  )
+  {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 6, $value, $js, $id, $class, $label, $assoc);
-}
+    return self::_istrue_assoc_ELEMENTINLINE('LIST', 6, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2593,10 +5330,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function LEGEND($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function LEGEND(
+
+      $value     =  null
+     ,$attr      =  []
+     ,$id        =  null
+     ,$class     =  null
+     ,$label     =  null
+     ,$assoc     =  null
+
+  )
+  {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 7, $value, $js, $id, $class, $label, $assoc);
-}
+    return self::_istrue_assoc_ELEMENTINLINE('LIST', 7, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2605,10 +5353,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function FIELDSET($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function FIELDSET(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 8, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('LIST', 8, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2617,10 +5376,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function TBODY($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function TBODY(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 9, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('LIST', 9, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2629,10 +5399,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function TFOOT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function TFOOT(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 10, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('LIST', 10, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2641,10 +5422,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function THEAD($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function THEAD(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('LIST', 11, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('LIST', 11, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2653,10 +5445,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function SPAN($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function SPAN(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+  )
+  {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 0, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 0, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2665,10 +5468,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function EM($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function EM(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+  )
+  {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 1, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 1, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2677,10 +5491,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function B($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function B(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+  )
+  {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 2, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 2, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2689,10 +5514,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function I($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function I(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+  )
+  {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 2, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 2, $value, $attr, $id, $class, $label, $assoc);
+
+  }
 
 /**
   *
@@ -2701,10 +5537,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function SMALL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function SMALL(
+
+        $value     =  null
+       ,$attr      =  []
+       ,$id        =  null
+       ,$class     =  null
+       ,$label     =  null
+       ,$assoc     =  null
+
+  )
+  {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 3, $value, $js, $id, $class, $label, $assoc);
-}
+     return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 3, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2713,10 +5560,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function STRIKE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function STRIKE(
+
+        $value     =  null
+       ,$attr      =  []
+       ,$id        =  null
+       ,$class     =  null
+       ,$label     =  null
+       ,$assoc     =  null
+
+  )
+  {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 4, $value, $js, $id, $class, $label, $assoc);
-}
+     return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 4, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2725,10 +5583,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function MARQUEE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function MARQUEE(
+
+        $value     =  null
+       ,$attr      =  []
+       ,$id        =  null
+       ,$class     =  null
+       ,$label     =  null
+       ,$assoc     =  null
+
+  )
+  {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 5, $value, $js, $id, $class, $label, $assoc);
-}
+     return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 5, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2737,10 +5606,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function CENTER($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function CENTER(
+
+        $value     =  null
+       ,$attr      =  []
+       ,$id        =  null
+       ,$class     =  null
+       ,$label     =  null
+       ,$assoc     =  null
+
+  )
+  {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 6, $value, $js, $id, $class, $label, $assoc);
-}
+     return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 6, $value, $attr, $id, $class, $label, $assoc);
+  
+  }
 
 /**
   *
@@ -2749,10 +5629,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function CODE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function CODE(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 7, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 7, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2761,10 +5652,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function ABBR($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function ABBR(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 8, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 8, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2773,10 +5675,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function MAP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function MAP(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 9, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 9, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2785,10 +5698,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function CANVAS($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function CANVAS(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$id        =  null
+      ,$class     =  null
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 10, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 10, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2797,10 +5721,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function CITE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function CITE(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 11, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 11, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2809,10 +5744,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function DATA($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function DATA(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 12, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 12, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2821,10 +5767,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function DL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function DL(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 13, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 13, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2833,10 +5790,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function DT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function DT(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 14, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 14, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2845,10 +5813,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function DD($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function DD(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 15, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 15, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2857,10 +5836,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function DFN($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function DFN(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 16, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 16, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2869,10 +5859,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function INS($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function INS(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 17, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMAT', 17, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2881,10 +5882,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function DEL($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function DEL(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 0, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 0, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2893,10 +5905,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function KBD($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function KBD(
+
+       $value    =  null
+      ,$attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+      ,$label    =  null
+      ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 1, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 1, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2905,10 +5928,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function MARK($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function MARK(
+
+       $value    =  null
+      ,$attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+      ,$label    =  null
+      ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 2, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 2, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2917,10 +5951,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function PRE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function PRE(
+
+       $value    =  null
+      ,$attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+      ,$label    =  null
+      ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 3, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 3, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2929,10 +5974,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function RT($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function RT(
+
+       $value    =  null
+      ,$attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+      ,$label    =  null
+      ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 4, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 4, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2941,10 +5997,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function RP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function RP(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 5, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 5, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2953,10 +6020,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function RUBY($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function RUBY(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 6, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 6, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2965,10 +6043,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function S($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function S(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 7, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 7, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2977,10 +6066,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function SAMP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function SAMP(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 8, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 8, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -2989,10 +6089,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function STRONG($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function STRONG(
+
+       $value    =  null
+      ,$attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+      ,$label    =  null
+      ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 9, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 9, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -3001,10 +6112,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function SUB($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function SUB(
+
+       $value    =  null
+      ,$attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+      ,$label    =  null
+      ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 10, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 10, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -3013,10 +6135,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function SUP($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function SUP(
+
+       $value    =  null
+      ,$attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+      ,$label    =  null
+      ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 11, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 11, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -3025,10 +6158,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function WBR($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function WBR(
+
+       $value    =  null
+      ,$attr     =  []
+      ,$id       =  null
+      ,$class    =  null
+      ,$label    =  null
+      ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 12, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 12, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -3037,10 +6181,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function Q($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function Q(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 13, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('FORMATC', 13, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -3049,10 +6204,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function HEAD($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function HEAD(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('STRUCTURE', 0, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('STRUCTURE', 0, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -3061,10 +6227,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function TITLE($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function TITLE(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('STRUCTURE', 1, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('STRUCTURE', 1, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -3073,10 +6250,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function BODY($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
+  static public function BODY(
+
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
   
- return self::_istrue_assoc_ELEMENTINLINE('STRUCTURE',2, $value, $js, $id, $class, $label, $assoc);
-}
+   return self::_istrue_assoc_ELEMENTINLINE('STRUCTURE',2, $value, $attr, $id, $class, $label, $assoc);
+
+ }
 
 /**
   *
@@ -3085,11 +6273,21 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-  static public function noHTML($value=null, $js=[], $id=null, $class=null, $label=null, $assoc=null) {
-  
- return self::_istrue_assoc_ELEMENTINLINE('STRUCTURE', 3, $value, $js, $id, $class, $label, $assoc);
+  static public function noHTML(
 
-} // END OF LINE HTML NO x REQUIRED
+      $value    =  null
+     ,$attr     =  []
+     ,$id       =  null
+     ,$class    =  null
+     ,$label    =  null
+     ,$assoc    =  null
+
+ )
+ {
+  
+   return self::_istrue_assoc_ELEMENTINLINE('STRUCTURE', 3, $value, $attr, $id, $class, $label, $assoc);
+
+ } // END OF LINE HTML NO x REQUIRED
 
 /**
   *
@@ -3098,9 +6296,9 @@ static protected $hextend = [];
   * RETURN NODE HTML _ noHTML TAG
   * 
   **/
-static private function return_inline_element($elem_val, $elem_key, $js, $id, $class, $assoc) {
+static private function return_inline_element($elem_val, $elem_key, $attr, $id, $class, $assoc) {
 
-   return self::get_inline__HTML($elem_val, $elem_key, $js, $id, $class, $assoc);    
+   return self::get_inline__HTML($elem_val, $elem_key, $attr, $id, $class, $assoc);    
 }
 
 /**
@@ -3110,7 +6308,7 @@ static private function return_inline_element($elem_val, $elem_key, $js, $id, $c
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static private function _istrue_assoc_ELEMENTINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label, $assoc) {
+static private function _istrue_assoc_ELEMENTINLINE($elem_val, $elem_key, $value, $attr, $id, $class, $label, $assoc) {
   
   # INLINE_OR_ANY_LABEL_REQUIRED
   # CHECK_IF_THE_PARAM_REQUIRED_IS_NOT_NULL
@@ -3120,11 +6318,11 @@ static private function _istrue_assoc_ELEMENTINLINE($elem_val, $elem_key, $value
        # RETURN_INLINE_ELEMENT_NO_HTML_CLOSING_TAG 
      /**
        *
-       * @var $elem_val, $elem_key, $value, $js, $id, $class, $label
+       * @var $elem_val, $elem_key, $value, $attr, $id, $class, $label
        * @method function return_elementINLINE()
        *
        **/
-      self::PERFORM( self::return_elementINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label) );
+      self::PERFORM( self::return_elementINLINE($elem_val, $elem_key, $value, $attr, $id, $class, $label) );
   } 
 
   # INLINE_OR_ANY_LABEL_REQUIRED 
@@ -3133,11 +6331,11 @@ static private function _istrue_assoc_ELEMENTINLINE($elem_val, $elem_key, $value
        
      /**
        * THEN_IF_IT_IS TRUE_RETURN!
-       * @var  $elem_val, $elem_key, $value, $js, $id, $class, $label
+       * @var  $elem_val, $elem_key, $value, $attr, $id, $class, $label
        * @method function _elemenHTMLINLINE()
        *
        **/
-     return self::_elemenHTMLINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label);  
+     return self::_elemenHTMLINLINE($elem_val, $elem_key, $value, $attr, $id, $class, $label);  
   }
 } 
 
@@ -3148,17 +6346,17 @@ static private function _istrue_assoc_ELEMENTINLINE($elem_val, $elem_key, $value
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static private function return_elementINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label) {
+static private function return_elementINLINE($elem_val, $elem_key, $value, $attr, $id, $class, $label) {
    
     # IF_INLINE_ELEMENT_IS_EQUAL_TRUE_THE_RETURN_ECHO_STATIC_noHTML
     # RETURN_GET___HTML_METHOD_INCLUDED_ 
   /**
     *
-    * @var | Defined var $elem_val, $elem_key, $js, $id, $class  
+    * @var | Defined var $elem_val, $elem_key, $attr, $id, $class  
     * @method function get__HTML
     *
     **/ 
-   self::PERFORM( $return_elementINLINE  = self::get__HTML($elem_val, $elem_key, $js, $id, $class) );  
+   self::PERFORM( $return_elementINLINE  = self::get__HTML($elem_val, $elem_key, $attr, $id, $class) );  
    
    # WHEN_THE_LOOP_IS_TRUE_THEN
    # DO_CONTENT
@@ -3183,7 +6381,7 @@ static private function return_elementINLINE($elem_val, $elem_key, $value, $js, 
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static private function _elemenHTMLINLINE($elem_val, $elem_key, $value, $js, $id, $class, $label) {
+static private function _elemenHTMLINLINE($elem_val, $elem_key, $value, $attr, $id, $class, $label) {
    
   if ( $label == TRUE && $label === 'MAGIC') {
      
@@ -3191,12 +6389,12 @@ static private function _elemenHTMLINLINE($elem_val, $elem_key, $value, $js, $id
      # RETURN_GET___HTML_METHOD_INCLUDED_ 
    /**
      *
-     * @var | Defined var $elem_val, $elem_key, $js, $id, $class
+     * @var | Defined var $elem_val, $elem_key, $attr, $id, $class
      * @method function new_get__HTML();
      *
      **/ 
      
-     return $return_elementINLINE = self::new_get__HTML($elem_val, $elem_key, $js, $id, $class);  
+     return $return_elementINLINE = self::new_get__HTML($elem_val, $elem_key, $attr, $id, $class);  
 
    } elseif ($label == TRUE && $label === 'MAGIC_END') {
      
@@ -3216,11 +6414,11 @@ static private function _elemenHTMLINLINE($elem_val, $elem_key, $value, $js, $id
      # RETURN_GET___HTML_METHOD_INCLUDED_ 
    /**
      *
-     * @var | Defined var $elem_val, $elem_key, $js, $id, $class
+     * @var | Defined var $elem_val, $elem_key, $attr, $id, $class
      * @method function new_get__HTML();
      *
      **/ 
-    $return_elementINLINE   = self::new_get__HTML($elem_val, $elem_key, $js, $id, $class);  
+    $return_elementINLINE   = self::new_get__HTML($elem_val, $elem_key, $attr, $id, $class);  
   
   
 
@@ -3252,7 +6450,7 @@ static private function _elemenHTMLINLINE($elem_val, $elem_key, $value, $js, $id
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static private function get_inline__HTML($elem_val, $elem_key, $js, $id, $class, $assoc) {
+static private function get_inline__HTML($elem_val, $elem_key, $attr, $id, $class, $assoc) {
   
   # ÌF_ASSOC_IS_SET_AS_NULL_THEN_RETURN_DATA_SET_ECHO
   # CHECK_IF_ASSOC_IS_FALSE_NULL_DEFAULT
@@ -3265,11 +6463,11 @@ static private function get_inline__HTML($elem_val, $elem_key, $js, $id, $class,
        * @method function _setELEMENT()
        * @var $elem_val, $elem_key
        * @method function _setinLINEHTMLattr
-       * @var $js, $id, $class, NULL
+       * @var $attr, $id, $class, NULL
        *
        **/
      self::PERFORM( $get_inline__HTML  = self::_setELEMENT($elem_val, $elem_key) );
-     self::PERFORM( $get_inline__HTML  = self::_setinLINEHTMLattr($js, $id, $class, NULL) );   
+     self::PERFORM( $get_inline__HTML  = self::_setinLINEHTMLattr($attr, $id, $class, NULL) );   
   
   }
   # CHECK_ASSOC_IF_IT_IS_TRUE_THEN
@@ -3285,7 +6483,7 @@ static private function get_inline__HTML($elem_val, $elem_key, $js, $id, $class,
        *
        **/ 
      $get_inline__HTML   = self::_setELEMENT($elem_val, $elem_key);
-     $get_inline__HTML  .= self::_setinLINEHTMLattr($js, $id, $class, $assoc); 
+     $get_inline__HTML  .= self::_setinLINEHTMLattr($attr, $id, $class, $assoc); 
 
      return $get_inline__HTML;    
   }
@@ -3299,7 +6497,7 @@ static private function get_inline__HTML($elem_val, $elem_key, $js, $id, $class,
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static protected function get__HTML($elem_val, $elem_key, $js, $id, $class) {
+static protected function get__HTML($elem_val, $elem_key, $attr, $id, $class) {
        
       # RETURN_GET__HTML_CONTAINS_OFSET_ELEMENTS_SET_HTML_ATTR
       # SET___HTML_AS_PRINT_STATIC_HTML
@@ -3311,7 +6509,7 @@ static protected function get__HTML($elem_val, $elem_key, $js, $id, $class) {
       *
       **/     
     self::PERFORM( $get__HTML  = self::_setELEMENT($elem_val, $elem_key) );
-    self::PERFORM( $get__HTML  = self::_setHTMLattr($js, $id, $class) );   
+    self::PERFORM( $get__HTML  = self::_setHTMLattr($attr, $id, $class) );   
 
 }
 
@@ -3322,7 +6520,7 @@ static protected function get__HTML($elem_val, $elem_key, $js, $id, $class) {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static protected function new_get__HTML($elem_val, $elem_key, $js, $id, $class) {
+static protected function new_get__HTML($elem_val, $elem_key, $attr, $id, $class) {
   
       # RETURN_GET__HTML_CONTAINS_OFSET_ELEMENTS_SET_HTML_ATTR
       # SET___HTML_AS_RETURN_DYNAMIC_ASSOC_HTML
@@ -3334,7 +6532,7 @@ static protected function new_get__HTML($elem_val, $elem_key, $js, $id, $class) 
       *
       **/      
    $get__HTML   = self::_setELEMENT($elem_val, $elem_key);
-   $get__HTML  .= self::new_setHTMLattr($js, $id, $class);   
+   $get__HTML  .= self::new_setHTMLattr($attr, $id, $class);   
    
    return $get__HTML;
 
@@ -3424,7 +6622,7 @@ static protected function new_get_xHTML($elem_val, $elem_key, $label) {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static protected function _setHTMLattr($js = [], $id=NULL, $class=NULL) {
+static protected function _setHTMLattr($attr = [], $id=NULL, $class=NULL) {
 
       # DEFINE_STATIC_SET_RETURN_TO_HTML
     # METHOD_SET_AS_PRINT
@@ -3435,7 +6633,7 @@ static protected function _setHTMLattr($js = [], $id=NULL, $class=NULL) {
       * @method function _getxTAG()
       *
       **/     
-    self::PERFORM( $_setHTMLattr  = self::_isJStrue($js, $id, $class) );
+    self::PERFORM( $_setHTMLattr  = self::_isJStrue($attr, $id, $class) );
     self::PERFORM( $_setHTMLattr = self::_getxTAG().self::_getBREAK() );   
 }
 
@@ -3446,7 +6644,7 @@ static protected function _setHTMLattr($js = [], $id=NULL, $class=NULL) {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static protected function new_setHTMLattr($js = [], $id=NULL, $class=NULL) {
+static protected function new_setHTMLattr($attr = [], $id=NULL, $class=NULL) {
       
       # DEFINE_STATIC_SET_RETURN_TO_HTML
     # METHOD_sET_AS_RETURN
@@ -3457,7 +6655,7 @@ static protected function new_setHTMLattr($js = [], $id=NULL, $class=NULL) {
       * @method function _getxTAG()
       *
       **/ 
-    $_setHTMLattr  = self::new_isJStrue($js, $id, $class);
+    $_setHTMLattr  = self::new_isJStrue($attr, $id, $class);
     $_setHTMLattr .= self::_getxTAG().self::_getBREAK();
 
     return $_setHTMLattr;
@@ -3470,7 +6668,7 @@ static protected function new_setHTMLattr($js = [], $id=NULL, $class=NULL) {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static protected function _setinLINEHTMLattr($js = [], $id=NULL, $class=NULL, $assoc=NULL) {
+static protected function _setinLINEHTMLattr($attr = [], $id=NULL, $class=NULL, $assoc=NULL) {
    
   # CHECK_IF_ASSOC_IS_NULL_OR_FLASE_DEFAULT
   # IF_ASSOC_IS_FALSE_THEN_SET_AS_PRINT_STATIC  
@@ -3485,7 +6683,7 @@ static protected function _setinLINEHTMLattr($js = [], $id=NULL, $class=NULL, $a
       * @method function _set_tagSPACER()
       *
       **/     
-    self::PERFORM( $_setinLINEHTMLattr = self::_isJStrue($js, $id, $class) );
+    self::PERFORM( $_setinLINEHTMLattr = self::_isJStrue($attr, $id, $class) );
     self::PERFORM( $_setinLINEHTMLattr = self::_set_tagSPACER().self::_setENDS().self::_getxTAG().self::_getBREAK() );  
 
   } /**
@@ -3499,7 +6697,7 @@ static protected function _setinLINEHTMLattr($js = [], $id=NULL, $class=NULL, $a
     
       # ELSE_CHECK_IF_THE_ASSOC_IS_TRUE_OR_FUNC_ASSOC_OR_CLASS_ASSOC_METHOD_ASSOC
       # SET_AS_DYNAMIC_ASSOCIATED_WITH_METHOD_CLASS_FUNC_ASSOC      
-      $_setinLINEHTMLattr  = self::isJStrue_assoc($js, $id, $class, $assoc);
+      $_setinLINEHTMLattr  = self::isJStrue_assoc($attr, $id, $class, $assoc);
       $_setinLINEHTMLattr .= self::_set_tagSPACER().self::_setENDS().self::_getxTAG().self::_getBREAK();  
 
       return $_setinLINEHTMLattr;    
@@ -3514,7 +6712,7 @@ static protected function _setinLINEHTMLattr($js = [], $id=NULL, $class=NULL, $a
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static private function isJStrue_assoc($js, $id, $class, $assoc) {
+static private function isJStrue_assoc($attr, $id, $class, $assoc) {
 
   # CHECKK_IF_JS-ASSOC_IS_TRUE_THE_RETURN_SET_AS_PRINT
   # IF_ASSOC_IS_FALSE_IF_IS_NULL_IF_IS_DEFAULT  
@@ -3527,8 +6725,8 @@ static private function isJStrue_assoc($js, $id, $class, $assoc) {
      * @method function new_isJStrue
      *
      **/      
-     $js_false = self::_isJStrue($js, $id, $class);
-     self::PERFORM( $js_false );
+     $attr_false = self::_isJStrue($attr, $id, $class);
+     self::PERFORM( $attr_false );
   } 
     # ELSE_IF_IT_IS_NOT_NULL_NOT_FALSE_NOT_DEFAULT_OR_IT_IS_SET_AS_TRUE_THEN
     # CHECK_IF_IT_IS_FUNCASSOC_CLASSASSOC_METHOD_ASSOC_THE_SET_RETURN
@@ -3540,7 +6738,7 @@ static private function isJStrue_assoc($js, $id, $class, $assoc) {
     **/   
    elseif ($assoc === FUNC_ASSOC || $assoc === CLASS_ASSOC || $assoc === METHOD_ASSOC) 
    {  
-     return self::new_isJStrue($js, $id, $class);    
+     return self::new_isJStrue($attr, $id, $class);    
    }
 
 }
@@ -3552,11 +6750,11 @@ static private function isJStrue_assoc($js, $id, $class, $assoc) {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static private function _isJStrue($js, $id, $class) {
+static private function _isJStrue($attr, $id, $class) {
   
   # SET_STATIC_PRINT_IF_THE_JS_IS_NOT_ASSOC_WITH_METHOD
   # CHECK_IF_PARAM_JS_HAVE_TRUE_THEN  
-  if ( $js == TRUE ) 
+  if ( $attr == TRUE ) 
     {
         
        # GET_ARRAY_OF_DATA_FROM_APPS_ATT
@@ -3566,7 +6764,7 @@ static private function _isJStrue($js, $id, $class) {
        * @method function apps_att
        *
        **/          
-       $apps_attributes = self::apps_att($js);
+       $apps_attributes = self::apps_att($attr);
        
        # GET_DATA_OF_ASSOCIATED_OF_ARRAY_FOR_EACH_DATA_COMBINE
        # IF_THE_JS_RETURN_TRUE_THEN_LOOP_COMBINE_DATA
@@ -3603,7 +6801,7 @@ static private function _isJStrue($js, $id, $class) {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static private function new_isJStrue($js, $id, $class) {
+static private function new_isJStrue($attr, $id, $class) {
    
   # SET_EMPTY_ARRAY_OF_DATA_IF_DATA_IS_ASSOC
   # CHECK_DATA_IF_ASSOC_WITH_METHOD_AND_CLASS 
@@ -3611,7 +6809,7 @@ static private function new_isJStrue($js, $id, $class) {
   
   # SET_STATIC_PRINT_IF_THE_JS_IS_NOT_ASSOC_WITH_METHOD
   # CHECK_IF_PARAM_JS_HAVE_TRUE_THEN
-  if ( $js == TRUE ) 
+  if ( $attr == TRUE ) 
     {
         # GET_ARRAY_OF_DATA_FROM_APPS_ATT_COMBINE
       /**
@@ -3620,7 +6818,7 @@ static private function new_isJStrue($js, $id, $class) {
         * @method function apps_att
         *
         **/  
-        $apps_attributes = self::apps_att($js);
+        $apps_attributes = self::apps_att($attr);
 
         foreach ( $apps_attributes as $attr_name => $attr_value )  
         {
@@ -3680,12 +6878,12 @@ static protected function _setELEMENT($_variable, $set_tag) {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static protected function apps_att($js = []) {
+static protected function apps_att($attr = []) {
     
     # COLLECT_DATA_ARRAY_ATTRIBUTE_CALL_BACK_FUNCTION
     # IF_CALL_BACK_IS_TRUE_THEN_SET_ARRAY_aSSOC
-    $set_apps_names = $js[0];
-    $set_apps_value = $js[1];
+    $set_apps_names = $attr[0];
+    $set_apps_value = $attr[1];
     
   /**
     *
@@ -3703,7 +6901,7 @@ static protected function apps_att($js = []) {
   * RETURN NODE HTML _ noHTML TAG
   *
   **/
-static private function HtmlELements_Optimizer($inline, $elem, $js, $id, $class, $assoc) {
+static private function HtmlELements_Optimizer($inline, $elem, $attr, $id, $class, $assoc) {
 
     if ($assoc == NULL || $assoc == FALSE || $assoc == 'DEFUALT') {
 
@@ -3724,7 +6922,7 @@ static private function HtmlELements_Optimizer($inline, $elem, $js, $id, $class,
         }
       
         # RETURN_INLINE_ELEMENT_NO_HTML_CLOSING_TAG 
-        self::PERFORM( $this->_setReturnINLINELEMENT($this->_setINLINELEMENTS($elem),$js, $id, $class, NULL) ); 
+        self::PERFORM( $this->_setReturnINLINELEMENT($this->_setINLINELEMENTS($elem),$attr, $id, $class, NULL) ); 
    } else {
 
       # CHECK_IF_INLINE_IS_ASSOC_WITH_FUNC_ASSOC_OR_CLASS_ASSOC_OR_METHOD_ASSOC
@@ -3751,7 +6949,7 @@ static private function HtmlELements_Optimizer($inline, $elem, $js, $id, $class,
           }
       
           # RETURN_INLINE_ELEMENT_NO_HTML_CLOSING_TAG 
-          return $this->_setReturnINLINELEMENT($this->_setINLINELEMENTS($elem),$js, $id, $class, $assoc);      
+          return $this->_setReturnINLINELEMENT($this->_setINLINELEMENTS($elem),$attr, $id, $class, $assoc);      
        }
 
   }
@@ -5989,7 +9187,7 @@ static protected function _setINLINELEMENTS($elem) {
 } # END OF SET ELEMENTS
 
 
-static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $label) {
+static protected function _setReturnELEMENT($elem, $value, $attr, $id, $class, $label) {
 
   $elem = self::_setELEMENTS($elem); 
   switch ($elem) {
@@ -6005,7 +9203,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/      
-       return self::_elemenHTMLINLINE('STRUCTURE', 0, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('STRUCTURE', 0, $value, $attr, $id, $class, $label);
       break;  
     case "title":
     
@@ -6018,7 +9216,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/      
-       return self::_elemenHTMLINLINE('STRUCTURE', 1, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('STRUCTURE', 1, $value, $attr, $id, $class, $label);
       break;  
     case "body":
 
@@ -6031,7 +9229,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/    
-       return self::_elemenHTMLINLINE('STRUCTURE', 2, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('STRUCTURE', 2, $value, $attr, $id, $class, $label);
       break;  
     case "html":
 
@@ -6044,7 +9242,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/     
-       return self::_elemenHTMLINLINE('STRUCTURE', 3, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('STRUCTURE', 3, $value, $attr, $id, $class, $label);
       break;
     case "del":
 
@@ -6057,7 +9255,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/    
-       return self::_elemenHTMLINLINE('FORMATC', 0, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 0, $value, $attr, $id, $class, $label);
       break;
     case "kbd":
 
@@ -6070,7 +9268,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/     
-       return self::_elemenHTMLINLINE('FORMATC', 1, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 1, $value, $attr, $id, $class, $label);
       break;
     case "mark":
 
@@ -6083,7 +9281,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/     
-       return self::_elemenHTMLINLINE('FORMATC', 2, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 2, $value, $attr, $id, $class, $label);
       break;
     case "pre":
 
@@ -6096,7 +9294,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/   
-       return self::_elemenHTMLINLINE('FORMATC', 3, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 3, $value, $attr, $id, $class, $label);
       break;
     case "rt":
 
@@ -6109,7 +9307,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/     
-       return self::_elemenHTMLINLINE('FORMATC', 4, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 4, $value, $attr, $id, $class, $label);
       break;
     case "rp":
 
@@ -6122,7 +9320,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/  
-       return self::_elemenHTMLINLINE('FORMATC', 5, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 5, $value, $attr, $id, $class, $label);
       break;
     case "ruby":
 
@@ -6135,7 +9333,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/  
-       return self::_elemenHTMLINLINE('FORMATC', 6, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 6, $value, $attr, $id, $class, $label);
       break;
     case "s":
 
@@ -6148,7 +9346,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/  
-       return self::_elemenHTMLINLINE('FORMATC', 7, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 7, $value, $attr, $id, $class, $label);
       break;        
     case "samp":
 
@@ -6161,7 +9359,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/     
-       return self::_elemenHTMLINLINE('FORMATC', 8, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 8, $value, $attr, $id, $class, $label);
       break; 
     case "strong":
 
@@ -6174,7 +9372,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('FORMATC', 9, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 9, $value, $attr, $id, $class, $label);
       break; 
     case "sub":
 
@@ -6187,7 +9385,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('FORMATC', 10, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 10, $value, $attr, $id, $class, $label);
       break;
     case "sup":
 
@@ -6200,7 +9398,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('FORMATC', 11, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 11, $value, $attr, $id, $class, $label);
       break;
     case "wbr":
 
@@ -6213,7 +9411,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('FORMATC', 12, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 12, $value, $attr, $id, $class, $label);
       break;
     case "q":
 
@@ -6226,7 +9424,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('FORMATC', 13, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMATC', 13, $value, $attr, $id, $class, $label);
       break;
 
     case "span":
@@ -6240,7 +9438,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('FORMAT', 0, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 0, $value, $attr, $id, $class, $label);
       break;
     case "em":
 
@@ -6253,7 +9451,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('FORMAT', 1, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 1, $value, $attr, $id, $class, $label);
       break;
     case "b":
 
@@ -6266,7 +9464,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 2, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 2, $value, $attr, $id, $class, $label);
       break;
     case "i":
 
@@ -6279,7 +9477,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 3, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 3, $value, $attr, $id, $class, $label);
       break;
     case "small":
 
@@ -6292,7 +9490,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 4, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 4, $value, $attr, $id, $class, $label);
       break;
     case "strike":
 
@@ -6305,7 +9503,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 5, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 5, $value, $attr, $id, $class, $label);
       break;
     case "marquee":
 
@@ -6318,7 +9516,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 6, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 6, $value, $attr, $id, $class, $label);
       break;
     case "center":
 
@@ -6331,7 +9529,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 7, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 7, $value, $attr, $id, $class, $label);
       break;
     case "code":
 
@@ -6344,7 +9542,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 8, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 8, $value, $attr, $id, $class, $label);
       break;
     case "abbr":
 
@@ -6357,7 +9555,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 9, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 9, $value, $attr, $id, $class, $label);
       break;
     case "map":
 
@@ -6370,7 +9568,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 10, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 10, $value, $attr, $id, $class, $label);
       break;
     case "canvas":
 
@@ -6383,7 +9581,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 11, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 11, $value, $attr, $id, $class, $label);
       break;
     case "cite":
 
@@ -6396,7 +9594,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 12, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 12, $value, $attr, $id, $class, $label);
       break;
     case "data":
 
@@ -6409,7 +9607,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 13, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 13, $value, $attr, $id, $class, $label);
       break;
     case "dl":
 
@@ -6422,7 +9620,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 14, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 14, $value, $attr, $id, $class, $label);
       break;
     case "dt":
 
@@ -6435,7 +9633,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 15, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 15, $value, $attr, $id, $class, $label);
       break;
     case "dd":
 
@@ -6448,7 +9646,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 16, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 16, $value, $attr, $id, $class, $label);
       break;
     case "dfn":
 
@@ -6461,7 +9659,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 17, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 17, $value, $attr, $id, $class, $label);
       break;
     case "ins":
 
@@ -6474,7 +9672,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('FORMAT', 18, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('FORMAT', 18, $value, $attr, $id, $class, $label);
       break;
     case "ul":
 
@@ -6487,7 +9685,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 0, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 0, $value, $attr, $id, $class, $label);
       break;
     case "ol":
 
@@ -6500,7 +9698,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 1, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 1, $value, $attr, $id, $class, $label);
       break;
     case "li":
 
@@ -6513,7 +9711,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 2, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 2, $value, $attr, $id, $class, $label);
       break;
     case "table":
 
@@ -6526,7 +9724,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 3, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 3, $value, $attr, $id, $class, $label);
       break;
     case "tr":
 
@@ -6539,7 +9737,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 4, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 4, $value, $attr, $id, $class, $label);
       break;
     case "td":
 
@@ -6552,7 +9750,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 5, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 5, $value, $attr, $id, $class, $label);
       break;
     case "th":
 
@@ -6565,7 +9763,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 6, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 6, $value, $attr, $id, $class, $label);
       break;
     case "legend":
 
@@ -6578,7 +9776,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 7, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 7, $value, $attr, $id, $class, $label);
       break;
     case "fieldset":
 
@@ -6591,7 +9789,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 8, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 8, $value, $attr, $id, $class, $label);
       break;
     case "tbody":
 
@@ -6604,7 +9802,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 9, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 9, $value, $attr, $id, $class, $label);
       break;
     case "tfoot":
 
@@ -6617,7 +9815,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 10, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 10, $value, $attr, $id, $class, $label);
       break;
     case "thead":
 
@@ -6630,7 +9828,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('LIST', 11, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('LIST', 11, $value, $attr, $id, $class, $label);
       break;
     case "figure":
 
@@ -6643,7 +9841,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 0, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 0, $value, $attr, $id, $class, $label);
       break;
     case "figcaption":
 
@@ -6656,7 +9854,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 1, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 1, $value, $attr, $id, $class, $label);
       break;      
     case "meter":
 
@@ -6669,7 +9867,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 2, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 2, $value, $attr, $id, $class, $label);
       break;      
     case "object":
 
@@ -6682,7 +9880,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 3, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 3, $value, $attr, $id, $class, $label);
       break;     
     case "optgroup":
 
@@ -6695,7 +9893,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 4, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 4, $value, $attr, $id, $class, $label);
       break;     
     case "output":
 
@@ -6708,7 +9906,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 5, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 5, $value, $attr, $id, $class, $label);
       break;  
     case "progress":
 
@@ -6721,7 +9919,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 6, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 6, $value, $attr, $id, $class, $label);
       break;
     case "svg":
 
@@ -6734,7 +9932,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 7, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 7, $value, $attr, $id, $class, $label);
       break;
     case "template":
 
@@ -6747,7 +9945,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 8, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 8, $value, $attr, $id, $class, $label);
       break;
     case "time":
 
@@ -6760,7 +9958,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 9, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 9, $value, $attr, $id, $class, $label);
       break;
     case "var":
 
@@ -6773,7 +9971,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SUPPORT', 10, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SUPPORT', 10, $value, $attr, $id, $class, $label);
       break;
 
     case "audio":
@@ -6787,7 +9985,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 0, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 0, $value, $attr, $id, $class, $label);
       break;
     case "video":
 
@@ -6800,7 +9998,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 1, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 1, $value, $attr, $id, $class, $label);
       break;
     case "address":
 
@@ -6813,7 +10011,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 2, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 2, $value, $attr, $id, $class, $label);
       break;
     case "colgroup":
 
@@ -6826,7 +10024,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 3, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 3, $value, $attr, $id, $class, $label);
       break;
     case "bdi":
 
@@ -6839,7 +10037,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 4, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 4, $value, $attr, $id, $class, $label);
       break;
     case "bdo":
 
@@ -6852,7 +10050,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 5, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 5, $value, $attr, $id, $class, $label);
       break;
     case "blockquote":
 
@@ -6865,7 +10063,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 6, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 6, $value, $attr, $id, $class, $label);
       break;
     case "caption":
 
@@ -6878,7 +10076,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 7, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 7, $value, $attr, $id, $class, $label);
       break;
     case "label":
 
@@ -6890,7 +10088,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 8, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 8, $value, $attr, $id, $class, $label);
       break;
     case "datalist":
 
@@ -6902,7 +10100,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 9, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 9, $value, $attr, $id, $class, $label);
       break;
     case "details":
 
@@ -6914,7 +10112,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 10, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 10, $value, $attr, $id, $class, $label);
       break;
     case "summary":
 
@@ -6926,7 +10124,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 11, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 11, $value, $attr, $id, $class, $label);
       break;
     case "dialog":
 
@@ -6938,7 +10136,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 12, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 12, $value, $attr, $id, $class, $label);
       break;
     case "option":
 
@@ -6950,7 +10148,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('SECONDARY', 13, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('SECONDARY', 13, $value, $attr, $id, $class, $label);
       break;
     case "h1":
 
@@ -6962,7 +10160,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-       return self::_elemenHTMLINLINE('PRIMARY', 0, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('PRIMARY', 0, $value, $attr, $id, $class, $label);
       break;
     case "h2":
 
@@ -6974,7 +10172,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-      return self::_elemenHTMLINLINE('PRIMARY', 1, $value, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 1, $value, $attr, $id, $class, $label);
       break;
     case "h3":
 
@@ -6986,7 +10184,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-      return self::_elemenHTMLINLINE('PRIMARY', 2, $value, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 2, $value, $attr, $id, $class, $label);
       break; 
     case "h4":
 
@@ -6998,7 +10196,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-      return self::_elemenHTMLINLINE('PRIMARY', 3, $value, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 3, $value, $attr, $id, $class, $label);
       break;
     case "h5":
 
@@ -7010,7 +10208,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-      return self::_elemenHTMLINLINE('PRIMARY', 4, $value, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 4, $value, $attr, $id, $class, $label);
       break;
     case "h6":
 
@@ -7022,7 +10220,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-      return self::_elemenHTMLINLINE('PRIMARY', 5, $value, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 5, $value, $attr, $id, $class, $label);
       break;                 
   case "div":
 
@@ -7034,7 +10232,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/
-      return self::_elemenHTMLINLINE('PRIMARY', 6, $value, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 6, $value, $attr, $id, $class, $label);
       break;       
     case "p":
 
@@ -7046,7 +10244,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('PRIMARY', 7, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('PRIMARY', 7, $value, $attr, $id, $class, $label);
       break;
     case "button":
 
@@ -7058,7 +10256,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('PRIMARY', 8, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('PRIMARY', 8, $value, $attr, $id, $class, $label);
       break;
     case "a":
 
@@ -7070,7 +10268,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/ 
-      return self::_elemenHTMLINLINE('PRIMARY', 9, $value, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 9, $value, $attr, $id, $class, $label);
       break;
     case "iframe":
 
@@ -7082,7 +10280,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('PRIMARY', 10, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('PRIMARY', 10, $value, $attr, $id, $class, $label);
       break;
     case "main":
 
@@ -7094,7 +10292,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/ 
-      return self::_elemenHTMLINLINE('PRIMARY', 11, $value, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 11, $value, $attr, $id, $class, $label);
       break;
     case "nav":
 
@@ -7106,7 +10304,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('PRIMARY', 12, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('PRIMARY', 12, $value, $attr, $id, $class, $label);
       break;
     case "select":
 
@@ -7118,7 +10316,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/ 
-      return self::_elemenHTMLINLINE('PRIMARY', 13, $value, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 13, $value, $attr, $id, $class, $label);
       break;
     case "form":
 
@@ -7130,7 +10328,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('PRIMARY', 14, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('PRIMARY', 14, $value, $attr, $id, $class, $label);
       break;
     case "picture":
 
@@ -7142,7 +10340,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/ 
-      return self::_elemenHTMLINLINE('PRIMARY', 15, $value, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 15, $value, $attr, $id, $class, $label);
       break;
     case "section":
 
@@ -7154,7 +10352,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/ 
-       return self::_elemenHTMLINLINE('PRIMARY', 16, $value, $js, $id, $class, $label);
+       return self::_elemenHTMLINLINE('PRIMARY', 16, $value, $attr, $id, $class, $label);
       break;
     case "textarea":
 
@@ -7166,7 +10364,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
        *
        *
       **/ 
-      return self::_elemenHTMLINLINE('PRIMARY', 17, $value, $js, $id, $class, $label);
+      return self::_elemenHTMLINLINE('PRIMARY', 17, $value, $attr, $id, $class, $label);
       break;
     default:
 
@@ -7182,7 +10380,7 @@ static protected function _setReturnELEMENT($elem, $value, $js, $id, $class, $la
   }
 } # END OF SET ELEMENT
 
-static protected function _setReturnINLINELEMENT($elem, $js, $id, $class,$assoc){
+static protected function _setReturnINLINELEMENT($elem, $attr, $id, $class,$assoc){
 
    $elem = self::_setINLINELEMENTS($elem);
 
@@ -7197,7 +10395,7 @@ static protected function _setReturnINLINELEMENT($elem, $js, $id, $class,$assoc)
        *
        *
       **/ 
-       return self::return_inline_element('INLINE', 0, $js, $id, $class, $assoc);
+       return self::return_inline_element('INLINE', 0, $attr, $id, $class, $assoc);
       break;
     case "track":
 
@@ -7209,7 +10407,7 @@ static protected function _setReturnINLINELEMENT($elem, $js, $id, $class,$assoc)
        *
        *
       **/ 
-       return self::return_inline_element('INLINE', 1, $js, $id, $class, $assoc);
+       return self::return_inline_element('INLINE', 1, $attr, $id, $class, $assoc);
       break;
     case "circle":
 
@@ -7221,7 +10419,7 @@ static protected function _setReturnINLINELEMENT($elem, $js, $id, $class,$assoc)
        *
        *
       **/ 
-       return self::return_inline_element('INLINE', 2, $js, $id, $class, $assoc);
+       return self::return_inline_element('INLINE', 2, $attr, $id, $class, $assoc);
       break;
     case "param":
 
@@ -7233,7 +10431,7 @@ static protected function _setReturnINLINELEMENT($elem, $js, $id, $class,$assoc)
        *
        *
       **/ 
-       return self::return_inline_element('INLINE', 3, $js, $id, $class, $assoc);
+       return self::return_inline_element('INLINE', 3, $attr, $id, $class, $assoc);
       break;
     case "input":
 
@@ -7245,7 +10443,7 @@ static protected function _setReturnINLINELEMENT($elem, $js, $id, $class,$assoc)
        *
        *
       **/ 
-       return self::return_inline_element('INLINE', 4, $js, $id, $class, $assoc);
+       return self::return_inline_element('INLINE', 4, $attr, $id, $class, $assoc);
       break;
     case "meta":
 
@@ -7257,7 +10455,7 @@ static protected function _setReturnINLINELEMENT($elem, $js, $id, $class,$assoc)
        *
        *
       **/ 
-       return self::return_inline_element('INLINE', 5, $js, $id, $class, $assoc);
+       return self::return_inline_element('INLINE', 5, $attr, $id, $class, $assoc);
       break;
     case "link":
 
@@ -7269,7 +10467,7 @@ static protected function _setReturnINLINELEMENT($elem, $js, $id, $class,$assoc)
        *
        *
       **/ 
-       return self::return_inline_element('INLINE', 6, $js, $id, $class, $assoc);
+       return self::return_inline_element('INLINE', 6, $attr, $id, $class, $assoc);
       break;
     case "img":
 
@@ -7281,7 +10479,7 @@ static protected function _setReturnINLINELEMENT($elem, $js, $id, $class,$assoc)
        *
        *
       **/ 
-       return self::return_inline_element('INLINE', 7, $js, $id, $class, $assoc);
+       return self::return_inline_element('INLINE', 7, $attr, $id, $class, $assoc);
       break;      
     case "embed":
 
@@ -7293,7 +10491,7 @@ static protected function _setReturnINLINELEMENT($elem, $js, $id, $class,$assoc)
        *
        *
       **/ 
-       return self::return_inline_element('INLINE', 8, $js, $id, $class, $assoc);
+       return self::return_inline_element('INLINE', 8, $attr, $id, $class, $assoc);
       break;
     case "option":
 
@@ -7305,7 +10503,7 @@ static protected function _setReturnINLINELEMENT($elem, $js, $id, $class,$assoc)
        *
        *
       **/ 
-       return self::return_inline_element('INLINE', 9, $js, $id, $class, $assoc);
+       return self::return_inline_element('INLINE', 9, $attr, $id, $class, $assoc);
       break;
     case "col":
 
@@ -7317,7 +10515,7 @@ static protected function _setReturnINLINELEMENT($elem, $js, $id, $class,$assoc)
        *
        *
       **/ 
-       return self::return_inline_element('INLINE', 10, $js, $id, $class, $assoc);
+       return self::return_inline_element('INLINE', 10, $attr, $id, $class, $assoc);
       break;
     case "base":
 
@@ -7329,7 +10527,7 @@ static protected function _setReturnINLINELEMENT($elem, $js, $id, $class,$assoc)
        *
        *
       **/ 
-       return self::return_inline_element('INLINE', 11, $js, $id, $class, $assoc);
+       return self::return_inline_element('INLINE', 11, $attr, $id, $class, $assoc);
       break;
     case "aside":
 
@@ -7341,7 +10539,7 @@ static protected function _setReturnINLINELEMENT($elem, $js, $id, $class,$assoc)
        *
        *
       **/ 
-       return self::return_inline_element('INLINE', 12, $js, $id, $class, $assoc);
+       return self::return_inline_element('INLINE', 12, $attr, $id, $class, $assoc);
       break;
     case "area":
 
@@ -7353,7 +10551,7 @@ static protected function _setReturnINLINELEMENT($elem, $js, $id, $class,$assoc)
        *
        *
       **/ 
-       return self::return_inline_element('INLINE', 13, $js, $id, $class, $assoc);
+       return self::return_inline_element('INLINE', 13, $attr, $id, $class, $assoc);
       break;
   case "DOCTYPE":
 
@@ -7365,7 +10563,7 @@ static protected function _setReturnINLINELEMENT($elem, $js, $id, $class,$assoc)
        *
        *
       **/ 
-       return self::return_inline_element('INLINE', 14, $js, $id, $class, $assoc);
+       return self::return_inline_element('INLINE', 14, $attr, $id, $class, $assoc);
       break;
     default:
     
