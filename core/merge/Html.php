@@ -1137,7 +1137,7 @@ static protected $hextend = [];
   * Neat and clean noHTML
   *
   **/
-  static public function ELEMS(
+  static public function ELEM(
 
 
     $inline     =  "INLINE"
@@ -1206,7 +1206,7 @@ static protected $hextend = [];
   static public function _H1(
 
        $attr     =  []
-      ,$i        =  null
+      ,$id        =  null
       ,$class    =  null
 
   )
@@ -1237,7 +1237,7 @@ static protected $hextend = [];
   static public function _H2(
 
        $attr     =  []
-      ,$i        =  null
+      ,$id        =  null
       ,$class    =  null
 
   )
