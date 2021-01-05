@@ -196,8 +196,7 @@ For PHPOptimizer more examples and <a href="https://github.com/nielsofficeoffici
 For PHPFileEnhancers and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Enhancers"> Reference link here </a><br /> 
 For PHPMaintenance Mode and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v1.4 </a><br />
 For PHPForm and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v1.4 </a><br /> 
-For PHPLayout and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v1.5 </a><br /> 
-For PHPFrontScript and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v2 </a><br /> 
+For Html to PHPHtml-Optimizer Generator(Converter) <a href="#"> SOON <i> Convert HTML to PHPHtml-Optimizer Premium</i></a><br /> 
 For Developer <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer/issues"> Support link here </a><br /> 
 This Library is 100% secured and fully free ready to use, If you see vulnerability you can email me: @ nieldigitalsolution@gmail.com
 
