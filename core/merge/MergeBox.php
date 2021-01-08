@@ -42,7 +42,14 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS PHPFileHandler;
   * Inline Heading tag H1
   *
   **/
-function _H1($attr=null, $element_id=null, $element_class=null) {
+function _H1(
+
+      $attr          =  null
+     ,$element_id    =  null
+     ,$element_class =  null
+
+)
+{
 
   /**
    *
@@ -69,7 +76,12 @@ function _H1($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag H1
   *
   **/
-function xH1($label = NULL) {
+function xH1(
+
+    $label   =  NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xH1') ? $Html->xH1($label) : PERFORM(erorrMessage());	
@@ -84,7 +96,14 @@ function xH1($label = NULL) {
   * Inline Heading tag H2
   *
   **/
-function _H2($attr=null, $element_id=null, $element_class=null) {
+function _H2(
+
+      $attr          =  null
+     ,$element_id    =  null
+     ,$element_class =  null
+
+)
+{
  
   /**
    *
@@ -112,7 +131,12 @@ function _H2($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag H2
   *
   **/
-function xH2($label = NULL) {
+function xH2(
+
+    $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xH2') ? $Html->xH2($label) : PERFORM(erorrMessage());	
@@ -127,7 +151,14 @@ function xH2($label = NULL) {
   * Inline Heading tag H3
   *
   **/
-function _H3($attr=null, $element_id=null, $element_class=null) {
+function _H3(
+
+    $attr           =  null
+   ,$element_id     =  null
+   ,$element_class  =  null
+
+)
+{
   
   /**
    *
@@ -155,7 +186,12 @@ function _H3($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag H3
   *
   **/
-function xH3($label = NULL) {
+function xH3(
+
+    $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xH3') ? $Html->xH3($label) : PERFORM(erorrMessage());	
@@ -170,7 +206,15 @@ function xH3($label = NULL) {
   * Inline Heading tag H4
   *
   **/
-function _H4($attr=null, $element_id=null, $element_class=null) {
+function _H4(
+
+
+    $attr          =  null
+   ,$element_id    =  null
+   ,$element_class =  null
+
+)
+{
 
   /**
    *
@@ -198,7 +242,12 @@ function _H4($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag H4
   *
   **/
-function xH4($label = NULL) {
+function xH4(
+
+    $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xH4') ? $Html->xH4($label) : PERFORM(erorrMessage());  	
@@ -213,7 +262,14 @@ function xH4($label = NULL) {
   * Inline Heading tag H5
   *
   **/
-function _H5($attr=null, $element_id=null, $element_class=null) {
+function _H5(
+
+    $attr           =  null
+   ,$element_id     =  null
+   ,$element_class  =  null
+
+)
+{
 
   /**
    *
@@ -241,7 +297,12 @@ function _H5($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag H5
   *
   **/
-function xH5($label = NULL) {
+function xH5( 
+
+  $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xH5') ? $Html->xH5($label) : PERFORM(erorrMessage());	
@@ -256,7 +317,15 @@ function xH5($label = NULL) {
   * Inline Heading tag H6
   *
   **/
-function _H6($attr=null, $element_id=null, $element_class=null) {
+function _H6(
+
+
+  $attr           =  null
+ ,$element_id     =  null
+ ,$element_class  =  null
+
+)
+{
 
   /**
    *
@@ -284,7 +353,12 @@ function _H6($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag H6
   *
   **/
-function xH6($label = NULL) {
+function xH6(
+
+  $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xH6') ? $Html->xH6($label) : PERFORM(erorrMessage());	
@@ -299,7 +373,14 @@ function xH6($label = NULL) {
   * Inline Heading tag DIV
   *
   **/
-function _DIV($attr=null, $element_id=null, $element_class=null) {
+function _DIV(
+
+  $attr          =  null
+ ,$element_id    =  null
+ ,$element_class =  null
+
+)
+{
 
   /**
    *
@@ -327,7 +408,12 @@ function _DIV($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag DIV
   *
   **/
-function xDIV($label = NULL) {
+function xDIV(  
+
+    $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xDIV') ? $Html->xDIV($label) : PERFORM(erorrMessage());	
@@ -342,7 +428,14 @@ function xDIV($label = NULL) {
   * Inline Heading tag BUTTON
   *
   **/
-function _BUTTON($attr=null, $element_id=null, $element_class=null) {
+function _BUTTON(  
+
+    $attr          =  null
+   ,$element_id    =  null
+   ,$element_class =  null
+
+)
+{
 
   /**
    *
@@ -370,7 +463,12 @@ function _BUTTON($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag BUTTON
   *
   **/
-function xBUTTON($label = NULL) {
+function xBUTTON(
+
+    $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xBUTTON') ? $Html->xBUTTON($label) : PERFORM(erorrMessage());	
@@ -385,7 +483,14 @@ function xBUTTON($label = NULL) {
   * Inline Heading tag IFRAME
   *
   **/
-function _IFRAME($attr=null, $element_id=null, $element_class=null) {
+function _IFRAME( 
+
+     $attr          =  null
+    ,$element_id    =  null
+    ,$element_class =  null
+
+ )
+ {
 
   /**
    *
@@ -413,7 +518,12 @@ function _IFRAME($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag IFRAME
   *
   **/
-function xIFRAME($label = NULL) {
+function xIFRAME(
+
+   $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xIFRAME') ? $Html->xIFRAME($label) : PERFORM(erorrMessage());  	
@@ -428,7 +538,14 @@ function xIFRAME($label = NULL) {
   * Inline Heading tag MAIN
   *
   **/
-function _MAIN($attr=null, $element_id=null, $element_class=null) {
+function _MAIN(
+
+  $attr          =  null
+ ,$element_id    =  null
+ ,$element_class =  null
+
+)
+{
 
   /**
    *
@@ -456,7 +573,12 @@ function _MAIN($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag MAIN
   *
   **/
-function xMAIN($label = NULL) {
+function xMAIN(
+
+    $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xMAIN') ? $Html->xMAIN($label) : PERFORM(erorrMessage());	
@@ -471,7 +593,14 @@ function xMAIN($label = NULL) {
   * Inline Heading tag NAV
   *
   **/
-function _NAV($attr=null, $element_id=null, $element_class=null) {
+function _NAV(
+
+     $attr          =  null
+    ,$element_id    =  null
+    ,$element_class = null
+
+)
+{
 
   /**
    *
@@ -499,7 +628,12 @@ function _NAV($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag NAV
   *
   **/
-function xNAV($label = NULL) {
+function xNAV(
+
+   $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xNAV') ? $Html->xNAV($label) : PERFORM(erorrMessage());	
@@ -514,7 +648,14 @@ function xNAV($label = NULL) {
   * Inline Heading tag SELECT
   *
   **/
-function _SELECT($attr=null, $element_id=null, $element_class=null) {
+function _SELECT(
+
+   $attr           =  null
+  ,$element_id     =  null
+  ,$element_class  =  null
+
+)
+{
 
   /**
    *
@@ -542,7 +683,12 @@ function _SELECT($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag SELECT
   *
   **/
-function xSELECT($label = NULL) {
+function xSELECT(
+
+  $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox();
   return method_exists($Html, 'xSELECT') ? $Html->xSELECT($label) : PERFORM(erorrMessage());
@@ -557,7 +703,14 @@ function xSELECT($label = NULL) {
   * Inline Heading tag FORM
   *
   **/
-function _FORM($attr=null, $element_id=null, $element_class=null) {
+function _FORM(
+
+  $attr          =  null
+ ,$element_id    =  null
+ ,$element_class =  null
+
+)
+{
 
   /**
    *
@@ -585,7 +738,12 @@ function _FORM($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag FORM
   *
   **/
-function xFORM($label = NULL) {
+function xFORM(
+
+   $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xFORM') ? $Html->xFORM($label) : PERFORM(erorrMessage());  	
@@ -600,7 +758,14 @@ function xFORM($label = NULL) {
   * Inline Heading tag PICTURE
   *
   **/
-function _PICTURE($attr=null, $element_id=null, $element_class=null) {
+function _PICTURE(
+
+  $attr           =  null
+ ,$element_id     =  null
+ ,$element_class  =  null
+
+)
+{
 
   /**
    *
@@ -628,7 +793,12 @@ function _PICTURE($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag PICTURE
   *
   **/
-function xPICTURE($label = NULL) {
+function xPICTURE(
+
+   $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xPICTURE') ? $Html->xPICTURE($label) : PERFORM(erorrMessage()); 	
@@ -643,7 +813,14 @@ function xPICTURE($label = NULL) {
   * Inline Heading tag SECTION
   *
   **/
-function _SECTION($attr=null, $element_id=null, $element_class=null) {
+function _SECTION(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+)
+{
 
   /**
    *
@@ -671,7 +848,12 @@ function _SECTION($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag SECTION
   *
   **/
-function xSECTION($label = NULL) {
+function xSECTION(
+
+   $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xSECTION') ? $Html->xSECTION($label) : PERFORM(erorrMessage());  	
@@ -686,7 +868,14 @@ function xSECTION($label = NULL) {
   * Inline Heading tag TEXTAREA
   *
   **/
-function _TEXTAREA($attr=null, $element_id=null, $element_class=null) {
+function _TEXTAREA(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+)
+{
 
   /**
    *
@@ -714,7 +903,12 @@ function _TEXTAREA($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag TEXTAREA
   *
   **/
-function xTEXTAREA($label = NULL) {
+function xTEXTAREA(
+
+  $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xTEXTAREA') ? $Html->xTEXTAREA($label) : PERFORM(erorrMessage()); 
@@ -729,7 +923,15 @@ function xTEXTAREA($label = NULL) {
   * Inline Heading tag TEXTAREA
   *
   **/
-function _FOOTER($attr=null, $element_id=null, $element_class=null) {
+function _FOOTER(
+
+
+    $attr           =  null
+   ,$element_id     =  null
+   ,$element_class  =  null
+
+ )
+ {
 
   /**
    *
@@ -757,7 +959,12 @@ function _FOOTER($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag TEXTAREA
   *
   **/
-function xFOOTER($label = NULL) {
+function xFOOTER(
+
+  $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xFOOTER') ? $Html->xFOOTER($label) : PERFORM(erorrMessage());   
@@ -772,7 +979,15 @@ function xFOOTER($label = NULL) {
   * Inline Heading tag AUDIO
   *
   **/
-function _AUDIO($attr=null, $element_id=null, $element_class=null) {
+function _AUDIO(
+
+
+   $attr           =  null
+  ,$element_id     =  null
+  ,$element_class  =  null
+
+)
+{
 
   /**
    *
@@ -800,7 +1015,12 @@ function _AUDIO($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag AUDIO
   *
   **/
-function xAUDIO($label = NULL) {
+function xAUDIO(
+
+     $label   = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xAUDIO') ? $Html->xAUDIO($label) : PERFORM(erorrMessage()); 
@@ -815,7 +1035,14 @@ function xAUDIO($label = NULL) {
   * Inline Heading tag VIDEO
   *
   **/
-function _VIDEO($attr=null, $element_id=null, $element_class=null) {
+function _VIDEO(
+
+     $attr           =  null
+    ,$element_id     =  null
+    ,$element_class  =  null
+
+)
+{
 
   /**
    *
@@ -843,7 +1070,12 @@ function _VIDEO($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag VIDEO
   *
   **/
-function xVIDEO($label = NULL) {
+function xVIDEO(
+
+    $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox();
   return method_exists($Html, 'xVIDEO') ? $Html->xVIDEO($label) : PERFORM(erorrMessage());
@@ -858,7 +1090,14 @@ function xVIDEO($label = NULL) {
   * Inline Heading tag ADDRESS
   *
   **/
-function _ADDRESS($attr=null, $element_id=null, $element_class=null) {
+function _ADDRESS(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+ 
+ )
+ {
 
   /**
    *
@@ -886,7 +1125,13 @@ function _ADDRESS($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag ADDRESS
   *
   **/
-function xADDRESS($label = NULL) {
+function xADDRESS(
+
+
+   $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xADDRESS') ? $Html->xADDRESS($label) : PERFORM(erorrMessage());  	
@@ -901,7 +1146,14 @@ function xADDRESS($label = NULL) {
   * Inline Heading tag COLGROUP
   *
   **/
-function _COLGROUP($attr=null, $element_id=null, $element_class=null) {
+function _COLGROUP(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+)
+{
 
   /**
    *
@@ -929,7 +1181,12 @@ function _COLGROUP($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag COLGROUP
   *
   **/
-function xCOLGROUP($label = NULL) {
+function xCOLGROUP(
+
+   $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xCOLGROUP') ? $Html->xCOLGROUP($label) : PERFORM(erorrMessage());  	
@@ -944,7 +1201,14 @@ function xCOLGROUP($label = NULL) {
   * Inline Heading tag BDI
   *
   **/
-function _BDI($attr=null, $element_id=null, $element_class=null) {
+function _BDI(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+)
+{
 
   /**
    *
@@ -972,7 +1236,12 @@ function _BDI($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag BDI
   *
   **/
-function xBDI($label = NULL) {
+function xBDI(
+
+    $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xBDI') ? $Html->xBDI($label) : PERFORM(erorrMessage());	
@@ -987,7 +1256,14 @@ function xBDI($label = NULL) {
   * Inline Heading tag BDO
   *
   **/
-function _BDO($attr=null, $element_id=null, $element_class=null) {
+function _BDO(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+)
+{
 
   /**
    *
@@ -1015,7 +1291,12 @@ function _BDO($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag BDO
   *
   **/
-function xBDO($label = NULL) {
+function xBDO(  
+
+   $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xBDO') ? $Html->xBDO($label) : PERFORM(erorrMessage()); 	
@@ -1030,7 +1311,14 @@ function xBDO($label = NULL) {
   * Inline Heading tag BLOCKQUOTE
   *
   **/
-function _BLOCKQUOTE($attr=null, $element_id=null, $element_class=null) {
+function _BLOCKQUOTE(
+
+    $attr          =  null
+   ,$element_id    =  null
+   ,$element_class =  null
+
+ )
+ {
 
   /**
    *
@@ -1058,7 +1346,12 @@ function _BLOCKQUOTE($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag BLOCKQUOTE
   *
   **/
-function xBLOCKQUOTE($label = NULL) {
+function xBLOCKQUOTE(  
+
+   $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xBLOCKQUOTE') ? $Html->xBLOCKQUOTE($label) : PERFORM(erorrMessage());	
@@ -1073,7 +1366,14 @@ function xBLOCKQUOTE($label = NULL) {
   * Inline Heading tag CAPTION
   *
   **/
-function _CAPTION($attr=null, $element_id=null, $element_class=null) {
+function _CAPTION(
+
+    $attr          =  null
+   ,$element_id    =  null
+   ,$element_class =  null
+
+ )
+ {
 
   /**
    *
@@ -1101,7 +1401,12 @@ function _CAPTION($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag CAPTION
   *
   **/
-function xCAPTION($label = NULL) {
+function xCAPTION(
+
+   $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xCAPTION') ? $Html->xCAPTION($label) : PERFORM(erorrMessage());
@@ -1116,7 +1421,14 @@ function xCAPTION($label = NULL) {
   * Inline Heading tag LABEL
   *
   **/
-function _LABEL($attr=null, $element_id=null, $element_class=null) {
+function _LABEL(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+)
+{
 
   /**
    *
@@ -1144,9 +1456,16 @@ function _LABEL($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag LABEL
   *
   **/
-function xLABEL($label = NULL) {
+function xLABEL(
+
+  $label = NULL
+
+)
+{
+
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xLABEL') ? $Html->xLABEL($label) : PERFORM(erorrMessage());	
+
 }
 
 /**
@@ -1157,7 +1476,14 @@ function xLABEL($label = NULL) {
   * Inline Heading tag DATALIST
   *
   **/
-function _DATALIST($attr=null, $element_id=null, $element_class=null) {
+function _DATALIST(
+
+   $attr           =  null
+  ,$element_id     =  null
+  ,$element_class  =  null
+
+)
+{
 
   /**
    *
@@ -1185,7 +1511,12 @@ function _DATALIST($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag DATALIST
   *
   **/
-function xDATALIST($label = NULL) {
+function xDATALIST(
+
+   $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xDATALIST') ? $Html->xDATALIST($label) : PERFORM(erorrMessage());  	
@@ -1200,7 +1531,15 @@ function xDATALIST($label = NULL) {
   * Inline Heading tag DETAILS
   *
   **/
-function _DETAILS($attr=null, $element_id=null, $element_class=null) {
+function _DETAILS(
+
+
+   $attr           =  null
+  ,$element_id     =  null
+  ,$element_class  =  null
+
+ )
+ {
 
   /**
    *
@@ -1228,7 +1567,12 @@ function _DETAILS($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag DETAILS
   *
   **/
-function xDETAILS($label = NULL) {
+function xDETAILS(
+
+  $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xDETAILS') ? $Html->xDETAILS($label) : PERFORM(erorrMessage());	
@@ -1243,7 +1587,14 @@ function xDETAILS($label = NULL) {
   * Inline Heading tag SUMMARY
   *
   **/
-function _SUMMARY($attr=null, $element_id=null, $element_class=null) {
+function _SUMMARY(
+
+     $attr           =  null
+    ,$element_id     =  null
+    ,$element_class  =  null
+
+  )
+  {
 
   /**
    *
@@ -1271,7 +1622,12 @@ function _SUMMARY($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag SUMMARY
   *
   **/
-function xSUMMARY($label = NULL) {
+function xSUMMARY(
+
+   $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xSUMMARY') ? $Html->xSUMMARY($label) : PERFORM(erorrMessage());  	
@@ -1286,7 +1642,14 @@ function xSUMMARY($label = NULL) {
   * Inline Heading tag DIALOG
   *
   **/
-function _DIALOG($attr=null, $element_id=null, $element_class=null) {
+function _DIALOG(
+
+    $attr           =  null
+   ,$element_id     =  null
+   ,$element_class  =  null
+
+ )
+ {
 
   /**
    *
@@ -1314,7 +1677,12 @@ function _DIALOG($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag DIALOG
   *
   **/
-function xDIALOG($label = NULL) {
+function xDIALOG(
+
+  $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox();
   return method_exists($Html, 'xDIALOG') ? $Html->xDIALOG($label) : PERFORM(erorrMessage()); 	
@@ -1329,7 +1697,14 @@ function xDIALOG($label = NULL) {
   * Inline Heading tag OPTION
   *
   **/
-function _OPTION($attr=null, $element_id=null, $element_class=null) {
+function _OPTION(
+
+     $attr           =  null
+    ,$element_id     =  null
+    ,$element_class  =  null
+
+ )
+ {
 
   /**
    *
@@ -1357,7 +1732,12 @@ function _OPTION($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag OPTION
   *
   **/
-function xOPTION($label = NULL) {
+function xOPTION(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xOPTION') ? $Html->xOPTION($label) : PERFORM(erorrMessage());  	
@@ -1372,7 +1752,14 @@ function xOPTION($label = NULL) {
   * Inline Heading tag FIGURE
   *
   **/
-function _FIGURE($attr=null, $element_id=null, $element_class=null) {
+function _FIGURE(
+
+   $attr           =  null
+  ,$element_id     =  null
+  ,$element_class  =  null
+
+ )
+ {
 
   /**
    *
@@ -1400,7 +1787,12 @@ function _FIGURE($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag FIGURE
   *
   **/
-function xFIGURE($label = NULL) {
+function xFIGURE(
+
+  $label = NULL
+
+ )
+ {
   
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xFIGURE') ? $Html->xFIGURE($label) : PERFORM(erorrMessage());
@@ -1415,7 +1807,14 @@ function xFIGURE($label = NULL) {
   * Inline Heading tag FIGCAPTION
   *
   **/
-function _FIGCAPTION($attr=null, $element_id=null, $element_class=null) {
+function _FIGCAPTION(
+
+   $attr           =  null
+  ,$element_id     =  null
+  ,$element_class  =  null
+
+ )
+ {
 
   /**
    *
@@ -1443,7 +1842,12 @@ function _FIGCAPTION($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag FIGCAPTION
   *
   **/
-function xFIGCAPTION($label = NULL) {
+function xFIGCAPTION(
+
+    $label = NULL
+
+ )
+ {
   
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xFIGCAPTION') ? $Html->xFIGCAPTION($label) : PERFORM(erorrMessage());
@@ -1458,7 +1862,14 @@ function xFIGCAPTION($label = NULL) {
   * Inline Heading tag METER
   *
   **/
-function _METER($attr=null, $element_id=null, $element_class=null) {
+function _METER(
+
+    $attr          =  null
+   ,$element_id    =  null
+   ,$element_class =  null
+
+ )
+ {
 
   /**
    *
@@ -1486,7 +1897,12 @@ function _METER($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag METER
   *
   **/
-function xMETER($label = NULL) {
+function xMETER(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xMETER') ? $Html->xMETER($label) : PERFORM(erorrMessage());  	
@@ -1502,7 +1918,14 @@ function xMETER($label = NULL) {
   * Inline Heading tag OBJECT
   *
   **/
-function _OBJECT($attr=null, $element_id=null, $element_class=null) {
+function _OBJECT(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+ )
+ {
 
   /**
    *
@@ -1530,7 +1953,12 @@ function _OBJECT($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag OBJECT
   *
   **/
-function xOBJECT($label = NULL) {
+function xOBJECT(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xOBJECT') ? $Html->xOBJECT($label) : PERFORM(erorrMessage());  	
@@ -1545,7 +1973,14 @@ function xOBJECT($label = NULL) {
   * Inline Heading tag OPTGROUP
   *
   **/
-function _OPTGROUP($attr=null, $element_id=null, $element_class=null) {
+function _OPTGROUP(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+ )
+ {
 
   /**
    *
@@ -1573,7 +2008,12 @@ function _OPTGROUP($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag OPTGROUP
   *
   **/
-function xOPTGROUP($label = NULL) {
+function xOPTGROUP(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xOPTGROUP') ? $Html->xOPTGROUP($label) : PERFORM(erorrMessage());	
@@ -1588,7 +2028,14 @@ function xOPTGROUP($label = NULL) {
   * Inline Heading tag OUTPUT
   *
   **/
-function _OUTPUT($attr=null, $element_id=null, $element_class=null) {
+function _OUTPUT(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+ )
+ {
 
   /**
    *
@@ -1616,7 +2063,12 @@ function _OUTPUT($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag OUTPUT
   *
   **/
-function xOUTPUT($label = NULL) {
+function xOUTPUT(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xOUTPUT') ? $Html->xOUTPUT($label) : PERFORM(erorrMessage()); 	
@@ -1631,7 +2083,15 @@ function xOUTPUT($label = NULL) {
   * Inline Heading tag PROGRESS
   *
   **/
-function _PROGRESS($attr=null, $element_id=null, $element_class=null) {
+function _PROGRESS(
+
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+ )
+ {
 
   /**
    *
@@ -1659,7 +2119,12 @@ function _PROGRESS($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag PROGRESS
   *
   **/
-function xPROGRESS($label = NULL) {
+function xPROGRESS(
+
+    $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xPROGRESS') ? $Html->xPROGRESS($label) : PERFORM(erorrMessage());	
@@ -1674,7 +2139,14 @@ function xPROGRESS($label = NULL) {
   * Inline Heading tag SVG
   *
   **/
-function _SVG($attr=null, $element_id=null, $element_class=null) {
+function _SVG(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+ )
+ {
 
   /**
    *
@@ -1702,7 +2174,12 @@ function _SVG($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag SVG
   *
   **/
-function xSVG($label = NULL) {
+function xSVG(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xSVG') ? $Html->xSVG($label) : PERFORM(erorrMessage());	
@@ -1717,7 +2194,14 @@ function xSVG($label = NULL) {
   * Inline Heading tag TEMPLATE
   *
   **/
-function _TEMPLATE($attr=null, $element_id=null, $element_class=null) {
+function _TEMPLATE(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+ ) 
+ {
 
   /**
    *
@@ -1745,7 +2229,12 @@ function _TEMPLATE($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag TEMPLATE
   *
   **/
-function xTEMPLATE($label = NULL) {
+function xTEMPLATE(
+
+  $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox();
   return method_exists($Html, 'xTEMPLATE') ? $Html->xTEMPLATE($label) : PERFORM(erorrMessage());  	
@@ -1760,7 +2249,14 @@ function xTEMPLATE($label = NULL) {
   * Inline Heading tag UL
   *
   **/
-function _UL($attr=null, $element_id=null, $element_class=null) {
+function _UL(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+ )
+ {
 
   /**
    *
@@ -1788,7 +2284,13 @@ function _UL($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag UL
   *
   **/
-function xUL($label = NULL) {
+function xUL(
+
+  $label = NULL
+
+)
+{
+
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xUL') ? $Html->xUL($label) : PERFORM(erorrMessage());
 	
@@ -1802,7 +2304,14 @@ function xUL($label = NULL) {
   * Inline Heading tag OL
   *
   **/
-function _OL($attr=null, $element_id=null, $element_class=null) {
+function _OL(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+ )
+ {
 
   /**
    *
@@ -1830,7 +2339,12 @@ function _OL($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag OL
   *
   **/
-function xOL($label = NULL) {
+function xOL(  
+
+  $label = NULL
+
+ )
+ {
   
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xOL') ? $Html->xOL($label) : PERFORM(erorrMessage());	
@@ -1845,7 +2359,14 @@ function xOL($label = NULL) {
   * Inline Heading tag LI
   *
   **/
-function _LI($attr=null, $element_id=null, $element_class=null) {
+function _LI(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+ )
+ {
 
   /**
    *
@@ -1873,7 +2394,12 @@ function _LI($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag LI
   *
   **/
-function xLI($label = NULL) {
+function xLI(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xLI') ? $Html->xLI($label) : PERFORM(erorrMessage());	
@@ -1888,7 +2414,14 @@ function xLI($label = NULL) {
   * Inline Heading tag TABLE
   *
   **/
-function _TABLE($attr=null, $element_id=null, $element_class=null) {
+function _TABLE(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class = null
+
+ )
+ {
 
   /**
    *
@@ -1916,7 +2449,12 @@ function _TABLE($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag TABLE
   *
   **/
-function xTABLE($label = NULL) {
+function xTABLE(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xTABLE') ? $Html->xTABLE($label) : PERFORM(erorrMessage());	
@@ -1931,7 +2469,14 @@ function xTABLE($label = NULL) {
   * Inline Heading tag TR
   *
   **/
-function _TR($attr=null, $element_id=null, $element_class=null) {
+function _TR(
+
+     $attr          =  null
+    ,$element_id    =  null
+    ,$element_class =  null
+
+  )
+  {
 
   /**
    *
@@ -1959,7 +2504,12 @@ function _TR($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag TR
   *
   **/
-function xTR($label = NULL) {
+function xTR(
+
+  $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xTR') ? $Html->xTR($label) : PERFORM(erorrMessage());  
@@ -1974,7 +2524,14 @@ function xTR($label = NULL) {
   * Inline Heading tag TD
   *
   **/
-function _TD($attr=null, $element_id=null, $element_class=null) {
+function _TD(
+
+     $attr          =  null
+    ,$element_id    =  null
+    ,$element_class =  null
+
+ )
+ {
 
  /**
    *
@@ -2002,7 +2559,12 @@ function _TD($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag TD
   *
   **/
-function xTD($label = NULL) {
+function xTD(
+
+  $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox();
   return method_exists($Html, 'xTD') ? $Html->xTD($label) : PERFORM(erorrMessage());  	
@@ -2017,7 +2579,14 @@ function xTD($label = NULL) {
   * Inline Heading tag TH
   *
   **/
-function _TH($attr=null, $element_id=null, $element_class=null) {
+function _TH(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+)
+{
 
   /**
    *
@@ -2045,7 +2614,13 @@ function _TH($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag TH
   *
   **/
-function xTH($label = NULL) {
+function xTH(
+
+
+  $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xTH') ? $Html->xTH($label) : PERFORM(erorrMessage());	
@@ -2060,7 +2635,14 @@ function xTH($label = NULL) {
   * Inline Heading tag LEGEND
   *
   **/
-function _LEGEND($attr=null, $element_id=null, $element_class=null) {
+function _LEGEND(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+)
+{
 
   /**
    *
@@ -2088,7 +2670,12 @@ function _LEGEND($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag LEGEND
   *
   **/
-function xLEGEND($label = NULL) {
+function xLEGEND(
+
+  $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xLEGEND') ? $Html->xLEGEND($label) : PERFORM(erorrMessage());	
@@ -2103,7 +2690,14 @@ function xLEGEND($label = NULL) {
   * Inline Heading tag FIELDSET
   *
   **/
-function _FIELDSET($attr=null, $element_id=null, $element_class=null) {
+function _FIELDSET(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+ )
+ {
 
   /**
    *
@@ -2131,7 +2725,12 @@ function _FIELDSET($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag FIELDSET
   *
   **/
-function xFIELDSET($label = NULL) {
+function xFIELDSET(
+
+  $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xFIELDSET') ? $Html->xFIELDSET($label) : PERFORM(erorrMessage());	
@@ -2146,7 +2745,14 @@ function xFIELDSET($label = NULL) {
   * Inline Heading tag TBODY
   *
   **/
-function _TBODY($attr=null, $element_id=null, $element_class=null) {
+function _TBODY(
+
+   $attr           =  null
+  ,$element_id     =  null
+  ,$element_class  =  null
+
+)
+{
 
   /**
    *
@@ -2174,7 +2780,12 @@ function _TBODY($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag TBODY
   *
   **/
-function xTBODY($label = NULL) {
+function xTBODY(
+
+  $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xTBODY') ? $Html->xTBODY($label) : PERFORM(erorrMessage());	
@@ -2189,7 +2800,14 @@ function xTBODY($label = NULL) {
   * Inline Heading tag TFOOT
   *
   **/
-function _TFOOT($attr=null, $element_id=null, $element_class=null) {
+function _TFOOT(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+)
+{
 
   /**
    *
@@ -2217,7 +2835,12 @@ function _TFOOT($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag TFOOT
   *
   **/
-function xTFOOT($label = NULL) {
+function xTFOOT(
+
+   $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox();
   return method_exists($Html, 'xTFOOT') ? $Html->xTFOOT($label) : PERFORM(erorrMessage());  	
@@ -2232,7 +2855,14 @@ function xTFOOT($label = NULL) {
   * Inline Heading tag THEAD
   *
   **/
-function _THEAD($attr=null, $element_id=null, $element_class=null) {
+function _THEAD(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+ )
+ {
 
   /**
    *
@@ -2260,7 +2890,12 @@ function _THEAD($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag THEAD
   *
   **/
-function xTHEAD($label = NULL) {
+function xTHEAD(
+
+   $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xTHEAD') ? $Html->xTHEAD($label) : PERFORM(erorrMessage());	
@@ -2275,7 +2910,14 @@ function xTHEAD($label = NULL) {
   * Inline Heading tag SPAN
   *
   **/
-function _SPAN($attr=null, $element_id=null, $element_class=null) {
+function _SPAN(
+
+     $attr          =  null
+    ,$element_id    =  null
+    ,$element_class =  null
+
+  )
+  {
 
   /**
    *
@@ -2303,7 +2945,12 @@ function _SPAN($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag SPAN
   *
   **/
-function xSPAN($label = NULL) {
+function xSPAN(
+
+  $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xSPAN') ? $Html->xSPAN($label) : PERFORM(erorrMessage());	
@@ -2318,7 +2965,14 @@ function xSPAN($label = NULL) {
   * Inline Heading tag EM
   *
   **/
-function _EM($attr=null, $element_id=null, $element_class=null) {
+function _EM(
+
+   $attr           =  null
+  ,$element_id     =  null
+  ,$element_class  =  null
+
+ )
+ {
 
   /**
    *
@@ -2346,7 +3000,12 @@ function _EM($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag EM
   *
   **/
-function xEM($label = NULL) {
+function xEM(
+
+   $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xEM') ? $Html->xEM($label) : PERFORM(erorrMessage());	
@@ -2361,7 +3020,14 @@ function xEM($label = NULL) {
   * Inline Heading tag SMALL
   *
   **/
-function _SMALL($attr=null, $element_id=null, $element_class=null) {
+function _SMALL(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+ )
+ {
 
   /**
    *
@@ -2389,7 +3055,12 @@ function _SMALL($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag SMALL
   *
   **/
-function xSMALL($label = NULL) {
+function xSMALL(
+
+  $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xSMALL') ? $Html->xSMALL($label) : PERFORM(erorrMessage());	
@@ -2404,8 +3075,15 @@ function xSMALL($label = NULL) {
   * Inline Heading tag STRIKE
   *
   **/
-function _STRIKE($attr=null, $element_id=null, $element_class=null) {
+function _STRIKE(
 
+   $attr           = null 
+  ,$element_id     = null 
+  ,$element_class  = null
+
+ )
+ {
+ 
   /**
    *
    *
@@ -2432,7 +3110,12 @@ function _STRIKE($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag STRIKE
   *
   **/
-function xSTRIKE($label = NULL) {
+function xSTRIKE(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xSTRIKE') ? $Html->xSTRIKE($label) : PERFORM(erorrMessage());	
@@ -2447,7 +3130,14 @@ function xSTRIKE($label = NULL) {
   * Inline Heading tag MARQUEE
   *
   **/
-function _MARQUEE($attr=null, $element_id=null, $element_class=null) {
+function _MARQUEE(
+
+   $attr                = null
+  ,$element_id          = null
+  ,$element_class       = null
+
+ )
+ {
 
   /**
    *
@@ -2475,7 +3165,12 @@ function _MARQUEE($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag MARQUEE
   *
   **/
-function xMARQUEE($label = NULL) {
+function xMARQUEE(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xMARQUEE') ? $Html->xMARQUEE($label) : PERFORM(erorrMessage());
@@ -2490,7 +3185,14 @@ function xMARQUEE($label = NULL) {
   * Inline Heading tag CENTER
   *
   **/
-function _CENTER($attr=null, $element_id=null, $element_class=null) {
+function _CENTER(
+
+   $attr           = null
+  ,$element_id     = null
+  ,$element_class  = null
+
+ )
+ {
 
   /**
    *
@@ -2518,7 +3220,12 @@ function _CENTER($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag CENTER
   *
   **/
-function xCENTER($label = NULL) {
+function xCENTER(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xCENTER') ? $Html->xCENTER($label) : PERFORM(erorrMessage());  	
@@ -2533,7 +3240,14 @@ function xCENTER($label = NULL) {
   * Inline Heading tag ABBR
   *
   **/
-function _ABBR($attr=null, $element_id=null, $element_class=null) {
+function _ABBR(
+
+   $attr             = null
+  ,$element_id       = null
+  ,$element_class    = null
+
+ )
+ {
 
   /**
    *
@@ -2561,7 +3275,12 @@ function _ABBR($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag ABBR
   *
   **/
-function xABBR($label = NULL) {
+function xABBR(
+
+  $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xABBR') ? $Html->xABBR($label) : PERFORM(erorrMessage());  	
@@ -2576,7 +3295,14 @@ function xABBR($label = NULL) {
   * Inline Heading tag MAP
   *
   **/
-function _MAP($attr=null, $element_id=null, $element_class=null) {
+function _MAP(
+
+   $attr             =  null
+  ,$element_id       =  null
+  ,$element_class    =  null
+
+ )
+ {
 
   /**
    *
@@ -2604,7 +3330,12 @@ function _MAP($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag MAP
   *
   **/
-function xMAP($label = NULL) {
+function xMAP(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xMAP') ? $Html->xMAP($label) : PERFORM(erorrMessage()); 	
@@ -2619,7 +3350,14 @@ function xMAP($label = NULL) {
   * Inline Heading tag CANVAS
   *
   **/
-function _CANVAS($attr=null, $element_id=null, $element_class=null) {
+function _CANVAS(
+
+   $attr             = null
+  ,$element_id       = null
+  ,$element_class    = null
+
+ )
+ {
 
   /**
    *
@@ -2647,7 +3385,12 @@ function _CANVAS($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag CANVAS
   *
   **/
-function xCANVAS($label = NULL) {
+function xCANVAS(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox();
   return method_exists($Html, 'xCANVAS') ? $Html->xCANVAS($label) : PERFORM(erorrMessage());	
@@ -2662,7 +3405,14 @@ function xCANVAS($label = NULL) {
   * Inline Heading tag CITE
   *
   **/
-function _CITE($attr=null, $element_id=null, $element_class=null) {
+function _CITE(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+ )
+ {
 
   /**
    *
@@ -2690,7 +3440,12 @@ function _CITE($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag CITE
   *
   **/
-function xCITE($label = NULL) {
+function xCITE(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xCITE') ? $Html->xCITE($label) : PERFORM(erorrMessage());	
@@ -2705,7 +3460,14 @@ function xCITE($label = NULL) {
   * Inline Heading tag DATA
   *
   **/
-function _DATA($attr=null, $element_id=null, $element_class=null) {
+function _DATA(
+
+    $attr             =  null
+   ,$element_id       =  null
+   ,$element_class    =  null
+
+ )
+ {
 
   /**
    *
@@ -2733,7 +3495,12 @@ function _DATA($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag DATA
   *
   **/
-function xDATA($label = NULL) {
+function xDATA(
+
+  $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xDATA') ? $Html->xDATA($label) : PERFORM(erorrMessage());	
@@ -2748,7 +3515,14 @@ function xDATA($label = NULL) {
   * Inline Heading tag DL
   *
   **/
-function _DL($attr=null, $element_id=null, $element_class=null) {
+function _DL(
+
+   $attr              =  null
+  ,$element_id        =  null
+  ,$element_class     =  null
+
+ )
+ {
 
   /**
    *
@@ -2776,7 +3550,12 @@ function _DL($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag DL
   *
   **/
-function xDL($label = NULL) {
+function xDL(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xDL') ? $Html->xDL($label) : PERFORM(erorrMessage());	
@@ -2791,7 +3570,14 @@ function xDL($label = NULL) {
   * Inline Heading tag DT
   *
   **/
-function _DT($attr=null, $element_id=null, $element_class=null) {
+function _DT(
+
+   $attr               =  null
+  ,$element_id         =  null
+  ,$element_class      =  null
+
+ )
+ {
 
   /**
    *
@@ -2819,7 +3605,12 @@ function _DT($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag DT
   *
   **/
-function xDT($label = NULL) {
+function xDT(
+
+  $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xDT') ? $Html->xDT($label) : PERFORM(erorrMessage());  	
@@ -2834,7 +3625,14 @@ function xDT($label = NULL) {
   * Inline Heading tag DD
   *
   **/
-function _DD($attr=null, $element_id=null, $element_class=null) {
+function _DD(
+
+   $attr               = null
+  ,$element_id         = null
+  ,$element_class      = null
+
+ )
+ {
 
   /**
    *
@@ -2862,7 +3660,12 @@ function _DD($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag DD
   *
   **/
-function xDD($label = NULL) {
+function xDD(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xDD') ? $Html->xDD($label) : PERFORM(erorrMessage());
@@ -2877,7 +3680,14 @@ function xDD($label = NULL) {
   * Inline Heading tag DFN
   *
   **/
-function _DFN($attr=null, $element_id=null, $element_class=null) {
+function _DFN(
+
+   $attr               =  null
+  ,$element_id         =  null
+  ,$element_class      =  null
+
+ )
+ {
 
   /**
    *
@@ -2905,7 +3715,12 @@ function _DFN($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag DFN
   *
   **/
-function xDFN($label = NULL) {
+function xDFN(
+
+    $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xDFN') ? $Html->xDFN($label) : PERFORM(erorrMessage());  
@@ -2920,7 +3735,14 @@ function xDFN($label = NULL) {
   * Inline Heading tag INS
   *
   **/
-function _INS($attr=null, $element_id=null, $element_class=null) {
+function _INS(
+
+   $attr               = null
+  ,$element_id         = null
+  ,$element_class      = null
+
+ )
+ {
 
   /**
    *
@@ -2948,7 +3770,12 @@ function _INS($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag INS
   *
   **/
-function xINS($label = NULL) {
+function xINS(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xINS') ? $Html->xINS($label) : PERFORM(erorrMessage()); 	
@@ -2963,7 +3790,14 @@ function xINS($label = NULL) {
   * Inline Heading tag DEL
   *
   **/
-function _DEL($attr=null, $element_id=null, $element_class=null) {
+function _DEL(
+
+   $attr                  =  null
+  ,$element_id            =  null
+  ,$element_class         =  null
+
+ )
+ {
 
   /**
    *
@@ -2991,7 +3825,12 @@ function _DEL($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag DEL
   *
   **/
-function xDEL($label = NULL) {
+function xDEL(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xDEL') ? $Html->xDEL($label) : PERFORM(erorrMessage());	
@@ -3006,7 +3845,14 @@ function xDEL($label = NULL) {
   * Inline Heading tag KBD
   *
   **/
-function _KBD($attr=null, $element_id=null, $element_class=null) {
+function _KBD(
+
+       $attr           =  null
+      ,$element_id     =  null
+      ,$element_class  =  null
+
+ )
+ {
 
  /**
    *
@@ -3034,7 +3880,12 @@ function _KBD($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag KBD
   *
   **/
-function xKBD($label = NULL) {
+function xKBD(
+
+   $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xKBD') ? $Html->xKBD($label) : PERFORM(erorrMessage());	
@@ -3049,7 +3900,14 @@ function xKBD($label = NULL) {
   * Inline Heading tag MARK
   *
   **/
-function _MARK($attr=null, $element_id=null, $element_class=null) {
+function _MARK(
+
+   $attr           =  null
+  ,$element_id     =  null
+  ,$element_class  =  null
+
+ )
+ {
 
  /**
    *
@@ -3077,7 +3935,12 @@ function _MARK($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag MARK
   *
   **/
-function xMARK($label = NULL) {
+function xMARK(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xMARK') ? $Html->xMARK($label) : PERFORM(erorrMessage());
@@ -3092,7 +3955,14 @@ function xMARK($label = NULL) {
   * Inline Heading tag PRE
   *
   **/
-function _PRE($attr=null, $element_id=null, $element_class=null) {
+function _PRE(
+
+   $attr                 =  null
+  ,$element_id           =  null
+  ,$element_class        =  null
+
+ )
+ {
 
   /**
    *
@@ -3120,7 +3990,12 @@ function _PRE($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag PRE
   *
   **/
-function xPRE($label = NULL) {
+function xPRE(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xPRE') ? $Html->xPRE($label) : PERFORM(erorrMessage());	
@@ -3135,7 +4010,14 @@ function xPRE($label = NULL) {
   * Inline Heading tag RT
   *
   **/
-function _RT($attr=null, $element_id=null, $element_class=null) {
+function _RT(
+
+   $attr            = null
+  ,$element_id      = null
+  ,$element_class   = null
+
+ )
+ {
 
  /**
    *
@@ -3163,7 +4045,12 @@ function _RT($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag RT
   *
   **/
-function xRT($label = NULL) {
+function xRT(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xRT') ? $Html->xRT($label) : PERFORM(erorrMessage());	
@@ -3178,7 +4065,14 @@ function xRT($label = NULL) {
   * Inline Heading tag RP
   *
   **/
-function _RP($attr=null, $element_id=null, $element_class=null) {
+function _RP(
+
+     $attr            =  null
+    ,$element_id      =  null
+    ,$element_class   =  null
+
+  )
+  {
 
   /**
    *
@@ -3206,7 +4100,12 @@ function _RP($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag RP
   *
   **/
-function xRP($label = NULL) {
+function xRP(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox();
   return method_exists($Html, 'xRP') ? $Html->xRP($label) : PERFORM(erorrMessage());	
@@ -3221,7 +4120,14 @@ function xRP($label = NULL) {
   * Inline Heading tag SAMP
   *
   **/
-function _SAMP($attr=null, $element_id=null, $element_class=null) {
+function _SAMP(
+ 
+  $attr             =  null
+  ,$element_id      =  null
+  ,$element_class   =  null
+
+ )
+ {
 
   /**
    *
@@ -3249,7 +4155,12 @@ function _SAMP($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag SAMP
   *
   **/
-function xSAMP($label = NULL) {
+function xSAMP(
+
+  $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xSAMP') ? $Html->xSAMP($label) : PERFORM(erorrMessage());	
@@ -3264,7 +4175,14 @@ function xSAMP($label = NULL) {
   * Inline Heading tag STRONG
   *
   **/
-function _STRONG($attr=null, $element_id=null, $element_class=null) {
+function _STRONG(
+
+   $attr             =  null
+  ,$element_id       =  null
+  ,$element_class    =  null
+
+ )
+ {
 
   /**
    *
@@ -3292,7 +4210,12 @@ function _STRONG($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag STRONG
   *
   **/
-function xSTRONG($label = NULL) {
+function xSTRONG(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xSTRONG') ? $Html->xSTRONG($label) : PERFORM(erorrMessage());  
@@ -3307,7 +4230,14 @@ function xSTRONG($label = NULL) {
   * Inline Heading tag SUB
   *
   **/
-function _SUB($attr=null, $element_id=null, $element_class=null) {
+function _SUB(
+
+     $attr              =  null
+    ,$element_id        =  null
+    ,$element_class     =  null
+
+  )
+  {
 
   /**
    *
@@ -3335,7 +4265,13 @@ function _SUB($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag SUB
   *
   **/
-function xSUB($label = NULL) {
+function xSUB(
+
+  $label = NULL
+
+ )
+ {
+
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xSUB') ? $Html->xSUB($label) : PERFORM(erorrMessage());  	
 }
@@ -3348,7 +4284,14 @@ function xSUB($label = NULL) {
   * Inline Heading tag SUP
   *
   **/
-function _SUP($attr=null, $element_id=null, $element_class=null) {
+function _SUP(
+
+   $attr             =  null
+  ,$element_id       =  null
+  ,$element_class    =  null
+
+ )
+ {
 
   /**
    *
@@ -3376,7 +4319,12 @@ function _SUP($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag SUP
   *
   **/
-function xSUP($label = NULL) {
+function xSUP(
+
+  $label = NULL
+
+ )
+ {
   
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xSUP') ? $Html->xSUP($label) : PERFORM(erorrMessage());  	
@@ -3391,7 +4339,14 @@ function xSUP($label = NULL) {
   * Inline Heading tag WBR
   *
   **/
-function _WBR($attr=null, $element_id=null, $element_class=null) {
+function _WBR(
+
+   $attr             =  null
+  ,$element_id       =  null
+  ,$element_class    =  null
+
+ )
+ {
 
   /**
    *
@@ -3419,7 +4374,12 @@ function _WBR($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag WBR
   *
   **/
-function xWBR($label = NULL) {
+function xWBR(
+
+   $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xWBR') ? $Html->xWBR($label) : PERFORM(erorrMessage());
@@ -3434,7 +4394,14 @@ function xWBR($label = NULL) {
   * Inline Heading tag HEAD
   *
   **/
-function _HEAD($attr=null, $element_id=null, $element_class=null) {
+function _HEAD(
+
+   $attr             =  null
+  ,$element_id       =  null
+  ,$element_class    =  null
+
+ )
+ {
 
   /**
    *
@@ -3462,7 +4429,12 @@ function _HEAD($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag HEAD
   *
   **/
-function xHEAD($label = NULL) {
+function xHEAD(
+
+  $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xHEAD') ? $Html->xHEAD($label) : PERFORM(erorrMessage());  
@@ -3477,7 +4449,14 @@ function xHEAD($label = NULL) {
   * Inline Heading tag TITLE
   *
   **/
-function _TITLE($attr=null, $element_id=null, $element_class=null) {
+function _TITLE(
+
+   $attr            =  null
+  ,$element_id      =  null
+  ,$element_class   =  null
+
+ )
+ {
 
   /**
    *
@@ -3505,7 +4484,12 @@ function _TITLE($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag TITLE
   *
   **/
-function xTITLE($label = NULL) {
+function xTITLE(  
+
+   $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xTITLE') ? $Html->xTITLE($label) : PERFORM(erorrMessage());    
@@ -3520,7 +4504,14 @@ function xTITLE($label = NULL) {
   * Inline Heading tag BODY
   *
   **/
-function _BODY($attr=null, $element_id=null, $element_class=null) {
+function _BODY(
+
+   $attr           =  null
+  ,$element_id     =  null
+  ,$element_class  =  null
+
+ )
+ {
 
   /**
    *
@@ -3548,7 +4539,12 @@ function _BODY($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag BODY
   *
   **/
-function xBODY($label = NULL) {
+function xBODY(  
+
+   $label = NULL
+
+ )
+ {
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xBODY') ? $Html->xBODY($label) : PERFORM(erorrMessage());
@@ -3563,7 +4559,14 @@ function xBODY($label = NULL) {
   * Inline Heading tag HTML
   *
   **/
-function _HTML($attr=null, $element_id=null, $element_class=null) {
+function _HTML(
+
+   $attr          =  null
+  ,$element_id    =  null
+  ,$element_class =  null
+
+ )
+ {
 
   /**
    *
@@ -3591,7 +4594,12 @@ function _HTML($attr=null, $element_id=null, $element_class=null) {
   * Inline Heading tag HTML
   *
   **/
-function xHTML($label = NULL) {
+function xHTML(
+
+  $label = NULL
+
+)
+{
 
   $Html = NEW MergeBox(); 
   return method_exists($Html, 'xnoHTML') ? $Html->xnoHTML($label) : PERFORM(erorrMessage());	

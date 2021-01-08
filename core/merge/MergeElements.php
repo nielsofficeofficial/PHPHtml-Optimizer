@@ -42,7 +42,18 @@ USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS PHPFileHandler;
   * NONE CLOSING TAG INLINE HTML
   *
   **/
-function __HTML($label="INLINE", $elem=null, $attr=null, $element_id=null, $element_class=null, $assoc=null)  {
+function __HTML(  
+
+
+      $label         =  "INLINE"
+     ,$elem          =  null
+     ,$attr          =  null
+     ,$element_id    =  null
+     ,$element_class =  null
+     ,$assoc         =  null
+
+)
+{
 
   /**
    *
@@ -70,7 +81,17 @@ function __HTML($label="INLINE", $elem=null, $attr=null, $element_id=null, $elem
   * WITH CLOSING TAG INLINE HTML
   *
   **/
-function _xHTML($elem=null, $value=null, $attr=null, $element_id=null, $element_class=null, $label=null)  {
+function _xHTML(
+
+      $elem          =  null
+     ,$value         =  null
+     ,$attr          =  null
+     ,$element_id    =  null
+     ,$element_class =  null
+     ,$label         =  null
+
+)
+{
 
   /**
    *
@@ -98,7 +119,15 @@ function _xHTML($elem=null, $value=null, $attr=null, $element_id=null, $element_
   * BEGIN TAG HTML
   *
   **/
-function _MERGE($elem=null, $attr=null, $element_id=null, $element_class=null) {
+function _MERGE(
+
+      $elem           =  null
+     ,$attr           =  null
+     ,$element_id     =  null
+     ,$element_class  =  null
+
+)
+{
 
   /**
    *
@@ -126,7 +155,12 @@ function _MERGE($elem=null, $attr=null, $element_id=null, $element_class=null) {
   * END TAG HTML
   *
   **/
-function xMERGE($elem=null) {
+function xMERGE( 
+
+  $elem        =  null
+
+)
+{
 
  $Html = NEW MergeElements(); 
  return method_exists($Html,'__magicMERGE') ? $Html->__magicMERGE($elem, 'MERGE_END') : PERFORM(erorrMessage());
