@@ -9,7 +9,7 @@ To refractor/optimize code is a hassle and heavy load burden in programming, All
 
 <h6>Custom ATTR/ELEMENT</h6>
 
-```markdown
+```PHP
 
 // ATTR() VALID PARAMETERS
 META | TITLE | LINK | SCRIPT | CUSTOM_END | BEGIN_CUSTOM_END
