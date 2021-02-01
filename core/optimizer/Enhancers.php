@@ -619,7 +619,7 @@ private function cpe_xib6_FileHandler_belongs_to($page, $page_file)  {
   * @since 27.10.2020
   *
   **/
-final private function cpe_FileHander_hdr($PARAM__, $quickStart__) {
+private function cpe_FileHander_hdr($PARAM__, $quickStart__) {
   
   # CHECK_IF_THE_QUICKSTART_vAR_IS_IN_ARRAY_AND_IF_IT_IS_TRUE
   # DO_ARRAY_RETURN_ESLE_SINGLE_VALUE
@@ -737,7 +737,7 @@ private function cpe_FileHandler_custom_elem($Element__, $value__, $elemAttr__, 
   * @since 27.10.2020
   *
   **/
-final private function cpe_xib6_FileHandler_count() {
+private function cpe_xib6_FileHandler_count() {
  
  /**
   * @var $Folder : Define Main Folder
@@ -816,7 +816,7 @@ final private function cpe_xib6_FileHandler_count() {
   * @since 27.10.2020
   *
   */
-final private function Enhacer_ErrorMsg() {
+private function Enhacer_ErrorMsg() {
         
   $ERROR_MSG  = " ";
   $ERROR_MSG .= " Classes Must be Instantiated <br />";
