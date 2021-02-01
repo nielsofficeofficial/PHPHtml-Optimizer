@@ -51,8 +51,8 @@ spl_autoload_register(function ($class) {
   }
 
 ); 
-       
-   __FILECONFIG__ ? require_once __FILECONFIG__ : FALSE ;   }  else  {
+   
+   file_exists(__FILECONFIG__) ? require_once __FILECONFIG__ : FALSE ;   }  else  {
 
    // check if there's something wrong directory then return error msg!
    if ( __GET_VALIDATE_FILE_PAGE_EXIST__) {
