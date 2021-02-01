@@ -37,7 +37,7 @@
  *
  **/
 
-  define('__CONFIG__'   , 'config.php' ); // get config file
+  define('__CONFIG__'   , 'directories.php' ); // get config file
   define('__PROP__'     , 'prop.php' ); // get prop  
   define('SOM_PATH_DIR' ,  __DIR__ . DIRECTORY_SEPARATOR); // Set DIR PATH Default
   define('__EnHancer__' ,  '/../Enhancer.php'); // get function associated by FUNCTION ASSOCIATED
