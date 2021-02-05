@@ -151,7 +151,7 @@ xHTML();
 
 ```
 <h4>directories.php </h4>
-<p>Config.php file register file currently support : PATH | DIR | RURI, 
+<p>directories.php file register file currently support : PATH | DIR | RURI, 
 make your code clean and safe. here's mapping to sure that your directories.php file is in correct directory. 
 </p>
 
