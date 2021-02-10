@@ -1963,11 +1963,11 @@ function _xTBODY(
   *
   * @since 20.19.2020
   * @category PHPHtml-Merge
-  * @ Method Defined HTML TFOOTER noHTML  
-  * Inline Heading tag TFOOTER
+  * @ Method Defined HTML TFOOT noHTML  
+  * Inline Heading tag TFOOT
   *
   **/
-function _xTFOOTER( 
+function _xTFOOT( 
 
      $value         =  null
     ,$attr          =  null
@@ -1992,7 +1992,7 @@ function _xTFOOTER(
    *
    **/
   $Html = NEW Merge(); 
-  return method_exists($Html,'TFOOTER') ? $Html->TFOOTER($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
+  return method_exists($Html,'TFOOT') ? $Html->TFOOTER($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 
