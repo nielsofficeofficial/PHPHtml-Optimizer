@@ -742,6 +742,76 @@ function _xFOOTER(
   *
   * @since 20.19.2020
   * @category PHPHtml-Merge
+  * @ Method Defined HTML SCRIPT noHTML  
+  * Inline Heading tag SCRIPT
+  *
+  **/
+function _xSCRIPT( 
+
+     $value          =  null
+    ,$attr           =  null
+    ,$label          =  null
+    ,$assoc          =  null 
+
+) 
+{ 
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag SCRIPT
+   * @package : Static Procedural
+   * @method  : Html::SCRIPT($value, $attr=null, $element_id, $element_class, $label, $assoc);
+   *
+   *
+   *
+   **/
+  $Html = NEW Merge(); 
+  return method_exists($Html,'SCRIPT') ? $Html->SCRIPT($value, $attr, null, null, $label, $assoc) : PERFORM(erorrMessage());
+
+}
+
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML SCRIPT noHTML  
+  * Inline Heading tag SCRIPT
+  *
+  **/
+function _xSTYLE( 
+
+     $value          =  null
+    ,$attr           =  null
+    ,$label          =  null
+    ,$assoc          =  null 
+
+) 
+{ 
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag TEXTAREA
+   * @package : Static Procedural
+   * @method  : Html::TEXTAREA($value, $attr=null, $element_id, $element_class, $label, $assoc);
+   *
+   *
+   *
+   **/
+  $Html = NEW Merge(); 
+  return method_exists($Html,'STYLE') ? $Html->STYLE($value, $attr, null, null, $label, $assoc) : PERFORM(erorrMessage());
+
+}
+
+/**
+  *
+  * @since 20.19.2020
+  * @category PHPHtml-Merge
   * @ Method Defined HTML AUDIO noHTML  
   * Inline Heading tag AUDIO
   *
@@ -1963,11 +2033,11 @@ function _xTBODY(
   *
   * @since 20.19.2020
   * @category PHPHtml-Merge
-  * @ Method Defined HTML TFOOT noHTML  
-  * Inline Heading tag TFOOT
+  * @ Method Defined HTML TFOOTER noHTML  
+  * Inline Heading tag TFOOTER
   *
   **/
-function _xTFOOT( 
+function _xTFOOTER( 
 
      $value         =  null
     ,$attr          =  null
@@ -1992,7 +2062,7 @@ function _xTFOOT(
    *
    **/
   $Html = NEW Merge(); 
-  return method_exists($Html,'TFOOT') ? $Html->TFOOTER($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
+  return method_exists($Html,'TFOOTER') ? $Html->TFOOTER($value, $attr, $element_id, $element_class, $label, $assoc) : PERFORM(erorrMessage());  
 
 }
 

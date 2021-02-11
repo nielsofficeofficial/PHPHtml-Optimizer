@@ -1,6 +1,6 @@
 <?php 
 
- namespace PHPHtml\CodeOptimizer\maintenance;
+ namespace PHPHtml\CodeOptimizer\optimizer;
 
 /**
  * @copyright (c) 2020-2021 OptimizerForm v1.0 Cooked by nielsoffice
@@ -40,3 +40,4 @@
 class OptimizerForm {
 
 }
+

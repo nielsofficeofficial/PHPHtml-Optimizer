@@ -751,6 +751,8 @@ class Html {
     ,'section'
     ,'textarea'
     ,'footer'
+    ,'script'
+    ,'style'
 
 ];
 
@@ -1660,6 +1662,69 @@ class Html {
 
   }
 
+/**
+  *
+  * @method public function noHTML
+  * @ Method Defined SCRIPT _ AND x TAG noHTML  
+  * RETURN NODE SCRIPT _ noHTML TAG
+  *
+  **/
+  public function _SCRIPT(
+
+    $attr    = []
+   ,$id      = null
+   ,$class   = null
+
+  )
+  { 
+
+     $this->PERFORM( $this->get__HTML('PRIMARY', 19, $attr, $id, $class) );  
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xSCRIPT(
+
+    $label = NULL
+
+  )
+  { 
+
+     $this->PERFORM( $this->get_xHTML('PRIMARY', 19, $label) ); 
+
+  }
+
+/**
+  *
+  * @method public function noHTML
+  * @ Method Defined SCRIPT _ AND x TAG noHTML  
+  * RETURN NODE SCRIPT _ noHTML TAG
+  *
+  **/
+  public function _STYLE(
+
+    $attr    = []
+   ,$id      = null
+   ,$class   = null
+
+  )
+  { 
+
+     $this->PERFORM( $this->get__HTML('PRIMARY', 20, $attr, $id, $class) );  
+
+  }
+
+  // CLOSING_METHOD_noHTML_TAG 
+  public function xSTYLE(
+
+    $label = NULL
+
+  )
+  { 
+
+     $this->PERFORM( $this->get_xHTML('PRIMARY', 20, $label) ); 
+
+  }
 
 /**
   *
@@ -4500,6 +4565,48 @@ class Html {
  {
   
    return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 18, $value, $attr, $id, $class, $label, $assoc);
+
+ }
+
+/**
+  *
+  * @method public function noHTML
+  * @ Method Defined HTML SCRIPT TAG noHTML  
+  * RETURN NODE HTML _ noHTML TAG
+  *
+  **/
+  public function SCRIPT(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
+  
+   return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 19, $value, $attr, NULL, NULL, $label, $assoc);
+
+ }
+
+/**
+  *
+  * @method public function noHTML
+  * @ Method Defined HTML STYLE TAG noHTML  
+  * RETURN NODE HTML _ noHTML TAG
+  *
+  **/
+  public function STYLE(
+
+       $value     =  null
+      ,$attr      =  []
+      ,$label     =  null
+      ,$assoc     =  null
+
+ )
+ {
+  
+   return $this->_istrue_assoc_ELEMENTINLINE('PRIMARY', 20, $value, $attr, NULL, NULL, $label, $assoc);
 
  }
 
@@ -8354,6 +8461,32 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
       **/
       return $elem = 'footer';
     
+    } elseif ( $elem === 'script' || $elem === 'SCRIPT' ) {
+
+     /**
+       *
+       *
+       *
+       * @var SET RETURN ELEMT_AS_TEXTAREA 
+       *
+       *
+       *
+      **/
+      return $elem = 'script';
+    
+    } elseif ( $elem === 'style' || $elem === 'STYLE' ) {
+
+     /**
+       *
+       *
+       *
+       * @var SET RETURN ELEMT_AS_TEXTAREA 
+       *
+       *
+       *
+      **/
+      return $elem = 'style';
+    
     } elseif ( $elem === 'audio'    || $elem === 'AUDIO' ) {
 
      /**
@@ -10712,6 +10845,32 @@ protected function cpe_ixb6_FielEnhancers_do_swicth_path($REAL_PATH=null, $GET_P
        *
       **/ 
       return $this->_elemenHTMLINLINE('PRIMARY', 18, $value, $attr, $id, $class, $label);
+      break;
+
+    case "script":
+
+      /**
+       *
+       *
+       *
+       * @var SET RETURN ELEMT_AS_ARRAY_TEXTAREA_SECONDARY_17
+       *
+       *
+      **/ 
+      return $this->_elemenHTMLINLINE('PRIMARY', 19, $value, $attr, $id, $class, $label);
+      break;
+
+    case "style":
+
+      /**
+       *
+       *
+       *
+       * @var SET RETURN ELEMT_AS_ARRAY_TEXTAREA_SECONDARY_17
+       *
+       *
+      **/ 
+      return $this->_elemenHTMLINLINE('PRIMARY', 20, $value, $attr, $id, $class, $label);
       break;
 
     default:

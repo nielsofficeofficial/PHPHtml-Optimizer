@@ -973,6 +973,115 @@ function xFOOTER(
 
 /**
   *
+  * @since 11.02.2021
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML SCRIPT OPEN TAG noHTML  
+  * Inline Heading tag SCRIPT
+  *
+  **/
+function _SCRIPT(
+
+
+    $attr           =  null
+
+ )
+ {
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge Heading tag H3
+   * @package : Static Procedural
+   * @method  : Html::_H3($value, $attr=null, $element_id, $element_class, $label, $assoc);
+   *
+   *
+   *
+   **/  
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, '_SCRIPT') ? $Html->_SCRIPT($attr, NULL, NULL) : PERFORM(erorrMessage());   
+
+}
+
+/**
+  *
+  * @since 11.02.2021
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML xSCRIPT CLOSE TAG noHTML  
+  * Inline Heading tag xSCRIPT
+  *
+  **/
+function xSCRIPT(
+
+  $label = NULL
+
+)
+{
+
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xSCRIPT') ? $Html->xSCRIPT($label) : PERFORM(erorrMessage());   
+
+}
+
+
+/**
+  *
+  * @since 11.02.2021
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML STYLE OPEN TAG noHTML  
+  * Inline Heading tag STYLE
+  *
+  **/
+function _STYLE(
+
+
+    $attr           =  null
+
+ )
+ {
+
+  /**
+   *
+   *
+   *
+   *
+   *
+   * @package : Merge _STYLE TAG
+   * @package : Static Procedural
+   * @method  : Html::_H3($value, $attr=null, $element_id, $element_class, $label, $assoc);
+   *
+   *
+   *
+   **/  
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, '_STYLE') ? $Html->_STYLE($attr, NULL, NULL) : PERFORM(erorrMessage());   
+
+}
+
+/**
+  *
+  * @since 11.02.2021
+  * @category PHPHtml-Merge
+  * @ Method Defined HTML _STYLE CLOSE TAG noHTML  
+  * Inline Heading tag _STYLE
+  *
+  **/
+function xSTYLE(
+
+  $label = NULL
+
+)
+{
+
+  $Html = NEW MergeBox(); 
+  return method_exists($Html, 'xSTYLE') ? $Html->xSTYLE($label) : PERFORM(erorrMessage());   
+
+}
+
+/**
+  *
   * @since 20.19.2020
   * @category PHPHtml-Merge
   * @ Method Defined HTML AUDIO OPEN TAG noHTML  
