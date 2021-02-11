@@ -750,7 +750,6 @@ function _xSCRIPT(
 
      $value          =  null
     ,$attr           =  null
-    ,$label          =  null
     ,$assoc          =  null 
 
 ) 
@@ -769,7 +768,7 @@ function _xSCRIPT(
    *
    **/
   $Html = NEW Merge(); 
-  return method_exists($Html,'SCRIPT') ? $Html->SCRIPT($value, $attr, null, null, $label, $assoc) : PERFORM(erorrMessage());
+  return method_exists($Html,'SCRIPT') ? $Html->SCRIPT($value, $attr, null, null, null, $assoc) : PERFORM(erorrMessage());
 
 }
 
@@ -785,7 +784,6 @@ function _xSTYLE(
 
      $value          =  null
     ,$attr           =  null
-    ,$label          =  null
     ,$assoc          =  null 
 
 ) 
@@ -804,7 +802,7 @@ function _xSTYLE(
    *
    **/
   $Html = NEW Merge(); 
-  return method_exists($Html,'STYLE') ? $Html->STYLE($value, $attr, null, null, $label, $assoc) : PERFORM(erorrMessage());
+  return method_exists($Html,'STYLE') ? $Html->STYLE($value, $attr, null, null, null, $assoc) : PERFORM(erorrMessage());
 
 }
 
