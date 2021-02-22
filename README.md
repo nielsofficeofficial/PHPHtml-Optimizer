@@ -42,7 +42,7 @@ USE \PHPHtml\CodeOptimizer\merge\Html;
 USE \PHPHtml\CodeOptimizer\optimizer\Html AS Optimizer;
 USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS OptimizerCare; 
 
-$Html = NEW Optimizer();
+$Html        = NEW Optimizer();
 $FileEnhance = NEW OptimizerCare();
 
 _HTML(SetElemAttr(['class','lang'],['no-js','']));
