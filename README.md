@@ -63,7 +63,7 @@ ATTR('META', [
 
 ATTR('LINK', [ 
  "manifest"   => [ 'rel' => "manifest", 'src' => "site.webmanifest"],
- "icon" => [ 'rel' => "apple-touch-icon", 'src' => "icon.png"]
+ "icon"       => [ 'rel' => "apple-touch-icon", 'src' => "icon.png"]
 ]); 
 
 ATTR('LINK', [ 
@@ -83,7 +83,7 @@ ATTR('CUSTOM_END', [
 ]);
 
 ATTR('BEGIN_CUSTOM_END', [ 
- "Opt" => [ 'href' => "css/normalize.css" ]
+ "Opt"      => [ 'href' => "css/normalize.css" ]
 ]);
 
 if(isbelongs('index', 1)) { ?>
