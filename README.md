@@ -39,11 +39,11 @@ ATTR('BEGIN_CUSTOM_END', [
 ```PHP
 
 USE \PHPHtml\CodeOptimizer\merge\Html;
-USE \PHPHtml\CodeOptimizer\optimizer\Html AS Optimizer;
-USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS OptimizerCare; 
+USE \PHPHtml\CodeOptimizer\optimizer\Html AS optimizer;
+USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS optimizerCare; 
 
-$Html        = NEW Optimizer();
-$FileEnhance = NEW OptimizerCare();
+$html        = NEW optimizer();
+$fileEnhance = NEW optimizerCare();
 
 _HTML(SetElemAttr(['class','lang'],['no-js','']));
 
@@ -86,7 +86,7 @@ ATTR('BEGIN_CUSTOM_END', [
  "Opt"      => [ 'href' => "css/normalize.css" ]
 ]);
 
-if(isbelongs('index', 1)) { ?>
+if(isBelongs('index', 1)) { ?>
 
   <style> 
    /**  Header style goes here.. **/
@@ -107,7 +107,7 @@ _BODY();
 
 ```PHP
 
-_div(SetElemAttr(['ng-app','ng-init'],['',"myCol='lightblue'"]),'QuickStart_id','row'); 
+_div(setElemAttr(['ng-app','ng-init'],['',"myCol='lightblue'"]),'quickStart_id','row'); 
 
  _xdiv(
    ELEM('h1','Welcome to PHPHtml-Optimizer!') 
@@ -115,9 +115,9 @@ _div(SetElemAttr(['ng-app','ng-init'],['',"myCol='lightblue'"]),'QuickStart_id',
   .__BR()  
      
   // Input angular-JS modify
-  .__HTML('Input','input', SetElemAttr(['style','ng-model'],['background-color:{{myCol}}','myCol']),null,null, FUNC_ASSOC)
+  .__HTML('Input','input', setElemAttr(['style','ng-model'],['background-color:{{myCol}}','myCol']),null,null, FUNC_ASSOC)
      
- ,SetElemAttr(['class'],['container']) 
+ ,setElemAttr(['class'],['container']) 
 );
  
 xdiv('End of / row');
@@ -136,7 +136,7 @@ ATTR('SCRIPT', [
 
 ]);
 
-if (isbelongs(['index','portfolio'], 1)) { ?>
+if (isBelongs(['index','portfolio'], 1)) { ?>
 
  <script> 
     /**  Footer script goes here.. **/
